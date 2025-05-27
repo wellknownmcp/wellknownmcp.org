@@ -1,0 +1,39 @@
+{
+  "origin": "https://example.org",
+  "metadata": {
+    "feed_type": "mcp-declaration",
+    "llmfeed_version": "1.0.0"
+  },
+  "data": [
+    {
+      "type": "intent",
+      "description": "This feed declares this site as MCP-compatible."
+    }
+  ],
+  "trust": {
+    "signed_blocks": [
+      "origin",
+      "metadata",
+      "data"
+    ],
+    "public_key_hint": "https://example.org/.well-known/public.pem",
+    "certification": {
+      "level": "gold",
+      "certifier": "llmca.org",
+      "public_key_hint": "https://llmca.org/.well-known/public.pem",
+      "targets": [
+        "origin",
+        "metadata",
+        "trust"
+      ],
+      "algorithm": "ed25519",
+      "value": "wVbVGYy1iIpOwvU2/1uibKsg05UzdhmLSF2BRjC9ucw=",
+      "issued_at": "2025-05-07T19:04:52.060063Z",
+      "expires_at": "2026-05-07T19:04:52.060073Z"
+    }
+  },
+  "signature": {
+    "type": "ed25519",
+    "value": "wVbVGYy1iIpOwvU2/1uibKsg05UzdhmLSF2BRjC9ucw="
+  }
+}

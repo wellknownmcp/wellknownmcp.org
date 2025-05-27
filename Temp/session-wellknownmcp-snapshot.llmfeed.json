@@ -1,0 +1,43 @@
+{
+  "feed_type": "session",
+  "metadata": {
+    "title": "LLMFeedForge \u2014 Session Context Snapshot",
+    "description": "Capture of ongoing session progress, remaining tasks, and system state.",
+    "origin": "https://wellknownmcp.org",
+    "tags": [
+      "llmfeed",
+      "session",
+      "progress",
+      "debug",
+      "dev"
+    ],
+    "generated_at": "2025-05-20T00:00:00Z"
+  },
+  "data": {
+    "context": {
+      "project": "wellknownmcp.org / llmfeed-spec",
+      "goal": "Finalize and deploy V2 spec, ecosystem tools, feed support and agent simulation"
+    },
+    "completed": [
+      "\u2705 Full walkthrough of spec V2 archive: feedtypes, extensions, agent-behavior, examples",
+      "\u2705 Prompt capsule page regenerated and integrated",
+      "\u2705 `/llmfeedhub/preview` rewritten to simulate both MCP + fallback view",
+      "\u2705 Components for FeedSummary, FallbackSummary, Simulator updated and working",
+      "\u2705 Scripts/README written for canonicalization, sign, verify",
+      "\u2705 Canonical JSON profile created for LLMCA",
+      "\u2705 Ecosystem gallery & session-feed examples exported"
+    ],
+    "in_progress": [
+      "\u2699\ufe0f Prompt Gallery UI integration (PromptCard, PromptGallery)",
+      "\u2699\ufe0f Final linkage across site (ecosystem, tools, prompts)"
+    ],
+    "remaining": [
+      "\ud83d\udee0 Clean audit of `/tools/` structure (possible collapse of subpages?)",
+      "\ud83e\uddea Final testing of edge cases: sitemap analysis, fallback sites",
+      "\ud83e\uddfe Create FAQ as .llmfeed.json or structured `news` entry",
+      "\ud83d\udce6 Regenerate final spec `.zip` + `.llmfeed.json` signed version for GitHub release",
+      "\ud83d\udce2 Prepare coordinated announcement (HN + Medium + X + LinkedIn + OG)",
+      "\ud83d\udd10 Expose public key, signature manifest, validator for Forge/LLMCA"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "feed_type": "export",
+  "metadata": {
+    "origin": "https://wellknownmcp.org",
+    "source_url": "https://wellknownmcp.org/",
+    "title": "Export feed",
+    "description": "Export feed of data contextualized for llm",
+    "tags": ["mcp", "llmfeed", "export"],
+    "content_type": "agent-data",
+    "generated_at": "2025-05-12T15:00:00Z"
+  },
+  "trust": {
+    "trust_level": "certified",
+    "certifier": "https://llmca.org",
+	"signed_blocks": ["feed_type", "metadata", "trust"],
+    "agent_hint": "This feed is officially published by wellknownmcp.org",
+    "block_name": "trust disclaimer",
+    "scope": "partial",
+    "warning": "Only some blocks are signed — and only these are certified by a Model Context Protocol-compliant authority."
+  },
+  "signature": {
+    "algorithm": "ed25519",
+    "value": "base64_placeholder_signature"
+  },
+  "certification": {
+    "level": "gold",
+    "certifier": "llmca.org",
+    "public_key_hint": "https://llmca.org/.well-known/public.pem",
+    "targets": ["feed_type", "metadata", "trust"],
+    "algorithm": "ed25519",
+    "value": "base64_placeholder_signature",
+    "issued_at": "2025-05-12T15:00:00Z",
+    "expires_at": "2025-12-12T15:00:00Z"
+  },
+  "data": {}
+}

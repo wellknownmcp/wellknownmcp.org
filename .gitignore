@@ -25,4 +25,7 @@ Thumbs.db
 # Mac system files
 *.DS_Store
 
-
+!public/
+!public/**
+!public/.well-known/
+!public/.well-known/**

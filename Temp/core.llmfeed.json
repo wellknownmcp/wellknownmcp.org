@@ -1,0 +1,56 @@
+{
+  "origin": "https://wellknownmcp.org/exports/news/core.llmfeed.json",
+  "metadata": {
+    "title": "Core MCP Narrative",
+    "description": "Launch, Manifesto, Ethics, and Why MCP \u2013 the founding texts of the Model Context Protocol.",
+    "feed_type": "bundle",
+    "tags": [
+      "core",
+      "mcp",
+      "foundation"
+    ],
+    "lang": "en",
+    "publisher": "wellknownmcp.org",
+    "version": "1.0",
+    "date": "2025-05-03"
+  },
+  "data": [
+    {
+      "type": "feed-reference",
+      "title": "Launch",
+      "lang": "en",
+      "tags": [
+        "launch"
+      ],
+      "href": "/news/en/launch.md"
+    },
+    {
+      "type": "feed-reference",
+      "title": "The Manifesto",
+      "lang": "en",
+      "tags": [
+        "manifesto"
+      ],
+      "href": "/news/en/manifesto.md"
+    },
+    {
+      "type": "feed-reference",
+      "title": "Ethics First",
+      "lang": "en",
+      "tags": [
+        "ethics"
+      ],
+      "href": "/news/en/ethics.md"
+    },
+    {
+      "type": "feed-reference",
+      "title": "Why MCP",
+      "lang": "en",
+      "tags": [
+        "why",
+        "philosophy"
+      ],
+      "href": "/news/en/why-mcp.md"
+    }
+  ]
+}

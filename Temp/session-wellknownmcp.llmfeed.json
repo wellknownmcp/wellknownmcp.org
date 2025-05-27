@@ -1,0 +1,56 @@
+{
+  "origin": "https://wellknownmcp.org",
+  "feed_type": "session",
+  "created_at": "2025-05-07T11:26:25.527022Z",
+  "title": "Development Session - Navbar, Homepage, Badges, Begin.md",
+  "description": "Session feed capturing progress on site layout, navigation bar, badge system, and the beginner onboarding guide.",
+  "tags": [
+    "session",
+    "llmfeed",
+    "mcp",
+    "navbar",
+    "homepage",
+    "badges",
+    "manual",
+    "begin"
+  ],
+  "signed_blocks": [],
+  "blocks": [
+    {
+      "id": "navbar-refactor",
+      "title": "Navbar refactor and feature additions",
+      "summary": "Simplification, hover dropdown tools menu, links added: Spec, News, Manual, Join, About, Tools with subitems.",
+      "component": "Navbar.tsx"
+    },
+    {
+      "id": "homepage-badges",
+      "title": "Homepage badges integration",
+      "summary": "Display of certified badges, embedded HTML snippet, alignment with MCP design aesthetic, final tweaks for spacing and copy tone.",
+      "component": "app/page.tsx"
+    },
+    {
+      "id": "begin-news-md",
+      "title": "Begin news article",
+      "summary": "Markdown content explaining LLM vs human-facing layer, ./well-known as intent/capability surface, adoption of llmfeed.json.",
+      "path": "/public/news/en/begin.md"
+    },
+    {
+      "id": "badges-gallery",
+      "title": "Badge gallery and feed",
+      "summary": "New badge visual set, structured explanation in llmfeed, ZIP download, organized by type + level, snippet section added.",
+      "path": "/app/tools/badges/page.tsx"
+    },
+    {
+      "id": "css-cleanup",
+      "title": "Globals.css rewritten",
+      "summary": "Simplified white background, no gray body, clean transitions and heading styles matching homepage layout.",
+      "component": "globals.css"
+    },
+    {
+      "id": "llmfeed-export-badges",
+      "title": "llmfeed export for certified badges",
+      "summary": "Feed template filled with badge metadata to allow signed export and documentation.",
+      "path": "/public/assets/badges/badges.export.llmfeed.json"
+    }
+  ]
+}

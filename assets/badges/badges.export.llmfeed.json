@@ -1,0 +1,233 @@
+{
+  "feed_type": "export",
+  "origin": {
+    "block_name": "original resource reference",
+    "url": "https://wellknownmcp.org/",
+    "title": "wellknownmcp export llmfeed"
+  },
+  "tags": [
+    "mcp",
+    "llmfeed",
+    "agent",
+    "llmca",
+    "interoperability",
+    "protocol"
+  ],
+  "summary": "The foundational declaration of the Model Context Protocol (MCP), signed for agent and human trust.",
+  "publisher": {
+    "block_name": "content publisher",
+    "name": "WellKnownMCP Team",
+    "email": "opensource@wellknownmcp.org",
+    "url": "https://wellknownmcp.org"
+  },
+  "license": {
+    "block_name": "usage license",
+    "type": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "signature": {
+    "signed_blocks": [
+      "feed_type",
+      "origin",
+      "tags",
+      "summary",
+      "publisher",
+      "license",
+      "trust"
+    ],
+    "algorithm": "ed25519",
+    "value": "esFWZAoQ5jPuL81iVKyDcVhIE33LioQ5/oOMR2TF3z4/VJtSpWky+JUnKOYTscWM4cz3re2vQyFtx814N7/5DA==",
+    "issued_at": "2025-04-30T15:37:36.267614Z",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem"
+  },
+  "trust": {
+    "block_name": "trust disclaimer",
+    "scope": "partial",
+    "warning": "Only some blocks are signed \u0097 and only these are certified by a Model Context Protocol-compliant authority."
+  },
+  "certification": {
+    "certified_blocks": [
+      "signature"
+    ],
+    "algorithm": "ed25519",
+    "value": "zbPX3kJcKg9yo2nhVEq952AdGUyWwIifNa5jNdZ+mw3HZkSx21cwkNN3yLPGTRydfLniQqiCu2fcrvOnLVwZDQ==",
+    "issued_at": "2025-04-30T15:37:36.268589Z",
+    "public_key_hint": "https://llmca.org/.well-known/llmca_cert.pem",
+    "certification_level": "gold",
+    "policy_reference": "https://llmca.org/.well-known/certification-policy.json",
+    "audit_reference": "https://llmca.org/.well-known/audit-reference.json"
+  },
+  "badges": {
+    "block_name": "MCP and LLMFeed badges",
+    "badges": [
+      {
+        "label": "MCP \u2014 Ready",
+        "emoji": "\ud83e\udd16 \ud83d\ude80",
+        "badge_file": "assets/badges/mcp_ready.svg",
+        "description": "Declares that the site participates in the MCP protocol. Status: Declared but not verified or signed."
+      },
+      {
+        "label": "MCP \u2014 Signed",
+        "emoji": "\ud83e\udd16 \ud83d\udd0f",
+        "badge_file": "assets/badges/mcp_signed.svg",
+        "description": "Declares that the site participates in the MCP protocol. Status: The file is cryptographically signed."
+      },
+      {
+        "label": "MCP \u2014 Verified",
+        "emoji": "\ud83e\udd16 \ud83d\udd0d",
+        "badge_file": "assets/badges/mcp_verified.svg",
+        "description": "Declares that the site participates in the MCP protocol. Status: The feed has passed automatic verification."
+      },
+      {
+        "label": "MCP \u2014 Certified",
+        "emoji": "\ud83e\udd16 \ud83d\udee1\ufe0f",
+        "badge_file": "assets/badges/mcp_certified.svg",
+        "description": "Declares that the site participates in the MCP protocol. Status: Audited and approved by a certifying authority."
+      },
+      {
+        "label": "LLMFeed \u2014 Ready",
+        "emoji": "\ud83d\udce6 \ud83d\ude80",
+        "badge_file": "assets/badges/llmfeed_ready.svg",
+        "description": "Indicates that a `.llmfeed.json` is present and available. Status: Declared but not verified or signed."
+      },
+      {
+        "label": "LLMFeed \u2014 Signed",
+        "emoji": "\ud83d\udce6 \ud83d\udd0f",
+        "badge_file": "assets/badges/llmfeed_signed.svg",
+        "description": "Indicates that a `.llmfeed.json` is present and available. Status: The file is cryptographically signed."
+      },
+      {
+        "label": "LLMFeed \u2014 Verified",
+        "emoji": "\ud83d\udce6 \ud83d\udd0d",
+        "badge_file": "assets/badges/llmfeed_verified.svg",
+        "description": "Indicates that a `.llmfeed.json` is present and available. Status: The feed has passed automatic verification."
+      },
+      {
+        "label": "LLMFeed \u2014 Certified",
+        "emoji": "\ud83d\udce6 \ud83d\udee1\ufe0f",
+        "badge_file": "assets/badges/llmfeed_certified.svg",
+        "description": "Indicates that a `.llmfeed.json` is present and available. Status: Audited and approved by a certifying authority."
+      },
+      {
+        "label": "Export \u2014 Ready",
+        "emoji": "\ud83d\udce4 \ud83d\ude80",
+        "badge_file": "assets/badges/export_ready.svg",
+        "description": "The site supports exporting content to LLMs. Status: Declared but not verified or signed."
+      },
+      {
+        "label": "Export \u2014 Signed",
+        "emoji": "\ud83d\udce4 \ud83d\udd0f",
+        "badge_file": "assets/badges/export_signed.svg",
+        "description": "The site supports exporting content to LLMs. Status: The file is cryptographically signed."
+      },
+      {
+        "label": "Export \u2014 Verified",
+        "emoji": "\ud83d\udce4 \ud83d\udd0d",
+        "badge_file": "assets/badges/export_verified.svg",
+        "description": "The site supports exporting content to LLMs. Status: The feed has passed automatic verification."
+      },
+      {
+        "label": "Export \u2014 Certified",
+        "emoji": "\ud83d\udce4 \ud83d\udee1\ufe0f",
+        "badge_file": "assets/badges/export_certified.svg",
+        "description": "The site supports exporting content to LLMs. Status: Audited and approved by a certifying authority."
+      },
+      {
+        "label": "Prompt \u2014 Ready",
+        "emoji": "\ud83e\udde0 \ud83d\ude80",
+        "badge_file": "assets/badges/prompt_ready.svg",
+        "description": "Supports prompt replay with structured sessions. Status: Declared but not verified or signed."
+      },
+      {
+        "label": "Prompt \u2014 Signed",
+        "emoji": "\ud83e\udde0 \ud83d\udd0f",
+        "badge_file": "assets/badges/prompt_signed.svg",
+        "description": "Supports prompt replay with structured sessions. Status: The file is cryptographically signed."
+      },
+      {
+        "label": "Prompt \u2014 Verified",
+        "emoji": "\ud83e\udde0 \ud83d\udd0d",
+        "badge_file": "assets/badges/prompt_verified.svg",
+        "description": "Supports prompt replay with structured sessions. Status: The feed has passed automatic verification."
+      },
+      {
+        "label": "Prompt \u2014 Certified",
+        "emoji": "\ud83e\udde0 \ud83d\udee1\ufe0f",
+        "badge_file": "assets/badges/prompt_certified.svg",
+        "description": "Supports prompt replay with structured sessions. Status: Audited and approved by a certifying authority."
+      },
+      {
+        "label": "Feed \u2014 Ready",
+        "emoji": "\ud83d\udcd1 \ud83d\ude80",
+        "badge_file": "assets/badges/feed_ready.svg",
+        "description": "The feed has been indexed for LLM compatibility. Status: Declared but not verified or signed."
+      },
+      {
+        "label": "Feed \u2014 Signed",
+        "emoji": "\ud83d\udcd1 \ud83d\udd0f",
+        "badge_file": "assets/badges/feed_signed.svg",
+        "description": "The feed has been indexed for LLM compatibility. Status: The file is cryptographically signed."
+      },
+      {
+        "label": "Feed \u2014 Verified",
+        "emoji": "\ud83d\udcd1 \ud83d\udd0d",
+        "badge_file": "assets/badges/feed_verified.svg",
+        "description": "The feed has been indexed for LLM compatibility. Status: The feed has passed automatic verification."
+      },
+      {
+        "label": "Feed \u2014 Certified",
+        "emoji": "\ud83d\udcd1 \ud83d\udee1\ufe0f",
+        "badge_file": "assets/badges/feed_certified.svg",
+        "description": "The feed has been indexed for LLM compatibility. Status: Audited and approved by a certifying authority."
+      },
+      {
+        "label": "Agent \u2014 Ready",
+        "emoji": "\ud83e\udd1d \ud83d\ude80",
+        "badge_file": "assets/badges/agent_ready.svg",
+        "description": "The site is compatible with autonomous LLM agents. Status: Declared but not verified or signed."
+      },
+      {
+        "label": "Agent \u2014 Signed",
+        "emoji": "\ud83e\udd1d \ud83d\udd0f",
+        "badge_file": "assets/badges/agent_signed.svg",
+        "description": "The site is compatible with autonomous LLM agents. Status: The file is cryptographically signed."
+      },
+      {
+        "label": "Agent \u2014 Verified",
+        "emoji": "\ud83e\udd1d \ud83d\udd0d",
+        "badge_file": "assets/badges/agent_verified.svg",
+        "description": "The site is compatible with autonomous LLM agents. Status: The feed has passed automatic verification."
+      },
+      {
+        "label": "Agent \u2014 Certified",
+        "emoji": "\ud83e\udd1d \ud83d\udee1\ufe0f",
+        "badge_file": "assets/badges/agent_certified.svg",
+        "description": "The site is compatible with autonomous LLM agents. Status: Audited and approved by a certifying authority."
+      },
+      {
+        "label": "Capabilities \u2014 Ready",
+        "emoji": "\ud83e\udde9 \ud83d\ude80",
+        "badge_file": "assets/badges/capabilities_ready.svg",
+        "description": "Declares functional endpoints and agent-facing actions. Status: Declared but not verified or signed."
+      },
+      {
+        "label": "Capabilities \u2014 Signed",
+        "emoji": "\ud83e\udde9 \ud83d\udd0f",
+        "badge_file": "assets/badges/capabilities_signed.svg",
+        "description": "Declares functional endpoints and agent-facing actions. Status: The file is cryptographically signed."
+      },
+      {
+        "label": "Capabilities \u2014 Verified",
+        "emoji": "\ud83e\udde9 \ud83d\udd0d",
+        "badge_file": "assets/badges/capabilities_verified.svg",
+        "description": "Declares functional endpoints and agent-facing actions. Status: The feed has passed automatic verification."
+      },
+      {
+        "label": "Capabilities \u2014 Certified",
+        "emoji": "\ud83e\udde9 \ud83d\udee1\ufe0f",
+        "badge_file": "assets/badges/capabilities_certified.svg",
+        "description": "Declares functional endpoints and agent-facing actions. Status: Audited and approved by a certifying authority."
+      }
+    ]
+  }
+}
