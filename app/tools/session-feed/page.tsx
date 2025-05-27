@@ -60,7 +60,7 @@ export default function SessionFeedPage() {
             <div className="mt-4">
               <ExportToLLMButton
                 context="static"
-                staticPath="demo/prompt/generate-session-feed.llmfeed.json"
+                staticPath="demo/prompt/generate-session-feed"
               />
             </div>
           </CardContent>

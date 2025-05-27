@@ -25,20 +25,4 @@ Thumbs.db
 # Mac system files
 *.DS_Store
 
-# Feed and export artifacts
-*.llmfeed.json
-*.zip
-*.sig
-*.pem
 
-# Public/generated OG images (optional: keep /og/news/ or filter by name)
-public/og/*.png
-!public/og/news/*.png
-
-# Feed drafts or local tests
-*.draft.*
-test_*.json
-*.tmp.json
-
-# Others
-*.log

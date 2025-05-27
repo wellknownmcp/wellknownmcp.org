@@ -130,7 +130,7 @@ export default function APIExplainedPage() {
               <li>
                 <Link
                   className="underline"
-                  href="/tools/04_agent-behavior/agent-behaviour"
+                  href="/spec/04_agent-behavior/agent-behaviour"
                 >
                   Agent Behaviour
                 </Link>
@@ -146,7 +146,7 @@ export default function APIExplainedPage() {
               <li>
                 <Link
                   className="underline"
-                  href="/spec/03_llmfeed_extensions/llmfeed-extensions_api"
+                  href="/spec/03_llmfeed_extensions/llmfeed_extensions_api"
                 >
                   API Extension Spec
                 </Link>

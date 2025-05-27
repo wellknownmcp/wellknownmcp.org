@@ -81,7 +81,7 @@ Wrap the result in a valid \`session.llmfeed.json\` so I can reuse it later or t
             </span>
             <ExportToLLMButton
               context="static"
-              staticPath="demo/prompt/generate-session-feed.llmfeed.json"
+              staticPath="demo/prompt/generate-session-feed"
               mini
               clipboard
             />

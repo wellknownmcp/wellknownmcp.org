@@ -51,7 +51,7 @@ export default function PromptToolPage() {
               </span>
               <ExportToLLMButton
                 context="static"
-                staticPath="demo/prompt/mcp-mode-activation.llmfeed.json"
+                staticPath="demo/prompt/mcp-mode-activation"
                 mini
                 clipboard
               />
@@ -63,7 +63,7 @@ export default function PromptToolPage() {
               </span>
               <ExportToLLMButton
                 context="static"
-                staticPath="demo/prompts/generate-session-feed.llmfeed.json"
+                staticPath="demo/prompts/generate-session-feed"
                 mini
                 clipboard
               />
@@ -75,7 +75,7 @@ export default function PromptToolPage() {
               </span>
               <ExportToLLMButton
                 context="static"
-                staticPath="demo/prompts/mcp-agent-behavior-override.llmfeed.json"
+                staticPath="demo/prompts/mcp-agent-behavior-override"
                 mini
                 clipboard
               />

@@ -281,7 +281,7 @@ export default function WellKnownExplainedPage() {
                 <code>robots.txt</code> and <code>sitemap.xml</code>
                 <ExportToLLMButton
                   context="static"
-                  staticPath="demo/.well-known/manifesto.llmfeed.json"
+                  staticPath="demo/.well-known/manifesto"
                   mini
                   clipboard
                 />
@@ -317,7 +317,7 @@ export default function WellKnownExplainedPage() {
             <p>
               See also:{' '}
               <Link
-                href="/tools/04_agent-behavior/agent-behaviour"
+                href="/spec/04_agent-behavior/agent-behaviour"
                 className="underline"
               >
                 expected agent behaviour

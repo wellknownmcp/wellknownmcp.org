@@ -43,7 +43,7 @@ export default function PricingToolPage() {
         <h2 className="text-lg font-semibold mt-6">📂 Example Feed</h2>
         <ExportToLLMButton
           context="static"
-          staticPath="demo/pricing/demo-pricing"
+          staticPath="demo/pricing"
           highlight
         />
         <p className="text-xs text-muted-foreground">

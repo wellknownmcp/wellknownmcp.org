@@ -63,7 +63,7 @@ export default function AgentBehaviourPage() {
               </span>
               <ExportToLLMButton
                 context="static"
-                staticPath=".well-known/prompts/mcp-agent-behavior-override.llmfeed.json"
+                staticPath=".well-known/prompts/mcp-agent-behavior-override"
                 mini
                 clipboard
               />
@@ -126,7 +126,10 @@ export default function AgentBehaviourPage() {
         <CardContent className="text-sm text-muted-foreground space-y-2">
           <ul className="list-disc pl-6">
             <li>
-              <Link href="/spec/04_agent-behavior/agent-behaviour_flagging" className="underline">
+              <Link
+                href="/spec/04_agent-behavior/agent-behaviour_flagging"
+                className="underline"
+              >
                 Flagging & Reporting
               </Link>
             </li>
