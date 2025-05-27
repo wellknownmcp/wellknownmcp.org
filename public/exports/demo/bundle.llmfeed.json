@@ -1,0 +1,75 @@
+{
+  "feed_type": "export",
+  "metadata": {
+    "title": "Project Archive Bundle",
+    "origin": "https://wellknownmcp.org",
+    "description": "Structured overview of project archive contents for agent use",
+    "generated_at": "2025-05-19T17:31:46.119915Z"
+  },
+  "data": {
+    "files": [
+      {
+        "path": "README.md",
+        "tags": [
+          "documentation",
+          "entrypoint"
+        ],
+        "description": "Main introduction to the project",
+        "content": "# Welcome to the Project\nThis archive contains the main modules and documentation."
+      },
+      {
+        "path": "spec/llmfeed.md",
+        "tags": [
+          "spec",
+          "llmfeed",
+          "core"
+        ],
+        "description_llm": "Describes the LLMFeed structure and canonical blocks",
+        "length": 5874
+      },
+      {
+        "path": "images/logo.svg",
+        "tags": [
+          "visual",
+          "branding"
+        ],
+        "description": "Vector logo for public use"
+      },
+      {
+        "path": "LICENSE",
+        "tags": [
+          "legal"
+        ],
+        "description": "MIT License for open use"
+      }
+    ]
+  },
+  "trust": {
+    "signed_blocks": [
+      "all"
+    ],
+    "certifier": "https://llmca.org",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "scope": "full",
+    "warning": "This feed is fully signed."
+  },
+  "signature": {
+    "algorithm": "ed25519",
+    "value": "Tzjn67ywYvLH6uI38APxKQV1Ut9yLam/0Gfilug1cAhNVWC9HD7GLI7ZgqWYqWl6unioqXY9iHycRvY78WIxBg==",
+    "created_at": "2025-05-27T07:40:27.474440+00:00"
+  },
+  "certification": {
+    "certifier": "https://llmca.org",
+    "level": "silver",
+    "targets": [
+      "all"
+    ],
+    "issued_at": "2025-05-27T07:40:41.183513+00:00",
+    "expires_at": "",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "algorithm": "ed25519",
+    "public_key_hint": "https://llmca.org/.well-known/llmca_cert.pem",
+    "value": "T8ljLq4yxkSmSUZnIZ94xwf+Pn6/JmF/DfCVJs88RTmuc/KH30VT7MD4k72SvwWlnT/cSpznBrKWbw2hBxmzBg=="
+  }
+}

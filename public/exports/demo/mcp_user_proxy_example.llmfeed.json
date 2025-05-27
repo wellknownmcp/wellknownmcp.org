@@ -1,0 +1,55 @@
+{
+  "feed_type": "mcp",
+  "metadata": {
+    "title": "MCP Capsule \u2014 GitHub user profile",
+    "origin": "https://github.com/johndoe",
+    "generated_at": "2025-05-20T10:00:00Z"
+  },
+  "prompts": [
+    {
+      "intent": "portfolio-query",
+      "keywords": [
+        "project",
+        "code",
+        "open source"
+      ],
+      "description": "Ask me about my public GitHub repositories"
+    }
+  ],
+  "trust": {
+    "scope": "full",
+    "signed_blocks": [
+      "all"
+    ],
+    "certifier": "https://llmca.org",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "warning": "This feed is fully signed."
+  },
+  "signature": {
+    "algorithm": "ed25519",
+    "value": "OpBw+wfilPJ4DGfghSN9TtNRCsaZYzse/WOMMneBKMf2OOcKsbW4hB/rMsZD6q57WiZCS6/8Pq9xJJkozUyaCg==",
+    "created_at": "2025-05-27T07:40:28.625918+00:00"
+  },
+  "certification": {
+    "certifier": "https://llmca.org",
+    "level": "silver",
+    "targets": [
+      "all"
+    ],
+    "issued_at": "2025-05-27T07:40:42.379460+00:00",
+    "expires_at": "",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "algorithm": "ed25519",
+    "public_key_hint": "https://llmca.org/.well-known/llmca_cert.pem",
+    "value": "T8ljLq4yxkSmSUZnIZ94xwf+Pn6/JmF/DfCVJs88RTmuc/KH30VT7MD4k72SvwWlnT/cSpznBrKWbw2hBxmzBg=="
+  },
+  "audience": [
+    "llm",
+    "recruiter"
+  ],
+  "agent_behavior": {
+    "allows_contextual_summary": true,
+    "requires_profile_respect": true
+  }
+}

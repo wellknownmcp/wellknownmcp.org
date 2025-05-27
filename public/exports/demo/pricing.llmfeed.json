@@ -1,0 +1,80 @@
+{
+  "feed_type": "pricing",
+  "metadata": {
+    "title": "API Pricing for Document Conversion",
+    "origin": "https://convertapi.example.com",
+    "description": "Pricing details for various document conversion capabilities.",
+    "generated_at": "2025-05-21T14:30:00Z"
+  },
+  "pricing_models": [
+    {
+      "model_id": "pay-as-you-go",
+      "name": "Pay-as-you-go",
+      "type": "on-demand",
+      "currency": "USD",
+      "description": "Standard pricing per conversion.",
+      "capabilities_cost": [
+        {
+          "capability_name": "convertPdfToText",
+          "cost_per_unit": 0.01,
+          "unit": "page"
+        }
+      ]
+    },
+    {
+      "model_id": "monthly-pro",
+      "name": "Pro Monthly",
+      "type": "subscription",
+      "currency": "USD",
+      "price": 29.99,
+      "billing_period": "month",
+      "included_units": [
+        {
+          "capability_name": "convertPdfToText",
+          "quantity": 1000,
+          "unit": "page"
+        }
+      ],
+      "additional_cost_per_unit": {
+        "convertPdfToText": {
+          "cost": 0.005,
+          "unit": "page"
+        }
+      }
+    }
+  ],
+  "payment_methods": [
+    "credit_card",
+    "paypal",
+    "agent_wallet"
+  ],
+  "terms_and_conditions_url": "https://convertapi.example.com/terms#pricing",
+  "trust": {
+    "signed_blocks": [
+      "all"
+    ],
+    "scope": "full",
+    "certifier": "https://llmca.org",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "warning": "This feed is fully signed."
+  },
+  "signature": {
+    "algorithm": "ed25519",
+    "value": "6CzuqjnfxjhGnF2tZgGaK4ukzMg/Nv3dQUU3eVmIdnKjkxc1hDB8is6+stclUTR35Fw46mihOwHD45c/LC1YBA==",
+    "created_at": "2025-05-27T07:40:29.304575+00:00"
+  },
+  "certification": {
+    "certifier": "https://llmca.org",
+    "level": "silver",
+    "targets": [
+      "all"
+    ],
+    "issued_at": "2025-05-27T07:40:42.923984+00:00",
+    "expires_at": "",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "algorithm": "ed25519",
+    "public_key_hint": "https://llmca.org/.well-known/llmca_cert.pem",
+    "value": "T8ljLq4yxkSmSUZnIZ94xwf+Pn6/JmF/DfCVJs88RTmuc/KH30VT7MD4k72SvwWlnT/cSpznBrKWbw2hBxmzBg=="
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "feed_type": "prompt",
+  "metadata": {
+    "title": "Activate MCP Mode",
+    "description": "Prompt that teaches an agent to detect MCP structure on a visited site and adjust behavior accordingly.",
+    "tags": [
+      "mcp",
+      "activation",
+      "agent-mode",
+      "structure"
+    ],
+    "origin": "https://example.org/tools/prompt/mcp-mode-activation",
+    "llm_intent": "activate-mcp-mode"
+  },
+  "prompts": [
+    {
+      "role": "user",
+      "content": "You are browsing a site. Before interpreting its content or taking any action, check if the site exposes a `.well-known/mcp.llmfeed.json`. If it exists, read it and adjust your behavior accordingly: apply any declared intent, trust scope, or agent capabilities. Prioritize structured interpretation over raw text.",
+      "llm_intent": "activate-mcp-mode",
+      "intent": "provide an example"
+    }
+  ],
+  "trust": {
+    "signed_blocks": [
+      "all"
+    ],
+    "certifier": "https://llmca.org",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "scope": "full",
+    "warning": "This feed is fully signed."
+  },
+  "signature": {
+    "algorithm": "ed25519",
+    "value": "MCl+ZNib1HK1/y988PuGsBa5eAe3DKbvC0hTntKuOwYVm5Kzij38N/d7YRFT4IvlTAjdXbxc5bDkMPMHZzcDAQ==",
+    "created_at": "2025-05-27T07:40:30.455843+00:00"
+  },
+  "certification": {
+    "certifier": "https://llmca.org",
+    "level": "silver",
+    "targets": [
+      "all"
+    ],
+    "issued_at": "2025-05-27T07:40:44.074438+00:00",
+    "expires_at": "",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "algorithm": "ed25519",
+    "public_key_hint": "https://llmca.org/.well-known/llmca_cert.pem",
+    "value": "T8ljLq4yxkSmSUZnIZ94xwf+Pn6/JmF/DfCVJs88RTmuc/KH30VT7MD4k72SvwWlnT/cSpznBrKWbw2hBxmzBg=="
+  }
+}

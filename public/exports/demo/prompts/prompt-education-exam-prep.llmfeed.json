@@ -1,0 +1,38 @@
+{
+  "feed_type": "prompt",
+  "metadata": {
+    "title": "Exam Prep: Modern History",
+    "origin": "https://wellknownmcp.org/export/prompt-education-exam-prep.llmfeed.json"
+  },
+  "intent": "create a timeline summary and flashcards",
+  "result_expected": "text",
+  "prompt_body": "Summarize the key events of WWII and generate flashcards for student revision.",
+  "trust": {
+    "signed_blocks": [
+      "all"
+    ],
+    "certifier": "https://llmca.org",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "scope": "full",
+    "warning": "This feed is fully signed."
+  },
+  "signature": {
+    "algorithm": "ed25519",
+    "value": "MzWeK0rKPps/83ATFxlRAVeN7dAYn7RP8AXGF6R6Ce2+Cevll3HLJF+k6N2gEphd7fVx8vOWjq7m/8+0Jj5DCA==",
+    "created_at": "2025-05-27T07:40:31.349932+00:00"
+  },
+  "certification": {
+    "certifier": "https://llmca.org",
+    "level": "silver",
+    "targets": [
+      "all"
+    ],
+    "issued_at": "2025-05-27T07:40:45.120413+00:00",
+    "expires_at": "",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "algorithm": "ed25519",
+    "public_key_hint": "https://llmca.org/.well-known/llmca_cert.pem",
+    "value": "T8ljLq4yxkSmSUZnIZ94xwf+Pn6/JmF/DfCVJs88RTmuc/KH30VT7MD4k72SvwWlnT/cSpznBrKWbw2hBxmzBg=="
+  }
+}

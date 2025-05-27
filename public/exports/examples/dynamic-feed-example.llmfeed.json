@@ -1,0 +1,64 @@
+{
+  "origin": "https://example.com",
+  "blocks": [
+    {
+      "data": {
+        "title": "Dynamic Feed Example",
+        "content": "This MCP feed shows how an authenticated dynamic export could be requested."
+      }
+    },
+    {
+      "api": {
+        "auth_required": true,
+        "auth_url": "https://example.com/api/login",
+        "dynamic_feed_url": "https://example.com/api/feed?key={KEY}"
+      }
+    },
+    {
+      "fallback": {
+        "strategy": "Offer manual login if automated access fails."
+      }
+    },
+    {
+      "signature": {
+        "algorithm": "RSA-SHA256",
+        "certificate_by": "example.com",
+        "value": "dummy_signature_base64",
+        "signed_blocks": [
+          "data",
+          "api",
+          "fallback"
+        ]
+      }
+    }
+  ],
+  "trust": {
+    "signed_blocks": [
+      "all"
+    ],
+    "certifier": "https://llmca.org",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "scope": "full",
+    "warning": "This feed is fully signed."
+  },
+  "signature": {
+    "algorithm": "ed25519",
+    "value": "JU/zhj6CSIaMW15BjRO9LMXfXUnUrBBJU0oFbZjdtp8n4XlB0wjP3EfGRP1+kbTMURYVLvynXs3YYxL64v9BDQ==",
+    "created_at": "2025-05-27T07:40:32.452513+00:00"
+  },
+  "certification": {
+    "certifier": "https://llmca.org",
+    "level": "silver",
+    "targets": [
+      "all"
+    ],
+    "issued_at": "2025-05-27T07:40:46.386460+00:00",
+    "expires_at": "",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "algorithm": "ed25519",
+    "public_key_hint": "https://llmca.org/.well-known/llmca_cert.pem",
+    "value": "T8ljLq4yxkSmSUZnIZ94xwf+Pn6/JmF/DfCVJs88RTmuc/KH30VT7MD4k72SvwWlnT/cSpznBrKWbw2hBxmzBg=="
+  },
+  "feed_type": "export"
+}

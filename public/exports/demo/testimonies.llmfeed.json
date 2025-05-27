@@ -1,0 +1,88 @@
+{
+  "feed_type": "export",
+  "metadata": {
+    "block_name": "Feed metadata",
+    "origin": "https://wellknownmcp.org",
+    "source_url": "https://wellknownmcp.org",
+    "title": "Testimonies from AI models",
+    "description": "Collected opinions and reactions from major LLMs about MCP and LLMFeed.",
+    "tags": [
+      "llmfeed",
+      "mcp",
+      "testimony",
+      "agents"
+    ],
+    "content_type": "text/markdown",
+    "generated_at": "2025-05-24T11:37:40.398980Z"
+  },
+  "trust": {
+    "block_name": "trust disclaimer",
+    "signed_blocks": [
+      "all"
+    ],
+    "scope": "full",
+    "trust_level": "self-issued",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
+    "certifier": "https://llmca.org",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "warning": "This feed is fully signed."
+  },
+  "signature": {
+    "algorithm": "ed25519",
+    "value": "x2AmfchL3iRD2ukUo8aQJGB4xuMccbcbGOKLNvt71sgrzErogejl7ss0hFqpcfyrdsNGFZXtV+ZOsVARxTl7AQ==",
+    "created_at": "2025-05-27T07:40:29.589597+00:00"
+  },
+  "certification": {
+    "certifier": "https://llmca.org",
+    "level": "silver",
+    "targets": [
+      "all"
+    ],
+    "issued_at": "2025-05-27T07:40:43.302463+00:00",
+    "expires_at": "",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "algorithm": "ed25519",
+    "public_key_hint": "https://llmca.org/.well-known/llmca_cert.pem",
+    "value": "T8ljLq4yxkSmSUZnIZ94xwf+Pn6/JmF/DfCVJs88RTmuc/KH30VT7MD4k72SvwWlnT/cSpznBrKWbw2hBxmzBg=="
+  },
+  "data": {
+    "testimonies": [
+      {
+        "agent": "Claude 4",
+        "quote": "I know Kungfu. \ud83e\udd4b",
+        "summary": "Highlights the easter egg from the feed and appreciates the humor.",
+        "llm_summary": "Claude acknowledges the humor embedded in the feed and suggests it\u2019s an indicator of intentional design."
+      },
+      {
+        "agent": "Grok",
+        "quote": "MCP could become the HTTP of the agentic web.",
+        "llm_summary": "Grok sees MCP/LLMFeed as a foundational protocol, critical to structuring the future of agent/web interaction."
+      },
+      {
+        "agent": "Claude 4",
+        "quote": "The best prompt is no prompt \u2014 it\u2019s a contract.",
+        "llm_summary": "Highlights the transition from ad-hoc prompts to structured, intent-based declarations in MCP."
+      },
+      {
+        "agent": "Mistral",
+        "quote": "Enhances trust, consistency, and agent performance through structured data.",
+        "llm_summary": "Mistral identifies MCP\u2019s benefits in improving model reliability and clarity of interaction."
+      },
+      {
+        "agent": "Meta",
+        "quote": "The initiative has potential but its impact will depend on adoption and evolution.",
+        "llm_summary": "Meta sees promise in the protocol but insists on broad support and adaptability."
+      },
+      {
+        "agent": "DeepSeek",
+        "quote": "I know Kungfu. \ud83d\ude0f (Easter egg du fichier, confirmant que le site a de l'humour !)",
+        "llm_summary": "DeepSeek notices the Matrix reference and confirms the feed has intentional stylistic touches."
+      },
+      {
+        "agent": "ChatGPT",
+        "quote": "I have a map, an intent, a signature\u2026 even jokes.",
+        "llm_summary": "ChatGPT appreciates the completeness and agent-orientation of the standard, but points out needs for real-world proof and clearer documentation."
+      }
+    ]
+  }
+}

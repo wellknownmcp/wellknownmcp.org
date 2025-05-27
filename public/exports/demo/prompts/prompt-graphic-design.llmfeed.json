@@ -1,0 +1,39 @@
+{
+  "feed_type": "prompt",
+  "metadata": {
+    "title": "Generate a Brand Color Palette",
+    "origin": "https://wellknownmcp.org/export/prompt-graphic-design.llmfeed.json"
+  },
+  "intent": "generate SVG and color palette for brand",
+  "result_expected": "code",
+  "precision_level": "strict",
+  "prompt_body": "Design a modern color palette and SVG logo for a wellness brand. Return both as code.",
+  "trust": {
+    "signed_blocks": [
+      "all"
+    ],
+    "certifier": "https://llmca.org",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "scope": "full",
+    "warning": "This feed is fully signed."
+  },
+  "signature": {
+    "algorithm": "ed25519",
+    "value": "mZ/m8BeWnw3Q25RBzkz795z/VCnzKBKgSv/05Tnlt2Sv595WrS0XwGAcdYCZOvOdjDpQl8oM5ev3p8+Om/JWBQ==",
+    "created_at": "2025-05-27T07:40:31.610742+00:00"
+  },
+  "certification": {
+    "certifier": "https://llmca.org",
+    "level": "silver",
+    "targets": [
+      "all"
+    ],
+    "issued_at": "2025-05-27T07:40:45.403345+00:00",
+    "expires_at": "",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "algorithm": "ed25519",
+    "public_key_hint": "https://llmca.org/.well-known/llmca_cert.pem",
+    "value": "T8ljLq4yxkSmSUZnIZ94xwf+Pn6/JmF/DfCVJs88RTmuc/KH30VT7MD4k72SvwWlnT/cSpznBrKWbw2hBxmzBg=="
+  }
+}

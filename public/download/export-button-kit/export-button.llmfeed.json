@@ -1,0 +1,43 @@
+{
+  "feed_type": "export",
+  "metadata": {
+    "title": "LLMFeed Export Button Kit",
+    "description": "Official WellKnownMCP component kit for adding 'Export to LLM' functionality to any web application.",
+    "tags": [
+      "mcp",
+      "llmfeed",
+      "component",
+      "export-button",
+      "react",
+      "typescript",
+      "nextjs"
+    ],
+    "origin": "https://wellknownmcp.org"
+  },
+  "data": {
+    "usage": "Import ExportToLLMButton.tsx in your React/Next.js project. Adapt the route to your project. This button enables users to export a LLMFeed JSON file with one click.",
+    "recommendation": "Sign your exports, or use a signed template.llmfeed.json to inject the data. It increases the confidence of a llm which is given the json. it's not only data, it's data comming from a source, with an intent",
+	"example_file": "ExportToLLMButton.tsx",
+    "routes": [
+      {
+        "path": "https://wellknownmcp.org/tools/export-button",
+        "description": "Demo page for the Export Button on wellknownmcp.org."
+      },
+    
+    ],
+    "examples": [
+      {
+        "file": "export/currentpage/route.ts",
+        "description": "Route example for using Export Button for a current page (export this data I see on the screen)."
+      },
+      {
+        "file": "export/static/route.ts",
+        "description": "Route example for static export of a predefined LLMFeed JSON."
+      },
+      {
+        "file": "export/dynamic/route.ts",
+        "description": "Route example for generating LLMFeed JSON dynamically from server data."
+      }
+    ]
+  }
+}

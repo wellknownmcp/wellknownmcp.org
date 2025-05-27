@@ -1,0 +1,61 @@
+{
+  "feed_type": "example",
+  "metadata": {
+    "origin": "https://wellknownmcp.org/exports/demo/kungfu.llmfeed.json",
+    "title": "Kung Fu Mode Activated",
+    "description": "Playful demo feed. Shows how a minimal llmfeed.json works with signature and certification.",
+    "tags": [
+      "fun",
+      "demo",
+      "mcp",
+      "agent",
+      "matrix"
+    ],
+    "lang": "en",
+    "publisher": "wellknownmcp.org"
+  },
+  "trust": {
+    "block_name": "trust disclaimer",
+    "signed_blocks": [
+      "all"
+    ],
+    "scope": "full",
+    "warning": "This feed is fully signed.",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
+    "certifier": "https://llmca.org",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1"
+  },
+  "signature": {
+    "algorithm": "ed25519",
+    "value": "+cZpf0UhseBpM8d04yFJSuxpLRYZLHaPKeEuLXL6V9ZGS8jAem7X8lgNcJWRq2kGrkRepeb3SoVY4We5JYewBA==",
+    "created_at": "2025-05-12T17:16:55.095555Z"
+  },
+  "certification": {
+    "certifier": "llmca.org",
+    "level": "gold",
+    "targets": [
+      "feed_type",
+      "trust",
+      "data",
+      "metadata",
+      "signature"
+    ],
+    "issued_at": "2025-05-12T17:56:12.787114Z",
+    "expires_at": "",
+    "public_key_hint": "https://llmca.org/.well-known/llmca_cert.pem",
+    "signature_hash": "iPfUjmP4oXSqWj+/2InJUTatyzTx9hJRW3gngvrs6Qo=",
+    "value": "tAtFGuVT0UtI8Oq//r+ueR7c7D2VCSVzslO8ftH5S9ibzQN3+lcryQkMBm9A/sDDrm1fk2m4WAB+0SLQuu1JAQ==",
+    "algorithm": "ed25519"
+  },
+  "data": [
+    {
+      "type": "quote",
+      "from": "Neo",
+      "content": "Now I know kung fu."
+    },
+    {
+      "type": "summary",
+      "content": "Minimal example of a valid llmfeed.json. Contains a single quote and signature blocks. Useful as template for developers."
+    }
+  ]
+}
