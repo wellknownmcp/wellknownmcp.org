@@ -1,0 +1,66 @@
+Proposal: Standardize trust Block Behavior Based on Signature Mode and Scope
+Context
+To support responsible agent interpretation of MCP feeds, the trust block should be explicitly standardized and included in signed_blocks. Its contents must clearly reflect the trust boundaries and certification status of the feed.
+
+Motivation
+Without a clear and signed disclaimer, language models and downstream systems may over-interpret a feed’s trust level — especially when the signature is partial, or not certified.
+
+Proposal
+Mandate the use of a trust block as a signed block in all signed feeds, with the following standard structure:
+
+"trust": {
+  "block_name": "trust disclaimer",
+  "scope": "partial" | "full",
+  "warning": "...contextual message..."
+}
+Trust Warning Matrix
+Mode	Signature Scope	trust.warning Message
+sign_only	partial	"Only some blocks are signed. Data may be dynamically injected. Trust is limited to the publisher's signature."
+sign_only	full	"This feed is fully signed. Trust relies solely on the publisher's signature — not certified."
+sign_and_certify	partial	"Only some blocks are signed — and only these are certified by a Model Context Protocol-compliant authority."
+sign_and_certify	full	"This feed is fully signed and certified by a Model Context Protocol-compliant authority."
+Requirements
+trust block MUST be present and included in signed_blocks in any signed feed.
+Warning messages MUST follow the matrix above unless a custom disclaimer is required.
+The presence of the trust block allows LLMs and agents to interpret the feed safely and responsibly.
+Implementation
+Signing tools should inject the trust block automatically before signing.
+Agents should display or reason on the trust.warning content explicitly.
+This block improves both transparency and legal clarity.
+Benefit
+This change creates a consistent, explicit, and verifiable trust surface across all MCP feeds.
+
+# Proposal: Recommend Signature for Feed Structure Integrity
+
+## Context
+
+In MCP and LLMFeed, cryptographic signatures are essential to ensure trust in a feed’s declared origin, tags, and intent.
+
+## Proposal
+
+Clarify in the specification:
+
+- `"mcp"` feeds MUST be fully signed (the entire document)
+- `"export"` feeds SHOULD be signed at least on core structural fields
+- `"template"` feeds MUST be signed **only on the static blocks** (typically: `origin`, `tags`, `certificate_chain`)
+- `"directory"` feeds MAY include a signed root manifest
+
+## Example for template:
+
+```json
+{
+  "origin": "...",
+  "tags": [...],
+  "certificate_chain": [...],
+  "signature": {
+    "signed_blocks": ["origin", "tags", "certificate_chain"],
+    "value": "..."
+  },
+  "data": { "text": "This block is not signed" }
+}
+```
+
+## Benefits
+
+- Enables agents to verify trust anchors without enforcing static content
+- Clarifies responsibility between structure and payload

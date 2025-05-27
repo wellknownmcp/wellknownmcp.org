@@ -1,0 +1,41 @@
+{
+  "feed_type": "template",
+  "origin": {
+    "block_name": "original resource reference",
+    "url": "https://wellknownmcp.org/",
+    "title": "wellknownmcp export llmfeed"
+  },
+  "tags": [
+    "mcp",
+    "llmfeed",
+    "agent"
+    "llmca",
+    "interoperability",
+    "protocol"
+  ],
+  "summary": "The foundational declaration of the Model Context Protocol (MCP), signed for agent and human trust.",
+  "publisher": {
+    "block_name": "content publisher",
+    "name": "WellKnownMCP Team",
+    "email": "opensource@wellknownmcp.org",
+    "url": "https://wellknownmcp.org"
+  },
+  "license": {
+    "block_name": "usage license",
+    "type": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+ 
+  "signature": {
+    "signed_blocks": [
+      "feed_type",
+      "origin",
+      "tags",
+      "summary",
+      "publisher",
+      "license",
+      "certificate_chain"
+    ],
+    "value": "BASE64_ED25519_SIGNATURE_PLACEHOLDER"
+  }
+}

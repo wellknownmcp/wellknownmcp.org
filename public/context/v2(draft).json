@@ -1,0 +1,49 @@
+{
+  "@context": {
+    "origin": {
+      "@id": "https://wellknownmcp.org/vocab#origin",
+      "@type": "@id",
+      "description": "Primary authority or root source of the feed."
+    },
+    "feeds": {
+      "@id": "https://wellknownmcp.org/vocab#feeds",
+      "@type": "@id",
+      "description": "List of machine-readable feed entries."
+    },
+    "audience": {
+      "@id": "https://wellknownmcp.org/vocab#audience",
+      "@type": "xsd:string",
+      "description": "Intended audience, standardized vocabulary (llm-agents, humans, multi-agent-systems)."
+    },
+    "trust_level": {
+      "@id": "https://wellknownmcp.org/vocab#trust_level",
+      "@type": "xsd:string",
+      "description": "Declared trust level of the feed (internal, certified, gold, platinum)."
+    },
+    "scope": {
+      "@id": "https://wellknownmcp.org/vocab#scope",
+      "@type": "xsd:string",
+      "description": "Domain of application for the feed (global, github-repositories, cloud-only, iot-devices)."
+    },
+    "description": {
+      "@id": "https://wellknownmcp.org/vocab#description",
+      "@type": "xsd:string",
+      "description": "Natural language human-readable summary of the feed."
+    },
+    "keywords": {
+      "@id": "https://wellknownmcp.org/vocab#keywords",
+      "@type": "xsd:string",
+      "description": "Taxonomy-driven thematic tags for indexing and discoverability."
+    },
+    "capabilities": {
+      "@id": "https://wellknownmcp.org/vocab#capabilities",
+      "@type": "@id",
+      "description": "List of action capabilities available to authorized agents."
+    },
+    "recommended_behaviors": {
+      "@id": "https://wellknownmcp.org/vocab#recommended_behaviors",
+      "@type": "@id",
+      "description": "Best practices or ethical usage recommendations for interacting with the feed."
+    }
+  }
+}

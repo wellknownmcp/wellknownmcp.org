@@ -1,0 +1,79 @@
+{
+  "origin": "https://wellknownmcp.org",
+  "metadata": {
+    "title": "MCP Lite Declaration",
+    "feed_type": "mcp-lite",
+    "lang": "en",
+    "version": "1.1"
+  },
+  "data": [
+    {
+      "type": "intent",
+      "content": "This site exposes structured public feeds for agent inspection. No login required. Feeds are signed, exportable and viewable."
+    },
+    {
+      "type": "endpoint",
+      "name": "feeds",
+      "url": "https://wellknownmcp.org/feeds",
+      "description": "List of available .llmfeed.json files"
+    },
+    {
+      "type": "endpoint",
+      "name": "verify",
+      "url": "https://wellknownmcp.org/verify",
+      "description": "Allows cryptographic signature verification and feed inspection."
+    },
+    {
+      "type": "endpoint",
+      "name": "llmfeedhub",
+      "url": "https://wellknownmcp.org/llmfeedhub",
+      "description": "Preview and share any feed, including drag-and-drop or upload."
+    },
+    {
+      "type": "formats_supported",
+      "formats": [
+        "llmfeed.json",
+        "markdown",
+        "pdf"
+      ],
+      "description": "All feeds support export in multiple formats"
+    },
+    {
+      "type": "trust disclaimer",
+      "scope": "full",
+      "warning": "Feeds are signed and verified. This file is not cryptographically signed."
+    },
+    {
+      "type": "legacy-crawler",
+      "robots": "/robots.txt",
+      "sitemap": "/sitemap.xml",
+      "note": "For backward-compatible agents and search indexers."
+    }
+  ],
+  "trust": {
+    "block_name": "trust disclaimer",
+    "scope": "partial",
+    "warning": "Only some blocks are signed — and only these are certified by a Model Context Protocol-compliant authority."
+  },
+  "signature": {
+    "signed_blocks": [
+      "trust"
+    ],
+    "algorithm": "ed25519",
+    "value": "B86GrJ67hcmEFowq22Ovikd0gSvFbNmsTtZPJ+VAD6aWiGg+zoMZie7GWy3CQUAtCAdZKAbPcAgAh8gJUOMECQ==",
+    "issued_at": "2025-05-02T19:27:13.683793Z",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem"
+  },
+  "certification": {
+    "certified_blocks": [
+      "signature"
+    ],
+    "algorithm": "ed25519",
+    "value": "OwRRZf2t796JOUVrj00EpgPZff9WZah/0WrYOxoLXCRSKW1A7NPo+x41vSdRBUO+CIqBQJhhYLnCbAJGv4EiCA==",
+    "issued_at": "2025-05-02T19:27:13.685852Z",
+    "public_key_hint": "https://llmca.org/.well-known/public.pem",
+    "certification_level": "gold",
+    "policy_reference": "https://llmca.org/.well-known/certification-policy.json",
+    "audit_reference": "https://llmca.org/.well-known/audit-reference.json"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "intent": "enhance_spec_feed",
+  "goal": "Ensure that each block of a spec.llmfeed.json is complete, precise, and LLM-optimized.",
+  "steps": [
+    "For each block in data:",
+    "- Add 'tags': ['changelog', 'versioning', 'history'] if missing",
+    "- Add 'description': 'Log of specification changes.' if missing",
+    "- Add 'description_llm': 'This file contains the chronological history of changes to the LLMFeed/MCP specification.' if missing",
+    "- Ensure all markdown blocks have clean formatting and a valid 'block_name'",
+    "- Normalize timestamps and generated_at fields if present",
+    "- Remove placeholder or partial blocks that don't carry spec value"
+  ],
+  "output_format": "spec.llmfeed.json",
+  "signature_hint": "Sign only once each spec block has valid metadata and clarity for model interpretation."
+}

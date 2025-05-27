@@ -1,0 +1,33 @@
+{
+  "feed_type": "session-feed",
+  "metadata": {
+    "origin": "https://chat.openai.com",
+    "source_url": "https://chat.openai.com/c/session-llmfeed-exportbutton",
+    "title": "Design Session - LLMFeed Export Button Spec",
+    "description": "Full design session for the LLMFeed ExportToLLMButton, API routes, recipes structure, and MCP dynamic export standard.",
+    "tags": [
+      "llmfeed",
+      "mcp",
+      "session",
+      "design",
+      "export-button",
+      "dynamic-recipes"
+    ],
+    "content_type": "text+specification+code",
+    "generated_at": "2025-05-12T15:29:35.365088Z"
+  },
+  "trust": {
+    "trust_level": "self-declared",
+    "certifier": "https://wellknownmcp.org",
+    "agent_hint": "This file is an assistant-generated session capture to facilitate project continuation in another window.",
+    "block_name": "trust disclaimer",
+    "scope": "partial",
+    "warning": "This export is assistant-generated and not signed by a certified authority."
+  },
+  "data": {
+    "session_type": "design",
+    "format": "spec + discussion + code examples",
+    "main_topic": "ExportToLLMButton for wellknownmcp.org",
+    "chat_transcript": "Full conversation between user and assistant covering:\n- Modes of ExportToLLMButton (current/static/dynamic)\n- Recipes spec redesign with id, context, blocks\n- API route behaviors (/api/export/feed, /static, /dynamic)\n- Deep cleaning logic (class/style/id/data-* removal)\n- Block order guidelines (feed_type, metadata, trust, signature, certification, data)\n- Optional type 'page' for internal Next pages\n- Example code for routes and recipes\n- Discussion on improving real-life robustness (e.g. local fetch for internal pages)\n- Final exhaustive ExportToLLMButton section ready for llmfeed-extensions.md"
+  }
+}

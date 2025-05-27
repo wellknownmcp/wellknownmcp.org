@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://wellknownmcp.org
+
+# Sitemaps
+Sitemap: https://wellknownmcp.org/sitemap.xml

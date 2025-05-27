@@ -1,0 +1,16 @@
+{
+  "project": "wellknownmcp.org",
+  "framework": "next",
+  "typescript": true,
+  "style": "default",
+  "tailwind": {
+    "config": "tailwind.config.js",
+    "css": "styles/globals.css",
+    "baseColor": "zinc",
+    "radius": "default"
+  },
+  "paths": {
+    "components": "components/ui",
+    "utils": "lib/utils"
+  }
+}

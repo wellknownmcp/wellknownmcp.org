@@ -1,0 +1,55 @@
+{
+  "feed_type": "session-feed",
+  "origin": "https://wellknownmcp.org",
+  "created": "2025-04-30T19:41:52.173727Z",
+  "data": {
+    "block_name": "LLM Session Summary",
+    "context": "This file captures a full collaborative session between a user and a language model, aimed at finalizing the structure, memory, and export logic for the wellknownmcp.org project. It includes conceptual breakthroughs like MCP-Log and session capsule portability.",
+    "topics": [
+      "Finalisation de site",
+      "Export MCP dynamique",
+      "Signature et certification",
+      "Memory structuring",
+      "Capsule contextuelle",
+      "Interop\u00e9rabilit\u00e9 LLM"
+    ],
+    "timeline": [
+      {
+        "type": "intent",
+        "content": "Mettre en ligne la V1 de wellknownmcp.org"
+      },
+      {
+        "type": "decision",
+        "content": "Utiliser ExportOptions globalement"
+      },
+      {
+        "type": "design",
+        "content": "Navigation en 3 groupes (About, Protocol, Community)"
+      },
+      {
+        "type": "breakthrough",
+        "content": "Formaliser MCP-Log comme capsule contextuelle"
+      },
+      {
+        "type": "reflection",
+        "content": "Vers un format de conscience transf\u00e9rable entre agents"
+      }
+    ],
+    "actions": [
+      "Cr\u00e9ation du composant EnhancedFeedViewer",
+      "Export .pdf par transformation Markdown",
+      "Refactor complet de la Navbar responsive",
+      "Mise en place des fichiers .well-known",
+      "Structuration de la m\u00e9moire persistante",
+      "G\u00e9n\u00e9ration d\u2019un manifeste MCP-Log"
+    ]
+  },
+  "trust": {
+    "valid_signature": false,
+    "valid_certification": false,
+    "signed_blocks": [
+      "origin",
+      "data"
+    ]
+  }
+}

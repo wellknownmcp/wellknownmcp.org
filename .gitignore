@@ -1,0 +1,44 @@
+# Node modules
+node_modules/
+
+# Next.js build
+.next/
+out/
+
+# Logs and runtime
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode and IDEs
+.vscode/
+.idea/
+
+# Mac system files
+*.DS_Store
+
+# Feed and export artifacts
+*.llmfeed.json
+*.zip
+*.sig
+*.pem
+
+# Public/generated OG images (optional: keep /og/news/ or filter by name)
+public/og/*.png
+!public/og/news/*.png
+
+# Feed drafts or local tests
+*.draft.*
+test_*.json
+*.tmp.json
+
+# Others
+*.log

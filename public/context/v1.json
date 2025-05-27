@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "origin": {
+      "@id": "https://wellknownmcp.org/vocab#origin",
+      "@type": "@id",
+      "description": "Root location or authority of the feed."
+    },
+    "feeds": {
+      "@id": "https://wellknownmcp.org/vocab#feeds",
+      "@type": "@id",
+      "description": "List of available feeds or resources."
+    },
+    "audience": {
+      "@id": "https://wellknownmcp.org/vocab#audience",
+      "@type": "xsd:string",
+      "description": "Intended audience for the feed (e.g., llm-agents, humans, developers)."
+    },
+    "trust_level": {
+      "@id": "https://wellknownmcp.org/vocab#trust_level",
+      "@type": "xsd:string",
+      "description": "Declared trust or certification level of the feed."
+    },
+    "scope": {
+      "@id": "https://wellknownmcp.org/vocab#scope",
+      "@type": "xsd:string",
+      "description": "Application scope where the feed is intended to be used."
+    },
+    "description": {
+      "@id": "https://wellknownmcp.org/vocab#description",
+      "@type": "xsd:string",
+      "description": "Natural language description of the feed's content."
+    },
+    "keywords": {
+      "@id": "https://wellknownmcp.org/vocab#keywords",
+      "@type": "xsd:string",
+      "description": "Thematic tags aiding discoverability and searchability."
+    },
+    "capabilities": {
+      "@id": "https://wellknownmcp.org/vocab#capabilities",
+      "@type": "@id",
+      "description": "URI pointing to a capabilities discovery file describing available actions."
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "project": "wellknownmcp.org",
+  "features": [
+    "LLMFeedHub avec slug dynamique",
+    "FeedInteractionPanel (URL, drag-drop, \u00e9diteur, explore)",
+    "EnhancedFeedViewer (signatures, certification, collapse)",
+    "Page /spec avec sidebar dynamique et layout d\u00e9di\u00e9",
+    "Routage markdown multilingue pour /about et /news",
+    "Int\u00e9gration Supabase pour /join",
+    "ExportOptions et feeds MCP",
+    "SEOHead avanc\u00e9 pour articles avec ogImage",
+    "Signatures Ed25519 + champ trust.signed_blocks"
+  ],
+  "components_worked_on": [
+    "FeedInteractionPanel.tsx",
+    "EnhancedFeedViewer.tsx",
+    "SeoHead.tsx",
+    "SpecSidebar.tsx",
+    "SpecViewer.tsx",
+    "layout.tsx (global + /spec)",
+    "ExportOptions.tsx",
+    "Navbar.tsx",
+    "TagFilterBar.tsx",
+    "LanguageSelector.tsx",
+    "join.tsx + api/route.ts"
+  ],
+  "backlog_notes": [
+    "Pr\u00e9voir collapse auto des blocs non sign\u00e9s en mode verify",
+    "Ajouter la l\u00e9gende des emojis dans EnhancedFeedViewer",
+    "R\u00e9vision du footer + navbar \u00e0 suivre",
+    "API de signature distante non prioritaire mais envisag\u00e9e",
+    "Int\u00e9gration d\u2019un \u00e9diteur live pr\u00e9vu pour llmfeedforge.org",
+    "Page /feeds : filtrer par langue, par tag (OK via scan full)",
+    "Image OG dans news + r\u00e9sum\u00e9 SEO \u00e0 partir du frontmatter",
+    "Repr\u00e9sentation arborescente des specs avec dates",
+    "Scripts Python \u00e0 jour (sign, verify) selon champ trust"
+  ],
+  "session_saved": "2025-05-06T14:57:29.949031"
+}

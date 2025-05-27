@@ -1,0 +1,15 @@
+{
+  "intent": "enhance_compiled_site",
+  "goal": "Enrich a compiled-site.llmfeed.json with clean, complete and LLM-optimized blocks.",
+  "steps": [
+    "For each block in data.files:",
+    "- Ensure 'block_name' exists",
+    "- Add 'llm_summary' if missing",
+    "- If block contains markdown content, infer and add a one-line summary",
+    "- If type is 'news' or 'markdown', inject 'tags' like ['news', 'insight']",
+    "- If block relates to a known feature (e.g. forge, prompt, api), add tags like ['feature', 'tool', 'ai']",
+    "- Remove deprecated or duplicate blocks (e.g. compiled-site-updated.llmfeed.json)"
+  ],
+  "output_format": "compiled-site.llmfeed.json",
+  "signature_hint": "Sign after all block summaries and tags are injected."
+}

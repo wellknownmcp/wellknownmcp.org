@@ -1,0 +1,74 @@
+{
+  "ar": ["about", "begin", "ethics", "faq", "launch", "manifesto", "why-mcp"],
+  "en": [
+    "about",
+    "begin",
+    "certification-guide",
+    "faq",
+    "launch",
+    "launch-hackernews",
+    "launch-medium",
+    "linkedin-post-wellknownmcp",
+    "llm-as-a-teacher",
+    "llmfeed-block-structure",
+    "manifesto",
+    "mcp-explained",
+    "opinion-stop-scraping",
+    "thread-wellknownmcp",
+    "use-cases-mcp",
+    "why-mcp"
+  ],
+  "es": [
+    "about",
+    "begin",
+    "ethics",
+    "faq",
+    "launch",
+    "llmfeed-block-structure",
+    "manifesto",
+    "use-cases-mcp",
+    "why-mcp"
+  ],
+  "fr": [
+    "about",
+    "begin",
+    "faq",
+    "launch",
+    "llmfeed-block-structure",
+    "manifesto",
+    "use-cases-mcp",
+    "why-mcp"
+  ],
+  "hi": [
+    "about",
+    "begin",
+    "ethics",
+    "faq",
+    "launch",
+    "llmfeed-block-structure",
+    "manifesto",
+    "why-mcp"
+  ],
+  "uk": [
+    "about",
+    "begin",
+    "ethics",
+    "faq",
+    "launch",
+    "llmfeed-block-structure",
+    "manifesto",
+    "use-cases-mcp",
+    "why-mcp"
+  ],
+  "zh": [
+    "about",
+    "begin",
+    "ethics",
+    "faq",
+    "launch",
+    "llmfeed-block-structure",
+    "manifesto",
+    "use-cases-mcp",
+    "why-mcp"
+  ]
+}

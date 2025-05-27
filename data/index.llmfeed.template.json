@@ -1,0 +1,40 @@
+{
+  "origin": "https://wellknownmcp.org/exports/index.llmfeed.json",
+  "metadata": {
+    "title": "Certified Feed Index",
+    "description": "Canonical list of all certified and verifiable LLMFeeds published by wellknownmcp.org",
+    "feed_type": "feed-index",
+    "lang": "en",
+    "publisher": "wellknownmcp.org",
+    "version": "1.1"
+  },
+  "trust": {
+    "block_name": "trust disclaimer",
+    "scope": "partial",
+    "warning": "Only some blocks are signed — and only these are certified by a Model Context Protocol-compliant authority."
+  },
+  "signature": {
+    "signed_blocks": [
+      "origin",
+      "trust",
+      "metadata"
+    ],
+    "algorithm": "ed25519",
+    "value": "aqVsu7YlCvP0GdTnGhL+BxyG6dcmyftOU6yaACiXMBays9u9QkQACydmpSU/apYdqFAAvbQSz8MrmHFWk3uFDw==",
+    "issued_at": "2025-05-01T18:37:35.499729Z",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem"
+  },
+  "data": [],
+  "certification": {
+    "certified_blocks": [
+      "signature"
+    ],
+    "algorithm": "ed25519",
+    "value": "9ZL/LYYxNSfZbnFFrsIRZqyV0JtZ+bHW63XBGMTVE7GPMQhN5r5qPT84cwHRjWyTFDLroBHz5+K3C6AQxZjVAA==",
+    "issued_at": "2025-05-01T18:37:35.518033Z",
+    "public_key_hint": "https://llmca.org/.well-known/llmca_cert.pem",
+    "certification_level": "gold",
+    "policy_reference": "https://llmca.org/.well-known/certification-policy.json",
+    "audit_reference": "https://llmca.org/.well-known/audit-reference.json"
+  }
+}

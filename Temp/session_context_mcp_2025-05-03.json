@@ -1,0 +1,34 @@
+{
+  "session_date": "2025-05-03",
+  "project": "wellknownmcp.org",
+  "goals": [
+    "Finaliser la page /feeds avec affichage dynamique des feeds",
+    "Structurer le syst\u00e8me d\u2019export .llmfeed.json certifiables",
+    "Mettre en place un index dynamique et une version sign\u00e9e",
+    "G\u00e9n\u00e9rer les fichiers multilingues pour manifesto, ethics, why-mcp",
+    "Cr\u00e9er les pages /feeds et /news avec filtres par tag et langue",
+    "Mettre en place le bundle core.llmfeed.json",
+    "Pr\u00e9parer l\u2019issue GitHub #8 sur les blocs canoniques",
+    "Stabiliser les composants export, badge, feedcard, inspect"
+  ],
+  "key_files_created": [
+    "public/exports/news/core.llmfeed.json",
+    "public/exports/index.dynamic.llmfeed.json",
+    "data/index.llmfeed.template.json (sign\u00e9)",
+    "news_multilang_2025-05-03.zip (FR, ES, AR, HI, ZH, UK)",
+    "components/FeedCard.tsx",
+    "components/ExportToLLMButton.tsx",
+    "components/ExportOptions.tsx (auto path)",
+    "app/feeds/page.tsx",
+    "app/news/page.tsx (filtrage avanc\u00e9)",
+    "EnhancedFeedViewer.tsx (r\u00e9sum\u00e9 + trust)"
+  ],
+  "pending_tasks": [
+    "Signer les feeds d'exemples et figer le index certifi\u00e9",
+    "Compl\u00e9ter spec-full.llmfeed.json et capsule demo",
+    "Publier les fichiers multilangues dans /public/news/{lang}/",
+    "Rapatrier tous les fichiers dans ton environnement local",
+    "Finaliser la page /inspect si besoin",
+    "Pr\u00e9parer une future API certifi\u00e9e de g\u00e9n\u00e9ration MCP"
+  ]
+}
