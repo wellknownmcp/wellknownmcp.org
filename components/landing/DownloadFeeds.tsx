@@ -29,7 +29,7 @@ export function DownloadFeeds() {
         <div className="space-y-2">
           <ExportToLLMButton
             context="static"
-            staticPath=".well-known/exports/compiled-site.llmfeed.json"
+            staticPath=".well-known/exports/compiled-site"
             highlight
           />
           <p className="text-sm text-muted-foreground text-center sm:text-left">
@@ -40,7 +40,7 @@ export function DownloadFeeds() {
         <div className="space-y-2">
           <ExportToLLMButton
             context="static"
-            staticPath="spec/spec.llmfeed.json"
+            staticPath="/spec/spec"
             highlight
           />
           <p className="text-sm text-muted-foreground text-center sm:text-left">
