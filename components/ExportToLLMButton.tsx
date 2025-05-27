@@ -44,11 +44,11 @@ export function ExportToLLMButton({
     try {
       let html = document.documentElement.outerHTML
 
-  if (context === 'current') {
-    const cloned = document.documentElement.cloneNode(true) as HTMLElement
-    cleanClonedDOM(cloned)
-    html = cloned.outerHTML
-  }
+      if (context === 'current') {
+        const cloned = document.documentElement.cloneNode(true) as HTMLElement
+        cleanClonedDOM(cloned)
+        html = cloned.outerHTML
+      }
 
       if (context === 'current') {
         const res = await fetch('/api/export/feed', {
@@ -89,13 +89,25 @@ export function ExportToLLMButton({
       }
 
       if (context === 'static') {
-        window.open(`/api/llmfeed/static/${staticPath ?? 'default'}`)
+        const path = `/api/llmfeed/static/${staticPath ?? 'default'}`
 
-        if (context === 'static' && showSignatureStatus) {
+        if (clipboard) {
           try {
-            const res = await fetch(
-              `/api/llmfeed/static/${staticPath ?? 'default'}`
-            )
+            const res = await fetch(path)
+            const feed = await res.json()
+            await navigator.clipboard.writeText(JSON.stringify(feed, null, 2))
+            console.info('✅ Static feed copied to clipboard')
+          } catch (e) {
+            console.error('❌ Failed to copy static feed to clipboard:', e)
+          }
+          return
+        }
+
+        window.open(path, '_blank')
+
+        if (showSignatureStatus) {
+          try {
+            const res = await fetch(path)
             const feed = await res.json()
             const status = extractSignatureStatus(feed)
             setSignatureStatus(status)
@@ -103,6 +115,7 @@ export function ExportToLLMButton({
             console.warn('Unable to fetch static feed signature:', e)
           }
         }
+
         return
       }
 

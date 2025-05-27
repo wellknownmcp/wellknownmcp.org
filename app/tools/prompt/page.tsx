@@ -51,7 +51,7 @@ export default function PromptToolPage() {
               </span>
               <ExportToLLMButton
                 context="static"
-                staticPath="demo/prompt/mcp-mode-activation"
+                staticPath="demo/prompts/mcp-mode-activation"
                 mini
                 clipboard
               />
