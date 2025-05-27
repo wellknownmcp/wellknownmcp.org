@@ -1,30 +1,32 @@
-import { useState } from "react"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
+'use client'
+
+import { useState } from 'react'
+import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/button'
 
 export default function JoinPage() {
-  const [email, setEmail] = useState("")
-  const [motivation, setMotivation] = useState("")
+  const [email, setEmail] = useState('')
+  const [motivation, setMotivation] = useState('')
   const [submitted, setSubmitted] = useState(false)
-  const [error, setError] = useState("")
+  const [error, setError] = useState('')
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setError("")
+    setError('')
     try {
-      const res = await fetch("/api/join", {
-        method: "POST",
+      const res = await fetch('/api/join', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({ email, motivation }),
       })
       if (!res.ok) {
-        throw new Error("Submission failed")
+        throw new Error('Submission failed')
       }
       setSubmitted(true)
     } catch (err) {
-      setError("Something went wrong. Please try again.")
+      setError('Something went wrong. Please try again.')
     }
   }
 
@@ -32,9 +34,10 @@ export default function JoinPage() {
     <div className="max-w-2xl mx-auto p-4 space-y-6">
       <h1 className="text-2xl font-bold">✨ Join the LLMCA Consortium</h1>
       <p className="text-muted-foreground">
-        LLMCA is building the trust layer for the agentic web. We certify `.llmfeed.json` files,
-        define behavioral expectations for LLMs, and help establish interoperability standards.
-        If you care about AI safety, open ecosystems, or agent ethics — we’d love to hear from you.
+        LLMCA is building the trust layer for the agentic web. We certify
+        `.llmfeed.json` files, define behavioral expectations for LLMs, and help
+        establish interoperability standards. If you care about AI safety, open
+        ecosystems, or agent ethics — we’d love to hear from you.
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -54,7 +57,7 @@ export default function JoinPage() {
           required
         />
         <Button type="submit" disabled={submitted}>
-          {submitted ? "Submitted ✅" : "Apply to join"}
+          {submitted ? 'Submitted ✅' : 'Apply to join'}
         </Button>
         {error && <p className="text-sm text-red-500">{error}</p>}
       </form>
