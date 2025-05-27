@@ -29,7 +29,7 @@ export function DownloadFeeds() {
         <div className="space-y-2">
           <ExportToLLMButton
             context="static"
-            staticPath="exports/.well-known/exports/compiled-site.llmfeed.json"
+            staticPath=".well-known/exports/compiled-site.llmfeed.json"
             highlight
           />
           <p className="text-sm text-muted-foreground text-center sm:text-left">
@@ -40,22 +40,19 @@ export function DownloadFeeds() {
         <div className="space-y-2">
           <ExportToLLMButton
             context="static"
-            staticPath="exports/spec/spec.llmfeed.json"
+            staticPath="spec/spec.llmfeed.json"
             highlight
           />
           <p className="text-sm text-muted-foreground text-center sm:text-left">
             Spec in a capusle — includes the github spec, packed for llms
           </p>
         </div>
-      
+
         <div className="space-y-2">
-          <ExportToLLMButton
-            context="dynamic"
-            dynamicId="news-en"
-            highlight
-          />
+          <ExportToLLMButton context="dynamic" dynamicId="news-en" highlight />
           <p className="text-sm text-muted-foreground text-center sm:text-left">
-            All news (EN) — grouped in a single dynamic feed for language-specific loading or archiving.
+            All news (EN) — grouped in a single dynamic feed for
+            language-specific loading or archiving.
           </p>
         </div>
       </div>
