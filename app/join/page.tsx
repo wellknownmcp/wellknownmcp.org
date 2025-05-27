@@ -70,11 +70,7 @@ export default function JoinPage() {
           intent below.
         </p>
 
-        <form
-          method="POST"
-          action="https://formspree.io/f/xzbldnko"
-          className="space-y-4 mt-4"
-        >
+        <form method="POST" action="api/join" className="space-y-4 mt-4">
           <div className="flex flex-col space-y-1">
             <label htmlFor="email" className="text-sm font-medium">
               Your email (required)
