@@ -1,112 +1,94 @@
+// app/join/page.tsx
 'use client'
 
-import { PageTitle } from '@/components/PageTitle'
-import SeoHead from '@/components/SeoHead'
-import { ShareButtons } from '@/components/ShareButtons'
-import Link from 'next/link'
+import { useState } from 'react'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Textarea } from '@/components/ui/textarea'
+import { Label } from '@/components/ui/label'
 
 export default function JoinPage() {
+  const [email, setEmail] = useState('')
+  const [motivation, setMotivation] = useState('')
+  const [status, setStatus] = useState<
+    'idle' | 'loading' | 'success' | 'error'
+  >('idle')
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setStatus('loading')
+
+    try {
+      const res = await fetch('/api/join', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, motivation }),
+      })
+
+      if (!res.ok) throw new Error()
+      setStatus('success')
+      setEmail('')
+      setMotivation('')
+    } catch {
+      setStatus('error')
+    }
+  }
+
   return (
-    <>
-      <SeoHead
-        title="Join the MCP Ecosystem"
-        description="Declare your interest in trust, agents, certification or feed reputation. Help shape the agentic web."
-        canonicalUrl="https://wellknownmcp.org/join"
-        keywords={[
-          'join',
-          'llmca',
-          'consortium',
-          'trust',
-          'agent',
-          'certification',
-          'governance',
-        ]}
-        llmlang="en"
-        llmIntent="join the MCP consortium"
-        llmTopic="open agent standard and certification"
-      />
-
-      <div className="max-w-2xl mx-auto py-10 space-y-8">
-        <PageTitle
-          title="Join the MCP Ecosystem"
-          subtitle="Help shape the agentic web with trust, governance and shared vision"
-        />
-
-        <p className="text-sm text-muted-foreground">
-          This initiative is backed by a signed{' '}
-          <Link href="/exports/manifesto.llmfeed.json" className="underline">
-            manifesto
-          </Link>
-          , published at <code>/.well-known/manifesto.llmfeed.json</code>. Our
-          goal: build a web where agents and humans coexist — safely,
-          responsibly, and independently of platforms.
+    <div className="max-w-xl mx-auto px-4 py-16 space-y-8">
+      <div className="space-y-2 text-center">
+        <h1 className="text-3xl font-bold">Join the LLMCA Initiative</h1>
+        <p className="text-muted-foreground">
+          The Model Context Protocol is becoming a new standard. Get involved
+          now to shape the future of interpretable agents.
         </p>
-
-        <div className="space-y-2 mt-6">
-          <h2 className="text-lg font-semibold">👥 Who should join?</h2>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-muted-foreground mt-2 list-disc pl-5">
-            <li>🧠 AI researcher curious about agent trust</li>
-            <li>🛠️ Indie developer building tools or apps</li>
-            <li>🏛️ Institution advocating open standards</li>
-            <li>🔐 Certifier or reviewer of digital trust</li>
-            <li>🤖 Agent builder (chatbot, voice assistant)</li>
-            <li>🧭 Ethicist or systems thinker</li>
-          </ul>
-        </div>
-
-        <div className="space-y-2 mt-10">
-          <h3 className="text-sm font-semibold">🚀 Next milestones</h3>
-          <ul className="list-disc text-sm text-muted-foreground pl-5">
-            <li>Launch public feed flagging prototype (Q2)</li>
-            <li>Open signature review interface</li>
-            <li>Agent trust scoring and compatibility testing</li>
-            <li>Volunteer co-auditor registry</li>
-          </ul>
-        </div>
-
-        <p className="text-sm mt-8 text-muted-foreground">
-          If you want to be part of this trust layer — as a contributor,
-          validator, certifier, researcher, or partner — you can declare your
-          intent below.
-        </p>
-
-        <form method="POST" action="api/join" className="space-y-4 mt-4">
-          <div className="flex flex-col space-y-1">
-            <label htmlFor="email" className="text-sm font-medium">
-              Your email (required)
-            </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              className="border rounded px-3 py-2 text-sm"
-              placeholder="you@example.com"
-            />
-          </div>
-          <div className="flex flex-col space-y-1">
-            <label htmlFor="motivation" className="text-sm font-medium">
-              Why are you joining? (max 160 characters)
-            </label>
-            <textarea
-              id="motivation"
-              name="motivation"
-              maxLength={160}
-              rows={3}
-              className="border rounded px-3 py-2 text-sm"
-              placeholder="To help review feeds / To certify agent compatibility / To advise ethically..."
-            />
-          </div>
-          <button
-            type="submit"
-            className="bg-black text-white px-4 py-2 rounded hover:bg-zinc-800 text-sm"
-          >
-            Join the ecosystem →
-          </button>
-        </form>
-
-        <ShareButtons title="Join the MCP Ecosystem" />
       </div>
-    </>
+
+      <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="space-y-2">
+          <Label htmlFor="email">Email</Label>
+          <Input
+            id="email"
+            type="email"
+            required
+            placeholder="you@domain.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+
+        <div className="space-y-2">
+          <Label htmlFor="motivation">
+            Why do you want to join? (160 characters max)
+          </Label>
+          <Textarea
+            id="motivation"
+            maxLength={160}
+            required
+            value={motivation}
+            onChange={(e) => setMotivation(e.target.value)}
+            placeholder="To contribute to an open and transparent agent ecosystem..."
+          />
+          <p className="text-sm text-muted-foreground text-right">
+            {motivation.length}/160
+          </p>
+        </div>
+
+        <Button type="submit" disabled={status === 'loading'}>
+          {status === 'loading' ? 'Submitting...' : 'Join Now'}
+        </Button>
+
+        {status === 'success' && (
+          <p className="text-green-600">
+            ✅ Thanks for joining! We'll be in touch soon.
+          </p>
+        )}
+        {status === 'error' && (
+          <p className="text-red-600">
+            ❌ Submission failed. Please try again later.
+          </p>
+        )}
+      </form>
+    </div>
   )
 }
