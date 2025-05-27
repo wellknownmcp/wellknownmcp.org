@@ -8,6 +8,7 @@ import { InjectHooks } from '@/components/landing/InjectHooks'
 import { TestimonyCarousel } from '@/components/landing/TestimonyCarousel'
 import { WhatYouCanDeclare } from '@/components/landing/WhatYouCanDeclare'
 import { Community } from '@/components/landing/Community'
+import { SchemaHeroSection } from '@/components/landing/SchemaHeroSection'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <TestimonyCarousel />
       <WhatYouCanDeclare />
       <ToolsGrid />
+      <SchemaHeroSection />
       <FAQList />
       <MissionBadges />
       <NewsSection />

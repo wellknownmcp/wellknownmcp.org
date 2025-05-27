@@ -119,6 +119,12 @@ export default function ToolsPage() {
               description="Declare unit costs, plans, and payment methods for your API or service"
               href="/tools/pricing"
             />
+            <ToolCard
+              icon="📐"
+              title="Schema"
+              description="Canonical JSON schema for validating .llmfeed.json feeds"
+              href="/tools/schema"
+            />
           </div>
         </section>
 
