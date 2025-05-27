@@ -49,7 +49,7 @@ export default function AgentBehaviourPage() {
               </span>
               <ExportToLLMButton
                 context="static"
-                staticPath=".well-known/prompts/mcp-mode-activation.llmfeed.json"
+                staticPath=".well-known/prompts/mcp-mode-activation"
                 mini
                 clipboard
               />

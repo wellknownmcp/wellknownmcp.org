@@ -107,7 +107,7 @@ export default function SignAndVerifyPage() {
               </li>
               <ExportToLLMButton
                 context="static"
-                staticPath="mcp-agent-behavior-override.llmfeed.json"
+                staticPath="mcp-agent-behavior-override"
                 mini
                 clipboard
               />

@@ -79,7 +79,7 @@ export default function AppMobilePage() {
         </pre>
         <ExportToLLMButton
           context="static"
-          staticPath="exports/demo/mobile-app.example.llmfeed.json"
+          staticPath="exports/demo/mobile-app.example"
           mini
           clipboard
         />

@@ -424,7 +424,7 @@ export default function WellKnownExplainedPage() {
             </p>
             <ExportToLLMButton
               context="static"
-              staticPath="demo/.well-known/mcp-lite.llmfeed.json"
+              staticPath="demo/.well-known/mcp-lite"
             />
           </CardContent>
         </Card>
