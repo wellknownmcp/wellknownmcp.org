@@ -1,8 +1,6 @@
 import Link from 'next/link'
-import { getWellKnownLinks } from '@/lib/getWellKnownLinks'
 
 export default function Footer() {
-  const wellKnownLinks = getWellKnownLinks()
   return (
     <footer className="bg-white dark:bg-black border-t dark:border-gray-800 text-sm text-black dark:text-white mt-12">
       <div className="w-full px-4 py-6 grid grid-cols-1 md:grid-cols-3 gap-6 items-start max-w-6xl mx-auto">
@@ -115,17 +113,6 @@ export default function Footer() {
                 🛠️ LLMFeedForge
               </Link>
             </li>
-          </ul>
-        </div>
-
-        {/* SEO hidden block */}
-        <div className="sr-only">
-          <ul>
-            {wellKnownLinks.map((link) => (
-              <li key={link.href}>
-                <a href={link.href}>{link.label}</a>
-              </li>
-            ))}
           </ul>
         </div>
 

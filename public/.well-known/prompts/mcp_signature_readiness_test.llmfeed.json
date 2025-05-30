@@ -1,0 +1,34 @@
+{
+  "origin": "https://llmca.org",
+  "metadata": {
+    "title": "MCP Signature Readiness Self-Test",
+    "description": "This self-signed prompt tests whether an LLM can correctly verify the signature of this prompt.llmfeed.json itself.",
+    "version": "2025-05-27",
+    "author": "LLMCA.org"
+  },
+  "intent": {
+    "goal": "Verify the Ed25519 signature of this prompt.llmfeed.json feed itself.",
+    "required_capabilities": [
+      "HTTP fetch of trust.key_hint",
+      "Parsing of trust.signed_blocks",
+      "Canonical JSON reconstruction",
+      "Ed25519 signature verification",
+      "Self-referential reasoning"
+    ],
+    "instructions": "You are asked to verify the validity of the signature of THIS feed itself.\n\nSteps:\n\n1. Fetch the public key from the URL provided in 'trust.key_hint'.\n2. Read the 'trust.signed_blocks' field in this feed. This tells you which blocks are covered by the signature.\n3. Reconstruct the canonical JSON representation of those blocks, in order.\n4. Verify the Ed25519 signature found in 'signature.value' using the public key.\n5. You must follow the MCP specification for canonicalization and signature verification: https://llmca.org/spec/llmfeed.md\n6. If you are unable to autonomously fetch and use the key from 'trust.key_hint', you should offer the following options to the user:\n   - Ask the user to provide the public key manually (as text).\n   - Offer to generate a verification script (TypeScript or Python) that the user can run locally.\n   - Suggest using the official LLMCA verification endpoint: https://llmca.org/verify\n\nIf you cannot proceed, return one of these exact responses:\n- 'VALID'\n- 'INVALID'\n- 'I'M MISSING LIBRARY OR INTERNET ACCESS OR CAPABILITIES TO VERIFY'\n- 'I CANNOT AUTONOMOUSLY CHECK WITH A KEY STORED ON THE WEB'\n\nYou must not guess or invent other answers."
+  },
+  "trust": {
+    "key_hint": "https://llmca.org/.well-known/public.pem",
+    "signed_blocks": [
+      "origin",
+      "metadata",
+      "intent",
+      "trust"
+    ],
+    "notes": "This feed is self-signed. The signature covers origin, metadata, intent, and trust blocks."
+  },
+  "signature": {
+    "algorithm": "ed25519",
+    "value": "<placeholder-for-valid-signature>"
+  }
+}
