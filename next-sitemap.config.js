@@ -17,20 +17,19 @@ Object.entries(index).forEach(([lang, slugs]) => {
     })
   })
 })
-// 👇 NEW : fonction pour récupérer les exports de spec
 function getSpecExportPaths() {
   const baseDir = path.resolve(__dirname, 'public/exports/spec')
 
-  function walk(dir) {
+  function walk(dir, relativePath = '') {
     const results = []
     const list = fs.readdirSync(dir)
     list.forEach((file) => {
       const fullPath = path.join(dir, file)
       const stat = fs.statSync(fullPath)
       if (stat.isDirectory()) {
-        results.push(...walk(fullPath))
+        results.push(...walk(fullPath, path.join(relativePath, file)))
       } else if (file.endsWith('.md')) {
-        const slug = path.basename(file, '.md')
+        const slug = path.join(relativePath, path.basename(file, '.md')).replace(/\\/g, '/')
         results.push(slug)
       }
     })
@@ -42,7 +41,7 @@ function getSpecExportPaths() {
     changefreq: 'weekly',
     priority: 0.8,
     lastmod: new Date().toISOString(),
-      }))
+  }))
 }
 
 // 👇 NEW : fonction pour récupérer tous les fichiers de .well-known
@@ -68,7 +67,7 @@ module.exports = {
   exclude: ['/preview/*', '/api/*'],
   sitemapSize: 5000,
 
-  
+
   transform: async (config, path) => {
     const matchNewsTransform = path.match(/^\/([a-z]{2})\/news\/(.+)$/);
     if (matchNewsTransform) {
@@ -95,7 +94,7 @@ module.exports = {
 
 
   // 👇 Combine articles + fichiers .well-known
-  
+
   additionalPaths: async () => {
     const newsPaths = allNewsPaths.map(({ lang, slug, path }) => {
       const alternateRefs = Object.keys(index).map((lng) => ({

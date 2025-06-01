@@ -15,6 +15,7 @@ interface ArticleMeta {
   description: string
   tags: string[]
   date: string
+  excerpt?: string
 }
 
 const LANG_EMOJIS: Record<string, string> = {
@@ -43,10 +44,20 @@ export default function NewsPage() {
 
       for (const slug of slugs) {
         try {
-          const res = await fetch(`/news/${currentLang}/${slug}.md`)
+          const res = await fetch(`/news/${currentLang}/${slug}.md`) // ⚠️ à revoir
           if (!res.ok) continue
           const text = await res.text()
-          const { data } = matter(text)
+          const { data, content } = matter(text)
+
+          // Générer un excerpt simple :
+          const cleanContent = content.replace(/[#>*_`~\-!\[\]\(\)]/g, '') // remove markdown
+          const excerpt = cleanContent
+            .split('\n')
+            .filter(Boolean)
+            .slice(0, 2)
+            .join(' ')
+            .slice(0, 200)
+
           results.push({
             lang: currentLang,
             slug,
@@ -56,7 +67,8 @@ export default function NewsPage() {
             date:
               typeof data.date === 'string'
                 ? data.date
-                : data.date?.toString() ?? 'unknown'
+                : data.date?.toString() ?? 'unknown',
+            excerpt,
           })
         } catch {
           continue
@@ -112,8 +124,13 @@ export default function NewsPage() {
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
               {article.description}
             </p>
+            {article.excerpt && (
+              <p className="text-sm text-gray-800 dark:text-gray-200 mb-2">
+                {article.excerpt}...
+              </p>
+            )}
             <Link
-              href={`/news/${article.lang}/${article.slug}`}
+              href={`/${article.lang}/news/${article.slug}`}
               className="text-sm text-black dark:text-white hover:underline font-medium"
             >
               Read full →

@@ -1,6 +1,9 @@
 import Link from 'next/link'
+import { useParams } from 'next/navigation'
 
 export default function Footer() {
+  const params = useParams()
+  const lang = typeof params?.lang === 'string' ? params.lang : 'en' // fallback
   return (
     <footer className="bg-white dark:bg-black border-t dark:border-gray-800 text-sm text-black dark:text-white mt-12">
       <div className="w-full px-4 py-6 grid grid-cols-1 md:grid-cols-3 gap-6 items-start max-w-6xl mx-auto">
@@ -26,7 +29,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-4">
           <div className="space-y-1">
             <Link
-              href="en/about"
+              href={`/${lang}/about`}
               className="block no-underline text-black dark:text-white hover:border-b hover:border-gray-400 transition"
             >
               🧭 About

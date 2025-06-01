@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "prepare": "echo '✔️ Project ready. Run npm run dev or build.'",
-    "postbuild": "next-sitemap",
+    "postbuild": "next-sitemap && node scripts/generate-index-news.js && node scripts/generate-rss.js",
     "generate-index": "tsx scripts/generate-llmfeed-index.ts",
     "export": "next export",
     "enrich-index": "tsx scripts/enrich-llmfeed-index.ts"
