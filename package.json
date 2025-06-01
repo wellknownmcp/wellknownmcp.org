@@ -26,6 +26,7 @@
     "common-tags": "^1.8.2",
     "embla-carousel-react": "^8.6.0",
     "fast-xml-parser": "^5.2.3",
+    "feed": "^5.1.0",
     "file-saver": "^2.0.5",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
