@@ -15,10 +15,10 @@ export default function EnhancedFeedViewer({ feed, mode = "hub" }: { feed: any; 
     const runAnalysis = async () => {
       let sigStatus;
       try {
-        sigStatus = await verifyFeedSignature(feed);
-      } catch (e) {
-        sigStatus = { ok: false, message: "Signature check failed: " + e };
-      }
+  sigStatus = await verifyFeedSignature(feed);
+} catch (e) {
+  sigStatus = { ok: false, message: "Signature check failed: " + (e?.message ?? String(e)) };
+}
       setSignatureStatus(sigStatus);
 
       const certs = feed.certifications ?? (feed.certification ? [feed.certification] : []);
