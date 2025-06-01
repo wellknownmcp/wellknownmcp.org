@@ -17,6 +17,7 @@ Object.entries(index).forEach(([lang, slugs]) => {
     })
   })
 })
+
 function getSpecExportPaths() {
   const baseDir = path.resolve(__dirname, 'public/exports/spec')
 
@@ -29,7 +30,9 @@ function getSpecExportPaths() {
       if (stat.isDirectory()) {
         results.push(...walk(fullPath, path.join(relativePath, file)))
       } else if (file.endsWith('.md')) {
-        const slug = path.join(relativePath, path.basename(file, '.md')).replace(/\\/g, '/')
+        const slug = path
+          .join(relativePath, path.basename(file, '.md'))
+          .replace(/\\/g, '/')
         results.push(slug)
       }
     })
@@ -44,7 +47,6 @@ function getSpecExportPaths() {
   }))
 }
 
-// 👇 NEW : fonction pour récupérer tous les fichiers de .well-known
 function getWellKnownPaths() {
   const dir = path.resolve(__dirname, 'public/.well-known')
   if (!fs.existsSync(dir)) return []
@@ -57,62 +59,36 @@ function getWellKnownPaths() {
       changefreq: 'weekly',
       priority: 1.0,
       lastmod: new Date().toISOString(),
-        }))
+    }))
 }
 
 module.exports = {
   siteUrl,
-  generateRobotsTxt: false,
+  generateRobotsTxt: true, // je te recommande de le remettre à true
   changefreq: 'weekly',
   exclude: ['/preview/*', '/api/*'],
   sitemapSize: 5000,
 
+  transform: null, // désactive transform automatique
 
-  transform: async (config, path) => {
-    const matchNewsTransform = path.match(/^\/([a-z]{2})\/news\/(.+)$/);
-    if (matchNewsTransform) {
-      const [_, lang, slug] = matchNewsTransform;
-      const alternateRefs = Object.keys(index).map((lng) => ({
-        hreflang: lng,
-        href: `${siteUrl}/${lng}/news/${slug}`,
-      }));
-      return {
-        loc: `${siteUrl}${path}`,
-        changefreq: 'weekly',
-        priority: 0.7,
-        lastmod: new Date().toISOString(),
-        alternateRefs
-      };
-    }
-    return {
-      loc: `${siteUrl}${path}`,
-      changefreq: 'weekly',
-      priority: 0.5,
-      lastmod: new Date().toISOString()
-    };
-  },
-
-
-  // 👇 Combine articles + fichiers .well-known
-
-  additionalPaths: async () => {
+  additionalPaths: async (config) => {
     const newsPaths = allNewsPaths.map(({ lang, slug, path }) => {
       const alternateRefs = Object.keys(index).map((lng) => ({
         hreflang: lng,
         href: `${siteUrl}/${lng}/news/${slug}`,
-      }));
+      }))
       return {
         loc: `${siteUrl}${path}`,
         changefreq: 'weekly',
         priority: path.startsWith(`/${defaultLang}/`) ? 0.9 : 0.7,
         lastmod: new Date().toISOString(),
-        alternateRefs
-      };
-    });
+        alternateRefs,
+      }
+    })
 
-    const wellKnownPaths = getWellKnownPaths();
-    const specPaths = getSpecExportPaths();
-    return [...newsPaths, ...wellKnownPaths, ...specPaths];
-  }
+    const wellKnownPaths = getWellKnownPaths()
+    const specPaths = getSpecExportPaths()
 
+    return [...newsPaths, ...wellKnownPaths, ...specPaths]
+  },
 }
