@@ -9,7 +9,33 @@ function base64ToUint8Array(b64: string): Uint8Array {
 function concatSignedBlocks(feed: any, blocks: string[]): string {
   return blocks.map(key => JSON.stringify(feed[key])).join("");
 }
+// Ajoute ce helper en haut de /lib/verifyCrypto.ts :
 
+async function loadPublicKey(url: string): Promise<Uint8Array> {
+  const res = await fetch(url);
+  const pem = await res.text();
+
+  // Clean PEM
+  const b64 = pem
+    .replace("-----BEGIN PUBLIC KEY-----", "")
+    .replace("-----END PUBLIC KEY-----", "")
+    .replace(/\s+/g, "");
+  const der = base64ToUint8Array(b64);
+
+  // If it's an Ed25519 SubjectPublicKeyInfo → skip ASN.1 header
+  // For Ed25519 X.509 → header is fixed 12 bytes → extract raw 32 bytes
+  if (der.length === 44 && der[0] === 0x30) {
+    // This is Ed25519 SubjectPublicKeyInfo → extract last 32 bytes
+    return der.slice(-32);
+  }
+
+  // If it's already raw (32 bytes)
+  if (der.length === 32) {
+    return der;
+  }
+
+  throw new Error(`Unsupported public key size: ${der.length} bytes`);
+}
 export async function verifyFeedSignature(feed: any): Promise<{ ok: boolean; message: string }> {
 
   if (!feed || typeof feed !== "object") {
@@ -56,7 +82,7 @@ export async function verifyFeedSignature(feed: any): Promise<{ ok: boolean; mes
     );
 
     const msgBytes = new TextEncoder().encode(signedPayload);
-    const sigBytes = base64ToUint8Array(value); 
+    const sigBytes = base64ToUint8Array(value);
 
     const valid = nacl.sign.detached.verify(msgBytes, sigBytes, pubkeyBytes);
     return valid
