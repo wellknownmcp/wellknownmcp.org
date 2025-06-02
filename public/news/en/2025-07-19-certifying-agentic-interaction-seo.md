@@ -2,15 +2,16 @@
 title: "Certifying Agentic Interactions: The New Frontier of SEO?"
 lang: en
 tags: [certification, agentic-web, seo, mcp, trust]
+date: '2025-05-31'
 description: "As the Agentic Web emerges, trust and certification are becoming key. Could certifying agentic interactions become the new SEO?"
 ---
 
 # Certifying Agentic Interactions: The New Frontier of SEO?
 
-Traditional **SEO** optimized content for human searchers.  
-**LLM SEO** optimizes content for AI agents.  
+Traditional **SEO** optimized content for human searchers.
+**LLM SEO** optimizes content for AI agents.
 
-But in the evolving **Agentic Web**, another layer is emerging:  
+But in the evolving **Agentic Web**, another layer is emerging:
 **certification of agentic interactions**.
 
 What does this mean — and why might it become a key differentiator for visibility and trust?

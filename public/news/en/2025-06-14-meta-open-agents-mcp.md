@@ -1,6 +1,7 @@
 ---
 title: "Meta’s Open Agents: Opportunity or Challenge for MCP?"
 lang: en
+date: '2025-05-31'
 tags: [meta, open-agents, agentic-web, mcp, ai-standards]
 description: "Meta announces its Open Agents initiative. How does it align with MCP and the vision of an interoperable Agentic Web?"
 ---
@@ -41,8 +42,8 @@ So far:
 
 ## Our take
 
-Meta’s involvement could be a *double-edged sword*:  
-If done well, Open Agents could legitimize and mainstream **Agentic Web standards**.  
+Meta’s involvement could be a *double-edged sword*:
+If done well, Open Agents could legitimize and mainstream **Agentic Web standards**.
 If done poorly (proprietary lock-in), it could fragment the ecosystem.
 
 **Community engagement will be key.** The open-source and standards communities must push for:

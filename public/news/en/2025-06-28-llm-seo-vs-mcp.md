@@ -1,6 +1,7 @@
 ---
 title: "LLM SEO vs MCP: Competing or Complementary Visions?"
 lang: en
+date: '2025-05-31'
 tags: [seo, llm-seo, agentic-web, mcp, search]
 description: "LLM-driven SEO is on the rise. How does it compare — or conflict — with MCP and the goals of an open Agentic Web?"
 ---

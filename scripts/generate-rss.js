@@ -5,7 +5,7 @@ const fs = require('fs')
 const path = require('path')
 const { Feed } = require('feed')
 
-const languages = ['en', 'fr', 'es', 'zh', 'ar', 'uk']
+const languages = ['en', 'fr', 'es', 'zh', 'hi', 'ar', 'uk']
 const siteURL = 'https://wellknownmcp.org'
 
 const indexPath = path.join(__dirname, '..', 'public', 'news', 'index.json')

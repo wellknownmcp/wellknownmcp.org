@@ -7,7 +7,7 @@ description: "The web is evolving from chatbots to true autonomous agents. What 
 
 # From Chatbots to Autonomous Agents: The Web’s Next Evolution
 
-For years, the term **chatbot** dominated conversations about AI on the web.  
+For years, the term **chatbot** dominated conversations about AI on the web.
 Now, a more ambitious concept is taking center stage: **autonomous agents**.
 
 Unlike simple chatbots, autonomous agents can:
@@ -53,7 +53,7 @@ As we move from chatbots to agents, **MCP becomes essential**.
 
 ## Our take
 
-The future of the web is **agentic**.  
+The future of the web is **agentic**.
 But it must be:
 - **Transparent** — so users and services understand what’s happening.
 - **Trustable** — with auditable interactions.

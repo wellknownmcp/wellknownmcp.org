@@ -1,2 +1,13 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<rss><channel><title>News uk</title></channel></rss>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>News (uk) - WellKnownMCP</title>
+        <link>https://wellknownmcp.org/uk/news/</link>
+        <description>Agentic Web News</description>
+        <lastBuildDate>Mon, 02 Jun 2025 12:47:10 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>uk</language>
+        <copyright>© 2025 WellKnownMCP</copyright>
+    </channel>
+</rss>

@@ -2,12 +2,13 @@
 title: "AI-First Browsers: Redefining Agentic Navigation"
 lang: en
 tags: [ai-first-browsers, agentic-web, navigation, mcp, llm]
+date: '2025-05-31'
 description: "A new wave of AI-first browsers is emerging. What does this mean for web navigation — and how does MCP enable it?"
 ---
 
 # AI-First Browsers: Redefining Agentic Navigation
 
-A quiet revolution is happening in how users — and their agents — navigate the web:  
+A quiet revolution is happening in how users — and their agents — navigate the web:
 The rise of **AI-first browsers**.
 
 Unlike traditional browsers, these tools:
@@ -56,7 +57,7 @@ In short: **MCP is the missing layer for responsible AI-first browsing**.
 
 ## Our take
 
-AI-first browsers represent the **next user-agent frontier**.  
+AI-first browsers represent the **next user-agent frontier**.
 But success depends on:
 - **Openness**: interoperable agent standards.
 - **Transparency**: users knowing what agents do.

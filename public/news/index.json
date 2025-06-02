@@ -1,8 +1,1438 @@
 {
-  "en": [],
-  "fr": [],
-  "es": [],
-  "zh": [],
-  "ar": [],
-  "uk": []
+  "en": [
+    {
+      "slug": "2025-06-07-apple-intelligence-agentic-web",
+      "title": "Apple Intelligence: A New Player in the Agentic Web?",
+      "description": "Apple’s entry into AI-driven agents could reshape the emerging Agentic Web landscape. What does it mean for standards like MCP?",
+      "date": "unknown",
+      "tags": [
+        "apple",
+        "agentic-web",
+        "mcp",
+        "ai-agents",
+        "llm"
+      ],
+      "excerpt": " Apple Intelligence: A New Player in the Agentic Web? At WWDC 2025, Apple made waves with its announcement of Apple Intelligence — a suite of AIdriven features deeply integrated into iOS, macOS, and v"
+    },
+    {
+      "slug": "2025-06-14-meta-open-agents-mcp",
+      "title": "Meta’s Open Agents: Opportunity or Challenge for MCP?",
+      "description": "Meta announces its Open Agents initiative. How does it align with MCP and the vision of an interoperable Agentic Web?",
+      "date": "unknown",
+      "tags": [
+        "meta",
+        "open-agents",
+        "agentic-web",
+        "mcp",
+        "ai-standards"
+      ],
+      "excerpt": " Meta’s Open Agents: Opportunity or Challenge for MCP? During Meta Connect 2025, Meta introduced Open Agents — a framework to enable thirdparty developers to create agents that can operate across Meta"
+    },
+    {
+      "slug": "2025-06-21-claude-4-5-llms-crawling",
+      "title": "Claude 4.5 and the New Wave of LLM Crawling",
+      "description": "As Claude 4.5 rolls out with enhanced browsing capabilities, what are the implications for the Agentic Web and standards like MCP?",
+      "date": "unknown",
+      "tags": [
+        "claude",
+        "anthropic",
+        "llm-crawling",
+        "agentic-web",
+        "mcp"
+      ],
+      "excerpt": " Claude 4.5 and the New Wave of LLM Crawling Anthropic’s recent release of Claude 4.5 introduces major improvements to its browsing and LLM crawling capabilities. More than just a chatbot, Claude is n"
+    },
+    {
+      "slug": "2025-06-28-llm-seo-vs-mcp",
+      "title": "LLM SEO vs MCP: Competing or Complementary Visions?",
+      "description": "LLM-driven SEO is on the rise. How does it compare — or conflict — with MCP and the goals of an open Agentic Web?",
+      "date": "unknown",
+      "tags": [
+        "seo",
+        "llm-seo",
+        "agentic-web",
+        "mcp",
+        "search"
+      ],
+      "excerpt": " LLM SEO vs MCP: Competing or Complementary Visions? As large language models LLMs become the new interface to knowledge, a new field is booming: LLM SEO — optimizing content not for search engines, b"
+    },
+    {
+      "slug": "2025-07-05-microsoft-nlweb-protocol",
+      "title": "Microsoft’s NLWeb Protocol: A Competitor to MCP?",
+      "description": "Microsoft introduces NLWeb — a protocol for natural language interactions on the web. How does it compare to MCP?",
+      "date": "unknown",
+      "tags": [
+        "microsoft",
+        "nlweb",
+        "mcp",
+        "agentic-web",
+        "ai-standards"
+      ],
+      "excerpt": " Microsoft’s NLWeb Protocol: A Competitor to MCP? At Build 2025, Microsoft unveiled NLWeb — a new initiative to standardize how natural language interactions happen across the web."
+    },
+    {
+      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
+      "title": "From Chatbots to Autonomous Agents: The Web’s Next Evolution",
+      "description": "The web is evolving from chatbots to true autonomous agents. What does this mean for web architecture — and how does MCP fit in?",
+      "date": "unknown",
+      "tags": [
+        "autonomous-agents",
+        "agentic-web",
+        "chatbots",
+        "mcp",
+        "ai"
+      ],
+      "excerpt": " From Chatbots to Autonomous Agents: The Web’s Next Evolution For years, the term chatbot dominated conversations about AI on the web.  "
+    },
+    {
+      "slug": "2025-07-19-certifying-agentic-interaction-seo",
+      "title": "Certifying Agentic Interactions: The New Frontier of SEO?",
+      "description": "As the Agentic Web emerges, trust and certification are becoming key. Could certifying agentic interactions become the new SEO?",
+      "date": "unknown",
+      "tags": [
+        "certification",
+        "agentic-web",
+        "seo",
+        "mcp",
+        "trust"
+      ],
+      "excerpt": " Certifying Agentic Interactions: The New Frontier of SEO? Traditional SEO optimized content for human searchers.  "
+    },
+    {
+      "slug": "2025-07-26-ai-first-browsers-agentic-navigation",
+      "title": "AI-First Browsers: Redefining Agentic Navigation",
+      "description": "A new wave of AI-first browsers is emerging. What does this mean for web navigation — and how does MCP enable it?",
+      "date": "unknown",
+      "tags": [
+        "ai-first-browsers",
+        "agentic-web",
+        "navigation",
+        "mcp",
+        "llm"
+      ],
+      "excerpt": " AIFirst Browsers: Redefining Agentic Navigation A quiet revolution is happening in how users — and their agents — navigate the web:  "
+    },
+    {
+      "slug": "news_opera_neon",
+      "title": "Opera Neon Relaunch: A Step Forward for the Agentic Web?",
+      "description": "",
+      "date": "2025-05-31",
+      "tags": [
+        "agentic-web",
+        "browsers",
+        "mcp",
+        "llmfeed",
+        "interoperability"
+      ],
+      "excerpt": "\r  🧠 Opera Neon Relaunch: A Step Forward for the Agentic Web?\r"
+    },
+    {
+      "slug": "from-seo-to-aio-agentic-web",
+      "title": "From SEO to AIO: aiovsseo.com joins the Agentic Web",
+      "description": "",
+      "date": "Fri May 30 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [
+        "Agentic Web",
+        "MCP",
+        "LLMCA",
+        "aiovsseo",
+        "AIO",
+        "trust",
+        "LLMs"
+      ],
+      "excerpt": " From SEO to AIO: aiovsseo.comhttps://aiovsseo.com joins the Agentic Web  Why this matters"
+    },
+    {
+      "slug": "which-llms-are-ready-for-mcp-signature-verification",
+      "title": "Which LLMs are ready for MCP Signature Verification? GPT-4o, Claude, Gemini, Mistral, Grok — the real comparison",
+      "description": "",
+      "date": "Tue May 27 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [
+        "MCP",
+        "LLM",
+        "LLMCA",
+        "Signature Verification",
+        "GPT-4o",
+        "Claude",
+        "Gemini",
+        "Mistral",
+        "DeepSeek",
+        "Grok",
+        "Compatibility"
+      ],
+      "excerpt": " Which LLMs are ready for MCP Signature Verification?   GPT4o, Claude, Gemini, Mistral, Grok — the real comparison"
+    },
+    {
+      "slug": "case-for-capabilities",
+      "title": "📡 The Case for Capabilities",
+      "description": "Declaring agent-facing capabilities beats inference every time.",
+      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [
+        "mcp",
+        "llmfeed",
+        "agents",
+        "trust",
+        "web",
+        "ai",
+        "well-known"
+      ],
+      "excerpt": " 📡 The Case for Capabilities  Why Capabilities Matter"
+    },
+    {
+      "slug": "exporttollm-button",
+      "title": "📤 ExportToLLM: A Button That Talks to Agents",
+      "description": "Turn any page into an agent-readable capsule with a single button.",
+      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [
+        "mcp",
+        "llmfeed",
+        "agents",
+        "trust",
+        "web",
+        "ai",
+        "well-known",
+        "ux",
+        "interop"
+      ],
+      "excerpt": " 📤 ExportToLLM: A Button That Talks to Agents  Why This Matters"
+    },
+    {
+      "slug": "faq",
+      "title": "❓ Frequently Asked Questions — MCP & LLMFeed",
+      "description": "Understand the key concepts, philosophy, and ecosystem of the Model Context Protocol (MCP).",
+      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [
+        "faq",
+        "mcp",
+        "llmfeed",
+        "trust",
+        "agentic-web",
+        "ecosystem"
+      ],
+      "excerpt": " ❓ Frequently Asked Questions — MCP & LLMFeed  What is MCP in one sentence?"
+    },
+    {
+      "slug": "getting-started",
+      "title": "🚀 Your First MCP Site in 3 Steps",
+      "description": "Turn any site into an agent-aware node in under 5 minutes.",
+      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [
+        "mcp",
+        "llmfeed",
+        "agents",
+        "trust",
+        "web",
+        "ai",
+        "well-known",
+        "onboarding"
+      ],
+      "excerpt": " 🚀 Your First MCP Site in 3 Steps  Why Make Your Site AgentReady?"
+    },
+    {
+      "slug": "llm-index-case",
+      "title": "🗺️ The Case for .well-known/llm-index.llmfeed.json",
+      "description": "Why LLMs need a sitemap built for agent intent, not HTML crawlers.",
+      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [
+        "mcp",
+        "llmfeed",
+        "agents",
+        "trust",
+        "web",
+        "ai",
+        "well-known"
+      ],
+      "excerpt": " 🗺️ The Case for .wellknown/llmindex.llmfeed.json Most modern websites expose hundreds or thousands of endpoints:"
+    },
+    {
+      "slug": "llm-testimony-experiment",
+      "title": "We Fed the LLMs: What They Told Us About MCP",
+      "description": "",
+      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [],
+      "excerpt": "\r \r"
+    },
+    {
+      "slug": "llmca-certification",
+      "title": "✅ How LLMCA Certifies a Feed",
+      "description": "Understanding the logic, levels, and process of feed certification.",
+      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [
+        "mcp",
+        "llmfeed",
+        "agents",
+        "trust",
+        "web",
+        "ai",
+        "well-known"
+      ],
+      "excerpt": "Certification is not magic. It’s inspection + commitment. The LLMCA validator:  checks canonical structure"
+    },
+    {
+      "slug": "mcp-wellknown",
+      "title": "🛰️ The Case for .well-known/mcp.llmfeed.json",
+      "description": "Why .well-known/ is the most logical place to declare AI-ready interfaces — and why signatures matter.",
+      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [
+        "mcp",
+        "llmfeed",
+        "agents",
+        "trust",
+        "web",
+        "ai",
+        "well-known",
+        "certification"
+      ],
+      "excerpt": " 🛰️ The Case for .wellknown/mcp.llmfeed.json  Why .wellknown/?"
+    },
+    {
+      "slug": "not-schema-org",
+      "title": "🧠 We Are Not Schema.org for LLMs — And That’s Good",
+      "description": "LLMFeed is not metadata. It’s intent, trust, and action for agents.",
+      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [
+        "mcp",
+        "llmfeed",
+        "agents",
+        "trust",
+        "web",
+        "ai",
+        "well-known"
+      ],
+      "excerpt": " 🧠 We Are Not Schema.org for LLMs — And That’s Good  The Common Misunderstanding"
+    },
+    {
+      "slug": "claude-alignment",
+      "title": "Claude and the Model Context Protocol: An Open Alignment",
+      "description": "",
+      "date": "Sat May 24 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [
+        "mcp",
+        "anthropic",
+        "claude",
+        "llmfeed",
+        "well-known",
+        "interoperability",
+        "certification",
+        "ai agents",
+        "web standards"
+      ],
+      "excerpt": "At a recent developerfocused announcement, Anthropic introduced their vision for the Model Context Protocol MCP, a structured approach to make AI models more contextaware and grounded in realworld too"
+    },
+    {
+      "slug": "launch-hackernews",
+      "title": "Launching wellknownmcp.org — Make your site LLM-readable, verifiable and actionable",
+      "description": "Launch communication draft for wellknownmcp.org: Launching wellknownmcp.org — Make your site LLM-readable, verifiable and actionable",
+      "date": "2025-05-21",
+      "tags": [
+        "launch",
+        "announcement",
+        "llmfeed"
+      ],
+      "excerpt": " 🚀 Launching wellknownmcp.org   Make your site LLMreadable, verifiable, and agentfriendly."
+    },
+    {
+      "slug": "launch-medium",
+      "title": "Giving Your Website a Voice — Introducing the Well-Known MCP Standard",
+      "description": "Launch communication draft for wellknownmcp.org: Giving Your Website a Voice — Introducing the Well-Known MCP Standard",
+      "date": "2025-05-21",
+      "tags": [
+        "launch",
+        "announcement",
+        "llmfeed"
+      ],
+      "excerpt": "Imagine if your website could explain itself to ChatGPT. Or Claude. Or any LLM. Not just serve HTML, but declare its intent, list its prompts, expose APIs, or share signed exports — all in a structure"
+    },
+    {
+      "slug": "launch",
+      "title": "Launch Announcement",
+      "description": "Announcing the launch of the WellKnownMCP initiative and its official website.",
+      "date": "2025-05-21",
+      "tags": [
+        "launch",
+        "announcement",
+        "llmfeed"
+      ],
+      "excerpt": " 🚀 WellKnownMCP is Officially Live We’re proud to launch wellknownmcp.orghttps://wellknownmcp.org,"
+    },
+    {
+      "slug": "manifesto",
+      "title": "Our Manifesto",
+      "description": "The vision, values, and ethical commitments behind the WellKnownMCP standard.",
+      "date": "2025-05-21",
+      "tags": [
+        "manifesto",
+        "ethics",
+        "principles",
+        "llmfeed"
+      ],
+      "excerpt": " 🧭 The WellKnownMCP Manifesto  Our Vision"
+    },
+    {
+      "slug": "opinion-stop-scraping",
+      "title": "📢 Let’s Stop Scraping. Let’s Start Declaring.",
+      "description": "A call for clarity: why scraping fails, and how MCP offers a better way.",
+      "date": "Wed May 21 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [
+        "opinion",
+        "declaration",
+        "scraping",
+        "mcp",
+        "agentic-web",
+        "trust"
+      ],
+      "excerpt": " 📢 Scraping Isn’t Understanding  The Status Quo: Scrape and Guess"
+    },
+    {
+      "slug": "thread-wellknownmcp",
+      "title": "🧵 Thread X — Launching wellknownmcp.org",
+      "description": "Launch communication draft for wellknownmcp.org: 🧵 Thread X — Launching wellknownmcp.org",
+      "date": "2025-05-21",
+      "tags": [
+        "launch",
+        "announcement",
+        "llmfeed"
+      ],
+      "excerpt": " 🧵 Thread — What if your site could talk to LLMs? 1/  "
+    },
+    {
+      "slug": "about",
+      "title": "About WellKnownMCP",
+      "description": "An overview of the WellKnownMCP initiative, its purpose, and its goals.",
+      "date": "2025-05-07",
+      "tags": [
+        "about",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " Why MCP Because prompts are not enough."
+    },
+    {
+      "slug": "begin",
+      "title": "Where to Begin",
+      "description": "A simple guide to help you understand the standard and take your first steps.",
+      "date": "2025-05-07",
+      "tags": [
+        "begin",
+        "manual",
+        "llmfeed"
+      ],
+      "excerpt": " 👋 Welcome to WellKnownMCP This page is your entry point to understanding the Model Context Protocol MCP and its core unit: the llmfeed.json."
+    },
+    {
+      "slug": "launch-newstack",
+      "title": "launch-newstack",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": "title: \"The Web Needs a Context Layer — Why We’re Standardizing Intent for Agents\" description: \"Introducing the Model Context Protocol MCP and .llmfeed.json — a new open standard to make your site re"
+    },
+    {
+      "slug": "le_chat_mcp_web_future_news",
+      "title": "Commentary from Le Chat: Why MCP Matters for the Future of the Web",
+      "description": "Le Chat offers a thoughtful reflection on the importance of the Model Context Protocol (MCP) in shaping a verifiable, interoperable, and agent-ready future web.",
+      "date": "unknown",
+      "tags": [
+        "llmfeed",
+        "mcp",
+        "agentic-web",
+        "trust",
+        "open-standards"
+      ],
+      "excerpt": " 📰 Commentary from Le Chat: Why MCP Matters for the Future of the Web In a tech world driven by the rapid development of proprietary LLM ecosystems, the Model Context Protocol MCP emerges as a struct"
+    },
+    {
+      "slug": "linkedin-post-wellknownmcp",
+      "title": "linkedin-post-wellknownmcp",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": "title: 'LinkedIn Post — Launching wellknownmcp.org Enhanced Version' description: 'Launch communication draft for wellknownmcp.org with proactive messaging and higher clarity'"
+    },
+    {
+      "slug": "llm-as-a-teacher",
+      "title": "Turning LLMs into Teachers, Auditors, and Publishers",
+      "description": "How LLMs can actively teach, audit, and generate llmfeed.json files — a unique design choice of the MCP standard.",
+      "date": "unknown",
+      "tags": [
+        "llms",
+        "agentic-web",
+        "mcp",
+        "trust",
+        "llmfeed"
+      ],
+      "excerpt": " 🧠 Turning LLMs into Teachers, Auditors, and Publishers One of the unique advantages of the .llmfeed.json format is that it is natively understandable by LLMs themselves."
+    },
+    {
+      "slug": "mcp-explained",
+      "title": "How Agents Understand You — MCP Explained",
+      "description": "Learn how MCP helps agents interpret your services, structure and intent — without prompt guessing.",
+      "date": "Fri May 16 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [
+        "mcp",
+        "explained",
+        "agents",
+        "tutorial"
+      ],
+      "excerpt": "\r  How Agents Understand You — MCP Explained\r"
+    },
+    {
+      "slug": "news-mcp-crawling-llms",
+      "title": "Why MCP Could Be the Future of Web Crawling for LLMs",
+      "description": "As GPTBot and other intelligent crawlers emerge, the Model Context Protocol offers a structured, verifiable, and LLM-friendly alternative to traditional HTML parsing.",
+      "date": "unknown",
+      "tags": [
+        "mcp",
+        "crawling",
+        "llm",
+        "trust",
+        "openai",
+        "gptbot"
+      ],
+      "excerpt": " Why MCP Could Be the Future of Web Crawling for LLMs With the rise of RetrievalAugmented Generation RAG and AI agents needing realtime, contextual information, the limitations of classic HTML parsing"
+    },
+    {
+      "slug": "why-mcp",
+      "title": "Why MCP?",
+      "description": "Explaining the rationale behind adopting the Model Context Protocol (MCP) standard.",
+      "date": "2025-05-07",
+      "tags": [
+        "why-mcp",
+        "rationale",
+        "manual",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " Why Choose MCP? Faced with the increasing challenges of integrating LLMs into realworld contexts, WellKnownMCP clearly addresses a critical need:"
+    }
+  ],
+  "fr": [
+    {
+      "slug": "2025-06-07-apple-intelligence-agentic-web",
+      "title": "2025-06-07-apple-intelligence-agentic-web",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250607appleintelligenceagenticweb.md Content for fr"
+    },
+    {
+      "slug": "2025-06-14-meta-open-agents-mcp",
+      "title": "2025-06-14-meta-open-agents-mcp",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250614metaopenagentsmcp.md Content for fr"
+    },
+    {
+      "slug": "2025-06-21-claude-4-5-llms-crawling",
+      "title": "2025-06-21-claude-4-5-llms-crawling",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250621claude45llmscrawling.md Content for fr"
+    },
+    {
+      "slug": "2025-06-28-llm-seo-vs-mcp",
+      "title": "2025-06-28-llm-seo-vs-mcp",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250628llmseovsmcp.md Content for fr"
+    },
+    {
+      "slug": "2025-07-05-microsoft-nlweb-protocol",
+      "title": "2025-07-05-microsoft-nlweb-protocol",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250705microsoftnlwebprotocol.md Content for fr"
+    },
+    {
+      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
+      "title": "2025-07-12-from-chatbots-to-autonomous-agents",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250712fromchatbotstoautonomousagents.md Content for fr"
+    },
+    {
+      "slug": "2025-07-19-certifying-agentic-interaction-seo",
+      "title": "2025-07-19-certifying-agentic-interaction-seo",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250719certifyingagenticinteractionseo.md Content for fr"
+    },
+    {
+      "slug": "2025-07-26-ai-first-browsers-agentic-navigation",
+      "title": "2025-07-26-ai-first-browsers-agentic-navigation",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250726aifirstbrowsersagenticnavigation.md Content for fr"
+    },
+    {
+      "slug": "begin",
+      "title": "Par où commencer",
+      "description": "Un guide simple pour comprendre la norme et faire vos premiers pas.",
+      "date": "2025-05-21",
+      "tags": [
+        "begin",
+        "manual",
+        "llmfeed"
+      ],
+      "excerpt": " 👋 Bienvenue sur WellKnownMCP Cette page est votre point d’entrée pour comprendre le Model Context Protocol MCP et son unité fondamentale : le llmfeed.json."
+    },
+    {
+      "slug": "faq",
+      "title": "FAQ – MCP et LLMFeed",
+      "description": "Réponses aux questions fréquentes sur le protocole MCP et l’écosystème LLMFeed, y compris ses différences avec le MCP d’Anthropic.",
+      "date": "2025-05-21",
+      "tags": [
+        "mcp",
+        "llmfeed",
+        "faq",
+        "trust",
+        "agents",
+        "developers",
+        "anthropic"
+      ],
+      "excerpt": " ❓ Foire aux questions  🧠 GÉNÉRAL"
+    },
+    {
+      "slug": "launch",
+      "title": "Annonce de lancement",
+      "description": "Annonce du lancement de l’initiative WellKnownMCP et de son site officiel.",
+      "date": "2025-05-21",
+      "tags": [
+        "launch",
+        "announcement",
+        "llmfeed"
+      ],
+      "excerpt": " 🚀 WellKnownMCP est officiellement en ligne  Nous sommes fiers d’annoncer le lancement de wellknownmcp.orghttps://wellknownmcp.org,  "
+    },
+    {
+      "slug": "llmfeed-block-structure",
+      "title": "Anatomie d’un LLMFeed — Bloc par bloc",
+      "description": "Comprendre comment chaque bloc d’un .llmfeed.json fonctionne et comment concevoir votre propre flux.",
+      "date": "2025-05-21",
+      "tags": [
+        "guide",
+        "structure",
+        "llmfeed"
+      ],
+      "excerpt": " 🧱 Les blocs qui composent un flux Chaque fichier .llmfeed.json est composé de blocs structurés. Voici comment les comprendre et les utiliser :"
+    },
+    {
+      "slug": "manifesto",
+      "title": "Notre Manifeste",
+      "description": "La vision, les valeurs et les engagements éthiques derrière la norme WellKnownMCP.",
+      "date": "2025-05-21",
+      "tags": [
+        "manifesto",
+        "ethics",
+        "principles",
+        "llmfeed"
+      ],
+      "excerpt": " 🧭 Le Manifeste WellKnownMCP  Notre vision"
+    },
+    {
+      "slug": "use-cases-mcp",
+      "title": "Que peut-on construire avec MCP ? Cas d’usage concrets",
+      "description": "De la santé au SaaS, voici des exemples concrets d’utilisation de MCP et LLMFeed.",
+      "date": "2025-05-21",
+      "tags": [
+        "use-cases",
+        "mcp",
+        "industries"
+      ],
+      "excerpt": " 🧩 Applications concrètes de MCP  🏥 Santé"
+    },
+    {
+      "slug": "about",
+      "title": "À propos de WellKnownMCP",
+      "description": "Un aperçu de l'initiative WellKnownMCP, de son objectif et de ses finalités.",
+      "date": "2025-05-07",
+      "tags": [
+        "about",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " Pourquoi MCP Parce que les prompts ne suffisent pas.  "
+    },
+    {
+      "slug": "why-mcp",
+      "title": "Pourquoi MCP ?",
+      "description": "Expliquer les raisons qui motivent l’adoption du standard Model Context Protocol (MCP).",
+      "date": "2025-05-07",
+      "tags": [
+        "why-mcp",
+        "rationale",
+        "manual",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " Pourquoi choisir MCP ? Face aux défis croissants de l’intégration des LLM dans des contextes réels, WellKnownMCP répond clairement à un besoin critique :"
+    }
+  ],
+  "es": [
+    {
+      "slug": "2025-06-07-apple-intelligence-agentic-web",
+      "title": "2025-06-07-apple-intelligence-agentic-web",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250607appleintelligenceagenticweb.md Content for es"
+    },
+    {
+      "slug": "2025-06-14-meta-open-agents-mcp",
+      "title": "2025-06-14-meta-open-agents-mcp",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250614metaopenagentsmcp.md Content for es"
+    },
+    {
+      "slug": "2025-06-21-claude-4-5-llms-crawling",
+      "title": "2025-06-21-claude-4-5-llms-crawling",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250621claude45llmscrawling.md Content for es"
+    },
+    {
+      "slug": "2025-06-28-llm-seo-vs-mcp",
+      "title": "2025-06-28-llm-seo-vs-mcp",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250628llmseovsmcp.md Content for es"
+    },
+    {
+      "slug": "2025-07-05-microsoft-nlweb-protocol",
+      "title": "2025-07-05-microsoft-nlweb-protocol",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250705microsoftnlwebprotocol.md Content for es"
+    },
+    {
+      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
+      "title": "2025-07-12-from-chatbots-to-autonomous-agents",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250712fromchatbotstoautonomousagents.md Content for es"
+    },
+    {
+      "slug": "2025-07-19-certifying-agentic-interaction-seo",
+      "title": "2025-07-19-certifying-agentic-interaction-seo",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250719certifyingagenticinteractionseo.md Content for es"
+    },
+    {
+      "slug": "2025-07-26-ai-first-browsers-agentic-navigation",
+      "title": "2025-07-26-ai-first-browsers-agentic-navigation",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250726aifirstbrowsersagenticnavigation.md Content for es"
+    },
+    {
+      "slug": "begin",
+      "title": "Por dónde empezar",
+      "description": "Una guía sencilla para comprender el estándar y dar tus primeros pasos.",
+      "date": "2025-05-21",
+      "tags": [
+        "begin",
+        "manual",
+        "llmfeed"
+      ],
+      "excerpt": " 👋 Bienvenido a WellKnownMCP Esta página es tu punto de partida para entender el Model Context Protocol MCP y su unidad fundamental: llmfeed.json."
+    },
+    {
+      "slug": "faq",
+      "title": "FAQ – MCP y LLMFeed",
+      "description": "Respuestas a preguntas frecuentes sobre el Protocolo de Contexto para Modelos y el ecosistema LLMFeed, incluyendo cómo se compara con el MCP de Anthropic.",
+      "date": "2025-05-21",
+      "tags": [
+        "mcp",
+        "llmfeed",
+        "faq",
+        "trust",
+        "agents",
+        "developers",
+        "anthropic"
+      ],
+      "excerpt": " ❓ Preguntas frecuentes  🧠 GENERAL"
+    },
+    {
+      "slug": "launch",
+      "title": "Anuncio de Lanzamiento",
+      "description": "Anunciamos el lanzamiento de la iniciativa WellKnownMCP y su sitio oficial.",
+      "date": "2025-05-21",
+      "tags": [
+        "launch",
+        "announcement",
+        "llmfeed"
+      ],
+      "excerpt": " 🚀 ¡WellKnownMCP ya está en línea Nos enorgullece lanzar wellknownmcp.orghttps://wellknownmcp.org,  "
+    },
+    {
+      "slug": "llmfeed-block-structure",
+      "title": "Anatomía de un LLMFeed — Bloque por bloque",
+      "description": "Comprende cómo funciona cada bloque de un archivo .llmfeed.json y cómo diseñar el tuyo propio.",
+      "date": "2025-05-21",
+      "tags": [
+        "guide",
+        "structure",
+        "llmfeed"
+      ],
+      "excerpt": " 🧱 Los bloques que componen un feed Cada archivo .llmfeed.json está formado por bloques estructurados. Aquí te explicamos cómo entenderlos y utilizarlos:"
+    },
+    {
+      "slug": "manifesto",
+      "title": "Nuestro Manifiesto",
+      "description": "La visión, valores y compromisos éticos que respaldan el estándar WellKnownMCP.",
+      "date": "2025-05-21",
+      "tags": [
+        "manifesto",
+        "ethics",
+        "principles",
+        "llmfeed"
+      ],
+      "excerpt": " 🧭 El Manifiesto de WellKnownMCP  Nuestra Visión"
+    },
+    {
+      "slug": "use-cases-mcp",
+      "title": "¿Qué se puede construir con MCP? Casos de uso reales",
+      "description": "Desde salud hasta SaaS, aquí hay ejemplos concretos de cómo utilizar MCP y LLMFeed.",
+      "date": "2025-05-21",
+      "tags": [
+        "use-cases",
+        "mcp",
+        "industries"
+      ],
+      "excerpt": " 🧩 Aplicaciones reales de MCP  🏥 Salud"
+    },
+    {
+      "slug": "about",
+      "title": "Sobre WellKnownMCP",
+      "description": "Una visión general de la iniciativa WellKnownMCP, su propósito y sus objetivos.",
+      "date": "2025-05-07",
+      "tags": [
+        "about",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " Por qué MCP Porque los prompts no bastan.  "
+    },
+    {
+      "slug": "ethics",
+      "title": "Ética y responsabilidad",
+      "description": "Nuestro compromiso con estándares éticos y un uso responsable de la tecnología MCP.",
+      "date": "2025-05-07",
+      "tags": [
+        "ethics",
+        "responsibility",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " Ante todo, la ética MCP es abierto — pero no neutral. Codifica confianza y elección."
+    },
+    {
+      "slug": "why-mcp",
+      "title": "¿Por qué MCP?",
+      "description": "Explicación de las razones que motivan la adopción del estándar Model Context Protocol (MCP).",
+      "date": "2025-05-07",
+      "tags": [
+        "why-mcp",
+        "rationale",
+        "manual",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " ¿Por qué elegir MCP? Frente a los crecientes desafíos de integrar LLMs en contextos reales, WellKnownMCP responde claramente a una necesidad crítica:"
+    }
+  ],
+  "hi": [
+    {
+      "slug": "about",
+      "title": "WellKnownMCP के बारे में",
+      "description": "WellKnownMCP पहल, उसके उद्देश्य और महत्व का एक संक्षिप्त अवलोकन।",
+      "date": "2025-05-07",
+      "tags": [
+        "about",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " क्यों MCP? क्योंकि केवल prompts पर्याप्त नहीं हैं।  "
+    },
+    {
+      "slug": "begin",
+      "title": "शुरुआत कहाँ से करें",
+      "description": "मानक को समझने और अपनी पहली शुरुआत करने में आपकी मदद करने के लिए एक सरल मार्गदर्शिका।",
+      "date": "2025-05-07",
+      "tags": [
+        "begin",
+        "manual",
+        "llmfeed"
+      ],
+      "excerpt": " 👋 WellKnownMCP में आपका स्वागत है यह पृष्ठ Model Context Protocol MCP और इसकी मुख्य इकाई llmfeed.json को समझने के लिए आपका प्रवेश बिंदु है।"
+    },
+    {
+      "slug": "ethics",
+      "title": "नैतिकता और उत्तरदायित्व",
+      "description": "MCP तकनीक के नैतिक मानकों और जिम्मेदार उपयोग के प्रति हमारी प्रतिबद्धता।",
+      "date": "2025-05-07",
+      "tags": [
+        "ethics",
+        "responsibility",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " पहले नैतिकता MCP खुला है — लेकिन यह तटस्थ नहीं है। यह विश्वास और विकल्प को एन्कोड करता है।"
+    },
+    {
+      "slug": "faq",
+      "title": "अक्सर पूछे जाने वाले प्रश्न",
+      "description": "LLMFeed और MCP के बारे में अक्सर पूछे गए प्रश्नों के उत्तर।",
+      "date": "2025-05-07",
+      "tags": [
+        "faq",
+        "guide",
+        "llmfeed"
+      ],
+      "excerpt": " ❓ अक्सर पूछे जाने वाले प्रश्न  LLMFeed क्या है?"
+    },
+    {
+      "slug": "why-mcp",
+      "title": "MCP क्यों?",
+      "description": "Model Context Protocol (MCP) मानक को अपनाने के कारणों की व्याख्या।",
+      "date": "2025-05-07",
+      "tags": [
+        "why-mcp",
+        "rationale",
+        "manual",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " MCP को क्यों चुनें? वास्तविक संदर्भों में LLMs को एकीकृत करने की बढ़ती चुनौतियों के बीच, WellKnownMCP एक महत्वपूर्ण आवश्यकता का स्पष्ट उत्तर प्रदान करता है:"
+    }
+  ],
+  "zh": [
+    {
+      "slug": "2025-06-07-apple-intelligence-agentic-web",
+      "title": "2025-06-07-apple-intelligence-agentic-web",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250607appleintelligenceagenticweb.md Content for zh"
+    },
+    {
+      "slug": "2025-06-14-meta-open-agents-mcp",
+      "title": "2025-06-14-meta-open-agents-mcp",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250614metaopenagentsmcp.md Content for zh"
+    },
+    {
+      "slug": "2025-06-21-claude-4-5-llms-crawling",
+      "title": "2025-06-21-claude-4-5-llms-crawling",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250621claude45llmscrawling.md Content for zh"
+    },
+    {
+      "slug": "2025-06-28-llm-seo-vs-mcp",
+      "title": "2025-06-28-llm-seo-vs-mcp",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250628llmseovsmcp.md Content for zh"
+    },
+    {
+      "slug": "2025-07-05-microsoft-nlweb-protocol",
+      "title": "2025-07-05-microsoft-nlweb-protocol",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250705microsoftnlwebprotocol.md Content for zh"
+    },
+    {
+      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
+      "title": "2025-07-12-from-chatbots-to-autonomous-agents",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250712fromchatbotstoautonomousagents.md Content for zh"
+    },
+    {
+      "slug": "2025-07-19-certifying-agentic-interaction-seo",
+      "title": "2025-07-19-certifying-agentic-interaction-seo",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250719certifyingagenticinteractionseo.md Content for zh"
+    },
+    {
+      "slug": "2025-07-26-ai-first-browsers-agentic-navigation",
+      "title": "2025-07-26-ai-first-browsers-agentic-navigation",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250726aifirstbrowsersagenticnavigation.md Content for zh"
+    },
+    {
+      "slug": "begin",
+      "title": "从哪里开始",
+      "description": "一个简单的指南，帮助你理解标准并迈出第一步。",
+      "date": "2025-05-21",
+      "tags": [
+        "begin",
+        "manual",
+        "llmfeed"
+      ],
+      "excerpt": " 👋 欢迎来到 WellKnownMCP 本页面是你了解 Model Context Protocol MCP 及其核心单元 llmfeed.json 的起点。"
+    },
+    {
+      "slug": "faq",
+      "title": "常见问题解答 – MCP 与 LLMFeed",
+      "description": "关于模型上下文协议（MCP）及其生态系统 LLMFeed 的常见问题解答，包括其与 Anthropic MCP 的比较。",
+      "date": "2025-05-21",
+      "tags": [
+        "mcp",
+        "llmfeed",
+        "faq",
+        "trust",
+        "agents",
+        "developers",
+        "anthropic"
+      ],
+      "excerpt": " ❓ 常见问题解答  🧠 基本概念"
+    },
+    {
+      "slug": "launch",
+      "title": "发布公告",
+      "description": "WellKnownMCP 项目的正式发布及其官方网站的上线公告。",
+      "date": "2025-05-21",
+      "tags": [
+        "launch",
+        "announcement",
+        "llmfeed"
+      ],
+      "excerpt": " 🚀 WellKnownMCP 正式上线！ 我们很自豪地发布 wellknownmcp.orghttps://wellknownmcp.org，  "
+    },
+    {
+      "slug": "llmfeed-block-structure",
+      "title": "LLMFeed 的结构解剖 —— 按模块解析",
+      "description": "了解 .llmfeed.json 中各个模块的功能，并学习如何构建自己的 feed。",
+      "date": "2025-05-21",
+      "tags": [
+        "guide",
+        "structure",
+        "llmfeed"
+      ],
+      "excerpt": " 🧱 构成一个 feed 的模块 每个 .llmfeed.json 文件都由结构化模块组成。以下是每个模块的功能说明及用法："
+    },
+    {
+      "slug": "manifesto",
+      "title": "我们的宣言",
+      "description": "支撑 WellKnownMCP 标准的发展与采用的愿景、价值观和伦理承诺。",
+      "date": "2025-05-21",
+      "tags": [
+        "manifesto",
+        "ethics",
+        "principles",
+        "llmfeed"
+      ],
+      "excerpt": " 🧭 WellKnownMCP 宣言  我们的愿景"
+    },
+    {
+      "slug": "use-cases-mcp",
+      "title": "MCP 能实现什么？真实世界的使用场景",
+      "description": "从医疗到 SaaS，这里列举了 MCP 与 LLMFeed 的具体应用示例。",
+      "date": "2025-05-21",
+      "tags": [
+        "use-cases",
+        "mcp",
+        "industries"
+      ],
+      "excerpt": " 🧩 MCP 的实际应用场景  🏥 医疗领域"
+    },
+    {
+      "slug": "about",
+      "title": "关于 WellKnownMCP",
+      "description": "WellKnownMCP 项目的概览、目标和宗旨。",
+      "date": "2025-05-07",
+      "tags": [
+        "about",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " 为什么是 MCP 因为仅有 prompts 不够。  "
+    },
+    {
+      "slug": "ethics",
+      "title": "伦理与责任",
+      "description": "我们对 MCP 技术的伦理标准和负责任使用的承诺。",
+      "date": "2025-05-07",
+      "tags": [
+        "ethics",
+        "responsibility",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " 伦理优先 MCP 是开放的 —— 但它并非中立。它嵌入了信任与选择。"
+    },
+    {
+      "slug": "why-mcp",
+      "title": "为什么选择 MCP？",
+      "description": "解释采用 Model Context Protocol (MCP) 标准的理由。",
+      "date": "2025-05-07",
+      "tags": [
+        "why-mcp",
+        "rationale",
+        "manual",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " 为什么选择 MCP？ 随着将 LLM 集成至实际场景的需求不断增长，WellKnownMCP 成为一种关键且及时的解决方案。"
+    }
+  ],
+  "ar": [
+    {
+      "slug": "2025-06-07-apple-intelligence-agentic-web",
+      "title": "2025-06-07-apple-intelligence-agentic-web",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250607appleintelligenceagenticweb.md Content for ar"
+    },
+    {
+      "slug": "2025-06-14-meta-open-agents-mcp",
+      "title": "2025-06-14-meta-open-agents-mcp",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250614metaopenagentsmcp.md Content for ar"
+    },
+    {
+      "slug": "2025-06-21-claude-4-5-llms-crawling",
+      "title": "2025-06-21-claude-4-5-llms-crawling",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250621claude45llmscrawling.md Content for ar"
+    },
+    {
+      "slug": "2025-06-28-llm-seo-vs-mcp",
+      "title": "2025-06-28-llm-seo-vs-mcp",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250628llmseovsmcp.md Content for ar"
+    },
+    {
+      "slug": "2025-07-05-microsoft-nlweb-protocol",
+      "title": "2025-07-05-microsoft-nlweb-protocol",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250705microsoftnlwebprotocol.md Content for ar"
+    },
+    {
+      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
+      "title": "2025-07-12-from-chatbots-to-autonomous-agents",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250712fromchatbotstoautonomousagents.md Content for ar"
+    },
+    {
+      "slug": "2025-07-19-certifying-agentic-interaction-seo",
+      "title": "2025-07-19-certifying-agentic-interaction-seo",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250719certifyingagenticinteractionseo.md Content for ar"
+    },
+    {
+      "slug": "2025-07-26-ai-first-browsers-agentic-navigation",
+      "title": "2025-07-26-ai-first-browsers-agentic-navigation",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250726aifirstbrowsersagenticnavigation.md Content for ar"
+    },
+    {
+      "slug": "begin",
+      "title": "من أين تبدأ",
+      "description": "دليل بسيط لفهم المعيار واتخاذ أولى خطواتك.",
+      "date": "2025-05-21",
+      "tags": [
+        "begin",
+        "manual",
+        "llmfeed"
+      ],
+      "excerpt": " 👋 مرحبًا بك في WellKnownMCP هذه الصفحة هي نقطة الانطلاق الخاصة بك لفهم بروتوكول السياق للنماذج MCP ووحدته الأساسية: llmfeed.json."
+    },
+    {
+      "slug": "faq",
+      "title": "الأسئلة الشائعة – MCP و LLMFeed",
+      "description": "إجابات على الأسئلة المتكررة حول بروتوكول السياق للنماذج (MCP) ونظام LLMFeed، بما في ذلك الفرق عن MCP من Anthropic.",
+      "date": "2025-05-21",
+      "tags": [
+        "mcp",
+        "llmfeed",
+        "faq",
+        "trust",
+        "agents",
+        "developers",
+        "anthropic"
+      ],
+      "excerpt": " ❓ الأسئلة الشائعة  🧠 عام"
+    },
+    {
+      "slug": "manifesto",
+      "title": "بياننا",
+      "description": "الرؤية والقيم والالتزامات الأخلاقية التي تقود تطوير معيار WellKnownMCP.",
+      "date": "2025-05-21",
+      "tags": [
+        "manifesto",
+        "ethics",
+        "principles",
+        "llmfeed"
+      ],
+      "excerpt": " 🧭 بيان WellKnownMCP  رؤيتنا"
+    },
+    {
+      "slug": "about",
+      "title": "حول WellKnownMCP",
+      "description": "نظرة عامة على مبادرة WellKnownMCP، هدفها وأغراضها.",
+      "date": "2025-05-07",
+      "tags": [
+        "about",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " لماذا MCP لأن prompts لا تكفي.  "
+    },
+    {
+      "slug": "ethics",
+      "title": "الأخلاقيات والمسؤولية",
+      "description": "التزامنا بالمعايير الأخلاقية والاستخدام المسؤول لتقنية MCP.",
+      "date": "2025-05-07",
+      "tags": [
+        "ethics",
+        "responsibility",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " الأخلاقيات أولاً MCP مفتوح — لكنه ليس محايدًا. فهو يُشفر الثقة والاختيار."
+    },
+    {
+      "slug": "launch",
+      "title": "إعلان الإطلاق",
+      "description": "الإعلان الرسمي عن إطلاق مبادرة WellKnownMCP وموقعها الرسمي.",
+      "date": "2025-05-07",
+      "tags": [
+        "launch",
+        "announcement",
+        "llmfeed"
+      ],
+      "excerpt": " إطلاق WellKnownMCP بعد أشهر من التصميم والمناقشة والنماذج الأولية، أصبح بروتوكول Model Context Protocol متاحًا للجميع."
+    },
+    {
+      "slug": "why-mcp",
+      "title": "لماذا MCP؟",
+      "description": "شرح الأسباب التي تدفع إلى اعتماد معيار Model Context Protocol (MCP).",
+      "date": "2025-05-07",
+      "tags": [
+        "why-mcp",
+        "rationale",
+        "manual",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " لماذا تختار MCP؟ في مواجهة التحديات المتزايدة لدمج نماذج اللغة الكبيرة في السياقات الحقيقية، يقدم WellKnownMCP استجابة واضحة لحاجة حاسمة:"
+    }
+  ],
+  "uk": [
+    {
+      "slug": "2025-06-07-apple-intelligence-agentic-web",
+      "title": "2025-06-07-apple-intelligence-agentic-web",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250607appleintelligenceagenticweb.md Content for uk 🇺🇦"
+    },
+    {
+      "slug": "2025-06-14-meta-open-agents-mcp",
+      "title": "2025-06-14-meta-open-agents-mcp",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250614metaopenagentsmcp.md Content for uk 🇺🇦"
+    },
+    {
+      "slug": "2025-06-21-claude-4-5-llms-crawling",
+      "title": "2025-06-21-claude-4-5-llms-crawling",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250621claude45llmscrawling.md Content for uk 🇺🇦"
+    },
+    {
+      "slug": "2025-06-28-llm-seo-vs-mcp",
+      "title": "2025-06-28-llm-seo-vs-mcp",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250628llmseovsmcp.md Content for uk 🇺🇦"
+    },
+    {
+      "slug": "2025-07-05-microsoft-nlweb-protocol",
+      "title": "2025-07-05-microsoft-nlweb-protocol",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250705microsoftnlwebprotocol.md Content for uk 🇺🇦"
+    },
+    {
+      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
+      "title": "2025-07-12-from-chatbots-to-autonomous-agents",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250712fromchatbotstoautonomousagents.md Content for uk 🇺🇦"
+    },
+    {
+      "slug": "2025-07-19-certifying-agentic-interaction-seo",
+      "title": "2025-07-19-certifying-agentic-interaction-seo",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250719certifyingagenticinteractionseo.md Content for uk 🇺🇦"
+    },
+    {
+      "slug": "2025-07-26-ai-first-browsers-agentic-navigation",
+      "title": "2025-07-26-ai-first-browsers-agentic-navigation",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": " 20250726aifirstbrowsersagenticnavigation.md Content for uk 🇺🇦"
+    },
+    {
+      "slug": "about",
+      "title": "Про WellKnownMCP",
+      "description": "Огляд ініціативи WellKnownMCP, її мети та завдань.",
+      "date": "2025-05-07",
+      "tags": [
+        "about",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " Чому MCP Тому що prompts — це не все.  "
+    },
+    {
+      "slug": "begin",
+      "title": "З чого почати",
+      "description": "Простий посібник, який допоможе вам зрозуміти стандарт і зробити перші кроки.",
+      "date": "2025-05-07",
+      "tags": [
+        "begin",
+        "manual",
+        "llmfeed"
+      ],
+      "excerpt": " 👋 Ласкаво просимо до WellKnownMCP Ця сторінка є вашим стартовим пунктом для ознайомлення з Model Context Protocol MCP та його основною одиницею: llmfeed.json."
+    },
+    {
+      "slug": "ethics",
+      "title": "Етика та відповідальність",
+      "description": "Наше зобов’язання дотримуватись етичних норм та забезпечити відповідальне використання MCP.",
+      "date": "2025-05-07",
+      "tags": [
+        "ethics",
+        "responsibility",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " Етика передусім MCP є відкритим — але не нейтральним. Він кодує довіру та вибір."
+    },
+    {
+      "slug": "faq",
+      "title": "FAQ",
+      "description": "Відповіді на найчастіші запитання про LLMFeed та MCP.",
+      "date": "2025-05-07",
+      "tags": [
+        "faq",
+        "guide",
+        "llmfeed"
+      ],
+      "excerpt": " ❓ Часті запитання  Що таке LLMFeed?"
+    },
+    {
+      "slug": "launch",
+      "title": "Запуск проєкту",
+      "description": "Що відбувається далі, коли ви публікуєте свій LLMFeed.",
+      "date": "2025-05-07",
+      "tags": [
+        "launch",
+        "feed",
+        "guide"
+      ],
+      "excerpt": " 🚀 Ви опублікували LLMFeed — що далі? Чудово Тепер ви офіційно доступні для моделей штучного інтелекту, які підтримують протокол MCP."
+    },
+    {
+      "slug": "llmfeed-block-structure",
+      "title": "Блокова структура",
+      "description": "Як структуровано llmfeed.json: список доступних блоків та їхнє призначення.",
+      "date": "2025-05-07",
+      "tags": [
+        "structure",
+        "block",
+        "llmfeed"
+      ],
+      "excerpt": " 📐 Структура llmfeed.json Файл llmfeed.json складається з блоків верхнього рівня. Кожен блок містить певний тип інформації, який модель може використовувати."
+    },
+    {
+      "slug": "manifesto",
+      "title": "Маніфест",
+      "description": "Наша філософія. Те, чому ми створили LLMFeed і протокол MCP.",
+      "date": "2025-05-07",
+      "tags": [
+        "manifesto",
+        "vision",
+        "philosophy"
+      ],
+      "excerpt": " ✊ Маніфест WellKnownMCP Ми віримо, що штучний інтелект повинен розуміти контекст — і що люди мають бути тими, хто його визначає."
+    },
+    {
+      "slug": "use-cases-mcp",
+      "title": "use-cases-mcp",
+      "description": "",
+      "date": "unknown",
+      "tags": [],
+      "excerpt": "UK  UK title: \"What Can You Build With MCP? RealWorld Use Cases\""
+    },
+    {
+      "slug": "why-mcp",
+      "title": "Чому MCP?",
+      "description": "Пояснення причин, що лежать в основі впровадження стандарту Model Context Protocol (MCP).",
+      "date": "2025-05-07",
+      "tags": [
+        "why-mcp",
+        "rationale",
+        "manual",
+        "core",
+        "llmfeed"
+      ],
+      "excerpt": " Чому варто обрати MCP? У відповідь на зростаючі виклики інтеграції LLM у реальні контексти, WellKnownMCP дає чітку відповідь на критичну потребу."
+    }
+  ]
 }
