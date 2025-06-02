@@ -56,6 +56,13 @@ export default function EnhancedFeedViewer({
     runAnalysis()
   }, [feed])
 
+  // 🚀 Ajout : log automatique des erreurs signature
+  useEffect(() => {
+    if (signatureStatus && !signatureStatus.ok) {
+      console.warn('[Signature Check Failed]', signatureStatus.message)
+    }
+  }, [signatureStatus])
+
   if (!feed || typeof feed !== 'object') {
     return <p className="text-red-500">❌ No valid feed provided.</p>
   }
@@ -103,9 +110,22 @@ export default function EnhancedFeedViewer({
       <div className="border rounded p-3">
         <h3 className="font-semibold">Signature</h3>
         {signatureStatus ? (
-          <p className={signatureStatus.ok ? 'text-green-600' : 'text-red-600'}>
-            {signatureStatus.ok ? '✅' : '❌'} {signatureStatus.message}
-          </p>
+          <>
+            <p
+              className={
+                signatureStatus.ok ? 'text-green-600' : 'text-red-600'
+              }
+            >
+              {signatureStatus.ok ? '✅' : '❌'} {signatureStatus.message}
+            </p>
+
+            {/* 🚀 Ajout : Debug en cas d'erreur */}
+            {!signatureStatus.ok && (
+              <pre className="text-xs text-gray-500 mt-2">
+                Debug: {signatureStatus.message}
+              </pre>
+            )}
+          </>
         ) : (
           <p className="text-gray-500 italic">Checking...</p>
         )}

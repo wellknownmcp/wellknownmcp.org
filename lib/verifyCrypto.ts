@@ -34,6 +34,11 @@ async function loadPublicKey(url: string): Promise<Uint8Array> {
   throw new Error(`Unsupported public key size: ${der.length} bytes`)
 }
 
+// ✅ Helper pour formatter proprement les erreurs
+function formatError(e: any): string {
+  return e?.message ?? String(e)
+}
+
 export async function verifyFeedSignature(
   feed: any
 ): Promise<{ ok: boolean; message: string }> {
@@ -53,7 +58,10 @@ export async function verifyFeedSignature(
   try {
     publicKey = await loadPublicKey(publicKeyHint)
   } catch (e) {
-    return { ok: false, message: 'Failed to load public key: ' + e }
+    return {
+      ok: false,
+      message: 'Failed to load public key: ' + formatError(e),
+    }
   }
 
   const signedBlocks = trust?.signed_blocks ?? []
@@ -98,7 +106,10 @@ export async function verifyFeedCertification(
   try {
     publicKey = await loadPublicKey(publicKeyHint)
   } catch (e) {
-    return { ok: false, message: 'Failed to load cert public key: ' + e }
+    return {
+      ok: false,
+      message: 'Failed to load cert public key: ' + formatError(e),
+    }
   }
 
   const signedBlocks = cert?.signed_blocks ?? []
