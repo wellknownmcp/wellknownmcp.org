@@ -71,6 +71,7 @@ Explore examples or generate your own feed:
 Any feed or tool on this site can be **downloaded as `.llmfeed.json`**.
 
 You can:
+
 - 📥 Download it
 - 🤖 Feed it to ChatGPT, Claude, or your favorite LLM
 - 📚 Turn any agent into your **teacher or explainer**
@@ -95,6 +96,7 @@ Just paste it in.
 ## 🤝 Join the ecosystem
 
 Start publishing your own feed:  
+
 - [Join us](/join)  
 - [See certified examples](https://wellknownmcp.org/llmfeedhub)  
 - [Understand the Manifesto](/spec/spec/llmfeed_manifesto)
@@ -104,6 +106,7 @@ Start publishing your own feed:
 ## 🧑‍🏫 You don't need to be a developer
 
 Our tools work with:
+
 - Guided UI (Forge)
 - No-code export buttons
 - Open-source templates
@@ -128,4 +131,3 @@ You can even start learning **by asking your LLM**:
 
 Most LLMs will understand.  
 The best ones will help you implement it.
-

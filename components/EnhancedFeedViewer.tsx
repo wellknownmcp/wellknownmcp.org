@@ -33,7 +33,7 @@ export default function EnhancedFeedViewer({
       } catch (e) {
         sigStatus = {
           ok: false,
-          message: 'Signature check failed: ' + (e?.message ?? String(e)),
+          message: 'Signature check has failed: ' + (e?.message ?? String(e)),
         }
       }
       setSignatureStatus(sigStatus)

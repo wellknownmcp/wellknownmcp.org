@@ -17,7 +17,7 @@ export function DownloadFeeds() {
         🥋 Welcome to the dojo — if your LLM says "I know Kung-fu", it worked.
         <p className="text-xs text-muted-foreground mt-4">
           Not sure what this is?{' '}
-          <a href="/spec/llmfeed" className="underline">
+          <a href="/spec/01_llmfeed/llmfeed" className="underline">
             Read the spec →
           </a>
         </p>
