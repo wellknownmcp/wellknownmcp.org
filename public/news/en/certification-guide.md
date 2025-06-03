@@ -1,7 +1,5 @@
 ---
 title: "Signature vs Certification: What’s the Difference?"
-
-title: "Signature vs Certification: What’s the Difference?"
 description: "Understanding trust levels in LLMFeed and how to make your content verifiable."
 date: '2025-05-21'
 tags:
@@ -28,6 +26,7 @@ lang: en
 - Declares: “This has been reviewed and validated externally”
 
 Levels:
+
 - `self-declared`: unsigned or minimally signed
 - `silver`: validated structure
 - `gold`: signature integrity + trust level
