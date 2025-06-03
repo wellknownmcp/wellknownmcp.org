@@ -39,22 +39,27 @@ function formatError(e: any): string {
   return e?.message ?? String(e)
 }
 
-export async function verifyFeedSignature(
-  feed: any
-): Promise<{ ok: boolean; message: string }> {
+export async function verifyFeedSignature(feed) {
   if (!feed || typeof feed !== 'object') {
     return { ok: false, message: 'Invalid feed.' }
   }
 
-  const sig = feed.signature
+  const sig = feed.signature?.value
   const trust = feed.trust
+
+  if (typeof sig !== 'string' || sig.trim() === '') {
+    return {
+      ok: false,
+      message: `Invalid or missing signature value. Expected Base64 string in feed.signature.value.`,
+    }
+  }
 
   const publicKeyHint = trust?.public_key_hint
   if (!publicKeyHint) {
     return { ok: false, message: 'Missing public_key_hint in trust block.' }
   }
 
-  let publicKey: Uint8Array
+  let publicKey
   try {
     publicKey = await loadPublicKey(publicKeyHint)
   } catch (e) {
@@ -65,12 +70,28 @@ export async function verifyFeedSignature(
   }
 
   const signedBlocks = trust?.signed_blocks ?? []
-  const payload = concatSignedBlocks(feed, signedBlocks)
-  const payloadHash = sha256(payload)
-  const payloadBytes = new TextEncoder().encode(payloadHash)
 
+  // 🚩 Rebuild partial in signed_blocks order
+  const partial = {}
+  for (const key of signedBlocks) {
+    if (
+      feed[key] !== undefined &&
+      key !== 'signature' &&
+      key !== 'certification' &&
+      key !== '_meta'
+    ) {
+      partial[key] = feed[key]
+    }
+  }
+
+  // 🚩 MCP canonicalization v1 → stringify WITHOUT pretty print
+  const payloadString = JSON.stringify(partial, null, 0)
+  const payloadBytes = new TextEncoder().encode(payloadString)
+
+  // Prepare signature
   const signatureBytes = base64ToUint8Array(sig)
 
+  // Verify
   const valid = nacl.sign.detached.verify(
     payloadBytes,
     signatureBytes,

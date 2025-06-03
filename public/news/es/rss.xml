@@ -4,10 +4,73 @@
         <title>News (es) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/es/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Mon, 02 Jun 2025 12:47:10 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Jun 2025 14:28:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>es</language>
         <copyright>© 2025 WellKnownMCP</copyright>
+        <item>
+            <title><![CDATA[Por dónde empezar]]></title>
+            <link>https://wellknownmcp.org/es/news/begin</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/es/news/begin</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Una guía sencilla para comprender el estándar y dar tus primeros pasos.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[FAQ – MCP y LLMFeed]]></title>
+            <link>https://wellknownmcp.org/es/news/faq</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/es/news/faq</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Respuestas a preguntas frecuentes sobre el Protocolo de Contexto para Modelos y el ecosistema LLMFeed, incluyendo cómo se compara con el MCP de Anthropic.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Anuncio de Lanzamiento]]></title>
+            <link>https://wellknownmcp.org/es/news/launch</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/es/news/launch</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Anunciamos el lanzamiento de la iniciativa WellKnownMCP y su sitio oficial.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Anatomía de un LLMFeed — Bloque por bloque]]></title>
+            <link>https://wellknownmcp.org/es/news/llmfeed-block-structure</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/es/news/llmfeed-block-structure</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Comprende cómo funciona cada bloque de un archivo .llmfeed.json y cómo diseñar el tuyo propio.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Nuestro Manifiesto]]></title>
+            <link>https://wellknownmcp.org/es/news/manifesto</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/es/news/manifesto</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[La visión, valores y compromisos éticos que respaldan el estándar WellKnownMCP.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[¿Qué se puede construir con MCP? Casos de uso reales]]></title>
+            <link>https://wellknownmcp.org/es/news/use-cases-mcp</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/es/news/use-cases-mcp</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Desde salud hasta SaaS, aquí hay ejemplos concretos de cómo utilizar MCP y LLMFeed.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Sobre WellKnownMCP]]></title>
+            <link>https://wellknownmcp.org/es/news/about</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/es/news/about</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Una visión general de la iniciativa WellKnownMCP, su propósito y sus objetivos.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Ética y responsabilidad]]></title>
+            <link>https://wellknownmcp.org/es/news/ethics</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/es/news/ethics</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Nuestro compromiso con estándares éticos y un uso responsable de la tecnología MCP.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[¿Por qué MCP?]]></title>
+            <link>https://wellknownmcp.org/es/news/why-mcp</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/es/news/why-mcp</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Explicación de las razones que motivan la adopción del estándar Model Context Protocol (MCP).]]></description>
+        </item>
     </channel>
 </rss>

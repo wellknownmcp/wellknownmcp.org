@@ -1,10 +1,64 @@
 {
   "en": [
     {
+      "slug": "mcp-and-agentic-web-in-asia",
+      "title": "MCP and the Agentic Web Revolution in Asia",
+      "description": "Why Asia is poised to lead the Agentic Web — and how MCP can help build an open, interoperable ecosystem for LLM-powered agents in China, Korea, Japan and beyond.",
+      "date": "2025-06-02",
+      "tags": [
+        "mcp",
+        "agentic-web",
+        "china",
+        "asia",
+        "ai-standards",
+        "llm-agents",
+        "interoperability",
+        "wechat",
+        "baidu",
+        "alibaba",
+        "douyin",
+        "kakao",
+        "samsung",
+        "line",
+        "open-standards",
+        "llm",
+        "trust",
+        "certification",
+        "well-known",
+        "mcp-net",
+        "llmfeedforge"
+      ],
+      "excerpt": "\r  🚀 Asia: The Fastest Growing Agentic Web Ecosystem\r"
+    },
+    {
+      "slug": "why-sign-and-certify-mcp",
+      "title": "Why Sign & Certify MCP Feeds?",
+      "description": "Why signing and certification are key to building trust in the Agentic Web. Learn why each feed type should be signed and how certification — including delegated signatures — adds trust.",
+      "date": "2025-06-02",
+      "tags": [
+        "mcp",
+        "why sign",
+        "why certify",
+        "agentic web",
+        "trust",
+        "certification",
+        "delegated signature",
+        "well-known",
+        "signature",
+        "mcpnet",
+        "llmfeedforge",
+        "llmca",
+        "trusted agents",
+        "mcp-spec",
+        "agent interoperability"
+      ],
+      "excerpt": "\r The Agentic Web is growing fast — and like the early web, it needs trust and verification.  \r"
+    },
+    {
       "slug": "2025-06-07-apple-intelligence-agentic-web",
       "title": "Apple Intelligence: A New Player in the Agentic Web?",
       "description": "Apple’s entry into AI-driven agents could reshape the emerging Agentic Web landscape. What does it mean for standards like MCP?",
-      "date": "unknown",
+      "date": "2025-05-31",
       "tags": [
         "apple",
         "agentic-web",
@@ -18,7 +72,7 @@
       "slug": "2025-06-14-meta-open-agents-mcp",
       "title": "Meta’s Open Agents: Opportunity or Challenge for MCP?",
       "description": "Meta announces its Open Agents initiative. How does it align with MCP and the vision of an interoperable Agentic Web?",
-      "date": "unknown",
+      "date": "2025-05-31",
       "tags": [
         "meta",
         "open-agents",
@@ -32,7 +86,7 @@
       "slug": "2025-06-21-claude-4-5-llms-crawling",
       "title": "Claude 4.5 and the New Wave of LLM Crawling",
       "description": "As Claude 4.5 rolls out with enhanced browsing capabilities, what are the implications for the Agentic Web and standards like MCP?",
-      "date": "unknown",
+      "date": "2025-05-31",
       "tags": [
         "claude",
         "anthropic",
@@ -46,7 +100,7 @@
       "slug": "2025-06-28-llm-seo-vs-mcp",
       "title": "LLM SEO vs MCP: Competing or Complementary Visions?",
       "description": "LLM-driven SEO is on the rise. How does it compare — or conflict — with MCP and the goals of an open Agentic Web?",
-      "date": "unknown",
+      "date": "2025-05-31",
       "tags": [
         "seo",
         "llm-seo",
@@ -60,7 +114,7 @@
       "slug": "2025-07-05-microsoft-nlweb-protocol",
       "title": "Microsoft’s NLWeb Protocol: A Competitor to MCP?",
       "description": "Microsoft introduces NLWeb — a protocol for natural language interactions on the web. How does it compare to MCP?",
-      "date": "unknown",
+      "date": "2025-05-31",
       "tags": [
         "microsoft",
         "nlweb",
@@ -82,13 +136,13 @@
         "mcp",
         "ai"
       ],
-      "excerpt": " From Chatbots to Autonomous Agents: The Web’s Next Evolution For years, the term chatbot dominated conversations about AI on the web.  "
+      "excerpt": " From Chatbots to Autonomous Agents: The Web’s Next Evolution For years, the term chatbot dominated conversations about AI on the web."
     },
     {
       "slug": "2025-07-19-certifying-agentic-interaction-seo",
       "title": "Certifying Agentic Interactions: The New Frontier of SEO?",
       "description": "As the Agentic Web emerges, trust and certification are becoming key. Could certifying agentic interactions become the new SEO?",
-      "date": "unknown",
+      "date": "2025-05-31",
       "tags": [
         "certification",
         "agentic-web",
@@ -96,13 +150,13 @@
         "mcp",
         "trust"
       ],
-      "excerpt": " Certifying Agentic Interactions: The New Frontier of SEO? Traditional SEO optimized content for human searchers.  "
+      "excerpt": " Certifying Agentic Interactions: The New Frontier of SEO? Traditional SEO optimized content for human searchers."
     },
     {
       "slug": "2025-07-26-ai-first-browsers-agentic-navigation",
       "title": "AI-First Browsers: Redefining Agentic Navigation",
       "description": "A new wave of AI-first browsers is emerging. What does this mean for web navigation — and how does MCP enable it?",
-      "date": "unknown",
+      "date": "2025-05-31",
       "tags": [
         "ai-first-browsers",
         "agentic-web",
@@ -110,7 +164,7 @@
         "mcp",
         "llm"
       ],
-      "excerpt": " AIFirst Browsers: Redefining Agentic Navigation A quiet revolution is happening in how users — and their agents — navigate the web:  "
+      "excerpt": " AIFirst Browsers: Redefining Agentic Navigation A quiet revolution is happening in how users — and their agents — navigate the web:"
     },
     {
       "slug": "news_opera_neon",
@@ -508,70 +562,6 @@
   ],
   "fr": [
     {
-      "slug": "2025-06-07-apple-intelligence-agentic-web",
-      "title": "2025-06-07-apple-intelligence-agentic-web",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250607appleintelligenceagenticweb.md Content for fr"
-    },
-    {
-      "slug": "2025-06-14-meta-open-agents-mcp",
-      "title": "2025-06-14-meta-open-agents-mcp",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250614metaopenagentsmcp.md Content for fr"
-    },
-    {
-      "slug": "2025-06-21-claude-4-5-llms-crawling",
-      "title": "2025-06-21-claude-4-5-llms-crawling",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250621claude45llmscrawling.md Content for fr"
-    },
-    {
-      "slug": "2025-06-28-llm-seo-vs-mcp",
-      "title": "2025-06-28-llm-seo-vs-mcp",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250628llmseovsmcp.md Content for fr"
-    },
-    {
-      "slug": "2025-07-05-microsoft-nlweb-protocol",
-      "title": "2025-07-05-microsoft-nlweb-protocol",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250705microsoftnlwebprotocol.md Content for fr"
-    },
-    {
-      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
-      "title": "2025-07-12-from-chatbots-to-autonomous-agents",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250712fromchatbotstoautonomousagents.md Content for fr"
-    },
-    {
-      "slug": "2025-07-19-certifying-agentic-interaction-seo",
-      "title": "2025-07-19-certifying-agentic-interaction-seo",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250719certifyingagenticinteractionseo.md Content for fr"
-    },
-    {
-      "slug": "2025-07-26-ai-first-browsers-agentic-navigation",
-      "title": "2025-07-26-ai-first-browsers-agentic-navigation",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250726aifirstbrowsersagenticnavigation.md Content for fr"
-    },
-    {
       "slug": "begin",
       "title": "Par où commencer",
       "description": "Un guide simple pour comprendre la norme et faire vos premiers pas.",
@@ -676,70 +666,6 @@
     }
   ],
   "es": [
-    {
-      "slug": "2025-06-07-apple-intelligence-agentic-web",
-      "title": "2025-06-07-apple-intelligence-agentic-web",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250607appleintelligenceagenticweb.md Content for es"
-    },
-    {
-      "slug": "2025-06-14-meta-open-agents-mcp",
-      "title": "2025-06-14-meta-open-agents-mcp",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250614metaopenagentsmcp.md Content for es"
-    },
-    {
-      "slug": "2025-06-21-claude-4-5-llms-crawling",
-      "title": "2025-06-21-claude-4-5-llms-crawling",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250621claude45llmscrawling.md Content for es"
-    },
-    {
-      "slug": "2025-06-28-llm-seo-vs-mcp",
-      "title": "2025-06-28-llm-seo-vs-mcp",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250628llmseovsmcp.md Content for es"
-    },
-    {
-      "slug": "2025-07-05-microsoft-nlweb-protocol",
-      "title": "2025-07-05-microsoft-nlweb-protocol",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250705microsoftnlwebprotocol.md Content for es"
-    },
-    {
-      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
-      "title": "2025-07-12-from-chatbots-to-autonomous-agents",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250712fromchatbotstoautonomousagents.md Content for es"
-    },
-    {
-      "slug": "2025-07-19-certifying-agentic-interaction-seo",
-      "title": "2025-07-19-certifying-agentic-interaction-seo",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250719certifyingagenticinteractionseo.md Content for es"
-    },
-    {
-      "slug": "2025-07-26-ai-first-browsers-agentic-navigation",
-      "title": "2025-07-26-ai-first-browsers-agentic-navigation",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250726aifirstbrowsersagenticnavigation.md Content for es"
-    },
     {
       "slug": "begin",
       "title": "Por dónde empezar",
@@ -908,6 +834,42 @@
       "excerpt": " ❓ अक्सर पूछे जाने वाले प्रश्न  LLMFeed क्या है?"
     },
     {
+      "slug": "launch",
+      "title": "लॉन्च",
+      "description": "जब आप अपना LLMFeed प्रकाशित करते हैं तो आगे क्या होता है। मानक को समझने और अपनी पहली शुरुआत करने में आपकी मदद करने के लिए एक सरल मार्गदर्शिका।",
+      "date": "2025-05-07",
+      "tags": [
+        "launch",
+        "manual",
+        "llmfeed"
+      ],
+      "excerpt": " 👋 WellKnownMCP में आपका स्वागत है यह पृष्ठ Model Context Protocol MCP और इसकी मुख्य इकाई llmfeed.json को समझने के लिए आपका प्रवेश बिंदु है।"
+    },
+    {
+      "slug": "llmfeed-block-structure",
+      "title": "ब्लॉक संरचना",
+      "description": "llmfeed.json की संरचना: उपलब्ध ब्लॉकों की सूची और उनका उद्देश्य।': 'मानक को समझने और अपनी पहली शुरुआत करने में आपकी मदद करने के लिए एक सरल मार्गदर्शिका।",
+      "date": "2025-05-07",
+      "tags": [
+        "structure",
+        "manual",
+        "llmfeed"
+      ],
+      "excerpt": " 👋 WellKnownMCP में आपका स्वागत है यह पृष्ठ Model Context Protocol MCP और इसकी मुख्य इकाई llmfeed.json को समझने के लिए आपका प्रवेश बिंदु है।"
+    },
+    {
+      "slug": "manifesto",
+      "title": "घोषणापत्र",
+      "description": "हमारा दृष्टिकोण — हमने LLMFeed और MCP क्यों बनाया।': 'मानक को समझने और अपनी पहली शुरुआत करने में आपकी मदद करने के लिए एक सरल मार्गदर्शिका।",
+      "date": "2025-05-07",
+      "tags": [
+        "manifesto",
+        "manual",
+        "llmfeed"
+      ],
+      "excerpt": " 👋 WellKnownMCP में आपका स्वागत है यह पृष्ठ Model Context Protocol MCP और इसकी मुख्य इकाई llmfeed.json को समझने के लिए आपका प्रवेश बिंदु है।"
+    },
+    {
       "slug": "why-mcp",
       "title": "MCP क्यों?",
       "description": "Model Context Protocol (MCP) मानक को अपनाने के कारणों की व्याख्या।",
@@ -924,68 +886,82 @@
   ],
   "zh": [
     {
-      "slug": "2025-06-07-apple-intelligence-agentic-web",
-      "title": "2025-06-07-apple-intelligence-agentic-web",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250607appleintelligenceagenticweb.md Content for zh"
+      "slug": "mcp-and-agentic-web-in-asia",
+      "title": "MCP 与亚洲代理网络革命",
+      "description": "为什么亚洲有望引领代理网络（Agentic Web），以及 MCP 如何帮助构建面向 LLM 代理的开放互操作生态。",
+      "date": "2025-06-02",
+      "tags": [
+        "mcp",
+        "agentic web",
+        "asia",
+        "china",
+        "ai标准",
+        "llm代理",
+        "互操作性",
+        "wechat",
+        "baidu",
+        "alibaba",
+        "douyin",
+        "kakao",
+        "samsung",
+        "line",
+        "open standards",
+        "可信代理",
+        "mcpnet"
+      ],
+      "excerpt": "\r 目前，代理网络（Agentic Web）在全球发展迅速——而在亚洲，发展速度尤为惊人。\r"
     },
     {
-      "slug": "2025-06-14-meta-open-agents-mcp",
-      "title": "2025-06-14-meta-open-agents-mcp",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250614metaopenagentsmcp.md Content for zh"
-    },
-    {
-      "slug": "2025-06-21-claude-4-5-llms-crawling",
-      "title": "2025-06-21-claude-4-5-llms-crawling",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250621claude45llmscrawling.md Content for zh"
+      "slug": "why-sign-and-certify-mcp",
+      "title": "为什么要签署和认证 MCP Feed？",
+      "description": "签名和认证是构建可信代理网络的关键。了解为何每种 Feed 类型都应签名，以及认证如何提升信任层级。",
+      "date": "2025-06-02",
+      "tags": [
+        "mcp",
+        "签名",
+        "认证",
+        "代理网络",
+        "信任",
+        "well-known",
+        "签名机制",
+        "mcpnet",
+        "llmfeedforge",
+        "llmca",
+        "可信代理",
+        "mcp规范",
+        "代理互操作性"
+      ],
+      "excerpt": "\r 代理网络（Agentic Web）正在迅速发展——就像早期的互联网一样，它需要信任与验证。  \r"
     },
     {
       "slug": "2025-06-28-llm-seo-vs-mcp",
-      "title": "2025-06-28-llm-seo-vs-mcp",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250628llmseovsmcp.md Content for zh"
+      "title": "LLM SEO 与 MCP：竞争还是互补？",
+      "description": "LLM 驱动的 SEO 正在兴起。它是否与 MCP 和开放代理网络（Agentic Web）的目标冲突，还是可以互补？",
+      "date": "2025-05-31",
+      "tags": [
+        "seo",
+        "llm-seo",
+        "agentic-web",
+        "mcp",
+        "search"
+      ],
+      "excerpt": "\r  LLM SEO 与 MCP：竞争还是互补？\r"
     },
     {
-      "slug": "2025-07-05-microsoft-nlweb-protocol",
-      "title": "2025-07-05-microsoft-nlweb-protocol",
+      "slug": "from-seo-to-aio-agentic-web",
+      "title": "从 SEO 到 AIO：aiovsseo.com 正式加入代理网络（Agentic Web）",
       "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250705microsoftnlwebprotocol.md Content for zh"
-    },
-    {
-      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
-      "title": "2025-07-12-from-chatbots-to-autonomous-agents",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250712fromchatbotstoautonomousagents.md Content for zh"
-    },
-    {
-      "slug": "2025-07-19-certifying-agentic-interaction-seo",
-      "title": "2025-07-19-certifying-agentic-interaction-seo",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250719certifyingagenticinteractionseo.md Content for zh"
-    },
-    {
-      "slug": "2025-07-26-ai-first-browsers-agentic-navigation",
-      "title": "2025-07-26-ai-first-browsers-agentic-navigation",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250726aifirstbrowsersagenticnavigation.md Content for zh"
+      "date": "Fri May 30 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [
+        "Agentic Web",
+        "MCP",
+        "LLMCA",
+        "aiovsseo",
+        "AIO",
+        "trust",
+        "LLMs"
+      ],
+      "excerpt": "\r  从 SEO 到 AIO：aiovsseo.comhttps://aiovsseo.com 正式加入代理网络\r"
     },
     {
       "slug": "begin",
@@ -1106,70 +1082,6 @@
   ],
   "ar": [
     {
-      "slug": "2025-06-07-apple-intelligence-agentic-web",
-      "title": "2025-06-07-apple-intelligence-agentic-web",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250607appleintelligenceagenticweb.md Content for ar"
-    },
-    {
-      "slug": "2025-06-14-meta-open-agents-mcp",
-      "title": "2025-06-14-meta-open-agents-mcp",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250614metaopenagentsmcp.md Content for ar"
-    },
-    {
-      "slug": "2025-06-21-claude-4-5-llms-crawling",
-      "title": "2025-06-21-claude-4-5-llms-crawling",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250621claude45llmscrawling.md Content for ar"
-    },
-    {
-      "slug": "2025-06-28-llm-seo-vs-mcp",
-      "title": "2025-06-28-llm-seo-vs-mcp",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250628llmseovsmcp.md Content for ar"
-    },
-    {
-      "slug": "2025-07-05-microsoft-nlweb-protocol",
-      "title": "2025-07-05-microsoft-nlweb-protocol",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250705microsoftnlwebprotocol.md Content for ar"
-    },
-    {
-      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
-      "title": "2025-07-12-from-chatbots-to-autonomous-agents",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250712fromchatbotstoautonomousagents.md Content for ar"
-    },
-    {
-      "slug": "2025-07-19-certifying-agentic-interaction-seo",
-      "title": "2025-07-19-certifying-agentic-interaction-seo",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250719certifyingagenticinteractionseo.md Content for ar"
-    },
-    {
-      "slug": "2025-07-26-ai-first-browsers-agentic-navigation",
-      "title": "2025-07-26-ai-first-browsers-agentic-navigation",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250726aifirstbrowsersagenticnavigation.md Content for ar"
-    },
-    {
       "slug": "begin",
       "title": "من أين تبدأ",
       "description": "دليل بسيط لفهم المعيار واتخاذ أولى خطواتك.",
@@ -1263,70 +1175,6 @@
     }
   ],
   "uk": [
-    {
-      "slug": "2025-06-07-apple-intelligence-agentic-web",
-      "title": "2025-06-07-apple-intelligence-agentic-web",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250607appleintelligenceagenticweb.md Content for uk 🇺🇦"
-    },
-    {
-      "slug": "2025-06-14-meta-open-agents-mcp",
-      "title": "2025-06-14-meta-open-agents-mcp",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250614metaopenagentsmcp.md Content for uk 🇺🇦"
-    },
-    {
-      "slug": "2025-06-21-claude-4-5-llms-crawling",
-      "title": "2025-06-21-claude-4-5-llms-crawling",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250621claude45llmscrawling.md Content for uk 🇺🇦"
-    },
-    {
-      "slug": "2025-06-28-llm-seo-vs-mcp",
-      "title": "2025-06-28-llm-seo-vs-mcp",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250628llmseovsmcp.md Content for uk 🇺🇦"
-    },
-    {
-      "slug": "2025-07-05-microsoft-nlweb-protocol",
-      "title": "2025-07-05-microsoft-nlweb-protocol",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250705microsoftnlwebprotocol.md Content for uk 🇺🇦"
-    },
-    {
-      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
-      "title": "2025-07-12-from-chatbots-to-autonomous-agents",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250712fromchatbotstoautonomousagents.md Content for uk 🇺🇦"
-    },
-    {
-      "slug": "2025-07-19-certifying-agentic-interaction-seo",
-      "title": "2025-07-19-certifying-agentic-interaction-seo",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250719certifyingagenticinteractionseo.md Content for uk 🇺🇦"
-    },
-    {
-      "slug": "2025-07-26-ai-first-browsers-agentic-navigation",
-      "title": "2025-07-26-ai-first-browsers-agentic-navigation",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": " 20250726aifirstbrowsersagenticnavigation.md Content for uk 🇺🇦"
-    },
     {
       "slug": "about",
       "title": "Про WellKnownMCP",

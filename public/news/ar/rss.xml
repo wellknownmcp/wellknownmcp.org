@@ -4,10 +4,59 @@
         <title>News (ar) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/ar/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Mon, 02 Jun 2025 12:47:10 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Jun 2025 14:28:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ar</language>
         <copyright>© 2025 WellKnownMCP</copyright>
+        <item>
+            <title><![CDATA[من أين تبدأ]]></title>
+            <link>https://wellknownmcp.org/ar/news/begin</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/ar/news/begin</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[دليل بسيط لفهم المعيار واتخاذ أولى خطواتك.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[الأسئلة الشائعة – MCP و LLMFeed]]></title>
+            <link>https://wellknownmcp.org/ar/news/faq</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/ar/news/faq</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[إجابات على الأسئلة المتكررة حول بروتوكول السياق للنماذج (MCP) ونظام LLMFeed، بما في ذلك الفرق عن MCP من Anthropic.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[بياننا]]></title>
+            <link>https://wellknownmcp.org/ar/news/manifesto</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/ar/news/manifesto</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[الرؤية والقيم والالتزامات الأخلاقية التي تقود تطوير معيار WellKnownMCP.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[حول WellKnownMCP]]></title>
+            <link>https://wellknownmcp.org/ar/news/about</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/ar/news/about</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[نظرة عامة على مبادرة WellKnownMCP، هدفها وأغراضها.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[الأخلاقيات والمسؤولية]]></title>
+            <link>https://wellknownmcp.org/ar/news/ethics</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/ar/news/ethics</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[التزامنا بالمعايير الأخلاقية والاستخدام المسؤول لتقنية MCP.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[إعلان الإطلاق]]></title>
+            <link>https://wellknownmcp.org/ar/news/launch</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/ar/news/launch</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[الإعلان الرسمي عن إطلاق مبادرة WellKnownMCP وموقعها الرسمي.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[لماذا MCP؟]]></title>
+            <link>https://wellknownmcp.org/ar/news/why-mcp</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/ar/news/why-mcp</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[شرح الأسباب التي تدفع إلى اعتماد معيار Model Context Protocol (MCP).]]></description>
+        </item>
     </channel>
 </rss>

@@ -4,10 +4,72 @@
         <title>News (uk) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/uk/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Mon, 02 Jun 2025 12:47:10 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Jun 2025 14:28:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>uk</language>
         <copyright>© 2025 WellKnownMCP</copyright>
+        <item>
+            <title><![CDATA[Про WellKnownMCP]]></title>
+            <link>https://wellknownmcp.org/uk/news/about</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/uk/news/about</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Огляд ініціативи WellKnownMCP, її мети та завдань.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[З чого почати]]></title>
+            <link>https://wellknownmcp.org/uk/news/begin</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/uk/news/begin</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Простий посібник, який допоможе вам зрозуміти стандарт і зробити перші кроки.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Етика та відповідальність]]></title>
+            <link>https://wellknownmcp.org/uk/news/ethics</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/uk/news/ethics</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Наше зобов’язання дотримуватись етичних норм та забезпечити відповідальне використання MCP.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[FAQ]]></title>
+            <link>https://wellknownmcp.org/uk/news/faq</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/uk/news/faq</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Відповіді на найчастіші запитання про LLMFeed та MCP.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Запуск проєкту]]></title>
+            <link>https://wellknownmcp.org/uk/news/launch</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/uk/news/launch</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Що відбувається далі, коли ви публікуєте свій LLMFeed.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Блокова структура]]></title>
+            <link>https://wellknownmcp.org/uk/news/llmfeed-block-structure</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/uk/news/llmfeed-block-structure</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Як структуровано llmfeed.json: список доступних блоків та їхнє призначення.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Маніфест]]></title>
+            <link>https://wellknownmcp.org/uk/news/manifesto</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/uk/news/manifesto</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Наша філософія. Те, чому ми створили LLMFeed і протокол MCP.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[use-cases-mcp]]></title>
+            <link>https://wellknownmcp.org/uk/news/use-cases-mcp</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/uk/news/use-cases-mcp</guid>
+            <pubDate>Invalid Date</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Чому MCP?]]></title>
+            <link>https://wellknownmcp.org/uk/news/why-mcp</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/uk/news/why-mcp</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Пояснення причин, що лежать в основі впровадження стандарту Model Context Protocol (MCP).]]></description>
+        </item>
     </channel>
 </rss>

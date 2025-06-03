@@ -4,10 +4,100 @@
         <title>News (zh) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/zh/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Mon, 02 Jun 2025 12:47:10 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Jun 2025 14:28:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh</language>
         <copyright>© 2025 WellKnownMCP</copyright>
+        <item>
+            <title><![CDATA[MCP 与亚洲代理网络革命]]></title>
+            <link>https://wellknownmcp.org/zh/news/mcp-and-agentic-web-in-asia</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/mcp-and-agentic-web-in-asia</guid>
+            <pubDate>Mon, 02 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[为什么亚洲有望引领代理网络（Agentic Web），以及 MCP 如何帮助构建面向 LLM 代理的开放互操作生态。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[为什么要签署和认证 MCP Feed？]]></title>
+            <link>https://wellknownmcp.org/zh/news/why-sign-and-certify-mcp</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/why-sign-and-certify-mcp</guid>
+            <pubDate>Mon, 02 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[签名和认证是构建可信代理网络的关键。了解为何每种 Feed 类型都应签名，以及认证如何提升信任层级。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[LLM SEO 与 MCP：竞争还是互补？]]></title>
+            <link>https://wellknownmcp.org/zh/news/2025-06-28-llm-seo-vs-mcp</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/2025-06-28-llm-seo-vs-mcp</guid>
+            <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[LLM 驱动的 SEO 正在兴起。它是否与 MCP 和开放代理网络（Agentic Web）的目标冲突，还是可以互补？]]></description>
+        </item>
+        <item>
+            <title><![CDATA[从 SEO 到 AIO：aiovsseo.com 正式加入代理网络（Agentic Web）]]></title>
+            <link>https://wellknownmcp.org/zh/news/from-seo-to-aio-agentic-web</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/from-seo-to-aio-agentic-web</guid>
+            <pubDate>Fri, 30 May 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[从哪里开始]]></title>
+            <link>https://wellknownmcp.org/zh/news/begin</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/begin</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[一个简单的指南，帮助你理解标准并迈出第一步。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[常见问题解答 – MCP 与 LLMFeed]]></title>
+            <link>https://wellknownmcp.org/zh/news/faq</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/faq</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[关于模型上下文协议（MCP）及其生态系统 LLMFeed 的常见问题解答，包括其与 Anthropic MCP 的比较。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[发布公告]]></title>
+            <link>https://wellknownmcp.org/zh/news/launch</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/launch</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[WellKnownMCP 项目的正式发布及其官方网站的上线公告。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[LLMFeed 的结构解剖 —— 按模块解析]]></title>
+            <link>https://wellknownmcp.org/zh/news/llmfeed-block-structure</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/llmfeed-block-structure</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[了解 .llmfeed.json 中各个模块的功能，并学习如何构建自己的 feed。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[我们的宣言]]></title>
+            <link>https://wellknownmcp.org/zh/news/manifesto</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/manifesto</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[支撑 WellKnownMCP 标准的发展与采用的愿景、价值观和伦理承诺。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[MCP 能实现什么？真实世界的使用场景]]></title>
+            <link>https://wellknownmcp.org/zh/news/use-cases-mcp</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/use-cases-mcp</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[从医疗到 SaaS，这里列举了 MCP 与 LLMFeed 的具体应用示例。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[关于 WellKnownMCP]]></title>
+            <link>https://wellknownmcp.org/zh/news/about</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/about</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[WellKnownMCP 项目的概览、目标和宗旨。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[伦理与责任]]></title>
+            <link>https://wellknownmcp.org/zh/news/ethics</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/ethics</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[我们对 MCP 技术的伦理标准和负责任使用的承诺。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[为什么选择 MCP？]]></title>
+            <link>https://wellknownmcp.org/zh/news/why-mcp</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/why-mcp</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[解释采用 Model Context Protocol (MCP) 标准的理由。]]></description>
+        </item>
     </channel>
 </rss>

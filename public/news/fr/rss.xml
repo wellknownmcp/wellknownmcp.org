@@ -4,10 +4,66 @@
         <title>News (fr) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/fr/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Mon, 02 Jun 2025 12:47:10 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Jun 2025 14:28:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>fr</language>
         <copyright>© 2025 WellKnownMCP</copyright>
+        <item>
+            <title><![CDATA[Par où commencer]]></title>
+            <link>https://wellknownmcp.org/fr/news/begin</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/begin</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Un guide simple pour comprendre la norme et faire vos premiers pas.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[FAQ – MCP et LLMFeed]]></title>
+            <link>https://wellknownmcp.org/fr/news/faq</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/faq</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Réponses aux questions fréquentes sur le protocole MCP et l’écosystème LLMFeed, y compris ses différences avec le MCP d’Anthropic.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Annonce de lancement]]></title>
+            <link>https://wellknownmcp.org/fr/news/launch</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/launch</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Annonce du lancement de l’initiative WellKnownMCP et de son site officiel.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Anatomie d’un LLMFeed — Bloc par bloc]]></title>
+            <link>https://wellknownmcp.org/fr/news/llmfeed-block-structure</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/llmfeed-block-structure</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Comprendre comment chaque bloc d’un .llmfeed.json fonctionne et comment concevoir votre propre flux.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Notre Manifeste]]></title>
+            <link>https://wellknownmcp.org/fr/news/manifesto</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/manifesto</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[La vision, les valeurs et les engagements éthiques derrière la norme WellKnownMCP.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Que peut-on construire avec MCP ? Cas d’usage concrets]]></title>
+            <link>https://wellknownmcp.org/fr/news/use-cases-mcp</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/use-cases-mcp</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[De la santé au SaaS, voici des exemples concrets d’utilisation de MCP et LLMFeed.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[À propos de WellKnownMCP]]></title>
+            <link>https://wellknownmcp.org/fr/news/about</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/about</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Un aperçu de l'initiative WellKnownMCP, de son objectif et de ses finalités.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Pourquoi MCP ?]]></title>
+            <link>https://wellknownmcp.org/fr/news/why-mcp</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/why-mcp</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Expliquer les raisons qui motivent l’adoption du standard Model Context Protocol (MCP).]]></description>
+        </item>
     </channel>
 </rss>
