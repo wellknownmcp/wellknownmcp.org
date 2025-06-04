@@ -3,7 +3,7 @@
 import '@/styles/globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import SeoHead from '@/components/SeoHead' // ajuste si nécessaire
+import SeoHead from '@/components/SeoHead'
 
 export default function RootLayout({
   children,
@@ -13,6 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Fallback SEO Head → sera overridé par les pages */}
         <SeoHead
           title="WellKnownMCP"
           description="Model Context Protocol — verified knowledge between agents"
@@ -37,7 +38,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        {/* RSS Feeds for News (Agentic Web) */}
+        {/* RSS Feeds */}
         <link
           rel="alternate"
           type="application/rss+xml"

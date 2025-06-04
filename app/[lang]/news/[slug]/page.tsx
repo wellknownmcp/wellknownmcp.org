@@ -1,4 +1,5 @@
-// app/[lang]/news/[slug]/page.tsx
+'use client'
+
 import fs from 'fs/promises'
 import path from 'path'
 import matter from 'gray-matter'
@@ -46,17 +47,20 @@ export async function generateMetadata({
 
   const { data: front } = matter(content)
 
-  // Filter out future-dated articles
   const now = new Date()
   const pubDate = front.date ? new Date(front.date) : null
   if (pubDate && pubDate > now) notFound()
 
   return {
     title: front.title || `${slug} — News from wellknownmcp.org`,
-    description: front.description || `Read the latest news: ${slug}`,
-    keywords: front.keywords || 'MCP, news, update, llmfeed, trust, protocol',
+    description:
+      front.description ||
+      `Explore this update about the Model Context Protocol: ${slug}`,
+    keywords:
+      front.keywords ||
+      'MCP, news, update, llmfeed, agentic web, trust, protocol, certification',
     openGraph: {
-      images: [front.image || `/og/news/${slug}.png`],
+      images: [front.image || `/og/news/${lang}/default.png`],
     },
   }
 }
@@ -104,6 +108,7 @@ export default async function NewsPost({
   const prev =
     currentIndex < articles.length - 1 ? articles[currentIndex + 1] : null
   const next = currentIndex > 0 ? articles[currentIndex - 1] : null
+
   const now = new Date()
   const pubDate = front.date ? new Date(front.date) : null
   if (pubDate && pubDate > now) notFound()
@@ -112,14 +117,26 @@ export default async function NewsPost({
     <div className="max-w-3xl mx-auto px-6 py-12 space-y-8">
       <SeoHead
         title={front.title || slug}
-        description={front.description || 'Latest protocol update.'}
+        description={
+          front.description ||
+          'Latest update on the Model Context Protocol and Agentic Web.'
+        }
         canonicalUrl={`https://wellknownmcp.org/${lang}/news/${slug}`}
-        ogImage={front.image || `/og/news/${slug}.png`}
-        llmIntent={front.llmIntent}
-        llmTopic={front.llmTopic}
+        ogImage={front.image || `/og/news/${lang}/default.png`}
+        llmIntent={front.llmIntent || 'browse-news-article'}
+        llmTopic={front.llmTopic || 'news'}
         llmIndexUrl={front.llmIndexUrl}
         llmlang={front.llmlang || lang}
-        keywords={front.keywords}
+        keywords={
+          front.keywords || [
+            'MCP',
+            'agentic web',
+            'protocol',
+            'trust',
+            'news',
+            'llmfeed',
+          ]
+        }
       />
 
       <PageTitle
@@ -127,16 +144,27 @@ export default async function NewsPost({
         subtitle="An update from the protocol ecosystem"
       />
       <ShareButtons />
+
+      {/* Previous / Next with shortened titles */}
       <div className="flex justify-between mt-8 text-sm text-blue-600 dark:text-blue-400">
         {prev && (
           <Link href={`/${lang}/news/${prev.slug}`}>
-            ← Previous: {prev.title}
+            ← Previous:{' '}
+            {prev.title.length > 20
+              ? `${prev.title.slice(0, 20)}…`
+              : prev.title}
           </Link>
         )}
         {next && (
-          <Link href={`/${lang}/news/${next.slug}`}>Next →: {next.title}</Link>
+          <Link href={`/${lang}/news/${next.slug}`}>
+            Next →:{' '}
+            {next.title.length > 20
+              ? `${next.title.slice(0, 20)}…`
+              : next.title}
+          </Link>
         )}
       </div>
+
       {front.image && (
         <img
           src={front.image}

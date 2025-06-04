@@ -43,6 +43,9 @@ export default function SeoHead({
       ? keywords.join(', ')
       : ''
 
+  // ✅ Fallback pour og:image
+  const resolvedOgImage = ogImage || 'https://wellknownmcp.org/og/default.png'
+
   const ldJson = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -59,11 +62,11 @@ export default function SeoHead({
 
       <meta property="og:title" content={fullTitle} />
       {description && <meta property="og:description" content={description} />}
-      {ogImage && <meta property="og:image" content={ogImage} />}
+      <meta property="og:image" content={resolvedOgImage} />
       <meta property="og:type" content="website" />
 
       <meta name="twitter:card" content="summary_large_image" />
-      {ogImage && <meta name="twitter:image" content={ogImage} />}
+      <meta name="twitter:image" content={resolvedOgImage} />
       <meta name="twitter:title" content={fullTitle} />
       {description && <meta name="twitter:description" content={description} />}
 
