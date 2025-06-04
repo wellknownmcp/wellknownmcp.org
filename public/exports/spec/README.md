@@ -1,40 +1,12 @@
-# 🌐 WellKnownMCP — The Interoperability Layer for Agents
+# WellKnownMCP — Specification for `.llmfeed.json` feeds
 
-**LLMFeed** is a machine-readable JSON format that enables LLMs and agents to understand, verify, and act on web content and services.
+**WellKnownMCP** defines an open convention for publishing structured, signed `.llmfeed.json` feeds to enable safe and trustworthy interactions between LLMs, agents, and the Web.
 
-**WellKnownMCP** is the specification site and reference implementation for this open protocol — combining simplicity, trust, and structure to support an agentic web.
-
----
-
-## 🧠 What Is This Repository?
-
-This repo contains the **LLMFeed + MCP specification**, used by websites, APIs and agents to communicate in a structured, trustable way.
-
-- ✅ Agent-readable `.llmfeed.json` structure
-- ✅ Trust and signature blocks for authenticity
-- ✅ Feed types for `export`, `mcp`, `session`, `prompt`, `credential`, `pricing`, and more
-- ✅ Guidance on `.well-known/` publication and discovery
-- ✅ Bridge to OpenAPI: MCP can reference detailed API specs
-- ✅ Support for fallback certifiers and `llm_simplified: true` for easy LLM adoption
-
-It is not a library or a backend — see [llmfeedforge.org](https://llmfeedforge.org) for builder tools.
+It is the reference spec for feeds used in the emerging **Agentic Web**.
 
 ---
 
-## 📁 Repository Structure
-
-```
-spec/
-├── 01_llmfeed/           # What is a LLMFeed, how it's structured
-├── 02_feedtypes/         # All standard feed types (`mcp`, `export`, `prompt`, ...)
-├── 03_extensions/        # Trust, signature, certifications, discovery extensions
-├── 04_agent-behaviour/   # Optional expectations for agents consuming feeds
-├── 05_examples/          # Sample signed `.llmfeed.json` files
-├── 06_scripts/           # Scripts to inspire
-├── 07_manifesto/         # Ethos and intent of the standard
-```
-
-## 🚀 What is a LLMFeed?
+## What is a LLMFeed?
 
 A `.llmfeed.json` file lets an agent understand:
 
@@ -42,56 +14,97 @@ A `.llmfeed.json` file lets an agent understand:
 - The **capabilities** it exposes (with optional OpenAPI)
 - The **prompts** it should react to
 - The **cost or trust** associated with an action
+- The **guidance or behaviour expectations** intended by the publisher
 
-Think of it like `robots.txt` or `schema.org`, but **declarative, signed, and agent-native**.
+It also allows verification of:
 
-See [`llmfeed.md`](./spec/01_llmfeed/llmfeed.md) for an overview.
-
----
-
-## 🔏 Signature and Trust
-
-Each feed can include a `trust` block indicating what sections are signed, and optionally include:
-
-- A `signature` (self-issued)
-- A `certification` (third-party verified)
-- A `fallback_certifier` (resilience if the primary trust anchor fails)
-
-See [`llmfeed-extensions_signatures.md`](./spec/03_extensions/llmfeed-extensions_signatures.md)
+- **Origin** (`origin` field in `metadata`)
+- **Signed blocks** (`trust.signed_blocks`)
+- **Certification** (`certification` block, optional)
 
 ---
 
-## 📡 Using `.well-known/`
+## Core Feed Types
 
-LLMFeeds are exposed at:
+| Feed Type  | Purpose |
+|------------|---------|
+| `mcp`      | Describe a service or API |
+| `export`   | Export page content for agents |
+| `prompt`   | Define reusable prompts |
+| `session`  | Carry agent session context |
+| `credential` | Pass API credentials (with trust) |
+| `pricing`  | Define pricing models |
 
+---
+
+## Trust and Signatures
+
+Feeds may be:
+
+✅ Signed (`trust` + `signature`)  
+✅ Certified (by an external CA such as [llmca.org](https://llmca.org))  
+
+Agents SHOULD respect:
+
+- `trust.signed_blocks` to check which blocks are verifiably trusted
+- Certification level when applying agent behaviours
+
+---
+
+## Feed Placement
+
+Feeds may be:
+
+- Published in `.well-known/llmfeed.json` or `.well-known/mcp.llmfeed.json`
+- Served dynamically (for active MCP feeds)
+- Attached to APIs (OpenAPI extension)
+- Embedded in page metadata
+
+---
+
+## Spec Structure
+
+```text
+spec/
+├── llmfeed.md                  # Core format
+├── llmfeed_block-reference.md  # Canonical block reference
+├── 02_feedtypes/               # Definitions of core feed types
+├── 03_extensions/              # Extensions (signatures, API linkage...)
+├── 04_agent-behavior/          # Optional expectations for agents consuming feeds
+├── wellknown.md                # How to serve feeds via .well-known/
 ```
-https://example.org/.well-known/mcp.llmfeed.json
-https://example.org/.well-known/capabilities.llmfeed.json
-https://example.org/.well-known/prompts/prompt-index.llmfeed.json
-https://example.org/.well-known/openapi.json  # Optional OpenAPI extension
-```
 
-See [`wellknown.md`](./spec/01_llmfeed/wellknown.md)
-
-## 🛠 Other Tools
-
-This repository is focused on **specification**.
-
-For SDKs, builder UI and signature tooling, visit:
-
-- [wellknownmcp.org](https://wellknownmcp.org)
-- [llmfeedforge.org](https://llmfeedforge.org)
-- [llmca.org](https://llmca.org) (certification authority)
+See also [`agent-guidance.md`](./spec/04_agent-behavior/agent-guidance.md) — for optional soft hints.
 
 ---
 
-## 🤝 Contribute
+## Agents and OpenAPI
 
-You can:
+Agents processing `.llmfeed.json` feeds may use:
 
-- Submit issues or proposals via GitHub
-- Help draft new feed types or agent behaviours
-- Join the ecosystem at [wellknownmcp.org/join](https://wellknownmcp.org/join)
+- `capabilities[]` for lightweight function definitions
+- OpenAPI for full API specs (referenced from `capabilities` block)
 
-We welcome feedback from developers, platform owners, LLM builders, and institutions.
+This allows hybrid approaches:
+
+- Lightweight LLM-first discovery
+- Full API fallback
+
+---
+
+## Contributing
+
+Contributions welcome!
+
+- Open issues or PRs to propose improvements.
+- Discuss extensions and future feed types.
+
+---
+
+## 🚀 Evolving Spec
+
+The specification is **living** — new feed types and behaviours are proposed and reviewed openly.
+
+Join us to help shape the future of the Agentic Web!
+
+---

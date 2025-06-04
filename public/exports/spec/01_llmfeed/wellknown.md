@@ -29,13 +29,13 @@ Using `.well-known/` lets you:
 
 At minimum, the following files can be served from your domain:
 
-| File                                    | Purpose                                           |
-|----------------------------------------|---------------------------------------------------|
-| `/mcp.llmfeed.json`                    | Main metadata: title, description, prompts, trust |
-| `/capabilities.llmfeed.json`           | Actionable API functions or declared services     |
-| `/llm-index.llmfeed.json`              | Directory of all feeds exposed on this site       |
-| `/pricing.llmfeed.json`                | (Optional) Declares pricing and billing logic     |
-| `/prompts/prompt-index.llmfeed.json`  | (Optional) Index of agent-intent trigger phrases  |
+| File                                 | Purpose                                           |
+| ------------------------------------ | ------------------------------------------------- |
+| `/mcp.llmfeed.json`                  | Main metadata: title, description, prompts, trust |
+| `/capabilities.llmfeed.json`         | Actionable API functions or declared services     |
+| `/llm-index.llmfeed.json`            | Directory of all feeds exposed on this site       |
+| `/pricing.llmfeed.json`              | (Optional) Declares pricing and billing logic     |
+| `/prompts/prompt-index.llmfeed.json` | (Optional) Index of agent-intent trigger phrases  |
 
 You may also expose:
 
@@ -48,6 +48,7 @@ You may also expose:
 ## 🧱 Static vs Dynamic
 
 Feeds can be:
+
 - **Static**: stored in `/public/.well-known/`
 - **Dynamic**: served from a route (e.g. `/api/llmfeed/static/mcp`)
 
@@ -73,6 +74,7 @@ If `.well-known/` cannot be served per-user:
 
 - Declare `userspaces: true` in `llm-index`
 - Use URLs like:
+  
   ```
   /.well-known/users/github.com/username/mcp.llmfeed.json
   ```
@@ -83,10 +85,10 @@ Agents that support `userspaces` will automatically check subfeeds.
 
 ## 🧪 Real-World Examples
 
-| Site                    | Feeds Present                        |
-|-------------------------|--------------------------------------|
-| `https://wellknownmcp.org` | `mcp`, `prompt`, `capabilities`, `trust` |
-| `https://demo.llmfeedforge.org` | `export`, `session`, `prompt-index` |
+| Site                            | Feeds Present                            |
+| ------------------------------- | ---------------------------------------- |
+| `https://wellknownmcp.org`      | `mcp`, `prompt`, `capabilities`, `trust` |
+| `https://demo.llmfeedforge.org` | `export`, `session`, `prompt-index`      |
 
 ---
 
@@ -132,6 +134,7 @@ When a prompt is designed to override behavior or be injected persistently, it m
 - Optionally certified by [llmca.org](https://llmca.org)
 
 Example prompts:
+
 - `mcp-mode-activation.llmfeed.json`
 - `generate-session-feed.llmfeed.json`
 - `mcp-agent-behavior-override.llmfeed.json`

@@ -1,26 +1,23 @@
-"use client";
-import { createContext, useContext, useState, ReactNode } from "react";
+'use client'
 
-type SpecContextType = {
-  selected: string;
-  setSelected: (value: string) => void;
-};
+import { createContext, useContext } from 'react'
 
-const SpecContext = createContext<SpecContextType | undefined>(undefined);
-
-export function SpecProvider({ children }: { children: ReactNode }) {
-  const [selected, setSelected] = useState("");
-  return (
-    <SpecContext.Provider value={{ selected, setSelected }}>
-      {children}
-    </SpecContext.Provider>
-  );
+// ✅ On exporte correctement l'interface
+export interface SpecContextType {
+  slug: string
+  content?: string
+  front?: Record<string, any>
 }
+
+// ✅ Le type est utilisé ici
+export const SpecContext = createContext<SpecContextType>({
+  slug: '',
+  content: '',
+  front: {},
+})
 
 export function useSpecContext() {
-  const context = useContext(SpecContext);
-  if (!context) {
-    throw new Error("useSpecContext must be used within a SpecProvider");
-  }
-  return context;
+  return useContext(SpecContext)
 }
+
+export const SpecProvider = SpecContext.Provider

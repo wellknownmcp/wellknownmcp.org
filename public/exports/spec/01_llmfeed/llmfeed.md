@@ -12,8 +12,6 @@ A **LLMFeed** is a lightweight, signed and structured JSON file that lets any ag
 
 It is the **core data format of the MCP (Model Context Protocol)**.
 
----
-
 ## 🧠 Why it matters
 
 - Machines need **semantic context** and **trust** — not just HTML or APIs
@@ -23,8 +21,6 @@ It is the **core data format of the MCP (Model Context Protocol)**.
   - Act through capabilities
   - Evaluate cost or risk
   - Verify authorship and trust
-
----
 
 ## 🛠️ Minimum Structure
 
@@ -42,53 +38,66 @@ All valid feeds must include these two top-level blocks:
 ```
 
 Additional blocks are context-specific:
-- `data`, `intent`, `trust`, `capabilities`, `prompts`, `session_state`, `credential`, etc.
 
----
+- `data`, `intent`, `trust`, `capabilities`, `prompts`, `session_state`, `credential`, etc.
 
 ## 🧱 Standard Block Types
 
 | Block           | Purpose                                         |
-|------------------|-------------------------------------------------|
-| `feed_type`       | Defines what kind of feed this is              |
-| `metadata`        | Describes title, origin, timestamp, etc.       |
-| `trust`           | Indicates signed blocks, trust scope           |
-| `signature`       | Optional hash and issuer info                  |
-| `certification`   | Issued by trusted authority like LLMCA         |
-| `data`            | Carries exportable content (HTML, bundle, etc.)|
-| `intent`          | Used in prompts, capabilities, or MCP          |
-| `audience`        | Optional target (e.g., `llm`, `developer`)     |
+| --------------- | ----------------------------------------------- |
+| `feed_type`     | Defines what kind of feed this is               |
+| `metadata`      | Describes title, origin, timestamp, etc.        |
+| `trust`         | Indicates signed blocks, trust scope            |
+| `signature`     | Optional hash and issuer info                   |
+| `certification` | Issued by trusted authority like LLMCA          |
+| `data`          | Carries exportable content (HTML, bundle, etc.) |
+| `intent`        | Used in prompts, capabilities, or MCP           |
+| `audience`      | Optional target (e.g., `llm`, `developer`)      |
 
----
+## 🧹 Common Feed Types
 
-## 🧩 Common Feed Types
+| Feed Type    | Use Case                               | Typical Blocks                           |
+| ------------ | -------------------------------------- | ---------------------------------------- |
+| `mcp`        | Describe your service/site             | `metadata`, `intent`, `prompts`, `trust` |
+| `export`     | Share a page’s content with agents     | `metadata`, `data`, `trust`              |
+| `prompt`     | Structure prompts for reuse            | `intent`, `audience`, `trust`            |
+| `session`    | Reconstruct LLM session context        | `metadata`, `session_state`              |
+| `credential` | Share API credentials or access claims | `metadata`, `scopes`, `rate_limits`      |
+| `pricing`    | Describe monetization model            | `pricing_models`, `payment_methods`      |
 
-| Feed Type     | Use Case                                | Typical Blocks                        |
-|---------------|------------------------------------------|----------------------------------------|
-| `mcp`         | Describe your service/site               | `metadata`, `intent`, `prompts`, `trust` |
-| `export`      | Share a page’s content with agents       | `metadata`, `data`, `trust`              |
-| `prompt`      | Structure prompts for reuse              | `intent`, `audience`, `trust`            |
-| `session`     | Reconstruct LLM session context          | `metadata`, `session_state`             |
-| `credential`  | Share API credentials or access claims   | `metadata`, `scopes`, `rate_limits`     |
-| `pricing`     | Describe monetization model              | `pricing_models`, `payment_methods`     |
+## Signatures and Certifications
 
----
+To ensure the integrity and authenticity of a `.llmfeed.json`, it is RECOMMENDED to include a digital signature in the `trust` block, and list the `signed_blocks` that were covered by the signature.
 
-## 🔐 Trust and Signature
+Signing a feed is also a way to **enforce the encapsulation of critical associations**. It ensures that specific pieces of information — for example, an API key and its associated site, a quote and its author, or a payload and its intended context — are always processed together by consuming LLMs. This prevents unintentional detachment or misuse of key contextual elements.
 
-Feeds can be signed and/or certified using:
+Feeds may also be certified by trusted third parties (such as [llmca.org](https://llmca.org/)) to provide an additional layer of verified trust. Certification helps ensure that consuming agents can rely on the feed's content and provenance.
+
+Signed and certified feeds enable new models of interoperability, trust, and traceability across the Agentic Web.
+
+## 🔐 Trust block
 
 ```json
 "trust": {
-  "signed_blocks": ["feed_type", "metadata", "data"],
-  "scope": "partial",
-  "certifier": "https://llmca.org"
+  "signed_blocks": ["feed_type", "metadata", "trust", "data"],
+  "scope": "public",
+  "certifier": "https://llmca.org",
+  "public_key_hint": "https://llmca.org/.well-known/public.pem",
+  "algorithm": "ed25519",
+  "hints": "critical context integrity"
 }
 ```
 
-See [`llmfeed-extensions_signatures.md`](../03_extensions/llmfeed-extensions_signatures.md)
+See [`llmfeed_extensions_signatures.md`](../03_extensions/llmfeed_extensions_signatures.md)
 
----
+## 🔏  `signature` block
+
+```json
+"signature": {
+  "value": "abc123...",
+  "created_at": "2025-06-01T12:34:56Z"
+}
+```
 
 ## 🔁 Lifecycle
 
@@ -98,22 +107,39 @@ See [`llmfeed-extensions_signatures.md`](../03_extensions/llmfeed-extensions_sig
 4. Parsed by agents for interaction
 5. May trigger actions, fallback, or ranking
 
----
+## 📤 Export and Usage
 
-## 🧭 Related
+It is RECOMMENDED to sign `.llmfeed.json` files to provide verification and trust for consuming LLMs.
+
+Beyond serving feeds to crawlers or agents, `.llmfeed.json` files are particularly powerful as structured export formats. They enable what can be described as **"copy-paste on steroids"**: any content, when wrapped in a signed and contextualized feed, can be shared, transferred, or reinjected into other agents or workflows while preserving its intended meaning and usage guidelines.
+
+Such feeds can be used to:
+
+- Provide portable knowledge blocks.
+- Offer contextual copy/paste actions to LLMs or user interfaces.
+- Enable verified content sharing between sites or applications.
+- Maintain traceability and attribution through signatures.
+
+The first usage of `.llmfeed.json` could be to create the **Agentic Web**, as feeds of any type (`mcp`, `index`, `prompt`, `pricing`, `capabilities`, `api-credential`, etc.) can be served by a website to provide value and context to any crawler, from simple robots to advanced LLMs.
+
+Secured information exchange can drive the autonomy of agents and trigger self-discovered capabilities.
+
+Feeds can be served from a site’s `.well-known/` directory or included in APIs.
+
+## 🗺️ Explore the full specification
 
 - [`llmfeed_block-reference.md`](./llmfeed_block-reference.md)
+- [`04_extensions/`](../03_extensions/)
+- [`02_feedtypes/`](../02_feedtypes/)
+- [`04_agent-behavior/`](../04_agent-behavior/)
 - [`wellknown.md`](./wellknown.md)
-- [`llm-index`](../02_feedtypes/llmfeed_feedtype_llm-index.md)
-- [`trust`](../03_extensions/llmfeed-extensions_signatures.md)
-
----
 
 ## 🤝 MCP and OpenAPI
 
 While `capabilities[]` provides a simplified way to describe callable functions and services, some developers may wish to include a link to a full OpenAPI specification.
 
 This hybrid model allows agents to:
+
 - Understand the **intent** and **trust level** via MCP
 - Use **OpenAPI** for complete parameter definitions, schemas, and responses
 
@@ -135,5 +161,6 @@ This hybrid model allows agents to:
 ```
 
 **MCP and OpenAPI are complementary**:
+
 - Use MCP for meaning, trust, and discovery.
 - Use OpenAPI for detailed technical implementation.
