@@ -4,11 +4,18 @@
         <title>News (en) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/en/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Mon, 02 Jun 2025 14:28:15 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 04 Jun 2025 07:36:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>© 2025 WellKnownMCP</copyright>
+        <item>
+            <title><![CDATA[Why MCP preserves order in `.llmfeed.json`]]></title>
+            <link>https://wellknownmcp.org/en/news/why-mcp-preserves-order</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/why-mcp-preserves-order</guid>
+            <pubDate>Tue, 03 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[How token order impacts LLM behavior, and why MCP signatures guarantee it.]]></description>
+        </item>
         <item>
             <title><![CDATA[MCP and the Agentic Web Revolution in Asia]]></title>
             <link>https://wellknownmcp.org/en/news/mcp-and-agentic-web-in-asia</link>
@@ -166,6 +173,13 @@
             <pubDate>Sat, 24 May 2025 00:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[Signature vs Certification: What’s the Difference?]]></title>
+            <link>https://wellknownmcp.org/en/news/certification-guide</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/certification-guide</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Understanding trust levels in LLMFeed and how to make your content verifiable.]]></description>
+        </item>
+        <item>
             <title><![CDATA[Launching wellknownmcp.org — Make your site LLM-readable, verifiable and actionable]]></title>
             <link>https://wellknownmcp.org/en/news/launch-hackernews</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/launch-hackernews</guid>
@@ -208,6 +222,20 @@
             <description><![CDATA[Launch communication draft for wellknownmcp.org: 🧵 Thread X — Launching wellknownmcp.org]]></description>
         </item>
         <item>
+            <title><![CDATA[What Can You Build With MCP? Real-World Use Cases]]></title>
+            <link>https://wellknownmcp.org/en/news/use-cases-mcp</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/use-cases-mcp</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[From health to SaaS, here are concrete examples of how MCP and LLMFeed can be used.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[How Agents Understand You — MCP Explained]]></title>
+            <link>https://wellknownmcp.org/en/news/mcp-explained</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/mcp-explained</guid>
+            <pubDate>Fri, 16 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Learn how MCP helps agents interpret your services, structure and intent — without prompt guessing.]]></description>
+        </item>
+        <item>
             <title><![CDATA[About WellKnownMCP]]></title>
             <link>https://wellknownmcp.org/en/news/about</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/about</guid>
@@ -248,11 +276,11 @@
             <description><![CDATA[How LLMs can actively teach, audit, and generate llmfeed.json files — a unique design choice of the MCP standard.]]></description>
         </item>
         <item>
-            <title><![CDATA[How Agents Understand You — MCP Explained]]></title>
-            <link>https://wellknownmcp.org/en/news/mcp-explained</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/mcp-explained</guid>
-            <pubDate>Fri, 16 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Learn how MCP helps agents interpret your services, structure and intent — without prompt guessing.]]></description>
+            <title><![CDATA[The Anatomy of a LLMFeed — Block by Block]]></title>
+            <link>https://wellknownmcp.org/en/news/llmfeed-block-structure</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/llmfeed-block-structure</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Understand how each block of a .llmfeed.json works, and how to design your own feed.]]></description>
         </item>
         <item>
             <title><![CDATA[Why MCP Could Be the Future of Web Crawling for LLMs]]></title>

@@ -1,6 +1,20 @@
 {
   "en": [
     {
+      "slug": "why-mcp-preserves-order",
+      "title": "Why MCP preserves order in `.llmfeed.json`",
+      "description": "How token order impacts LLM behavior, and why MCP signatures guarantee it.",
+      "date": "Tue Jun 03 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [
+        "mcp",
+        "llmfeed",
+        "signature",
+        "canonicalization",
+        "llm-behavior"
+      ],
+      "excerpt": "\r  Why MCP preserves order in .llmfeed.json\r"
+    },
+    {
       "slug": "mcp-and-agentic-web-in-asia",
       "title": "MCP and the Agentic Web Revolution in Asia",
       "description": "Why Asia is poised to lead the Agentic Web — and how MCP can help build an open, interoperable ecosystem for LLM-powered agents in China, Korea, Japan and beyond.",
@@ -374,6 +388,18 @@
       "excerpt": "At a recent developerfocused announcement, Anthropic introduced their vision for the Model Context Protocol MCP, a structured approach to make AI models more contextaware and grounded in realworld too"
     },
     {
+      "slug": "certification-guide",
+      "title": "Signature vs Certification: What’s the Difference?",
+      "description": "Understanding trust levels in LLMFeed and how to make your content verifiable.",
+      "date": "2025-05-21",
+      "tags": [
+        "certification",
+        "signature",
+        "trust"
+      ],
+      "excerpt": " 🔐 Signing and Certifying Your Feeds  ✍️ Signature"
+    },
+    {
       "slug": "launch-hackernews",
       "title": "Launching wellknownmcp.org — Make your site LLM-readable, verifiable and actionable",
       "description": "Launch communication draft for wellknownmcp.org: Launching wellknownmcp.org — Make your site LLM-readable, verifiable and actionable",
@@ -450,6 +476,31 @@
       "excerpt": " 🧵 Thread — What if your site could talk to LLMs? 1/  "
     },
     {
+      "slug": "use-cases-mcp",
+      "title": "What Can You Build With MCP? Real-World Use Cases",
+      "description": "From health to SaaS, here are concrete examples of how MCP and LLMFeed can be used.",
+      "date": "2025-05-21",
+      "tags": [
+        "use-cases",
+        "mcp",
+        "industries"
+      ],
+      "excerpt": " 🧩 RealWorld Applications of MCP  🏥 Healthcare"
+    },
+    {
+      "slug": "mcp-explained",
+      "title": "How Agents Understand You — MCP Explained",
+      "description": "Learn how MCP helps agents interpret your services, structure and intent — without prompt guessing.",
+      "date": "Fri May 16 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "tags": [
+        "mcp",
+        "explained",
+        "agents",
+        "tutorial"
+      ],
+      "excerpt": "\r  How Agents Understand You — MCP Explained\r"
+    },
+    {
       "slug": "about",
       "title": "About WellKnownMCP",
       "description": "An overview of the WellKnownMCP initiative, its purpose, and its goals.",
@@ -518,17 +569,16 @@
       "excerpt": " 🧠 Turning LLMs into Teachers, Auditors, and Publishers One of the unique advantages of the .llmfeed.json format is that it is natively understandable by LLMs themselves."
     },
     {
-      "slug": "mcp-explained",
-      "title": "How Agents Understand You — MCP Explained",
-      "description": "Learn how MCP helps agents interpret your services, structure and intent — without prompt guessing.",
-      "date": "Fri May 16 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "slug": "llmfeed-block-structure",
+      "title": "The Anatomy of a LLMFeed — Block by Block",
+      "description": "Understand how each block of a .llmfeed.json works, and how to design your own feed.",
+      "date": "2025-05-21",
       "tags": [
-        "mcp",
-        "explained",
-        "agents",
-        "tutorial"
+        "guide",
+        "structure",
+        "llmfeed"
       ],
-      "excerpt": "\r  How Agents Understand You — MCP Explained\r"
+      "excerpt": " 🧱 The Building Blocks of a Feed Every .llmfeed.json file is made of structured blocks. Here's how to understand and use them:"
     },
     {
       "slug": "news-mcp-crawling-llms",
