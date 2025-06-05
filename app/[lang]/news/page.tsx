@@ -37,20 +37,34 @@ export default function NewsPage() {
 
   useEffect(() => {
     async function loadNews() {
-      const indexRes = await fetch('/news/index.json')
-      const allSlugs = await indexRes.json()
-      const slugs: string[] = allSlugs[currentLang] || []
+      let allSlugs: Record<string, any[]> = {}
+
+      try {
+        const indexRes = await fetch('/news/index.json')
+        if (!indexRes.ok) {
+          console.error('Failed to load /news/index.json →', indexRes.status)
+          setArticles([])
+          return
+        }
+        allSlugs = await indexRes.json()
+      } catch (err) {
+        console.error('Error fetching /news/index.json →', err)
+        setArticles([])
+        return
+      }
+
+      const entries = allSlugs[currentLang] || []
       const results: ArticleMeta[] = []
 
-      for (const slug of slugs) {
+      for (const entry of entries) {
+        const slug = entry.slug
         try {
-          const res = await fetch(`/news/${currentLang}/${slug}.md`) // ⚠️ à revoir
+          const res = await fetch(`/news/${currentLang}/${slug}.md`)
           if (!res.ok) continue
           const text = await res.text()
           const { data, content } = matter(text)
 
-          // Générer un excerpt simple :
-          const cleanContent = content.replace(/[#>*_`~\-!\[\]\(\)]/g, '') // remove markdown
+          const cleanContent = content.replace(/[#>*_`~\-!\[\]\(\)]/g, '')
           const excerpt = cleanContent
             .split('\n')
             .filter(Boolean)
@@ -70,7 +84,8 @@ export default function NewsPage() {
                 : data.date?.toString() ?? 'unknown',
             excerpt,
           })
-        } catch {
+        } catch (err) {
+          console.error(`Error parsing /news/${currentLang}/${slug}.md →`, err)
           continue
         }
       }
