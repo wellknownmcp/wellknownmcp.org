@@ -17,18 +17,31 @@ marked.use({
       const text = token.text
 
       if (href?.startsWith('http://') || href?.startsWith('https://')) {
-        return `<a href="${href}" ${title ? `title="${title}"` : ''}>${text}</a>`
+        return `<a href="${href}" ${
+          title ? `title="${title}"` : ''
+        }>${text}</a>`
       }
 
-      const absolutePrefixes = ['/tools', '/verify', '/faq', '/feeds', '/en', '/join']
+      const absolutePrefixes = [
+        '/tools',
+        '/verify',
+        '/faq',
+        '/feeds',
+        '/en',
+        '/join',
+      ]
 
-      const shouldRewrite = absolutePrefixes.some(prefix => href?.startsWith(prefix))
+      const shouldRewrite = absolutePrefixes.some((prefix) =>
+        href?.startsWith(prefix)
+      )
       let finalHref = href
       if (shouldRewrite && href) {
         finalHref = `${siteUrl}${href}`
       }
 
-      return `<a href="${finalHref}" ${title ? `title="${title}"` : ''}>${text}</a>`
+      return `<a href="${finalHref}" ${
+        title ? `title="${title}"` : ''
+      }>${text}</a>`
     },
   },
 })
@@ -40,16 +53,24 @@ function resolveSpecSlug(baseSlug: string, relatedPath: string): string {
 }
 
 export default function SpecViewer({ slug }: { slug: string }) {
-  // ✅ Forcer le typage → plus d'erreur
   const { content, front } = useSpecContext() as SpecContextType
 
   if (!content) {
     return <div className="text-red-600">Error: Spec content not found.</div>
   }
 
-  const htmlContent = marked.parse(content ?? '')
+  let htmlContent = ''
+  try {
+    htmlContent = marked.parse(content ?? '') as string
+  } catch (err) {
+    console.error('Error while parsing markdown:', err)
+    htmlContent = '<div class="text-red-600">Markdown parsing error</div>'
+  }
 
-  const relatedLinks = front?.Related?.map((relatedPath: string) => {
+  // 🔐 Secure: Related is forced to an array
+  const relatedList = Array.isArray(front?.Related) ? front?.Related : []
+
+  const relatedLinks = relatedList.map((relatedPath: string) => {
     const resolvedSlug = resolveSpecSlug(slug, relatedPath)
     const url = `/spec/${resolvedSlug}`
     const displayTitle =
@@ -65,9 +86,11 @@ export default function SpecViewer({ slug }: { slug: string }) {
   return (
     <article className="prose dark:prose-invert max-w-4xl mx-auto py-8 space-y-8">
       {front?.title && <h1>{front.title}</h1>}
-      {front?.version && <p className="text-sm text-gray-500">Version: {front.version}</p>}
+      {front?.version && (
+        <p className="text-sm text-gray-500">Version: {front.version}</p>
+      )}
       <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
-      {relatedLinks && relatedLinks.length > 0 && (
+      {relatedLinks.length > 0 && (
         <div className="mt-8 border-t pt-4">
           <h2 className="text-lg font-semibold mb-2">Related</h2>
           <ul className="space-y-1">{relatedLinks}</ul>
