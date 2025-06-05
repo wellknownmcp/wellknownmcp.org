@@ -23,17 +23,21 @@ ssh debian@54.37.40.223 << 'EOF'
   fi
 
   echo "📦 Initialisation de l'environnement Node.js"
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  export NVM_DIR="\$HOME/.nvm"
+  [ -s "\$NVM_DIR/nvm.sh" ] && \. "\$NVM_DIR/nvm.sh"
 
   echo "📦 Installation des dépendances..."
   npm install
 
-  echo "🏗️ Build du site..."
+  echo "🏗️ Build du site (build + sitemap)..."
   npm run build
 
   echo "🔁 Redémarrage via PM2..."
-  npx pm2 restart wellknownmcp
+  export PORT=3000
+  pm2 restart wellknownmcp || pm2 start npm --name "wellknownmcp" -- start
+
+  echo "💾 Sauvegarde de la config PM2"
+  pm2 save
 
 EOF
 
