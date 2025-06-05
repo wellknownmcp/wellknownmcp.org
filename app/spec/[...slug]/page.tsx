@@ -15,7 +15,13 @@ export default function SpecPage({ params }: { params: { slug?: string[] } }) {
     redirect('/spec/01_llmfeed/llmfeed')
   }
 
-  const mdPath = path.join(process.cwd(), 'spec', `${cleanSlug}.md`)
+  const mdPath = path.join(
+    process.cwd(),
+    'public',
+    'exports',
+    'spec',
+    `${cleanSlug}.md`
+  )
 
   if (!fs.existsSync(mdPath)) {
     notFound()
@@ -27,7 +33,9 @@ export default function SpecPage({ params }: { params: { slug?: string[] } }) {
   const canonicalUrl = `https://wellknownmcp.org/spec/${cleanSlug}`
 
   // Titre lisible à partir du slug
-  const titleParts = cleanSlug.split('/').map(part => part.replace(/[_\-]/g, ' '))
+  const titleParts = cleanSlug
+    .split('/')
+    .map((part) => part.replace(/[_\-]/g, ' '))
   const pageTitle = front.title || `Spec: ${titleParts.join(' / ')}`
 
   return (
@@ -43,7 +51,15 @@ export default function SpecPage({ params }: { params: { slug?: string[] } }) {
         llmIntent="browse-spec"
         llmTopic="spec"
         llmlang="en"
-        keywords={front.keywords || ['specification', 'mcp', 'llmfeed', 'agentic web', 'standard']}
+        keywords={
+          front.keywords || [
+            'specification',
+            'mcp',
+            'llmfeed',
+            'agentic web',
+            'standard',
+          ]
+        }
       />
       <SpecProvider value={{ slug: cleanSlug, content, front }}>
         <SpecViewer slug={cleanSlug} />

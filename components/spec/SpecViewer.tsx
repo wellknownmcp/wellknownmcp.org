@@ -20,7 +20,7 @@ marked.use({
         return `<a href="${href}" ${title ? `title="${title}"` : ''}>${text}</a>`
       }
 
-      const absolutePrefixes = ['/tools', '/verify', '/faq', '/feeds', '/join']
+      const absolutePrefixes = ['/tools', '/verify', '/faq', '/feeds', '/en', '/join']
 
       const shouldRewrite = absolutePrefixes.some(prefix => href?.startsWith(prefix))
       let finalHref = href
