@@ -17,7 +17,7 @@
   "trust": {
     "block_name": "trust disclaimer",
     "scope": "none",
-    "warning": "This feed is not signed.",
+    "warning": "This feed is not signed."
   },
   "data": [
     {

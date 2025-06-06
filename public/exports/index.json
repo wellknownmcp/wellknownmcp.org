@@ -106,7 +106,7 @@
   },
   {
     "path": "demo/kungfu-unsigned.llmfeed.json",
-    "feed_type": "unknown",
+    "feed_type": "example",
     "signed": false,
     "certified": false,
     "size": "0.8"
