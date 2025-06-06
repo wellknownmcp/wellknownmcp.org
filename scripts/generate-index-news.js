@@ -10,6 +10,7 @@ const outputPath = path.join(__dirname, '..', 'public', 'news', 'index.json')
 const siteNewsPath = path.join(__dirname, '..', 'public', 'news')
 
 const index = {}
+const slugToLangs = {} // ← on ajoute ça
 
 languages.forEach((lang) => {
   const newsDir = path.join(siteNewsPath, lang)
@@ -38,7 +39,9 @@ languages.forEach((lang) => {
         data = parsed.data
         content = parsed.content
       } catch (err) {
-        console.warn(`⚠️ Could not parse frontmatter in ${filePath}: ${err.message}`)
+        console.warn(
+          `⚠️ Could not parse frontmatter in ${filePath}: ${err.message}`
+        )
         return null
       }
 
@@ -50,9 +53,17 @@ languages.forEach((lang) => {
         .join(' ')
         .slice(0, 200)
 
+      const slug = file.replace('.md', '')
+
+      // On enregistre le slug dans slugToLangs
+      if (!slugToLangs[slug]) {
+        slugToLangs[slug] = {}
+      }
+      slugToLangs[slug][lang] = `/${lang}/news/${slug}`
+
       return {
-        slug: file.replace('.md', ''),
-        title: data.title || file.replace('.md', ''),
+        slug,
+        title: data.title || slug,
         description: data.description || '',
         date:
           typeof data.date === 'string'
@@ -60,14 +71,26 @@ languages.forEach((lang) => {
             : data.date?.toString() ?? 'unknown',
         tags: data.tags || [],
         excerpt,
+        // On initialise translations vide (on remplira après)
+        translations: {},
       }
     })
-    .filter(Boolean) // enlève les `null` en cas d'erreur
+    .filter(Boolean)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
   console.log(`→ Parsed ${articles.length} article(s) for lang "${lang}".`)
 
   index[lang] = articles
+})
+
+// Deuxième passe → on injecte translations
+console.log('🔄 Adding translations...')
+
+Object.entries(index).forEach(([lang, articles]) => {
+  articles.forEach((article) => {
+    const slug = article.slug
+    article.translations = slugToLangs[slug] || {}
+  })
 })
 
 fs.writeFileSync(outputPath, JSON.stringify(index, null, 2))
