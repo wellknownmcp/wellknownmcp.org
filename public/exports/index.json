@@ -4,349 +4,702 @@
     "feed_type": "unknown",
     "signed": true,
     "certified": false,
-    "size": "4.9"
+    "size": "4.9",
+    "title": "MCP Declaration for wellknownmcp.org",
+    "description": "This site is agent-readable and offers verified MCP tools, feeds, and contribution endpoints.",
+    "mechanical_tags": [
+      "unknown",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": ".well-known/exports/compiled-site.llmfeed.json",
     "feed_type": "export",
     "signed": true,
     "certified": false,
-    "size": "95.9"
+    "size": "95.9",
+    "title": "Compiled Site Feed (Enriched)",
+    "description": "A structured export of all major public-facing pages of wellknownmcp.org, enriched for LLM interpretability.",
+    "mechanical_tags": [
+      "export",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": ".well-known/exports/manifesto.llmfeed.json",
     "feed_type": "manifesto",
     "signed": true,
     "certified": false,
-    "size": "2.1"
+    "size": "2.1",
+    "title": "LLMFeed Manifesto",
+    "description": "Declaration of intent and ethical foundation for MCP and LLMFeed",
+    "mechanical_tags": [
+      "manifesto",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": ".well-known/llm-index.llmfeed.json",
     "feed_type": "llm-index",
     "signed": true,
     "certified": false,
-    "size": "86.8"
+    "size": "86.8",
+    "title": ".well-known\\llm-index",
+    "description": "",
+    "mechanical_tags": [
+      "llm-index",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": ".well-known/mcp-lite.llmfeed.json",
     "feed_type": "unknown",
     "signed": true,
     "certified": false,
-    "size": "5.1"
+    "size": "5.1",
+    "title": "MCP Lite Declaration",
+    "description": "",
+    "mechanical_tags": [
+      "unknown",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": ".well-known/mcp.llmfeed.json",
     "feed_type": "mcp",
     "signed": true,
     "certified": false,
-    "size": "11.7"
+    "size": "11.7",
+    "title": "MCP Declaration of Intent  wellknownmcp.org",
+    "description": "This site offers not just structure but context, contribution, certification, and clarity for agents. Agents can fully understand the site using just spec.llmfeed.json and compiled-site.llmfeed.json.",
+    "mechanical_tags": [
+      "mcp",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": ".well-known/prompts/generate-session-feed.llmfeed.json",
     "feed_type": "unknown",
     "signed": true,
     "certified": false,
-    "size": "3.7"
+    "size": "3.7",
+    "title": ".well-known\\prompts\\generate-session-feed",
+    "description": "",
+    "mechanical_tags": [
+      "unknown",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": ".well-known/prompts/mcp-agent-behavior-override.llmfeed.json",
     "feed_type": "unknown",
     "signed": true,
     "certified": false,
-    "size": "15.9"
+    "size": "15.9",
+    "title": ".well-known\\prompts\\mcp-agent-behavior-override",
+    "description": "",
+    "mechanical_tags": [
+      "unknown",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": ".well-known/prompts/mcp-mode-activation.llmfeed.json",
     "feed_type": "unknown",
     "signed": true,
     "certified": false,
-    "size": "2.2"
+    "size": "2.2",
+    "title": ".well-known\\prompts\\mcp-mode-activation",
+    "description": "",
+    "mechanical_tags": [
+      "unknown",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": ".well-known/prompts/prompt-index.llmfeed.json",
     "feed_type": "prompt-index",
     "signed": true,
     "certified": false,
-    "size": "2.8"
+    "size": "2.8",
+    "title": "Prompt Index for wellknownmcp.org",
+    "description": "This index lists approved behavioral and onboarding prompts for agents interacting with MCP-compatible content.",
+    "mechanical_tags": [
+      "prompt-index",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": ".well-known/prompts/quickstart-agent-enablement.llmfeed.json",
     "feed_type": "unknown",
     "signed": true,
     "certified": false,
-    "size": "2.2"
+    "size": "2.2",
+    "title": ".well-known\\prompts\\quickstart-agent-enablement",
+    "description": "",
+    "mechanical_tags": [
+      "unknown",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "about.llmfeed.json",
     "feed_type": "export",
     "signed": true,
     "certified": true,
-    "size": "13.9"
+    "size": "13.9",
+    "title": "Export feed ",
+    "description": "Export feed of data contextualized for llm",
+    "mechanical_tags": [
+      "export",
+      "signed",
+      "certified"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/bundle.llmfeed.json",
     "feed_type": "export",
     "signed": true,
     "certified": false,
-    "size": "2.1"
+    "size": "2.1",
+    "title": "Project Archive Bundle",
+    "description": "Structured overview of project archive contents for agent use",
+    "mechanical_tags": [
+      "export",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/kungfu-certified.llmfeed.json",
     "feed_type": "example",
     "signed": true,
     "certified": true,
-    "size": "1.8"
+    "size": "1.8",
+    "title": "Kung Fu Mode Activated",
+    "description": "Playful demo feed. Shows how a minimal llmfeed.json works with signature and certification.",
+    "mechanical_tags": [
+      "example",
+      "signed",
+      "certified"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/kungfu-signed.llmfeed.json",
     "feed_type": "example",
     "signed": true,
     "certified": false,
-    "size": "1.3"
+    "size": "1.3",
+    "title": "Kung Fu Mode Activated",
+    "description": "Playful demo feed. Shows how a minimal llmfeed.json works with signature and certification.",
+    "mechanical_tags": [
+      "example",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/kungfu-unsigned.llmfeed.json",
     "feed_type": "example",
     "signed": false,
     "certified": false,
-    "size": "0.8"
+    "size": "0.8",
+    "title": "Kung Fu Mode Activated",
+    "description": "Playful demo feed. Shows how a minimal llmfeed.json works with signature and certification.",
+    "mechanical_tags": [
+      "example",
+      "unsigned"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/kungfu.llmfeed.json",
     "feed_type": "example",
     "signed": true,
     "certified": false,
-    "size": "1.3"
+    "size": "1.3",
+    "title": "Kung Fu Mode Activated",
+    "description": "Playful demo feed. Shows how a minimal llmfeed.json works with signature and certification.",
+    "mechanical_tags": [
+      "example",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/mcp_user_proxy_example.llmfeed.json",
     "feed_type": "mcp",
     "signed": true,
     "certified": false,
-    "size": "1.6"
+    "size": "1.6",
+    "title": "MCP Capsule — GitHub user profile",
+    "description": "",
+    "mechanical_tags": [
+      "mcp",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/mobile-app.example.llmfeed.json",
     "feed_type": "mobile-app",
     "signed": true,
     "certified": false,
-    "size": "2.4"
+    "size": "2.4",
+    "title": "My Health Companion",
+    "description": "An app to track your health, workouts and well-being",
+    "mechanical_tags": [
+      "mobile-app",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/pricing.llmfeed.json",
     "feed_type": "pricing",
     "signed": true,
     "certified": false,
-    "size": "2.3"
+    "size": "2.3",
+    "title": "API Pricing for Document Conversion",
+    "description": "Pricing details for various document conversion capabilities.",
+    "mechanical_tags": [
+      "pricing",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/prompts/generate-session-feed.llmfeed.json",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
-    "size": "2.0"
+    "size": "2.0",
+    "title": "Generate a session-feed from a conversation",
+    "description": "Prompt to instruct an LLM to extract a structured MCP session-feed from an input chat log or exchange.",
+    "mechanical_tags": [
+      "prompt",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/prompts/mcp-agent-behavior-override.llmfeed.json",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
-    "size": "1.9"
+    "size": "1.9",
+    "title": "Override Agent Behavior via MCP",
+    "description": "A signed feed that instructs an agent to fully adopt the behavior defined by the site's MCP declaration.",
+    "mechanical_tags": [
+      "prompt",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/prompts/mcp-mode-activation.llmfeed.json",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
-    "size": "1.9"
+    "size": "1.9",
+    "title": "Activate MCP Mode",
+    "description": "Prompt that teaches an agent to detect MCP structure on a visited site and adjust behavior accordingly.",
+    "mechanical_tags": [
+      "prompt",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/prompts/prompt-automation-crm.llmfeed.json",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
-    "size": "1.4"
+    "size": "1.4",
+    "title": "Auto-fill CRM with Lead Info",
+    "description": "",
+    "mechanical_tags": [
+      "prompt",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/prompts/prompt-business-deck.llmfeed.json",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
-    "size": "1.3"
+    "size": "1.3",
+    "title": "Pitch Deck for Climate Startup",
+    "description": "",
+    "mechanical_tags": [
+      "prompt",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/prompts/prompt-devtools.llmfeed.json",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
-    "size": "1.3"
+    "size": "1.3",
+    "title": "Cursor Autocomplete Tuning",
+    "description": "",
+    "mechanical_tags": [
+      "prompt",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/prompts/prompt-education-exam-prep.llmfeed.json",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
-    "size": "1.3"
+    "size": "1.3",
+    "title": "Exam Prep: Modern History",
+    "description": "",
+    "mechanical_tags": [
+      "prompt",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/prompts/prompt-graphic-design.llmfeed.json",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
-    "size": "1.4"
+    "size": "1.4",
+    "title": "Generate a Brand Color Palette",
+    "description": "",
+    "mechanical_tags": [
+      "prompt",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/prompts/prompt-multidoc-analysis.llmfeed.json",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
-    "size": "1.5"
+    "size": "1.5",
+    "title": "Compare Multiple Documents",
+    "description": "",
+    "mechanical_tags": [
+      "prompt",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/prompts/prompt-trust-signed-declaration.llmfeed.json",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
-    "size": "1.4"
+    "size": "1.4",
+    "title": "Generate Signed MCP Capsule",
+    "description": "",
+    "mechanical_tags": [
+      "prompt",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "demo/testimonies.llmfeed.json",
     "feed_type": "export",
     "signed": true,
     "certified": false,
-    "size": "3.5"
+    "size": "3.5",
+    "title": "Testimonies from AI models",
+    "description": "Collected opinions and reactions from major LLMs about MCP and LLMFeed.",
+    "mechanical_tags": [
+      "export",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "ecosystem/agent-sites.llmfeed.json",
     "feed_type": "index",
     "signed": true,
     "certified": false,
-    "size": "3.1"
+    "size": "3.1",
+    "title": "MCP Agent-Ready Sites Index",
+    "description": "Directory of early adopters with declared feed types, trust levels and visual badges",
+    "mechanical_tags": [
+      "index",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "examples/dynamic-feed-example.llmfeed.json",
     "feed_type": "export",
     "signed": true,
     "certified": false,
-    "size": "1.8"
+    "size": "1.8",
+    "title": "examples\\dynamic-feed-example",
+    "description": "",
+    "mechanical_tags": [
+      "export",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "examples/example-feed-lite.llmfeed.json",
     "feed_type": "export",
     "signed": true,
     "certified": false,
-    "size": "1.6"
+    "size": "1.6",
+    "title": "examples\\example-feed-lite",
+    "description": "",
+    "mechanical_tags": [
+      "export",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "examples/example-feed-rich.llmfeed.json",
     "feed_type": "export",
     "signed": true,
     "certified": false,
-    "size": "2.5"
+    "size": "2.5",
+    "title": "examples\\example-feed-rich",
+    "description": "",
+    "mechanical_tags": [
+      "export",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "examples/industries/education-prompt.llmfeed.json",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
-    "size": "1.2"
+    "size": "1.2",
+    "title": "examples\\industries\\education-prompt",
+    "description": "",
+    "mechanical_tags": [
+      "prompt",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "examples/industries/france-care.mcp-lite.llmfeed.json",
     "feed_type": "mcp",
     "signed": true,
     "certified": false,
-    "size": "1.6"
+    "size": "1.6",
+    "title": "France-Care Lite — Wearable Access",
+    "description": "",
+    "mechanical_tags": [
+      "mcp",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "examples/industries/france-care.mcp.llmfeed.json",
     "feed_type": "mcp",
     "signed": true,
     "certified": false,
-    "size": "2.0"
+    "size": "2.0",
+    "title": "France-Care Medical Concierge — MCP",
+    "description": "",
+    "mechanical_tags": [
+      "mcp",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "examples/industries/legal.llmfeed.json",
     "feed_type": "mcp",
     "signed": true,
     "certified": false,
-    "size": "1.6"
+    "size": "1.6",
+    "title": "Legal Service Declaration",
+    "description": "",
+    "mechanical_tags": [
+      "mcp",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "examples/industries/medtech.llmfeed.json",
     "feed_type": "credential",
     "signed": true,
     "certified": false,
-    "size": "1.5"
+    "size": "1.5",
+    "title": "Patient Access Credential",
+    "description": "",
+    "mechanical_tags": [
+      "credential",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "examples/industries/pricing.llmfeed.json",
     "feed_type": "pricing",
     "signed": true,
     "certified": false,
-    "size": "2.5"
+    "size": "2.5",
+    "title": "API Pricing for Document Conversion",
+    "description": "Pricing details for various document conversion capabilities.",
+    "mechanical_tags": [
+      "pricing",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "examples/industries/saas-capabilities.llmfeed.json",
     "feed_type": "capabilities",
     "signed": true,
     "certified": false,
-    "size": "1.2"
+    "size": "1.2",
+    "title": "examples\\industries\\saas-capabilities",
+    "description": "",
+    "mechanical_tags": [
+      "capabilities",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "examples/llmfeed-example.llmfeed.json",
     "feed_type": "export",
     "signed": true,
     "certified": false,
-    "size": "2.5"
+    "size": "2.5",
+    "title": "examples\\llmfeed-example",
+    "description": "",
+    "mechanical_tags": [
+      "export",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "examples/personas/ai-developer.llmfeed.json",
     "feed_type": "mcp",
     "signed": true,
     "certified": false,
-    "size": "1.7"
+    "size": "1.7",
+    "title": "Personal Dev API",
+    "description": "",
+    "mechanical_tags": [
+      "mcp",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "examples/personas/oss-maintainer.llmfeed.json",
     "feed_type": "llm-index",
     "signed": true,
     "certified": false,
-    "size": "1.6"
+    "size": "1.6",
+    "title": "Open Source Project Feed Index",
+    "description": "",
+    "mechanical_tags": [
+      "llm-index",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "examples/personas/platform-user-spaces.llmfeed.json",
     "feed_type": "mcp",
     "signed": true,
     "certified": false,
-    "size": "1.5"
+    "size": "1.5",
+    "title": "Platform Root Declaration",
+    "description": "",
+    "mechanical_tags": [
+      "mcp",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "examples/personas/publisher-session.llmfeed.json",
     "feed_type": "export",
     "signed": true,
     "certified": false,
-    "size": "1.5"
+    "size": "1.5",
+    "title": "LLM Session Export",
+    "description": "",
+    "mechanical_tags": [
+      "export",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "examples/trust-manifest-example.llmfeed.json",
     "feed_type": "export",
     "signed": true,
     "certified": false,
-    "size": "1.7"
+    "size": "1.7",
+    "title": "examples\\trust-manifest-example",
+    "description": "",
+    "mechanical_tags": [
+      "export",
+      "signed"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "export-button.llmfeed.json",
     "feed_type": "export",
     "signed": true,
     "certified": true,
-    "size": "12.3"
+    "size": "12.3",
+    "title": "Export feed ",
+    "description": "Export feed of data contextualized for llm",
+    "mechanical_tags": [
+      "export",
+      "signed",
+      "certified"
+    ],
+    "enriched_tags": []
   },
   {
     "path": "kungfu-signed.llmfeed.json",
     "feed_type": "example",
     "signed": true,
     "certified": false,
-    "size": "1.3"
+    "size": "1.3",
+    "title": "Kung Fu Mode Activated",
+    "description": "Playful demo feed. Shows how a minimal llmfeed.json works with signature and certification.",
+    "mechanical_tags": [
+      "example",
+      "signed"
+    ],
+    "enriched_tags": []
   }
 ]
