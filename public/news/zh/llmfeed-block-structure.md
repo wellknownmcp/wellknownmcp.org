@@ -1,11 +1,10 @@
 ---
-title: "LLMFeed 的结构解剖 —— 按模块解析"
-description: "了解 .llmfeed.json 中各个模块的功能，并学习如何构建自己的 feed。"
+title: LLMFeed 的结构解剖 —— 按模块解析
+description: 了解 .llmfeed.json 中各个模块的功能，并学习如何构建自己的 feed。
 date: '2025-05-21'
 tags:
-  - guide
-  - structure
   - llmfeed
+  - structure
 lang: zh
 ---
 

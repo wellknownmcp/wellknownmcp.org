@@ -1,11 +1,9 @@
 ---
-title: 'Запуск проєкту'
+title: Запуск проєкту
 description: 'Що відбувається далі, коли ви публікуєте свій LLMFeed.'
 date: '2025-05-07'
 tags:
   - launch
-  - feed
-  - guide
 lang: uk
 ---
 

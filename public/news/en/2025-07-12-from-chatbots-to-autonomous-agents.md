@@ -1,8 +1,15 @@
 ---
-title: "From Chatbots to Autonomous Agents: The Web’s Next Evolution"
+title: 'From Chatbots to Autonomous Agents: The Web’s Next Evolution'
 lang: en
-tags: [autonomous-agents, agentic-web, chatbots, mcp, ai]
-description: "The web is evolving from chatbots to true autonomous agents. What does this mean for web architecture — and how does MCP fit in?"
+tags:
+  - agentic-web
+  - ai-agents
+  - autonomous-agents
+  - chatbots
+  - mcp
+description: >-
+  The web is evolving from chatbots to true autonomous agents. What does this
+  mean for web architecture — and how does MCP fit in?
 ---
 
 # From Chatbots to Autonomous Agents: The Web’s Next Evolution

@@ -1,23 +1,22 @@
 ---
-title: "Why Sign & Certify MCP Feeds?"
-description: "Why signing and certification are key to building trust in the Agentic Web. Learn why each feed type should be signed and how certification — including delegated signatures — adds trust."
+title: Why Sign & Certify MCP Feeds?
+description: >-
+  Why signing and certification are key to building trust in the Agentic Web.
+  Learn why each feed type should be signed and how certification — including
+  delegated signatures — adds trust.
 tags:
-  - mcp
-  - why sign
-  - why certify
-  - agentic web
-  - trust
+  - agentic-web
   - certification
-  - delegated signature
-  - well-known
-  - signature
-  - mcpnet
-  - llmfeedforge
+  - interoperability
   - llmca
-  - trusted agents
+  - llmfeedforge
+  - mcp
+  - mcp-net
   - mcp-spec
-  - agent interoperability
-date: "2025-06-02"
+  - signature
+  - trust
+  - well-known
+date: '2025-06-02'
 ---
 
 The Agentic Web is growing fast — and like the early web, it needs **trust and verification**.  

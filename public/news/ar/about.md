@@ -1,9 +1,8 @@
 ---
-title: "حول WellKnownMCP"
-description: "نظرة عامة على مبادرة WellKnownMCP، هدفها وأغراضها."
+title: حول WellKnownMCP
+description: نظرة عامة على مبادرة WellKnownMCP، هدفها وأغراضها.
 date: '2025-05-07'
 tags:
-  - about
   - core
   - llmfeed
 lang: ar

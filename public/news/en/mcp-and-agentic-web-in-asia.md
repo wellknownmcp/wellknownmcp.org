@@ -1,29 +1,31 @@
 ---
-title: "MCP and the Agentic Web Revolution in Asia"
-description: "Why Asia is poised to lead the Agentic Web — and how MCP can help build an open, interoperable ecosystem for LLM-powered agents in China, Korea, Japan and beyond."
+title: MCP and the Agentic Web Revolution in Asia
+description: >-
+  Why Asia is poised to lead the Agentic Web — and how MCP can help build an
+  open, interoperable ecosystem for LLM-powered agents in China, Korea, Japan
+  and beyond.
 tags:
-  - mcp
   - agentic-web
-  - china
-  - asia
   - ai-standards
-  - llm-agents
-  - interoperability
-  - wechat
-  - baidu
   - alibaba
-  - douyin
-  - kakao
-  - samsung
-  - line
-  - open-standards
-  - llm
-  - trust
+  - asia
+  - baidu
   - certification
-  - well-known
-  - mcp-net
+  - china
+  - douyin
+  - interoperability
+  - kakao
+  - line
+  - llm
   - llmfeedforge
-date: "2025-06-02"
+  - mcp
+  - mcp-net
+  - open-standards
+  - samsung
+  - trust
+  - wechat
+  - well-known
+date: '2025-06-02'
 ---
 
 ## 🚀 Asia: The Fastest Growing Agentic Web Ecosystem

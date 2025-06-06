@@ -1,11 +1,10 @@
 ---
-title: "Par où commencer"
-description: "Un guide simple pour comprendre la norme et faire vos premiers pas."
+title: Par où commencer
+description: Un guide simple pour comprendre la norme et faire vos premiers pas.
 date: '2025-05-21'
 tags:
-  - begin
-  - manual
   - llmfeed
+  - manual
 lang: fr
 ---
 

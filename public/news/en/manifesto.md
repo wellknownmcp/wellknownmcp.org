@@ -1,12 +1,12 @@
 ---
-title: "Our Manifesto"
-description: "The vision, values, and ethical commitments behind the WellKnownMCP standard."
+title: Our Manifesto
+description: 'The vision, values, and ethical commitments behind the WellKnownMCP standard.'
 date: '2025-05-21'
 tags:
-  - manifesto
   - ethics
-  - principles
   - llmfeed
+  - manifesto
+  - principles
 lang: en
 ---
 

@@ -1,12 +1,14 @@
 ---
-title: "Ética y responsabilidad"
-description: "Nuestro compromiso con estándares éticos y un uso responsable de la tecnología MCP."
+title: Ética y responsabilidad
+description: >-
+  Nuestro compromiso con estándares éticos y un uso responsable de la tecnología
+  MCP.
 date: '2025-05-07'
 tags:
-  - ethics
-  - responsibility
   - core
+  - ethics
   - llmfeed
+  - responsibility
 lang: es
 ---
 

@@ -1,9 +1,8 @@
 ---
-title: "Про WellKnownMCP"
-description: "Огляд ініціативи WellKnownMCP, її мети та завдань."
+title: Про WellKnownMCP
+description: 'Огляд ініціативи WellKnownMCP, її мети та завдань.'
 date: '2025-05-07'
 tags:
-  - about
   - core
   - llmfeed
 lang: uk

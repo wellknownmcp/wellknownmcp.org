@@ -1,8 +1,12 @@
 ---
-title: "Opera Neon Relaunch: A Step Forward for the Agentic Web?"
-date: "2025-05-31"
-tags: [agentic-web, browsers, mcp, llmfeed, interoperability]
-lang: "en"
+title: 'Opera Neon Relaunch: A Step Forward for the Agentic Web?'
+date: '2025-05-31'
+tags:
+  - agentic-web
+  - interoperability
+  - llmfeed
+  - mcp
+lang: en
 ---
 
 # 🧠 Opera Neon Relaunch: A Step Forward for the Agentic Web?

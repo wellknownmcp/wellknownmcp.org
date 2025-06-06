@@ -1,7 +1,16 @@
 ---
-title: "Claude and the Model Context Protocol: An Open Alignment"
-date: 2025-05-24
-tags: [mcp, anthropic, claude, llmfeed, well-known, interoperability, certification, ai agents, web standards]
+title: 'Claude and the Model Context Protocol: An Open Alignment'
+date: 2025-05-24T00:00:00.000Z
+tags:
+  - ai-agents
+  - anthropic
+  - certification
+  - claude
+  - interoperability
+  - llmfeed
+  - mcp
+  - open-standards
+  - well-known
 lang: en
 slug: claude-alignment
 format: news

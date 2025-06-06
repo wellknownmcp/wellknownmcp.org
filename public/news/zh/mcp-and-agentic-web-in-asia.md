@@ -1,25 +1,25 @@
 ---
-title: "MCP 与亚洲代理网络革命"
-description: "为什么亚洲有望引领代理网络（Agentic Web），以及 MCP 如何帮助构建面向 LLM 代理的开放互操作生态。"
+title: MCP 与亚洲代理网络革命
+description: 为什么亚洲有望引领代理网络（Agentic Web），以及 MCP 如何帮助构建面向 LLM 代理的开放互操作生态。
 tags:
-  - mcp
-  - agentic web
-  - asia
-  - china
-  - ai标准
-  - llm代理
-  - 互操作性
-  - wechat
-  - baidu
+  - agentic-web
+  - ai-standards
   - alibaba
+  - asia
+  - baidu
+  - china
   - douyin
+  - interoperability
   - kakao
-  - samsung
   - line
-  - open standards
-  - 可信代理
-  - mcpnet
-date: "2025-06-02"
+  - llm代理
+  - mcp
+  - mcp-net
+  - open-standards
+  - samsung
+  - trust
+  - wechat
+date: '2025-06-02'
 ---
 
 目前，代理网络（Agentic Web）在全球发展迅速——而在亚洲，发展速度尤为惊人。

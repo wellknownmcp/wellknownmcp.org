@@ -1,11 +1,10 @@
 ---
-title: 'Where to Begin'
-description: 'A simple guide to help you understand the standard and take your first steps.'
+title: Where to Begin
+description: A simple guide to help you understand the standard and take your first steps.
 date: '2025-05-07'
 tags:
-  - begin
-  - manual
   - llmfeed
+  - manual
 lang: en
 ---
 

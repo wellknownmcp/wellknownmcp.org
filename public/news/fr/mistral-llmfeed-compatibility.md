@@ -1,10 +1,17 @@
 ---
 lang: fr
 slug: mistral-llmfeed-compatibility
-title: "🌐 Mistral AI, champion français : quelle compatibilité avec LLMFeed ?"
-description: "Analyse de la compatibilité entre les modèles open source de Mistral AI et les standards LLMFeed."
-tags: [ia-marche-francais, llmfeed, mistral-ai, open-source, souverainete-numerique]
-date: 2025-06-09
+title: "\U0001F310 Mistral AI, champion français : quelle compatibilité avec LLMFeed ?"
+description: >-
+  Analyse de la compatibilité entre les modèles open source de Mistral AI et les
+  standards LLMFeed.
+tags:
+  - ia-marche-francais
+  - llmfeed
+  - mistral
+  - open-source
+  - souverainete-numerique
+date: 2025-06-09T00:00:00.000Z
 ---
 
 ## 🌐 Mistral AI, champion français : quelle compatibilité avec LLMFeed ?

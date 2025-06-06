@@ -1,12 +1,12 @@
 ---
-title: "بياننا"
-description: "الرؤية والقيم والالتزامات الأخلاقية التي تقود تطوير معيار WellKnownMCP."
+title: بياننا
+description: الرؤية والقيم والالتزامات الأخلاقية التي تقود تطوير معيار WellKnownMCP.
 date: '2025-05-21'
 tags:
-  - manifesto
   - ethics
-  - principles
   - llmfeed
+  - manifesto
+  - principles
 lang: ar
 ---
 

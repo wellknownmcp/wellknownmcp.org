@@ -1,15 +1,16 @@
 ---
-title: "الأسئلة الشائعة – MCP و LLMFeed"
-description: "إجابات على الأسئلة المتكررة حول بروتوكول السياق للنماذج (MCP) ونظام LLMFeed، بما في ذلك الفرق عن MCP من Anthropic."
+title: الأسئلة الشائعة – MCP و LLMFeed
+description: >-
+  إجابات على الأسئلة المتكررة حول بروتوكول السياق للنماذج (MCP) ونظام LLMFeed،
+  بما في ذلك الفرق عن MCP من Anthropic.
 date: '2025-05-21'
 tags:
-  - mcp
-  - llmfeed
-  - faq
-  - trust
-  - agents
-  - developers
+  - ai-agents
   - anthropic
+  - developers
+  - llmfeed
+  - mcp
+  - trust
 lang: ar
 ---
 

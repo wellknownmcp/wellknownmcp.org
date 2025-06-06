@@ -1,12 +1,14 @@
 ---
-title: "Notre Manifeste"
-description: "La vision, les valeurs et les engagements éthiques derrière la norme WellKnownMCP."
+title: Notre Manifeste
+description: >-
+  La vision, les valeurs et les engagements éthiques derrière la norme
+  WellKnownMCP.
 date: '2025-05-21'
 tags:
-  - manifesto
   - ethics
-  - principles
   - llmfeed
+  - manifesto
+  - principles
 lang: fr
 ---
 

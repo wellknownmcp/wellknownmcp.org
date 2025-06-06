@@ -1,9 +1,16 @@
 ---
-title: "Claude 4.5 and the New Wave of LLM Crawling"
+title: Claude 4.5 and the New Wave of LLM Crawling
 lang: en
 date: '2025-05-31'
-tags: [claude, anthropic, llm-crawling, agentic-web, mcp]
-description: "As Claude 4.5 rolls out with enhanced browsing capabilities, what are the implications for the Agentic Web and standards like MCP?"
+tags:
+  - agentic-web
+  - anthropic
+  - claude
+  - llm
+  - mcp
+description: >-
+  As Claude 4.5 rolls out with enhanced browsing capabilities, what are the
+  implications for the Agentic Web and standards like MCP?
 ---
 
 # Claude 4.5 and the New Wave of LLM Crawling

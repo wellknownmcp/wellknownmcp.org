@@ -1,9 +1,16 @@
 ---
-title: "AI-First Browsers: Redefining Agentic Navigation"
+title: 'AI-First Browsers: Redefining Agentic Navigation'
 lang: en
-tags: [ai-first-browsers, agentic-web, navigation, mcp, llm]
+tags:
+  - agentic-web
+  - ai-first-browsers
+  - llm
+  - mcp
+  - navigation
 date: '2025-05-31'
-description: "A new wave of AI-first browsers is emerging. What does this mean for web navigation — and how does MCP enable it?"
+description: >-
+  A new wave of AI-first browsers is emerging. What does this mean for web
+  navigation — and how does MCP enable it?
 ---
 
 # AI-First Browsers: Redefining Agentic Navigation

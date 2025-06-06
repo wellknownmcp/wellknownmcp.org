@@ -1,10 +1,14 @@
 ---
-title: "Launching wellknownmcp.org — Make your site LLM-readable, verifiable and actionable"
-description: "Launch communication draft for wellknownmcp.org: Launching wellknownmcp.org — Make your site LLM-readable, verifiable and actionable"
+title: >-
+  Launching wellknownmcp.org — Make your site LLM-readable, verifiable and
+  actionable
+description: >-
+  Launch communication draft for wellknownmcp.org: Launching wellknownmcp.org —
+  Make your site LLM-readable, verifiable and actionable
 date: '2025-05-21'
 tags:
-  - launch
   - announcement
+  - launch
   - llmfeed
 lang: en
 ---

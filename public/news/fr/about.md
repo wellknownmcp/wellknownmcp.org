@@ -1,9 +1,8 @@
 ---
-title: "À propos de WellKnownMCP"
-description: "Un aperçu de l'initiative WellKnownMCP, de son objectif et de ses finalités."
+title: À propos de WellKnownMCP
+description: 'Un aperçu de l''initiative WellKnownMCP, de son objectif et de ses finalités.'
 date: '2025-05-07'
 tags:
-  - about
   - core
   - llmfeed
 lang: fr

@@ -1,10 +1,10 @@
 ---
-title: "发布公告"
-description: "WellKnownMCP 项目的正式发布及其官方网站的上线公告。"
+title: 发布公告
+description: WellKnownMCP 项目的正式发布及其官方网站的上线公告。
 date: '2025-05-21'
 tags:
-  - launch
   - announcement
+  - launch
   - llmfeed
 lang: zh
 ---

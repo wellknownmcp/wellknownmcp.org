@@ -1,0 +1,1152 @@
+{
+  "global": [
+    {
+      "tag": "llmfeed",
+      "count": 82
+    },
+    {
+      "tag": "mcp",
+      "count": 42
+    },
+    {
+      "tag": "trust",
+      "count": 31
+    },
+    {
+      "tag": "agentic-web",
+      "count": 25
+    },
+    {
+      "tag": "core",
+      "count": 19
+    },
+    {
+      "tag": "ai-agents",
+      "count": 18
+    },
+    {
+      "tag": "manual",
+      "count": 17
+    },
+    {
+      "tag": "llm",
+      "count": 12
+    },
+    {
+      "tag": "well-known",
+      "count": 11
+    },
+    {
+      "tag": "ethics",
+      "count": 10
+    },
+    {
+      "tag": "launch",
+      "count": 10
+    },
+    {
+      "tag": "interoperability",
+      "count": 9
+    },
+    {
+      "tag": "announcement",
+      "count": 8
+    },
+    {
+      "tag": "ia-marche-francais",
+      "count": 8
+    },
+    {
+      "tag": "manifesto",
+      "count": 7
+    },
+    {
+      "tag": "certification",
+      "count": 7
+    },
+    {
+      "tag": "web",
+      "count": 7
+    },
+    {
+      "tag": "llmca",
+      "count": 7
+    },
+    {
+      "tag": "anthropic",
+      "count": 6
+    },
+    {
+      "tag": "homomorphic",
+      "count": 6
+    },
+    {
+      "tag": "pipeline",
+      "count": 6
+    },
+    {
+      "tag": "structure",
+      "count": 6
+    },
+    {
+      "tag": "responsibility",
+      "count": 5
+    },
+    {
+      "tag": "encryption",
+      "count": 5
+    },
+    {
+      "tag": "privacy",
+      "count": 5
+    },
+    {
+      "tag": "principles",
+      "count": 5
+    },
+    {
+      "tag": "signature",
+      "count": 5
+    },
+    {
+      "tag": "open-standards",
+      "count": 5
+    },
+    {
+      "tag": "aio",
+      "count": 5
+    },
+    {
+      "tag": "developers",
+      "count": 4
+    },
+    {
+      "tag": "ai-standards",
+      "count": 4
+    },
+    {
+      "tag": "mcp-net",
+      "count": 4
+    },
+    {
+      "tag": "industries",
+      "count": 4
+    },
+    {
+      "tag": "use-cases",
+      "count": 4
+    },
+    {
+      "tag": "certification-ia",
+      "count": 4
+    },
+    {
+      "tag": "souverainete-numerique",
+      "count": 4
+    },
+    {
+      "tag": "claude",
+      "count": 3
+    },
+    {
+      "tag": "seo",
+      "count": 3
+    },
+    {
+      "tag": "llmfeedforge",
+      "count": 3
+    },
+    {
+      "tag": "search",
+      "count": 2
+    },
+    {
+      "tag": "aiovsseo",
+      "count": 2
+    },
+    {
+      "tag": "behavior",
+      "count": 2
+    },
+    {
+      "tag": "deepsearch",
+      "count": 2
+    },
+    {
+      "tag": "guidance",
+      "count": 2
+    },
+    {
+      "tag": "alibaba",
+      "count": 2
+    },
+    {
+      "tag": "asia",
+      "count": 2
+    },
+    {
+      "tag": "baidu",
+      "count": 2
+    },
+    {
+      "tag": "china",
+      "count": 2
+    },
+    {
+      "tag": "douyin",
+      "count": 2
+    },
+    {
+      "tag": "kakao",
+      "count": 2
+    },
+    {
+      "tag": "line",
+      "count": 2
+    },
+    {
+      "tag": "samsung",
+      "count": 2
+    },
+    {
+      "tag": "wechat",
+      "count": 2
+    },
+    {
+      "tag": "mistral",
+      "count": 2
+    },
+    {
+      "tag": "mcp-spec",
+      "count": 2
+    },
+    {
+      "tag": "apple",
+      "count": 1
+    },
+    {
+      "tag": "meta",
+      "count": 1
+    },
+    {
+      "tag": "open-agents",
+      "count": 1
+    },
+    {
+      "tag": "microsoft",
+      "count": 1
+    },
+    {
+      "tag": "nlweb",
+      "count": 1
+    },
+    {
+      "tag": "autonomous-agents",
+      "count": 1
+    },
+    {
+      "tag": "chatbots",
+      "count": 1
+    },
+    {
+      "tag": "ai-first-browsers",
+      "count": 1
+    },
+    {
+      "tag": "navigation",
+      "count": 1
+    },
+    {
+      "tag": "ux",
+      "count": 1
+    },
+    {
+      "tag": "compatibility",
+      "count": 1
+    },
+    {
+      "tag": "deepseek",
+      "count": 1
+    },
+    {
+      "tag": "gemini",
+      "count": 1
+    },
+    {
+      "tag": "gpt-4o",
+      "count": 1
+    },
+    {
+      "tag": "grok",
+      "count": 1
+    },
+    {
+      "tag": "canonicalization",
+      "count": 1
+    },
+    {
+      "tag": "ai-act",
+      "count": 1
+    },
+    {
+      "tag": "open-source",
+      "count": 1
+    },
+    {
+      "tag": "llm代理",
+      "count": 1
+    },
+    {
+      "tag": "trusted-agents",
+      "count": 1
+    }
+  ],
+  "perLang": {
+    "ar": [
+      {
+        "tag": "llmfeed",
+        "count": 8
+      },
+      {
+        "tag": "core",
+        "count": 3
+      },
+      {
+        "tag": "manual",
+        "count": 2
+      },
+      {
+        "tag": "ethics",
+        "count": 2
+      },
+      {
+        "tag": "trust",
+        "count": 2
+      },
+      {
+        "tag": "responsibility",
+        "count": 1
+      },
+      {
+        "tag": "ai-agents",
+        "count": 1
+      },
+      {
+        "tag": "anthropic",
+        "count": 1
+      },
+      {
+        "tag": "developers",
+        "count": 1
+      },
+      {
+        "tag": "mcp",
+        "count": 1
+      },
+      {
+        "tag": "agentic-web",
+        "count": 1
+      },
+      {
+        "tag": "encryption",
+        "count": 1
+      },
+      {
+        "tag": "homomorphic",
+        "count": 1
+      },
+      {
+        "tag": "pipeline",
+        "count": 1
+      },
+      {
+        "tag": "privacy",
+        "count": 1
+      },
+      {
+        "tag": "announcement",
+        "count": 1
+      },
+      {
+        "tag": "launch",
+        "count": 1
+      },
+      {
+        "tag": "manifesto",
+        "count": 1
+      },
+      {
+        "tag": "principles",
+        "count": 1
+      }
+    ],
+    "en": [
+      {
+        "tag": "mcp",
+        "count": 30
+      },
+      {
+        "tag": "llmfeed",
+        "count": 24
+      },
+      {
+        "tag": "trust",
+        "count": 19
+      },
+      {
+        "tag": "agentic-web",
+        "count": 17
+      },
+      {
+        "tag": "ai-agents",
+        "count": 12
+      },
+      {
+        "tag": "llm",
+        "count": 10
+      },
+      {
+        "tag": "well-known",
+        "count": 10
+      },
+      {
+        "tag": "web",
+        "count": 7
+      },
+      {
+        "tag": "certification",
+        "count": 6
+      },
+      {
+        "tag": "interoperability",
+        "count": 6
+      },
+      {
+        "tag": "signature",
+        "count": 4
+      },
+      {
+        "tag": "llmca",
+        "count": 4
+      },
+      {
+        "tag": "announcement",
+        "count": 4
+      },
+      {
+        "tag": "launch",
+        "count": 4
+      },
+      {
+        "tag": "ai-standards",
+        "count": 3
+      },
+      {
+        "tag": "claude",
+        "count": 3
+      },
+      {
+        "tag": "open-standards",
+        "count": 3
+      },
+      {
+        "tag": "anthropic",
+        "count": 2
+      },
+      {
+        "tag": "seo",
+        "count": 2
+      },
+      {
+        "tag": "core",
+        "count": 2
+      },
+      {
+        "tag": "manual",
+        "count": 2
+      },
+      {
+        "tag": "llmfeedforge",
+        "count": 2
+      },
+      {
+        "tag": "mcp-net",
+        "count": 2
+      },
+      {
+        "tag": "apple",
+        "count": 1
+      },
+      {
+        "tag": "meta",
+        "count": 1
+      },
+      {
+        "tag": "open-agents",
+        "count": 1
+      },
+      {
+        "tag": "search",
+        "count": 1
+      },
+      {
+        "tag": "microsoft",
+        "count": 1
+      },
+      {
+        "tag": "nlweb",
+        "count": 1
+      },
+      {
+        "tag": "autonomous-agents",
+        "count": 1
+      },
+      {
+        "tag": "chatbots",
+        "count": 1
+      },
+      {
+        "tag": "ai-first-browsers",
+        "count": 1
+      },
+      {
+        "tag": "navigation",
+        "count": 1
+      },
+      {
+        "tag": "ux",
+        "count": 1
+      },
+      {
+        "tag": "aio",
+        "count": 1
+      },
+      {
+        "tag": "aiovsseo",
+        "count": 1
+      },
+      {
+        "tag": "encryption",
+        "count": 1
+      },
+      {
+        "tag": "homomorphic",
+        "count": 1
+      },
+      {
+        "tag": "pipeline",
+        "count": 1
+      },
+      {
+        "tag": "privacy",
+        "count": 1
+      },
+      {
+        "tag": "behavior",
+        "count": 1
+      },
+      {
+        "tag": "deepsearch",
+        "count": 1
+      },
+      {
+        "tag": "guidance",
+        "count": 1
+      },
+      {
+        "tag": "structure",
+        "count": 1
+      },
+      {
+        "tag": "ethics",
+        "count": 1
+      },
+      {
+        "tag": "manifesto",
+        "count": 1
+      },
+      {
+        "tag": "principles",
+        "count": 1
+      },
+      {
+        "tag": "alibaba",
+        "count": 1
+      },
+      {
+        "tag": "asia",
+        "count": 1
+      },
+      {
+        "tag": "baidu",
+        "count": 1
+      },
+      {
+        "tag": "china",
+        "count": 1
+      },
+      {
+        "tag": "douyin",
+        "count": 1
+      },
+      {
+        "tag": "kakao",
+        "count": 1
+      },
+      {
+        "tag": "line",
+        "count": 1
+      },
+      {
+        "tag": "samsung",
+        "count": 1
+      },
+      {
+        "tag": "wechat",
+        "count": 1
+      },
+      {
+        "tag": "industries",
+        "count": 1
+      },
+      {
+        "tag": "use-cases",
+        "count": 1
+      },
+      {
+        "tag": "compatibility",
+        "count": 1
+      },
+      {
+        "tag": "deepseek",
+        "count": 1
+      },
+      {
+        "tag": "gemini",
+        "count": 1
+      },
+      {
+        "tag": "gpt-4o",
+        "count": 1
+      },
+      {
+        "tag": "grok",
+        "count": 1
+      },
+      {
+        "tag": "mistral",
+        "count": 1
+      },
+      {
+        "tag": "canonicalization",
+        "count": 1
+      },
+      {
+        "tag": "mcp-spec",
+        "count": 1
+      }
+    ],
+    "es": [
+      {
+        "tag": "llmfeed",
+        "count": 9
+      },
+      {
+        "tag": "core",
+        "count": 3
+      },
+      {
+        "tag": "manual",
+        "count": 2
+      },
+      {
+        "tag": "ethics",
+        "count": 2
+      },
+      {
+        "tag": "mcp",
+        "count": 2
+      },
+      {
+        "tag": "trust",
+        "count": 2
+      },
+      {
+        "tag": "responsibility",
+        "count": 1
+      },
+      {
+        "tag": "ai-agents",
+        "count": 1
+      },
+      {
+        "tag": "anthropic",
+        "count": 1
+      },
+      {
+        "tag": "developers",
+        "count": 1
+      },
+      {
+        "tag": "agentic-web",
+        "count": 1
+      },
+      {
+        "tag": "encryption",
+        "count": 1
+      },
+      {
+        "tag": "homomorphic",
+        "count": 1
+      },
+      {
+        "tag": "pipeline",
+        "count": 1
+      },
+      {
+        "tag": "privacy",
+        "count": 1
+      },
+      {
+        "tag": "announcement",
+        "count": 1
+      },
+      {
+        "tag": "launch",
+        "count": 1
+      },
+      {
+        "tag": "structure",
+        "count": 1
+      },
+      {
+        "tag": "manifesto",
+        "count": 1
+      },
+      {
+        "tag": "principles",
+        "count": 1
+      },
+      {
+        "tag": "industries",
+        "count": 1
+      },
+      {
+        "tag": "use-cases",
+        "count": 1
+      }
+    ],
+    "fr": [
+      {
+        "tag": "llmfeed",
+        "count": 17
+      },
+      {
+        "tag": "ia-marche-francais",
+        "count": 8
+      },
+      {
+        "tag": "certification-ia",
+        "count": 4
+      },
+      {
+        "tag": "souverainete-numerique",
+        "count": 4
+      },
+      {
+        "tag": "ai-agents",
+        "count": 3
+      },
+      {
+        "tag": "aio",
+        "count": 3
+      },
+      {
+        "tag": "mcp",
+        "count": 3
+      },
+      {
+        "tag": "trust",
+        "count": 3
+      },
+      {
+        "tag": "core",
+        "count": 2
+      },
+      {
+        "tag": "manual",
+        "count": 2
+      },
+      {
+        "tag": "ai-act",
+        "count": 1
+      },
+      {
+        "tag": "anthropic",
+        "count": 1
+      },
+      {
+        "tag": "developers",
+        "count": 1
+      },
+      {
+        "tag": "agentic-web",
+        "count": 1
+      },
+      {
+        "tag": "encryption",
+        "count": 1
+      },
+      {
+        "tag": "homomorphic",
+        "count": 1
+      },
+      {
+        "tag": "pipeline",
+        "count": 1
+      },
+      {
+        "tag": "privacy",
+        "count": 1
+      },
+      {
+        "tag": "behavior",
+        "count": 1
+      },
+      {
+        "tag": "deepsearch",
+        "count": 1
+      },
+      {
+        "tag": "guidance",
+        "count": 1
+      },
+      {
+        "tag": "interoperability",
+        "count": 1
+      },
+      {
+        "tag": "llmca",
+        "count": 1
+      },
+      {
+        "tag": "open-standards",
+        "count": 1
+      },
+      {
+        "tag": "announcement",
+        "count": 1
+      },
+      {
+        "tag": "launch",
+        "count": 1
+      },
+      {
+        "tag": "structure",
+        "count": 1
+      },
+      {
+        "tag": "ethics",
+        "count": 1
+      },
+      {
+        "tag": "manifesto",
+        "count": 1
+      },
+      {
+        "tag": "principles",
+        "count": 1
+      },
+      {
+        "tag": "mistral",
+        "count": 1
+      },
+      {
+        "tag": "open-source",
+        "count": 1
+      },
+      {
+        "tag": "industries",
+        "count": 1
+      },
+      {
+        "tag": "use-cases",
+        "count": 1
+      }
+    ],
+    "hi": [
+      {
+        "tag": "llmfeed",
+        "count": 9
+      },
+      {
+        "tag": "manual",
+        "count": 5
+      },
+      {
+        "tag": "core",
+        "count": 3
+      },
+      {
+        "tag": "ethics",
+        "count": 1
+      },
+      {
+        "tag": "responsibility",
+        "count": 1
+      },
+      {
+        "tag": "agentic-web",
+        "count": 1
+      },
+      {
+        "tag": "homomorphic",
+        "count": 1
+      },
+      {
+        "tag": "pipeline",
+        "count": 1
+      },
+      {
+        "tag": "launch",
+        "count": 1
+      },
+      {
+        "tag": "structure",
+        "count": 1
+      },
+      {
+        "tag": "manifesto",
+        "count": 1
+      }
+    ],
+    "uk": [
+      {
+        "tag": "llmfeed",
+        "count": 6
+      },
+      {
+        "tag": "core",
+        "count": 3
+      },
+      {
+        "tag": "manual",
+        "count": 2
+      },
+      {
+        "tag": "ethics",
+        "count": 1
+      },
+      {
+        "tag": "responsibility",
+        "count": 1
+      },
+      {
+        "tag": "launch",
+        "count": 1
+      },
+      {
+        "tag": "structure",
+        "count": 1
+      },
+      {
+        "tag": "manifesto",
+        "count": 1
+      }
+    ],
+    "zh": [
+      {
+        "tag": "llmfeed",
+        "count": 9
+      },
+      {
+        "tag": "mcp",
+        "count": 6
+      },
+      {
+        "tag": "trust",
+        "count": 5
+      },
+      {
+        "tag": "agentic-web",
+        "count": 4
+      },
+      {
+        "tag": "core",
+        "count": 3
+      },
+      {
+        "tag": "llm",
+        "count": 2
+      },
+      {
+        "tag": "manual",
+        "count": 2
+      },
+      {
+        "tag": "ethics",
+        "count": 2
+      },
+      {
+        "tag": "llmca",
+        "count": 2
+      },
+      {
+        "tag": "interoperability",
+        "count": 2
+      },
+      {
+        "tag": "mcp-net",
+        "count": 2
+      },
+      {
+        "tag": "search",
+        "count": 1
+      },
+      {
+        "tag": "seo",
+        "count": 1
+      },
+      {
+        "tag": "responsibility",
+        "count": 1
+      },
+      {
+        "tag": "ai-agents",
+        "count": 1
+      },
+      {
+        "tag": "anthropic",
+        "count": 1
+      },
+      {
+        "tag": "developers",
+        "count": 1
+      },
+      {
+        "tag": "aio",
+        "count": 1
+      },
+      {
+        "tag": "aiovsseo",
+        "count": 1
+      },
+      {
+        "tag": "encryption",
+        "count": 1
+      },
+      {
+        "tag": "homomorphic",
+        "count": 1
+      },
+      {
+        "tag": "pipeline",
+        "count": 1
+      },
+      {
+        "tag": "privacy",
+        "count": 1
+      },
+      {
+        "tag": "announcement",
+        "count": 1
+      },
+      {
+        "tag": "launch",
+        "count": 1
+      },
+      {
+        "tag": "structure",
+        "count": 1
+      },
+      {
+        "tag": "manifesto",
+        "count": 1
+      },
+      {
+        "tag": "principles",
+        "count": 1
+      },
+      {
+        "tag": "ai-standards",
+        "count": 1
+      },
+      {
+        "tag": "alibaba",
+        "count": 1
+      },
+      {
+        "tag": "asia",
+        "count": 1
+      },
+      {
+        "tag": "baidu",
+        "count": 1
+      },
+      {
+        "tag": "china",
+        "count": 1
+      },
+      {
+        "tag": "douyin",
+        "count": 1
+      },
+      {
+        "tag": "kakao",
+        "count": 1
+      },
+      {
+        "tag": "line",
+        "count": 1
+      },
+      {
+        "tag": "llm代理",
+        "count": 1
+      },
+      {
+        "tag": "open-standards",
+        "count": 1
+      },
+      {
+        "tag": "samsung",
+        "count": 1
+      },
+      {
+        "tag": "wechat",
+        "count": 1
+      },
+      {
+        "tag": "industries",
+        "count": 1
+      },
+      {
+        "tag": "use-cases",
+        "count": 1
+      },
+      {
+        "tag": "certification",
+        "count": 1
+      },
+      {
+        "tag": "llmfeedforge",
+        "count": 1
+      },
+      {
+        "tag": "mcp-spec",
+        "count": 1
+      },
+      {
+        "tag": "signature",
+        "count": 1
+      },
+      {
+        "tag": "trusted-agents",
+        "count": 1
+      },
+      {
+        "tag": "well-known",
+        "count": 1
+      }
+    ]
+  }
+}

@@ -1,12 +1,12 @@
 ---
-title: "नैतिकता और उत्तरदायित्व"
-description: "MCP तकनीक के नैतिक मानकों और जिम्मेदार उपयोग के प्रति हमारी प्रतिबद्धता।"
+title: नैतिकता और उत्तरदायित्व
+description: MCP तकनीक के नैतिक मानकों और जिम्मेदार उपयोग के प्रति हमारी प्रतिबद्धता।
 date: '2025-05-07'
 tags:
-  - ethics
-  - responsibility
   - core
+  - ethics
   - llmfeed
+  - responsibility
 lang: hi
 ---
 

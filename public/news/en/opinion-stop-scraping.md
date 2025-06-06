@@ -1,11 +1,14 @@
 ---
-title: "📢 Let’s Stop Scraping. Let’s Start Declaring."
+title: "\U0001F4E2 Let’s Stop Scraping. Let’s Start Declaring."
 slug: opinion-stop-scraping
 format: news
 lang: en
-date: 2025-05-21
-description: "A call for clarity: why scraping fails, and how MCP offers a better way."
-tags: [opinion, declaration, scraping, mcp, agentic-web, trust]
+date: 2025-05-21T00:00:00.000Z
+description: 'A call for clarity: why scraping fails, and how MCP offers a better way.'
+tags:
+  - agentic-web
+  - mcp
+  - trust
 ---
 
 # 📢 Scraping Isn’t Understanding

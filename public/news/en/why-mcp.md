@@ -1,13 +1,13 @@
 ---
-title: "Why MCP?"
-description: "Explaining the rationale behind adopting the Model Context Protocol (MCP) standard."
+title: Why MCP?
+description: >-
+  Explaining the rationale behind adopting the Model Context Protocol (MCP)
+  standard.
 date: '2025-05-07'
 tags:
-  - why-mcp
-  - rationale
-  - manual
   - core
   - llmfeed
+  - manual
 lang: en
 ---
 

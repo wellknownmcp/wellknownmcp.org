@@ -1,11 +1,10 @@
 ---
-title: "从哪里开始"
-description: "一个简单的指南，帮助你理解标准并迈出第一步。"
+title: 从哪里开始
+description: 一个简单的指南，帮助你理解标准并迈出第一步。
 date: '2025-05-21'
 tags:
-  - begin
-  - manual
   - llmfeed
+  - manual
 lang: zh
 ---
 

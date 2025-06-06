@@ -1,7 +1,20 @@
 ---
-title: "Which LLMs are ready for MCP Signature Verification? GPT-4o, Claude, Gemini, Mistral, Grok — the real comparison"
-date: 2025-05-27
-tags: [MCP, LLM, LLMCA, Signature Verification, GPT-4o, Claude, Gemini, Mistral, DeepSeek, Grok, Compatibility]
+title: >-
+  Which LLMs are ready for MCP Signature Verification? GPT-4o, Claude, Gemini,
+  Mistral, Grok — the real comparison
+date: 2025-05-27T00:00:00.000Z
+tags:
+  - claude
+  - compatibility
+  - deepseek
+  - gemini
+  - gpt-4o
+  - grok
+  - llm
+  - llmca
+  - mcp
+  - mistral
+  - signature
 lang: en
 ---
 

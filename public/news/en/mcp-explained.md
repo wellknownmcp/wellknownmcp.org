@@ -1,9 +1,13 @@
 ---
 title: How Agents Understand You — MCP Explained
-description: Learn how MCP helps agents interpret your services, structure and intent — without prompt guessing.
-tags: [mcp, explained, agents, tutorial]
+description: >-
+  Learn how MCP helps agents interpret your services, structure and intent —
+  without prompt guessing.
+tags:
+  - ai-agents
+  - mcp
 lang: en
-date: 2025-05-16
+date: 2025-05-16T00:00:00.000Z
 ---
 
 # How Agents Understand You — MCP Explained

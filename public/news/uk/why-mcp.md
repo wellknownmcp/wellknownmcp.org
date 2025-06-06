@@ -1,13 +1,13 @@
 ---
-title: "Чому MCP?"
-description: "Пояснення причин, що лежать в основі впровадження стандарту Model Context Protocol (MCP)."
+title: Чому MCP?
+description: >-
+  Пояснення причин, що лежать в основі впровадження стандарту Model Context
+  Protocol (MCP).
 date: '2025-05-07'
 tags:
-  - why-mcp
-  - rationale
-  - manual
   - core
   - llmfeed
+  - manual
 lang: uk
 ---
 

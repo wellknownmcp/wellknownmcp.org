@@ -1,10 +1,10 @@
 ---
-title: "إعلان الإطلاق"
-description: "الإعلان الرسمي عن إطلاق مبادرة WellKnownMCP وموقعها الرسمي."
+title: إعلان الإطلاق
+description: الإعلان الرسمي عن إطلاق مبادرة WellKnownMCP وموقعها الرسمي.
 date: '2025-05-07'
 tags:
-  - launch
   - announcement
+  - launch
   - llmfeed
 lang: ar
 dir: rtl

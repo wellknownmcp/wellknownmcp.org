@@ -1,9 +1,16 @@
 ---
-title: "Certifying Agentic Interactions: The New Frontier of SEO?"
+title: 'Certifying Agentic Interactions: The New Frontier of SEO?'
 lang: en
-tags: [certification, agentic-web, seo, mcp, trust]
+tags:
+  - agentic-web
+  - certification
+  - mcp
+  - seo
+  - trust
 date: '2025-05-31'
-description: "As the Agentic Web emerges, trust and certification are becoming key. Could certifying agentic interactions become the new SEO?"
+description: >-
+  As the Agentic Web emerges, trust and certification are becoming key. Could
+  certifying agentic interactions become the new SEO?
 ---
 
 # Certifying Agentic Interactions: The New Frontier of SEO?

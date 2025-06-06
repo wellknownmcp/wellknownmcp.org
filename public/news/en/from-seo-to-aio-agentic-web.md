@@ -1,7 +1,14 @@
 ---
-title: "From SEO to AIO: aiovsseo.com joins the Agentic Web"
-date: 2025-05-30
-tags: [Agentic Web, MCP, LLMCA, aiovsseo, AIO, trust, LLMs]
+title: 'From SEO to AIO: aiovsseo.com joins the Agentic Web'
+date: 2025-05-30T00:00:00.000Z
+tags:
+  - agentic-web
+  - aio
+  - aiovsseo
+  - llm
+  - llmca
+  - mcp
+  - trust
 lang: en
 ---
 

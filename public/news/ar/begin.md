@@ -1,11 +1,10 @@
 ---
-title: "من أين تبدأ"
-description: "دليل بسيط لفهم المعيار واتخاذ أولى خطواتك."
+title: من أين تبدأ
+description: دليل بسيط لفهم المعيار واتخاذ أولى خطواتك.
 date: '2025-05-21'
 tags:
-  - begin
-  - manual
   - llmfeed
+  - manual
 lang: ar
 ---
 

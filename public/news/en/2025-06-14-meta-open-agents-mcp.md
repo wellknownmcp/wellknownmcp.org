@@ -1,9 +1,16 @@
 ---
-title: "Meta’s Open Agents: Opportunity or Challenge for MCP?"
+title: 'Meta’s Open Agents: Opportunity or Challenge for MCP?'
 lang: en
 date: '2025-05-31'
-tags: [meta, open-agents, agentic-web, mcp, ai-standards]
-description: "Meta announces its Open Agents initiative. How does it align with MCP and the vision of an interoperable Agentic Web?"
+tags:
+  - agentic-web
+  - ai-standards
+  - mcp
+  - meta
+  - open-agents
+description: >-
+  Meta announces its Open Agents initiative. How does it align with MCP and the
+  vision of an interoperable Agentic Web?
 ---
 
 # Meta’s Open Agents: Opportunity or Challenge for MCP?

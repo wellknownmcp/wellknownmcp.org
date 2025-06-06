@@ -1,10 +1,8 @@
 ---
-title: 'अक्सर पूछे जाने वाले प्रश्न'
-description: 'LLMFeed और MCP के बारे में अक्सर पूछे गए प्रश्नों के उत्तर।'
+title: अक्सर पूछे जाने वाले प्रश्न
+description: LLMFeed और MCP के बारे में अक्सर पूछे गए प्रश्नों के उत्तर।
 date: '2025-05-07'
 tags:
-  - faq
-  - guide
   - llmfeed
 lang: hi
 ---

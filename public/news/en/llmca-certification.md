@@ -1,11 +1,17 @@
 ---
-title: "✅ How LLMCA Certifies a Feed"
+title: ✅ How LLMCA Certifies a Feed
 slug: llmca-certification
 format: news
 lang: en
-date: 2025-05-25
-description: "Understanding the logic, levels, and process of feed certification."
-tags: [mcp, llmfeed, agents, trust, web, ai, well-known]
+date: 2025-05-25T00:00:00.000Z
+description: 'Understanding the logic, levels, and process of feed certification.'
+tags:
+  - ai-agents
+  - llmfeed
+  - mcp
+  - trust
+  - web
+  - well-known
 ---
 
 Certification is not magic. It’s inspection + commitment. The LLMCA validator:

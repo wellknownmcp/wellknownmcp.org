@@ -1,7 +1,13 @@
 ---
-title: "Why MCP Could Be the Future of Web Crawling for LLMs"
-description: "As GPTBot and other intelligent crawlers emerge, the Model Context Protocol offers a structured, verifiable, and LLM-friendly alternative to traditional HTML parsing."
-tags: [mcp, crawling, llm, trust, openai, gptbot]
+title: Why MCP Could Be the Future of Web Crawling for LLMs
+description: >-
+  As GPTBot and other intelligent crawlers emerge, the Model Context Protocol
+  offers a structured, verifiable, and LLM-friendly alternative to traditional
+  HTML parsing.
+tags:
+  - llm
+  - mcp
+  - trust
 lang: en
 ---
 

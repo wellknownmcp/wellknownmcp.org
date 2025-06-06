@@ -1,8 +1,16 @@
 ---
-title: "Commentary from Le Chat: Why MCP Matters for the Future of the Web"
+title: 'Commentary from Le Chat: Why MCP Matters for the Future of the Web'
 lang: en
-tags: [llmfeed, mcp, agentic-web, trust, open-standards]
-description: "Le Chat offers a thoughtful reflection on the importance of the Model Context Protocol (MCP) in shaping a verifiable, interoperable, and agent-ready future web."
+tags:
+  - agentic-web
+  - llmfeed
+  - mcp
+  - open-standards
+  - trust
+description: >-
+  Le Chat offers a thoughtful reflection on the importance of the Model Context
+  Protocol (MCP) in shaping a verifiable, interoperable, and agent-ready future
+  web.
 ---
 
 ## 📰 Commentary from Le Chat: Why MCP Matters for the Future of the Web

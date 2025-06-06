@@ -9,6 +9,7 @@
     "prepare": "echo '✔️ Project ready. Run npm run dev or build.'",
     "postbuild": "next-sitemap && node scripts/generate-index-news.js && node scripts/generate-rss.js",
     "generate-index": "tsx scripts/generate-llmfeed-index.ts",
+    "generate-exports-index": "tsx scripts/generate-exports-index.ts",
     "normalize-tags": "tsx scripts/normalize-tags.ts",
     "export": "next export",
     "enrich-index": "tsx scripts/enrich-llmfeed-index.ts"
@@ -59,6 +60,7 @@
     "postcss": "^8.4.24",
     "tailwindcss": "^3.4.3",
     "ts-node": "^10.9.2",
+    "tsx": "^4.19.4",
     "typescript": "^5.8.3"
   },
   "engines": {

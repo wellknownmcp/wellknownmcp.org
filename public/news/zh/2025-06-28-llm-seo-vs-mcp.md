@@ -1,9 +1,14 @@
 ---
-title: "LLM SEO 与 MCP：竞争还是互补？"
+title: LLM SEO 与 MCP：竞争还是互补？
 lang: zh
 date: '2025-05-31'
-tags: [seo, llm-seo, agentic-web, mcp, search]
-description: "LLM 驱动的 SEO 正在兴起。它是否与 MCP 和开放代理网络（Agentic Web）的目标冲突，还是可以互补？"
+tags:
+  - agentic-web
+  - llm
+  - mcp
+  - search
+  - seo
+description: LLM 驱动的 SEO 正在兴起。它是否与 MCP 和开放代理网络（Agentic Web）的目标冲突，还是可以互补？
 ---
 
 # LLM SEO 与 MCP：竞争还是互补？

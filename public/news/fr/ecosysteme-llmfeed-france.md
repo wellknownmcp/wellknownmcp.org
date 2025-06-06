@@ -1,10 +1,15 @@
 ---
 lang: fr
 slug: ecosysteme-llmfeed-france
-title: "🔗 Construire un écosystème LLMFeed-compatible en France"
-description: "Appel aux acteurs du numérique pour construire un écosystème LLMFeed-compatible souverain."
-tags: [ia-marche-francais, llmfeed, ecosysteme, france, souverainete-numerique]
-date: 2025-06-18
+title: "\U0001F517 Construire un écosystème LLMFeed-compatible en France"
+description: >-
+  Appel aux acteurs du numérique pour construire un écosystème
+  LLMFeed-compatible souverain.
+tags:
+  - ia-marche-francais
+  - llmfeed
+  - souverainete-numerique
+date: 2025-06-18T00:00:00.000Z
 ---
 
 ## 🔗 Construire un écosystème LLMFeed-compatible en France

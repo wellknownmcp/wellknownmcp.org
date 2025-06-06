@@ -2,8 +2,15 @@
 title: 'Microsoft’s NLWeb Protocol: A Competitor to MCP?'
 lang: en
 date: '2025-05-31'
-tags: [microsoft, nlweb, mcp, agentic-web, ai-standards]
-description: 'Microsoft introduces NLWeb — a protocol for natural language interactions on the web. How does it compare to MCP?'
+tags:
+  - agentic-web
+  - ai-standards
+  - mcp
+  - microsoft
+  - nlweb
+description: >-
+  Microsoft introduces NLWeb — a protocol for natural language interactions on
+  the web. How does it compare to MCP?
 ---
 
 # Microsoft’s NLWeb Protocol: A Competitor to MCP?

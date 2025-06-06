@@ -1,15 +1,16 @@
 ---
-title: "FAQ – MCP et LLMFeed"
-description: "Réponses aux questions fréquentes sur le protocole MCP et l’écosystème LLMFeed, y compris ses différences avec le MCP d’Anthropic."
+title: FAQ – MCP et LLMFeed
+description: >-
+  Réponses aux questions fréquentes sur le protocole MCP et l’écosystème
+  LLMFeed, y compris ses différences avec le MCP d’Anthropic.
 date: '2025-05-21'
 tags:
-  - mcp
-  - llmfeed
-  - faq
-  - trust
-  - agents
-  - developers
+  - ai-agents
   - anthropic
+  - developers
+  - llmfeed
+  - mcp
+  - trust
 lang: fr
 ---
 

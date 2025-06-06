@@ -1,10 +1,10 @@
 ---
-title: "Annonce de lancement"
-description: "Annonce du lancement de l’initiative WellKnownMCP et de son site officiel."
+title: Annonce de lancement
+description: Annonce du lancement de l’initiative WellKnownMCP et de son site officiel.
 date: '2025-05-21'
 tags:
-  - launch
   - announcement
+  - launch
   - llmfeed
 lang: fr
 ---

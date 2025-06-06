@@ -1,12 +1,12 @@
 ---
-title: "我们的宣言"
-description: "支撑 WellKnownMCP 标准的发展与采用的愿景、价值观和伦理承诺。"
+title: 我们的宣言
+description: 支撑 WellKnownMCP 标准的发展与采用的愿景、价值观和伦理承诺。
 date: '2025-05-21'
 tags:
-  - manifesto
   - ethics
-  - principles
   - llmfeed
+  - manifesto
+  - principles
 lang: zh
 ---
 

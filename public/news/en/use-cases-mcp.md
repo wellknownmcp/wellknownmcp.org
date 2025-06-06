@@ -1,13 +1,13 @@
 ---
-
-
-title: "What Can You Build With MCP? Real-World Use Cases"
-description: "From health to SaaS, here are concrete examples of how MCP and LLMFeed can be used."
+title: What Can You Build With MCP? Real-World Use Cases
+description: >-
+  From health to SaaS, here are concrete examples of how MCP and LLMFeed can be
+  used.
 date: '2025-05-21'
 tags:
-  - use-cases
-  - mcp
   - industries
+  - mcp
+  - use-cases
 lang: en
 ---
 

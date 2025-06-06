@@ -1,10 +1,8 @@
 ---
-title: 'FAQ'
-description: 'Відповіді на найчастіші запитання про LLMFeed та MCP.'
+title: FAQ
+description: Відповіді на найчастіші запитання про LLMFeed та MCP.
 date: '2025-05-07'
 tags:
-  - faq
-  - guide
   - llmfeed
 lang: uk
 ---

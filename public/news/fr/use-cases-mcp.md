@@ -1,11 +1,13 @@
 ---
-title: "Que peut-on construire avec MCP ? Cas d’usage concrets"
-description: "De la santé au SaaS, voici des exemples concrets d’utilisation de MCP et LLMFeed."
+title: Que peut-on construire avec MCP ? Cas d’usage concrets
+description: >-
+  De la santé au SaaS, voici des exemples concrets d’utilisation de MCP et
+  LLMFeed.
 date: '2025-05-21'
 tags:
-  - use-cases
-  - mcp
   - industries
+  - mcp
+  - use-cases
 lang: fr
 ---
 

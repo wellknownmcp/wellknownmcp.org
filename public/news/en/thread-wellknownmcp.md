@@ -1,10 +1,10 @@
 ---
-title: "🧵 Thread X — Launching wellknownmcp.org"
-description: "Launch communication draft for wellknownmcp.org: 🧵 Thread X — Launching wellknownmcp.org"
+title: "\U0001F9F5 Thread X — Launching wellknownmcp.org"
+description: "Launch communication draft for wellknownmcp.org: \U0001F9F5 Thread X — Launching wellknownmcp.org"
 date: '2025-05-21'
 tags:
-  - launch
   - announcement
+  - launch
   - llmfeed
 lang: en
 ---

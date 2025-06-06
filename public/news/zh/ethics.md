@@ -1,12 +1,12 @@
 ---
-title: "伦理与责任"
-description: "我们对 MCP 技术的伦理标准和负责任使用的承诺。"
+title: 伦理与责任
+description: 我们对 MCP 技术的伦理标准和负责任使用的承诺。
 date: '2025-05-07'
 tags:
-  - ethics
-  - responsibility
   - core
+  - ethics
   - llmfeed
+  - responsibility
 lang: zh
 ---
 

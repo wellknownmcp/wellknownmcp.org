@@ -1,11 +1,10 @@
 ---
-title: 'Блокова структура'
+title: Блокова структура
 description: 'Як структуровано llmfeed.json: список доступних блоків та їхнє призначення.'
 date: '2025-05-07'
 tags:
-  - structure
-  - block
   - llmfeed
+  - structure
 lang: uk
 ---
 

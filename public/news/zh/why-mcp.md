@@ -1,13 +1,11 @@
 ---
-title: "为什么选择 MCP？"
-description: "解释采用 Model Context Protocol (MCP) 标准的理由。"
+title: 为什么选择 MCP？
+description: 解释采用 Model Context Protocol (MCP) 标准的理由。
 date: '2025-05-07'
 tags:
-  - why-mcp
-  - rationale
-  - manual
   - core
   - llmfeed
+  - manual
 lang: zh
 ---
 

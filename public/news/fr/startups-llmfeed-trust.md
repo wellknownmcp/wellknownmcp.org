@@ -1,10 +1,16 @@
 ---
 lang: fr
 slug: startups-llmfeed-trust
-title: "🚀 Startups IA : comment adopter LLMFeed pour booster la confiance ?"
-description: "Guide pratique pour les startups françaises souhaitant adopter LLMFeed pour plus de transparence."
-tags: [ia-marche-francais, llmfeed, startups, confiance, certification-ia]
-date: 2025-06-15
+title: "\U0001F680 Startups IA : comment adopter LLMFeed pour booster la confiance ?"
+description: >-
+  Guide pratique pour les startups françaises souhaitant adopter LLMFeed pour
+  plus de transparence.
+tags:
+  - certification-ia
+  - ia-marche-francais
+  - llmfeed
+  - trust
+date: 2025-06-15T00:00:00.000Z
 ---
 
 ## 🚀 Startups IA : comment adopter LLMFeed pour booster la confiance ?

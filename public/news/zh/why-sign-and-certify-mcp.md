@@ -1,21 +1,19 @@
 ---
-title: "为什么要签署和认证 MCP Feed？"
-description: "签名和认证是构建可信代理网络的关键。了解为何每种 Feed 类型都应签名，以及认证如何提升信任层级。"
+title: 为什么要签署和认证 MCP Feed？
+description: 签名和认证是构建可信代理网络的关键。了解为何每种 Feed 类型都应签名，以及认证如何提升信任层级。
 tags:
-  - mcp
-  - 签名
-  - 认证
-  - 代理网络
-  - 信任
-  - well-known
-  - 签名机制
-  - mcpnet
-  - llmfeedforge
+  - certification
+  - interoperability
   - llmca
-  - 可信代理
-  - mcp规范
-  - 代理互操作性
-date: "2025-06-02"
+  - llmfeedforge
+  - mcp
+  - mcp-net
+  - mcp-spec
+  - signature
+  - trust
+  - trusted-agents
+  - well-known
+date: '2025-06-02'
 ---
 
 代理网络（Agentic Web）正在迅速发展——就像早期的互联网一样，它需要**信任与验证**。  

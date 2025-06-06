@@ -1,10 +1,16 @@
 ---
 lang: fr
 slug: sovereignty-traceability-ai
-title: "🔐 La souveraineté numérique passe par la traçabilité des contenus IA"
-description: "Pourquoi la traçabilité via LLMFeed est essentielle pour une souveraineté numérique européenne."
-tags: [ia-marche-francais, llmfeed, souverainete-numerique, aio]
-date: 2025-06-12
+title: "\U0001F510 La souveraineté numérique passe par la traçabilité des contenus IA"
+description: >-
+  Pourquoi la traçabilité via LLMFeed est essentielle pour une souveraineté
+  numérique européenne.
+tags:
+  - aio
+  - ia-marche-francais
+  - llmfeed
+  - souverainete-numerique
+date: 2025-06-12T00:00:00.000Z
 ---
 
 ## 🔐 La souveraineté numérique passe par la traçabilité des contenus IA

@@ -1,12 +1,12 @@
 ---
-title: "الأخلاقيات والمسؤولية"
-description: "التزامنا بالمعايير الأخلاقية والاستخدام المسؤول لتقنية MCP."
+title: الأخلاقيات والمسؤولية
+description: التزامنا بالمعايير الأخلاقية والاستخدام المسؤول لتقنية MCP.
 date: '2025-05-07'
 tags:
-  - ethics
-  - responsibility
   - core
+  - ethics
   - llmfeed
+  - responsibility
 lang: ar
 dir: rtl
 ---

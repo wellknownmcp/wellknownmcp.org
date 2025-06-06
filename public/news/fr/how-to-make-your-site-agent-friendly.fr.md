@@ -2,18 +2,20 @@
 lang: fr
 slug: how-to-make-your-site-agent-friendly
 title: Rendre votre site agent-friendly avec llmfeed.json
-description: Un guide pratique pour exposer des llmfeed.json de confiance — pour aider les agents IA et LLMs à comprendre, utiliser et valoriser votre contenu.
+description: >-
+  Un guide pratique pour exposer des llmfeed.json de confiance — pour aider les
+  agents IA et LLMs à comprendre, utiliser et valoriser votre contenu.
 tags:
-  - llmfeed.json
-  - MCP
-  - agents IA
-  - web de confiance
-  - agent guidance
-  - agent behavior
+  - ai-agents
+  - behavior
   - deepsearch
-  - interopérabilité
+  - guidance
+  - interoperability
   - llmca
-date: 2025-06-05
+  - llmfeed
+  - mcp
+  - open-standards
+date: 2025-06-05T00:00:00.000Z
 ---
 
 # Rendre votre site agent-friendly avec llmfeed.json

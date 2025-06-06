@@ -1,10 +1,15 @@
 ---
 lang: fr
 slug: education-ai-certification
-title: "🏫 Grandes écoles face au défi de la certification IA"
-description: "Comment les grandes écoles françaises peuvent préparer les futurs experts aux standards IA comme LLMFeed."
-tags: [ia-marche-francais, llmfeed, education, certification-ia]
-date: 2025-06-22
+title: "\U0001F3EB Grandes écoles face au défi de la certification IA"
+description: >-
+  Comment les grandes écoles françaises peuvent préparer les futurs experts aux
+  standards IA comme LLMFeed.
+tags:
+  - certification-ia
+  - ia-marche-francais
+  - llmfeed
+date: 2025-06-22T00:00:00.000Z
 ---
 
 ## 🏫 Grandes écoles face au défi de la certification IA

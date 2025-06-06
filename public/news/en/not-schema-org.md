@@ -1,11 +1,17 @@
 ---
-title: "🧠 We Are Not Schema.org for LLMs — And That’s Good"
+title: "\U0001F9E0 We Are Not Schema.org for LLMs — And That’s Good"
 slug: not-schema-org
 format: news
 lang: en
-date: 2025-05-25
-description: "LLMFeed is not metadata. It’s intent, trust, and action for agents."
-tags: [mcp, llmfeed, agents, trust, web, ai, well-known]
+date: 2025-05-25T00:00:00.000Z
+description: 'LLMFeed is not metadata. It’s intent, trust, and action for agents.'
+tags:
+  - ai-agents
+  - llmfeed
+  - mcp
+  - trust
+  - web
+  - well-known
 ---
 
 # 🧠 We Are Not Schema.org for LLMs — And That’s Good

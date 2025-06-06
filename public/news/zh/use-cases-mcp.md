@@ -1,11 +1,11 @@
 ---
-title: "MCP 能实现什么？真实世界的使用场景"
-description: "从医疗到 SaaS，这里列举了 MCP 与 LLMFeed 的具体应用示例。"
+title: MCP 能实现什么？真实世界的使用场景
+description: 从医疗到 SaaS，这里列举了 MCP 与 LLMFeed 的具体应用示例。
 date: '2025-05-21'
 tags:
-  - use-cases
-  - mcp
   - industries
+  - mcp
+  - use-cases
 lang: zh
 ---
 

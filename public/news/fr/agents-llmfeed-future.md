@@ -1,10 +1,16 @@
 ---
 lang: fr
 slug: agents-llmfeed-future
-title: "🤖 Pourquoi les agents IA français devraient parler LLMFeed nativement"
-description: "Vers une génération d'agents IA compatibles avec les standards LLMFeed pour un web agentique."
-tags: [ia-marche-francais, llmfeed, agents-ia, futur, aio]
-date: 2025-06-26
+title: "\U0001F916 Pourquoi les agents IA français devraient parler LLMFeed nativement"
+description: >-
+  Vers une génération d'agents IA compatibles avec les standards LLMFeed pour un
+  web agentique.
+tags:
+  - ai-agents
+  - aio
+  - ia-marche-francais
+  - llmfeed
+date: 2025-06-26T00:00:00.000Z
 ---
 
 ## 🤖 Pourquoi les agents IA français devraient parler LLMFeed nativement

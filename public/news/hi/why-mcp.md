@@ -1,13 +1,11 @@
 ---
-title: "MCP क्यों?"
-description: "Model Context Protocol (MCP) मानक को अपनाने के कारणों की व्याख्या।"
+title: MCP क्यों?
+description: Model Context Protocol (MCP) मानक को अपनाने के कारणों की व्याख्या।
 date: '2025-05-07'
 tags:
-  - why-mcp
-  - rationale
-  - manual
   - core
   - llmfeed
+  - manual
 lang: hi
 ---
 

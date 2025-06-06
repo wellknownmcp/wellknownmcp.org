@@ -1,9 +1,8 @@
 ---
-title: "WellKnownMCP के बारे में"
-description: "WellKnownMCP पहल, उसके उद्देश्य और महत्व का एक संक्षिप्त अवलोकन।"
+title: WellKnownMCP के बारे में
+description: 'WellKnownMCP पहल, उसके उद्देश्य और महत्व का एक संक्षिप्त अवलोकन।'
 date: '2025-05-07'
 tags:
-  - about
   - core
   - llmfeed
 lang: hi

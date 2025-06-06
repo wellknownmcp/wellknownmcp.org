@@ -1,10 +1,16 @@
 ---
 lang: fr
 slug: certification-ai-act-gap
-title: "🔖 Certification des modèles IA : le chainon manquant du AI Act ?"
-description: "Le AI Act européen impose des exigences strictes. LLMFeed et la certification apportent des réponses clés."
-tags: [ia-marche-francais, llmfeed, ai-act, certification-ia]
-date: 2025-06-07
+title: "\U0001F516 Certification des modèles IA : le chainon manquant du AI Act ?"
+description: >-
+  Le AI Act européen impose des exigences strictes. LLMFeed et la certification
+  apportent des réponses clés.
+tags:
+  - ai-act
+  - certification-ia
+  - ia-marche-francais
+  - llmfeed
+date: 2025-06-07T00:00:00.000Z
 ---
 
 ## 🔖 Certification des modèles IA : le chainon manquant du AI Act ?

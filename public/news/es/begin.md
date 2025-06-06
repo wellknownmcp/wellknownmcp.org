@@ -1,11 +1,10 @@
 ---
-title: "Por dónde empezar"
-description: "Una guía sencilla para comprender el estándar y dar tus primeros pasos."
+title: Por dónde empezar
+description: Una guía sencilla para comprender el estándar y dar tus primeros pasos.
 date: '2025-05-21'
 tags:
-  - begin
-  - manual
   - llmfeed
+  - manual
 lang: es
 ---
 

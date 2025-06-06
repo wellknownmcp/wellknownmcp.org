@@ -1,9 +1,8 @@
 ---
-title: "关于 WellKnownMCP"
-description: "WellKnownMCP 项目的概览、目标和宗旨。"
+title: 关于 WellKnownMCP
+description: WellKnownMCP 项目的概览、目标和宗旨。
 date: '2025-05-07'
 tags:
-  - about
   - core
   - llmfeed
 lang: zh

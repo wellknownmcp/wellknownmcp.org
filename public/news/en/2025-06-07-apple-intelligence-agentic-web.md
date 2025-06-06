@@ -1,9 +1,16 @@
 ---
-title: "Apple Intelligence: A New Player in the Agentic Web?"
+title: 'Apple Intelligence: A New Player in the Agentic Web?'
 lang: en
 date: '2025-05-31'
-tags: [apple, agentic-web, mcp, ai-agents, llm]
-description: "Apple’s entry into AI-driven agents could reshape the emerging Agentic Web landscape. What does it mean for standards like MCP?"
+tags:
+  - agentic-web
+  - ai-agents
+  - apple
+  - llm
+  - mcp
+description: >-
+  Apple’s entry into AI-driven agents could reshape the emerging Agentic Web
+  landscape. What does it mean for standards like MCP?
 ---
 
 # Apple Intelligence: A New Player in the Agentic Web?

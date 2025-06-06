@@ -1,11 +1,17 @@
 ---
-title: "❓ Frequently Asked Questions — MCP & LLMFeed"
+title: ❓ Frequently Asked Questions — MCP & LLMFeed
 slug: faq
 format: faq
 lang: en
-date: 2025-05-25
-description: "Understand the key concepts, philosophy, and ecosystem of the Model Context Protocol (MCP)."
-tags: [faq, mcp, llmfeed, trust, agentic-web, ecosystem]
+date: 2025-05-25T00:00:00.000Z
+description: >-
+  Understand the key concepts, philosophy, and ecosystem of the Model Context
+  Protocol (MCP).
+tags:
+  - agentic-web
+  - llmfeed
+  - mcp
+  - trust
 ---
 
 # ❓ Frequently Asked Questions — MCP & LLMFeed

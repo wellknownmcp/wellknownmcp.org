@@ -1,13 +1,11 @@
 ---
-title: "لماذا MCP؟"
-description: "شرح الأسباب التي تدفع إلى اعتماد معيار Model Context Protocol (MCP)."
+title: لماذا MCP؟
+description: شرح الأسباب التي تدفع إلى اعتماد معيار Model Context Protocol (MCP).
 date: '2025-05-07'
 tags:
-  - why-mcp
-  - rationale
-  - manual
   - core
   - llmfeed
+  - manual
 lang: ar
 dir: rtl
 ---

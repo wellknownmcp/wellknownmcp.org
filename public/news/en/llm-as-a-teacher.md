@@ -1,8 +1,15 @@
 ---
-title: "Turning LLMs into Teachers, Auditors, and Publishers"
+title: 'Turning LLMs into Teachers, Auditors, and Publishers'
 lang: en
-tags: [llms, agentic-web, mcp, trust, llmfeed]
-description: "How LLMs can actively teach, audit, and generate llmfeed.json files — a unique design choice of the MCP standard."
+tags:
+  - agentic-web
+  - llm
+  - llmfeed
+  - mcp
+  - trust
+description: >-
+  How LLMs can actively teach, audit, and generate llmfeed.json files — a unique
+  design choice of the MCP standard.
 ---
 
 # 🧠 Turning LLMs into Teachers, Auditors, and Publishers

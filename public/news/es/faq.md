@@ -1,15 +1,16 @@
 ---
-title: "FAQ – MCP y LLMFeed"
-description: "Respuestas a preguntas frecuentes sobre el Protocolo de Contexto para Modelos y el ecosistema LLMFeed, incluyendo cómo se compara con el MCP de Anthropic."
+title: FAQ – MCP y LLMFeed
+description: >-
+  Respuestas a preguntas frecuentes sobre el Protocolo de Contexto para Modelos
+  y el ecosistema LLMFeed, incluyendo cómo se compara con el MCP de Anthropic.
 date: '2025-05-21'
 tags:
-  - mcp
-  - llmfeed
-  - faq
-  - trust
-  - agents
-  - developers
+  - ai-agents
   - anthropic
+  - developers
+  - llmfeed
+  - mcp
+  - trust
 lang: es
 ---
 

@@ -1,15 +1,14 @@
 ---
-title: "常见问题解答 – MCP 与 LLMFeed"
-description: "关于模型上下文协议（MCP）及其生态系统 LLMFeed 的常见问题解答，包括其与 Anthropic MCP 的比较。"
+title: 常见问题解答 – MCP 与 LLMFeed
+description: 关于模型上下文协议（MCP）及其生态系统 LLMFeed 的常见问题解答，包括其与 Anthropic MCP 的比较。
 date: '2025-05-21'
 tags:
-  - mcp
-  - llmfeed
-  - faq
-  - trust
-  - agents
-  - developers
+  - ai-agents
   - anthropic
+  - developers
+  - llmfeed
+  - mcp
+  - trust
 lang: zh
 ---
 

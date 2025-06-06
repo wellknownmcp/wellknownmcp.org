@@ -1,11 +1,17 @@
 ---
-title: "🗺️ The Case for .well-known/llm-index.llmfeed.json"
+title: "\U0001F5FA️ The Case for .well-known/llm-index.llmfeed.json"
 slug: llm-index-case
 format: news
 lang: en
-date: 2025-05-25
-description: "Why LLMs need a sitemap built for agent intent, not HTML crawlers."
-tags: [mcp, llmfeed, agents, trust, web, ai, well-known]
+date: 2025-05-25T00:00:00.000Z
+description: 'Why LLMs need a sitemap built for agent intent, not HTML crawlers.'
+tags:
+  - ai-agents
+  - llmfeed
+  - mcp
+  - trust
+  - web
+  - well-known
 ---
 
 # 🗺️ The Case for `.well-known/llm-index.llmfeed.json`

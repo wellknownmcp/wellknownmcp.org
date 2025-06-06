@@ -1,11 +1,19 @@
 ---
-title: "📤 ExportToLLM: A Button That Talks to Agents"
+title: "\U0001F4E4 ExportToLLM: A Button That Talks to Agents"
 slug: exporttollm-button
 format: news
 lang: en
-date: 2025-05-25
-description: "Turn any page into an agent-readable capsule with a single button."
-tags: [mcp, llmfeed, agents, trust, web, ai, well-known, ux, interop]
+date: 2025-05-25T00:00:00.000Z
+description: Turn any page into an agent-readable capsule with a single button.
+tags:
+  - ai-agents
+  - interoperability
+  - llmfeed
+  - mcp
+  - trust
+  - ux
+  - web
+  - well-known
 ---
 
 # 📤 ExportToLLM: A Button That Talks to Agents

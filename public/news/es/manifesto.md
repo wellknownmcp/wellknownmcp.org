@@ -1,12 +1,14 @@
 ---
-title: "Nuestro Manifiesto"
-description: "La visión, valores y compromisos éticos que respaldan el estándar WellKnownMCP."
+title: Nuestro Manifiesto
+description: >-
+  La visión, valores y compromisos éticos que respaldan el estándar
+  WellKnownMCP.
 date: '2025-05-21'
 tags:
-  - manifesto
   - ethics
-  - principles
   - llmfeed
+  - manifesto
+  - principles
 lang: es
 ---
 

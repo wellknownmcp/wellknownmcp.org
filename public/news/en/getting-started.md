@@ -1,11 +1,17 @@
 ---
-title: "🚀 Your First MCP Site in 3 Steps"
+title: "\U0001F680 Your First MCP Site in 3 Steps"
 slug: getting-started
 format: news
 lang: en
-date: 2025-05-25
-description: "Turn any site into an agent-aware node in under 5 minutes."
-tags: [mcp, llmfeed, agents, trust, web, ai, well-known, onboarding]
+date: 2025-05-25T00:00:00.000Z
+description: Turn any site into an agent-aware node in under 5 minutes.
+tags:
+  - ai-agents
+  - llmfeed
+  - mcp
+  - trust
+  - web
+  - well-known
 ---
 
 # 🚀 Your First MCP Site in 3 Steps

@@ -1,11 +1,20 @@
 ---
-title: "🛰️ The Case for .well-known/mcp.llmfeed.json"
+title: "\U0001F6F0️ The Case for .well-known/mcp.llmfeed.json"
 slug: mcp-wellknown
 format: news
 lang: en
-date: 2025-05-25
-description: "Why .well-known/ is the most logical place to declare AI-ready interfaces — and why signatures matter."
-tags: [mcp, llmfeed, agents, trust, web, ai, well-known, certification]
+date: 2025-05-25T00:00:00.000Z
+description: >-
+  Why .well-known/ is the most logical place to declare AI-ready interfaces —
+  and why signatures matter.
+tags:
+  - ai-agents
+  - certification
+  - llmfeed
+  - mcp
+  - trust
+  - web
+  - well-known
 ---
 
 # 🛰️ The Case for `.well-known/mcp.llmfeed.json`

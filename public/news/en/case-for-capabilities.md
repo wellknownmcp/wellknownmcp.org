@@ -1,11 +1,17 @@
 ---
-title: "📡 The Case for Capabilities"
+title: "\U0001F4E1 The Case for Capabilities"
 slug: case-for-capabilities
 format: news
 lang: en
-date: 2025-05-25
-description: "Declaring agent-facing capabilities beats inference every time."
-tags: [mcp, llmfeed, agents, trust, web, ai, well-known]
+date: 2025-05-25T00:00:00.000Z
+description: Declaring agent-facing capabilities beats inference every time.
+tags:
+  - ai-agents
+  - llmfeed
+  - mcp
+  - trust
+  - web
+  - well-known
 ---
 
 # 📡 The Case for Capabilities

@@ -1,8 +1,18 @@
 ---
 id: homomorphic-capsules
 title: Towards Homomorphic Capsules for the Agentic Web
-description: Exploring a potential extension of `.llmfeed.json` feeds to enable privacy-preserving, verifiable pipelines — a vision aligned with the forefront of homomorphic encryption research.
-tags: [llmfeed, homomorphic, encryption, agentic web, pipeline, privacy, trust]
+description: >-
+  Exploring a potential extension of `.llmfeed.json` feeds to enable
+  privacy-preserving, verifiable pipelines — a vision aligned with the forefront
+  of homomorphic encryption research.
+tags:
+  - agentic-web
+  - encryption
+  - homomorphic
+  - llmfeed
+  - pipeline
+  - privacy
+  - trust
 lang: en
 ---
 

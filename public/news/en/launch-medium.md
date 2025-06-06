@@ -1,10 +1,12 @@
 ---
-title: 'Giving Your Website a Voice — Introducing the Well-Known MCP Standard'
-description: 'Launch communication draft for wellknownmcp.org: Giving Your Website a Voice — Introducing the Well-Known MCP Standard'
+title: Giving Your Website a Voice — Introducing the Well-Known MCP Standard
+description: >-
+  Launch communication draft for wellknownmcp.org: Giving Your Website a Voice —
+  Introducing the Well-Known MCP Standard
 date: '2025-05-21'
 tags:
-  - launch
   - announcement
+  - launch
   - llmfeed
 lang: en
 ---

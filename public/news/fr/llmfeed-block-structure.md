@@ -1,11 +1,12 @@
 ---
-title: "Anatomie d’un LLMFeed — Bloc par bloc"
-description: "Comprendre comment chaque bloc d’un .llmfeed.json fonctionne et comment concevoir votre propre flux."
+title: Anatomie d’un LLMFeed — Bloc par bloc
+description: >-
+  Comprendre comment chaque bloc d’un .llmfeed.json fonctionne et comment
+  concevoir votre propre flux.
 date: '2025-05-21'
 tags:
-  - guide
-  - structure
   - llmfeed
+  - structure
 lang: fr
 ---
 

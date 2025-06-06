@@ -1,11 +1,13 @@
 ---
-title: "¿Qué se puede construir con MCP? Casos de uso reales"
-description: "Desde salud hasta SaaS, aquí hay ejemplos concretos de cómo utilizar MCP y LLMFeed."
+title: ¿Qué se puede construir con MCP? Casos de uso reales
+description: >-
+  Desde salud hasta SaaS, aquí hay ejemplos concretos de cómo utilizar MCP y
+  LLMFeed.
 date: '2025-05-21'
 tags:
-  - use-cases
-  - mcp
   - industries
+  - mcp
+  - use-cases
 lang: es
 ---
 

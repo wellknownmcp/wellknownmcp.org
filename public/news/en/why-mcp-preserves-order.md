@@ -2,9 +2,14 @@
 lang: en
 slug: why-mcp-preserves-order
 title: Why MCP preserves order in `.llmfeed.json`
-description: How token order impacts LLM behavior, and why MCP signatures guarantee it.
-tags: [mcp, llmfeed, signature, canonicalization, llm-behavior]
-date: 2025-06-03
+description: 'How token order impacts LLM behavior, and why MCP signatures guarantee it.'
+tags:
+  - canonicalization
+  - llm
+  - llmfeed
+  - mcp
+  - signature
+date: 2025-06-03T00:00:00.000Z
 ---
 
 # Why MCP preserves order in `.llmfeed.json`

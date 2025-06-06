@@ -1,8 +1,17 @@
 ---
 id: homomorphic-capsules-zh
 title: 面向代理网络的同态加密胶囊探索
-description: 探索 `.llmfeed.json` feed 的潜在扩展，支持隐私保护且可验证的 agent pipeline —— 这一愿景正与同态加密前沿研究趋势相契合。
-tags: [llmfeed, homomorphic, 加密, agentic web, pipeline, privacy, trust]
+description: >-
+  探索 `.llmfeed.json` feed 的潜在扩展，支持隐私保护且可验证的 agent pipeline ——
+  这一愿景正与同态加密前沿研究趋势相契合。
+tags:
+  - agentic-web
+  - encryption
+  - homomorphic
+  - llmfeed
+  - pipeline
+  - privacy
+  - trust
 lang: zh
 ---
 

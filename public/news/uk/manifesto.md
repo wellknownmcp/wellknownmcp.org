@@ -1,11 +1,9 @@
 ---
-title: 'Маніфест'
+title: Маніфест
 description: 'Наша філософія. Те, чому ми створили LLMFeed і протокол MCP.'
 date: '2025-05-07'
 tags:
   - manifesto
-  - vision
-  - philosophy
 lang: uk
 ---
 
