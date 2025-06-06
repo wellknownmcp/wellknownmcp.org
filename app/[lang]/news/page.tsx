@@ -18,6 +18,16 @@ interface ArticleMeta {
   excerpt?: string
 }
 
+interface TagReportEntry {
+  tag: string
+  count: number
+}
+
+interface TagsReport {
+  global: TagReportEntry[]
+  perLang: Record<string, TagReportEntry[]>
+}
+
 const LANG_EMOJIS: Record<string, string> = {
   en: '🇬🇧',
   fr: '🇫🇷',
@@ -30,12 +40,26 @@ const LANG_EMOJIS: Record<string, string> = {
 
 export default function NewsPage() {
   const [articles, setArticles] = useState<ArticleMeta[]>([])
+  const [displayTags, setDisplayTags] = useState<string[]>([])
   const searchParams = useSearchParams()
   const pathname = usePathname()
   const activeTag = searchParams.get('tag')
   const currentLang = pathname.split('/')[1] || 'en'
 
   useEffect(() => {
+    async function loadTags() {
+      try {
+        const res = await fetch('/news/tags-report.json')
+        const tagsReport: TagsReport = await res.json()
+        const langTags = tagsReport.perLang[currentLang] || []
+        const tagsOver5 = langTags.filter((t) => t.count > 5).map((t) => t.tag)
+        setDisplayTags(tagsOver5)
+      } catch (err) {
+        console.error('Error loading tags-report.json', err)
+        setDisplayTags([])
+      }
+    }
+
     async function loadNews() {
       let allSlugs: Record<string, any[]> = {}
 
@@ -95,13 +119,14 @@ export default function NewsPage() {
       )
       setArticles(results)
     }
+
+    loadTags()
     loadNews()
   }, [currentLang])
 
   const filtered = activeTag
     ? articles.filter((a) => a.tags.includes(activeTag))
     : articles
-  const allTags = Array.from(new Set(articles.flatMap((a) => a.tags))).sort()
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-16">
@@ -119,7 +144,7 @@ export default function NewsPage() {
       <h1 className="text-3xl font-bold text-center mb-6">📰 All News</h1>
       <div className="flex justify-between items-center mb-6">
         <TagFilterBar
-          tags={allTags}
+          tags={displayTags}
           activeTag={activeTag}
           basePath={`/${currentLang}/news`}
         />

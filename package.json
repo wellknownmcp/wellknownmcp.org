@@ -4,11 +4,12 @@
   "description": "Site officiel du protocole WellKnownMCP",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run normalize-tags && next build",
     "start": "next start",
     "prepare": "echo '✔️ Project ready. Run npm run dev or build.'",
     "postbuild": "next-sitemap && node scripts/generate-index-news.js && node scripts/generate-rss.js",
     "generate-index": "tsx scripts/generate-llmfeed-index.ts",
+    "normalize-tags": "tsx scripts/normalize-tags.ts",
     "export": "next export",
     "enrich-index": "tsx scripts/enrich-llmfeed-index.ts"
   },
