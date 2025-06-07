@@ -104,6 +104,7 @@ module.exports = {
       loc: `${siteUrl}/news/${lang}/rss.xml`,
       changefreq: 'daily',
       priority: 0.6,
+       lastmod: new Date().toISOString().split('T')[0], // <== AJOUT !
     }));
 
     // News hreflang

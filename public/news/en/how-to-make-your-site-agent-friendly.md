@@ -178,8 +178,8 @@ At [wellknownmcp.org](https://wellknownmcp.org), we expose:
 | manifesto.llmfeed.json | [link](https://wellknownmcp.org/.well-known/manifesto.llmfeed.json) |
 
 And we follow:
-- [agent-guidance.md](https://wellknownmcp.org/spec/04_agent-behavior/agent-guidance.md)
-- [agent-behavior.md](https://wellknownmcp.org/spec/04_agent-behavior/agent-behavior.md)
+- [agent-guidance.md](https://wellknownmcp.org/spec/04_agent-behavior/agent-guidance)
+- [agent-behavior.md](https://wellknownmcp.org/spec/04_agent-behavior/agent-behavior)
 
 ---
 

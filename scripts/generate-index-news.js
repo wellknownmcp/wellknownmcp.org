@@ -65,10 +65,15 @@ languages.forEach((lang) => {
         slug,
         title: data.title || slug,
         description: data.description || '',
-        date:
-          typeof data.date === 'string'
-            ? data.date
-            : data.date?.toString() ?? 'unknown',
+         date: (() => {
+    const parsed = Date.parse(data.date)
+    if (!isNaN(parsed)) {
+      return new Date(parsed).toISOString().split('T')[0] // → format YYYY-MM-DD
+    } else {
+      console.warn(`⚠️ Invalid or missing date for "${slug}" (${lang}), fallback to today.`)
+      return new Date().toISOString().split('T')[0]
+    }
+  })(),
         tags: data.tags || [],
         excerpt,
         // On initialise translations vide (on remplira après)
