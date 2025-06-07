@@ -1,8 +1,17 @@
 ---
 id: llmfeed-ukraine-hybrid-warfare
 title: Securing Agentic Pipelines in Hybrid Warfare — The LLMFeed Perspective
-description: How `.llmfeed.json` feeds could help secure AI-to-AI and drone communications in hybrid warfare contexts, as exemplified by the ongoing war in Ukraine.
-tags: [llmfeed, trust, agentic web, hybrid warfare, Ukraine, drones, AI]
+description: >-
+  How `.llmfeed.json` feeds could help secure AI-to-AI and drone communications
+  in hybrid warfare contexts, as exemplified by the ongoing war in Ukraine.
+tags:
+  - agentic web
+  - ai-agents
+  - drones
+  - hybrid warfare
+  - llmfeed
+  - trust
+  - ukraine
 lang: en
 ---
 

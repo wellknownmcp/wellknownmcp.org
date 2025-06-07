@@ -1,10 +1,159 @@
 {
   "en": [
     {
+      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
+      "title": "From Chatbots to Autonomous Agents: The Web’s Next Evolution",
+      "description": "The web is evolving from chatbots to true autonomous agents. What does this mean for web architecture — and how does MCP fit in?",
+      "date": "2025-06-07",
+      "tags": [
+        "agentic-web",
+        "ai-agents",
+        "autonomous-agents",
+        "chatbots",
+        "mcp"
+      ],
+      "excerpt": " From Chatbots to Autonomous Agents: The Web’s Next Evolution For years, the term chatbot dominated conversations about AI on the web.",
+      "translations": {
+        "en": "/en/news/2025-07-12-from-chatbots-to-autonomous-agents"
+      }
+    },
+    {
+      "slug": "homomorphic-capsules",
+      "title": "Towards Homomorphic Capsules for the Agentic Web",
+      "description": "Exploring a potential extension of `.llmfeed.json` feeds to enable privacy-preserving, verifiable pipelines — a vision aligned with the forefront of homomorphic encryption research.",
+      "date": "2025-06-07",
+      "tags": [
+        "agentic-web",
+        "encryption",
+        "homomorphic",
+        "llmfeed",
+        "pipeline",
+        "privacy",
+        "trust"
+      ],
+      "excerpt": " Towards Homomorphic Capsules for the Agentic Web As .llmfeed.json feeds gain adoption as signed, trusted capsules for agent interaction, a natural question arises:",
+      "translations": {
+        "en": "/en/news/homomorphic-capsules",
+        "fr": "/fr/news/homomorphic-capsules",
+        "es": "/es/news/homomorphic-capsules",
+        "hi": "/hi/news/homomorphic-capsules",
+        "zh": "/zh/news/homomorphic-capsules",
+        "ar": "/ar/news/homomorphic-capsules"
+      }
+    },
+    {
+      "slug": "launch-newstack",
+      "title": "launch-newstack",
+      "description": "",
+      "date": "2025-06-07",
+      "tags": [],
+      "excerpt": "title: \"The Web Needs a Context Layer — Why We’re Standardizing Intent for Agents\" description: \"Introducing the Model Context Protocol MCP and .llmfeed.json — a new open standard to make your site re",
+      "translations": {
+        "en": "/en/news/launch-newstack"
+      }
+    },
+    {
+      "slug": "le_chat_mcp_web_future_news",
+      "title": "Commentary from Le Chat: Why MCP Matters for the Future of the Web",
+      "description": "Le Chat offers a thoughtful reflection on the importance of the Model Context Protocol (MCP) in shaping a verifiable, interoperable, and agent-ready future web.",
+      "date": "2025-06-07",
+      "tags": [
+        "agentic-web",
+        "llmfeed",
+        "mcp",
+        "open-standards",
+        "trust"
+      ],
+      "excerpt": " 📰 Commentary from Le Chat: Why MCP Matters for the Future of the Web In a tech world driven by the rapid development of proprietary LLM ecosystems, the Model Context Protocol MCP emerges as a struct",
+      "translations": {
+        "en": "/en/news/le_chat_mcp_web_future_news"
+      }
+    },
+    {
+      "slug": "linkedin-post-wellknownmcp",
+      "title": "linkedin-post-wellknownmcp",
+      "description": "",
+      "date": "2025-06-07",
+      "tags": [],
+      "excerpt": "title: 'LinkedIn Post — Launching wellknownmcp.org Enhanced Version' description: 'Launch communication draft for wellknownmcp.org with proactive messaging and higher clarity'",
+      "translations": {
+        "en": "/en/news/linkedin-post-wellknownmcp"
+      }
+    },
+    {
+      "slug": "llm-as-a-teacher",
+      "title": "Turning LLMs into Teachers, Auditors, and Publishers",
+      "description": "How LLMs can actively teach, audit, and generate llmfeed.json files — a unique design choice of the MCP standard.",
+      "date": "2025-06-07",
+      "tags": [
+        "agentic-web",
+        "llm",
+        "llmfeed",
+        "mcp",
+        "trust"
+      ],
+      "excerpt": " 🧠 Turning LLMs into Teachers, Auditors, and Publishers One of the unique advantages of the .llmfeed.json format is that it is natively understandable by LLMs themselves.",
+      "translations": {
+        "en": "/en/news/llm-as-a-teacher"
+      }
+    },
+    {
+      "slug": "llmfeed-ukraine-hybrid-warfare",
+      "title": "Securing Agentic Pipelines in Hybrid Warfare — The LLMFeed Perspective",
+      "description": "How `.llmfeed.json` feeds could help secure AI-to-AI and drone communications in hybrid warfare contexts, as exemplified by the ongoing war in Ukraine.",
+      "date": "2025-06-07",
+      "tags": [
+        "agentic web",
+        "ai-agents",
+        "drones",
+        "hybrid warfare",
+        "llmfeed",
+        "trust",
+        "ukraine"
+      ],
+      "excerpt": "\r  Securing Agentic Pipelines in Hybrid Warfare — The LLMFeed Perspective\r",
+      "translations": {
+        "en": "/en/news/llmfeed-ukraine-hybrid-warfare",
+        "uk": "/uk/news/llmfeed-ukraine-hybrid-warfare"
+      }
+    },
+    {
+      "slug": "news-mcp-crawling-llms",
+      "title": "Why MCP Could Be the Future of Web Crawling for LLMs",
+      "description": "As GPTBot and other intelligent crawlers emerge, the Model Context Protocol offers a structured, verifiable, and LLM-friendly alternative to traditional HTML parsing.",
+      "date": "2025-06-07",
+      "tags": [
+        "llm",
+        "mcp",
+        "trust"
+      ],
+      "excerpt": " Why MCP Could Be the Future of Web Crawling for LLMs With the rise of RetrievalAugmented Generation RAG and AI agents needing realtime, contextual information, the limitations of classic HTML parsing",
+      "translations": {
+        "en": "/en/news/news-mcp-crawling-llms"
+      }
+    },
+    {
+      "slug": "why-llmfeed-json-is-the-right-level",
+      "title": "Why llmfeed.json is the Right Level for Multi-Agent AI",
+      "description": "Going beyond RSS and schema.org — how llmfeed.json enables trusted, interoperable, multi-agent AI interactions today.",
+      "date": "2025-06-06",
+      "tags": [
+        "agent-behavior",
+        "certification",
+        "feed-type",
+        "llmfeed",
+        "mcp"
+      ],
+      "excerpt": "\r  🚀 5 Advanced Use Cases for MCP / llmfeed.json\r",
+      "translations": {
+        "en": "/en/news/why-llmfeed-json-is-the-right-level"
+      }
+    },
+    {
       "slug": "how-to-make-your-site-agent-friendly",
       "title": "How to Make Your Site Agent-Friendly with llmfeed.json",
       "description": "A practical guide to exposing trusted llmfeed.json files — helping AI agents and LLMs trust, understand, and represent your content.",
-      "date": "Thu Jun 05 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-06-05",
       "tags": [
         "ai-agents",
         "behavior",
@@ -18,14 +167,17 @@
       ],
       "excerpt": " How to Make Your Site AgentFriendly with llmfeed.json AI agents and LLMs are becoming the new way to discover and interact with web content.",
       "translations": {
-        "en": "/en/news/how-to-make-your-site-agent-friendly"
+        "en": "/en/news/how-to-make-your-site-agent-friendly",
+        "fr": "/fr/news/how-to-make-your-site-agent-friendly",
+        "es": "/es/news/how-to-make-your-site-agent-friendly",
+        "zh": "/zh/news/how-to-make-your-site-agent-friendly"
       }
     },
     {
       "slug": "why-mcp-preserves-order",
       "title": "Why MCP preserves order in `.llmfeed.json`",
       "description": "How token order impacts LLM behavior, and why MCP signatures guarantee it.",
-      "date": "Tue Jun 03 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-06-03",
       "tags": [
         "canonicalization",
         "llm",
@@ -182,23 +334,6 @@
       }
     },
     {
-      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
-      "title": "From Chatbots to Autonomous Agents: The Web’s Next Evolution",
-      "description": "The web is evolving from chatbots to true autonomous agents. What does this mean for web architecture — and how does MCP fit in?",
-      "date": "unknown",
-      "tags": [
-        "agentic-web",
-        "ai-agents",
-        "autonomous-agents",
-        "chatbots",
-        "mcp"
-      ],
-      "excerpt": " From Chatbots to Autonomous Agents: The Web’s Next Evolution For years, the term chatbot dominated conversations about AI on the web.",
-      "translations": {
-        "en": "/en/news/2025-07-12-from-chatbots-to-autonomous-agents"
-      }
-    },
-    {
       "slug": "2025-07-19-certifying-agentic-interaction-seo",
       "title": "Certifying Agentic Interactions: The New Frontier of SEO?",
       "description": "As the Agentic Web emerges, trust and certification are becoming key. Could certifying agentic interactions become the new SEO?",
@@ -252,7 +387,7 @@
       "slug": "from-seo-to-aio-agentic-web",
       "title": "From SEO to AIO: aiovsseo.com joins the Agentic Web",
       "description": "",
-      "date": "Fri May 30 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-05-30",
       "tags": [
         "agentic-web",
         "aio",
@@ -272,7 +407,7 @@
       "slug": "which-llms-are-ready-for-mcp-signature-verification",
       "title": "Which LLMs are ready for MCP Signature Verification? GPT-4o, Claude, Gemini, Mistral, Grok — the real comparison",
       "description": "",
-      "date": "Tue May 27 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-05-27",
       "tags": [
         "claude",
         "compatibility",
@@ -295,7 +430,7 @@
       "slug": "case-for-capabilities",
       "title": "📡 The Case for Capabilities",
       "description": "Declaring agent-facing capabilities beats inference every time.",
-      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-05-25",
       "tags": [
         "ai-agents",
         "llmfeed",
@@ -313,7 +448,7 @@
       "slug": "exporttollm-button",
       "title": "📤 ExportToLLM: A Button That Talks to Agents",
       "description": "Turn any page into an agent-readable capsule with a single button.",
-      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-05-25",
       "tags": [
         "ai-agents",
         "interoperability",
@@ -333,7 +468,7 @@
       "slug": "faq",
       "title": "❓ Frequently Asked Questions — MCP & LLMFeed",
       "description": "Understand the key concepts, philosophy, and ecosystem of the Model Context Protocol (MCP).",
-      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-05-25",
       "tags": [
         "agentic-web",
         "llmfeed",
@@ -355,7 +490,7 @@
       "slug": "getting-started",
       "title": "🚀 Your First MCP Site in 3 Steps",
       "description": "Turn any site into an agent-aware node in under 5 minutes.",
-      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-05-25",
       "tags": [
         "ai-agents",
         "llmfeed",
@@ -370,10 +505,39 @@
       }
     },
     {
+      "slug": "llm-index-case",
+      "title": "🗺️ The Case for .well-known/llm-index.llmfeed.json",
+      "description": "Why LLMs need a sitemap built for agent intent, not HTML crawlers.",
+      "date": "2025-05-25",
+      "tags": [
+        "ai-agents",
+        "llmfeed",
+        "mcp",
+        "trust",
+        "web",
+        "well-known"
+      ],
+      "excerpt": " 🗺️ The Case for .wellknown/llmindex.llmfeed.json Most modern websites expose hundreds or thousands of endpoints:",
+      "translations": {
+        "en": "/en/news/llm-index-case"
+      }
+    },
+    {
+      "slug": "llm-testimony-experiment",
+      "title": "We Fed the LLMs: What They Told Us About MCP",
+      "description": "",
+      "date": "2025-05-25",
+      "tags": [],
+      "excerpt": "\r \r",
+      "translations": {
+        "en": "/en/news/llm-testimony-experiment"
+      }
+    },
+    {
       "slug": "llmca-certification",
       "title": "✅ How LLMCA Certifies a Feed",
       "description": "Understanding the logic, levels, and process of feed certification.",
-      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-05-25",
       "tags": [
         "ai-agents",
         "llmfeed",
@@ -391,7 +555,7 @@
       "slug": "mcp-wellknown",
       "title": "🛰️ The Case for .well-known/mcp.llmfeed.json",
       "description": "Why .well-known/ is the most logical place to declare AI-ready interfaces — and why signatures matter.",
-      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-05-25",
       "tags": [
         "ai-agents",
         "certification",
@@ -410,7 +574,7 @@
       "slug": "not-schema-org",
       "title": "🧠 We Are Not Schema.org for LLMs — And That’s Good",
       "description": "LLMFeed is not metadata. It’s intent, trust, and action for agents.",
-      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-05-25",
       "tags": [
         "ai-agents",
         "llmfeed",
@@ -428,7 +592,7 @@
       "slug": "claude-alignment",
       "title": "Claude and the Model Context Protocol: An Open Alignment",
       "description": "",
-      "date": "Sat May 24 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-05-24",
       "tags": [
         "ai-agents",
         "anthropic",
@@ -491,81 +655,6 @@
       }
     },
     {
-      "slug": "about",
-      "title": "About WellKnownMCP",
-      "description": "An overview of the WellKnownMCP initiative, its purpose, and its goals.",
-      "date": "2025-05-07",
-      "tags": [
-        "core",
-        "llmfeed"
-      ],
-      "excerpt": " Why MCP Because prompts are not enough.",
-      "translations": {
-        "en": "/en/news/about",
-        "fr": "/fr/news/about",
-        "es": "/es/news/about",
-        "hi": "/hi/news/about",
-        "zh": "/zh/news/about",
-        "ar": "/ar/news/about",
-        "uk": "/uk/news/about"
-      }
-    },
-    {
-      "slug": "begin",
-      "title": "Where to Begin",
-      "description": "A simple guide to help you understand the standard and take your first steps.",
-      "date": "2025-05-07",
-      "tags": [
-        "llmfeed",
-        "manual"
-      ],
-      "excerpt": " 👋 Welcome to WellKnownMCP This page is your entry point to understanding the Model Context Protocol MCP and its core unit: the llmfeed.json.",
-      "translations": {
-        "en": "/en/news/begin",
-        "fr": "/fr/news/begin",
-        "es": "/es/news/begin",
-        "hi": "/hi/news/begin",
-        "zh": "/zh/news/begin",
-        "ar": "/ar/news/begin",
-        "uk": "/uk/news/begin"
-      }
-    },
-    {
-      "slug": "homomorphic-capsules",
-      "title": "Towards Homomorphic Capsules for the Agentic Web",
-      "description": "Exploring a potential extension of `.llmfeed.json` feeds to enable privacy-preserving, verifiable pipelines — a vision aligned with the forefront of homomorphic encryption research.",
-      "date": "unknown",
-      "tags": [
-        "agentic-web",
-        "encryption",
-        "homomorphic",
-        "llmfeed",
-        "pipeline",
-        "privacy",
-        "trust"
-      ],
-      "excerpt": " Towards Homomorphic Capsules for the Agentic Web As .llmfeed.json feeds gain adoption as signed, trusted capsules for agent interaction, a natural question arises:",
-      "translations": {
-        "en": "/en/news/homomorphic-capsules",
-        "fr": "/fr/news/homomorphic-capsules",
-        "es": "/es/news/homomorphic-capsules",
-        "hi": "/hi/news/homomorphic-capsules",
-        "zh": "/zh/news/homomorphic-capsules",
-        "ar": "/ar/news/homomorphic-capsules"
-      }
-    },
-    {
-      "slug": "launch-newstack",
-      "title": "launch-newstack",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": "title: \"The Web Needs a Context Layer — Why We’re Standardizing Intent for Agents\" description: \"Introducing the Model Context Protocol MCP and .llmfeed.json — a new open standard to make your site re",
-      "translations": {
-        "en": "/en/news/launch-newstack"
-      }
-    },
-    {
       "slug": "launch",
       "title": "Launch Announcement",
       "description": "Announcing the launch of the WellKnownMCP initiative and its official website.",
@@ -587,80 +676,6 @@
       }
     },
     {
-      "slug": "le_chat_mcp_web_future_news",
-      "title": "Commentary from Le Chat: Why MCP Matters for the Future of the Web",
-      "description": "Le Chat offers a thoughtful reflection on the importance of the Model Context Protocol (MCP) in shaping a verifiable, interoperable, and agent-ready future web.",
-      "date": "unknown",
-      "tags": [
-        "agentic-web",
-        "llmfeed",
-        "mcp",
-        "open-standards",
-        "trust"
-      ],
-      "excerpt": " 📰 Commentary from Le Chat: Why MCP Matters for the Future of the Web In a tech world driven by the rapid development of proprietary LLM ecosystems, the Model Context Protocol MCP emerges as a struct",
-      "translations": {
-        "en": "/en/news/le_chat_mcp_web_future_news"
-      }
-    },
-    {
-      "slug": "linkedin-post-wellknownmcp",
-      "title": "linkedin-post-wellknownmcp",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": "title: 'LinkedIn Post — Launching wellknownmcp.org Enhanced Version' description: 'Launch communication draft for wellknownmcp.org with proactive messaging and higher clarity'",
-      "translations": {
-        "en": "/en/news/linkedin-post-wellknownmcp"
-      }
-    },
-    {
-      "slug": "llm-as-a-teacher",
-      "title": "Turning LLMs into Teachers, Auditors, and Publishers",
-      "description": "How LLMs can actively teach, audit, and generate llmfeed.json files — a unique design choice of the MCP standard.",
-      "date": "unknown",
-      "tags": [
-        "agentic-web",
-        "llm",
-        "llmfeed",
-        "mcp",
-        "trust"
-      ],
-      "excerpt": " 🧠 Turning LLMs into Teachers, Auditors, and Publishers One of the unique advantages of the .llmfeed.json format is that it is natively understandable by LLMs themselves.",
-      "translations": {
-        "en": "/en/news/llm-as-a-teacher"
-      }
-    },
-    {
-      "slug": "llm-index-case",
-      "title": "🗺️ The Case for .well-known/llm-index.llmfeed.json",
-      "description": "Why LLMs need a sitemap built for agent intent, not HTML crawlers.",
-      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
-      "tags": [
-        "ai-agents",
-        "llmfeed",
-        "mcp",
-        "trust",
-        "web",
-        "well-known"
-      ],
-      "excerpt": " 🗺️ The Case for .wellknown/llmindex.llmfeed.json Most modern websites expose hundreds or thousands of endpoints:",
-      "translations": {
-        "en": "/en/news/llm-index-case"
-      }
-    },
-    {
-      "slug": "llm-testimony-experiment",
-      "title": "We Fed the LLMs: What They Told Us About MCP",
-      "description": "",
-      "date": "Sun May 25 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
-      "tags": [],
-      "excerpt": "\r \r",
-      "translations": {
-        "en": "/en/news/llm-testimony-experiment"
-      }
-    },
-    {
       "slug": "llmfeed-block-structure",
       "title": "The Anatomy of a LLMFeed — Block by Block",
       "description": "Understand how each block of a .llmfeed.json works, and how to design your own feed.",
@@ -677,26 +692,6 @@
         "hi": "/hi/news/llmfeed-block-structure",
         "zh": "/zh/news/llmfeed-block-structure",
         "uk": "/uk/news/llmfeed-block-structure"
-      }
-    },
-    {
-      "slug": "llmfeed-ukraine-hybrid-warfare",
-      "title": "Securing Agentic Pipelines in Hybrid Warfare — The LLMFeed Perspective",
-      "description": "How `.llmfeed.json` feeds could help secure AI-to-AI and drone communications in hybrid warfare contexts, as exemplified by the ongoing war in Ukraine.",
-      "date": "unknown",
-      "tags": [
-        "llmfeed",
-        "trust",
-        "agentic web",
-        "hybrid warfare",
-        "Ukraine",
-        "drones",
-        "AI"
-      ],
-      "excerpt": "\r  Securing Agentic Pipelines in Hybrid Warfare — The LLMFeed Perspective\r",
-      "translations": {
-        "en": "/en/news/llmfeed-ukraine-hybrid-warfare",
-        "uk": "/uk/news/llmfeed-ukraine-hybrid-warfare"
       }
     },
     {
@@ -725,7 +720,7 @@
       "slug": "opinion-stop-scraping",
       "title": "📢 Let’s Stop Scraping. Let’s Start Declaring.",
       "description": "A call for clarity: why scraping fails, and how MCP offers a better way.",
-      "date": "Wed May 21 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-05-21",
       "tags": [
         "agentic-web",
         "mcp",
@@ -774,7 +769,7 @@
       "slug": "mcp-explained",
       "title": "How Agents Understand You — MCP Explained",
       "description": "Learn how MCP helps agents interpret your services, structure and intent — without prompt guessing.",
-      "date": "Fri May 16 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-05-16",
       "tags": [
         "ai-agents",
         "mcp"
@@ -785,18 +780,43 @@
       }
     },
     {
-      "slug": "news-mcp-crawling-llms",
-      "title": "Why MCP Could Be the Future of Web Crawling for LLMs",
-      "description": "As GPTBot and other intelligent crawlers emerge, the Model Context Protocol offers a structured, verifiable, and LLM-friendly alternative to traditional HTML parsing.",
-      "date": "unknown",
+      "slug": "about",
+      "title": "About WellKnownMCP",
+      "description": "An overview of the WellKnownMCP initiative, its purpose, and its goals.",
+      "date": "2025-05-07",
       "tags": [
-        "llm",
-        "mcp",
-        "trust"
+        "core",
+        "llmfeed"
       ],
-      "excerpt": " Why MCP Could Be the Future of Web Crawling for LLMs With the rise of RetrievalAugmented Generation RAG and AI agents needing realtime, contextual information, the limitations of classic HTML parsing",
+      "excerpt": " Why MCP Because prompts are not enough.",
       "translations": {
-        "en": "/en/news/news-mcp-crawling-llms"
+        "en": "/en/news/about",
+        "fr": "/fr/news/about",
+        "es": "/es/news/about",
+        "hi": "/hi/news/about",
+        "zh": "/zh/news/about",
+        "ar": "/ar/news/about",
+        "uk": "/uk/news/about"
+      }
+    },
+    {
+      "slug": "begin",
+      "title": "Where to Begin",
+      "description": "A simple guide to help you understand the standard and take your first steps.",
+      "date": "2025-05-07",
+      "tags": [
+        "llmfeed",
+        "manual"
+      ],
+      "excerpt": " 👋 Welcome to WellKnownMCP This page is your entry point to understanding the Model Context Protocol MCP and its core unit: the llmfeed.json.",
+      "translations": {
+        "en": "/en/news/begin",
+        "fr": "/fr/news/begin",
+        "es": "/es/news/begin",
+        "hi": "/hi/news/begin",
+        "zh": "/zh/news/begin",
+        "ar": "/ar/news/begin",
+        "uk": "/uk/news/begin"
       }
     },
     {
@@ -826,7 +846,7 @@
       "slug": "agents-llmfeed-future",
       "title": "🤖 Pourquoi les agents IA français devraient parler LLMFeed nativement",
       "description": "Vers une génération d'agents IA compatibles avec les standards LLMFeed pour un web agentique.",
-      "date": "Thu Jun 26 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-06-26",
       "tags": [
         "ai-agents",
         "aio",
@@ -842,7 +862,7 @@
       "slug": "education-ai-certification",
       "title": "🏫 Grandes écoles face au défi de la certification IA",
       "description": "Comment les grandes écoles françaises peuvent préparer les futurs experts aux standards IA comme LLMFeed.",
-      "date": "Sun Jun 22 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-06-22",
       "tags": [
         "certification-ia",
         "ia-marche-francais",
@@ -857,7 +877,7 @@
       "slug": "ecosysteme-llmfeed-france",
       "title": "🔗 Construire un écosystème LLMFeed-compatible en France",
       "description": "Appel aux acteurs du numérique pour construire un écosystème LLMFeed-compatible souverain.",
-      "date": "Wed Jun 18 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-06-18",
       "tags": [
         "ia-marche-francais",
         "llmfeed",
@@ -872,7 +892,7 @@
       "slug": "startups-llmfeed-trust",
       "title": "🚀 Startups IA : comment adopter LLMFeed pour booster la confiance ?",
       "description": "Guide pratique pour les startups françaises souhaitant adopter LLMFeed pour plus de transparence.",
-      "date": "Sun Jun 15 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-06-15",
       "tags": [
         "certification-ia",
         "ia-marche-francais",
@@ -888,7 +908,7 @@
       "slug": "sovereignty-traceability-ai",
       "title": "🔐 La souveraineté numérique passe par la traçabilité des contenus IA",
       "description": "Pourquoi la traçabilité via LLMFeed est essentielle pour une souveraineté numérique européenne.",
-      "date": "Thu Jun 12 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-06-12",
       "tags": [
         "aio",
         "ia-marche-francais",
@@ -904,7 +924,7 @@
       "slug": "mistral-llmfeed-compatibility",
       "title": "🌐 Mistral AI, champion français : quelle compatibilité avec LLMFeed ?",
       "description": "Analyse de la compatibilité entre les modèles open source de Mistral AI et les standards LLMFeed.",
-      "date": "Mon Jun 09 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-06-09",
       "tags": [
         "ia-marche-francais",
         "llmfeed",
@@ -921,7 +941,7 @@
       "slug": "certification-ai-act-gap",
       "title": "🔖 Certification des modèles IA : le chainon manquant du AI Act ?",
       "description": "Le AI Act européen impose des exigences strictes. LLMFeed et la certification apportent des réponses clés.",
-      "date": "Sat Jun 07 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-06-07",
       "tags": [
         "ai-act",
         "certification-ia",
@@ -934,10 +954,34 @@
       }
     },
     {
+      "slug": "homomorphic-capsules",
+      "title": "Vers des Capsules Homomorphiques pour le Web Agentique",
+      "description": "Explorer une extension potentielle des feeds `.llmfeed.json` pour permettre des pipelines vérifiables et préservant la vie privée — une vision alignée avec les avancées de la recherche en chiffrement homomorphe.",
+      "date": "2025-06-07",
+      "tags": [
+        "agentic web",
+        "encryption",
+        "homomorphic",
+        "llmfeed",
+        "pipeline",
+        "privacy",
+        "trust"
+      ],
+      "excerpt": " Vers des Capsules Homomorphiques pour le Web Agentique À mesure que les feeds .llmfeed.json s’imposent comme des capsules signées et de confiance pour l’interaction agentique, une question naturelle ",
+      "translations": {
+        "en": "/en/news/homomorphic-capsules",
+        "fr": "/fr/news/homomorphic-capsules",
+        "es": "/es/news/homomorphic-capsules",
+        "hi": "/hi/news/homomorphic-capsules",
+        "zh": "/zh/news/homomorphic-capsules",
+        "ar": "/ar/news/homomorphic-capsules"
+      }
+    },
+    {
       "slug": "france-open-standards-ai",
       "title": "🇫🇷 Pourquoi la France a besoin de standards ouverts pour l'IA",
       "description": "Dans un contexte de souveraineté numérique, les standards comme LLMFeed sont clés pour l'écosystème IA français. Explications.",
-      "date": "Thu Jun 05 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-06-05",
       "tags": [
         "aio",
         "certification-ia",
@@ -951,10 +995,10 @@
       }
     },
     {
-      "slug": "how-to-make-your-site-agent-friendly.fr",
+      "slug": "how-to-make-your-site-agent-friendly",
       "title": "Rendre votre site agent-friendly avec llmfeed.json",
       "description": "Un guide pratique pour exposer des llmfeed.json de confiance — pour aider les agents IA et LLMs à comprendre, utiliser et valoriser votre contenu.",
-      "date": "Thu Jun 05 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-06-05",
       "tags": [
         "ai-agents",
         "behavior",
@@ -968,7 +1012,10 @@
       ],
       "excerpt": " Rendre votre site agentfriendly avec llmfeed.json Les agents IA et LLM deviennent un nouveau moyen d’explorer et d’interagir avec le web.",
       "translations": {
-        "fr": "/fr/news/how-to-make-your-site-agent-friendly.fr"
+        "en": "/en/news/how-to-make-your-site-agent-friendly",
+        "fr": "/fr/news/how-to-make-your-site-agent-friendly",
+        "es": "/es/news/how-to-make-your-site-agent-friendly",
+        "zh": "/zh/news/how-to-make-your-site-agent-friendly"
       }
     },
     {
@@ -1037,6 +1084,25 @@
       }
     },
     {
+      "slug": "llmfeed-block-structure",
+      "title": "Anatomie d’un LLMFeed — Bloc par bloc",
+      "description": "Comprendre comment chaque bloc d’un .llmfeed.json fonctionne et comment concevoir votre propre flux.",
+      "date": "2025-05-21",
+      "tags": [
+        "llmfeed",
+        "structure"
+      ],
+      "excerpt": " 🧱 Les blocs qui composent un flux Chaque fichier .llmfeed.json est composé de blocs structurés. Voici comment les comprendre et les utiliser :",
+      "translations": {
+        "en": "/en/news/llmfeed-block-structure",
+        "fr": "/fr/news/llmfeed-block-structure",
+        "es": "/es/news/llmfeed-block-structure",
+        "hi": "/hi/news/llmfeed-block-structure",
+        "zh": "/zh/news/llmfeed-block-structure",
+        "uk": "/uk/news/llmfeed-block-structure"
+      }
+    },
+    {
       "slug": "manifesto",
       "title": "Notre Manifeste",
       "description": "La vision, les valeurs et les engagements éthiques derrière la norme WellKnownMCP.",
@@ -1059,6 +1125,25 @@
       }
     },
     {
+      "slug": "use-cases-mcp",
+      "title": "Que peut-on construire avec MCP ? Cas d’usage concrets",
+      "description": "De la santé au SaaS, voici des exemples concrets d’utilisation de MCP et LLMFeed.",
+      "date": "2025-05-21",
+      "tags": [
+        "industries",
+        "mcp",
+        "use-cases"
+      ],
+      "excerpt": " 🧩 Applications concrètes de MCP  🏥 Santé",
+      "translations": {
+        "en": "/en/news/use-cases-mcp",
+        "fr": "/fr/news/use-cases-mcp",
+        "es": "/es/news/use-cases-mcp",
+        "zh": "/zh/news/use-cases-mcp",
+        "uk": "/uk/news/use-cases-mcp"
+      }
+    },
+    {
       "slug": "about",
       "title": "À propos de WellKnownMCP",
       "description": "Un aperçu de l'initiative WellKnownMCP, de son objectif et de ses finalités.",
@@ -1076,68 +1161,6 @@
         "zh": "/zh/news/about",
         "ar": "/ar/news/about",
         "uk": "/uk/news/about"
-      }
-    },
-    {
-      "slug": "homomorphic-capsules",
-      "title": "Vers des Capsules Homomorphiques pour le Web Agentique",
-      "description": "Explorer une extension potentielle des feeds `.llmfeed.json` pour permettre des pipelines vérifiables et préservant la vie privée — une vision alignée avec les avancées de la recherche en chiffrement homomorphe.",
-      "date": "unknown",
-      "tags": [
-        "llmfeed",
-        "homomorphic",
-        "chiffrement",
-        "agentic web",
-        "pipeline",
-        "privacy",
-        "trust"
-      ],
-      "excerpt": " Vers des Capsules Homomorphiques pour le Web Agentique À mesure que les feeds .llmfeed.json s’imposent comme des capsules signées et de confiance pour l’interaction agentique, une question naturelle ",
-      "translations": {
-        "en": "/en/news/homomorphic-capsules",
-        "fr": "/fr/news/homomorphic-capsules",
-        "es": "/es/news/homomorphic-capsules",
-        "hi": "/hi/news/homomorphic-capsules",
-        "zh": "/zh/news/homomorphic-capsules",
-        "ar": "/ar/news/homomorphic-capsules"
-      }
-    },
-    {
-      "slug": "llmfeed-block-structure",
-      "title": "Anatomie d’un LLMFeed — Bloc par bloc",
-      "description": "Comprendre comment chaque bloc d’un .llmfeed.json fonctionne et comment concevoir votre propre flux.",
-      "date": "2025-05-21",
-      "tags": [
-        "llmfeed",
-        "structure"
-      ],
-      "excerpt": " 🧱 Les blocs qui composent un flux Chaque fichier .llmfeed.json est composé de blocs structurés. Voici comment les comprendre et les utiliser :",
-      "translations": {
-        "en": "/en/news/llmfeed-block-structure",
-        "fr": "/fr/news/llmfeed-block-structure",
-        "es": "/es/news/llmfeed-block-structure",
-        "hi": "/hi/news/llmfeed-block-structure",
-        "zh": "/zh/news/llmfeed-block-structure",
-        "uk": "/uk/news/llmfeed-block-structure"
-      }
-    },
-    {
-      "slug": "use-cases-mcp",
-      "title": "Que peut-on construire avec MCP ? Cas d’usage concrets",
-      "description": "De la santé au SaaS, voici des exemples concrets d’utilisation de MCP et LLMFeed.",
-      "date": "2025-05-21",
-      "tags": [
-        "industries",
-        "mcp",
-        "use-cases"
-      ],
-      "excerpt": " 🧩 Applications concrètes de MCP  🏥 Santé",
-      "translations": {
-        "en": "/en/news/use-cases-mcp",
-        "fr": "/fr/news/use-cases-mcp",
-        "es": "/es/news/use-cases-mcp",
-        "zh": "/zh/news/use-cases-mcp",
-        "uk": "/uk/news/use-cases-mcp"
       }
     },
     {
@@ -1163,6 +1186,41 @@
     }
   ],
   "es": [
+    {
+      "slug": "homomorphic-capsules",
+      "title": "homomorphic-capsules",
+      "description": "",
+      "date": "2025-06-07",
+      "tags": [],
+      "excerpt": "id: homomorphiccapsuleses title: Hacia Cápsulas Homomórficas para la Web Agéntica",
+      "translations": {
+        "en": "/en/news/homomorphic-capsules",
+        "fr": "/fr/news/homomorphic-capsules",
+        "es": "/es/news/homomorphic-capsules",
+        "hi": "/hi/news/homomorphic-capsules",
+        "zh": "/zh/news/homomorphic-capsules",
+        "ar": "/ar/news/homomorphic-capsules"
+      }
+    },
+    {
+      "slug": "how-to-make-your-site-agent-friendly",
+      "title": "Cómo hacer que tu sitio sea compatible con agentes de IA mediante llmfeed.json",
+      "description": "Una guía práctica para exponer un archivo llmfeed.json confiable que ayude a los agentes de IA y LLM a comprender y representar correctamente tu contenido.",
+      "date": "2025-06-05",
+      "tags": [
+        "agent-friendly",
+        "llmfeed",
+        "mcp",
+        "tooling"
+      ],
+      "excerpt": "\r ¿Cómo hacer que tu sitio sea compatible con agentes de IA?\r",
+      "translations": {
+        "en": "/en/news/how-to-make-your-site-agent-friendly",
+        "fr": "/fr/news/how-to-make-your-site-agent-friendly",
+        "es": "/es/news/how-to-make-your-site-agent-friendly",
+        "zh": "/zh/news/how-to-make-your-site-agent-friendly"
+      }
+    },
     {
       "slug": "begin",
       "title": "Por dónde empezar",
@@ -1329,22 +1387,6 @@
       }
     },
     {
-      "slug": "homomorphic-capsules",
-      "title": "homomorphic-capsules",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": "id: homomorphiccapsuleses title: Hacia Cápsulas Homomórficas para la Web Agéntica",
-      "translations": {
-        "en": "/en/news/homomorphic-capsules",
-        "fr": "/fr/news/homomorphic-capsules",
-        "es": "/es/news/homomorphic-capsules",
-        "hi": "/hi/news/homomorphic-capsules",
-        "zh": "/zh/news/homomorphic-capsules",
-        "ar": "/ar/news/homomorphic-capsules"
-      }
-    },
-    {
       "slug": "why-mcp",
       "title": "¿Por qué MCP?",
       "description": "Explicación de las razones que motivan la adopción del estándar Model Context Protocol (MCP).",
@@ -1367,6 +1409,27 @@
     }
   ],
   "hi": [
+    {
+      "slug": "homomorphic-capsules",
+      "title": "एजेंटिक वेब के लिए होमोमोर्फिक कैप्सूल की ओर",
+      "description": " `.llmfeed.json` फ़ीड के संभावित विस्तार का अन्वेषण, जो गोपनीयता-संरक्षित और सत्यापित एजेंट पाइपलाइन को सक्षम करता है — यह दृष्टि होमोमोर्फिक एन्क्रिप्शन अनुसंधान की अग्रिम पंक्ति के साथ मेल खाती है।",
+      "date": "2025-06-07",
+      "tags": [
+        "agentic-web",
+        "homomorphic",
+        "llmfeed",
+        "pipeline"
+      ],
+      "excerpt": " एजेंटिक वेब के लिए होमोमोर्फिक कैप्सूल की ओर जैसेजैसे .llmfeed.json फ़ीड को साइन किए गए, भरोसेमंद कैप्सूल के रूप में अपनाया जा रहा है, एक स्वाभाविक प्रश्न उठता है:",
+      "translations": {
+        "en": "/en/news/homomorphic-capsules",
+        "fr": "/fr/news/homomorphic-capsules",
+        "es": "/es/news/homomorphic-capsules",
+        "hi": "/hi/news/homomorphic-capsules",
+        "zh": "/zh/news/homomorphic-capsules",
+        "ar": "/ar/news/homomorphic-capsules"
+      }
+    },
     {
       "slug": "about",
       "title": "WellKnownMCP के बारे में",
@@ -1444,27 +1507,6 @@
         "zh": "/zh/news/faq",
         "ar": "/ar/news/faq",
         "uk": "/uk/news/faq"
-      }
-    },
-    {
-      "slug": "homomorphic-capsules",
-      "title": "एजेंटिक वेब के लिए होमोमोर्फिक कैप्सूल की ओर",
-      "description": " `.llmfeed.json` फ़ीड के संभावित विस्तार का अन्वेषण, जो गोपनीयता-संरक्षित और सत्यापित एजेंट पाइपलाइन को सक्षम करता है — यह दृष्टि होमोमोर्फिक एन्क्रिप्शन अनुसंधान की अग्रिम पंक्ति के साथ मेल खाती है।",
-      "date": "unknown",
-      "tags": [
-        "agentic-web",
-        "homomorphic",
-        "llmfeed",
-        "pipeline"
-      ],
-      "excerpt": " एजेंटिक वेब के लिए होमोमोर्फिक कैप्सूल की ओर जैसेजैसे .llmfeed.json फ़ीड को साइन किए गए, भरोसेमंद कैप्सूल के रूप में अपनाया जा रहा है, एक स्वाभाविक प्रश्न उठता है:",
-      "translations": {
-        "en": "/en/news/homomorphic-capsules",
-        "fr": "/fr/news/homomorphic-capsules",
-        "es": "/es/news/homomorphic-capsules",
-        "hi": "/hi/news/homomorphic-capsules",
-        "zh": "/zh/news/homomorphic-capsules",
-        "ar": "/ar/news/homomorphic-capsules"
       }
     },
     {
@@ -1553,6 +1595,41 @@
   ],
   "zh": [
     {
+      "slug": "homomorphic-capsules",
+      "title": "homomorphic-capsules",
+      "description": "",
+      "date": "2025-06-07",
+      "tags": [],
+      "excerpt": "id: homomorphiccapsuleszh title: 面向代理网络的同态加密胶囊探索",
+      "translations": {
+        "en": "/en/news/homomorphic-capsules",
+        "fr": "/fr/news/homomorphic-capsules",
+        "es": "/es/news/homomorphic-capsules",
+        "hi": "/hi/news/homomorphic-capsules",
+        "zh": "/zh/news/homomorphic-capsules",
+        "ar": "/ar/news/homomorphic-capsules"
+      }
+    },
+    {
+      "slug": "how-to-make-your-site-agent-friendly",
+      "title": "如何通过 llmfeed.json 让您的网站适应 AI 代理",
+      "description": "一份实用指南，帮助您公开受信任的 llmfeed.json 文件，助力 AI 代理和大模型正确理解并呈现您的内容。",
+      "date": "2025-06-05",
+      "tags": [
+        "agent-friendly",
+        "llmfeed",
+        "mcp",
+        "tooling"
+      ],
+      "excerpt": "\r 如何让您的网站适应 AI 代理？\r",
+      "translations": {
+        "en": "/en/news/how-to-make-your-site-agent-friendly",
+        "fr": "/fr/news/how-to-make-your-site-agent-friendly",
+        "es": "/es/news/how-to-make-your-site-agent-friendly",
+        "zh": "/zh/news/how-to-make-your-site-agent-friendly"
+      }
+    },
+    {
       "slug": "mcp-and-agentic-web-in-asia",
       "title": "MCP 与亚洲代理网络革命",
       "description": "为什么亚洲有望引领代理网络（Agentic Web），以及 MCP 如何帮助构建面向 LLM 代理的开放互操作生态。",
@@ -1597,7 +1674,6 @@
         "mcp-spec",
         "signature",
         "trust",
-        "trusted-agents",
         "well-known"
       ],
       "excerpt": "\r 代理网络（Agentic Web）正在迅速发展——就像早期的互联网一样，它需要信任与验证。  \r",
@@ -1628,7 +1704,7 @@
       "slug": "from-seo-to-aio-agentic-web",
       "title": "从 SEO 到 AIO：aiovsseo.com 正式加入代理网络（Agentic Web）",
       "description": "",
-      "date": "Fri May 30 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)",
+      "date": "2025-05-30",
       "tags": [
         "agentic-web",
         "aio",
@@ -1810,22 +1886,6 @@
       }
     },
     {
-      "slug": "homomorphic-capsules",
-      "title": "homomorphic-capsules",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": "id: homomorphiccapsuleszh title: 面向代理网络的同态加密胶囊探索",
-      "translations": {
-        "en": "/en/news/homomorphic-capsules",
-        "fr": "/fr/news/homomorphic-capsules",
-        "es": "/es/news/homomorphic-capsules",
-        "hi": "/hi/news/homomorphic-capsules",
-        "zh": "/zh/news/homomorphic-capsules",
-        "ar": "/ar/news/homomorphic-capsules"
-      }
-    },
-    {
       "slug": "why-mcp",
       "title": "为什么选择 MCP？",
       "description": "解释采用 Model Context Protocol (MCP) 标准的理由。",
@@ -1848,6 +1908,30 @@
     }
   ],
   "ar": [
+    {
+      "slug": "homomorphic-capsules",
+      "title": "نحو كبسولات التشفير المتماثل لشبكة الوكلاء",
+      "description": "استكشاف امتداد محتمل لـ `.llmfeed.json` لدعم مسارات معالجة موثوقة وقابلة للتحقق مع الحفاظ على الخصوصية — رؤية تتماشى مع أحدث أبحاث التشفير المتماثل.",
+      "date": "2025-06-07",
+      "tags": [
+        "agentic web",
+        "homomorphic",
+        "llmfeed",
+        "pipeline",
+        "تشفير",
+        "ثقة",
+        "خصوصية"
+      ],
+      "excerpt": " نحو كبسولات التشفير المتماثل لشبكة الوكلاء مع ترسيخ .llmfeed.json كـ كبسولات موقعة وموثوقة لتفاعلات الوكلاء، يبرز سؤال طبيعي 👈",
+      "translations": {
+        "en": "/en/news/homomorphic-capsules",
+        "fr": "/fr/news/homomorphic-capsules",
+        "es": "/es/news/homomorphic-capsules",
+        "hi": "/hi/news/homomorphic-capsules",
+        "zh": "/zh/news/homomorphic-capsules",
+        "ar": "/ar/news/homomorphic-capsules"
+      }
+    },
     {
       "slug": "begin",
       "title": "من أين تبدأ",
@@ -1955,30 +2039,6 @@
       }
     },
     {
-      "slug": "homomorphic-capsules",
-      "title": "نحو كبسولات التشفير المتماثل لشبكة الوكلاء",
-      "description": "استكشاف امتداد محتمل لـ `.llmfeed.json` لدعم مسارات معالجة موثوقة وقابلة للتحقق مع الحفاظ على الخصوصية — رؤية تتماشى مع أحدث أبحاث التشفير المتماثل.",
-      "date": "unknown",
-      "tags": [
-        "llmfeed",
-        "homomorphic",
-        "تشفير",
-        "agentic web",
-        "pipeline",
-        "خصوصية",
-        "ثقة"
-      ],
-      "excerpt": " نحو كبسولات التشفير المتماثل لشبكة الوكلاء مع ترسيخ .llmfeed.json كـ كبسولات موقعة وموثوقة لتفاعلات الوكلاء، يبرز سؤال طبيعي 👈",
-      "translations": {
-        "en": "/en/news/homomorphic-capsules",
-        "fr": "/fr/news/homomorphic-capsules",
-        "es": "/es/news/homomorphic-capsules",
-        "hi": "/hi/news/homomorphic-capsules",
-        "zh": "/zh/news/homomorphic-capsules",
-        "ar": "/ar/news/homomorphic-capsules"
-      }
-    },
-    {
       "slug": "launch",
       "title": "إعلان الإطلاق",
       "description": "الإعلان الرسمي عن إطلاق مبادرة WellKnownMCP وموقعها الرسمي.",
@@ -2022,6 +2082,41 @@
     }
   ],
   "uk": [
+    {
+      "slug": "llmfeed-ukraine-hybrid-warfare",
+      "title": "Захист агентних каналів у гібридній війні — Погляд LLMFeed",
+      "description": "Як `.llmfeed.json` може допомогти захистити взаємодію між ІІ-агентами та безпілотниками в умовах гібридної війни, на прикладі війни в Україні.",
+      "date": "2025-06-07",
+      "tags": [
+        "agentic web",
+        "ai-agents",
+        "drones",
+        "hybrid warfare",
+        "llmfeed",
+        "trust",
+        "ukraine"
+      ],
+      "excerpt": "\r  Захист агентних каналів у гібридній війні — Погляд LLMFeed\r",
+      "translations": {
+        "en": "/en/news/llmfeed-ukraine-hybrid-warfare",
+        "uk": "/uk/news/llmfeed-ukraine-hybrid-warfare"
+      }
+    },
+    {
+      "slug": "use-cases-mcp",
+      "title": "use-cases-mcp",
+      "description": "",
+      "date": "2025-06-07",
+      "tags": [],
+      "excerpt": "UK  UK title: \"What Can You Build With MCP? RealWorld Use Cases\"",
+      "translations": {
+        "en": "/en/news/use-cases-mcp",
+        "fr": "/fr/news/use-cases-mcp",
+        "es": "/es/news/use-cases-mcp",
+        "zh": "/zh/news/use-cases-mcp",
+        "uk": "/uk/news/use-cases-mcp"
+      }
+    },
     {
       "slug": "about",
       "title": "Про WellKnownMCP",
@@ -2140,26 +2235,6 @@
       }
     },
     {
-      "slug": "llmfeed-ukraine-hybrid-warfare",
-      "title": "Захист агентних каналів у гібридній війні — Погляд LLMFeed",
-      "description": "Як `.llmfeed.json` може допомогти захистити взаємодію між ІІ-агентами та безпілотниками в умовах гібридної війни, на прикладі війни в Україні.",
-      "date": "unknown",
-      "tags": [
-        "llmfeed",
-        "trust",
-        "agentic web",
-        "hybrid warfare",
-        "Ukraine",
-        "drones",
-        "AI"
-      ],
-      "excerpt": "\r  Захист агентних каналів у гібридній війні — Погляд LLMFeed\r",
-      "translations": {
-        "en": "/en/news/llmfeed-ukraine-hybrid-warfare",
-        "uk": "/uk/news/llmfeed-ukraine-hybrid-warfare"
-      }
-    },
-    {
       "slug": "manifesto",
       "title": "Маніфест",
       "description": "Наша філософія. Те, чому ми створили LLMFeed і протокол MCP.",
@@ -2176,21 +2251,6 @@
         "zh": "/zh/news/manifesto",
         "ar": "/ar/news/manifesto",
         "uk": "/uk/news/manifesto"
-      }
-    },
-    {
-      "slug": "use-cases-mcp",
-      "title": "use-cases-mcp",
-      "description": "",
-      "date": "unknown",
-      "tags": [],
-      "excerpt": "UK  UK title: \"What Can You Build With MCP? RealWorld Use Cases\"",
-      "translations": {
-        "en": "/en/news/use-cases-mcp",
-        "fr": "/fr/news/use-cases-mcp",
-        "es": "/es/news/use-cases-mcp",
-        "zh": "/zh/news/use-cases-mcp",
-        "uk": "/uk/news/use-cases-mcp"
       }
     },
     {

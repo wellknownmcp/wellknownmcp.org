@@ -4,11 +4,81 @@
         <title>News (fr) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/fr/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Wed, 04 Jun 2025 07:36:33 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 Jun 2025 07:00:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>fr</language>
         <copyright>© 2025 WellKnownMCP</copyright>
+        <item>
+            <title><![CDATA[🤖 Pourquoi les agents IA français devraient parler LLMFeed nativement]]></title>
+            <link>https://wellknownmcp.org/fr/news/agents-llmfeed-future</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/agents-llmfeed-future</guid>
+            <pubDate>Thu, 26 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Vers une génération d'agents IA compatibles avec les standards LLMFeed pour un web agentique.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[🏫 Grandes écoles face au défi de la certification IA]]></title>
+            <link>https://wellknownmcp.org/fr/news/education-ai-certification</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/education-ai-certification</guid>
+            <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Comment les grandes écoles françaises peuvent préparer les futurs experts aux standards IA comme LLMFeed.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[🔗 Construire un écosystème LLMFeed-compatible en France]]></title>
+            <link>https://wellknownmcp.org/fr/news/ecosysteme-llmfeed-france</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/ecosysteme-llmfeed-france</guid>
+            <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Appel aux acteurs du numérique pour construire un écosystème LLMFeed-compatible souverain.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[🚀 Startups IA : comment adopter LLMFeed pour booster la confiance ?]]></title>
+            <link>https://wellknownmcp.org/fr/news/startups-llmfeed-trust</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/startups-llmfeed-trust</guid>
+            <pubDate>Sun, 15 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Guide pratique pour les startups françaises souhaitant adopter LLMFeed pour plus de transparence.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[🔐 La souveraineté numérique passe par la traçabilité des contenus IA]]></title>
+            <link>https://wellknownmcp.org/fr/news/sovereignty-traceability-ai</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/sovereignty-traceability-ai</guid>
+            <pubDate>Thu, 12 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Pourquoi la traçabilité via LLMFeed est essentielle pour une souveraineté numérique européenne.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[🌐 Mistral AI, champion français : quelle compatibilité avec LLMFeed ?]]></title>
+            <link>https://wellknownmcp.org/fr/news/mistral-llmfeed-compatibility</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/mistral-llmfeed-compatibility</guid>
+            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Analyse de la compatibilité entre les modèles open source de Mistral AI et les standards LLMFeed.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[🔖 Certification des modèles IA : le chainon manquant du AI Act ?]]></title>
+            <link>https://wellknownmcp.org/fr/news/certification-ai-act-gap</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/certification-ai-act-gap</guid>
+            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Le AI Act européen impose des exigences strictes. LLMFeed et la certification apportent des réponses clés.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Vers des Capsules Homomorphiques pour le Web Agentique]]></title>
+            <link>https://wellknownmcp.org/fr/news/homomorphic-capsules</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/homomorphic-capsules</guid>
+            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Explorer une extension potentielle des feeds `.llmfeed.json` pour permettre des pipelines vérifiables et préservant la vie privée — une vision alignée avec les avancées de la recherche en chiffrement homomorphe.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[🇫🇷 Pourquoi la France a besoin de standards ouverts pour l'IA]]></title>
+            <link>https://wellknownmcp.org/fr/news/france-open-standards-ai</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/france-open-standards-ai</guid>
+            <pubDate>Thu, 05 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Dans un contexte de souveraineté numérique, les standards comme LLMFeed sont clés pour l'écosystème IA français. Explications.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Rendre votre site agent-friendly avec llmfeed.json]]></title>
+            <link>https://wellknownmcp.org/fr/news/how-to-make-your-site-agent-friendly</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/fr/news/how-to-make-your-site-agent-friendly</guid>
+            <pubDate>Thu, 05 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Un guide pratique pour exposer des llmfeed.json de confiance — pour aider les agents IA et LLMs à comprendre, utiliser et valoriser votre contenu.]]></description>
+        </item>
         <item>
             <title><![CDATA[Par où commencer]]></title>
             <link>https://wellknownmcp.org/fr/news/begin</link>

@@ -4,11 +4,11 @@ slug: how-to-make-your-site-agent-friendly
 title: 如何通过 llmfeed.json 让您的网站适应 AI 代理
 description: 一份实用指南，帮助您公开受信任的 llmfeed.json 文件，助力 AI 代理和大模型正确理解并呈现您的内容。
 tags:
+  - agent-friendly
   - llmfeed
   - mcp
   - tooling
-  - agent-friendly
-date: 2025-06-05
+date: 2025-06-05T00:00:00.000Z
 ---
 
 如何让您的网站适应 AI 代理？

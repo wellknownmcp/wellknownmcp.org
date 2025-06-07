@@ -2,13 +2,15 @@
 lang: es
 slug: how-to-make-your-site-agent-friendly
 title: Cómo hacer que tu sitio sea compatible con agentes de IA mediante llmfeed.json
-description: Una guía práctica para exponer un archivo llmfeed.json confiable que ayude a los agentes de IA y LLM a comprender y representar correctamente tu contenido.
+description: >-
+  Una guía práctica para exponer un archivo llmfeed.json confiable que ayude a
+  los agentes de IA y LLM a comprender y representar correctamente tu contenido.
 tags:
+  - agent-friendly
   - llmfeed
   - mcp
   - tooling
-  - agent-friendly
-date: 2025-06-05
+date: 2025-06-05T00:00:00.000Z
 ---
 
 ¿Cómo hacer que tu sitio sea compatible con agentes de IA?

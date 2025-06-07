@@ -2,27 +2,27 @@
   "global": [
     {
       "tag": "llmfeed",
-      "count": 82
+      "count": 85
     },
     {
       "tag": "mcp",
-      "count": 42
+      "count": 45
     },
     {
       "tag": "trust",
-      "count": 31
+      "count": 30
     },
     {
       "tag": "agentic-web",
-      "count": 25
+      "count": 21
+    },
+    {
+      "tag": "ai-agents",
+      "count": 20
     },
     {
       "tag": "core",
       "count": 19
-    },
-    {
-      "tag": "ai-agents",
-      "count": 18
     },
     {
       "tag": "manual",
@@ -53,15 +53,15 @@
       "count": 8
     },
     {
+      "tag": "certification",
+      "count": 8
+    },
+    {
       "tag": "ia-marche-francais",
       "count": 8
     },
     {
       "tag": "manifesto",
-      "count": 7
-    },
-    {
-      "tag": "certification",
       "count": 7
     },
     {
@@ -77,27 +77,11 @@
       "count": 6
     },
     {
-      "tag": "homomorphic",
-      "count": 6
-    },
-    {
-      "tag": "pipeline",
-      "count": 6
-    },
-    {
       "tag": "structure",
       "count": 6
     },
     {
       "tag": "responsibility",
-      "count": 5
-    },
-    {
-      "tag": "encryption",
-      "count": 5
-    },
-    {
-      "tag": "privacy",
       "count": 5
     },
     {
@@ -118,6 +102,18 @@
     },
     {
       "tag": "developers",
+      "count": 4
+    },
+    {
+      "tag": "agentic web",
+      "count": 4
+    },
+    {
+      "tag": "homomorphic",
+      "count": 4
+    },
+    {
+      "tag": "pipeline",
       "count": 4
     },
     {
@@ -165,6 +161,14 @@
       "count": 2
     },
     {
+      "tag": "encryption",
+      "count": 2
+    },
+    {
+      "tag": "privacy",
+      "count": 2
+    },
+    {
       "tag": "behavior",
       "count": 2
     },
@@ -174,6 +178,18 @@
     },
     {
       "tag": "guidance",
+      "count": 2
+    },
+    {
+      "tag": "drones",
+      "count": 2
+    },
+    {
+      "tag": "hybrid warfare",
+      "count": 2
+    },
+    {
+      "tag": "ukraine",
       "count": 2
     },
     {
@@ -219,6 +235,26 @@
     {
       "tag": "mcp-spec",
       "count": 2
+    },
+    {
+      "tag": "agent-friendly",
+      "count": 2
+    },
+    {
+      "tag": "tooling",
+      "count": 2
+    },
+    {
+      "tag": "تشفير",
+      "count": 1
+    },
+    {
+      "tag": "ثقة",
+      "count": 1
+    },
+    {
+      "tag": "خصوصية",
+      "count": 1
     },
     {
       "tag": "apple",
@@ -281,6 +317,14 @@
       "count": 1
     },
     {
+      "tag": "agent-behavior",
+      "count": 1
+    },
+    {
+      "tag": "feed-type",
+      "count": 1
+    },
+    {
       "tag": "canonicalization",
       "count": 1
     },
@@ -294,10 +338,6 @@
     },
     {
       "tag": "llm代理",
-      "count": 1
-    },
-    {
-      "tag": "trusted-agents",
       "count": 1
     }
   ],
@@ -317,10 +357,6 @@
       },
       {
         "tag": "ethics",
-        "count": 2
-      },
-      {
-        "tag": "trust",
         "count": 2
       },
       {
@@ -344,11 +380,11 @@
         "count": 1
       },
       {
-        "tag": "agentic-web",
+        "tag": "trust",
         "count": 1
       },
       {
-        "tag": "encryption",
+        "tag": "agentic web",
         "count": 1
       },
       {
@@ -360,7 +396,15 @@
         "count": 1
       },
       {
-        "tag": "privacy",
+        "tag": "تشفير",
+        "count": 1
+      },
+      {
+        "tag": "ثقة",
+        "count": 1
+      },
+      {
+        "tag": "خصوصية",
         "count": 1
       },
       {
@@ -383,15 +427,15 @@
     "en": [
       {
         "tag": "mcp",
-        "count": 30
+        "count": 31
       },
       {
         "tag": "llmfeed",
-        "count": 24
+        "count": 26
       },
       {
         "tag": "trust",
-        "count": 19
+        "count": 20
       },
       {
         "tag": "agentic-web",
@@ -399,7 +443,7 @@
       },
       {
         "tag": "ai-agents",
-        "count": 12
+        "count": 13
       },
       {
         "tag": "llm",
@@ -410,12 +454,12 @@
         "count": 10
       },
       {
-        "tag": "web",
+        "tag": "certification",
         "count": 7
       },
       {
-        "tag": "certification",
-        "count": 6
+        "tag": "web",
+        "count": 7
       },
       {
         "tag": "interoperability",
@@ -558,6 +602,22 @@
         "count": 1
       },
       {
+        "tag": "agentic web",
+        "count": 1
+      },
+      {
+        "tag": "drones",
+        "count": 1
+      },
+      {
+        "tag": "hybrid warfare",
+        "count": 1
+      },
+      {
+        "tag": "ukraine",
+        "count": 1
+      },
+      {
         "tag": "ethics",
         "count": 1
       },
@@ -638,6 +698,14 @@
         "count": 1
       },
       {
+        "tag": "agent-behavior",
+        "count": 1
+      },
+      {
+        "tag": "feed-type",
+        "count": 1
+      },
+      {
         "tag": "canonicalization",
         "count": 1
       },
@@ -656,19 +724,15 @@
         "count": 3
       },
       {
+        "tag": "mcp",
+        "count": 3
+      },
+      {
         "tag": "manual",
         "count": 2
       },
       {
         "tag": "ethics",
-        "count": 2
-      },
-      {
-        "tag": "mcp",
-        "count": 2
-      },
-      {
-        "tag": "trust",
         "count": 2
       },
       {
@@ -688,23 +752,15 @@
         "count": 1
       },
       {
-        "tag": "agentic-web",
+        "tag": "trust",
         "count": 1
       },
       {
-        "tag": "encryption",
+        "tag": "agent-friendly",
         "count": 1
       },
       {
-        "tag": "homomorphic",
-        "count": 1
-      },
-      {
-        "tag": "pipeline",
-        "count": 1
-      },
-      {
-        "tag": "privacy",
+        "tag": "tooling",
         "count": 1
       },
       {
@@ -790,7 +846,7 @@
         "count": 1
       },
       {
-        "tag": "agentic-web",
+        "tag": "agentic web",
         "count": 1
       },
       {
@@ -923,7 +979,7 @@
     "uk": [
       {
         "tag": "llmfeed",
-        "count": 6
+        "count": 7
       },
       {
         "tag": "core",
@@ -950,6 +1006,30 @@
         "count": 1
       },
       {
+        "tag": "agentic web",
+        "count": 1
+      },
+      {
+        "tag": "ai-agents",
+        "count": 1
+      },
+      {
+        "tag": "drones",
+        "count": 1
+      },
+      {
+        "tag": "hybrid warfare",
+        "count": 1
+      },
+      {
+        "tag": "trust",
+        "count": 1
+      },
+      {
+        "tag": "ukraine",
+        "count": 1
+      },
+      {
         "tag": "manifesto",
         "count": 1
       }
@@ -961,15 +1041,15 @@
       },
       {
         "tag": "mcp",
-        "count": 6
+        "count": 7
       },
       {
         "tag": "trust",
-        "count": 5
+        "count": 4
       },
       {
         "tag": "agentic-web",
-        "count": 4
+        "count": 3
       },
       {
         "tag": "core",
@@ -1032,19 +1112,11 @@
         "count": 1
       },
       {
-        "tag": "encryption",
+        "tag": "agent-friendly",
         "count": 1
       },
       {
-        "tag": "homomorphic",
-        "count": 1
-      },
-      {
-        "tag": "pipeline",
-        "count": 1
-      },
-      {
-        "tag": "privacy",
+        "tag": "tooling",
         "count": 1
       },
       {
@@ -1137,10 +1209,6 @@
       },
       {
         "tag": "signature",
-        "count": 1
-      },
-      {
-        "tag": "trusted-agents",
         "count": 1
       },
       {

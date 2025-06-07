@@ -1,10 +1,18 @@
 ---
 id: llmfeed-ukraine-hybrid-warfare
 title: Захист агентних каналів у гібридній війні — Погляд LLMFeed
-description: Як `.llmfeed.json` може допомогти захистити взаємодію між ІІ-агентами та безпілотниками в умовах гібридної війни, на прикладі війни в Україні.
-tags: [llmfeed, trust, agentic web, hybrid warfare, Ukraine, drones, AI]
+description: >-
+  Як `.llmfeed.json` може допомогти захистити взаємодію між ІІ-агентами та
+  безпілотниками в умовах гібридної війни, на прикладі війни в Україні.
+tags:
+  - agentic web
+  - ai-agents
+  - drones
+  - hybrid warfare
+  - llmfeed
+  - trust
+  - ukraine
 lang: uk
-
 ---
 
 # Захист агентних каналів у гібридній війні — Погляд LLMFeed

@@ -11,7 +11,6 @@ tags:
   - mcp-spec
   - signature
   - trust
-  - trusted-agents
   - well-known
 date: '2025-06-02'
 ---

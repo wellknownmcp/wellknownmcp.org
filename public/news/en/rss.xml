@@ -4,11 +4,79 @@
         <title>News (en) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/en/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Wed, 04 Jun 2025 07:36:33 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 Jun 2025 07:00:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>© 2025 WellKnownMCP</copyright>
+        <item>
+            <title><![CDATA[From Chatbots to Autonomous Agents: The Web’s Next Evolution]]></title>
+            <link>https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents</guid>
+            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[The web is evolving from chatbots to true autonomous agents. What does this mean for web architecture — and how does MCP fit in?]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Towards Homomorphic Capsules for the Agentic Web]]></title>
+            <link>https://wellknownmcp.org/en/news/homomorphic-capsules</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/homomorphic-capsules</guid>
+            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Exploring a potential extension of `.llmfeed.json` feeds to enable privacy-preserving, verifiable pipelines — a vision aligned with the forefront of homomorphic encryption research.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[launch-newstack]]></title>
+            <link>https://wellknownmcp.org/en/news/launch-newstack</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/launch-newstack</guid>
+            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Commentary from Le Chat: Why MCP Matters for the Future of the Web]]></title>
+            <link>https://wellknownmcp.org/en/news/le_chat_mcp_web_future_news</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/le_chat_mcp_web_future_news</guid>
+            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Le Chat offers a thoughtful reflection on the importance of the Model Context Protocol (MCP) in shaping a verifiable, interoperable, and agent-ready future web.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[linkedin-post-wellknownmcp]]></title>
+            <link>https://wellknownmcp.org/en/news/linkedin-post-wellknownmcp</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/linkedin-post-wellknownmcp</guid>
+            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Turning LLMs into Teachers, Auditors, and Publishers]]></title>
+            <link>https://wellknownmcp.org/en/news/llm-as-a-teacher</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/llm-as-a-teacher</guid>
+            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[How LLMs can actively teach, audit, and generate llmfeed.json files — a unique design choice of the MCP standard.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Securing Agentic Pipelines in Hybrid Warfare — The LLMFeed Perspective]]></title>
+            <link>https://wellknownmcp.org/en/news/llmfeed-ukraine-hybrid-warfare</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/llmfeed-ukraine-hybrid-warfare</guid>
+            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[How `.llmfeed.json` feeds could help secure AI-to-AI and drone communications in hybrid warfare contexts, as exemplified by the ongoing war in Ukraine.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Why MCP Could Be the Future of Web Crawling for LLMs]]></title>
+            <link>https://wellknownmcp.org/en/news/news-mcp-crawling-llms</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/news-mcp-crawling-llms</guid>
+            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[As GPTBot and other intelligent crawlers emerge, the Model Context Protocol offers a structured, verifiable, and LLM-friendly alternative to traditional HTML parsing.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Why llmfeed.json is the Right Level for Multi-Agent AI]]></title>
+            <link>https://wellknownmcp.org/en/news/why-llmfeed-json-is-the-right-level</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/why-llmfeed-json-is-the-right-level</guid>
+            <pubDate>Fri, 06 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Going beyond RSS and schema.org — how llmfeed.json enables trusted, interoperable, multi-agent AI interactions today.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[How to Make Your Site Agent-Friendly with llmfeed.json]]></title>
+            <link>https://wellknownmcp.org/en/news/how-to-make-your-site-agent-friendly</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/how-to-make-your-site-agent-friendly</guid>
+            <pubDate>Thu, 05 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[A practical guide to exposing trusted llmfeed.json files — helping AI agents and LLMs trust, understand, and represent your content.]]></description>
+        </item>
         <item>
             <title><![CDATA[Why MCP preserves order in `.llmfeed.json`]]></title>
             <link>https://wellknownmcp.org/en/news/why-mcp-preserves-order</link>
@@ -64,13 +132,6 @@
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-07-05-microsoft-nlweb-protocol</guid>
             <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Microsoft introduces NLWeb — a protocol for natural language interactions on the web. How does it compare to MCP?]]></description>
-        </item>
-        <item>
-            <title><![CDATA[From Chatbots to Autonomous Agents: The Web’s Next Evolution]]></title>
-            <link>https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents</guid>
-            <pubDate>Invalid Date</pubDate>
-            <description><![CDATA[The web is evolving from chatbots to true autonomous agents. What does this mean for web architecture — and how does MCP fit in?]]></description>
         </item>
         <item>
             <title><![CDATA[Certifying Agentic Interactions: The New Frontier of SEO?]]></title>
@@ -201,6 +262,13 @@
             <description><![CDATA[Announcing the launch of the WellKnownMCP initiative and its official website.]]></description>
         </item>
         <item>
+            <title><![CDATA[The Anatomy of a LLMFeed — Block by Block]]></title>
+            <link>https://wellknownmcp.org/en/news/llmfeed-block-structure</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/llmfeed-block-structure</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Understand how each block of a .llmfeed.json works, and how to design your own feed.]]></description>
+        </item>
+        <item>
             <title><![CDATA[Our Manifesto]]></title>
             <link>https://wellknownmcp.org/en/news/manifesto</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/manifesto</guid>
@@ -248,46 +316,6 @@
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/begin</guid>
             <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[A simple guide to help you understand the standard and take your first steps.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[launch-newstack]]></title>
-            <link>https://wellknownmcp.org/en/news/launch-newstack</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/launch-newstack</guid>
-            <pubDate>Invalid Date</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Commentary from Le Chat: Why MCP Matters for the Future of the Web]]></title>
-            <link>https://wellknownmcp.org/en/news/le_chat_mcp_web_future_news</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/le_chat_mcp_web_future_news</guid>
-            <pubDate>Invalid Date</pubDate>
-            <description><![CDATA[Le Chat offers a thoughtful reflection on the importance of the Model Context Protocol (MCP) in shaping a verifiable, interoperable, and agent-ready future web.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[linkedin-post-wellknownmcp]]></title>
-            <link>https://wellknownmcp.org/en/news/linkedin-post-wellknownmcp</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/linkedin-post-wellknownmcp</guid>
-            <pubDate>Invalid Date</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Turning LLMs into Teachers, Auditors, and Publishers]]></title>
-            <link>https://wellknownmcp.org/en/news/llm-as-a-teacher</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/llm-as-a-teacher</guid>
-            <pubDate>Invalid Date</pubDate>
-            <description><![CDATA[How LLMs can actively teach, audit, and generate llmfeed.json files — a unique design choice of the MCP standard.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[The Anatomy of a LLMFeed — Block by Block]]></title>
-            <link>https://wellknownmcp.org/en/news/llmfeed-block-structure</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/llmfeed-block-structure</guid>
-            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Understand how each block of a .llmfeed.json works, and how to design your own feed.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Why MCP Could Be the Future of Web Crawling for LLMs]]></title>
-            <link>https://wellknownmcp.org/en/news/news-mcp-crawling-llms</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/news-mcp-crawling-llms</guid>
-            <pubDate>Invalid Date</pubDate>
-            <description><![CDATA[As GPTBot and other intelligent crawlers emerge, the Model Context Protocol offers a structured, verifiable, and LLM-friendly alternative to traditional HTML parsing.]]></description>
         </item>
         <item>
             <title><![CDATA[Why MCP?]]></title>

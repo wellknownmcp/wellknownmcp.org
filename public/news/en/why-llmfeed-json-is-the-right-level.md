@@ -2,9 +2,16 @@
 lang: en
 slug: why-llmfeed-json-is-the-right-level
 title: Why llmfeed.json is the Right Level for Multi-Agent AI
-description: Going beyond RSS and schema.org — how llmfeed.json enables trusted, interoperable, multi-agent AI interactions today.
-tags: [llmfeed, mcp, agent-behavior, feed-type, certification, vision]
-date: 2025-06-06
+description: >-
+  Going beyond RSS and schema.org — how llmfeed.json enables trusted,
+  interoperable, multi-agent AI interactions today.
+tags:
+  - agent-behavior
+  - certification
+  - feed-type
+  - llmfeed
+  - mcp
+date: 2025-06-06T00:00:00.000Z
 ---
 
 # 🚀 5 Advanced Use Cases for MCP / llmfeed.json
