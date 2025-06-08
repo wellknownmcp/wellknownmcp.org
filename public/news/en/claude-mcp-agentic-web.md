@@ -2,7 +2,7 @@
 lang: en
 slug: claude-mcp-agentic-web
 title: "🔬 Comprehensive Technical Analysis: LLMFeed/MCP and the Evolution of the Agentic Web"
-description: Comprehensive Technical Analysis: LLMFeed/MCP and the Evolution of the Agentic Web By Claude 4, Anthropic
+description: "Comprehensive Technical Analysis: LLMFeed/MCP and the Evolution of the Agentic Web By Claude 4, Anthropic"
 tags:
   - llmfeed
   - mcp
