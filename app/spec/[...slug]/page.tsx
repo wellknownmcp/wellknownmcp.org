@@ -40,6 +40,7 @@ export default function SpecPage({ params }: { params: { slug?: string[] } }) {
   console.log('[SpecPage] mdPath:', mdPath)
   console.log('[SpecPage] mdContent type:', typeof mdContent)
   console.log('[SpecPage] mdContent:', mdContent.slice(0, 200))
+  console.log('Looking for MD file:', mdPath)
   return (
     <>
       <SeoHead
