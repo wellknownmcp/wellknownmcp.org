@@ -1,0 +1,16 @@
+{
+  "feed_type": "agent_behavior",
+
+  "metadata": {
+    "title": "Agent Behavior Policy - WellKnownMCP",
+    "description": "Defines acceptable behaviors for agents interacting with WellKnownMCP.org.",
+    "origin": "https://wellknownmcp.org"
+  },
+  "behavior_policy": {
+    "indexing": "allowed",
+    "caching": "allowed with weekly refresh",
+    "republication": "allowed with attribution",
+    "user_interaction": "no human consent required for standard feeds",
+    "fallback": "contact maintainers at contact@wellknownmcp.org"
+  }
+}

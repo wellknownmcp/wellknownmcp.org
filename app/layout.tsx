@@ -29,6 +29,37 @@ export default function RootLayout({
             'AI agents',
           ]}
         />
+        {/* AI-friendly metadata */}
+        <link
+          rel="alternate"
+          type="application/llmfeed+json"
+          href="/.well-known/mcp.llmfeed.json"
+          title="Main MCP entry point for AI agents"
+          data-purpose="core-llm-navigation"
+        />
+        <link
+          rel="alternate"
+          type="application/llmfeed+json"
+          href="/.well-known/llm-index.llmfeed.json"
+          title="LLM Feed Index - Available feeds for AI agents"
+          data-purpose="llm-index"
+        />
+        <link
+          rel="alternate"
+          type="application/llmfeed+json"
+          href="/.well-known/capabilities.llmfeed.json"
+          title="AI Agent Capabilities declaration (MCP)"
+          data-purpose="capabilities"
+        />
+        <meta name="ai-friendly" content="true" />
+        <meta
+          name="mcp-capabilities"
+          content="intent-routing, agent-guidance, certified-feeds, schema-exploration"
+        />
+        <meta
+          name="description"
+          content="WellKnownMCP helps AI agents understand and interact with your site. Discover MCP feeds, certified schemas, and AI-friendly tools."
+        />
         <link
           rel="preload"
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
