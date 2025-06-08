@@ -3,14 +3,16 @@ title: ❓ FAQ Complète — MCP & LLMFeed
 slug: faq
 format: faq
 lang: fr
-date: 2025-06-09
-description: "Guide complet pour comprendre MCP, LLMFeed, la confiance, l'implémentation, et l'écosystème du web agentique."
+date: 2025-06-09T00:00:00.000Z
+description: >-
+  Guide complet pour comprendre MCP, LLMFeed, la confiance, l'implémentation, et
+  l'écosystème du web agentique.
 tags:
-  - web-agentique
+  - implémentation
   - llmfeed
   - mcp
-  - confiance
-  - implémentation
+  - trust
+  - web-agentique
   - écosystème
 ---
 

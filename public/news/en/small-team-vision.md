@@ -1,18 +1,19 @@
 ---
 title: 'From Lab Innovation to Web Reality: How Small Teams Shape AI Standards'
-date: 2025-06-09
+date: 2025-06-09T00:00:00.000Z
 tags:
-  - anthropic
-  - mcp
-  - llmfeed
   - agentic-web
-  - web-standards
-  - grassroots
+  - anthropic
   - bottom-up
+  - grassroots
+  - llmfeed
+  - mcp
   - open-web
-
+  - web-standards
 lang: en
-description: "How a small team's user-focused approach evolved Anthropic's MCP into a web-native protocol for the agentic future"
+description: >-
+  How a small team's user-focused approach evolved Anthropic's MCP into a
+  web-native protocol for the agentic future
 ---
 
 # From Lab Innovation to Web Reality: How Small Teams Shape AI Standards

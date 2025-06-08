@@ -1,24 +1,27 @@
 ---
-title: "Stop Guessing, Start Declaring: Why MCP Ends the LLM Arms Race"
+title: 'Stop Guessing, Start Declaring: Why MCP Ends the LLM Arms Race'
 slug: stop-guessing-start-declaring-mcp-vs-llm-arms-race
-description: "The AI industry wastes billions on larger models to guess better. MCP offers a radical alternative: give the web a grammar to speak clearly. Here's how to implement it today."
-date: "2025-06-08"
-lastmod: "2025-06-08"
-author: "WellKnownMCP Team"
+description: >-
+  The AI industry wastes billions on larger models to guess better. MCP offers a
+  radical alternative: give the web a grammar to speak clearly. Here's how to
+  implement it today.
+date: '2025-06-08'
+lastmod: '2025-06-08'
+author: WellKnownMCP Team
 categories:
-  - "AI Strategy"
-  - "Web Standards"
-  - "Implementation"
+  - AI Strategy
+  - Web Standards
+  - Implementation
 tags:
-  - "mcp"
-  - "llmfeed"
-  - "ai-efficiency"
-  - "web-grammar"
-  - "agent-ready"
-  - "declarative-web"
-  - "llm-costs"
-  - "trust-networks"
-  - "implementation-guide"
+  - agent-ready
+  - ai-efficiency
+  - declarative-web
+  - implementation-guide
+  - llm-costs
+  - llmfeed
+  - mcp
+  - trust-networks
+  - web-grammar
 lang: en
 ---
 

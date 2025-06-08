@@ -3,15 +3,14 @@ title: ❓ 完整常见问题解答 — MCP & LLMFeed
 slug: faq
 format: faq
 lang: zh
-date: 2025-06-09
-description: >-
-  理解MCP、LLMFeed、信任机制、实现方式和智能体网络生态系统的完整指南。
+date: 2025-06-09T00:00:00.000Z
+description: 理解MCP、LLMFeed、信任机制、实现方式和智能体网络生态系统的完整指南。
 tags:
-  - 智能体网络
   - llmfeed
   - mcp
   - 信任机制
   - 实现
+  - 智能体网络
   - 生态系统
 ---
 

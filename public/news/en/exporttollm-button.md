@@ -1,67 +1,95 @@
 ---
-title: "ExportToLLM: The Button That Ends Web Scraping"
-slug: "exporttollm-button"
-description: "Transform any content into agent-ready capsules with one click. Implementation guide, business impact, and viral adoption strategies for the button that bridges HTML and AI."
-date: "2025-06-08"
-lastmod: "2025-06-08"
-author: "WellKnownMCP Team"
+title: 'ExportToLLM: The Button That Ends Web Scraping'
+slug: exporttollm-button
+description: >-
+  Transform any content into agent-ready capsules with one click. Implementation
+  guide, business impact, and viral adoption strategies for the button that
+  bridges HTML and AI.
+date: '2025-06-08'
+lastmod: '2025-06-08'
+author: WellKnownMCP Team
 categories:
-  - "Agent UX"
-  - "Web Implementation" 
-  - "Business Strategy"
+  - Agent UX
+  - Web Implementation
+  - Business Strategy
 tags:
-  - "exporttollm"
-  - "agent-ux"
-  - "web-scraping-alternative"
-  - "llmfeed-export"
-  - "one-click-export"
-  - "agent-ready-content"
-  - "structured-data"
-  - "clipboard-api"
-  - "business-adoption"
-  - "viral-strategy"
-  - "content-export"
-  - "ai-integration"
-  - "mcp-implementation"
-  - "developer-tools"
-  - "platform-integration"
-lang: "en"
+  - agent-ready-content
+  - agent-ux
+  - ai-integration
+  - business-adoption
+  - clipboard-api
+  - content-export
+  - developer-tools
+  - exporttollm
+  - llmfeed-export
+  - mcp-implementation
+  - one-click-export
+  - platform-integration
+  - structured-data
+  - viral-strategy
+  - web-scraping-alternative
+lang: en
 featured: true
 toc: true
-readingTime: "15 min"
+readingTime: 15 min
 implementation:
-  difficulty: "beginner-to-intermediate"
-  timeToRead: "15 min"
-  timeToImplement: "5 min - 4 hours"
-  technologies: ["JavaScript", "JSON", "Clipboard API", "MCP", "HTML"]
-  sectors: ["E-commerce", "SaaS", "Healthcare", "Education", "Local Business", "News"]
+  difficulty: beginner-to-intermediate
+  timeToRead: 15 min
+  timeToImplement: 5 min - 4 hours
+  technologies:
+    - JavaScript
+    - JSON
+    - Clipboard API
+    - MCP
+    - HTML
+  sectors:
+    - E-commerce
+    - SaaS
+    - Healthcare
+    - Education
+    - Local Business
+    - News
 meta:
-  keywords: "ExportToLLM button, web scraping alternative, agent-ready content, one-click export, structured data export, AI content integration, MCP export, clipboard API, agent UX"
-  canonical: "https://wellknownmcp.org/blog/exporttollm-button-ends-web-scraping"
+  keywords: >-
+    ExportToLLM button, web scraping alternative, agent-ready content, one-click
+    export, structured data export, AI content integration, MCP export,
+    clipboard API, agent UX
+  canonical: 'https://wellknownmcp.org/blog/exporttollm-button-ends-web-scraping'
 social:
-  twitter: "🚀 ExportToLLM: The button that ends web scraping. Turn any content into agent-ready capsules with one click. Implementation takes 5 minutes, impact lasts forever. Here's how to build the bridge between HTML and AI 🧵"
-  linkedin: "Why let agents scrape your content when you can package it perfectly? The ExportToLLM button transforms any page into structured, signed, agent-readable capsules."
-  image: "/images/exporttollm-button-demo.png"
+  twitter: "\U0001F680 ExportToLLM: The button that ends web scraping. Turn any content into agent-ready capsules with one click. Implementation takes 5 minutes, impact lasts forever. Here's how to build the bridge between HTML and AI \U0001F9F5"
+  linkedin: >-
+    Why let agents scrape your content when you can package it perfectly? The
+    ExportToLLM button transforms any page into structured, signed,
+    agent-readable capsules.
+  image: /images/exporttollm-button-demo.png
 business:
-  roi_timeframe: "immediate"
-  implementation_cost: "low"
-  competitive_advantage: "high"
-  network_effects: "exponential"
+  roi_timeframe: immediate
+  implementation_cost: low
+  competitive_advantage: high
+  network_effects: exponential
 adoption:
-  viral_potential: "high"
-  sectors_ready: ["tech", "content", "ecommerce", "saas"]
-  platform_integration: ["wordpress", "shopify", "github", "notion"]
+  viral_potential: high
+  sectors_ready:
+    - tech
+    - content
+    - ecommerce
+    - saas
+  platform_integration:
+    - wordpress
+    - shopify
+    - github
+    - notion
 related:
-  - "mcp-implementation-guide"
-  - "stop-guessing-start-declaring"
-  - "agent-behavior-patterns"
-  - "web-to-agent-bridge"
+  - mcp-implementation-guide
+  - stop-guessing-start-declaring
+  - agent-behavior-patterns
+  - web-to-agent-bridge
 technical:
   code_examples: true
   live_demos: true
   copy_paste_ready: true
-  browser_support: ["modern"]
-  
+  browser_support:
+    - modern
 ---
 
 # 📤 **ExportToLLM: The Button That Ends Web Scraping**

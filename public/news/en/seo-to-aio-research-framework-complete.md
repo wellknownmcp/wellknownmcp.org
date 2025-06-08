@@ -1,24 +1,26 @@
 ---
 lang: en
 slug: seo-to-aio-research-framework-complete
-title: "🔬 From SEO to AIO: The $600B Research Opportunity"
+title: "\U0001F52C From SEO to AIO: The $600B Research Opportunity"
 description: >-
-  The SEO industry faces disruption from agent-mediated discovery. We provide the complete implementation framework and research methodology — but need industry partners to validate the hypothesis.
+  The SEO industry faces disruption from agent-mediated discovery. We provide
+  the complete implementation framework and research methodology — but need
+  industry partners to validate the hypothesis.
 tags:
-  - aio-research
-  - seo-transformation
   - agent-discovery
+  - aio-research
   - consulting-opportunity
   - market-analysis
+  - seo-transformation
   - wellknownmcp
-date: 2025-05-16
-author: "wellknownmcp"
+date: 2025-05-16T00:00:00.000Z
+author: wellknownmcp
 target_audience:
-  - "SEO Agencies Facing Market Disruption"
-  - "Digital Consulting Firms Seeking AI Advantage"
-  - "Enterprise Teams Planning 2025 Strategy"
-reading_time: "15 min"
-call_to_action: "Partner with us on AIO research"
+  - SEO Agencies Facing Market Disruption
+  - Digital Consulting Firms Seeking AI Advantage
+  - Enterprise Teams Planning 2025 Strategy
+reading_time: 15 min
+call_to_action: Partner with us on AIO research
 ---
 
 # 🔬 From SEO to AIO: The $600B Research Opportunity

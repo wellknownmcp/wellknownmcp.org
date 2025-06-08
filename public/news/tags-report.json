@@ -2,23 +2,19 @@
   "global": [
     {
       "tag": "llmfeed",
-      "count": 92
+      "count": 93
     },
     {
       "tag": "mcp",
-      "count": 52
+      "count": 53
     },
     {
       "tag": "trust",
-      "count": 31
+      "count": 29
     },
     {
       "tag": "agentic-web",
-      "count": 28
-    },
-    {
-      "tag": "ai-agents",
-      "count": 20
+      "count": 29
     },
     {
       "tag": "core",
@@ -26,6 +22,10 @@
     },
     {
       "tag": "manual",
+      "count": 17
+    },
+    {
+      "tag": "ai-agents",
       "count": 17
     },
     {
@@ -37,10 +37,6 @@
       "count": 11
     },
     {
-      "tag": "well-known",
-      "count": 11
-    },
-    {
       "tag": "ethics",
       "count": 10
     },
@@ -49,8 +45,8 @@
       "count": 10
     },
     {
-      "tag": "interoperability",
-      "count": 9
+      "tag": "well-known",
+      "count": 10
     },
     {
       "tag": "announcement",
@@ -58,6 +54,10 @@
     },
     {
       "tag": "certification",
+      "count": 8
+    },
+    {
+      "tag": "interoperability",
       "count": 8
     },
     {
@@ -69,16 +69,8 @@
       "count": 7
     },
     {
-      "tag": "web",
-      "count": 7
-    },
-    {
       "tag": "llmca",
       "count": 7
-    },
-    {
-      "tag": "anthropic",
-      "count": 6
     },
     {
       "tag": "agentic web",
@@ -89,11 +81,19 @@
       "count": 6
     },
     {
+      "tag": "web",
+      "count": 6
+    },
+    {
       "tag": "structure",
       "count": 6
     },
     {
       "tag": "responsibility",
+      "count": 5
+    },
+    {
+      "tag": "anthropic",
       "count": 5
     },
     {
@@ -121,10 +121,6 @@
       "count": 5
     },
     {
-      "tag": "developers",
-      "count": 4
-    },
-    {
       "tag": "agent-interoperability",
       "count": 4
     },
@@ -138,6 +134,10 @@
     },
     {
       "tag": "innovation",
+      "count": 4
+    },
+    {
+      "tag": "mcp-implementation",
       "count": 4
     },
     {
@@ -197,10 +197,6 @@
       "count": 3
     },
     {
-      "tag": "mcp-implementation",
-      "count": 3
-    },
-    {
       "tag": "model-comparison",
       "count": 3
     },
@@ -215,6 +211,10 @@
     {
       "tag": "llmfeedforge",
       "count": 3
+    },
+    {
+      "tag": "developers",
+      "count": 2
     },
     {
       "tag": "search",
@@ -302,6 +302,10 @@
     },
     {
       "tag": "创新",
+      "count": 2
+    },
+    {
+      "tag": "智能体网络",
       "count": 2
     },
     {
@@ -393,7 +397,131 @@
       "count": 1
     },
     {
-      "tag": "ux",
+      "tag": "agent-ready-content",
+      "count": 1
+    },
+    {
+      "tag": "agent-ux",
+      "count": 1
+    },
+    {
+      "tag": "ai-integration",
+      "count": 1
+    },
+    {
+      "tag": "business-adoption",
+      "count": 1
+    },
+    {
+      "tag": "clipboard-api",
+      "count": 1
+    },
+    {
+      "tag": "content-export",
+      "count": 1
+    },
+    {
+      "tag": "developer-tools",
+      "count": 1
+    },
+    {
+      "tag": "exporttollm",
+      "count": 1
+    },
+    {
+      "tag": "llmfeed-export",
+      "count": 1
+    },
+    {
+      "tag": "one-click-export",
+      "count": 1
+    },
+    {
+      "tag": "platform-integration",
+      "count": 1
+    },
+    {
+      "tag": "structured-data",
+      "count": 1
+    },
+    {
+      "tag": "viral-strategy",
+      "count": 1
+    },
+    {
+      "tag": "web-scraping-alternative",
+      "count": 1
+    },
+    {
+      "tag": "implementation",
+      "count": 1
+    },
+    {
+      "tag": "agent-discovery",
+      "count": 1
+    },
+    {
+      "tag": "aio-research",
+      "count": 1
+    },
+    {
+      "tag": "consulting-opportunity",
+      "count": 1
+    },
+    {
+      "tag": "market-analysis",
+      "count": 1
+    },
+    {
+      "tag": "seo-transformation",
+      "count": 1
+    },
+    {
+      "tag": "wellknownmcp",
+      "count": 1
+    },
+    {
+      "tag": "bottom-up",
+      "count": 1
+    },
+    {
+      "tag": "grassroots",
+      "count": 1
+    },
+    {
+      "tag": "open-web",
+      "count": 1
+    },
+    {
+      "tag": "web-standards",
+      "count": 1
+    },
+    {
+      "tag": "agent-ready",
+      "count": 1
+    },
+    {
+      "tag": "ai-efficiency",
+      "count": 1
+    },
+    {
+      "tag": "declarative-web",
+      "count": 1
+    },
+    {
+      "tag": "implementation-guide",
+      "count": 1
+    },
+    {
+      "tag": "llm-costs",
+      "count": 1
+    },
+    {
+      "tag": "trust-networks",
+      "count": 1
+    },
+    {
+      "tag": "web-grammar",
       "count": 1
     },
     {
@@ -430,6 +558,18 @@
     },
     {
       "tag": "ai-act",
+      "count": 1
+    },
+    {
+      "tag": "implémentation",
+      "count": 1
+    },
+    {
+      "tag": "web-agentique",
+      "count": 1
+    },
+    {
+      "tag": "écosystème",
       "count": 1
     },
     {
@@ -481,11 +621,19 @@
       "count": 1
     },
     {
-      "tag": "宣言",
+      "tag": "信任机制",
       "count": 1
     },
     {
-      "tag": "智能体网络",
+      "tag": "实现",
+      "count": 1
+    },
+    {
+      "tag": "生态系统",
+      "count": 1
+    },
+    {
+      "tag": "宣言",
       "count": 1
     },
     {
@@ -579,23 +727,23 @@
     "en": [
       {
         "tag": "mcp",
-        "count": 34
+        "count": 35
       },
       {
         "tag": "llmfeed",
-        "count": 28
+        "count": 29
       },
       {
         "tag": "agentic-web",
-        "count": 21
+        "count": 22
       },
       {
         "tag": "trust",
-        "count": 20
+        "count": 19
       },
       {
         "tag": "ai-agents",
-        "count": 13
+        "count": 12
       },
       {
         "tag": "llm",
@@ -603,7 +751,7 @@
       },
       {
         "tag": "well-known",
-        "count": 10
+        "count": 9
       },
       {
         "tag": "certification",
@@ -611,11 +759,11 @@
       },
       {
         "tag": "web",
-        "count": 7
+        "count": 6
       },
       {
         "tag": "interoperability",
-        "count": 6
+        "count": 5
       },
       {
         "tag": "ai-standards",
@@ -642,16 +790,16 @@
         "count": 4
       },
       {
+        "tag": "anthropic",
+        "count": 3
+      },
+      {
         "tag": "open-standards",
         "count": 3
       },
       {
         "tag": "manifesto",
         "count": 3
-      },
-      {
-        "tag": "anthropic",
-        "count": 2
       },
       {
         "tag": "seo",
@@ -679,6 +827,10 @@
       },
       {
         "tag": "innovation",
+        "count": 2
+      },
+      {
+        "tag": "mcp-implementation",
         "count": 2
       },
       {
@@ -770,7 +922,63 @@
         "count": 1
       },
       {
-        "tag": "ux",
+        "tag": "agent-ready-content",
+        "count": 1
+      },
+      {
+        "tag": "agent-ux",
+        "count": 1
+      },
+      {
+        "tag": "ai-integration",
+        "count": 1
+      },
+      {
+        "tag": "business-adoption",
+        "count": 1
+      },
+      {
+        "tag": "clipboard-api",
+        "count": 1
+      },
+      {
+        "tag": "content-export",
+        "count": 1
+      },
+      {
+        "tag": "developer-tools",
+        "count": 1
+      },
+      {
+        "tag": "exporttollm",
+        "count": 1
+      },
+      {
+        "tag": "llmfeed-export",
+        "count": 1
+      },
+      {
+        "tag": "one-click-export",
+        "count": 1
+      },
+      {
+        "tag": "platform-integration",
+        "count": 1
+      },
+      {
+        "tag": "structured-data",
+        "count": 1
+      },
+      {
+        "tag": "viral-strategy",
+        "count": 1
+      },
+      {
+        "tag": "web-scraping-alternative",
+        "count": 1
+      },
+      {
+        "tag": "implementation",
         "count": 1
       },
       {
@@ -831,10 +1039,6 @@
       },
       {
         "tag": "llmfeed-standard",
-        "count": 1
-      },
-      {
-        "tag": "mcp-implementation",
         "count": 1
       },
       {
@@ -911,6 +1115,74 @@
       },
       {
         "tag": "wechat",
+        "count": 1
+      },
+      {
+        "tag": "agent-discovery",
+        "count": 1
+      },
+      {
+        "tag": "aio-research",
+        "count": 1
+      },
+      {
+        "tag": "consulting-opportunity",
+        "count": 1
+      },
+      {
+        "tag": "market-analysis",
+        "count": 1
+      },
+      {
+        "tag": "seo-transformation",
+        "count": 1
+      },
+      {
+        "tag": "wellknownmcp",
+        "count": 1
+      },
+      {
+        "tag": "bottom-up",
+        "count": 1
+      },
+      {
+        "tag": "grassroots",
+        "count": 1
+      },
+      {
+        "tag": "open-web",
+        "count": 1
+      },
+      {
+        "tag": "web-standards",
+        "count": 1
+      },
+      {
+        "tag": "agent-ready",
+        "count": 1
+      },
+      {
+        "tag": "ai-efficiency",
+        "count": 1
+      },
+      {
+        "tag": "declarative-web",
+        "count": 1
+      },
+      {
+        "tag": "implementation-guide",
+        "count": 1
+      },
+      {
+        "tag": "llm-costs",
+        "count": 1
+      },
+      {
+        "tag": "trust-networks",
+        "count": 1
+      },
+      {
+        "tag": "web-grammar",
         "count": 1
       },
       {
@@ -1082,10 +1354,6 @@
         "count": 4
       },
       {
-        "tag": "ai-agents",
-        "count": 3
-      },
-      {
         "tag": "aio",
         "count": 3
       },
@@ -1099,6 +1367,10 @@
       },
       {
         "tag": "core",
+        "count": 2
+      },
+      {
+        "tag": "ai-agents",
         "count": 2
       },
       {
@@ -1126,11 +1398,15 @@
         "count": 1
       },
       {
-        "tag": "anthropic",
+        "tag": "implémentation",
         "count": 1
       },
       {
-        "tag": "developers",
+        "tag": "web-agentique",
+        "count": 1
+      },
+      {
+        "tag": "écosystème",
         "count": 1
       },
       {
@@ -1420,11 +1696,11 @@
         "count": 4
       },
       {
-        "tag": "trust",
-        "count": 4
+        "tag": "core",
+        "count": 3
       },
       {
-        "tag": "core",
+        "tag": "trust",
         "count": 3
       },
       {
@@ -1441,6 +1717,10 @@
       },
       {
         "tag": "ethics",
+        "count": 2
+      },
+      {
+        "tag": "智能体网络",
         "count": 2
       },
       {
@@ -1484,23 +1764,19 @@
         "count": 1
       },
       {
-        "tag": "ai-agents",
+        "tag": "信任机制",
         "count": 1
       },
       {
-        "tag": "anthropic",
+        "tag": "实现",
         "count": 1
       },
       {
-        "tag": "developers",
+        "tag": "生态系统",
         "count": 1
       },
       {
         "tag": "宣言",
-        "count": 1
-      },
-      {
-        "tag": "智能体网络",
         "count": 1
       },
       {

@@ -3,16 +3,16 @@ title: ❓ Comprehensive FAQ — MCP & LLMFeed
 slug: faq
 format: faq
 lang: en
-date: 2025-06-09
+date: 2025-06-09T00:00:00.000Z
 description: >-
-  Complete guide to understanding MCP, LLMFeed, trust, implementation, and the agentic web ecosystem.
+  Complete guide to understanding MCP, LLMFeed, trust, implementation, and the
+  agentic web ecosystem.
 tags:
   - agentic-web
+  - implementation
   - llmfeed
   - mcp
   - trust
-  - implementation
-  - ecosystem
 ---
 
 # ❓ Comprehensive FAQ — MCP & LLMFeed
