@@ -73,11 +73,10 @@
       "date": "2025-06-09",
       "tags": [
         "agentic-web",
+        "implementation",
         "llmfeed",
         "mcp",
-        "trust",
-        "implementation",
-        "ecosystem"
+        "trust"
       ],
       "excerpt": " ❓ Comprehensive FAQ — MCP & LLMFeed  🚀 Getting Started",
       "translations": {
@@ -115,14 +114,14 @@
       "description": "How a small team's user-focused approach evolved Anthropic's MCP into a web-native protocol for the agentic future",
       "date": "2025-06-09",
       "tags": [
-        "anthropic",
-        "mcp",
-        "llmfeed",
         "agentic-web",
-        "web-standards",
-        "grassroots",
+        "anthropic",
         "bottom-up",
-        "open-web"
+        "grassroots",
+        "llmfeed",
+        "mcp",
+        "open-web",
+        "web-standards"
       ],
       "excerpt": "\r  From Lab Innovation to Web Reality: How Small Teams Shape AI Standards\r",
       "translations": {
@@ -135,21 +134,21 @@
       "description": "Transform any content into agent-ready capsules with one click. Implementation guide, business impact, and viral adoption strategies for the button that bridges HTML and AI.",
       "date": "2025-06-08",
       "tags": [
-        "exporttollm",
-        "agent-ux",
-        "web-scraping-alternative",
-        "llmfeed-export",
-        "one-click-export",
         "agent-ready-content",
-        "structured-data",
-        "clipboard-api",
-        "business-adoption",
-        "viral-strategy",
-        "content-export",
+        "agent-ux",
         "ai-integration",
-        "mcp-implementation",
+        "business-adoption",
+        "clipboard-api",
+        "content-export",
         "developer-tools",
-        "platform-integration"
+        "exporttollm",
+        "llmfeed-export",
+        "mcp-implementation",
+        "one-click-export",
+        "platform-integration",
+        "structured-data",
+        "viral-strategy",
+        "web-scraping-alternative"
       ],
       "excerpt": " 📤 ExportToLLM: The Button That Ends Web Scraping Transforming any content into agentready capsules — one click at a time",
       "translations": {
@@ -201,15 +200,15 @@
       "description": "The AI industry wastes billions on larger models to guess better. MCP offers a radical alternative: give the web a grammar to speak clearly. Here's how to implement it today.",
       "date": "2025-06-08",
       "tags": [
-        "mcp",
-        "llmfeed",
-        "ai-efficiency",
-        "web-grammar",
         "agent-ready",
+        "ai-efficiency",
         "declarative-web",
+        "implementation-guide",
         "llm-costs",
+        "llmfeed",
+        "mcp",
         "trust-networks",
-        "implementation-guide"
+        "web-grammar"
       ],
       "excerpt": "\r  🎯 Stop Guessing, Start Declaring: Why MCP Ends the LLM Arms Race\r",
       "translations": {
@@ -930,11 +929,11 @@
       "description": "The SEO industry faces disruption from agent-mediated discovery. We provide the complete implementation framework and research methodology — but need industry partners to validate the hypothesis.",
       "date": "2025-05-16",
       "tags": [
-        "aio-research",
-        "seo-transformation",
         "agent-discovery",
+        "aio-research",
         "consulting-opportunity",
         "market-analysis",
+        "seo-transformation",
         "wellknownmcp"
       ],
       "excerpt": "\r  🔬 From SEO to AIO: The $600B Research Opportunity\r",
@@ -1138,11 +1137,11 @@
       "description": "Guide complet pour comprendre MCP, LLMFeed, la confiance, l'implémentation, et l'écosystème du web agentique.",
       "date": "2025-06-09",
       "tags": [
-        "web-agentique",
+        "implémentation",
         "llmfeed",
         "mcp",
-        "confiance",
-        "implémentation",
+        "trust",
+        "web-agentique",
         "écosystème"
       ],
       "excerpt": " ❓ FAQ Complète — MCP & LLMFeed  🚀 Pour Commencer",
@@ -1889,11 +1888,11 @@
       "description": "理解MCP、LLMFeed、信任机制、实现方式和智能体网络生态系统的完整指南。",
       "date": "2025-06-09",
       "tags": [
-        "智能体网络",
         "llmfeed",
         "mcp",
         "信任机制",
         "实现",
+        "智能体网络",
         "生态系统"
       ],
       "excerpt": " ❓ 完整常见问题解答 — MCP & LLMFeed  🚀 入门指南",

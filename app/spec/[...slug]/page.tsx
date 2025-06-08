@@ -37,7 +37,9 @@ export default function SpecPage({ params }: { params: { slug?: string[] } }) {
     .split('/')
     .map((part) => part.replace(/[_\-]/g, ' '))
   const pageTitle = front.title || `Spec: ${titleParts.join(' / ')}`
-
+  console.log('[SpecPage] mdPath:', mdPath)
+  console.log('[SpecPage] mdContent type:', typeof mdContent)
+  console.log('[SpecPage] mdContent:', mdContent.slice(0, 200))
   return (
     <>
       <SeoHead

@@ -108,7 +108,6 @@ export default async function NewsPost({
 
   const now = new Date()
   const pubDate = front.date ? new Date(front.date) : null
-  if (pubDate && pubDate > now) notFound()
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-12 space-y-8">

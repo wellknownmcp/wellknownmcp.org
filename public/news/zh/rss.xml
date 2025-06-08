@@ -4,7 +4,7 @@
         <title>News (zh) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/zh/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Sun, 08 Jun 2025 13:17:08 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Jun 2025 23:03:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh</language>
@@ -15,6 +15,13 @@
             <guid isPermaLink="false">https://wellknownmcp.org/zh/news/llm-agent-readiness-framework-2025</guid>
             <pubDate>Sun, 15 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[独家框架揭示哪些AI模型能够处理结构化、签名的智能体信息流。我们曝光了MCP实现中聊天与真正自主性之间的差距——并提出行业需要采用的测试标准。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[❓ 完整常见问题解答 — MCP & LLMFeed]]></title>
+            <link>https://wellknownmcp.org/zh/news/faq</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/faq</guid>
+            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[理解MCP、LLMFeed、信任机制、实现方式和智能体网络生态系统的完整指南。]]></description>
         </item>
         <item>
             <title><![CDATA[🔬 从 MCP 到 LLMFeed：我们为什么创建新规范]]></title>
@@ -76,13 +83,6 @@
             <guid isPermaLink="false">https://wellknownmcp.org/zh/news/begin</guid>
             <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[一个简单的指南，帮助你理解标准并迈出第一步。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[常见问题解答 – MCP 与 LLMFeed]]></title>
-            <link>https://wellknownmcp.org/zh/news/faq</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/faq</guid>
-            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[关于模型上下文协议（MCP）及其生态系统 LLMFeed 的常见问题解答，包括其与 Anthropic MCP 的比较。]]></description>
         </item>
         <item>
             <title><![CDATA[发布公告]]></title>
