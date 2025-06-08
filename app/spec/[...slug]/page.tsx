@@ -61,9 +61,14 @@ export default function SpecPage({ params }: { params: { slug?: string[] } }) {
           ]
         }
       />
-      <SpecProvider value={{ slug: cleanSlug, content, front }}>
-        <SpecViewer slug={cleanSlug} />
-      </SpecProvider>
+     <SpecProvider value={{ slug: cleanSlug, content, front }}>
+  <div className="flex">
+    <SpecSidebar />
+    <div className="flex-1">
+      <SpecViewer slug={cleanSlug} />
+    </div>
+  </div>
+</SpecProvider>
     </>
   )
 }
