@@ -11,7 +11,7 @@ tags:
   - mistral
   - open-source
   - souverainete-numerique
-date: 2025-06-09T00:00:00.000Z
+date: 2025-06-09
 ---
 
 ## 🌐 Mistral AI, champion français : quelle compatibilité avec LLMFeed ?

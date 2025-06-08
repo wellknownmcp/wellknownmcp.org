@@ -1,46 +1,45 @@
 ---
 lang: zh
 slug: llm-agent-readiness-framework-2025
-title: "🧪 2025年智能体就绪挑战：哪些大语言模型真正能构建智能体网络？"
-description: >-
-  独家框架揭示哪些AI模型能够处理结构化、签名的智能体信息流。我们曝光了MCP实现中聊天与真正自主性之间的差距——并提出行业需要采用的测试标准。
+title: "\U0001F9EA 2025年智能体就绪挑战：哪些大语言模型真正能构建智能体网络？"
+description: 独家框架揭示哪些AI模型能够处理结构化、签名的智能体信息流。我们曝光了MCP实现中聊天与真正自主性之间的差距——并提出行业需要采用的测试标准。
 tags:
-  - llm-benchmarking
-  - agent-readiness
-  - mcp-implementation
-  - llmfeed-standard
-  - ai-agent-testing
-  - cryptographic-verification
-  - model-comparison
-  - agentic-web
-  - ai-infrastructure
   - agent-interoperability
-  - trust-verification
-  - enterprise-ai-adoption
+  - agent-readiness
+  - agentic-web
+  - ai-agent-testing
+  - ai-infrastructure
   - ai-standards
-  - open-source-ai
   - ai-testing-framework
-date: 2025-06-15
-author: "wellknownmcp"
+  - cryptographic-verification
+  - enterprise-ai-adoption
+  - llm-benchmarking
+  - llmfeed-standard
+  - mcp-implementation
+  - model-comparison
+  - open-source-ai
+  - trust-verification
+date: 2025-06-15T00:00:00.000Z
+author: wellknownmcp
 target_audience:
-  - "AI实验室研究员和模型开发者"
-  - "企业AI架构师和CTO"
-  - "智能体框架构建者"
-  - "AI投资和战略团队"
-reading_time: "16分钟"
-framework_release: "7测试智能体就绪协议"
-implementation_timeline: "30天内加入生态系统，90天内完成全面测试"
-strategic_value: "智能体就绪基础设施的先发优势"
-call_to_action: "wellknownmcp.org/join"
-article_type: "技术框架"
-prerequisites: 
-  - "了解LLM能力"
-  - "熟悉API集成"
-  - "密码学验证基础知识"
+  - AI实验室研究员和模型开发者
+  - 企业AI架构师和CTO
+  - 智能体框架构建者
+  - AI投资和战略团队
+reading_time: 16分钟
+framework_release: 7测试智能体就绪协议
+implementation_timeline: 30天内加入生态系统，90天内完成全面测试
+strategic_value: 智能体就绪基础设施的先发优势
+call_to_action: wellknownmcp.org/join
+article_type: 技术框架
+prerequisites:
+  - 了解LLM能力
+  - 熟悉API集成
+  - 密码学验证基础知识
 related_standards:
-  - "模型上下文协议（Anthropic）"
-  - "LLMFeed JSON规范"
-  - "LLMCA认证框架"
+  - 模型上下文协议（Anthropic）
+  - LLMFeed JSON规范
+  - LLMCA认证框架
 ---
 ```
 

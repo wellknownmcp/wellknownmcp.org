@@ -1,17 +1,18 @@
 ---
 lang: en
 slug: from-mcp-to-llmfeed-manifesto
-title: "🔬 From MCP to LLMFeed: Why We Created a New Specification"
+title: "\U0001F52C From MCP to LLMFeed: Why We Created a New Specification"
 description: >-
-  The wellknownmcp team manifesto: agentic web vision, MCP evolution, and why trust changes everything.
+  The wellknownmcp team manifesto: agentic web vision, MCP evolution, and why
+  trust changes everything.
 tags:
-  - llmfeed
-  - mcp
-  - manifesto
   - agentic-web
   - innovation
+  - llmfeed
+  - manifesto
+  - mcp
 date: 2025-06-09
-author: "wellknownmcp.org Team"
+author: wellknownmcp.org Team
 ---
 
 # 🔬 From MCP to LLMFeed: Why We Created a New Specification

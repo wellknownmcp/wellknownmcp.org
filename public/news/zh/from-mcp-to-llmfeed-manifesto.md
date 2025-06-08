@@ -1,17 +1,16 @@
 ---
 lang: zh
 slug: from-mcp-to-llmfeed-manifesto-zh
-title: "🔬 从 MCP 到 LLMFeed：我们为什么创建新规范"
-description: >-
-  wellknownmcp 团队宣言：智能体网络愿景、MCP 演进，以及信任如何改变一切。
+title: "\U0001F52C 从 MCP 到 LLMFeed：我们为什么创建新规范"
+description: wellknownmcp 团队宣言：智能体网络愿景、MCP 演进，以及信任如何改变一切。
 tags:
   - llmfeed
   - mcp
+  - 创新
   - 宣言
   - 智能体网络
-  - 创新
 date: 2025-06-09T00:00:00.000Z
-author: "wellknownmcp.org 团队"
+author: wellknownmcp.org 团队
 ---
 
 # 🔬 从 MCP 到 LLMFeed：我们为什么创建新规范

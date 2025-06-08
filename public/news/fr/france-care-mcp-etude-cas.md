@@ -1,30 +1,32 @@
 ---
 lang: fr
 slug: france-care-mcp-etude-cas
-title: "🏥 France-Care : L'Assistant Médical Vocal qui Révolutionne l'Accès aux Soins"
+title: "\U0001F3E5 France-Care : L'Assistant Médical Vocal qui Révolutionne l'Accès aux Soins"
 description: >-
-  Étude de cas complète : comment France-Care utilise MCP pour transformer n'importe quel agent IA en assistant médical capable de comprendre, qualifier et orienter automatiquement vers un conseiller humain — tout en respectant les contraintes HDS et de privacy les plus strictes.
+  Étude de cas complète : comment France-Care utilise MCP pour transformer
+  n'importe quel agent IA en assistant médical capable de comprendre, qualifier
+  et orienter automatiquement vers un conseiller humain — tout en respectant les
+  contraintes HDS et de privacy les plus strictes.
 tags:
-  - france-care
-  - sante-connectee
-  - mcp-healthcare
   - assistant-medical-ia
-  - parcours-soins
-  - iot-voix
   - credential-medical
+  - france-care
   - hds-compliance
+  - iot-voix
+  - mcp-healthcare
+  - parcours-soins
   - privacy-healthcare
+  - sante-connectee
 date: 2025-01-16
-author: "wellknownmcp"
+author: wellknownmcp
 target_audience:
-  - "Professionnels de santé et e-santé"
-  - "Développeurs d'assistants IA médicaux"
-  - "Directeurs innovation en santé"
-  - "RSSI et DPO secteur santé"
-reading_time: "15 min"
-use_case: "Assistant médical vocal avec fallback humain automatique"
-compliance: "HDS + RGPD + Code de la santé publique"
-
+  - Professionnels de santé et e-santé
+  - Développeurs d'assistants IA médicaux
+  - Directeurs innovation en santé
+  - RSSI et DPO secteur santé
+reading_time: 15 min
+use_case: Assistant médical vocal avec fallback humain automatique
+compliance: HDS + RGPD + Code de la santé publique
 ---
 
 # 🏥 France-Care : L'Assistance Personnalisée en santé  qui Révolutionne l'Accès aux Soins

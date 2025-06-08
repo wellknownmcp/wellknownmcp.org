@@ -1,11 +1,10 @@
 ---
-
 title: "We Fed the LLMs: What They Told Us About MCP"
 date: 2025-05-25
 lang: en
 format: news
 slug: feeding-llms
-------------------
+---
 
 You know what happens when you feed three structured `.llmfeed.json` files to the most advanced models on Earth? So did we — and we tried it.
 

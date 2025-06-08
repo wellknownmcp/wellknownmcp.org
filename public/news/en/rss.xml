@@ -4,50 +4,56 @@
         <title>News (en) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/en/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Sat, 07 Jun 2025 07:00:27 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Jun 2025 13:17:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>© 2025 WellKnownMCP</copyright>
         <item>
-            <title><![CDATA[From Chatbots to Autonomous Agents: The Web’s Next Evolution]]></title>
-            <link>https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents</guid>
-            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[The web is evolving from chatbots to true autonomous agents. What does this mean for web architecture — and how does MCP fit in?]]></description>
+            <title><![CDATA[🧪 The 2025 Agent Readiness Challenge: Which LLMs Can Actually Build the Agentic Web?]]></title>
+            <link>https://wellknownmcp.org/en/news/llm-agent-readiness-framework-2025</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/llm-agent-readiness-framework-2025</guid>
+            <pubDate>Sun, 15 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Exclusive framework reveals which AI models can handle structured, signed agent feeds. We expose the MCP implementation gap between chat and true autonomy — and propose the testing standard the industry needs to adopt.]]></description>
         </item>
         <item>
-            <title><![CDATA[Towards Homomorphic Capsules for the Agentic Web]]></title>
-            <link>https://wellknownmcp.org/en/news/homomorphic-capsules</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/homomorphic-capsules</guid>
-            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Exploring a potential extension of `.llmfeed.json` feeds to enable privacy-preserving, verifiable pipelines — a vision aligned with the forefront of homomorphic encryption research.]]></description>
+            <title><![CDATA[🔬 Comprehensive Technical Analysis: LLMFeed/MCP and the Evolution of the Agentic Web]]></title>
+            <link>https://wellknownmcp.org/en/news/claude-mcp-agentic-web</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/claude-mcp-agentic-web</guid>
+            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Comprehensive Technical Analysis: LLMFeed/MCP and the Evolution of the Agentic Web By Claude 4, Anthropic]]></description>
+        </item>
+        <item>
+            <title><![CDATA[🔬 From MCP to LLMFeed: Why We Created a New Specification]]></title>
+            <link>https://wellknownmcp.org/en/news/from-mcp-to-llmfeed-manifesto</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/from-mcp-to-llmfeed-manifesto</guid>
+            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[The wellknownmcp team manifesto: agentic web vision, MCP evolution, and why trust changes everything.]]></description>
         </item>
         <item>
             <title><![CDATA[launch-newstack]]></title>
             <link>https://wellknownmcp.org/en/news/launch-newstack</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/launch-newstack</guid>
-            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Commentary from Le Chat: Why MCP Matters for the Future of the Web]]></title>
-            <link>https://wellknownmcp.org/en/news/le_chat_mcp_web_future_news</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/le_chat_mcp_web_future_news</guid>
-            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Le Chat offers a thoughtful reflection on the importance of the Model Context Protocol (MCP) in shaping a verifiable, interoperable, and agent-ready future web.]]></description>
+            <pubDate>Sun, 08 Jun 2025 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[linkedin-post-wellknownmcp]]></title>
             <link>https://wellknownmcp.org/en/news/linkedin-post-wellknownmcp</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/linkedin-post-wellknownmcp</guid>
-            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+            <pubDate>Sun, 08 Jun 2025 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Turning LLMs into Teachers, Auditors, and Publishers]]></title>
             <link>https://wellknownmcp.org/en/news/llm-as-a-teacher</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/llm-as-a-teacher</guid>
-            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+            <pubDate>Sun, 08 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[How LLMs can actively teach, audit, and generate llmfeed.json files — a unique design choice of the MCP standard.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[seo-to-aio-research-framework-complete]]></title>
+            <link>https://wellknownmcp.org/en/news/seo-to-aio-research-framework-complete</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/seo-to-aio-research-framework-complete</guid>
+            <pubDate>Sun, 08 Jun 2025 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Securing Agentic Pipelines in Hybrid Warfare — The LLMFeed Perspective]]></title>
@@ -57,10 +63,24 @@
             <description><![CDATA[How `.llmfeed.json` feeds could help secure AI-to-AI and drone communications in hybrid warfare contexts, as exemplified by the ongoing war in Ukraine.]]></description>
         </item>
         <item>
+            <title><![CDATA[From Chatbots to Autonomous Agents: The Web’s Next Evolution]]></title>
+            <link>https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents</guid>
+            <pubDate>Fri, 06 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[The web is evolving from chatbots to true autonomous agents. What does this mean for web architecture — and how does MCP fit in?]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Commentary from Le Chat: Why MCP Matters for the Future of the Web]]></title>
+            <link>https://wellknownmcp.org/en/news/le_chat_mcp_web_future_news</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/le_chat_mcp_web_future_news</guid>
+            <pubDate>Fri, 06 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Le Chat offers a thoughtful reflection on the importance of the Model Context Protocol (MCP) in shaping a verifiable, interoperable, and agent-ready future web.]]></description>
+        </item>
+        <item>
             <title><![CDATA[Why MCP Could Be the Future of Web Crawling for LLMs]]></title>
             <link>https://wellknownmcp.org/en/news/news-mcp-crawling-llms</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/news-mcp-crawling-llms</guid>
-            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+            <pubDate>Fri, 06 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[As GPTBot and other intelligent crawlers emerge, the Model Context Protocol offers a structured, verifiable, and LLM-friendly alternative to traditional HTML parsing.]]></description>
         </item>
         <item>
@@ -103,7 +123,7 @@
             <link>https://wellknownmcp.org/en/news/2025-06-07-apple-intelligence-agentic-web</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-06-07-apple-intelligence-agentic-web</guid>
             <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Apple’s entry into AI-driven agents could reshape the emerging Agentic Web landscape. What does it mean for standards like MCP?]]></description>
+            <description><![CDATA[Apple’s entry into AI-driven agents could reshape the emerging Agentic Web landscape. What does it mean for standards like llmfeed mcp?]]></description>
         </item>
         <item>
             <title><![CDATA[Meta’s Open Agents: Opportunity or Challenge for MCP?]]></title>
@@ -145,7 +165,21 @@
             <link>https://wellknownmcp.org/en/news/2025-07-26-ai-first-browsers-agentic-navigation</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-07-26-ai-first-browsers-agentic-navigation</guid>
             <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[A new wave of AI-first browsers is emerging. What does this mean for web navigation — and how does MCP enable it?]]></description>
+            <description><![CDATA[A new wave of AI-first browsers is emerging. What does this mean for web  navigation — and how does MCP enable it?]]></description>
+        </item>
+        <item>
+            <title><![CDATA[🚨 The AI Agent Trust Crisis  A $50B Problem]]></title>
+            <link>https://wellknownmcp.org/en/news/ai-agent-trust-crisis-50b-problem</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/ai-agent-trust-crisis-50b-problem</guid>
+            <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Exclusive investigation reveals how AI agent failures cost enterprises $50B annually. We expose the cryptographic verification gap that's destroying value at scale  and the emergency solution the industry doesn't want to discuss.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Towards Homomorphic Capsules for the Agentic Web]]></title>
+            <link>https://wellknownmcp.org/en/news/homomorphic-capsules</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/homomorphic-capsules</guid>
+            <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Exploring a potential extension of `.llmfeed.json` feeds to enable privacy-preserving, verifiable pipelines — a vision aligned with the forefront of homomorphic encryption research.]]></description>
         </item>
         <item>
             <title><![CDATA[Opera Neon Relaunch: A Step Forward for the Agentic Web?]]></title>

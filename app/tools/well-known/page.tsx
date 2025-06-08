@@ -201,9 +201,10 @@ export default function WellKnownExplainedPage() {
               staticPath="demo/.well-known/well-known.zip"
             />
             <p>
-              Want to explore the full spec-level rationale for this folder?
+              Want to explore the\01_llmfeed full spec-level rationale for this
+              folder?
               <Link
-                href="/spec/spec/wellknown"
+                href="/spec/01_llmfeed/wellknown"
                 className="underline font-semibold"
               >
                 Read the `.well-known` deep explanation →

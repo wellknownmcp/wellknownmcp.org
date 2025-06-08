@@ -1,5 +1,3 @@
-yaml
-
 ---
 lang: en
 slug: seo-to-aio-research-framework-complete
@@ -22,7 +20,6 @@ target_audience:
 reading_time: "15 min"
 call_to_action: "Partner with us on AIO research"
 ---
-```
 
 # 🔬 From SEO to AIO: The $600B Research Opportunity
 

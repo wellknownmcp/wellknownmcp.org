@@ -47,7 +47,6 @@ export async function generateMetadata({
 
   const now = new Date()
   const pubDate = front.date ? new Date(front.date) : null
-  if (pubDate && pubDate > now) notFound()
 
   return {
     title: front.title || `${slug} — News from wellknownmcp.org`,

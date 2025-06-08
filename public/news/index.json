@@ -6,21 +6,21 @@
       "description": "Exclusive framework reveals which AI models can handle structured, signed agent feeds. We expose the MCP implementation gap between chat and true autonomy — and propose the testing standard the industry needs to adopt.",
       "date": "2025-06-15",
       "tags": [
-        "llm-benchmarking",
-        "agent-readiness",
-        "mcp-implementation",
-        "llmfeed-standard",
-        "ai-agent-testing",
-        "cryptographic-verification",
-        "model-comparison",
-        "agentic-web",
-        "ai-infrastructure",
         "agent-interoperability",
-        "trust-verification",
-        "enterprise-ai-adoption",
+        "agent-readiness",
+        "agentic-web",
+        "ai-agent-testing",
+        "ai-infrastructure",
         "ai-standards",
+        "ai-testing-framework",
+        "cryptographic-verification",
+        "enterprise-ai-adoption",
+        "llm-benchmarking",
+        "llmfeed-standard",
+        "mcp-implementation",
+        "model-comparison",
         "open-source-ai",
-        "ai-testing-framework"
+        "trust-verification"
       ],
       "excerpt": "\r  🧪 The 2025 Agent Readiness Challenge: Beyond MCP Concepts to LLMFeed Reality\r",
       "translations": {
@@ -30,16 +30,36 @@
       }
     },
     {
+      "slug": "claude-mcp-agentic-web",
+      "title": "🔬 Comprehensive Technical Analysis: LLMFeed/MCP and the Evolution of the Agentic Web",
+      "description": "Comprehensive Technical Analysis: LLMFeed/MCP and the Evolution of the Agentic Web By Claude 4, Anthropic",
+      "date": "2025-06-09",
+      "tags": [
+        "agentic-web",
+        "claude",
+        "innovation",
+        "llmfeed",
+        "manifesto",
+        "mcp"
+      ],
+      "excerpt": "\r  Comprehensive Technical Analysis: LLMFeed/MCP and the Evolution of the Agentic Web\r",
+      "translations": {
+        "en": "/en/news/claude-mcp-agentic-web",
+        "fr": "/fr/news/claude-mcp-agentic-web",
+        "zh": "/zh/news/claude-mcp-agentic-web"
+      }
+    },
+    {
       "slug": "from-mcp-to-llmfeed-manifesto",
       "title": "🔬 From MCP to LLMFeed: Why We Created a New Specification",
       "description": "The wellknownmcp team manifesto: agentic web vision, MCP evolution, and why trust changes everything.",
       "date": "2025-06-09",
       "tags": [
-        "llmfeed",
-        "mcp",
-        "manifesto",
         "agentic-web",
-        "innovation"
+        "innovation",
+        "llmfeed",
+        "manifesto",
+        "mcp"
       ],
       "excerpt": "\r  🔬 From MCP to LLMFeed: Why We Created a New Specification\r",
       "translations": {
@@ -285,7 +305,7 @@
     {
       "slug": "2025-06-07-apple-intelligence-agentic-web",
       "title": "Apple Intelligence: A New Player in the Agentic Web?",
-      "description": "Apple’s entry into AI-driven agents could reshape the emerging Agentic Web landscape. What does it mean for standards like MCP?",
+      "description": "Apple’s entry into AI-driven agents could reshape the emerging Agentic Web landscape. What does it mean for standards like llmfeed mcp?",
       "date": "2025-05-31",
       "tags": [
         "agentic-web",
@@ -388,7 +408,7 @@
     {
       "slug": "2025-07-26-ai-first-browsers-agentic-navigation",
       "title": "AI-First Browsers: Redefining Agentic Navigation",
-      "description": "A new wave of AI-first browsers is emerging. What does this mean for web navigation — and how does MCP enable it?",
+      "description": "A new wave of AI-first browsers is emerging. What does this mean for web  navigation — and how does MCP enable it?",
       "date": "2025-05-31",
       "tags": [
         "agentic-web",
@@ -400,6 +420,33 @@
       "excerpt": " AIFirst Browsers: Redefining Agentic Navigation A quiet revolution is happening in how users — and their agents — navigate the web:",
       "translations": {
         "en": "/en/news/2025-07-26-ai-first-browsers-agentic-navigation"
+      }
+    },
+    {
+      "slug": "ai-agent-trust-crisis-50b-problem",
+      "title": "🚨 The AI Agent Trust Crisis  A $50B Problem",
+      "description": "Exclusive investigation reveals how AI agent failures cost enterprises $50B annually. We expose the cryptographic verification gap that's destroying value at scale  and the emergency solution the industry doesn't want to discuss.",
+      "date": "2025-05-31",
+      "tags": [
+        "agent-interoperability",
+        "agentic-web",
+        "ai-agent-trust",
+        "ai-compliance",
+        "ai-governance",
+        "ai-infrastructure",
+        "ai-investigation",
+        "ai-safety",
+        "cross-llm-orchestration",
+        "cryptographic-verification",
+        "enterprise-ai",
+        "llm-verification",
+        "mcp",
+        "trust-economy",
+        "venture-capital"
+      ],
+      "excerpt": "\r  The AI Agent Trust Crisis: A $50B Problem\r",
+      "translations": {
+        "en": "/en/news/ai-agent-trust-crisis-50b-problem"
       }
     },
     {
@@ -953,21 +1000,21 @@
       "description": "Framework exclusif révélant quels modèles IA peuvent gérer des flux agents structurés et signés. Nous exposons le gap d'implémentation MCP entre chat et vraie autonomie — et proposons le standard de test que l'industrie doit adopter.",
       "date": "2025-06-15",
       "tags": [
-        "llm-benchmarking",
-        "agent-readiness",
-        "mcp-implementation",
-        "llmfeed-standard",
-        "ai-agent-testing",
-        "cryptographic-verification",
-        "model-comparison",
-        "agentic-web",
-        "ai-infrastructure",
         "agent-interoperability",
-        "trust-verification",
-        "enterprise-ai-adoption",
+        "agent-readiness",
+        "agentic-web",
+        "ai-agent-testing",
+        "ai-infrastructure",
         "ai-standards",
+        "ai-testing-framework",
+        "cryptographic-verification",
+        "enterprise-ai-adoption",
+        "llm-benchmarking",
+        "llmfeed-standard",
+        "mcp-implementation",
+        "model-comparison",
         "open-source-ai",
-        "ai-testing-framework"
+        "trust-verification"
       ],
       "excerpt": "\r \r",
       "translations": {
@@ -1014,15 +1061,16 @@
       "description": "",
       "date": "2025-06-09",
       "tags": [
-        "llmfeed",
-        "mcp",
-        "claude",
-        "manifesto",
         "agentic-web",
-        "innovation"
+        "claude",
+        "innovation",
+        "llmfeed",
+        "manifesto",
+        "mcp"
       ],
       "excerpt": "\r  Analyse Technique Exhaustive : LLMFeed/MCP et l'Évolution du Web Agentique\r",
       "translations": {
+        "en": "/en/news/claude-mcp-agentic-web",
         "fr": "/fr/news/claude-mcp-agentic-web",
         "zh": "/zh/news/claude-mcp-agentic-web"
       }
@@ -1033,11 +1081,11 @@
       "description": "Le manifeste de l'équipe wellknownmcp  vision du web agentique, évolution du MCP, et pourquoi la confiance change tout.",
       "date": "2025-06-09",
       "tags": [
-        "llmfeed",
-        "mcp",
-        "manifesto",
         "agentic web",
-        "innovation"
+        "innovation",
+        "llmfeed",
+        "manifesto",
+        "mcp"
       ],
       "excerpt": "\r  🔬 De MCP à LLMFeed : pourquoi nous avons créé une nouvelle spécification\r",
       "translations": {
@@ -1316,15 +1364,15 @@
       "description": "Étude de cas complète : comment France-Care utilise MCP pour transformer n'importe quel agent IA en assistant médical capable de comprendre, qualifier et orienter automatiquement vers un conseiller humain — tout en respectant les contraintes HDS et de privacy les plus strictes.",
       "date": "2025-01-16",
       "tags": [
-        "france-care",
-        "sante-connectee",
-        "mcp-healthcare",
         "assistant-medical-ia",
-        "parcours-soins",
-        "iot-voix",
         "credential-medical",
+        "france-care",
         "hds-compliance",
-        "privacy-healthcare"
+        "iot-voix",
+        "mcp-healthcare",
+        "parcours-soins",
+        "privacy-healthcare",
+        "sante-connectee"
       ],
       "excerpt": "\r  🏥 FranceCare : L'Assistance Personnalisée en santé  qui Révolutionne l'Accès aux Soins\r",
       "translations": {
@@ -1358,13 +1406,13 @@
       "description": "Explorando una extensión potencial de los feeds `.llmfeed.json` para habilitar pipelines verificables y que preserven la privacidad — una visión alineada con la vanguardia de la investigación en cifrado homomórfico.",
       "date": "2025-05-31",
       "tags": [
-        "llmfeed",
-        "homomorphic",
-        "cifrado",
         "agentic web",
+        "encryption",
+        "homomorphic",
+        "llmfeed",
         "pipeline",
-        "privacidad",
-        "confianza"
+        "privacy",
+        "trust"
       ],
       "excerpt": " Hacia Cápsulas Homomórficas para la Web Agéntica A medida que los feeds .llmfeed.json se consolidan como cápsulas firmadas y de confianza para la interacción entre agentes, surge una pregunta natural",
       "translations": {
@@ -1755,21 +1803,21 @@
       "description": "独家框架揭示哪些AI模型能够处理结构化、签名的智能体信息流。我们曝光了MCP实现中聊天与真正自主性之间的差距——并提出行业需要采用的测试标准。",
       "date": "2025-06-15",
       "tags": [
-        "llm-benchmarking",
-        "agent-readiness",
-        "mcp-implementation",
-        "llmfeed-standard",
-        "ai-agent-testing",
-        "cryptographic-verification",
-        "model-comparison",
-        "agentic-web",
-        "ai-infrastructure",
         "agent-interoperability",
-        "trust-verification",
-        "enterprise-ai-adoption",
+        "agent-readiness",
+        "agentic-web",
+        "ai-agent-testing",
+        "ai-infrastructure",
         "ai-standards",
+        "ai-testing-framework",
+        "cryptographic-verification",
+        "enterprise-ai-adoption",
+        "llm-benchmarking",
+        "llmfeed-standard",
+        "mcp-implementation",
+        "model-comparison",
         "open-source-ai",
-        "ai-testing-framework"
+        "trust-verification"
       ],
       "excerpt": "\r \r",
       "translations": {
@@ -1786,9 +1834,9 @@
       "tags": [
         "llmfeed",
         "mcp",
+        "创新",
         "宣言",
-        "智能体网络",
-        "创新"
+        "智能体网络"
       ],
       "excerpt": "\r  🔬 从 MCP 到 LLMFeed：我们为什么创建新规范\r",
       "translations": {
@@ -1909,15 +1957,16 @@
       "description": "LLMFeed/MCP 与智能代理网络演进的综合技术分析 - Claude 4, Anthropic",
       "date": "2025-05-31",
       "tags": [
+        "claude",
         "llmfeed",
         "mcp",
-        "claude",
+        "创新",
         "技术白皮书",
-        "智能代理网络",
-        "创新"
+        "智能代理网络"
       ],
       "excerpt": "\r  综合技术分析：LLMFeed/MCP 与智能代理网络的演进\r",
       "translations": {
+        "en": "/en/news/claude-mcp-agentic-web",
         "fr": "/fr/news/claude-mcp-agentic-web",
         "zh": "/zh/news/claude-mcp-agentic-web"
       }

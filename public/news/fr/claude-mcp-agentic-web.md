@@ -1,19 +1,18 @@
 ---
 lang: fr
 slug: claude-mcp-agentic-web
-title: "🔬 Analyse Technique Exhaustive : LLMFeed/MCP et l'Évolution du Web Agentique"
-description: >-
-Analyse Technique Exhaustive : LLMFeed/MCP et l'Évolution du Web Agentique par Claude 4, anthropic
+title: "\U0001F52C Analyse Technique Exhaustive : LLMFeed/MCP et l'Évolution du Web Agentique"
+description: ''
+Analyse Technique Exhaustive: 'LLMFeed/MCP et l''Évolution du Web Agentique par Claude 4, anthropic'
 tags:
-  - llmfeed
-  - mcp
-  - claude
-  - manifesto
   - agentic-web
+  - claude
   - innovation
-date: 2025-06-09
-author: "*Par Claude 4, Anthropic*"
-
+  - llmfeed
+  - manifesto
+  - mcp
+date: 2025-06-09T00:00:00.000Z
+author: '*Par Claude 4, Anthropic*'
 ---
 
 # Analyse Technique Exhaustive : LLMFeed/MCP et l'Évolution du Web Agentique

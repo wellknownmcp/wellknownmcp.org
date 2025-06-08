@@ -4,23 +4,24 @@
         <title>News (es) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/es/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Sat, 07 Jun 2025 07:00:27 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Jun 2025 13:17:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>es</language>
         <copyright>© 2025 WellKnownMCP</copyright>
-        <item>
-            <title><![CDATA[homomorphic-capsules]]></title>
-            <link>https://wellknownmcp.org/es/news/homomorphic-capsules</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/es/news/homomorphic-capsules</guid>
-            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
-        </item>
         <item>
             <title><![CDATA[Cómo hacer que tu sitio sea compatible con agentes de IA mediante llmfeed.json]]></title>
             <link>https://wellknownmcp.org/es/news/how-to-make-your-site-agent-friendly</link>
             <guid isPermaLink="false">https://wellknownmcp.org/es/news/how-to-make-your-site-agent-friendly</guid>
             <pubDate>Thu, 05 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Una guía práctica para exponer un archivo llmfeed.json confiable que ayude a los agentes de IA y LLM a comprender y representar correctamente tu contenido.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Hacia Cápsulas Homomórficas para la Web Agéntica]]></title>
+            <link>https://wellknownmcp.org/es/news/homomorphic-capsules</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/es/news/homomorphic-capsules</guid>
+            <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Explorando una extensión potencial de los feeds `.llmfeed.json` para habilitar pipelines verificables y que preserven la privacidad — una visión alineada con la vanguardia de la investigación en cifrado homomórfico.]]></description>
         </item>
         <item>
             <title><![CDATA[Por dónde empezar]]></title>

@@ -1,46 +1,49 @@
 ---
 lang: fr
 slug: llm-agent-readiness-framework-2025
-title: "🧪 Le Défi Agent IA 2025 : Quels LLM Peuvent Vraiment Construire le Web Agentique ?"
+title: "\U0001F9EA Le Défi Agent IA 2025 : Quels LLM Peuvent Vraiment Construire le Web Agentique ?"
 description: >-
-  Framework exclusif révélant quels modèles IA peuvent gérer des flux agents structurés et signés. Nous exposons le gap d'implémentation MCP entre chat et vraie autonomie — et proposons le standard de test que l'industrie doit adopter.
+  Framework exclusif révélant quels modèles IA peuvent gérer des flux agents
+  structurés et signés. Nous exposons le gap d'implémentation MCP entre chat et
+  vraie autonomie — et proposons le standard de test que l'industrie doit
+  adopter.
 tags:
-  - llm-benchmarking
-  - agent-readiness
-  - mcp-implementation
-  - llmfeed-standard
-  - ai-agent-testing
-  - cryptographic-verification
-  - model-comparison
-  - agentic-web
-  - ai-infrastructure
   - agent-interoperability
-  - trust-verification
-  - enterprise-ai-adoption
+  - agent-readiness
+  - agentic-web
+  - ai-agent-testing
+  - ai-infrastructure
   - ai-standards
-  - open-source-ai
   - ai-testing-framework
-date: 2025-06-15
-author: "wellknownmcp"
+  - cryptographic-verification
+  - enterprise-ai-adoption
+  - llm-benchmarking
+  - llmfeed-standard
+  - mcp-implementation
+  - model-comparison
+  - open-source-ai
+  - trust-verification
+date: 2025-06-15T00:00:00.000Z
+author: wellknownmcp
 target_audience:
-  - "Chercheurs Labs IA et Développeurs de Modèles"
-  - "Architectes IA Entreprise et DSI"
-  - "Constructeurs de Frameworks d'Agents"
-  - "Équipes Investissement et Stratégie IA"
-reading_time: "16 min"
-framework_release: "Protocole de préparation agents en 7 tests"
-implementation_timeline: "Rejoindre l'écosystème en 30 jours, tests complets en 90 jours"
-strategic_value: "Avantage first-mover dans l'infrastructure agent-ready"
-call_to_action: "wellknownmcp.org/join"
-article_type: "framework-technique"
-prerequisites: 
-  - "Compréhension des capacités LLM"
-  - "Familiarité avec l'intégration API"
-  - "Connaissances de base en vérification cryptographique"
+  - Chercheurs Labs IA et Développeurs de Modèles
+  - Architectes IA Entreprise et DSI
+  - Constructeurs de Frameworks d'Agents
+  - Équipes Investissement et Stratégie IA
+reading_time: 16 min
+framework_release: Protocole de préparation agents en 7 tests
+implementation_timeline: 'Rejoindre l''écosystème en 30 jours, tests complets en 90 jours'
+strategic_value: Avantage first-mover dans l'infrastructure agent-ready
+call_to_action: wellknownmcp.org/join
+article_type: framework-technique
+prerequisites:
+  - Compréhension des capacités LLM
+  - Familiarité avec l'intégration API
+  - Connaissances de base en vérification cryptographique
 related_standards:
-  - "Model Context Protocol (Anthropic)"
-  - "Spécification LLMFeed JSON"
-  - "Framework de Certification LLMCA"
+  - Model Context Protocol (Anthropic)
+  - Spécification LLMFeed JSON
+  - Framework de Certification LLMCA
 ---
 ```
 

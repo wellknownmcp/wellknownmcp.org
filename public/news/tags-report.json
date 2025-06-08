@@ -2,19 +2,19 @@
   "global": [
     {
       "tag": "llmfeed",
-      "count": 85
+      "count": 92
     },
     {
       "tag": "mcp",
-      "count": 45
+      "count": 52
     },
     {
       "tag": "trust",
-      "count": 30
+      "count": 31
     },
     {
       "tag": "agentic-web",
-      "count": 21
+      "count": 28
     },
     {
       "tag": "ai-agents",
@@ -31,6 +31,10 @@
     {
       "tag": "llm",
       "count": 12
+    },
+    {
+      "tag": "manifesto",
+      "count": 11
     },
     {
       "tag": "well-known",
@@ -61,7 +65,7 @@
       "count": 8
     },
     {
-      "tag": "manifesto",
+      "tag": "ai-standards",
       "count": 7
     },
     {
@@ -77,11 +81,27 @@
       "count": 6
     },
     {
+      "tag": "agentic web",
+      "count": 6
+    },
+    {
+      "tag": "claude",
+      "count": 6
+    },
+    {
       "tag": "structure",
       "count": 6
     },
     {
       "tag": "responsibility",
+      "count": 5
+    },
+    {
+      "tag": "homomorphic",
+      "count": 5
+    },
+    {
+      "tag": "pipeline",
       "count": 5
     },
     {
@@ -105,19 +125,19 @@
       "count": 4
     },
     {
-      "tag": "agentic web",
+      "tag": "agent-interoperability",
       "count": 4
     },
     {
-      "tag": "homomorphic",
+      "tag": "ai-infrastructure",
       "count": 4
     },
     {
-      "tag": "pipeline",
+      "tag": "cryptographic-verification",
       "count": 4
     },
     {
-      "tag": "ai-standards",
+      "tag": "innovation",
       "count": 4
     },
     {
@@ -141,11 +161,55 @@
       "count": 4
     },
     {
-      "tag": "claude",
+      "tag": "seo",
       "count": 3
     },
     {
-      "tag": "seo",
+      "tag": "encryption",
+      "count": 3
+    },
+    {
+      "tag": "privacy",
+      "count": 3
+    },
+    {
+      "tag": "agent-readiness",
+      "count": 3
+    },
+    {
+      "tag": "ai-agent-testing",
+      "count": 3
+    },
+    {
+      "tag": "ai-testing-framework",
+      "count": 3
+    },
+    {
+      "tag": "enterprise-ai-adoption",
+      "count": 3
+    },
+    {
+      "tag": "llm-benchmarking",
+      "count": 3
+    },
+    {
+      "tag": "llmfeed-standard",
+      "count": 3
+    },
+    {
+      "tag": "mcp-implementation",
+      "count": 3
+    },
+    {
+      "tag": "model-comparison",
+      "count": 3
+    },
+    {
+      "tag": "open-source-ai",
+      "count": 3
+    },
+    {
+      "tag": "trust-verification",
       "count": 3
     },
     {
@@ -158,14 +222,6 @@
     },
     {
       "tag": "aiovsseo",
-      "count": 2
-    },
-    {
-      "tag": "encryption",
-      "count": 2
-    },
-    {
-      "tag": "privacy",
       "count": 2
     },
     {
@@ -245,6 +301,10 @@
       "count": 2
     },
     {
+      "tag": "创新",
+      "count": 2
+    },
+    {
       "tag": "تشفير",
       "count": 1
     },
@@ -293,6 +353,46 @@
       "count": 1
     },
     {
+      "tag": "ai-agent-trust",
+      "count": 1
+    },
+    {
+      "tag": "ai-compliance",
+      "count": 1
+    },
+    {
+      "tag": "ai-governance",
+      "count": 1
+    },
+    {
+      "tag": "ai-investigation",
+      "count": 1
+    },
+    {
+      "tag": "ai-safety",
+      "count": 1
+    },
+    {
+      "tag": "cross-llm-orchestration",
+      "count": 1
+    },
+    {
+      "tag": "enterprise-ai",
+      "count": 1
+    },
+    {
+      "tag": "llm-verification",
+      "count": 1
+    },
+    {
+      "tag": "trust-economy",
+      "count": 1
+    },
+    {
+      "tag": "venture-capital",
+      "count": 1
+    },
+    {
       "tag": "ux",
       "count": 1
     },
@@ -333,7 +433,59 @@
       "count": 1
     },
     {
+      "tag": "assistant-medical-ia",
+      "count": 1
+    },
+    {
+      "tag": "credential-medical",
+      "count": 1
+    },
+    {
+      "tag": "france-care",
+      "count": 1
+    },
+    {
+      "tag": "hds-compliance",
+      "count": 1
+    },
+    {
+      "tag": "iot-voix",
+      "count": 1
+    },
+    {
+      "tag": "mcp-healthcare",
+      "count": 1
+    },
+    {
+      "tag": "parcours-soins",
+      "count": 1
+    },
+    {
+      "tag": "privacy-healthcare",
+      "count": 1
+    },
+    {
+      "tag": "sante-connectee",
+      "count": 1
+    },
+    {
       "tag": "open-source",
+      "count": 1
+    },
+    {
+      "tag": "技术白皮书",
+      "count": 1
+    },
+    {
+      "tag": "智能代理网络",
+      "count": 1
+    },
+    {
+      "tag": "宣言",
+      "count": 1
+    },
+    {
+      "tag": "智能体网络",
       "count": 1
     },
     {
@@ -427,19 +579,19 @@
     "en": [
       {
         "tag": "mcp",
-        "count": 31
+        "count": 34
       },
       {
         "tag": "llmfeed",
-        "count": 26
+        "count": 28
+      },
+      {
+        "tag": "agentic-web",
+        "count": 21
       },
       {
         "tag": "trust",
         "count": 20
-      },
-      {
-        "tag": "agentic-web",
-        "count": 17
       },
       {
         "tag": "ai-agents",
@@ -466,6 +618,14 @@
         "count": 6
       },
       {
+        "tag": "ai-standards",
+        "count": 4
+      },
+      {
+        "tag": "claude",
+        "count": 4
+      },
+      {
         "tag": "signature",
         "count": 4
       },
@@ -482,15 +642,11 @@
         "count": 4
       },
       {
-        "tag": "ai-standards",
-        "count": 3
-      },
-      {
-        "tag": "claude",
-        "count": 3
-      },
-      {
         "tag": "open-standards",
+        "count": 3
+      },
+      {
+        "tag": "manifesto",
         "count": 3
       },
       {
@@ -506,7 +662,23 @@
         "count": 2
       },
       {
+        "tag": "agent-interoperability",
+        "count": 2
+      },
+      {
+        "tag": "ai-infrastructure",
+        "count": 2
+      },
+      {
+        "tag": "cryptographic-verification",
+        "count": 2
+      },
+      {
         "tag": "manual",
+        "count": 2
+      },
+      {
+        "tag": "innovation",
         "count": 2
       },
       {
@@ -558,6 +730,46 @@
         "count": 1
       },
       {
+        "tag": "ai-agent-trust",
+        "count": 1
+      },
+      {
+        "tag": "ai-compliance",
+        "count": 1
+      },
+      {
+        "tag": "ai-governance",
+        "count": 1
+      },
+      {
+        "tag": "ai-investigation",
+        "count": 1
+      },
+      {
+        "tag": "ai-safety",
+        "count": 1
+      },
+      {
+        "tag": "cross-llm-orchestration",
+        "count": 1
+      },
+      {
+        "tag": "enterprise-ai",
+        "count": 1
+      },
+      {
+        "tag": "llm-verification",
+        "count": 1
+      },
+      {
+        "tag": "trust-economy",
+        "count": 1
+      },
+      {
+        "tag": "venture-capital",
+        "count": 1
+      },
+      {
         "tag": "ux",
         "count": 1
       },
@@ -598,6 +810,46 @@
         "count": 1
       },
       {
+        "tag": "agent-readiness",
+        "count": 1
+      },
+      {
+        "tag": "ai-agent-testing",
+        "count": 1
+      },
+      {
+        "tag": "ai-testing-framework",
+        "count": 1
+      },
+      {
+        "tag": "enterprise-ai-adoption",
+        "count": 1
+      },
+      {
+        "tag": "llm-benchmarking",
+        "count": 1
+      },
+      {
+        "tag": "llmfeed-standard",
+        "count": 1
+      },
+      {
+        "tag": "mcp-implementation",
+        "count": 1
+      },
+      {
+        "tag": "model-comparison",
+        "count": 1
+      },
+      {
+        "tag": "open-source-ai",
+        "count": 1
+      },
+      {
+        "tag": "trust-verification",
+        "count": 1
+      },
+      {
         "tag": "structure",
         "count": 1
       },
@@ -619,10 +871,6 @@
       },
       {
         "tag": "ethics",
-        "count": 1
-      },
-      {
-        "tag": "manifesto",
         "count": 1
       },
       {
@@ -717,7 +965,7 @@
     "es": [
       {
         "tag": "llmfeed",
-        "count": 9
+        "count": 10
       },
       {
         "tag": "core",
@@ -733,6 +981,10 @@
       },
       {
         "tag": "ethics",
+        "count": 2
+      },
+      {
+        "tag": "trust",
         "count": 2
       },
       {
@@ -752,7 +1004,23 @@
         "count": 1
       },
       {
-        "tag": "trust",
+        "tag": "agentic web",
+        "count": 1
+      },
+      {
+        "tag": "encryption",
+        "count": 1
+      },
+      {
+        "tag": "homomorphic",
+        "count": 1
+      },
+      {
+        "tag": "pipeline",
+        "count": 1
+      },
+      {
+        "tag": "privacy",
         "count": 1
       },
       {
@@ -795,11 +1063,15 @@
     "fr": [
       {
         "tag": "llmfeed",
-        "count": 17
+        "count": 19
       },
       {
         "tag": "ia-marche-francais",
         "count": 8
+      },
+      {
+        "tag": "mcp",
+        "count": 5
       },
       {
         "tag": "certification-ia",
@@ -818,7 +1090,7 @@
         "count": 3
       },
       {
-        "tag": "mcp",
+        "tag": "manifesto",
         "count": 3
       },
       {
@@ -834,7 +1106,23 @@
         "count": 2
       },
       {
+        "tag": "agentic-web",
+        "count": 2
+      },
+      {
+        "tag": "innovation",
+        "count": 2
+      },
+      {
+        "tag": "agentic web",
+        "count": 2
+      },
+      {
         "tag": "ai-act",
+        "count": 1
+      },
+      {
+        "tag": "claude",
         "count": 1
       },
       {
@@ -846,7 +1134,39 @@
         "count": 1
       },
       {
-        "tag": "agentic web",
+        "tag": "assistant-medical-ia",
+        "count": 1
+      },
+      {
+        "tag": "credential-medical",
+        "count": 1
+      },
+      {
+        "tag": "france-care",
+        "count": 1
+      },
+      {
+        "tag": "hds-compliance",
+        "count": 1
+      },
+      {
+        "tag": "iot-voix",
+        "count": 1
+      },
+      {
+        "tag": "mcp-healthcare",
+        "count": 1
+      },
+      {
+        "tag": "parcours-soins",
+        "count": 1
+      },
+      {
+        "tag": "privacy-healthcare",
+        "count": 1
+      },
+      {
+        "tag": "sante-connectee",
         "count": 1
       },
       {
@@ -898,15 +1218,67 @@
         "count": 1
       },
       {
+        "tag": "agent-interoperability",
+        "count": 1
+      },
+      {
+        "tag": "agent-readiness",
+        "count": 1
+      },
+      {
+        "tag": "ai-agent-testing",
+        "count": 1
+      },
+      {
+        "tag": "ai-infrastructure",
+        "count": 1
+      },
+      {
+        "tag": "ai-standards",
+        "count": 1
+      },
+      {
+        "tag": "ai-testing-framework",
+        "count": 1
+      },
+      {
+        "tag": "cryptographic-verification",
+        "count": 1
+      },
+      {
+        "tag": "enterprise-ai-adoption",
+        "count": 1
+      },
+      {
+        "tag": "llm-benchmarking",
+        "count": 1
+      },
+      {
+        "tag": "llmfeed-standard",
+        "count": 1
+      },
+      {
+        "tag": "mcp-implementation",
+        "count": 1
+      },
+      {
+        "tag": "model-comparison",
+        "count": 1
+      },
+      {
+        "tag": "open-source-ai",
+        "count": 1
+      },
+      {
+        "tag": "trust-verification",
+        "count": 1
+      },
+      {
         "tag": "structure",
         "count": 1
       },
       {
         "tag": "ethics",
-        "count": 1
-      },
-      {
-        "tag": "manifesto",
         "count": 1
       },
       {
@@ -1037,19 +1409,19 @@
     "zh": [
       {
         "tag": "llmfeed",
-        "count": 9
+        "count": 11
       },
       {
         "tag": "mcp",
-        "count": 7
+        "count": 9
+      },
+      {
+        "tag": "agentic-web",
+        "count": 4
       },
       {
         "tag": "trust",
         "count": 4
-      },
-      {
-        "tag": "agentic-web",
-        "count": 3
       },
       {
         "tag": "core",
@@ -1064,11 +1436,19 @@
         "count": 2
       },
       {
+        "tag": "创新",
+        "count": 2
+      },
+      {
         "tag": "ethics",
         "count": 2
       },
       {
         "tag": "llmca",
+        "count": 2
+      },
+      {
+        "tag": "ai-standards",
         "count": 2
       },
       {
@@ -1088,6 +1468,18 @@
         "count": 1
       },
       {
+        "tag": "claude",
+        "count": 1
+      },
+      {
+        "tag": "技术白皮书",
+        "count": 1
+      },
+      {
+        "tag": "智能代理网络",
+        "count": 1
+      },
+      {
         "tag": "responsibility",
         "count": 1
       },
@@ -1101,6 +1493,14 @@
       },
       {
         "tag": "developers",
+        "count": 1
+      },
+      {
+        "tag": "宣言",
+        "count": 1
+      },
+      {
+        "tag": "智能体网络",
         "count": 1
       },
       {
@@ -1128,6 +1528,58 @@
         "count": 1
       },
       {
+        "tag": "agent-interoperability",
+        "count": 1
+      },
+      {
+        "tag": "agent-readiness",
+        "count": 1
+      },
+      {
+        "tag": "ai-agent-testing",
+        "count": 1
+      },
+      {
+        "tag": "ai-infrastructure",
+        "count": 1
+      },
+      {
+        "tag": "ai-testing-framework",
+        "count": 1
+      },
+      {
+        "tag": "cryptographic-verification",
+        "count": 1
+      },
+      {
+        "tag": "enterprise-ai-adoption",
+        "count": 1
+      },
+      {
+        "tag": "llm-benchmarking",
+        "count": 1
+      },
+      {
+        "tag": "llmfeed-standard",
+        "count": 1
+      },
+      {
+        "tag": "mcp-implementation",
+        "count": 1
+      },
+      {
+        "tag": "model-comparison",
+        "count": 1
+      },
+      {
+        "tag": "open-source-ai",
+        "count": 1
+      },
+      {
+        "tag": "trust-verification",
+        "count": 1
+      },
+      {
         "tag": "structure",
         "count": 1
       },
@@ -1137,10 +1589,6 @@
       },
       {
         "tag": "principles",
-        "count": 1
-      },
-      {
-        "tag": "ai-standards",
         "count": 1
       },
       {

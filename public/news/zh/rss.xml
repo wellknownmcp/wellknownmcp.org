@@ -4,16 +4,30 @@
         <title>News (zh) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/zh/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Sat, 07 Jun 2025 07:00:27 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Jun 2025 13:17:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh</language>
         <copyright>© 2025 WellKnownMCP</copyright>
         <item>
+            <title><![CDATA[🧪 2025年智能体就绪挑战：哪些大语言模型真正能构建智能体网络？]]></title>
+            <link>https://wellknownmcp.org/zh/news/llm-agent-readiness-framework-2025</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/llm-agent-readiness-framework-2025</guid>
+            <pubDate>Sun, 15 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[独家框架揭示哪些AI模型能够处理结构化、签名的智能体信息流。我们曝光了MCP实现中聊天与真正自主性之间的差距——并提出行业需要采用的测试标准。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[🔬 从 MCP 到 LLMFeed：我们为什么创建新规范]]></title>
+            <link>https://wellknownmcp.org/zh/news/from-mcp-to-llmfeed-manifesto</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/from-mcp-to-llmfeed-manifesto</guid>
+            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[wellknownmcp 团队宣言：智能体网络愿景、MCP 演进，以及信任如何改变一切。]]></description>
+        </item>
+        <item>
             <title><![CDATA[homomorphic-capsules]]></title>
             <link>https://wellknownmcp.org/zh/news/homomorphic-capsules</link>
             <guid isPermaLink="false">https://wellknownmcp.org/zh/news/homomorphic-capsules</guid>
-            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+            <pubDate>Fri, 06 Jun 2025 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[如何通过 llmfeed.json 让您的网站适应 AI 代理]]></title>
@@ -42,6 +56,13 @@
             <guid isPermaLink="false">https://wellknownmcp.org/zh/news/2025-06-28-llm-seo-vs-mcp</guid>
             <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[LLM 驱动的 SEO 正在兴起。它是否与 MCP 和开放代理网络（Agentic Web）的目标冲突，还是可以互补？]]></description>
+        </item>
+        <item>
+            <title><![CDATA[🔬 综合技术分析：LLMFeed/MCP 与智能代理网络的演进]]></title>
+            <link>https://wellknownmcp.org/zh/news/claude-mcp-agentic-web</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/claude-mcp-agentic-web</guid>
+            <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[LLMFeed/MCP 与智能代理网络演进的综合技术分析 - Claude 4, Anthropic]]></description>
         </item>
         <item>
             <title><![CDATA[从 SEO 到 AIO：aiovsseo.com 正式加入代理网络（Agentic Web）]]></title>

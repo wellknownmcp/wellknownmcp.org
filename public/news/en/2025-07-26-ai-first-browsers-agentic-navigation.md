@@ -8,9 +8,7 @@ tags:
   - mcp
   - navigation
 date: '2025-05-31'
-description: >-
-  A new wave of AI-first browsers is emerging. What does this mean for web
-  navigation — and how does MCP enable it?
+description:   A new wave of AI-first browsers is emerging. What does this mean for web  navigation — and how does MCP enable it?
 ---
 
 # AI-First Browsers: Redefining Agentic Navigation

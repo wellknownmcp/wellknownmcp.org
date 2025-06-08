@@ -10,6 +10,7 @@ tags:
 description: >-
   The web is evolving from chatbots to true autonomous agents. What does this
   mean for web architecture — and how does MCP fit in?
+date: 2025-06-09
 ---
 
 # From Chatbots to Autonomous Agents: The Web’s Next Evolution
