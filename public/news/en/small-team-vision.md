@@ -1,19 +1,18 @@
 ---
-title: "From Lab Innovation to Web Reality: How Small Teams Shape AI Standards"
+title: 'From Lab Innovation to Web Reality: How Small Teams Shape AI Standards'
 date: 2025-06-09
 tags:
-- anthropic
-- mcp
-- llmfeed
-- agentic-web
-- web-standards
-- grassroots
-- bottom-up
-- open-web
+  - anthropic
+  - mcp
+  - llmfeed
+  - agentic-web
+  - web-standards
+  - grassroots
+  - bottom-up
+  - open-web
 
- lang: en
- description: "How a small team's user-focused approach evolved Anthropic's MCP into a web-native protocol for the agentic future"
- 
+lang: en
+description: "How a small team's user-focused approach evolved Anthropic's MCP into a web-native protocol for the agentic future"
 ---
 
 # From Lab Innovation to Web Reality: How Small Teams Shape AI Standards
@@ -22,7 +21,7 @@ When Anthropic introduced the **Model Context Protocol (MCP)** in late 2024, it 
 
 But here's the thing about innovations from big AI labs: **they're often built for AI labs**.
 
-Meanwhile, a small team was asking different questions: *What do real developers need? How does this work on the actual web? Where's the trust layer?*
+Meanwhile, a small team was asking different questions: _What do real developers need? How does this work on the actual web? Where's the trust layer?_
 
 **Those questions led somewhere entirely different.**
 
@@ -46,15 +45,15 @@ But **for the actual web**, questions remained:
 
 **The gap wasn't technical — it was philosophical.**
 
-Labs think servers. **The web thinks files.**  
-Labs think controlled environments. **The web thinks open standards.**  
+Labs think servers. **The web thinks files.**
+Labs think controlled environments. **The web thinks open standards.**
 Labs think single-vendor. **The web thinks interoperability.**
 
 ---
 
 ## 🛠 Bottom-Up Innovation: LLMFeed
 
-A small team, without AI lab constraints, asked: *What would MCP look like if it was designed for the web first?*
+A small team, without AI lab constraints, asked: _What would MCP look like if it was designed for the web first?_
 
 **No enterprise sales targets. No vendor lock-in concerns. Just: what do developers actually need?**
 
@@ -66,7 +65,7 @@ The answer: **LLMFeed** — MCP principles, web-native execution.
 
 ```
 /.well-known/mcp.llmfeed.json          # Main service declaration
-/.well-known/llm-index.llmfeed.json    # Site-wide feed directory  
+/.well-known/llm-index.llmfeed.json    # Site-wide feed directory
 /.well-known/capabilities.llmfeed.json # API capabilities
 ```
 
@@ -165,8 +164,8 @@ In a world of autonomous agents, **how do you verify authenticity**?
 
 ### **Usage-First Thinking**
 
-Big labs ask: *"How do we integrate our model with tools?"*  
-Small teams ask: *"How does a WordPress blog become agent-ready?"*
+Big labs ask: _"How do we integrate our model with tools?"_
+Small teams ask: _"How does a WordPress blog become agent-ready?"_
 
 **That difference in perspective changes everything.**
 
@@ -285,7 +284,7 @@ Whether you're at:
 
 ---
 
-*Building with original MCP? Exploring LLMFeed? Creating something new?*  
-*Join the conversation: [wellknownmcp.org](https://wellknownmcp.org/) | [MCP docs](https://docs.anthropic.com/)*
+_Building with original MCP? Exploring LLMFeed? Creating something new?_
+_Join the conversation: [wellknownmcp.org](https://wellknownmcp.org/) | [MCP docs](https://docs.anthropic.com/)_
 
 **The web is big enough for bold ideas — especially from unexpected places.**

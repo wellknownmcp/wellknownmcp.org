@@ -30,6 +30,23 @@
       }
     },
     {
+      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
+      "title": "From Chatbots to Autonomous Agents: The Web’s Next Evolution",
+      "description": "The web is evolving from chatbots to true autonomous agents. What does this mean for web architecture — and how does MCP fit in?",
+      "date": "2025-06-09",
+      "tags": [
+        "agentic-web",
+        "ai-agents",
+        "autonomous-agents",
+        "chatbots",
+        "mcp"
+      ],
+      "excerpt": " From Chatbots to Autonomous Agents: The Web’s Next Evolution For years, the term chatbot dominated conversations about AI on the web.",
+      "translations": {
+        "en": "/en/news/2025-07-12-from-chatbots-to-autonomous-agents"
+      }
+    },
+    {
       "slug": "claude-mcp-agentic-web",
       "title": "🔬 Comprehensive Technical Analysis: LLMFeed/MCP and the Evolution of the Agentic Web",
       "description": "Comprehensive Technical Analysis: LLMFeed/MCP and the Evolution of the Agentic Web By Claude 4, Anthropic",
@@ -50,6 +67,30 @@
       }
     },
     {
+      "slug": "faq",
+      "title": "❓ Comprehensive FAQ — MCP & LLMFeed",
+      "description": "Complete guide to understanding MCP, LLMFeed, trust, implementation, and the agentic web ecosystem.",
+      "date": "2025-06-09",
+      "tags": [
+        "agentic-web",
+        "llmfeed",
+        "mcp",
+        "trust",
+        "implementation",
+        "ecosystem"
+      ],
+      "excerpt": " ❓ Comprehensive FAQ — MCP & LLMFeed  🚀 Getting Started",
+      "translations": {
+        "en": "/en/news/faq",
+        "fr": "/fr/news/faq",
+        "es": "/es/news/faq",
+        "hi": "/hi/news/faq",
+        "zh": "/zh/news/faq",
+        "ar": "/ar/news/faq",
+        "uk": "/uk/news/faq"
+      }
+    },
+    {
       "slug": "from-mcp-to-llmfeed-manifesto",
       "title": "🔬 From MCP to LLMFeed: Why We Created a New Specification",
       "description": "The wellknownmcp team manifesto: agentic web vision, MCP evolution, and why trust changes everything.",
@@ -66,6 +107,53 @@
         "en": "/en/news/from-mcp-to-llmfeed-manifesto",
         "fr": "/fr/news/from-mcp-to-llmfeed-manifesto",
         "zh": "/zh/news/from-mcp-to-llmfeed-manifesto"
+      }
+    },
+    {
+      "slug": "small-team-vision",
+      "title": "From Lab Innovation to Web Reality: How Small Teams Shape AI Standards",
+      "description": "How a small team's user-focused approach evolved Anthropic's MCP into a web-native protocol for the agentic future",
+      "date": "2025-06-09",
+      "tags": [
+        "anthropic",
+        "mcp",
+        "llmfeed",
+        "agentic-web",
+        "web-standards",
+        "grassroots",
+        "bottom-up",
+        "open-web"
+      ],
+      "excerpt": "\r  From Lab Innovation to Web Reality: How Small Teams Shape AI Standards\r",
+      "translations": {
+        "en": "/en/news/small-team-vision"
+      }
+    },
+    {
+      "slug": "exporttollm-button",
+      "title": "ExportToLLM: The Button That Ends Web Scraping",
+      "description": "Transform any content into agent-ready capsules with one click. Implementation guide, business impact, and viral adoption strategies for the button that bridges HTML and AI.",
+      "date": "2025-06-08",
+      "tags": [
+        "exporttollm",
+        "agent-ux",
+        "web-scraping-alternative",
+        "llmfeed-export",
+        "one-click-export",
+        "agent-ready-content",
+        "structured-data",
+        "clipboard-api",
+        "business-adoption",
+        "viral-strategy",
+        "content-export",
+        "ai-integration",
+        "mcp-implementation",
+        "developer-tools",
+        "platform-integration"
+      ],
+      "excerpt": " 📤 ExportToLLM: The Button That Ends Web Scraping Transforming any content into agentready capsules — one click at a time",
+      "translations": {
+        "en": "/en/news/exporttollm-button"
       }
     },
     {
@@ -108,14 +196,24 @@
       }
     },
     {
-      "slug": "seo-to-aio-research-framework-complete",
-      "title": "seo-to-aio-research-framework-complete",
-      "description": "",
+      "slug": "stop-guessing-start-declaring-mcp-vs-llm-arms-race",
+      "title": "Stop Guessing, Start Declaring: Why MCP Ends the LLM Arms Race",
+      "description": "The AI industry wastes billions on larger models to guess better. MCP offers a radical alternative: give the web a grammar to speak clearly. Here's how to implement it today.",
       "date": "2025-06-08",
-      "tags": [],
-      "excerpt": "yaml\r \r",
+      "tags": [
+        "mcp",
+        "llmfeed",
+        "ai-efficiency",
+        "web-grammar",
+        "agent-ready",
+        "declarative-web",
+        "llm-costs",
+        "trust-networks",
+        "implementation-guide"
+      ],
+      "excerpt": "\r  🎯 Stop Guessing, Start Declaring: Why MCP Ends the LLM Arms Race\r",
       "translations": {
-        "en": "/en/news/seo-to-aio-research-framework-complete"
+        "en": "/en/news/stop-guessing-start-declaring-mcp-vs-llm-arms-race"
       }
     },
     {
@@ -136,23 +234,6 @@
       "translations": {
         "en": "/en/news/llmfeed-ukraine-hybrid-warfare",
         "uk": "/uk/news/llmfeed-ukraine-hybrid-warfare"
-      }
-    },
-    {
-      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
-      "title": "From Chatbots to Autonomous Agents: The Web’s Next Evolution",
-      "description": "The web is evolving from chatbots to true autonomous agents. What does this mean for web architecture — and how does MCP fit in?",
-      "date": "2025-06-06",
-      "tags": [
-        "agentic-web",
-        "ai-agents",
-        "autonomous-agents",
-        "chatbots",
-        "mcp"
-      ],
-      "excerpt": " From Chatbots to Autonomous Agents: The Web’s Next Evolution For years, the term chatbot dominated conversations about AI on the web.",
-      "translations": {
-        "en": "/en/news/2025-07-12-from-chatbots-to-autonomous-agents"
       }
     },
     {
@@ -551,48 +632,6 @@
       }
     },
     {
-      "slug": "exporttollm-button",
-      "title": "📤 ExportToLLM: A Button That Talks to Agents",
-      "description": "Turn any page into an agent-readable capsule with a single button.",
-      "date": "2025-05-25",
-      "tags": [
-        "ai-agents",
-        "interoperability",
-        "llmfeed",
-        "mcp",
-        "trust",
-        "ux",
-        "web",
-        "well-known"
-      ],
-      "excerpt": " 📤 ExportToLLM: A Button That Talks to Agents  Why This Matters",
-      "translations": {
-        "en": "/en/news/exporttollm-button"
-      }
-    },
-    {
-      "slug": "faq",
-      "title": "❓ Frequently Asked Questions — MCP & LLMFeed",
-      "description": "Understand the key concepts, philosophy, and ecosystem of the Model Context Protocol (MCP).",
-      "date": "2025-05-25",
-      "tags": [
-        "agentic-web",
-        "llmfeed",
-        "mcp",
-        "trust"
-      ],
-      "excerpt": " ❓ Frequently Asked Questions — MCP & LLMFeed  What is MCP in one sentence?",
-      "translations": {
-        "en": "/en/news/faq",
-        "fr": "/fr/news/faq",
-        "es": "/es/news/faq",
-        "hi": "/hi/news/faq",
-        "zh": "/zh/news/faq",
-        "ar": "/ar/news/faq",
-        "uk": "/uk/news/faq"
-      }
-    },
-    {
       "slug": "getting-started",
       "title": "🚀 Your First MCP Site in 3 Steps",
       "description": "Turn any site into an agent-aware node in under 5 minutes.",
@@ -634,7 +673,7 @@
       "description": "",
       "date": "2025-05-25",
       "tags": [],
-      "excerpt": "\r \r",
+      "excerpt": "\r You know what happens when you feed three structured .llmfeed.json files to the most advanced models on Earth? So did we — and we tried it.\r",
       "translations": {
         "en": "/en/news/llm-testimony-experiment"
       }
@@ -886,6 +925,24 @@
       }
     },
     {
+      "slug": "seo-to-aio-research-framework-complete",
+      "title": "🔬 From SEO to AIO: The $600B Research Opportunity",
+      "description": "The SEO industry faces disruption from agent-mediated discovery. We provide the complete implementation framework and research methodology — but need industry partners to validate the hypothesis.",
+      "date": "2025-05-16",
+      "tags": [
+        "aio-research",
+        "seo-transformation",
+        "agent-discovery",
+        "consulting-opportunity",
+        "market-analysis",
+        "wellknownmcp"
+      ],
+      "excerpt": "\r  🔬 From SEO to AIO: The $600B Research Opportunity\r",
+      "translations": {
+        "en": "/en/news/seo-to-aio-research-framework-complete"
+      }
+    },
+    {
       "slug": "about",
       "title": "About WellKnownMCP",
       "description": "An overview of the WellKnownMCP initiative, its purpose, and its goals.",
@@ -1076,6 +1133,30 @@
       }
     },
     {
+      "slug": "faq",
+      "title": "❓ FAQ Complète — MCP & LLMFeed",
+      "description": "Guide complet pour comprendre MCP, LLMFeed, la confiance, l'implémentation, et l'écosystème du web agentique.",
+      "date": "2025-06-09",
+      "tags": [
+        "web-agentique",
+        "llmfeed",
+        "mcp",
+        "confiance",
+        "implémentation",
+        "écosystème"
+      ],
+      "excerpt": " ❓ FAQ Complète — MCP & LLMFeed  🚀 Pour Commencer",
+      "translations": {
+        "en": "/en/news/faq",
+        "fr": "/fr/news/faq",
+        "es": "/es/news/faq",
+        "hi": "/hi/news/faq",
+        "zh": "/zh/news/faq",
+        "ar": "/ar/news/faq",
+        "uk": "/uk/news/faq"
+      }
+    },
+    {
       "slug": "from-mcp-to-llmfeed-manifesto",
       "title": "🔬 De MCP à LLMFeed : pourquoi nous avons créé une nouvelle spécification",
       "description": "Le manifeste de l'équipe wellknownmcp  vision du web agentique, évolution du MCP, et pourquoi la confiance change tout.",
@@ -1210,30 +1291,6 @@
         "zh": "/zh/news/begin",
         "ar": "/ar/news/begin",
         "uk": "/uk/news/begin"
-      }
-    },
-    {
-      "slug": "faq",
-      "title": "FAQ – MCP et LLMFeed",
-      "description": "Réponses aux questions fréquentes sur le protocole MCP et l’écosystème LLMFeed, y compris ses différences avec le MCP d’Anthropic.",
-      "date": "2025-05-21",
-      "tags": [
-        "ai-agents",
-        "anthropic",
-        "developers",
-        "llmfeed",
-        "mcp",
-        "trust"
-      ],
-      "excerpt": " ❓ Foire aux questions  🧠 GÉNÉRAL",
-      "translations": {
-        "en": "/en/news/faq",
-        "fr": "/fr/news/faq",
-        "es": "/es/news/faq",
-        "hi": "/hi/news/faq",
-        "zh": "/zh/news/faq",
-        "ar": "/ar/news/faq",
-        "uk": "/uk/news/faq"
       }
     },
     {
@@ -1827,6 +1884,30 @@
       }
     },
     {
+      "slug": "faq",
+      "title": "❓ 完整常见问题解答 — MCP & LLMFeed",
+      "description": "理解MCP、LLMFeed、信任机制、实现方式和智能体网络生态系统的完整指南。",
+      "date": "2025-06-09",
+      "tags": [
+        "智能体网络",
+        "llmfeed",
+        "mcp",
+        "信任机制",
+        "实现",
+        "生态系统"
+      ],
+      "excerpt": " ❓ 完整常见问题解答 — MCP & LLMFeed  🚀 入门指南",
+      "translations": {
+        "en": "/en/news/faq",
+        "fr": "/fr/news/faq",
+        "es": "/es/news/faq",
+        "hi": "/hi/news/faq",
+        "zh": "/zh/news/faq",
+        "ar": "/ar/news/faq",
+        "uk": "/uk/news/faq"
+      }
+    },
+    {
       "slug": "from-mcp-to-llmfeed-manifesto",
       "title": "🔬 从 MCP 到 LLMFeed：我们为什么创建新规范",
       "description": "wellknownmcp 团队宣言：智能体网络愿景、MCP 演进，以及信任如何改变一切。",
@@ -2009,30 +2090,6 @@
         "zh": "/zh/news/begin",
         "ar": "/ar/news/begin",
         "uk": "/uk/news/begin"
-      }
-    },
-    {
-      "slug": "faq",
-      "title": "常见问题解答 – MCP 与 LLMFeed",
-      "description": "关于模型上下文协议（MCP）及其生态系统 LLMFeed 的常见问题解答，包括其与 Anthropic MCP 的比较。",
-      "date": "2025-05-21",
-      "tags": [
-        "ai-agents",
-        "anthropic",
-        "developers",
-        "llmfeed",
-        "mcp",
-        "trust"
-      ],
-      "excerpt": " ❓ 常见问题解答  🧠 基本概念",
-      "translations": {
-        "en": "/en/news/faq",
-        "fr": "/fr/news/faq",
-        "es": "/es/news/faq",
-        "hi": "/hi/news/faq",
-        "zh": "/zh/news/faq",
-        "ar": "/ar/news/faq",
-        "uk": "/uk/news/faq"
       }
     },
     {

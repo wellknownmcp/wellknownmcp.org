@@ -4,17 +4,14 @@ slug: faq
 format: faq
 lang: fr
 date: 2025-06-09
-description: >-
-Guide complet pour comprendre MCP, LLMFeed, la confiance, l'implémentation, et l'écosystème du web agentique.
+description: "Guide complet pour comprendre MCP, LLMFeed, la confiance, l'implémentation, et l'écosystème du web agentique."
 tags:
-
-- web-agentique
-- llmfeed
-- mcp
-- confiance
-- implémentation
-- écosystème
-
+  - web-agentique
+  - llmfeed
+  - mcp
+  - confiance
+  - implémentation
+  - écosystème
 ---
 
 # ❓ FAQ Complète — MCP & LLMFeed
@@ -27,19 +24,19 @@ tags:
 
 C'est un protocole ouvert qui permet aux **agents basés sur des LLM** de comprendre **ce qu'un site propose**, **comment interagir**, et **quel niveau de confiance accorder** — via des feeds structurés, signés et déclaratifs.
 
-**Pensez-y comme** : *"robots.txt pour l'intention, HTTPS pour la confiance, mais conçu pour l'IA."*
+**Pensez-y comme** : _"robots.txt pour l'intention, HTTPS pour la confiance, mais conçu pour l'IA."_
 
 ### Qu'est-ce que LLMFeed ?
 
 C'est le **format JSON canonique** utilisé par MCP. La structure `.llmfeed.json` est :
 
-✅ Simple et lisible par l'humain  
-✅ Conçue pour être **compatible LLM**  
-✅ Composable et extensible  
-✅ Consciente de la confiance (signée, certifiable)  
+✅ Simple et lisible par l'humain
+✅ Conçue pour être **compatible LLM**
+✅ Composable et extensible
+✅ Consciente de la confiance (signée, certifiable)
 ✅ Déclarative, pas impérative
 
-**En d'autres termes** : *"Du JSON qui parle couramment IA."*
+**En d'autres termes** : _"Du JSON qui parle couramment IA."_
 
 ### Est-ce la même chose que le MCP d'Anthropic ?
 
@@ -54,7 +51,7 @@ C'est le **format JSON canonique** utilisé par MCP. La structure `.llmfeed.json
 
 **Ils sont complémentaires, pas concurrents.** Utilisez le MCP d'Anthropic pour les intégrations profondes, LLMFeed pour la découverte à l'échelle web.
 
-**Notre devise** : *"Anthropic a construit le moteur. Nous avons construit les autoroutes."*
+**Notre devise** : _"Anthropic a construit le moteur. Nous avons construit les autoroutes."_
 
 ### Qu'est-ce que le "Web Agentique" ?
 
@@ -62,25 +59,25 @@ Une vision émergente où les **agents basés sur des LLM** sont des citoyens de
 
 MCP fournit la **couche contextuelle** dont ces agents ont besoin pour opérer de manière sûre et transparente.
 
-**Pensez** : *"Le web, mais les agents n'ont plus à deviner ce que vous voulez dire."*
+**Pensez** : _"Le web, mais les agents n'ont plus à deviner ce que vous voulez dire."_
 
 ### Pourquoi `.well-known` et pas un plugin/SDK ?
 
 Parce que `.well-known` rend MCP :
 
-✅ **Découvrable** (emplacement standard)  
-✅ **Décentralisé** (pas de registre central)  
-✅ **Composable** (fonctionne avec l'architecture web existante)  
-✅ **Auditable indépendamment** (n'importe qui peut vérifier)  
+✅ **Découvrable** (emplacement standard)
+✅ **Décentralisé** (pas de registre central)
+✅ **Composable** (fonctionne avec l'architecture web existante)
+✅ **Auditable indépendamment** (n'importe qui peut vérifier)
 ✅ **Amélioration progressive** (fonctionne sans, mieux avec)
 
-**Notre principe** : *"Nous avons choisi les standards web plutôt que le vendor lock-in."*
+**Notre principe** : _"Nous avons choisi les standards web plutôt que le vendor lock-in."_
 
 ### Attendez, c'est quoi ce truc "I know kung fu" ?
 
 **Notre easter egg favori !** 🥋
 
-C'est un **test de compatibilité** caché dans nos feeds. Quand vous dites *"I know kung fu"* à un LLM qui a lu nos fichiers `.llmfeed.json`, il devrait répondre avec quelque chose qui prouve qu'il a compris la structure MCP.
+C'est un **test de compatibilité** caché dans nos feeds. Quand vous dites _"I know kung fu"_ à un LLM qui a lu nos fichiers `.llmfeed.json`, il devrait répondre avec quelque chose qui prouve qu'il a compris la structure MCP.
 
 **Pourquoi Matrix ?** Parce que comme Neo qui télécharge le kung fu, les LLM peuvent "télécharger" des connaissances structurées depuis nos feeds au lieu de deviner depuis le HTML.
 
@@ -90,7 +87,7 @@ C'est un **test de compatibilité** caché dans nos feeds. Quand vous dites *"I 
 2. Dites "I know kung fu"
 3. Voyez s'ils répondent avec du contenu conscient du MCP
 
-**C'est notre façon de tester** : *"Est-ce que ce LLM comprend vraiment les feeds structurés, ou fait-il semblant ?"*
+**C'est notre façon de tester** : _"Est-ce que ce LLM comprend vraiment les feeds structurés, ou fait-il semblant ?"_
 
 **Fait amusant** : GPT-4o a réussi ce test immédiatement. Claude a pris quelques essais. Gemini... on y travaille encore. 😄
 
@@ -115,8 +112,8 @@ C'est un **test de compatibilité** caché dans nos feeds. Quand vous dites *"I 
 ```javascript
 import { verifySignature } from '@wellknownmcp/client'
 
-const feed = await fetch('/.well-known/mcp.llmfeed.json').then(r => r.json())
-const publicKey = await fetch(feed.trust.public_key_hint).then(r => r.text())
+const feed = await fetch('/.well-known/mcp.llmfeed.json').then((r) => r.json())
+const publicKey = await fetch(feed.trust.public_key_hint).then((r) => r.text())
 
 const isValid = await verifySignature(feed, publicKey)
 // Retourne : true/false
@@ -156,7 +153,7 @@ Utilisez des **feeds délimités** et le type de feed `credential` :
     "key_hint": "abc123",
     "mcp_api": "/api/mcp?key=abc123",
     "allowed_intents": ["read_profile", "update_settings"],
-    "rate_limits": [{"path": "/api/*", "limit": 100, "period": "hour"}]
+    "rate_limits": [{ "path": "/api/*", "limit": 100, "period": "hour" }]
   }
 }
 ```
@@ -180,9 +177,9 @@ Déclarez les limites explicitement pour que les agents puissent les respecter :
 
 ### Et les CDN et la mise en cache ?
 
-✅ **Feeds statiques** : Cache agressif (1 heure+)  
-✅ **Feeds signés** : Cache jusqu'à expiration de la signature  
-✅ **Feeds dynamiques** : Utilisez les en-têtes `Cache-Control` appropriés  
+✅ **Feeds statiques** : Cache agressif (1 heure+)
+✅ **Feeds signés** : Cache jusqu'à expiration de la signature
+✅ **Feeds dynamiques** : Utilisez les en-têtes `Cache-Control` appropriés
 ✅ **Feeds credential** : Jamais de cache, toujours valider
 
 ---
@@ -191,9 +188,9 @@ Déclarez les limites explicitement pour que les agents puissent les respecter :
 
 ### Comment la confiance est-elle gérée ?
 
-✅ Chaque `.llmfeed.json` peut être **signé cryptographiquement**  
-✅ Les feeds peuvent être **certifiés** par des tiers (ex: LLMCA)  
-✅ Les **blocs signés** sont vérifiables par les agents  
+✅ Chaque `.llmfeed.json` peut être **signé cryptographiquement**
+✅ Les feeds peuvent être **certifiés** par des tiers (ex: LLMCA)
+✅ Les **blocs signés** sont vérifiables par les agents
 ✅ Le **scoring de confiance** aide les agents à prendre des décisions
 
 ### Et si quelqu'un falsifie mes feeds ?
@@ -205,7 +202,7 @@ Déclarez les limites explicitement pour que les agents puissent les respecter :
 - Les feeds falsifiés échoueront à la vérification
 - Les feeds certifiés ont des couches de vérification supplémentaires
 
-**Philosophie sécurité** : *"Fais confiance, mais vérifie. En fait, vérifie juste."*
+**Philosophie sécurité** : _"Fais confiance, mais vérifie. En fait, vérifie juste."_
 
 ### Comment révoquer une signature compromise ?
 
@@ -245,7 +242,7 @@ Les agents vérifient les listes de révocation avant de faire confiance aux sig
 
 **Révolutionnaire pour** : Santé, finance, juridique — les agents peuvent traiter des données sensibles sans exposition.
 
-**La vision** : *"Calcul sans révélation. Traitement sans regard indiscret."*
+**La vision** : _"Calcul sans révélation. Traitement sans regard indiscret."_
 
 ---
 
@@ -262,13 +259,13 @@ Les agents vérifient les listes de révocation avant de faire confiance aux sig
 
 ### Quels LLM supportent les feeds MCP nativement ?
 
-| LLM                 | Support Natif        | Vérification Signature     |
-| ------------------- | -------------------- | -------------------------- |
-| **Claude 3.5**      | ✅ Lit les feeds      | ⚠️ Conceptuel seulement    |
-| **GPT-4o**          | ✅ Support complet    | ✅ Peut vérifier signatures |
-| **Gemini 2.5**      | ✅ Lit les feeds      | ⚠️ Crypto limitée          |
+| LLM                 | Support Natif        | Vérification Signature      |
+| ------------------- | -------------------- | --------------------------- |
+| **Claude 3.5**      | ✅ Lit les feeds     | ⚠️ Conceptuel seulement     |
+| **GPT-4o**          | ✅ Support complet   | ✅ Peut vérifier signatures |
+| **Gemini 2.5**      | ✅ Lit les feeds     | ⚠️ Crypto limitée           |
 | **Mistral**         | ⚠️ Partiel           | ❌ Non                      |
-| **Modèles ouverts** | 🔧 Via bibliothèques | 🔧 Via bibliothèques       |
+| **Modèles ouverts** | 🔧 Via bibliothèques | 🔧 Via bibliothèques        |
 
 ### Y a-t-il des plugins WordPress/Shopify ?
 
@@ -307,19 +304,19 @@ Les agents vérifient les listes de révocation avant de faire confiance aux sig
 
 ### Est-ce que ça restera toujours gratuit ?
 
-**Protocole de base** : Toujours gratuit et open-source  
-**Outillage de base** : Toujours gratuit  
+**Protocole de base** : Toujours gratuit et open-source
+**Outillage de base** : Toujours gratuit
 **Services avancés** : Modèle freemium
 
 ### Comment prévenez-vous le vendor lock-in ?
 
-✅ **Spécification ouverte** (licence MIT)  
-✅ **Implémentations multiples** (pas qu'un seul vendor)  
-✅ **Technologies web standard** (JSON, HTTP, cryptographie)  
-✅ **Pas de registre central requis**  
+✅ **Spécification ouverte** (licence MIT)
+✅ **Implémentations multiples** (pas qu'un seul vendor)
+✅ **Technologies web standard** (JSON, HTTP, cryptographie)
+✅ **Pas de registre central requis**
 ✅ **Interopérable par conception**
 
-**Notre promesse** : *"Si nous disparaissons demain, le standard continue à vivre."*
+**Notre promesse** : _"Si nous disparaissons demain, le standard continue à vivre."_
 
 ### Dois-je implémenter ça maintenant ou attendre ?
 
@@ -335,7 +332,7 @@ Les agents vérifient les listes de révocation avant de faire confiance aux sig
 - Vous êtes averse au risque concernant les standards émergents
 - Votre cas d'usage n'implique pas d'agents IA
 
-**Réalité** : *"Le meilleur moment pour planter un arbre était il y a 20 ans. Le deuxième meilleur moment est maintenant."*
+**Réalité** : _"Le meilleur moment pour planter un arbre était il y a 20 ans. Le deuxième meilleur moment est maintenant."_
 
 ---
 
@@ -364,10 +361,10 @@ Pensez : Let's Encrypt pour HTTPS — ils certifient, ils ne contrôlent pas HTT
 
 ### Comment puis-je contribuer ?
 
-✅ **Proposer de nouveaux types de feed** via GitHub  
-✅ **Construire des outils** (parseurs, extensions, agents)  
-✅ **Aider à l'adoption** (écrire des tutoriels, donner des talks)  
-✅ **Rejoindre les groupes de travail** (certification, sécurité, standards)  
+✅ **Proposer de nouveaux types de feed** via GitHub
+✅ **Construire des outils** (parseurs, extensions, agents)
+✅ **Aider à l'adoption** (écrire des tutoriels, donner des talks)
+✅ **Rejoindre les groupes de travail** (certification, sécurité, standards)
 ✅ **Implémenter dans vos projets** et partager les apprentissages
 
 ---
@@ -395,9 +392,9 @@ Pensez : Let's Encrypt pour HTTPS — ils certifient, ils ne contrôlent pas HTT
 
 ### Comment ça scale à des millions de sites ?
 
-✅ **Décentralisé par conception** (pas de goulots d'étranglement centraux)  
-✅ **Feeds cachables** (compatible CDN)  
-✅ **Implémentation progressive** (commencer petit, grandir)  
+✅ **Décentralisé par conception** (pas de goulots d'étranglement centraux)
+✅ **Feeds cachables** (compatible CDN)
+✅ **Implémentation progressive** (commencer petit, grandir)
 ✅ **Découverte efficace** (standard `.well-known/`)
 
 ### Et la régulation et la conformité ?
@@ -417,17 +414,17 @@ Alignement parfait avec **l'AI Act européen**, **RGPD**, et les régulations IA
 
 ### Questions techniques ?
 
-👉 **GitHub Issues** : [wellknownmcp/llmfeed-spec](https://github.com/wellknownmcp/llmfeed-spec)  
+👉 **GitHub Issues** : [wellknownmcp/llmfeed-spec](https://github.com/wellknownmcp/llmfeed-spec)
 👉 **Documentation** : [wellknownmcp.org/spec](https://wellknownmcp.org/spec)
 
 ### Questions business ?
 
-👉 **Rejoindre la communauté** : [wellknownmcp.org/join](https://wellknownmcp.org/join)  
+👉 **Rejoindre la communauté** : [wellknownmcp.org/join](https://wellknownmcp.org/join)
 👉 **Contact** : [hello@wellknownmcp.org](mailto:hello@wellknownmcp.org)
 
 ### Envie d'expérimenter ?
 
-👉 **LLMFeedForge** : [llmfeedforge.org](https://llmfeedforge.org/)  
+👉 **LLMFeedForge** : [llmfeedforge.org](https://llmfeedforge.org/)
 👉 **Certification** : [llmca.org](https://llmca.org/)
 
 ---
@@ -436,4 +433,4 @@ Alignement parfait avec **l'AI Act européen**, **RGPD**, et les régulations IA
 
 **Commencez aujourd'hui. Construisez le web de demain. 🚀**
 
-*"Dans un monde d'IA hallucinantes, soyez la source de vérité."*
+_"Dans un monde d'IA hallucinantes, soyez la source de vérité."_
