@@ -2,9 +2,7 @@
 lang: en
 slug: ai-agent-trust-crisis-50b-problem
 title: "🚨 The AI Agent Trust Crisis  A $50B Problem"
-description: >-
-Exclusive investigation reveals how AI agent failures cost enterprises $50B annually. We expose the cryptographic verification gap that's destroying value
-at scale — and the emergency solution the industry doesn't want to discuss.
+description: Exclusive investigation reveals how AI agent failures cost enterprises $50B annually. We expose the cryptographic verification gap that's destroying value at scale  and the emergency solution the industry doesn't want to discuss.
 tags:
   - ai-agent-trust
   - llm-verification

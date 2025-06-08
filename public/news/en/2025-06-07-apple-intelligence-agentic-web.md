@@ -10,7 +10,7 @@ tags:
   - mcp
 description: >-
   Apple’s entry into AI-driven agents could reshape the emerging Agentic Web
-  landscape. What does it mean for standards like MCP?
+  landscape. What does it mean for standards like llmfeed mcp?
 ---
 
 # Apple Intelligence: A New Player in the Agentic Web?
@@ -21,7 +21,7 @@ At WWDC 2025, Apple made waves with its announcement of *Apple Intelligence* —
 
 ## What role for open standards?
 
-The big question is: will Apple adopt or align with *open standards* like [MCP](https://wellknownmcp.org), which define how agents can safely discover, trust, and interact with services on the web? Or will we see yet another proprietary silo?
+The big question is: will Apple adopt or align with *open standards* like [llmdfee](https://wellknownmcp.org), which define how agents can safely discover, trust, and interact with services on the web? Or will we see yet another proprietary silo?
 
 While Apple hasn’t announced support for `.well-known/` MCP feeds, several signals suggest they are aware of these developments:
 - Early documentation references “agent-discoverable” metadata.
