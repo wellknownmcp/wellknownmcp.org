@@ -1,4 +1,3 @@
-```yaml
 ---
 lang: zh
 slug: llm-agent-readiness-framework-2025

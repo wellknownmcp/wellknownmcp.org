@@ -10,6 +10,7 @@ tags:
 description: >-
   How LLMs can actively teach, audit, and generate llmfeed.json files — a unique
   design choice of the MCP standard.
+
 ---
 
 # 🧠 Turning LLMs into Teachers, Auditors, and Publishers

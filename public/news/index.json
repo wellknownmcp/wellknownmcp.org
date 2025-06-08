@@ -1,51 +1,58 @@
 {
   "en": [
     {
-      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
-      "title": "From Chatbots to Autonomous Agents: The Web’s Next Evolution",
-      "description": "The web is evolving from chatbots to true autonomous agents. What does this mean for web architecture — and how does MCP fit in?",
-      "date": "2025-06-07",
+      "slug": "llm-agent-readiness-framework-2025",
+      "title": "🧪 The 2025 Agent Readiness Challenge: Which LLMs Can Actually Build the Agentic Web?",
+      "description": "Exclusive framework reveals which AI models can handle structured, signed agent feeds. We expose the MCP implementation gap between chat and true autonomy — and propose the testing standard the industry needs to adopt.",
+      "date": "2025-06-15",
       "tags": [
+        "llm-benchmarking",
+        "agent-readiness",
+        "mcp-implementation",
+        "llmfeed-standard",
+        "ai-agent-testing",
+        "cryptographic-verification",
+        "model-comparison",
         "agentic-web",
-        "ai-agents",
-        "autonomous-agents",
-        "chatbots",
-        "mcp"
+        "ai-infrastructure",
+        "agent-interoperability",
+        "trust-verification",
+        "enterprise-ai-adoption",
+        "ai-standards",
+        "open-source-ai",
+        "ai-testing-framework"
       ],
-      "excerpt": " From Chatbots to Autonomous Agents: The Web’s Next Evolution For years, the term chatbot dominated conversations about AI on the web.",
+      "excerpt": "\r  🧪 The 2025 Agent Readiness Challenge: Beyond MCP Concepts to LLMFeed Reality\r",
       "translations": {
-        "en": "/en/news/2025-07-12-from-chatbots-to-autonomous-agents"
+        "en": "/en/news/llm-agent-readiness-framework-2025",
+        "fr": "/fr/news/llm-agent-readiness-framework-2025",
+        "zh": "/zh/news/llm-agent-readiness-framework-2025"
       }
     },
     {
-      "slug": "homomorphic-capsules",
-      "title": "Towards Homomorphic Capsules for the Agentic Web",
-      "description": "Exploring a potential extension of `.llmfeed.json` feeds to enable privacy-preserving, verifiable pipelines — a vision aligned with the forefront of homomorphic encryption research.",
-      "date": "2025-06-07",
+      "slug": "from-mcp-to-llmfeed-manifesto",
+      "title": "🔬 From MCP to LLMFeed: Why We Created a New Specification",
+      "description": "The wellknownmcp team manifesto: agentic web vision, MCP evolution, and why trust changes everything.",
+      "date": "2025-06-09",
       "tags": [
-        "agentic-web",
-        "encryption",
-        "homomorphic",
         "llmfeed",
-        "pipeline",
-        "privacy",
-        "trust"
+        "mcp",
+        "manifesto",
+        "agentic-web",
+        "innovation"
       ],
-      "excerpt": " Towards Homomorphic Capsules for the Agentic Web As .llmfeed.json feeds gain adoption as signed, trusted capsules for agent interaction, a natural question arises:",
+      "excerpt": "\r  🔬 From MCP to LLMFeed: Why We Created a New Specification\r",
       "translations": {
-        "en": "/en/news/homomorphic-capsules",
-        "fr": "/fr/news/homomorphic-capsules",
-        "es": "/es/news/homomorphic-capsules",
-        "hi": "/hi/news/homomorphic-capsules",
-        "zh": "/zh/news/homomorphic-capsules",
-        "ar": "/ar/news/homomorphic-capsules"
+        "en": "/en/news/from-mcp-to-llmfeed-manifesto",
+        "fr": "/fr/news/from-mcp-to-llmfeed-manifesto",
+        "zh": "/zh/news/from-mcp-to-llmfeed-manifesto"
       }
     },
     {
       "slug": "launch-newstack",
       "title": "launch-newstack",
       "description": "",
-      "date": "2025-06-07",
+      "date": "2025-06-08",
       "tags": [],
       "excerpt": "title: \"The Web Needs a Context Layer — Why We’re Standardizing Intent for Agents\" description: \"Introducing the Model Context Protocol MCP and .llmfeed.json — a new open standard to make your site re",
       "translations": {
@@ -53,27 +60,10 @@
       }
     },
     {
-      "slug": "le_chat_mcp_web_future_news",
-      "title": "Commentary from Le Chat: Why MCP Matters for the Future of the Web",
-      "description": "Le Chat offers a thoughtful reflection on the importance of the Model Context Protocol (MCP) in shaping a verifiable, interoperable, and agent-ready future web.",
-      "date": "2025-06-07",
-      "tags": [
-        "agentic-web",
-        "llmfeed",
-        "mcp",
-        "open-standards",
-        "trust"
-      ],
-      "excerpt": " 📰 Commentary from Le Chat: Why MCP Matters for the Future of the Web In a tech world driven by the rapid development of proprietary LLM ecosystems, the Model Context Protocol MCP emerges as a struct",
-      "translations": {
-        "en": "/en/news/le_chat_mcp_web_future_news"
-      }
-    },
-    {
       "slug": "linkedin-post-wellknownmcp",
       "title": "linkedin-post-wellknownmcp",
       "description": "",
-      "date": "2025-06-07",
+      "date": "2025-06-08",
       "tags": [],
       "excerpt": "title: 'LinkedIn Post — Launching wellknownmcp.org Enhanced Version' description: 'Launch communication draft for wellknownmcp.org with proactive messaging and higher clarity'",
       "translations": {
@@ -84,7 +74,7 @@
       "slug": "llm-as-a-teacher",
       "title": "Turning LLMs into Teachers, Auditors, and Publishers",
       "description": "How LLMs can actively teach, audit, and generate llmfeed.json files — a unique design choice of the MCP standard.",
-      "date": "2025-06-07",
+      "date": "2025-06-08",
       "tags": [
         "agentic-web",
         "llm",
@@ -95,6 +85,17 @@
       "excerpt": " 🧠 Turning LLMs into Teachers, Auditors, and Publishers One of the unique advantages of the .llmfeed.json format is that it is natively understandable by LLMs themselves.",
       "translations": {
         "en": "/en/news/llm-as-a-teacher"
+      }
+    },
+    {
+      "slug": "seo-to-aio-research-framework-complete",
+      "title": "seo-to-aio-research-framework-complete",
+      "description": "",
+      "date": "2025-06-08",
+      "tags": [],
+      "excerpt": "yaml\r \r",
+      "translations": {
+        "en": "/en/news/seo-to-aio-research-framework-complete"
       }
     },
     {
@@ -118,10 +119,44 @@
       }
     },
     {
+      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
+      "title": "From Chatbots to Autonomous Agents: The Web’s Next Evolution",
+      "description": "The web is evolving from chatbots to true autonomous agents. What does this mean for web architecture — and how does MCP fit in?",
+      "date": "2025-06-06",
+      "tags": [
+        "agentic-web",
+        "ai-agents",
+        "autonomous-agents",
+        "chatbots",
+        "mcp"
+      ],
+      "excerpt": " From Chatbots to Autonomous Agents: The Web’s Next Evolution For years, the term chatbot dominated conversations about AI on the web.",
+      "translations": {
+        "en": "/en/news/2025-07-12-from-chatbots-to-autonomous-agents"
+      }
+    },
+    {
+      "slug": "le_chat_mcp_web_future_news",
+      "title": "Commentary from Le Chat: Why MCP Matters for the Future of the Web",
+      "description": "Le Chat offers a thoughtful reflection on the importance of the Model Context Protocol (MCP) in shaping a verifiable, interoperable, and agent-ready future web.",
+      "date": "2025-06-06",
+      "tags": [
+        "agentic-web",
+        "llmfeed",
+        "mcp",
+        "open-standards",
+        "trust"
+      ],
+      "excerpt": " 📰 Commentary from Le Chat: Why MCP Matters for the Future of the Web In a tech world driven by the rapid development of proprietary LLM ecosystems, the Model Context Protocol MCP emerges as a struct",
+      "translations": {
+        "en": "/en/news/le_chat_mcp_web_future_news"
+      }
+    },
+    {
       "slug": "news-mcp-crawling-llms",
       "title": "Why MCP Could Be the Future of Web Crawling for LLMs",
       "description": "As GPTBot and other intelligent crawlers emerge, the Model Context Protocol offers a structured, verifiable, and LLM-friendly alternative to traditional HTML parsing.",
-      "date": "2025-06-07",
+      "date": "2025-06-06",
       "tags": [
         "llm",
         "mcp",
@@ -365,6 +400,30 @@
       "excerpt": " AIFirst Browsers: Redefining Agentic Navigation A quiet revolution is happening in how users — and their agents — navigate the web:",
       "translations": {
         "en": "/en/news/2025-07-26-ai-first-browsers-agentic-navigation"
+      }
+    },
+    {
+      "slug": "homomorphic-capsules",
+      "title": "Towards Homomorphic Capsules for the Agentic Web",
+      "description": "Exploring a potential extension of `.llmfeed.json` feeds to enable privacy-preserving, verifiable pipelines — a vision aligned with the forefront of homomorphic encryption research.",
+      "date": "2025-05-31",
+      "tags": [
+        "agentic-web",
+        "encryption",
+        "homomorphic",
+        "llmfeed",
+        "pipeline",
+        "privacy",
+        "trust"
+      ],
+      "excerpt": " Towards Homomorphic Capsules for the Agentic Web As .llmfeed.json feeds gain adoption as signed, trusted capsules for agent interaction, a natural question arises:",
+      "translations": {
+        "en": "/en/news/homomorphic-capsules",
+        "fr": "/fr/news/homomorphic-capsules",
+        "es": "/es/news/homomorphic-capsules",
+        "hi": "/hi/news/homomorphic-capsules",
+        "zh": "/zh/news/homomorphic-capsules",
+        "ar": "/ar/news/homomorphic-capsules"
       }
     },
     {
@@ -889,6 +948,35 @@
       }
     },
     {
+      "slug": "llm-agent-readiness-framework-2025",
+      "title": "🧪 Le Défi Agent IA 2025 : Quels LLM Peuvent Vraiment Construire le Web Agentique ?",
+      "description": "Framework exclusif révélant quels modèles IA peuvent gérer des flux agents structurés et signés. Nous exposons le gap d'implémentation MCP entre chat et vraie autonomie — et proposons le standard de test que l'industrie doit adopter.",
+      "date": "2025-06-15",
+      "tags": [
+        "llm-benchmarking",
+        "agent-readiness",
+        "mcp-implementation",
+        "llmfeed-standard",
+        "ai-agent-testing",
+        "cryptographic-verification",
+        "model-comparison",
+        "agentic-web",
+        "ai-infrastructure",
+        "agent-interoperability",
+        "trust-verification",
+        "enterprise-ai-adoption",
+        "ai-standards",
+        "open-source-ai",
+        "ai-testing-framework"
+      ],
+      "excerpt": "\r \r",
+      "translations": {
+        "en": "/en/news/llm-agent-readiness-framework-2025",
+        "fr": "/fr/news/llm-agent-readiness-framework-2025",
+        "zh": "/zh/news/llm-agent-readiness-framework-2025"
+      }
+    },
+    {
       "slug": "startups-llmfeed-trust",
       "title": "🚀 Startups IA : comment adopter LLMFeed pour booster la confiance ?",
       "description": "Guide pratique pour les startups françaises souhaitant adopter LLMFeed pour plus de transparence.",
@@ -918,6 +1006,44 @@
       "excerpt": "\r  🔐 La souveraineté numérique passe par la traçabilité des contenus IA\r",
       "translations": {
         "fr": "/fr/news/sovereignty-traceability-ai"
+      }
+    },
+    {
+      "slug": "claude-mcp-agentic-web",
+      "title": "🔬 Analyse Technique Exhaustive : LLMFeed/MCP et l'Évolution du Web Agentique",
+      "description": "",
+      "date": "2025-06-09",
+      "tags": [
+        "llmfeed",
+        "mcp",
+        "claude",
+        "manifesto",
+        "agentic-web",
+        "innovation"
+      ],
+      "excerpt": "\r  Analyse Technique Exhaustive : LLMFeed/MCP et l'Évolution du Web Agentique\r",
+      "translations": {
+        "fr": "/fr/news/claude-mcp-agentic-web",
+        "zh": "/zh/news/claude-mcp-agentic-web"
+      }
+    },
+    {
+      "slug": "from-mcp-to-llmfeed-manifesto",
+      "title": "🔬 De MCP à LLMFeed : pourquoi nous avons créé une nouvelle spécification",
+      "description": "Le manifeste de l'équipe wellknownmcp  vision du web agentique, évolution du MCP, et pourquoi la confiance change tout.",
+      "date": "2025-06-09",
+      "tags": [
+        "llmfeed",
+        "mcp",
+        "manifesto",
+        "agentic web",
+        "innovation"
+      ],
+      "excerpt": "\r  🔬 De MCP à LLMFeed : pourquoi nous avons créé une nouvelle spécification\r",
+      "translations": {
+        "en": "/en/news/from-mcp-to-llmfeed-manifesto",
+        "fr": "/fr/news/from-mcp-to-llmfeed-manifesto",
+        "zh": "/zh/news/from-mcp-to-llmfeed-manifesto"
       }
     },
     {
@@ -954,32 +1080,8 @@
       }
     },
     {
-      "slug": "homomorphic-capsules",
-      "title": "Vers des Capsules Homomorphiques pour le Web Agentique",
-      "description": "Explorer une extension potentielle des feeds `.llmfeed.json` pour permettre des pipelines vérifiables et préservant la vie privée — une vision alignée avec les avancées de la recherche en chiffrement homomorphe.",
-      "date": "2025-06-07",
-      "tags": [
-        "agentic web",
-        "encryption",
-        "homomorphic",
-        "llmfeed",
-        "pipeline",
-        "privacy",
-        "trust"
-      ],
-      "excerpt": " Vers des Capsules Homomorphiques pour le Web Agentique À mesure que les feeds .llmfeed.json s’imposent comme des capsules signées et de confiance pour l’interaction agentique, une question naturelle ",
-      "translations": {
-        "en": "/en/news/homomorphic-capsules",
-        "fr": "/fr/news/homomorphic-capsules",
-        "es": "/es/news/homomorphic-capsules",
-        "hi": "/hi/news/homomorphic-capsules",
-        "zh": "/zh/news/homomorphic-capsules",
-        "ar": "/ar/news/homomorphic-capsules"
-      }
-    },
-    {
       "slug": "france-open-standards-ai",
-      "title": "🇫🇷 Pourquoi la France a besoin de standards ouverts pour l'IA",
+      "title": "Pourquoi la France a besoin de standards ouverts pour l'IA",
       "description": "Dans un contexte de souveraineté numérique, les standards comme LLMFeed sont clés pour l'écosystème IA français. Explications.",
       "date": "2025-06-05",
       "tags": [
@@ -1016,6 +1118,30 @@
         "fr": "/fr/news/how-to-make-your-site-agent-friendly",
         "es": "/es/news/how-to-make-your-site-agent-friendly",
         "zh": "/zh/news/how-to-make-your-site-agent-friendly"
+      }
+    },
+    {
+      "slug": "homomorphic-capsules",
+      "title": "Vers des Capsules Homomorphiques pour le Web Agentique",
+      "description": "Explorer une extension potentielle des feeds `.llmfeed.json` pour permettre des pipelines vérifiables et préservant la vie privée — une vision alignée avec les avancées de la recherche en chiffrement homomorphe.",
+      "date": "2025-05-31",
+      "tags": [
+        "agentic web",
+        "encryption",
+        "homomorphic",
+        "llmfeed",
+        "pipeline",
+        "privacy",
+        "trust"
+      ],
+      "excerpt": " Vers des Capsules Homomorphiques pour le Web Agentique À mesure que les feeds .llmfeed.json s’imposent comme des capsules signées et de confiance pour l’interaction agentique, une question naturelle ",
+      "translations": {
+        "en": "/en/news/homomorphic-capsules",
+        "fr": "/fr/news/homomorphic-capsules",
+        "es": "/es/news/homomorphic-capsules",
+        "hi": "/hi/news/homomorphic-capsules",
+        "zh": "/zh/news/homomorphic-capsules",
+        "ar": "/ar/news/homomorphic-capsules"
       }
     },
     {
@@ -1183,25 +1309,30 @@
         "ar": "/ar/news/why-mcp",
         "uk": "/uk/news/why-mcp"
       }
+    },
+    {
+      "slug": "france-care-mcp-etude-cas",
+      "title": "🏥 France-Care : L'Assistant Médical Vocal qui Révolutionne l'Accès aux Soins",
+      "description": "Étude de cas complète : comment France-Care utilise MCP pour transformer n'importe quel agent IA en assistant médical capable de comprendre, qualifier et orienter automatiquement vers un conseiller humain — tout en respectant les contraintes HDS et de privacy les plus strictes.",
+      "date": "2025-01-16",
+      "tags": [
+        "france-care",
+        "sante-connectee",
+        "mcp-healthcare",
+        "assistant-medical-ia",
+        "parcours-soins",
+        "iot-voix",
+        "credential-medical",
+        "hds-compliance",
+        "privacy-healthcare"
+      ],
+      "excerpt": "\r  🏥 FranceCare : L'Assistance Personnalisée en santé  qui Révolutionne l'Accès aux Soins\r",
+      "translations": {
+        "fr": "/fr/news/france-care-mcp-etude-cas"
+      }
     }
   ],
   "es": [
-    {
-      "slug": "homomorphic-capsules",
-      "title": "homomorphic-capsules",
-      "description": "",
-      "date": "2025-06-07",
-      "tags": [],
-      "excerpt": "id: homomorphiccapsuleses title: Hacia Cápsulas Homomórficas para la Web Agéntica",
-      "translations": {
-        "en": "/en/news/homomorphic-capsules",
-        "fr": "/fr/news/homomorphic-capsules",
-        "es": "/es/news/homomorphic-capsules",
-        "hi": "/hi/news/homomorphic-capsules",
-        "zh": "/zh/news/homomorphic-capsules",
-        "ar": "/ar/news/homomorphic-capsules"
-      }
-    },
     {
       "slug": "how-to-make-your-site-agent-friendly",
       "title": "Cómo hacer que tu sitio sea compatible con agentes de IA mediante llmfeed.json",
@@ -1219,6 +1350,30 @@
         "fr": "/fr/news/how-to-make-your-site-agent-friendly",
         "es": "/es/news/how-to-make-your-site-agent-friendly",
         "zh": "/zh/news/how-to-make-your-site-agent-friendly"
+      }
+    },
+    {
+      "slug": "homomorphic-capsules",
+      "title": "Hacia Cápsulas Homomórficas para la Web Agéntica",
+      "description": "Explorando una extensión potencial de los feeds `.llmfeed.json` para habilitar pipelines verificables y que preserven la privacidad — una visión alineada con la vanguardia de la investigación en cifrado homomórfico.",
+      "date": "2025-05-31",
+      "tags": [
+        "llmfeed",
+        "homomorphic",
+        "cifrado",
+        "agentic web",
+        "pipeline",
+        "privacidad",
+        "confianza"
+      ],
+      "excerpt": " Hacia Cápsulas Homomórficas para la Web Agéntica A medida que los feeds .llmfeed.json se consolidan como cápsulas firmadas y de confianza para la interacción entre agentes, surge una pregunta natural",
+      "translations": {
+        "en": "/en/news/homomorphic-capsules",
+        "fr": "/fr/news/homomorphic-capsules",
+        "es": "/es/news/homomorphic-capsules",
+        "hi": "/hi/news/homomorphic-capsules",
+        "zh": "/zh/news/homomorphic-capsules",
+        "ar": "/ar/news/homomorphic-capsules"
       }
     },
     {
@@ -1413,7 +1568,7 @@
       "slug": "homomorphic-capsules",
       "title": "एजेंटिक वेब के लिए होमोमोर्फिक कैप्सूल की ओर",
       "description": " `.llmfeed.json` फ़ीड के संभावित विस्तार का अन्वेषण, जो गोपनीयता-संरक्षित और सत्यापित एजेंट पाइपलाइन को सक्षम करता है — यह दृष्टि होमोमोर्फिक एन्क्रिप्शन अनुसंधान की अग्रिम पंक्ति के साथ मेल खाती है।",
-      "date": "2025-06-07",
+      "date": "2025-06-06",
       "tags": [
         "agentic-web",
         "homomorphic",
@@ -1595,10 +1750,58 @@
   ],
   "zh": [
     {
+      "slug": "llm-agent-readiness-framework-2025",
+      "title": "🧪 2025年智能体就绪挑战：哪些大语言模型真正能构建智能体网络？",
+      "description": "独家框架揭示哪些AI模型能够处理结构化、签名的智能体信息流。我们曝光了MCP实现中聊天与真正自主性之间的差距——并提出行业需要采用的测试标准。",
+      "date": "2025-06-15",
+      "tags": [
+        "llm-benchmarking",
+        "agent-readiness",
+        "mcp-implementation",
+        "llmfeed-standard",
+        "ai-agent-testing",
+        "cryptographic-verification",
+        "model-comparison",
+        "agentic-web",
+        "ai-infrastructure",
+        "agent-interoperability",
+        "trust-verification",
+        "enterprise-ai-adoption",
+        "ai-standards",
+        "open-source-ai",
+        "ai-testing-framework"
+      ],
+      "excerpt": "\r \r",
+      "translations": {
+        "en": "/en/news/llm-agent-readiness-framework-2025",
+        "fr": "/fr/news/llm-agent-readiness-framework-2025",
+        "zh": "/zh/news/llm-agent-readiness-framework-2025"
+      }
+    },
+    {
+      "slug": "from-mcp-to-llmfeed-manifesto",
+      "title": "🔬 从 MCP 到 LLMFeed：我们为什么创建新规范",
+      "description": "wellknownmcp 团队宣言：智能体网络愿景、MCP 演进，以及信任如何改变一切。",
+      "date": "2025-06-09",
+      "tags": [
+        "llmfeed",
+        "mcp",
+        "宣言",
+        "智能体网络",
+        "创新"
+      ],
+      "excerpt": "\r  🔬 从 MCP 到 LLMFeed：我们为什么创建新规范\r",
+      "translations": {
+        "en": "/en/news/from-mcp-to-llmfeed-manifesto",
+        "fr": "/fr/news/from-mcp-to-llmfeed-manifesto",
+        "zh": "/zh/news/from-mcp-to-llmfeed-manifesto"
+      }
+    },
+    {
       "slug": "homomorphic-capsules",
       "title": "homomorphic-capsules",
       "description": "",
-      "date": "2025-06-07",
+      "date": "2025-06-06",
       "tags": [],
       "excerpt": "id: homomorphiccapsuleszh title: 面向代理网络的同态加密胶囊探索",
       "translations": {
@@ -1698,6 +1901,25 @@
       "translations": {
         "en": "/en/news/2025-06-28-llm-seo-vs-mcp",
         "zh": "/zh/news/2025-06-28-llm-seo-vs-mcp"
+      }
+    },
+    {
+      "slug": "claude-mcp-agentic-web",
+      "title": "🔬 综合技术分析：LLMFeed/MCP 与智能代理网络的演进",
+      "description": "LLMFeed/MCP 与智能代理网络演进的综合技术分析 - Claude 4, Anthropic",
+      "date": "2025-05-31",
+      "tags": [
+        "llmfeed",
+        "mcp",
+        "claude",
+        "技术白皮书",
+        "智能代理网络",
+        "创新"
+      ],
+      "excerpt": "\r  综合技术分析：LLMFeed/MCP 与智能代理网络的演进\r",
+      "translations": {
+        "fr": "/fr/news/claude-mcp-agentic-web",
+        "zh": "/zh/news/claude-mcp-agentic-web"
       }
     },
     {
@@ -1912,7 +2134,7 @@
       "slug": "homomorphic-capsules",
       "title": "نحو كبسولات التشفير المتماثل لشبكة الوكلاء",
       "description": "استكشاف امتداد محتمل لـ `.llmfeed.json` لدعم مسارات معالجة موثوقة وقابلة للتحقق مع الحفاظ على الخصوصية — رؤية تتماشى مع أحدث أبحاث التشفير المتماثل.",
-      "date": "2025-06-07",
+      "date": "2025-06-08",
       "tags": [
         "agentic web",
         "homomorphic",
@@ -2106,7 +2328,7 @@
       "slug": "use-cases-mcp",
       "title": "use-cases-mcp",
       "description": "",
-      "date": "2025-06-07",
+      "date": "2025-05-21",
       "tags": [],
       "excerpt": "UK  UK title: \"What Can You Build With MCP? RealWorld Use Cases\"",
       "translations": {

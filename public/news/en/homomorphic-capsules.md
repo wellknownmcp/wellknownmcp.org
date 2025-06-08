@@ -14,6 +14,8 @@ tags:
   - privacy
   - trust
 lang: en
+date: 2025-05-31
+
 ---
 
 # Towards Homomorphic Capsules for the Agentic Web

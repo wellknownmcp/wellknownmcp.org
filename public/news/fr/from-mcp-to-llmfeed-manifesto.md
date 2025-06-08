@@ -2,7 +2,7 @@
 lang: fr
 slug: from-mcp-to-llmfeed-manifesto
 title: "🔬 De MCP à LLMFeed : pourquoi nous avons créé une nouvelle spécification"
-description: Le manifeste de l'équipe wellknownmcp : vision du web agentique, évolution du MCP, et pourquoi la confiance change tout.
+description: Le manifeste de l'équipe wellknownmcp  vision du web agentique, évolution du MCP, et pourquoi la confiance change tout.
 tags:
   - llmfeed
   - mcp

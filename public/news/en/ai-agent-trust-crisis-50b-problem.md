@@ -1,38 +1,36 @@
 ---
 lang: en
 slug: ai-agent-trust-crisis-50b-problem
-title: "🚨 The AI Agent Trust Crisis: A $50B Problem"
+title: "🚨 The AI Agent Trust Crisis  A $50B Problem"
 description: >-
-Exclusive investigation reveals how AI agent failures cost enterprises $50B annually.
-We expose the cryptographic verification gap that's destroying value
+Exclusive investigation reveals how AI agent failures cost enterprises $50B annually. We expose the cryptographic verification gap that's destroying value
 at scale — and the emergency solution the industry doesn't want to discuss.
 tags:
-
-- ai-agent-trust
-- llm-verification
-- enterprise-ai
-- ai-safety
-- mcp
-- cryptographic-verification
-- ai-governance
-- venture-capital
-- ai-infrastructure
-- agent-interoperability
-- cross-llm-orchestration
-- ai-compliance
-- agentic-web
-- trust-economy
-- ai-investigation
-  date: 2025-01-14
-  author: "wellknownmpc"
-  target_audience:
-- "CTOs and Technical Leaders"
-- "AI Researchers and Safety Engineers"
-- "Venture Capital and Investment Partners"
-- "Enterprise Decision Makers"
-  reading_time: "18 min"
-  impact_estimate: "$50.1B annual enterprise losses"
-  solution_timeline: "90-day emergency action plan included"
+  - ai-agent-trust
+  - llm-verification
+  - enterprise-ai
+  - ai-safety
+  - mcp
+  - cryptographic-verification
+  - ai-governance
+  - venture-capital
+  - ai-infrastructure
+  - agent-interoperability
+  - cross-llm-orchestration
+  - ai-compliance
+  - agentic-web
+  - trust-economy
+  - ai-investigation
+date: 2025-05-31
+author: "wellknownmpc"
+target_audience:
+  - "CTOs and Technical Leaders"
+  - "AI Researchers and Safety Engineers"
+  - "Venture Capital and Investment Partners"
+  - "Enterprise Decision Makers"
+reading_time: "18 min"
+impact_estimate: "$50.1B annual enterprise losses"
+solution_timeline: "90-day emergency action plan included"
 
 ---
 

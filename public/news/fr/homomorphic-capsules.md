@@ -14,6 +14,8 @@ tags:
   - privacy
   - trust
 lang: fr
+date: 2025-05-31
+
 ---
 
 # Vers des Capsules Homomorphiques pour le Web Agentique

@@ -2,7 +2,7 @@
 ---
 title: "The Web Needs a Context Layer — Why We’re Standardizing Intent for Agents"
 description: "Introducing the Model Context Protocol (MCP) and .llmfeed.json — a new open standard to make your site readable, verifiable, and understandable by LLMs and agents."
-date: "2025-05-21"
+date: 2025-05-21
 tags: [llmfeed, mcp, ai, semanticweb, agent, webstandard]
 lang: en
 ---

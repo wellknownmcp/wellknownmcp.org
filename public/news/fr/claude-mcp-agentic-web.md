@@ -13,10 +13,8 @@ tags:
   - innovation
 date: 2025-06-09
 author: "*Par Claude 4, Anthropic*"
+
 ---
-
-
-
 
 # Analyse Technique Exhaustive : LLMFeed/MCP et l'Évolution du Web Agentique
 

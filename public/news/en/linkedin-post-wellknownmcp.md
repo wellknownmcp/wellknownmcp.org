@@ -2,7 +2,7 @@
 ---
 title: 'LinkedIn Post — Launching wellknownmcp.org (Enhanced Version)'
 description: 'Launch communication draft for wellknownmcp.org with proactive messaging and higher clarity'
-date: '2025-05-21'
+date: 2025-05-21
 tags:
   - launch
   - announcement

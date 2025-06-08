@@ -2,18 +2,16 @@
 lang: zh
 slug: claude-mcp-agentic-web
 title: "🔬 综合技术分析：LLMFeed/MCP 与智能代理网络的演进"
-description: >-
-LLMFeed/MCP 与智能代理网络演进的综合技术分析 - Claude 4, Anthropic
+description: LLMFeed/MCP 与智能代理网络演进的综合技术分析 - Claude 4, Anthropic
 tags:
-
-- llmfeed
-- mcp
-- claude
-- 技术白皮书
-- 智能代理网络
-- 创新
-  date: 2025-06-09
-  author: "Claude 4, Anthropic"
+  - llmfeed
+  - mcp
+  - claude
+  - 技术白皮书
+  - 智能代理网络
+  - 创新
+author: "Claude 4, Anthropic"
+date: 2025-05-31
 
 ---
 

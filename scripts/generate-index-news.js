@@ -61,19 +61,29 @@ languages.forEach((lang) => {
       }
       slugToLangs[slug][lang] = `/${lang}/news/${slug}`
 
+      // Date parsing robuste
+      const date = (() => {
+        let dateValue = data.date
+        if (typeof dateValue !== 'string') {
+          dateValue = `${dateValue || ''}`.trim()
+        }
+        const parsed = Date.parse(dateValue)
+        if (!isNaN(parsed)) {
+          return new Date(parsed).toISOString().split('T')[0]
+        } else {
+          // fallback → date de dernière modif du fichier
+          const stats = fs.statSync(filePath)
+          const fallbackDate = stats.mtime.toISOString().split('T')[0]
+          console.warn(`⚠️ Invalid or missing date for "${slug}" (${lang}): "${data.date}", fallback to file mtime: ${fallbackDate}`)
+          return fallbackDate
+        }
+      })()
+
       return {
         slug,
         title: data.title || slug,
         description: data.description || '',
-         date: (() => {
-    const parsed = Date.parse(data.date)
-    if (!isNaN(parsed)) {
-      return new Date(parsed).toISOString().split('T')[0] // → format YYYY-MM-DD
-    } else {
-      console.warn(`⚠️ Invalid or missing date for "${slug}" (${lang}), fallback to today.`)
-      return new Date().toISOString().split('T')[0]
-    }
-  })(),
+        date,
         tags: data.tags || [],
         excerpt,
         // On initialise translations vide (on remplira après)

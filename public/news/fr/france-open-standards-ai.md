@@ -1,17 +1,16 @@
 ---
 lang: fr
 slug: france-open-standards-ai
-title: "\U0001F1EB\U0001F1F7 Pourquoi la France a besoin de standards ouverts pour l'IA"
-description: >-
-  Dans un contexte de souveraineté numérique, les standards comme LLMFeed sont
-  clés pour l'écosystème IA français. Explications.
+title: "Pourquoi la France a besoin de standards ouverts pour l'IA"
+description:  Dans un contexte de souveraineté numérique, les standards comme LLMFeed sont clés pour l'écosystème IA français. Explications.
 tags:
   - aio
   - certification-ia
   - ia-marche-francais
   - llmfeed
   - souverainete-numerique
-date: 2025-06-05T00:00:00.000Z
+date: 2025-06-05
+
 ---
 
 ## 🇫🇷 Pourquoi la France a besoin de standards ouverts pour l'IA
