@@ -86,7 +86,7 @@ export function TestimonyCarousel() {
         They read the feed…
       </h2>
       <h3>
-        Seriously, give the 2 llmfeed above to your llm, anc challenge the
+        Seriously, give the 3 llmfeed.json above to your llm, and challenge the
         protocol
       </h3>
       <Carousel className="w-full max-w-4xl mx-auto">
