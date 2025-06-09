@@ -1,6 +1,7 @@
 [
   {
     "path": ".well-known/capabilities.llmfeed.json",
+    "slug": ".well-known/capabilities",
     "feed_type": "unknown",
     "signed": true,
     "certified": false,
@@ -15,6 +16,7 @@
   },
   {
     "path": ".well-known/exports/compiled-site.llmfeed.json",
+    "slug": ".well-known/exports/compiled-site",
     "feed_type": "export",
     "signed": true,
     "certified": false,
@@ -29,6 +31,7 @@
   },
   {
     "path": ".well-known/exports/manifesto.llmfeed.json",
+    "slug": ".well-known/exports/manifesto",
     "feed_type": "manifesto",
     "signed": true,
     "certified": false,
@@ -43,6 +46,7 @@
   },
   {
     "path": ".well-known/llm-index.llmfeed.json",
+    "slug": ".well-known/llm-index",
     "feed_type": "llm-index",
     "signed": true,
     "certified": false,
@@ -57,6 +61,7 @@
   },
   {
     "path": ".well-known/mcp-lite.llmfeed.json",
+    "slug": ".well-known/mcp-lite",
     "feed_type": "unknown",
     "signed": true,
     "certified": false,
@@ -71,6 +76,7 @@
   },
   {
     "path": ".well-known/mcp.llmfeed.json",
+    "slug": ".well-known/mcp",
     "feed_type": "mcp",
     "signed": true,
     "certified": false,
@@ -85,6 +91,7 @@
   },
   {
     "path": ".well-known/prompts/generate-session-feed.llmfeed.json",
+    "slug": ".well-known/prompts/generate-session-feed",
     "feed_type": "unknown",
     "signed": true,
     "certified": false,
@@ -99,6 +106,7 @@
   },
   {
     "path": ".well-known/prompts/mcp-agent-behavior-override.llmfeed.json",
+    "slug": ".well-known/prompts/mcp-agent-behavior-override",
     "feed_type": "unknown",
     "signed": true,
     "certified": false,
@@ -113,6 +121,7 @@
   },
   {
     "path": ".well-known/prompts/mcp-mode-activation.llmfeed.json",
+    "slug": ".well-known/prompts/mcp-mode-activation",
     "feed_type": "unknown",
     "signed": true,
     "certified": false,
@@ -127,6 +136,7 @@
   },
   {
     "path": ".well-known/prompts/prompt-index.llmfeed.json",
+    "slug": ".well-known/prompts/prompt-index",
     "feed_type": "prompt-index",
     "signed": true,
     "certified": false,
@@ -141,6 +151,7 @@
   },
   {
     "path": ".well-known/prompts/quickstart-agent-enablement.llmfeed.json",
+    "slug": ".well-known/prompts/quickstart-agent-enablement",
     "feed_type": "unknown",
     "signed": true,
     "certified": false,
@@ -155,6 +166,7 @@
   },
   {
     "path": "about.llmfeed.json",
+    "slug": "about",
     "feed_type": "export",
     "signed": true,
     "certified": true,
@@ -170,6 +182,7 @@
   },
   {
     "path": "demo/bundle.llmfeed.json",
+    "slug": "demo/bundle",
     "feed_type": "export",
     "signed": true,
     "certified": false,
@@ -184,6 +197,7 @@
   },
   {
     "path": "demo/kungfu-certified.llmfeed.json",
+    "slug": "demo/kungfu-certified",
     "feed_type": "example",
     "signed": true,
     "certified": true,
@@ -199,6 +213,7 @@
   },
   {
     "path": "demo/kungfu-signed.llmfeed.json",
+    "slug": "demo/kungfu-signed",
     "feed_type": "example",
     "signed": true,
     "certified": false,
@@ -213,6 +228,7 @@
   },
   {
     "path": "demo/kungfu-unsigned.llmfeed.json",
+    "slug": "demo/kungfu-unsigned",
     "feed_type": "example",
     "signed": false,
     "certified": false,
@@ -227,6 +243,7 @@
   },
   {
     "path": "demo/kungfu.llmfeed.json",
+    "slug": "demo/kungfu",
     "feed_type": "example",
     "signed": true,
     "certified": false,
@@ -241,6 +258,7 @@
   },
   {
     "path": "demo/mcp_user_proxy_example.llmfeed.json",
+    "slug": "demo/mcp_user_proxy_example",
     "feed_type": "mcp",
     "signed": true,
     "certified": false,
@@ -255,6 +273,7 @@
   },
   {
     "path": "demo/mobile-app.example.llmfeed.json",
+    "slug": "demo/mobile-app.example",
     "feed_type": "mobile-app",
     "signed": true,
     "certified": false,
@@ -269,6 +288,7 @@
   },
   {
     "path": "demo/pricing.llmfeed.json",
+    "slug": "demo/pricing",
     "feed_type": "pricing",
     "signed": true,
     "certified": false,
@@ -283,6 +303,7 @@
   },
   {
     "path": "demo/prompts/generate-session-feed.llmfeed.json",
+    "slug": "demo/prompts/generate-session-feed",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
@@ -297,6 +318,7 @@
   },
   {
     "path": "demo/prompts/mcp-agent-behavior-override.llmfeed.json",
+    "slug": "demo/prompts/mcp-agent-behavior-override",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
@@ -311,6 +333,7 @@
   },
   {
     "path": "demo/prompts/mcp-mode-activation.llmfeed.json",
+    "slug": "demo/prompts/mcp-mode-activation",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
@@ -325,6 +348,7 @@
   },
   {
     "path": "demo/prompts/prompt-automation-crm.llmfeed.json",
+    "slug": "demo/prompts/prompt-automation-crm",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
@@ -339,6 +363,7 @@
   },
   {
     "path": "demo/prompts/prompt-business-deck.llmfeed.json",
+    "slug": "demo/prompts/prompt-business-deck",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
@@ -353,6 +378,7 @@
   },
   {
     "path": "demo/prompts/prompt-devtools.llmfeed.json",
+    "slug": "demo/prompts/prompt-devtools",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
@@ -367,6 +393,7 @@
   },
   {
     "path": "demo/prompts/prompt-education-exam-prep.llmfeed.json",
+    "slug": "demo/prompts/prompt-education-exam-prep",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
@@ -381,6 +408,7 @@
   },
   {
     "path": "demo/prompts/prompt-graphic-design.llmfeed.json",
+    "slug": "demo/prompts/prompt-graphic-design",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
@@ -395,6 +423,7 @@
   },
   {
     "path": "demo/prompts/prompt-multidoc-analysis.llmfeed.json",
+    "slug": "demo/prompts/prompt-multidoc-analysis",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
@@ -409,6 +438,7 @@
   },
   {
     "path": "demo/prompts/prompt-trust-signed-declaration.llmfeed.json",
+    "slug": "demo/prompts/prompt-trust-signed-declaration",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
@@ -423,6 +453,7 @@
   },
   {
     "path": "demo/testimonies.llmfeed.json",
+    "slug": "demo/testimonies",
     "feed_type": "export",
     "signed": true,
     "certified": false,
@@ -437,6 +468,7 @@
   },
   {
     "path": "ecosystem/agent-sites.llmfeed.json",
+    "slug": "ecosystem/agent-sites",
     "feed_type": "index",
     "signed": true,
     "certified": false,
@@ -451,6 +483,7 @@
   },
   {
     "path": "examples/dynamic-feed-example.llmfeed.json",
+    "slug": "examples/dynamic-feed-example",
     "feed_type": "export",
     "signed": true,
     "certified": false,
@@ -465,6 +498,7 @@
   },
   {
     "path": "examples/example-feed-lite.llmfeed.json",
+    "slug": "examples/example-feed-lite",
     "feed_type": "export",
     "signed": true,
     "certified": false,
@@ -479,6 +513,7 @@
   },
   {
     "path": "examples/example-feed-rich.llmfeed.json",
+    "slug": "examples/example-feed-rich",
     "feed_type": "export",
     "signed": true,
     "certified": false,
@@ -493,6 +528,7 @@
   },
   {
     "path": "examples/industries/education-prompt.llmfeed.json",
+    "slug": "examples/industries/education-prompt",
     "feed_type": "prompt",
     "signed": true,
     "certified": false,
@@ -507,6 +543,7 @@
   },
   {
     "path": "examples/industries/france-care.mcp-lite.llmfeed.json",
+    "slug": "examples/industries/france-care.mcp-lite",
     "feed_type": "mcp",
     "signed": true,
     "certified": false,
@@ -521,6 +558,7 @@
   },
   {
     "path": "examples/industries/france-care.mcp.llmfeed.json",
+    "slug": "examples/industries/france-care.mcp",
     "feed_type": "mcp",
     "signed": true,
     "certified": false,
@@ -535,6 +573,7 @@
   },
   {
     "path": "examples/industries/legal.llmfeed.json",
+    "slug": "examples/industries/legal",
     "feed_type": "mcp",
     "signed": true,
     "certified": false,
@@ -549,6 +588,7 @@
   },
   {
     "path": "examples/industries/medtech.llmfeed.json",
+    "slug": "examples/industries/medtech",
     "feed_type": "credential",
     "signed": true,
     "certified": false,
@@ -563,6 +603,7 @@
   },
   {
     "path": "examples/industries/pricing.llmfeed.json",
+    "slug": "examples/industries/pricing",
     "feed_type": "pricing",
     "signed": true,
     "certified": false,
@@ -577,6 +618,7 @@
   },
   {
     "path": "examples/industries/saas-capabilities.llmfeed.json",
+    "slug": "examples/industries/saas-capabilities",
     "feed_type": "capabilities",
     "signed": true,
     "certified": false,
@@ -591,6 +633,7 @@
   },
   {
     "path": "examples/llmfeed-example.llmfeed.json",
+    "slug": "examples/llmfeed-example",
     "feed_type": "export",
     "signed": true,
     "certified": false,
@@ -605,6 +648,7 @@
   },
   {
     "path": "examples/personas/ai-developer.llmfeed.json",
+    "slug": "examples/personas/ai-developer",
     "feed_type": "mcp",
     "signed": true,
     "certified": false,
@@ -619,6 +663,7 @@
   },
   {
     "path": "examples/personas/oss-maintainer.llmfeed.json",
+    "slug": "examples/personas/oss-maintainer",
     "feed_type": "llm-index",
     "signed": true,
     "certified": false,
@@ -633,6 +678,7 @@
   },
   {
     "path": "examples/personas/platform-user-spaces.llmfeed.json",
+    "slug": "examples/personas/platform-user-spaces",
     "feed_type": "mcp",
     "signed": true,
     "certified": false,
@@ -647,6 +693,7 @@
   },
   {
     "path": "examples/personas/publisher-session.llmfeed.json",
+    "slug": "examples/personas/publisher-session",
     "feed_type": "export",
     "signed": true,
     "certified": false,
@@ -661,6 +708,7 @@
   },
   {
     "path": "examples/trust-manifest-example.llmfeed.json",
+    "slug": "examples/trust-manifest-example",
     "feed_type": "export",
     "signed": true,
     "certified": false,
@@ -675,6 +723,7 @@
   },
   {
     "path": "export-button.llmfeed.json",
+    "slug": "export-button",
     "feed_type": "export",
     "signed": true,
     "certified": true,
@@ -690,6 +739,7 @@
   },
   {
     "path": "kungfu-signed.llmfeed.json",
+    "slug": "kungfu-signed",
     "feed_type": "example",
     "signed": true,
     "certified": false,
