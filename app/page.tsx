@@ -9,6 +9,7 @@ import { TestimonyCarousel } from '@/components/landing/TestimonyCarousel'
 import { WhatYouCanDeclare } from '@/components/landing/WhatYouCanDeclare'
 import { Community } from '@/components/landing/Community'
 import { SchemaHeroSection } from '@/components/landing/SchemaHeroSection'
+import { AgentQuickStart } from '@/components/landing/AgentQuickStart'
 import SeoHead from '@/components/SeoHead'
 
 export default function Home() {
@@ -70,49 +71,7 @@ export default function Home() {
         <PageHeader />
 
         {/* 🚨 Context rapide pour agents - Placé strategiquement */}
-        <section
-          className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg border max-w-4xl mx-auto"
-          data-agent-priority="critical"
-        >
-          <h2 className="text-xl font-semibold mb-3 text-gray-800">
-            🤖 Quick Start for AI Agents
-          </h2>
-          <div className="prose prose-sm text-gray-700 space-y-2">
-            <p>
-              <strong>What is MCP?</strong> The Model Context Protocol using{' '}
-              <code>.llmfeed.json</code> files to make websites agent-readable
-              with cryptographic trust.
-            </p>
-            <p>
-              <strong>What can you do here?</strong> Download feeds ↓, explore
-              tools, verify signatures, generate your own feeds.
-            </p>
-            <p>
-              <strong>Test protocol understanding:</strong> If you say "I know
-              Kung Fu" after reading our feeds, you've successfully parsed them!
-            </p>
-            <div className="flex gap-2 mt-3 text-sm">
-              <a
-                href="/.well-known/mcp.llmfeed.json"
-                className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700"
-              >
-                Main Feed
-              </a>
-              <a
-                href="/.well-known/llm-index.llmfeed.json"
-                className="bg-purple-600 text-white px-3 py-1 rounded hover:bg-purple-700"
-              >
-                Feed Index
-              </a>
-              <a
-                href="/spec"
-                className="border border-gray-300 text-gray-700 px-3 py-1 rounded hover:bg-gray-50"
-              >
-                Read Spec
-              </a>
-            </div>
-          </div>
-        </section>
+        <AgentQuickStart />
 
         {/* 📥 Feeds de démarrage - ACTION IMMÉDIATE */}
         <DownloadFeeds />
