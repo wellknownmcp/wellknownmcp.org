@@ -56,7 +56,7 @@ function collectFeeds(folder: string, base = ''): any[] {
         return [
           {
             path: relPath.replace(/\\/g, '/'),
-            slug,                              // ✅ AJOUTÉ
+            slug, // ✅ AJOUTÉ
             feed_type: feedType,
             signed,
             certified,
@@ -92,10 +92,12 @@ function main() {
   )
 
   // ✅ BONUS: Debug pour vérifier les slugs
-  const invalidSlugs = feeds.filter(f => !f.slug || f.slug === 'undefined')
+  const invalidSlugs = feeds.filter((f) => !f.slug || f.slug === 'undefined')
   if (invalidSlugs.length > 0) {
     console.warn(`⚠️ Found ${invalidSlugs.length} entries with invalid slugs`)
-    invalidSlugs.forEach(f => console.warn(`  - ${f.path} -> slug: "${f.slug}"`))
+    invalidSlugs.forEach((f) =>
+      console.warn(`  - ${f.path} -> slug: "${f.slug}"`)
+    )
   } else {
     console.log(`✅ All ${feeds.length} entries have valid slugs`)
   }

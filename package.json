@@ -13,7 +13,7 @@
     "generate-exports-index": "tsx scripts/generate-exports-index.ts",
     "normalize-tags": "tsx scripts/normalize-tags.ts",
     "generate-indexnow": "node scripts/generate-indexnow.js",
-    "ping-indexnow": "curl -v \"https://api.indexnow.org/indexnow?url=https://wellknownmcp.org/indexnow.json&key=33905d1367864dceaddec11db1301110\"",
+    "ping-indexnow": "curl \"https://api.indexnow.org/indexnow?url=https://wellknownmcp.org/indexnow.json&key=33905d1367864dceaddec11db1301110\"",
     "export": "next export",
     "enrich-index": "tsx scripts/enrich-llmfeed-index.ts"
   },
