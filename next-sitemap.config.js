@@ -80,12 +80,15 @@ const newsPaths = Object.entries(newsIndex).flatMap(([lang, articles]) =>
 console.log(`✅ DEBUG: newsPaths = ${newsPaths.length}`);
 
 // llmfeedhub Paths
-const llmfeedhubPaths = llmfeedhubIndex.map((item) => ({
-  loc: `${siteUrl}/llmfeedhub/${item.slug}`,
-  changefreq: 'weekly',
-  priority: 0.9, // optimisé (hub = important)
-  lastmod: new Date().toISOString().split('T')[0],
-}));
+
+const llmfeedhubPaths = llmfeedhubIndex
+  .filter((item) => item.slug && item.slug !== 'undefined') // ✅ Filtrage
+  .map((item) => ({
+    loc: `${siteUrl}/llmfeedhub/${item.slug}`,
+    changefreq: 'weekly',
+    priority: 0.9,
+    lastmod: new Date().toISOString().split('T')[0],
+  }));
 console.log(`✅ DEBUG: llmfeedhubPaths = ${llmfeedhubPaths.length}`);
 
 // EXPORT FINAL CONFIG

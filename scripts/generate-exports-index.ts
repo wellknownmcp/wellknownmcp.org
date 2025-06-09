@@ -47,9 +47,16 @@ function collectFeeds(folder: string, base = ''): any[] {
 
         const enriched_tags = json.enriched_tags ?? []
 
+        // ✅ CORRECTION: Générer le slug
+        const slug = relPath
+          .replace(/\\/g, '/')
+          .replace('.llmfeed.json', '')
+          .replace(/^\/+/, '')
+
         return [
           {
             path: relPath.replace(/\\/g, '/'),
+            slug,                              // ✅ AJOUTÉ
             feed_type: feedType,
             signed,
             certified,
@@ -81,8 +88,17 @@ function main() {
   fs.writeFileSync(indexPath, JSON.stringify(feeds, null, 2), 'utf-8')
 
   console.log(
-    `✅ Generated ${feeds.length} entries in /public/exports/index.json\n`
+    `✅ Generated ${feeds.length} entries in /public/exports/index.json`
   )
+
+  // ✅ BONUS: Debug pour vérifier les slugs
+  const invalidSlugs = feeds.filter(f => !f.slug || f.slug === 'undefined')
+  if (invalidSlugs.length > 0) {
+    console.warn(`⚠️ Found ${invalidSlugs.length} entries with invalid slugs`)
+    invalidSlugs.forEach(f => console.warn(`  - ${f.path} -> slug: "${f.slug}"`))
+  } else {
+    console.log(`✅ All ${feeds.length} entries have valid slugs`)
+  }
 }
 
 main()

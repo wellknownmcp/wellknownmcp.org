@@ -5,13 +5,14 @@ import { useParams } from 'next/navigation'
 import FeedInteractionPanel from '@/components/FeedInteractionPanel'
 import LLMFeedHubBase from '@/components/LLMFeedHubBase'
 import Link from 'next/link'
-import Head from 'next/head' // 👈 ajouté
+import Head from 'next/head'
 
 export default function LLMFeedHubPage() {
   const { slug } = useParams()
   const [feed, setFeed] = useState<any | null>(null)
   const [defaultText, setDefaultText] = useState<string | undefined>(undefined)
   const [error, setError] = useState<string | null>(null)
+  const [isLoading, setIsLoading] = useState(false)
   const resultRef = useRef<HTMLDivElement>(null)
 
   const handleFeedLoaded = (loadedFeed: any) => {
@@ -24,20 +25,107 @@ export default function LLMFeedHubPage() {
 
   useEffect(() => {
     if (!slug) return
-    const localPath = `/exports/${slug}.llmfeed.json`
-    fetch(localPath)
+// ✅ NOUVEAU : Gérer les feeds temporaires depuis sessionStorage
+  if (typeof slug === 'string' && slug.startsWith('temp-')) {
+    const storedFeed = sessionStorage.getItem(`llmfeed-${slug}`)
+    if (storedFeed) {
+      try {
+        const parsedFeed = JSON.parse(storedFeed)
+        handleFeedLoaded(parsedFeed)
+        // Nettoyer le storage après utilisation
+        sessionStorage.removeItem(`llmfeed-${slug}`)
+        return
+      } catch (err) {
+        console.error('Failed to parse stored feed:', err)
+      }
+    }
+  }
+    setIsLoading(true)
+    setError(null)
+
+    // ✅ NOUVEAU : Détecter si c'est une URL complète
+    const isExternalUrl =
+      typeof slug === 'string' &&
+      (slug.startsWith('http://') ||
+        slug.startsWith('https://') ||
+        slug.startsWith('http%3A//') ||
+        slug.startsWith('https%3A//'))
+
+    let fetchUrl: string
+    let sourceType: string
+
+    if (isExternalUrl) {
+      // URL externe - décoder si nécessaire
+      fetchUrl = slug.startsWith('http')
+        ? (slug as string)
+        : decodeURIComponent(slug as string)
+      sourceType = 'external'
+      console.log(`🌐 Fetching external URL: ${fetchUrl}`)
+    } else {
+      // Fichier local
+      fetchUrl = `/exports/${slug}.llmfeed.json`
+      sourceType = 'local'
+      console.log(`📁 Fetching local file: ${fetchUrl}`)
+    }
+
+    // Validation basique pour les URLs externes
+    if (isExternalUrl) {
+      try {
+        const url = new URL(fetchUrl)
+        if (!['http:', 'https:'].includes(url.protocol)) {
+          setError('❌ Only HTTP/HTTPS URLs are supported')
+          setIsLoading(false)
+          return
+        }
+      } catch (err) {
+        setError('❌ Invalid URL format')
+        setIsLoading(false)
+        return
+      }
+    }
+
+    fetch(fetchUrl)
       .then((res) => {
-        if (!res.ok) throw new Error('Not found locally')
+        if (!res.ok) {
+          throw new Error(`HTTP ${res.status}: ${res.statusText}`)
+        }
         return res.json()
       })
-      .then((json) => handleFeedLoaded(json))
-      .catch(() => setError(`❌ Feed not found at: ${localPath}`))
+      .then((json) => {
+        console.log(`✅ Successfully loaded ${sourceType} feed`)
+        handleFeedLoaded(json)
+      })
+      .catch((err) => {
+        const errorMsg =
+          sourceType === 'external'
+            ? `❌ External feed not accessible: ${err.message}`
+            : `❌ Local feed not found: ${fetchUrl}`
+        console.error(errorMsg, err)
+        setError(errorMsg)
+      })
+      .finally(() => {
+        setIsLoading(false)
+      })
   }, [slug])
 
+  // Générer l'URL JSON appropriée pour le SEO
   const jsonUrl = slug
-    ? `${
-        process.env.NEXT_PUBLIC_SITE_URL || 'https://wellknownmcp.org'
-      }/exports/${slug}.llmfeed.json`
+    ? (() => {
+        const isExternal =
+          typeof slug === 'string' &&
+          (slug.startsWith('http://') ||
+            slug.startsWith('https://') ||
+            slug.startsWith('http%3A//') ||
+            slug.startsWith('https%3A//'))
+
+        return isExternal
+          ? slug.startsWith('http')
+            ? slug
+            : decodeURIComponent(slug as string)
+          : `${
+              process.env.NEXT_PUBLIC_SITE_URL || 'https://wellknownmcp.org'
+            }/exports/${slug}.llmfeed.json`
+      })()
     : ''
 
   return (
@@ -51,35 +139,82 @@ export default function LLMFeedHubPage() {
 
       <h1 className="text-3xl font-bold">LLMFeedHub</h1>
       <p className="mb-4 text-muted-foreground">
-        Upload or reference any `.llmfeed.json` file to explore its structure
-        and trust level.
+        Upload, reference, or analyze any `.llmfeed.json` file to explore its
+        structure and trust level.
+        <br />
+        <span className="text-sm text-blue-600">
+          💡 Supports both local files and external URLs
+        </span>
       </p>
 
+      {/* Status indicator */}
+      {isLoading && (
+        <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded">
+          <p className="text-blue-700">🔄 Loading feed...</p>
+        </div>
+      )}
+
+      {error && (
+        <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded">
+          <p className="text-red-700">{error}</p>
+        </div>
+      )}
+
+      {/* Demo section */}
       <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded">
-        <p className="mb-2 font-semibold">💡 Test demo</p>
-        <a
-          href="/exports/demo/kungfu.llmfeed.json"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-600 no-underline"
-        >
-          👉 download kungfu.llmfeed.json
-        </a>
-        <button
-          onClick={() =>
-            fetch('/exports/demo/kungfu.llmfeed.json')
-              .then((res) => res.json())
-              .then((data) => handleFeedLoaded(data))
-          }
-          className="mt-3 ml-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-        >
-          Inject
-        </button>
-        <Link href="/llmfeedhub/kungfu">
-          <button className="mt-3 ml-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">
-            Go to /llmfeedhub/kungfu
-          </button>
-        </Link>
+        <p className="mb-2 font-semibold">💡 Test examples</p>
+
+        <div className="space-y-2">
+          {/* Local demo */}
+          <div className="flex flex-wrap gap-2 items-center">
+            <span className="text-sm">📁 Local:</span>
+            <a
+              href="/exports/demo/kungfu.llmfeed.json"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline text-sm"
+            >
+              kungfu.llmfeed.json
+            </a>
+            <button
+              onClick={() =>
+                fetch('/exports/demo/kungfu.llmfeed.json')
+                  .then((res) => res.json())
+                  .then((data) => handleFeedLoaded(data))
+              }
+              className="px-3 py-1 bg-blue-600 text-white rounded text-sm hover:bg-blue-700"
+            >
+              Load
+            </button>
+            <Link href="/llmfeedhub/demo/kungfu">
+              <button className="px-3 py-1 bg-green-600 text-white rounded text-sm hover:bg-green-700">
+                /llmfeedhub/demo/kungfu
+              </button>
+            </Link>
+          </div>
+
+          {/* External demo */}
+          <div className="flex flex-wrap gap-2 items-center">
+            <span className="text-sm">🌐 External:</span>
+            <a
+              href="https://wellknownmcp.org/.well-known/mcp.llmfeed.json"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline text-sm"
+            >
+              wellknownmcp.org MCP feed
+            </a>
+            <Link
+              href={`/llmfeedhub/${encodeURIComponent(
+                'https://wellknownmcp.org/.well-known/mcp.llmfeed.json'
+              )}`}
+            >
+              <button className="px-3 py-1 bg-purple-600 text-white rounded text-sm hover:bg-purple-700">
+                Analyze external
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
 
       <FeedInteractionPanel
