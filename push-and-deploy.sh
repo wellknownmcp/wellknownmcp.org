@@ -22,6 +22,9 @@ ssh debian@54.37.40.223 << 'EOF'
   echo "📦 Installation des dépendances..."
   npm install
 
+  echo "📦 Nettoyage du cache .next..."
+  rm -rf .next
+
   echo "🏗️ Build du site..."
   npm run build
 
