@@ -6,12 +6,12 @@ This document defines how `.llmfeed.json` feeds are signed, verified, and certif
 
 ## ✅ Summary
 
-| Concept        | Description |
-|----------------|-------------|
-| `trust` block  | Declares what is signed and by whom |
-| `signature`    | Contains the cryptographic proof |
-| `certification`| Optional third-party endorsement |
-| `signed_blocks`| List of blocks covered — must match canonicalized content |
+| Concept         | Description                                               |
+| --------------- | --------------------------------------------------------- |
+| `trust` block   | Declares what is signed and by whom                       |
+| `signature`     | Contains the cryptographic proof                          |
+| `certification` | Optional third-party endorsement                          |
+| `signed_blocks` | List of blocks covered — must match canonicalized content |
 
 ---
 
@@ -37,8 +37,8 @@ This document defines how `.llmfeed.json` feeds are signed, verified, and certif
 
 ```json
 "signature": {
-  
-  
+
+
   "created_at": "2025-05-19T12:00:00Z",
   "public_key_hint": "...",
   "value": "..."
@@ -60,7 +60,7 @@ A third party can sign the feed — either the same `signed_blocks`, or the `sig
 "certification": {
   "certifier": "https://llmca.org",
   "targets": ["trust", "signature"],
-  
+
   "value": "...",
   "issued_at": "2025-05-19T12:00:00Z",
   "expires_at": "2026-05-19T12:00:00Z"
@@ -74,10 +74,10 @@ A third party can sign the feed — either the same `signed_blocks`, or the `sig
 
 ## 🧭 Two Models of Certification
 
-| Model | Certifier signs... | Use case |
-|-------|---------------------|----------|
-| 🔁 Same `signed_blocks` as author | Just vouches for the content | content mirroring or archive |
-| ✅ Author's `signature` block     | Validates the identity of the signer | **preferred trust model** |
+| Model                             | Certifier signs...                   | Use case                     |
+| --------------------------------- | ------------------------------------ | ---------------------------- |
+| 🔁 Same `signed_blocks` as author | Just vouches for the content         | content mirroring or archive |
+| ✅ Author's `signature` block     | Validates the identity of the signer | **preferred trust model**    |
 
 ---
 
@@ -108,13 +108,13 @@ With:
 
 ## 🧠 Agent Behavior
 
-| Case                           | Action |
-|--------------------------------|--------|
-| Valid signature                | Accept trust block + metadata |
-| Valid certification            | Elevate trust (gold badge) |
-| No signature                   | Warn or degrade trust |
-| Invalid signature              | Reject affected blocks |
-| Signature + certification      | Accept fully if keys match |
+| Case                      | Action                        |
+| ------------------------- | ----------------------------- |
+| Valid signature           | Accept trust block + metadata |
+| Valid certification       | Elevate trust (gold badge)    |
+| No signature              | Warn or degrade trust         |
+| Invalid signature         | Reject affected blocks        |
+| Signature + certification | Accept fully if keys match    |
 
 ---
 
@@ -138,10 +138,10 @@ https://yoursite.org/.well-known/public.pem
 
 ## 🧩 Related
 
-- [`llmfeed.md`](./llmfeed.md)
-- [`agent-behaviour`](/tools/agent-behaviour)
-- [`verify`](/verify)
-- [`feedtype_mcp.md`](./feedtype_mcp.md)
+- [`llmfeed.md`](../01_llmfeed/llmfeed.md)
+- [`agent-behaviour`](https://wellknownmcp.org/tools/agent-behaviour)
+- [`verify`](https://wellknownmcp.org/verify)
+- [`feedtype_mcp.md`](../02_llmfeed_feedtype/feedtype_mcp.md)
 
 ---
 

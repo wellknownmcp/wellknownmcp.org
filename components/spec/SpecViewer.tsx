@@ -9,43 +9,6 @@ import path from 'path'
 
 const siteUrl = 'https://wellknownmcp.org'
 
-marked.use({
-  renderer: {
-    link(this: any, token: Tokens.Link): string | false {
-      const href = token.href
-      const title = token.title
-      const text = token.text
-
-      if (href?.startsWith('http://') || href?.startsWith('https://')) {
-        return `<a href="${href}" ${
-          title ? `title="${title}"` : ''
-        }>${text}</a>`
-      }
-
-      const absolutePrefixes = [
-        '/tools',
-        '/verify',
-        '/faq',
-        '/feeds',
-        '/en',
-        '/join',
-      ]
-
-      const shouldRewrite = absolutePrefixes.some((prefix) =>
-        href?.startsWith(prefix)
-      )
-      let finalHref = href
-      if (shouldRewrite && href) {
-        finalHref = `${siteUrl}${href}`
-      }
-
-      return `<a href="${finalHref}" ${
-        title ? `title="${title}"` : ''
-      }>${text}</a>`
-    },
-  },
-})
-
 function resolveSpecSlug(baseSlug: string, relatedPath: string): string {
   const baseDir = path.posix.dirname(baseSlug)
   const resolved = path.posix.normalize(path.posix.join(baseDir, relatedPath))
@@ -55,9 +18,68 @@ function resolveSpecSlug(baseSlug: string, relatedPath: string): string {
 export default function SpecViewer({ slug }: { slug: string }) {
   const { content, front } = useSpecContext() as SpecContextType
 
+  // ✅ Configuration de marked À L'INTÉRIEUR du composant (accès à slug)
+  const configureMarked = (currentSlug: string) => {
+    marked.use({
+      renderer: {
+        link(this: any, token: Tokens.Link): string | false {
+          const href = token.href
+          const title = token.title
+          const text = token.text
+
+          // Liens externes (gardés tels quels)
+          if (href?.startsWith('http://') || href?.startsWith('https://')) {
+            return `<a href="${href}" ${
+              title ? `title="${title}"` : ''
+            }>${text}</a>`
+          }
+
+          // ✅ NOUVEAU : Liens relatifs vers des .md
+          if (href?.endsWith('.md')) {
+            // Résoudre le chemin relatif par rapport au slug actuel
+            const resolvedSlug = resolveSpecSlug(
+              currentSlug,
+              href.replace('.md', '')
+            )
+            const finalHref = `/spec/${resolvedSlug}`
+
+            return `<a href="${finalHref}" ${
+              title ? `title="${title}"` : ''
+            }>${text}</a>`
+          }
+
+          // Liens absolus vers le site
+          const absolutePrefixes = [
+            '/tools',
+            '/verify',
+            '/faq',
+            '/feeds',
+            '/en',
+            '/join',
+          ]
+
+          const shouldRewrite = absolutePrefixes.some((prefix) =>
+            href?.startsWith(prefix)
+          )
+          let finalHref = href
+          if (shouldRewrite && href) {
+            finalHref = `${siteUrl}${href}`
+          }
+
+          return `<a href="${finalHref}" ${
+            title ? `title="${title}"` : ''
+          }>${text}</a>`
+        },
+      },
+    })
+  }
+
   if (!content) {
     return <div className="text-red-600">Error: Spec content not found.</div>
   }
+
+  // ✅ Configurer marked avec le slug actuel
+  configureMarked(slug)
 
   let htmlContent = ''
   try {
@@ -68,7 +90,7 @@ export default function SpecViewer({ slug }: { slug: string }) {
     htmlContent = '<div class="text-red-600">Markdown parsing error</div>'
   }
 
-  // 🔐 Secure: Related is forced to an array of strings only
+  // Le reste de votre code reste identique...
   const relatedList = Array.isArray(front?.Related)
     ? front?.Related.filter((item) => typeof item === 'string')
     : []

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This feed lists **live, callable actions** that agents may invoke on behalf of users.  
+This feed lists **live, callable actions** that agents may invoke on behalf of users.
 These capabilities represent exposed **functions**, **API routes**, or **service endpoints**.
 
 Agents use them to understand **what they can do**, and **how to call it** — without guessing.
@@ -44,14 +44,14 @@ Each capability MUST declare:
 
 ## 🧩 Optional fields
 
-| Field                   | Description |
-|--------------------------|-------------|
-| `input_schema`           | Required fields or JSON schema |
+| Field                      | Description                            |
+| -------------------------- | -------------------------------------- |
+| `input_schema`             | Required fields or JSON schema         |
 | `llm_trust_level_required` | e.g. `"any-agent"`, `"certified-only"` |
-| `rate_limit`             | e.g. `5/min` |
-| `requires_user_consent`  | `true` or `false` |
-| `audience`               | e.g. `["llm"]`, `["developer"]` |
-| `tags`                   | Classifier keywords |
+| `rate_limit`               | e.g. `5/min`                           |
+| `requires_user_consent`    | `true` or `false`                      |
+| `audience`                 | e.g. `["llm"]`, `["developer"]`        |
+| `tags`                     | Classifier keywords                    |
 
 ---
 
@@ -72,49 +72,49 @@ These are not mandatory, but recommended to boost interoperability and real-worl
 
 ### 🤝 Support & Interaction
 
-| Name                | Path        | Description |
-|---------------------|-------------|-------------|
-| `requestCallback`   | `/callback` | Request a human to call back the user |
-| `submitContactForm` | `/contact`  | Submit a message or inquiry |
-| `bookAppointment`   | `/book`     | Book a meeting or service |
-| `getSupportAvailability` | `/support-status` | Return human presence availability |
+| Name                     | Path              | Description                           |
+| ------------------------ | ----------------- | ------------------------------------- |
+| `requestCallback`        | `/callback`       | Request a human to call back the user |
+| `submitContactForm`      | `/contact`        | Submit a message or inquiry           |
+| `bookAppointment`        | `/book`           | Book a meeting or service             |
+| `getSupportAvailability` | `/support-status` | Return human presence availability    |
 
 ---
 
 ### 🌍 Localisation & Language
 
-| Name                   | Path        | Description |
-|------------------------|-------------|-------------|
-| `getRegionsServed`     | `/regions`  | Return ISO regions supported |
-| `getLanguagesSupported`| `/languages`| Return languages agents can use |
+| Name                    | Path         | Description                     |
+| ----------------------- | ------------ | ------------------------------- |
+| `getRegionsServed`      | `/regions`   | Return ISO regions supported    |
+| `getLanguagesSupported` | `/languages` | Return languages agents can use |
 
 ---
 
 ### 📦 Logistics & Reservations
 
-| Name                | Path           | Description |
-|---------------------|----------------|-------------|
-| `trackDelivery`     | `/track`       | Track a parcel or service ETA |
-| `getETA`            | `/eta`         | Estimate arrival time |
-| `cancelReservation` | `/cancel`      | Cancel a user reservation |
+| Name                | Path      | Description                   |
+| ------------------- | --------- | ----------------------------- |
+| `trackDelivery`     | `/track`  | Track a parcel or service ETA |
+| `getETA`            | `/eta`    | Estimate arrival time         |
+| `cancelReservation` | `/cancel` | Cancel a user reservation     |
 
 ---
 
 ### 🔐 Consent & Compliance
 
-| Name                      | Path         | Description |
-|---------------------------|--------------|-------------|
-| `downloadPersonalData`    | `/gdpr/export`| User can access their data |
-| `submitConsentForm`       | `/consent`    | Required consent prior to action |
-| `getWrapperAuditTrail`    | `/audit`      | Show trace of agent actions (transparent AI) |
+| Name                   | Path           | Description                                  |
+| ---------------------- | -------------- | -------------------------------------------- |
+| `downloadPersonalData` | `/gdpr/export` | User can access their data                   |
+| `submitConsentForm`    | `/consent`     | Required consent prior to action             |
+| `getWrapperAuditTrail` | `/audit`       | Show trace of agent actions (transparent AI) |
 
 ---
 
 ## 📎 Related
 
-- [`llmfeed.md`](./llmfeed.md)
-- [`agent-behaviour.md`](./agent-behaviour.md)
-- [`agent-guidance.md`](./agent-guidance.md)
+- [`llmfeed.md`](../01_llmffeed/llmfeed.md)
+- [`agent-behaviour.md`](../04_agent-behavior/agent-behaviour.md)
+- [`agent-guidance.md`](../04_agent-behavior/agent-guidance.md)
 
 ---
 
@@ -123,6 +123,7 @@ These are not mandatory, but recommended to boost interoperability and real-worl
 While the `capabilities.llmfeed.json` feed type is designed to offer a simple, high-level view for agents and LLMs, it may optionally reference a complete OpenAPI file for technical documentation.
 
 This allows agents to:
+
 - detect the service intent via `capabilities[].intent`
 - consult precise calling schemas via the OpenAPI spec
 
@@ -148,6 +149,6 @@ This allows agents to:
 }
 ```
 
-MCP and OpenAPI are **complementary**:
-- MCP provides context, trust, and intent.
+- LLMFeed and OpenAPI are **complementary**:
+- LLMFeed provides context, trust, and intent.
 - OpenAPI provides detailed function contracts.

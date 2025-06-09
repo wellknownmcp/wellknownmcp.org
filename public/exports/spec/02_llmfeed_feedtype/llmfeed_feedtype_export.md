@@ -11,6 +11,7 @@ Use it for documentation, project metadata, SDKs, FAQs, or structured bundles.
 ## Location
 
 Typical path:
+
 ```
 /exports/faq.llmfeed.json
 ```
@@ -43,11 +44,11 @@ Can be linked from:
 
 ## Modes of generation
 
-| Mode        | Description |
-|-------------|-------------|
-| Static      | Pre-generated file in `/exports/` |
-| Dynamic     | Served via API (e.g. `/api/llmfeed/export/faq`) |
-| Live        | Extracted on-the-fly from rendered HTML (`/faq`) |
+| Mode    | Description                                      |
+| ------- | ------------------------------------------------ |
+| Static  | Pre-generated file in `/exports/`                |
+| Dynamic | Served via API (e.g. `/api/llmfeed/export/faq`)  |
+| Live    | Extracted on-the-fly from rendered HTML (`/faq`) |
 
 ⚠️ Signature is recommended for static, and optional for dynamic if authenticated.
 
@@ -125,7 +126,6 @@ Agents can use this to:
 
 ## Related
 
-- [`llmfeed.md`](./llmfeed.md)
-- [`tools/export-button`](/tools/export-button)
-- [`preview`](/preview)
+- [`llmfeed.md`](../01_llmfeed/llmfeed.mdllmfeed.md)
+- [`tools/export-button`](https://wellknownmcp.org/tools/export-button)
 - [`feedtype_llm-index.md`](./feedtype_llm-index.md)

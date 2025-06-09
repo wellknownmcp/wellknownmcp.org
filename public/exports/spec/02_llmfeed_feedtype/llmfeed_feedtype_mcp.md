@@ -14,6 +14,7 @@ This feed acts as the main capsule that an agent reads to understand:
 ## Location
 
 Recommended path:
+
 ```
 .well-known/mcp.llmfeed.json
 ```
@@ -62,14 +63,14 @@ Recommended path:
 
 ## Fields
 
-| Field         | Required | Description |
-|---------------|----------|-------------|
-| `feed_type`   | ✅ yes   | Always `"mcp"` |
-| `metadata`    | ✅ yes   | Basic info: origin, title, date |
-| `prompts`     | optional | Declared intents with keyword triggers |
-| `capabilities`| optional | Declared APIs or actions callable by agents |
-| `trust`       | optional but recommended | Certifier, scope, signed_blocks |
-| `agent_behavior` | optional | Declares expected UX |
+| Field            | Required                 | Description                                 |
+| ---------------- | ------------------------ | ------------------------------------------- |
+| `feed_type`      | ✅ yes                   | Always `"mcp"`                              |
+| `metadata`       | ✅ yes                   | Basic info: origin, title, date             |
+| `prompts`        | optional                 | Declared intents with keyword triggers      |
+| `capabilities`   | optional                 | Declared APIs or actions callable by agents |
+| `trust`          | optional but recommended | Certifier, scope, signed_blocks             |
+| `agent_behavior` | optional                 | Declares expected UX                        |
 
 ---
 
@@ -82,7 +83,6 @@ Recommended path:
 - Use as handshake capsule for the site
 
 ---
-
 
 ---
 
@@ -107,14 +107,13 @@ But is optimized for:
 - 🎯 agent previews or minimal understanding.
 
 Recommended fields:
+
 - `metadata`
 - `prompts[]`
 - optional `agent_behavior`
 - (trust and capabilities often omitted)
 
 Agents that find this file should interpret it as a **lightweight fallback or teaser**, not a full declaration of trust or functionality.
-
-
 
 ---
 
@@ -165,15 +164,14 @@ Declare where and how your service is available geographically.
 
 These blocks are optional but highly recommended for services with real-world contact points or international reach.
 
-
 ## Relation to other feeds
 
-| Feed                   | Purpose |
-|------------------------|---------|
-| `llm-index.llmfeed.json` | Lists this and others for indexing |
-| `capabilities.llmfeed.json` | May be separated for scalability or auth |
-| `manifesto.llmfeed.json` | Declares the long-term intention or ethics |
-| `mcp-lite.llmfeed.json` | A compressed summary for low-bandwidth devices |
+| Feed                        | Purpose                                        |
+| --------------------------- | ---------------------------------------------- |
+| `llm-index.llmfeed.json`    | Lists this and others for indexing             |
+| `capabilities.llmfeed.json` | May be separated for scalability or auth       |
+| `manifesto.llmfeed.json`    | Declares the long-term intention or ethics     |
+| `mcp-lite.llmfeed.json`     | A compressed summary for low-bandwidth devices |
 
 ---
 
@@ -188,11 +186,10 @@ These blocks are optional but highly recommended for services with real-world co
 
 ## Related
 
-- [`llmfeed.md`](./llmfeed.md)
+- [`llmfeed.md`](../01_llmfeed/llmfeed.md)
 - [`feedtype_llm-index.md`](./feedtype_llm-index.md)
-- [`agent-behaviour`](/tools/agent-behaviour)
-- [`verify`](/verify)
-
+- [`agent-behaviour`](https://wellknownmcp.org/tools/agent-behaviour)
+- [`verify`](https://wellknownmcp.org/verify)
 
 ---
 
@@ -233,14 +230,13 @@ This turns the MCP feed into a **router of human intent**, giving the agent clea
 
 ### Fields
 
-| Field              | Required | Description |
-|--------------------|----------|-------------|
-| `intent`           | ✅        | Canonical name of the detected user intent |
-| `triggers[]`       | ✅        | Phrases (or regex) that the LLM should match |
-| `response_hint`    | ✅        | Short description of what the agent should say/do |
-| `suggested_targets[]` | ✅     | Pages or feeds the LLM can suggest or load |
+| Field                 | Required | Description                                       |
+| --------------------- | -------- | ------------------------------------------------- |
+| `intent`              | ✅       | Canonical name of the detected user intent        |
+| `triggers[]`          | ✅       | Phrases (or regex) that the LLM should match      |
+| `response_hint`       | ✅       | Short description of what the agent should say/do |
+| `suggested_targets[]` | ✅       | Pages or feeds the LLM can suggest or load        |
 
 ---
 
 This field complements the `prompts[]` block, but works in reverse: rather than giving a prompt to the LLM, it tells the LLM how to reply to a user prompt.
-

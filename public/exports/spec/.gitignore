@@ -1,0 +1,13 @@
+# Ce script est volontairement versionné : pas besoin de l’exclure !
+# Si tu ne veux PAS versionner le script :
+update-and-push.sh
+
+# Fichiers Python temporaires
+__pycache__/
+*.pyc
+*.pyo
+
+# Fichiers éditeur
+.DS_Store
+.idea/
+.vscode/

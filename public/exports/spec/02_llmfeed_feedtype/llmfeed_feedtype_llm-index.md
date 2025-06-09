@@ -76,6 +76,6 @@ Recommended path:
 
 ## Related pages
 
-- `/tools/well-known`
-- `/feeds`
-- `/preview`
+- `https://wellknownmcp.org/tools/well-known`
+- `https://wellknownmcp.org/feeds`
+

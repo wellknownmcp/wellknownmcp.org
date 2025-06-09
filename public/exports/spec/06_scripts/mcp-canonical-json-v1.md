@@ -1,87 +1,75 @@
-# MCP Canonical JSON — v1
 
-This document defines the **canonicalization rules** used for signing and verifying `.llmfeed.json` feeds in accordance with the Model Context Protocol (MCP).
+# MCP Canonicalization v1
 
-It ensures that the **hash of a feed's signed blocks** is consistent across languages, platforms, and tools.
+## Profile Identifier
 
----
+```
+https://llmca.org/mcp-canonical-json/v1
+```
 
-## ✍️ Canonicalization Rules (v1)
+## Purpose
 
-### ✅ JSON Encoding
+This canonicalization profile defines how a `.llmfeed.json` feed is serialized to a byte string for signature and verification.
 
-- UTF-8 encoded
-- `sort_keys=True`
-- Separators: `(',', ':')` (no whitespace)
-- No indentation
-- No trailing commas
+It ensures that:
 
-### ✅ Block Concatenation
+- The signature guarantees both content integrity and **token order integrity**.
+- The feed is consumed by LLMs exactly as it was signed.
+- Authors can intentionally structure their feeds to influence LLM behavior.
 
-When signing or verifying a feed:
-1. Read the `signed_blocks[]` list
-2. Extract each top-level block listed
-3. Encode each block as JSON string (with canonical rules)
-4. Concatenate them in order
-5. Hash the result with SHA-256
+## Canonicalization Algorithm (Reference Implementation)
 
-This becomes the signature base string.
+```python
+json.dumps(
+    data,
+    separators=(",", ":"),
+    ensure_ascii=False
+).encode("utf-8")
+```
 
----
+## Why not `sort_keys=True`?
 
-## 🔐 Signature Format
+In `.llmfeed.json`, the target consumer is an LLM — not a generic JSON parser.
 
-Each signed feed must include a `signature` block:
+LLMs process JSON feeds **as raw text**, token by token. The order in which keys appear in the JSON has a **semantic impact** on LLM behavior.
+
+Therefore:
+
+- Preserving key order is necessary to guarantee that LLMs interpret the feed as intended.
+- Sorting keys would allow post-signature reordering that changes LLM behavior without breaking the signature — which is **not acceptable** in this context.
+
+## Implementation Notes
+
+- The canonicalization MUST be implemented locally.
+- Verifiers MUST NOT fetch this URL at runtime.
+- The URL is an identifier, not an endpoint.
+- The output is a UTF-8 byte string.
+- Non-ASCII characters are serialized as UTF-8.
+
+## Security Considerations
+
+- The signature guarantees both data integrity and token order.
+- Any change in key order will invalidate the signature.
+- This is intentional, as order impacts LLM behavior.
+
+## Versioning Policy
+
+- This profile is versioned via its URL.
+- Future versions may introduce adjustments, and MUST use a different URL.
+
+## Example Usage
 
 ```json
-"signature": {
-  "algorithm": "ed25519",
-  "signed_blocks": ["feed_type", "metadata", "trust"],
-  "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
-  "signature": "base64string",
-  "issued_at": "2025-05-20T00:00:00Z"
+"trust": {
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "signed_blocks": [ ... ],
+    "algorithm": "ed25519",
+    "public_key_hint": "..."
 }
 ```
 
 ---
 
-## 📄 Why it's required
+*LLMCA — Model Context Protocol Working Group*
 
-Signatures are only valid if:
-
-- The signer and verifier **use the exact same encoding**
-- The field order, spacing, and representation is fixed
-- No ambiguity exists in array formatting, objects, booleans, etc.
-
-This canonicalization is enforced by `llmca.org` for all official certifications.
-
----
-
-## 🧪 Testing / Implementation
-
-Reference tools:
-- Python: `sign_feed.py` in [llmfeed-spec/scripts](https://github.com/wellknownmcp/llmfeed-spec/tree/main/scripts)
-- Node.js: coming soon
-- Online validator: coming soon at [llmca.org/verify](https://llmca.org/verify)
-
----
-
-## 🌐 URL
-
-Canonical reference URL for this version:
-```
-https://llmca.org/mcp-canonical-json/v1
-```
-
-This URL should appear in the `canonicalization` field of any `.llmfeed.json` signature block that adheres to these rules.
-
----
-
-## 🧠 Versioning
-
-Future versions (`v2`, `v3`, etc.) will be published at:
-
-- `https://llmca.org/mcp-canonical-json/v2`
-- `https://llmca.org/mcp-canonical-json/v3`
-
-All versions will be backwards compatible unless explicitly stated.
+*Version: Draft 2025-06-XX*
