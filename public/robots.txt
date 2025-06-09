@@ -1,6 +1,25 @@
 # *
 User-agent: *
 Allow: /
+Allow: /.well-known/
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /preview/
+
+# GPTBot
+User-agent: GPTBot
+Allow: /
+Allow: /.well-known/
+Allow: /exports/
+Disallow: /api/
+
+# Claude-Web
+User-agent: Claude-Web
+Allow: /
+Allow: /.well-known/
+Allow: /exports/
+Disallow: /api/
 
 # Host
 Host: https://wellknownmcp.org
