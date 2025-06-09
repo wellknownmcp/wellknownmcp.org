@@ -2,15 +2,13 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { redirect, notFound } from 'next/navigation'
-import { SpecProvider } from '@/components/spec/SpecContext'
-import SpecViewer from '@/components/spec/SpecViewer'
 import SeoHead from '@/components/SeoHead'
+import SpecPageClient from '@/components/spec/SpecPageClient' // ⬅️ Import du wrapper
 
 export default function SpecPage({ params }: { params: { slug?: string[] } }) {
   const slug = params.slug?.join('/') ?? ''
   const cleanSlug = slug.replace(/\.md$/, '')
 
-  // Redirect root /spec → /spec/01_llmfeed/llmfeed (ou autre page par défaut)
   if (!cleanSlug) {
     redirect('/spec/01_llmfeed/llmfeed')
   }
@@ -31,16 +29,11 @@ export default function SpecPage({ params }: { params: { slug?: string[] } }) {
   const { content, data: front } = matter(mdContent)
 
   const canonicalUrl = `https://wellknownmcp.org/spec/${cleanSlug}`
-
-  // Titre lisible à partir du slug
   const titleParts = cleanSlug
     .split('/')
     .map((part) => part.replace(/[_\-]/g, ' '))
   const pageTitle = front.title || `Spec: ${titleParts.join(' / ')}`
-  console.log('[SpecPage] mdPath:', mdPath)
-  console.log('[SpecPage] mdContent type:', typeof mdContent)
-  console.log('[SpecPage] mdContent:', mdContent.slice(0, 200))
-  console.log('Looking for MD file:', mdPath)
+
   return (
     <>
       <SeoHead
@@ -64,9 +57,12 @@ export default function SpecPage({ params }: { params: { slug?: string[] } }) {
           ]
         }
       />
-      <SpecProvider value={{ slug: cleanSlug, content, front }}>
-        <SpecViewer slug={cleanSlug} />
-      </SpecProvider>
+      {/* ✅ CORRIGÉ : Server Component utilise Client Component wrapper */}
+      <SpecPageClient
+        slug={cleanSlug}
+        content={content}
+        front={front}
+      />
     </>
   )
 }

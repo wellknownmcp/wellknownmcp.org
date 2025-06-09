@@ -21,7 +21,7 @@ export default function Home() {
       <SchemaHeroSection />
       <FAQList />
       <MissionBadges />
-      <NewsSection />
+      {/* <NewsSection /> */}
       <Community />
       <InjectHooks />
     </div>
