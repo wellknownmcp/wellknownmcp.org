@@ -4,7 +4,7 @@
         <title>News (zh) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/zh/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Mon, 09 Jun 2025 14:41:24 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Jun 2025 17:22:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh</language>
@@ -15,6 +15,12 @@
             <guid isPermaLink="false">https://wellknownmcp.org/zh/news/llm-agent-readiness-framework-2025</guid>
             <pubDate>Sun, 15 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[独家框架揭示哪些AI模型能够处理结构化、签名的智能体信息流。我们曝光了MCP实现中聊天与真正自主性之间的差距——并提出行业需要采用的测试标准。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[homomorphic-capsules]]></title>
+            <link>https://wellknownmcp.org/zh/news/homomorphic-capsules</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/homomorphic-capsules</guid>
+            <pubDate>Tue, 10 Jun 2025 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[❓ 完整常见问题解答 — MCP & LLMFeed]]></title>
@@ -29,12 +35,6 @@
             <guid isPermaLink="false">https://wellknownmcp.org/zh/news/from-mcp-to-llmfeed-manifesto</guid>
             <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[wellknownmcp 团队宣言：智能体网络愿景、MCP 演进，以及信任如何改变一切。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[homomorphic-capsules]]></title>
-            <link>https://wellknownmcp.org/zh/news/homomorphic-capsules</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/zh/news/homomorphic-capsules</guid>
-            <pubDate>Fri, 06 Jun 2025 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[如何通过 llmfeed.json 让您的网站适应 AI 代理]]></title>

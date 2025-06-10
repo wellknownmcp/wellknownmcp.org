@@ -1,9 +1,47 @@
+// page.tsx - Amélioration simple qui utilise mieux le frontmatter
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { redirect, notFound } from 'next/navigation'
 import SeoHead from '@/components/SeoHead'
-import SpecPageClient from '@/components/spec/SpecPageClient' // ⬅️ Import du wrapper
+import SpecPageClient from '@/components/spec/SpecPageClient'
+
+// 🎯 Fonction simple pour mapper frontmatter → SeoHead
+function getFrontmatterSeoProps(front: any, canonicalUrl: string, fallbackTitle: string) {
+  // 🛡️ Protection contre frontmatter vide/null
+  const safeFront = front || {}
+  
+  return {
+    // Props de base (inchangés)
+    title: safeFront.title || fallbackTitle,
+    description: safeFront.description,
+    ogImage: safeFront.image || 'https://wellknownmcp.org/og/spec.png',
+    canonicalUrl,
+    keywords: safeFront.tags,
+
+    // 🚀 Ajouts intelligents basés sur le frontmatter
+    llmIntent: safeFront.llmIntent || 'browse-spec',
+    llmTopic: safeFront.llmTopic || 'spec',
+    llmlang: safeFront.lang || 'en',
+    
+    // Si le frontmatter a des champs avancés, on les utilise
+    ...(safeFront.audience && { llmAudience: safeFront.audience }),
+    ...(safeFront.capabilities && { llmCapabilities: safeFront.capabilities }),
+    ...(safeFront.trustLevel && { llmTrustLevel: safeFront.trustLevel }),
+    ...(safeFront.feedTypes && { llmFeedTypes: safeFront.feedTypes }),
+    ...(safeFront.llmBehaviorHints && { llmBehaviorHints: safeFront.llmBehaviorHints }),
+    ...(safeFront.riskLevel && { llmRiskLevel: safeFront.riskLevel }),
+    ...(safeFront.contentType && { llmContentType: safeFront.contentType }),
+    ...(safeFront.updateFrequency && { llmUpdateFrequency: safeFront.updateFrequency }),
+    ...(safeFront.mcpFeedUrl && { mcpFeedUrl: safeFront.mcpFeedUrl }),
+    ...(safeFront.pageType && { pageType: safeFront.pageType }),
+    ...(safeFront.interactionComplexity && { interactionComplexity: safeFront.interactionComplexity }),
+    
+    // Defaults intelligents
+    autoDiscoverFeeds: safeFront.autoDiscoverFeeds !== false,
+    agentReadiness: safeFront.agentReadiness !== false,
+  }
+}
 
 export default function SpecPage({ params }: { params: { slug?: string[] } }) {
   const slug = params.slug?.join('/') ?? ''
@@ -28,40 +66,29 @@ export default function SpecPage({ params }: { params: { slug?: string[] } }) {
   const mdContent = fs.readFileSync(mdPath, 'utf-8')
   const { content, data: front } = matter(mdContent)
 
-  const canonicalUrl = `https://wellknownmcp.org/spec/${cleanSlug}`
+  // 🛡️ Protection contre l'absence de frontmatter
+  const safeFront = front || {}
+
+  // 🎯 Construction intelligente de l'URL canonique
+  const canonicalUrl = safeFront.canonical_url || `https://wellknownmcp.org/spec/${cleanSlug}`
+  
+  // 🚀 Mapping du frontmatter vers SeoHead (garde votre logique titre existante)
   const titleParts = cleanSlug
     .split('/')
     .map((part) => part.replace(/[_\-]/g, ' '))
-  const pageTitle = front.title || `Spec: ${titleParts.join(' / ')}`
+  const pageTitle = safeFront.title || `Spec: ${titleParts.join(' / ')}`
+  
+  const seoProps = getFrontmatterSeoProps(safeFront, canonicalUrl, pageTitle)
 
   return (
     <>
-      <SeoHead
-        title={pageTitle}
-        description={
-          front.description ||
-          `Detailed specification page for ${pageTitle} in the MCP documentation.`
-        }
-        canonicalUrl={canonicalUrl}
-        ogImage="https://wellknownmcp.org/og/spec.png"
-        llmIntent="browse-spec"
-        llmTopic="spec"
-        llmlang="en"
-        keywords={
-          front.keywords || [
-            'specification',
-            'mcp',
-            'llmfeed',
-            'agentic web',
-            'standard',
-          ]
-        }
-      />
-      {/* ✅ CORRIGÉ : Server Component utilise Client Component wrapper */}
+      <SeoHead {...seoProps} />
+      
+      {/* ✅ Votre SpecPageClient existant - pas de changement */}
       <SpecPageClient
         slug={cleanSlug}
         content={content}
-        front={front}
+        front={safeFront}
       />
     </>
   )

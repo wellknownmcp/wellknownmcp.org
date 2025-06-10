@@ -1,11 +1,101 @@
----
-title: Where to Begin
-description: A simple guide to help you understand the standard and take your first steps.
-date: '2025-05-07'
+yaml---
+# 📄 Basic metadata
+title: "Where to Begin — Your First Steps into the Agentic Web"
+description: "A simple guide to help you understand MCP and LLMFeed — the missing bridge between your intent and agent understanding."
+date: "2025-05-07T00:00:00.000Z"
+lang: "en"
+
+# 🏷️ Tags
 tags:
-  - llmfeed
-  - manual
-lang: en
+  - "mcp"
+  - "llmfeed" 
+  - "ai-agents"
+  - "getting-started"
+  - "onboarding"
+  - "developers"
+  - "business"
+
+# 🎯 Content classification
+format: "onboarding"
+category: "getting-started"
+contentType: "guide"
+
+# 🧠 Intent and audience
+intent: "convert-to-ecosystem"
+llmIntent: "onboard-newcomer"
+llmTopic: "mcp-introduction"
+audience:
+  - "llm"
+  - "developer" 
+  - "business"
+
+# 📊 Advanced metadata
+priority: "critical"
+riskLevel: "low"
+updateFrequency: "weekly"
+pageType: "landing"
+interactionComplexity: "simple"
+
+# 🔗 Urls
+slug: "begin"
+canonical_url: "https://wellknownmcp.org/begin"
+mcpFeedUrl: "/.well-known/mcp.llmfeed.json"
+llmIndexUrl: "/.well-known/llm-index.llmfeed.json"
+
+# 🎨 Media
+image: "/images/getting-started/begin-hero.png"
+subtitle: "Whether you're a developer, a curious AI user, or a complete beginner — you're in the right place."
+dir: "ltr"
+
+# 🤖 Configuration pour agents
+autoDiscoverFeeds: true
+agentReadiness: true
+llmBehaviorHints: "suggest-only"
+
+# 📋 Métadonnées spécialisées
+feedTypes:
+  - "mcp"
+  - "export"
+  - "prompt"
+
+capabilities:
+  - "onboarding"
+  - "education"
+  - "export"
+
+trustLevel: "basic"
+
+# 🌐 Localisation
+translations:
+  en: "/begin"
+  fr: "/fr/commencer"
+
+# 📈 Analytics et tracking
+trackingCategory: "onboarding"
+conversionGoal: "conversion"
+
+# 🏗️ Métadonnées techniques
+technicalLevel: "beginner"
+estimatedReadTime: "3 min"
+lastModified: "2025-06-10T00:00:00.000Z"
+
+# 🔐 Sécurité et conformité
+gdprCompliant: true
+dataProcessing: "analytics"
+privacyLevel: "public"
+
+# 📚 Relations et références
+relatedArticles:
+  - "getting-started"
+  - "manifesto"
+  - "faq"
+
+prerequisites: []
+
+# 💼 Contexte business
+businessImpact: "high"
+targetMarket: "developers"
+monetizationPotential: "high"
 ---
 
 # 👋 Welcome to WellKnownMCP
@@ -28,6 +118,14 @@ We propose a new layer:
 📂 `.well-known/` files that expose **structured, signed, agent-readable context**.
 
 ---
+## ✨ What makes it special?
+
+- ✅ **Universal**: Works with ChatGPT, Claude, Mistral, Gemini, etc.
+- ✅ **Verifiable**: Can be signed (by you) or certified (by LLMCA)
+- ✅ **Teachable**: Turn any LLM into your personal tutor
+- ✅ **Portable**: Export, replay, or embed anywhere
+
+Think of it as **structured intent** that agents can trust.
 
 ## 🧠 What is a `.llmfeed.json`?
 
@@ -52,6 +150,21 @@ It contains your **intentions**, **prompts**, **APIs**, **exports**, or **certif
 
 It’s the **MIME-type** of intent for agents.
 
+---
+## 🎯 See it in action
+
+```json
+{
+  "feed_type": "mcp",
+  "metadata": {
+    "title": "My Restaurant",
+    "origin": "https://myrestaurant.com"
+  },
+  "capabilities": [
+    {"name": "book_table", "method": "POST", "path": "/book"}
+  ]
+}
+```
 ---
 
 ## 🧪 Try it live

@@ -73,16 +73,22 @@ const rssPaths = languages.map((lang) => ({
 }))
 console.log(`✅ DEBUG: rssPaths = ${rssPaths.length}`)
 
-// News Paths
-const newsPaths = Object.entries(newsIndex).flatMap(([lang, articles]) =>
-  articles.map((item) => ({
-    loc: `${siteUrl}/${lang}/news/${item.slug}`,
-    changefreq: 'daily',
-    priority: 0.9,
-    lastmod: formatDateForSitemap(item.date),
-  }))
-)
+// News Paths - FIX: Filtrer les entrées pour exclure _meta
+const newsPaths = Object.entries(newsIndex)
+  .filter(([lang, articles]) => {
+    // Exclure _meta et tout ce qui n'est pas un array
+    return lang !== '_meta' && Array.isArray(articles);
+  })
+  .flatMap(([lang, articles]) =>
+    articles.map((item) => ({
+      loc: `${siteUrl}/${lang}/news/${item.slug}`,
+      changefreq: 'daily',
+      priority: 0.9,
+      lastmod: formatDateForSitemap(item.date),
+    }))
+  )
 console.log(`✅ DEBUG: newsPaths = ${newsPaths.length}`)
+
 
 // llmfeedhub Paths
 const llmfeedhubPaths = llmfeedhubIndex

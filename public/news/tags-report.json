@@ -2,7 +2,7 @@
   "global": [
     {
       "tag": "llmfeed",
-      "count": 95
+      "count": 94
     },
     {
       "tag": "mcp",
@@ -26,7 +26,7 @@
     },
     {
       "tag": "manual",
-      "count": 17
+      "count": 16
     },
     {
       "tag": "llm",
@@ -743,7 +743,7 @@
       },
       {
         "tag": "llmfeed",
-        "count": 31
+        "count": 30
       },
       {
         "tag": "agentic-web",
@@ -839,10 +839,6 @@
       },
       {
         "tag": "cryptographic-verification",
-        "count": 2
-      },
-      {
-        "tag": "manual",
         "count": 2
       },
       {
@@ -1255,6 +1251,10 @@
       },
       {
         "tag": "canonicalization",
+        "count": 1
+      },
+      {
+        "tag": "manual",
         "count": 1
       },
       {

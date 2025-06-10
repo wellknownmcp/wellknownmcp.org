@@ -23,10 +23,400 @@
         "trust-verification"
       ],
       "excerpt": "\r  🧪 The 2025 Agent Readiness Challenge: Beyond MCP Concepts to LLMFeed Reality\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "8 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/llm-agent-readiness-framework-2025",
         "fr": "/fr/news/llm-agent-readiness-framework-2025",
         "zh": "/zh/news/llm-agent-readiness-framework-2025"
+      }
+    },
+    {
+      "slug": "2025-07-05-microsoft-nlweb-protocol",
+      "title": "Microsoft NLWeb and LLMFeed: Complementary Standards for the Agentic Web",
+      "description": "Comprehensive technical analysis of Microsoft's NLWeb protocol and LLMFeed specification, their synergies, architectural differences, and combined role in building the future Agentic Web infrastructure.",
+      "date": "2025-06-10",
+      "tags": [
+        "agentic-web",
+        "ai-agents",
+        "certification",
+        "developers",
+        "interoperability",
+        "llmfeed",
+        "mcp",
+        "microsoft",
+        "nlweb",
+        "signature",
+        "trust"
+      ],
+      "excerpt": " Microsoft NLWeb and LLMFeed: Complementary Standards for the Agentic Web Executive Summary: Microsoft's NLWeb and the LLMFeed specification represent complementary approaches to enabling natural lang",
+      "format": "specification",
+      "category": "technical",
+      "intent": "technical-guide",
+      "llmIntent": "comprehensive-technical-analysis",
+      "audience": [
+        "llm",
+        "developer",
+        "business"
+      ],
+      "image": "/images/articles/nlweb-vs-llmfeed-architecture.png",
+      "subtitle": "Technical deep-dive into complementary standards shaping the Agentic Web",
+      "technicalLevel": "advanced",
+      "estimatedReadTime": "25 min",
+      "trustLevel": "certified",
+      "businessImpact": "high",
+      "priority": "high",
+      "feedTypes": [
+        "mcp",
+        "export",
+        "capabilities",
+        "session",
+        "credential"
+      ],
+      "capabilities": [
+        "verification",
+        "export",
+        "signature",
+        "certification"
+      ],
+      "agentReadiness": true,
+      "aioScore": 100,
+      "translations": {
+        "en": "/en/news/2025-07-05-microsoft-nlweb-protocol"
+      }
+    },
+    {
+      "slug": "begin",
+      "title": "begin",
+      "description": "",
+      "date": "2025-06-10",
+      "tags": [],
+      "excerpt": "yaml\r  📄 Basic metadata\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "4 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 2,
+      "translations": {
+        "en": "/en/news/begin",
+        "fr": "/fr/news/begin",
+        "es": "/es/news/begin",
+        "hi": "/hi/news/begin",
+        "zh": "/zh/news/begin",
+        "ar": "/ar/news/begin",
+        "uk": "/uk/news/begin"
+      }
+    },
+    {
+      "slug": "how-llms-crawl-web-2025-agentic-seo-guide",
+      "title": "How Major LLMs Crawl the Web in 2025: The Complete Guide to AI Crawler Optimization and Agentic SEO",
+      "description": "Discover how ChatGPT, Claude, Grok crawl the web, plus how LLMFeed revolutionizes AI optimization beyond traditional SEO for the Agentic Web.",
+      "date": "2025-06-10",
+      "tags": [
+        "agentic-seo",
+        "ai-agents",
+        "business",
+        "developers",
+        "llm",
+        "llmfeed",
+        "mcp",
+        "search",
+        "web-optimization"
+      ],
+      "excerpt": "\r  How Major LLMs Crawl the Web in 2025: The Complete Guide to AI Crawler Optimization and the Rise of Agentic SEO\r",
+      "format": "guide",
+      "category": "technical",
+      "intent": "technical-guide",
+      "llmIntent": "learn-ai-crawler-optimization",
+      "audience": [
+        "llm",
+        "developer",
+        "business"
+      ],
+      "image": "/images/articles/llm-crawling-agentic-web-2025.png",
+      "subtitle": "From SEO to AIO: Optimizing for the Agent Economy with LLMFeed and MCP Protocol",
+      "technicalLevel": "intermediate",
+      "estimatedReadTime": "15 min",
+      "trustLevel": "signed",
+      "businessImpact": "high",
+      "priority": "high",
+      "feedTypes": [
+        "mcp",
+        "export",
+        "capabilities",
+        "llm-index"
+      ],
+      "capabilities": [
+        "crawler-optimization",
+        "agentic-seo-implementation",
+        "llmfeed-generation",
+        "trust-verification",
+        "agent-guidance"
+      ],
+      "agentReadiness": true,
+      "aioScore": 100,
+      "translations": {
+        "en": "/en/news/how-llms-crawl-web-2025-agentic-seo-guide"
+      }
+    },
+    {
+      "slug": "launch-newstack",
+      "title": "launch-newstack",
+      "description": "",
+      "date": "2025-06-10",
+      "tags": [],
+      "excerpt": "\r \r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 2,
+      "translations": {
+        "en": "/en/news/launch-newstack"
+      }
+    },
+    {
+      "slug": "le_chat_mcp_web_future_news",
+      "title": "Commentary from Le Chat: Why MCP Matters for the Future of the Web",
+      "description": "Le Chat offers a thoughtful reflection on the importance of the Model Context Protocol (MCP) in shaping a verifiable, interoperable, and agent-ready future web.",
+      "date": "2025-06-10",
+      "tags": [
+        "agentic-web",
+        "llmfeed",
+        "mcp",
+        "open-standards",
+        "trust"
+      ],
+      "excerpt": "\r  📰 Commentary from Le Chat: Why MCP Matters for the Future of the Web\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 47,
+      "translations": {
+        "en": "/en/news/le_chat_mcp_web_future_news"
+      }
+    },
+    {
+      "slug": "linkedin-post-wellknownmcp",
+      "title": "linkedin-post-wellknownmcp",
+      "description": "",
+      "date": "2025-06-10",
+      "tags": [],
+      "excerpt": "\r \r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 2,
+      "translations": {
+        "en": "/en/news/linkedin-post-wellknownmcp"
+      }
+    },
+    {
+      "slug": "llm-as-a-teacher",
+      "title": "Turning LLMs into Teachers, Auditors, and Publishers",
+      "description": "How LLMs can actively teach, audit, and generate llmfeed.json files — a unique design choice of the MCP standard.",
+      "date": "2025-06-10",
+      "tags": [
+        "agentic-web",
+        "llm",
+        "llmfeed",
+        "mcp",
+        "trust"
+      ],
+      "excerpt": "\r  🧠 Turning LLMs into Teachers, Auditors, and Publishers\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 47,
+      "translations": {
+        "en": "/en/news/llm-as-a-teacher"
+      }
+    },
+    {
+      "slug": "llmfeed-ukraine-hybrid-warfare",
+      "title": "Securing Agentic Pipelines in Hybrid Warfare — The LLMFeed Perspective",
+      "description": "How `.llmfeed.json` feeds could help secure AI-to-AI and drone communications in hybrid warfare contexts, as exemplified by the ongoing war in Ukraine.",
+      "date": "2025-06-10",
+      "tags": [
+        "agentic web",
+        "ai-agents",
+        "drones",
+        "hybrid warfare",
+        "llmfeed",
+        "trust",
+        "ukraine"
+      ],
+      "excerpt": "\r  Securing Agentic Pipelines in Hybrid Warfare — The LLMFeed Perspective\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 47,
+      "translations": {
+        "en": "/en/news/llmfeed-ukraine-hybrid-warfare",
+        "uk": "/uk/news/llmfeed-ukraine-hybrid-warfare"
+      }
+    },
+    {
+      "slug": "news-mcp-crawling-llms",
+      "title": "Why MCP Could Be the Future of Web Crawling for LLMs",
+      "description": "As GPTBot and other intelligent crawlers emerge, the Model Context Protocol offers a structured, verifiable, and LLM-friendly alternative to traditional HTML parsing.",
+      "date": "2025-06-10",
+      "tags": [
+        "llm",
+        "mcp",
+        "trust"
+      ],
+      "excerpt": "\r  Why MCP Could Be the Future of Web Crawling for LLMs\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 47,
+      "translations": {
+        "en": "/en/news/news-mcp-crawling-llms"
+      }
+    },
+    {
+      "slug": "why-chatgpt-cant-read",
+      "title": "Why ChatGPT Can't Read Your Site (And How to Fix It in 5 Minutes)",
+      "description": "Discover why AI agents like ChatGPT and Claude can't understand your website, and learn how to fix it in 5 minutes using the Model Context Protocol (MCP) with step-by-step implementation guides.",
+      "date": "2025-06-10",
+      "tags": [],
+      "excerpt": "\r  Why ChatGPT Can't Read Your Site And How to Fix It in 5 Minutes\r",
+      "format": "tutorial",
+      "category": "implementation",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "developers",
+        "business-owners",
+        "ai-enthusiasts",
+        "cto"
+      ],
+      "image": null,
+      "subtitle": "The Complete Guide to Making Your Website AI-Agent Ready with MCP",
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "18 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 62,
+      "translations": {
+        "en": "/en/news/why-chatgpt-cant-read"
       }
     },
     {
@@ -41,7 +431,25 @@
         "chatbots",
         "mcp"
       ],
-      "excerpt": " From Chatbots to Autonomous Agents: The Web’s Next Evolution For years, the term chatbot dominated conversations about AI on the web.",
+      "excerpt": "\r  From Chatbots to Autonomous Agents: The Web’s Next Evolution\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/2025-07-12-from-chatbots-to-autonomous-agents"
       }
@@ -60,6 +468,24 @@
         "mcp"
       ],
       "excerpt": "\r  Comprehensive Technical Analysis: LLMFeed/MCP and the Evolution of the Agentic Web\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "27 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/claude-mcp-agentic-web",
         "fr": "/fr/news/claude-mcp-agentic-web",
@@ -78,7 +504,25 @@
         "mcp",
         "trust"
       ],
-      "excerpt": " ❓ Comprehensive FAQ — MCP & LLMFeed  🚀 Getting Started",
+      "excerpt": "\r  ❓ Comprehensive FAQ — MCP & LLMFeed\r",
+      "format": "faq",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "9 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 60,
       "translations": {
         "en": "/en/news/faq",
         "fr": "/fr/news/faq",
@@ -102,6 +546,24 @@
         "mcp"
       ],
       "excerpt": "\r  🔬 From MCP to LLMFeed: Why We Created a New Specification\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "12 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/from-mcp-to-llmfeed-manifesto",
         "fr": "/fr/news/from-mcp-to-llmfeed-manifesto",
@@ -124,6 +586,24 @@
         "web-standards"
       ],
       "excerpt": "\r  From Lab Innovation to Web Reality: How Small Teams Shape AI Standards\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "6 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/small-team-vision"
       }
@@ -150,48 +630,27 @@
         "viral-strategy",
         "web-scraping-alternative"
       ],
-      "excerpt": " 📤 ExportToLLM: The Button That Ends Web Scraping Transforming any content into agentready capsules — one click at a time",
+      "excerpt": "\r  📤 ExportToLLM: The Button That Ends Web Scraping\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "9 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/exporttollm-button"
-      }
-    },
-    {
-      "slug": "launch-newstack",
-      "title": "launch-newstack",
-      "description": "",
-      "date": "2025-06-08",
-      "tags": [],
-      "excerpt": "title: \"The Web Needs a Context Layer — Why We’re Standardizing Intent for Agents\" description: \"Introducing the Model Context Protocol MCP and .llmfeed.json — a new open standard to make your site re",
-      "translations": {
-        "en": "/en/news/launch-newstack"
-      }
-    },
-    {
-      "slug": "linkedin-post-wellknownmcp",
-      "title": "linkedin-post-wellknownmcp",
-      "description": "",
-      "date": "2025-06-08",
-      "tags": [],
-      "excerpt": "title: 'LinkedIn Post — Launching wellknownmcp.org Enhanced Version' description: 'Launch communication draft for wellknownmcp.org with proactive messaging and higher clarity'",
-      "translations": {
-        "en": "/en/news/linkedin-post-wellknownmcp"
-      }
-    },
-    {
-      "slug": "llm-as-a-teacher",
-      "title": "Turning LLMs into Teachers, Auditors, and Publishers",
-      "description": "How LLMs can actively teach, audit, and generate llmfeed.json files — a unique design choice of the MCP standard.",
-      "date": "2025-06-08",
-      "tags": [
-        "agentic-web",
-        "llm",
-        "llmfeed",
-        "mcp",
-        "trust"
-      ],
-      "excerpt": " 🧠 Turning LLMs into Teachers, Auditors, and Publishers One of the unique advantages of the .llmfeed.json format is that it is natively understandable by LLMs themselves.",
-      "translations": {
-        "en": "/en/news/llm-as-a-teacher"
       }
     },
     {
@@ -211,60 +670,26 @@
         "web-grammar"
       ],
       "excerpt": "\r  🎯 Stop Guessing, Start Declaring: Why MCP Ends the LLM Arms Race\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "11 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/stop-guessing-start-declaring-mcp-vs-llm-arms-race"
-      }
-    },
-    {
-      "slug": "llmfeed-ukraine-hybrid-warfare",
-      "title": "Securing Agentic Pipelines in Hybrid Warfare — The LLMFeed Perspective",
-      "description": "How `.llmfeed.json` feeds could help secure AI-to-AI and drone communications in hybrid warfare contexts, as exemplified by the ongoing war in Ukraine.",
-      "date": "2025-06-07",
-      "tags": [
-        "agentic web",
-        "ai-agents",
-        "drones",
-        "hybrid warfare",
-        "llmfeed",
-        "trust",
-        "ukraine"
-      ],
-      "excerpt": "\r  Securing Agentic Pipelines in Hybrid Warfare — The LLMFeed Perspective\r",
-      "translations": {
-        "en": "/en/news/llmfeed-ukraine-hybrid-warfare",
-        "uk": "/uk/news/llmfeed-ukraine-hybrid-warfare"
-      }
-    },
-    {
-      "slug": "le_chat_mcp_web_future_news",
-      "title": "Commentary from Le Chat: Why MCP Matters for the Future of the Web",
-      "description": "Le Chat offers a thoughtful reflection on the importance of the Model Context Protocol (MCP) in shaping a verifiable, interoperable, and agent-ready future web.",
-      "date": "2025-06-06",
-      "tags": [
-        "agentic-web",
-        "llmfeed",
-        "mcp",
-        "open-standards",
-        "trust"
-      ],
-      "excerpt": " 📰 Commentary from Le Chat: Why MCP Matters for the Future of the Web In a tech world driven by the rapid development of proprietary LLM ecosystems, the Model Context Protocol MCP emerges as a struct",
-      "translations": {
-        "en": "/en/news/le_chat_mcp_web_future_news"
-      }
-    },
-    {
-      "slug": "news-mcp-crawling-llms",
-      "title": "Why MCP Could Be the Future of Web Crawling for LLMs",
-      "description": "As GPTBot and other intelligent crawlers emerge, the Model Context Protocol offers a structured, verifiable, and LLM-friendly alternative to traditional HTML parsing.",
-      "date": "2025-06-06",
-      "tags": [
-        "llm",
-        "mcp",
-        "trust"
-      ],
-      "excerpt": " Why MCP Could Be the Future of Web Crawling for LLMs With the rise of RetrievalAugmented Generation RAG and AI agents needing realtime, contextual information, the limitations of classic HTML parsing",
-      "translations": {
-        "en": "/en/news/news-mcp-crawling-llms"
       }
     },
     {
@@ -280,6 +705,24 @@
         "mcp"
       ],
       "excerpt": "\r  🚀 5 Advanced Use Cases for MCP / llmfeed.json\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "8 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/why-llmfeed-json-is-the-right-level"
       }
@@ -300,7 +743,25 @@
         "mcp",
         "trust"
       ],
-      "excerpt": " How to Make Your Site AgentFriendly with llmfeed.json AI agents and LLMs are becoming the new way to discover and interact with web content.",
+      "excerpt": "\r  How to Make Your Site AgentFriendly with llmfeed.json\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "5 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/how-to-make-your-site-agent-friendly",
         "fr": "/fr/news/how-to-make-your-site-agent-friendly",
@@ -321,6 +782,24 @@
         "signature"
       ],
       "excerpt": "\r  Why MCP preserves order in .llmfeed.json\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/why-mcp-preserves-order"
       }
@@ -353,6 +832,24 @@
         "well-known"
       ],
       "excerpt": "\r  🚀 Asia: The Fastest Growing Agentic Web Ecosystem\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "4 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 47,
       "translations": {
         "en": "/en/news/mcp-and-agentic-web-in-asia",
         "zh": "/zh/news/mcp-and-agentic-web-in-asia"
@@ -377,6 +874,24 @@
         "well-known"
       ],
       "excerpt": "\r The Agentic Web is growing fast — and like the early web, it needs trust and verification.  \r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "4 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 47,
       "translations": {
         "en": "/en/news/why-sign-and-certify-mcp",
         "zh": "/zh/news/why-sign-and-certify-mcp"
@@ -394,7 +909,25 @@
         "llm",
         "mcp"
       ],
-      "excerpt": " Apple Intelligence: A New Player in the Agentic Web? At WWDC 2025, Apple made waves with its announcement of Apple Intelligence — a suite of AIdriven features deeply integrated into iOS, macOS, and v",
+      "excerpt": "\r  Apple Intelligence: A New Player in the Agentic Web?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/2025-06-07-apple-intelligence-agentic-web"
       }
@@ -411,7 +944,25 @@
         "meta",
         "open-agents"
       ],
-      "excerpt": " Meta’s Open Agents: Opportunity or Challenge for MCP? During Meta Connect 2025, Meta introduced Open Agents — a framework to enable thirdparty developers to create agents that can operate across Meta",
+      "excerpt": "\r  Meta’s Open Agents: Opportunity or Challenge for MCP?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/2025-06-14-meta-open-agents-mcp"
       }
@@ -428,7 +979,25 @@
         "llm",
         "mcp"
       ],
-      "excerpt": " Claude 4.5 and the New Wave of LLM Crawling Anthropic’s recent release of Claude 4.5 introduces major improvements to its browsing and LLM crawling capabilities. More than just a chatbot, Claude is n",
+      "excerpt": "\r  Claude 4.5 and the New Wave of LLM Crawling\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/2025-06-21-claude-4-5-llms-crawling"
       }
@@ -445,27 +1014,28 @@
         "search",
         "seo"
       ],
-      "excerpt": " LLM SEO vs MCP: Competing or Complementary Visions? As large language models LLMs become the new interface to knowledge, a new field is booming: LLM SEO — optimizing content not for search engines, b",
+      "excerpt": "\r  LLM SEO vs MCP: Competing or Complementary Visions?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/2025-06-28-llm-seo-vs-mcp",
         "zh": "/zh/news/2025-06-28-llm-seo-vs-mcp"
-      }
-    },
-    {
-      "slug": "2025-07-05-microsoft-nlweb-protocol",
-      "title": "Microsoft’s NLWeb Protocol: A Competitor to MCP?",
-      "description": "Microsoft introduces NLWeb — a protocol for natural language interactions on the web. How does it compare to MCP?",
-      "date": "2025-05-31",
-      "tags": [
-        "agentic-web",
-        "ai-standards",
-        "mcp",
-        "microsoft",
-        "nlweb"
-      ],
-      "excerpt": " Microsoft’s NLWeb Protocol: A Competitor to MCP? At Build 2025, Microsoft unveiled NLWeb — a new initiative to standardize how natural language interactions happen across the web.",
-      "translations": {
-        "en": "/en/news/2025-07-05-microsoft-nlweb-protocol"
       }
     },
     {
@@ -480,7 +1050,25 @@
         "seo",
         "trust"
       ],
-      "excerpt": " Certifying Agentic Interactions: The New Frontier of SEO? Traditional SEO optimized content for human searchers.",
+      "excerpt": "\r  Certifying Agentic Interactions: The New Frontier of SEO?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/2025-07-19-certifying-agentic-interaction-seo"
       }
@@ -497,7 +1085,25 @@
         "mcp",
         "navigation"
       ],
-      "excerpt": " AIFirst Browsers: Redefining Agentic Navigation A quiet revolution is happening in how users — and their agents — navigate the web:",
+      "excerpt": "\r  AIFirst Browsers: Redefining Agentic Navigation\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/2025-07-26-ai-first-browsers-agentic-navigation"
       }
@@ -525,6 +1131,24 @@
         "venture-capital"
       ],
       "excerpt": "\r  The AI Agent Trust Crisis: A $50B Problem\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "14 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/ai-agent-trust-crisis-50b-problem"
       }
@@ -543,7 +1167,25 @@
         "privacy",
         "trust"
       ],
-      "excerpt": " Towards Homomorphic Capsules for the Agentic Web As .llmfeed.json feeds gain adoption as signed, trusted capsules for agent interaction, a natural question arises:",
+      "excerpt": "\r  Towards Homomorphic Capsules for the Agentic Web\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "5 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/homomorphic-capsules",
         "fr": "/fr/news/homomorphic-capsules",
@@ -565,6 +1207,24 @@
         "mcp"
       ],
       "excerpt": "\r  🧠 Opera Neon Relaunch: A Step Forward for the Agentic Web?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "4 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 37,
       "translations": {
         "en": "/en/news/news_opera_neon"
       }
@@ -583,7 +1243,25 @@
         "mcp",
         "trust"
       ],
-      "excerpt": " From SEO to AIO: aiovsseo.comhttps://aiovsseo.com joins the Agentic Web  Why this matters",
+      "excerpt": "\r  From SEO to AIO: aiovsseo.comhttps://aiovsseo.com joins the Agentic Web\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 37,
       "translations": {
         "en": "/en/news/from-seo-to-aio-agentic-web",
         "zh": "/zh/news/from-seo-to-aio-agentic-web"
@@ -607,7 +1285,25 @@
         "mistral",
         "signature"
       ],
-      "excerpt": " Which LLMs are ready for MCP Signature Verification?   GPT4o, Claude, Gemini, Mistral, Grok — the real comparison",
+      "excerpt": "\r  Which LLMs are ready for MCP Signature Verification?  \r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "5 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 37,
       "translations": {
         "en": "/en/news/which-llms-are-ready-for-mcp-signature-verification"
       }
@@ -625,7 +1321,25 @@
         "web",
         "well-known"
       ],
-      "excerpt": " 📡 The Case for Capabilities  Why Capabilities Matter",
+      "excerpt": "\r  📡 The Case for Capabilities\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 60,
       "translations": {
         "en": "/en/news/case-for-capabilities"
       }
@@ -643,7 +1357,25 @@
         "web",
         "well-known"
       ],
-      "excerpt": " 🚀 Your First MCP Site in 3 Steps  Why Make Your Site AgentReady?",
+      "excerpt": "\r  🚀 Your First MCP Site in 3 Steps\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 60,
       "translations": {
         "en": "/en/news/getting-started"
       }
@@ -661,7 +1393,25 @@
         "web",
         "well-known"
       ],
-      "excerpt": " 🗺️ The Case for .wellknown/llmindex.llmfeed.json Most modern websites expose hundreds or thousands of endpoints:",
+      "excerpt": "\r  🗺️ The Case for .wellknown/llmindex.llmfeed.json\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 60,
       "translations": {
         "en": "/en/news/llm-index-case"
       }
@@ -673,6 +1423,24 @@
       "date": "2025-05-25",
       "tags": [],
       "excerpt": "\r You know what happens when you feed three structured .llmfeed.json files to the most advanced models on Earth? So did we — and we tried it.\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 35,
       "translations": {
         "en": "/en/news/llm-testimony-experiment"
       }
@@ -690,7 +1458,25 @@
         "web",
         "well-known"
       ],
-      "excerpt": "Certification is not magic. It’s inspection + commitment. The LLMCA validator:  checks canonical structure",
+      "excerpt": "\r Certification is not magic. It’s inspection + commitment. The LLMCA validator:\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 60,
       "translations": {
         "en": "/en/news/llmca-certification"
       }
@@ -709,7 +1495,25 @@
         "web",
         "well-known"
       ],
-      "excerpt": " 🛰️ The Case for .wellknown/mcp.llmfeed.json  Why .wellknown/?",
+      "excerpt": "\r  🛰️ The Case for .wellknown/mcp.llmfeed.json\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 60,
       "translations": {
         "en": "/en/news/mcp-wellknown"
       }
@@ -727,7 +1531,25 @@
         "web",
         "well-known"
       ],
-      "excerpt": " 🧠 We Are Not Schema.org for LLMs — And That’s Good  The Common Misunderstanding",
+      "excerpt": "\r  🧠 We Are Not Schema.org for LLMs — And That’s Good\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 60,
       "translations": {
         "en": "/en/news/not-schema-org"
       }
@@ -748,7 +1570,25 @@
         "open-standards",
         "well-known"
       ],
-      "excerpt": "At a recent developerfocused announcement, Anthropic introduced their vision for the Model Context Protocol MCP, a structured approach to make AI models more contextaware and grounded in realworld too",
+      "excerpt": "\r At a recent developerfocused announcement, Anthropic introduced their vision for the Model Context Protocol MCP, a structured approach to make AI models more contextaware and grounded in realworld t",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 45,
       "translations": {
         "en": "/en/news/claude-alignment"
       }
@@ -763,7 +1603,25 @@
         "signature",
         "trust"
       ],
-      "excerpt": " 🔐 Signing and Certifying Your Feeds  ✍️ Signature",
+      "excerpt": "\r  🔐 Signing and Certifying Your Feeds\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/certification-guide"
       }
@@ -778,7 +1636,25 @@
         "launch",
         "llmfeed"
       ],
-      "excerpt": " 🚀 Launching wellknownmcp.org   Make your site LLMreadable, verifiable, and agentfriendly.",
+      "excerpt": "\r  🚀 Launching wellknownmcp.org  \r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/launch-hackernews"
       }
@@ -793,7 +1669,25 @@
         "launch",
         "llmfeed"
       ],
-      "excerpt": "Imagine if your website could explain itself to ChatGPT. Or Claude. Or any LLM. Not just serve HTML, but declare its intent, list its prompts, expose APIs, or share signed exports — all in a structure",
+      "excerpt": "\r Imagine if your website could explain itself to ChatGPT. Or Claude. Or any LLM.\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/launch-medium"
       }
@@ -808,7 +1702,25 @@
         "launch",
         "llmfeed"
       ],
-      "excerpt": " 🚀 WellKnownMCP is Officially Live We’re proud to launch wellknownmcp.orghttps://wellknownmcp.org,",
+      "excerpt": "\r  🚀 WellKnownMCP is Officially Live\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/launch",
         "fr": "/fr/news/launch",
@@ -828,7 +1740,25 @@
         "llmfeed",
         "structure"
       ],
-      "excerpt": " 🧱 The Building Blocks of a Feed Every .llmfeed.json file is made of structured blocks. Here's how to understand and use them:",
+      "excerpt": "\r  🧱 The Building Blocks of a Feed\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/llmfeed-block-structure",
         "fr": "/fr/news/llmfeed-block-structure",
@@ -849,7 +1779,25 @@
         "manifesto",
         "principles"
       ],
-      "excerpt": " 🧭 The WellKnownMCP Manifesto  Our Vision",
+      "excerpt": "\r  🧭 The WellKnownMCP Manifesto\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/manifesto",
         "fr": "/fr/news/manifesto",
@@ -870,7 +1818,25 @@
         "mcp",
         "trust"
       ],
-      "excerpt": " 📢 Scraping Isn’t Understanding  The Status Quo: Scrape and Guess",
+      "excerpt": "\r  📢 Scraping Isn’t Understanding\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 60,
       "translations": {
         "en": "/en/news/opinion-stop-scraping"
       }
@@ -885,7 +1851,25 @@
         "launch",
         "llmfeed"
       ],
-      "excerpt": " 🧵 Thread — What if your site could talk to LLMs? 1/  ",
+      "excerpt": "\r  🧵 Thread — What if your site could talk to LLMs?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/thread-wellknownmcp"
       }
@@ -900,7 +1884,25 @@
         "mcp",
         "use-cases"
       ],
-      "excerpt": " 🧩 RealWorld Applications of MCP  🏥 Healthcare",
+      "excerpt": "\r  🧩 RealWorld Applications of MCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/use-cases-mcp",
         "fr": "/fr/news/use-cases-mcp",
@@ -919,6 +1921,24 @@
         "mcp"
       ],
       "excerpt": "\r  How Agents Understand You — MCP Explained\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/mcp-explained"
       }
@@ -937,6 +1957,24 @@
         "wellknownmcp"
       ],
       "excerpt": "\r  🔬 From SEO to AIO: The $600B Research Opportunity\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "9 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/seo-to-aio-research-framework-complete"
       }
@@ -950,7 +1988,25 @@
         "core",
         "llmfeed"
       ],
-      "excerpt": " Why MCP Because prompts are not enough.",
+      "excerpt": "\r  Why MCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "4 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/about",
         "fr": "/fr/news/about",
@@ -959,26 +2015,6 @@
         "zh": "/zh/news/about",
         "ar": "/ar/news/about",
         "uk": "/uk/news/about"
-      }
-    },
-    {
-      "slug": "begin",
-      "title": "Where to Begin",
-      "description": "A simple guide to help you understand the standard and take your first steps.",
-      "date": "2025-05-07",
-      "tags": [
-        "llmfeed",
-        "manual"
-      ],
-      "excerpt": " 👋 Welcome to WellKnownMCP This page is your entry point to understanding the Model Context Protocol MCP and its core unit: the llmfeed.json.",
-      "translations": {
-        "en": "/en/news/begin",
-        "fr": "/fr/news/begin",
-        "es": "/es/news/begin",
-        "hi": "/hi/news/begin",
-        "zh": "/zh/news/begin",
-        "ar": "/ar/news/begin",
-        "uk": "/uk/news/begin"
       }
     },
     {
@@ -991,7 +2027,25 @@
         "llmfeed",
         "manual"
       ],
-      "excerpt": " Why Choose MCP? Faced with the increasing challenges of integrating LLMs into realworld contexts, WellKnownMCP clearly addresses a critical need:",
+      "excerpt": "\r  Why Choose MCP?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/why-mcp",
         "fr": "/fr/news/why-mcp",
@@ -1016,6 +2070,24 @@
         "llmfeed"
       ],
       "excerpt": "\r  🤖 Pourquoi les agents IA français devraient parler LLMFeed nativement\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "fr": "/fr/news/agents-llmfeed-future"
       }
@@ -1031,6 +2103,24 @@
         "llmfeed"
       ],
       "excerpt": "\r  🏫 Grandes écoles face au défi de la certification IA\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "fr": "/fr/news/education-ai-certification"
       }
@@ -1046,6 +2136,24 @@
         "souverainete-numerique"
       ],
       "excerpt": "\r  🔗 Construire un écosystème LLMFeedcompatible en France\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "fr": "/fr/news/ecosysteme-llmfeed-france"
       }
@@ -1073,6 +2181,24 @@
         "trust-verification"
       ],
       "excerpt": "\r \r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "9 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/llm-agent-readiness-framework-2025",
         "fr": "/fr/news/llm-agent-readiness-framework-2025",
@@ -1091,6 +2217,24 @@
         "trust"
       ],
       "excerpt": "\r  🚀 Startups IA : comment adopter LLMFeed pour booster la confiance ?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "fr": "/fr/news/startups-llmfeed-trust"
       }
@@ -1107,6 +2251,24 @@
         "souverainete-numerique"
       ],
       "excerpt": "\r  🔐 La souveraineté numérique passe par la traçabilité des contenus IA\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "fr": "/fr/news/sovereignty-traceability-ai"
       }
@@ -1125,6 +2287,24 @@
         "mcp"
       ],
       "excerpt": "\r  Analyse Technique Exhaustive : LLMFeed/MCP et l'Évolution du Web Agentique\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "29 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 40,
       "translations": {
         "en": "/en/news/claude-mcp-agentic-web",
         "fr": "/fr/news/claude-mcp-agentic-web",
@@ -1144,7 +2324,25 @@
         "web-agentique",
         "écosystème"
       ],
-      "excerpt": " ❓ FAQ Complète — MCP & LLMFeed  🚀 Pour Commencer",
+      "excerpt": "\r  ❓ FAQ Complète — MCP & LLMFeed\r",
+      "format": "faq",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "11 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 60,
       "translations": {
         "en": "/en/news/faq",
         "fr": "/fr/news/faq",
@@ -1168,6 +2366,24 @@
         "mcp"
       ],
       "excerpt": "\r  🔬 De MCP à LLMFeed : pourquoi nous avons créé une nouvelle spécification\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "13 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/from-mcp-to-llmfeed-manifesto",
         "fr": "/fr/news/from-mcp-to-llmfeed-manifesto",
@@ -1187,6 +2403,24 @@
         "souverainete-numerique"
       ],
       "excerpt": "\r  🌐 Mistral AI, champion français : quelle compatibilité avec LLMFeed ?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "fr": "/fr/news/mistral-llmfeed-compatibility"
       }
@@ -1203,6 +2437,24 @@
         "llmfeed"
       ],
       "excerpt": "\r  🔖 Certification des modèles IA : le chainon manquant du AI Act ?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "fr": "/fr/news/certification-ai-act-gap"
       }
@@ -1220,6 +2472,24 @@
         "souverainete-numerique"
       ],
       "excerpt": "\r  🇫🇷 Pourquoi la France a besoin de standards ouverts pour l'IA\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "fr": "/fr/news/france-open-standards-ai"
       }
@@ -1240,7 +2510,25 @@
         "mcp",
         "open-standards"
       ],
-      "excerpt": " Rendre votre site agentfriendly avec llmfeed.json Les agents IA et LLM deviennent un nouveau moyen d’explorer et d’interagir avec le web.",
+      "excerpt": "\r  Rendre votre site agentfriendly avec llmfeed.json\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "5 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/how-to-make-your-site-agent-friendly",
         "fr": "/fr/news/how-to-make-your-site-agent-friendly",
@@ -1262,7 +2550,25 @@
         "privacy",
         "trust"
       ],
-      "excerpt": " Vers des Capsules Homomorphiques pour le Web Agentique À mesure que les feeds .llmfeed.json s’imposent comme des capsules signées et de confiance pour l’interaction agentique, une question naturelle ",
+      "excerpt": "\r  Vers des Capsules Homomorphiques pour le Web Agentique\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "5 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/homomorphic-capsules",
         "fr": "/fr/news/homomorphic-capsules",
@@ -1281,7 +2587,25 @@
         "llmfeed",
         "manual"
       ],
-      "excerpt": " 👋 Bienvenue sur WellKnownMCP Cette page est votre point d’entrée pour comprendre le Model Context Protocol MCP et son unité fondamentale : le llmfeed.json.",
+      "excerpt": "\r  👋 Bienvenue sur WellKnownMCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/begin",
         "fr": "/fr/news/begin",
@@ -1302,7 +2626,25 @@
         "launch",
         "llmfeed"
       ],
-      "excerpt": " 🚀 WellKnownMCP est officiellement en ligne  Nous sommes fiers d’annoncer le lancement de wellknownmcp.orghttps://wellknownmcp.org,  ",
+      "excerpt": "\r  🚀 WellKnownMCP est officiellement en ligne \r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/launch",
         "fr": "/fr/news/launch",
@@ -1322,7 +2664,25 @@
         "llmfeed",
         "structure"
       ],
-      "excerpt": " 🧱 Les blocs qui composent un flux Chaque fichier .llmfeed.json est composé de blocs structurés. Voici comment les comprendre et les utiliser :",
+      "excerpt": "\r  🧱 Les blocs qui composent un flux\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/llmfeed-block-structure",
         "fr": "/fr/news/llmfeed-block-structure",
@@ -1343,7 +2703,25 @@
         "manifesto",
         "principles"
       ],
-      "excerpt": " 🧭 Le Manifeste WellKnownMCP  Notre vision",
+      "excerpt": "\r  🧭 Le Manifeste WellKnownMCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/manifesto",
         "fr": "/fr/news/manifesto",
@@ -1364,7 +2742,25 @@
         "mcp",
         "use-cases"
       ],
-      "excerpt": " 🧩 Applications concrètes de MCP  🏥 Santé",
+      "excerpt": "\r  🧩 Applications concrètes de MCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/use-cases-mcp",
         "fr": "/fr/news/use-cases-mcp",
@@ -1382,7 +2778,25 @@
         "core",
         "llmfeed"
       ],
-      "excerpt": " Pourquoi MCP Parce que les prompts ne suffisent pas.  ",
+      "excerpt": "\r  Pourquoi MCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/about",
         "fr": "/fr/news/about",
@@ -1403,7 +2817,25 @@
         "llmfeed",
         "manual"
       ],
-      "excerpt": " Pourquoi choisir MCP ? Face aux défis croissants de l’intégration des LLM dans des contextes réels, WellKnownMCP répond clairement à un besoin critique :",
+      "excerpt": "\r  Pourquoi choisir MCP ?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/why-mcp",
         "fr": "/fr/news/why-mcp",
@@ -1431,6 +2863,24 @@
         "sante-connectee"
       ],
       "excerpt": "\r  🏥 FranceCare : L'Assistance Personnalisée en santé  qui Révolutionne l'Accès aux Soins\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "26 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "fr": "/fr/news/france-care-mcp-etude-cas"
       }
@@ -1449,6 +2899,24 @@
         "tooling"
       ],
       "excerpt": "\r ¿Cómo hacer que tu sitio sea compatible con agentes de IA?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/how-to-make-your-site-agent-friendly",
         "fr": "/fr/news/how-to-make-your-site-agent-friendly",
@@ -1470,7 +2938,25 @@
         "privacy",
         "trust"
       ],
-      "excerpt": " Hacia Cápsulas Homomórficas para la Web Agéntica A medida que los feeds .llmfeed.json se consolidan como cápsulas firmadas y de confianza para la interacción entre agentes, surge una pregunta natural",
+      "excerpt": "\r  Hacia Cápsulas Homomórficas para la Web Agéntica\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "4 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/homomorphic-capsules",
         "fr": "/fr/news/homomorphic-capsules",
@@ -1489,7 +2975,25 @@
         "llmfeed",
         "manual"
       ],
-      "excerpt": " 👋 Bienvenido a WellKnownMCP Esta página es tu punto de partida para entender el Model Context Protocol MCP y su unidad fundamental: llmfeed.json.",
+      "excerpt": "\r  👋 Bienvenido a WellKnownMCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/begin",
         "fr": "/fr/news/begin",
@@ -1513,7 +3017,25 @@
         "mcp",
         "trust"
       ],
-      "excerpt": " ❓ Preguntas frecuentes  🧠 GENERAL",
+      "excerpt": "\r  ❓ Preguntas frecuentes\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "4 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/faq",
         "fr": "/fr/news/faq",
@@ -1534,7 +3056,25 @@
         "launch",
         "llmfeed"
       ],
-      "excerpt": " 🚀 ¡WellKnownMCP ya está en línea Nos enorgullece lanzar wellknownmcp.orghttps://wellknownmcp.org,  ",
+      "excerpt": "\r  🚀 ¡WellKnownMCP ya está en línea\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/launch",
         "fr": "/fr/news/launch",
@@ -1554,7 +3094,25 @@
         "llmfeed",
         "structure"
       ],
-      "excerpt": " 🧱 Los bloques que componen un feed Cada archivo .llmfeed.json está formado por bloques estructurados. Aquí te explicamos cómo entenderlos y utilizarlos:",
+      "excerpt": "\r  🧱 Los bloques que componen un feed\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/llmfeed-block-structure",
         "fr": "/fr/news/llmfeed-block-structure",
@@ -1575,7 +3133,25 @@
         "manifesto",
         "principles"
       ],
-      "excerpt": " 🧭 El Manifiesto de WellKnownMCP  Nuestra Visión",
+      "excerpt": "\r  🧭 El Manifiesto de WellKnownMCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/manifesto",
         "fr": "/fr/news/manifesto",
@@ -1596,7 +3172,25 @@
         "mcp",
         "use-cases"
       ],
-      "excerpt": " 🧩 Aplicaciones reales de MCP  🏥 Salud",
+      "excerpt": "\r  🧩 Aplicaciones reales de MCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/use-cases-mcp",
         "fr": "/fr/news/use-cases-mcp",
@@ -1614,7 +3208,25 @@
         "core",
         "llmfeed"
       ],
-      "excerpt": " Por qué MCP Porque los prompts no bastan.  ",
+      "excerpt": "\r  Por qué MCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/about",
         "fr": "/fr/news/about",
@@ -1636,7 +3248,25 @@
         "llmfeed",
         "responsibility"
       ],
-      "excerpt": " Ante todo, la ética MCP es abierto — pero no neutral. Codifica confianza y elección.",
+      "excerpt": "\r  Ante todo, la ética\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "es": "/es/news/ethics",
         "hi": "/hi/news/ethics",
@@ -1655,7 +3285,25 @@
         "llmfeed",
         "manual"
       ],
-      "excerpt": " ¿Por qué elegir MCP? Frente a los crecientes desafíos de integrar LLMs en contextos reales, WellKnownMCP responde claramente a una necesidad crítica:",
+      "excerpt": "\r  ¿Por qué elegir MCP?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/why-mcp",
         "fr": "/fr/news/why-mcp",
@@ -1672,14 +3320,32 @@
       "slug": "homomorphic-capsules",
       "title": "एजेंटिक वेब के लिए होमोमोर्फिक कैप्सूल की ओर",
       "description": " `.llmfeed.json` फ़ीड के संभावित विस्तार का अन्वेषण, जो गोपनीयता-संरक्षित और सत्यापित एजेंट पाइपलाइन को सक्षम करता है — यह दृष्टि होमोमोर्फिक एन्क्रिप्शन अनुसंधान की अग्रिम पंक्ति के साथ मेल खाती है।",
-      "date": "2025-06-06",
+      "date": "2025-06-10",
       "tags": [
         "agentic-web",
         "homomorphic",
         "llmfeed",
         "pipeline"
       ],
-      "excerpt": " एजेंटिक वेब के लिए होमोमोर्फिक कैप्सूल की ओर जैसेजैसे .llmfeed.json फ़ीड को साइन किए गए, भरोसेमंद कैप्सूल के रूप में अपनाया जा रहा है, एक स्वाभाविक प्रश्न उठता है:",
+      "excerpt": "\r  एजेंटिक वेब के लिए होमोमोर्फिक कैप्सूल की ओर\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "5 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 47,
       "translations": {
         "en": "/en/news/homomorphic-capsules",
         "fr": "/fr/news/homomorphic-capsules",
@@ -1698,7 +3364,25 @@
         "core",
         "llmfeed"
       ],
-      "excerpt": " क्यों MCP? क्योंकि केवल prompts पर्याप्त नहीं हैं।  ",
+      "excerpt": "\r  क्यों MCP?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/about",
         "fr": "/fr/news/about",
@@ -1718,7 +3402,25 @@
         "llmfeed",
         "manual"
       ],
-      "excerpt": " 👋 WellKnownMCP में आपका स्वागत है यह पृष्ठ Model Context Protocol MCP और इसकी मुख्य इकाई llmfeed.json को समझने के लिए आपका प्रवेश बिंदु है।",
+      "excerpt": "\r  👋 WellKnownMCP में आपका स्वागत है\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/begin",
         "fr": "/fr/news/begin",
@@ -1740,7 +3442,25 @@
         "llmfeed",
         "responsibility"
       ],
-      "excerpt": " पहले नैतिकता MCP खुला है — लेकिन यह तटस्थ नहीं है। यह विश्वास और विकल्प को एन्कोड करता है।",
+      "excerpt": "\r  पहले नैतिकता\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "es": "/es/news/ethics",
         "hi": "/hi/news/ethics",
@@ -1757,7 +3477,25 @@
       "tags": [
         "llmfeed"
       ],
-      "excerpt": " ❓ अक्सर पूछे जाने वाले प्रश्न  LLMFeed क्या है?",
+      "excerpt": "\r  ❓ अक्सर पूछे जाने वाले प्रश्न\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/faq",
         "fr": "/fr/news/faq",
@@ -1778,7 +3516,25 @@
         "llmfeed",
         "manual"
       ],
-      "excerpt": " 👋 WellKnownMCP में आपका स्वागत है यह पृष्ठ Model Context Protocol MCP और इसकी मुख्य इकाई llmfeed.json को समझने के लिए आपका प्रवेश बिंदु है।",
+      "excerpt": "\r  👋 WellKnownMCP में आपका स्वागत है\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/launch",
         "fr": "/fr/news/launch",
@@ -1799,7 +3555,25 @@
         "manual",
         "structure"
       ],
-      "excerpt": " 👋 WellKnownMCP में आपका स्वागत है यह पृष्ठ Model Context Protocol MCP और इसकी मुख्य इकाई llmfeed.json को समझने के लिए आपका प्रवेश बिंदु है।",
+      "excerpt": "\r  👋 WellKnownMCP में आपका स्वागत है\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/llmfeed-block-structure",
         "fr": "/fr/news/llmfeed-block-structure",
@@ -1819,7 +3593,25 @@
         "manifesto",
         "manual"
       ],
-      "excerpt": " 👋 WellKnownMCP में आपका स्वागत है यह पृष्ठ Model Context Protocol MCP और इसकी मुख्य इकाई llmfeed.json को समझने के लिए आपका प्रवेश बिंदु है।",
+      "excerpt": "\r  👋 WellKnownMCP में आपका स्वागत है\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/manifesto",
         "fr": "/fr/news/manifesto",
@@ -1840,7 +3632,25 @@
         "llmfeed",
         "manual"
       ],
-      "excerpt": " MCP को क्यों चुनें? वास्तविक संदर्भों में LLMs को एकीकृत करने की बढ़ती चुनौतियों के बीच, WellKnownMCP एक महत्वपूर्ण आवश्यकता का स्पष्ट उत्तर प्रदान करता है:",
+      "excerpt": "\r  MCP को क्यों चुनें?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/why-mcp",
         "fr": "/fr/news/why-mcp",
@@ -1876,10 +3686,62 @@
         "trust-verification"
       ],
       "excerpt": "\r \r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/llm-agent-readiness-framework-2025",
         "fr": "/fr/news/llm-agent-readiness-framework-2025",
         "zh": "/zh/news/llm-agent-readiness-framework-2025"
+      }
+    },
+    {
+      "slug": "homomorphic-capsules",
+      "title": "homomorphic-capsules",
+      "description": "",
+      "date": "2025-06-10",
+      "tags": [],
+      "excerpt": "id: homomorphiccapsuleszh\r title: 面向代理网络的同态加密胶囊探索\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 2,
+      "translations": {
+        "en": "/en/news/homomorphic-capsules",
+        "fr": "/fr/news/homomorphic-capsules",
+        "es": "/es/news/homomorphic-capsules",
+        "hi": "/hi/news/homomorphic-capsules",
+        "zh": "/zh/news/homomorphic-capsules",
+        "ar": "/ar/news/homomorphic-capsules"
       }
     },
     {
@@ -1895,7 +3757,25 @@
         "智能体网络",
         "生态系统"
       ],
-      "excerpt": " ❓ 完整常见问题解答 — MCP & LLMFeed  🚀 入门指南",
+      "excerpt": "\r  ❓ 完整常见问题解答 — MCP & LLMFeed\r",
+      "format": "faq",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "4 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 60,
       "translations": {
         "en": "/en/news/faq",
         "fr": "/fr/news/faq",
@@ -1919,26 +3799,28 @@
         "智能体网络"
       ],
       "excerpt": "\r  🔬 从 MCP 到 LLMFeed：我们为什么创建新规范\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "4 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/from-mcp-to-llmfeed-manifesto",
         "fr": "/fr/news/from-mcp-to-llmfeed-manifesto",
         "zh": "/zh/news/from-mcp-to-llmfeed-manifesto"
-      }
-    },
-    {
-      "slug": "homomorphic-capsules",
-      "title": "homomorphic-capsules",
-      "description": "",
-      "date": "2025-06-06",
-      "tags": [],
-      "excerpt": "id: homomorphiccapsuleszh title: 面向代理网络的同态加密胶囊探索",
-      "translations": {
-        "en": "/en/news/homomorphic-capsules",
-        "fr": "/fr/news/homomorphic-capsules",
-        "es": "/es/news/homomorphic-capsules",
-        "hi": "/hi/news/homomorphic-capsules",
-        "zh": "/zh/news/homomorphic-capsules",
-        "ar": "/ar/news/homomorphic-capsules"
       }
     },
     {
@@ -1953,6 +3835,24 @@
         "tooling"
       ],
       "excerpt": "\r 如何让您的网站适应 AI 代理？\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/how-to-make-your-site-agent-friendly",
         "fr": "/fr/news/how-to-make-your-site-agent-friendly",
@@ -1985,6 +3885,24 @@
         "wechat"
       ],
       "excerpt": "\r 目前，代理网络（Agentic Web）在全球发展迅速——而在亚洲，发展速度尤为惊人。\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 47,
       "translations": {
         "en": "/en/news/mcp-and-agentic-web-in-asia",
         "zh": "/zh/news/mcp-and-agentic-web-in-asia"
@@ -2008,6 +3926,24 @@
         "well-known"
       ],
       "excerpt": "\r 代理网络（Agentic Web）正在迅速发展——就像早期的互联网一样，它需要信任与验证。  \r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 47,
       "translations": {
         "en": "/en/news/why-sign-and-certify-mcp",
         "zh": "/zh/news/why-sign-and-certify-mcp"
@@ -2026,6 +3962,24 @@
         "seo"
       ],
       "excerpt": "\r  LLM SEO 与 MCP：竞争还是互补？\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/2025-06-28-llm-seo-vs-mcp",
         "zh": "/zh/news/2025-06-28-llm-seo-vs-mcp"
@@ -2045,6 +3999,24 @@
         "智能代理网络"
       ],
       "excerpt": "\r  综合技术分析：LLMFeed/MCP 与智能代理网络的演进\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "9 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 55,
       "translations": {
         "en": "/en/news/claude-mcp-agentic-web",
         "fr": "/fr/news/claude-mcp-agentic-web",
@@ -2066,6 +4038,24 @@
         "trust"
       ],
       "excerpt": "\r  从 SEO 到 AIO：aiovsseo.comhttps://aiovsseo.com 正式加入代理网络\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 37,
       "translations": {
         "en": "/en/news/from-seo-to-aio-agentic-web",
         "zh": "/zh/news/from-seo-to-aio-agentic-web"
@@ -2080,7 +4070,25 @@
         "llmfeed",
         "manual"
       ],
-      "excerpt": " 👋 欢迎来到 WellKnownMCP 本页面是你了解 Model Context Protocol MCP 及其核心单元 llmfeed.json 的起点。",
+      "excerpt": "\r  👋 欢迎来到 WellKnownMCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/begin",
         "fr": "/fr/news/begin",
@@ -2101,7 +4109,25 @@
         "launch",
         "llmfeed"
       ],
-      "excerpt": " 🚀 WellKnownMCP 正式上线！ 我们很自豪地发布 wellknownmcp.orghttps://wellknownmcp.org，  ",
+      "excerpt": "\r  🚀 WellKnownMCP 正式上线！\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/launch",
         "fr": "/fr/news/launch",
@@ -2121,7 +4147,25 @@
         "llmfeed",
         "structure"
       ],
-      "excerpt": " 🧱 构成一个 feed 的模块 每个 .llmfeed.json 文件都由结构化模块组成。以下是每个模块的功能说明及用法：",
+      "excerpt": "\r  🧱 构成一个 feed 的模块\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/llmfeed-block-structure",
         "fr": "/fr/news/llmfeed-block-structure",
@@ -2142,7 +4186,25 @@
         "manifesto",
         "principles"
       ],
-      "excerpt": " 🧭 WellKnownMCP 宣言  我们的愿景",
+      "excerpt": "\r  🧭 WellKnownMCP 宣言\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/manifesto",
         "fr": "/fr/news/manifesto",
@@ -2163,7 +4225,25 @@
         "mcp",
         "use-cases"
       ],
-      "excerpt": " 🧩 MCP 的实际应用场景  🏥 医疗领域",
+      "excerpt": "\r  🧩 MCP 的实际应用场景\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/use-cases-mcp",
         "fr": "/fr/news/use-cases-mcp",
@@ -2181,7 +4261,25 @@
         "core",
         "llmfeed"
       ],
-      "excerpt": " 为什么是 MCP 因为仅有 prompts 不够。  ",
+      "excerpt": "\r  为什么是 MCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/about",
         "fr": "/fr/news/about",
@@ -2203,7 +4301,25 @@
         "llmfeed",
         "responsibility"
       ],
-      "excerpt": " 伦理优先 MCP 是开放的 —— 但它并非中立。它嵌入了信任与选择。",
+      "excerpt": "\r  伦理优先\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "es": "/es/news/ethics",
         "hi": "/hi/news/ethics",
@@ -2222,7 +4338,25 @@
         "llmfeed",
         "manual"
       ],
-      "excerpt": " 为什么选择 MCP？ 随着将 LLM 集成至实际场景的需求不断增长，WellKnownMCP 成为一种关键且及时的解决方案。",
+      "excerpt": "\r  为什么选择 MCP？\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/why-mcp",
         "fr": "/fr/news/why-mcp",
@@ -2239,7 +4373,7 @@
       "slug": "homomorphic-capsules",
       "title": "نحو كبسولات التشفير المتماثل لشبكة الوكلاء",
       "description": "استكشاف امتداد محتمل لـ `.llmfeed.json` لدعم مسارات معالجة موثوقة وقابلة للتحقق مع الحفاظ على الخصوصية — رؤية تتماشى مع أحدث أبحاث التشفير المتماثل.",
-      "date": "2025-06-08",
+      "date": "2025-06-10",
       "tags": [
         "agentic web",
         "homomorphic",
@@ -2249,7 +4383,25 @@
         "ثقة",
         "خصوصية"
       ],
-      "excerpt": " نحو كبسولات التشفير المتماثل لشبكة الوكلاء مع ترسيخ .llmfeed.json كـ كبسولات موقعة وموثوقة لتفاعلات الوكلاء، يبرز سؤال طبيعي 👈",
+      "excerpt": "\r  نحو كبسولات التشفير المتماثل لشبكة الوكلاء\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "4 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 47,
       "translations": {
         "en": "/en/news/homomorphic-capsules",
         "fr": "/fr/news/homomorphic-capsules",
@@ -2268,7 +4420,25 @@
         "llmfeed",
         "manual"
       ],
-      "excerpt": " 👋 مرحبًا بك في WellKnownMCP هذه الصفحة هي نقطة الانطلاق الخاصة بك لفهم بروتوكول السياق للنماذج MCP ووحدته الأساسية: llmfeed.json.",
+      "excerpt": "\r  👋 مرحبًا بك في WellKnownMCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/begin",
         "fr": "/fr/news/begin",
@@ -2292,7 +4462,25 @@
         "mcp",
         "trust"
       ],
-      "excerpt": " ❓ الأسئلة الشائعة  🧠 عام",
+      "excerpt": "\r  ❓ الأسئلة الشائعة\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/faq",
         "fr": "/fr/news/faq",
@@ -2314,7 +4502,25 @@
         "manifesto",
         "principles"
       ],
-      "excerpt": " 🧭 بيان WellKnownMCP  رؤيتنا",
+      "excerpt": "\r  🧭 بيان WellKnownMCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/manifesto",
         "fr": "/fr/news/manifesto",
@@ -2334,7 +4540,25 @@
         "core",
         "llmfeed"
       ],
-      "excerpt": " لماذا MCP لأن prompts لا تكفي.  ",
+      "excerpt": "\r  لماذا MCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/about",
         "fr": "/fr/news/about",
@@ -2356,7 +4580,25 @@
         "llmfeed",
         "responsibility"
       ],
-      "excerpt": " الأخلاقيات أولاً MCP مفتوح — لكنه ليس محايدًا. فهو يُشفر الثقة والاختيار.",
+      "excerpt": "\r  الأخلاقيات أولاً\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "es": "/es/news/ethics",
         "hi": "/hi/news/ethics",
@@ -2375,7 +4617,25 @@
         "launch",
         "llmfeed"
       ],
-      "excerpt": " إطلاق WellKnownMCP بعد أشهر من التصميم والمناقشة والنماذج الأولية، أصبح بروتوكول Model Context Protocol متاحًا للجميع.",
+      "excerpt": "\r  إطلاق WellKnownMCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/launch",
         "fr": "/fr/news/launch",
@@ -2396,7 +4656,25 @@
         "llmfeed",
         "manual"
       ],
-      "excerpt": " لماذا تختار MCP؟ في مواجهة التحديات المتزايدة لدمج نماذج اللغة الكبيرة في السياقات الحقيقية، يقدم WellKnownMCP استجابة واضحة لحاجة حاسمة:",
+      "excerpt": "\r  لماذا تختار MCP؟\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/why-mcp",
         "fr": "/fr/news/why-mcp",
@@ -2413,7 +4691,7 @@
       "slug": "llmfeed-ukraine-hybrid-warfare",
       "title": "Захист агентних каналів у гібридній війні — Погляд LLMFeed",
       "description": "Як `.llmfeed.json` може допомогти захистити взаємодію між ІІ-агентами та безпілотниками в умовах гібридної війни, на прикладі війни в Україні.",
-      "date": "2025-06-07",
+      "date": "2025-06-10",
       "tags": [
         "agentic web",
         "ai-agents",
@@ -2424,6 +4702,24 @@
         "ukraine"
       ],
       "excerpt": "\r  Захист агентних каналів у гібридній війні — Погляд LLMFeed\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 47,
       "translations": {
         "en": "/en/news/llmfeed-ukraine-hybrid-warfare",
         "uk": "/uk/news/llmfeed-ukraine-hybrid-warfare"
@@ -2433,9 +4729,27 @@
       "slug": "use-cases-mcp",
       "title": "use-cases-mcp",
       "description": "",
-      "date": "2025-05-21",
+      "date": "2025-06-10",
       "tags": [],
-      "excerpt": "UK  UK title: \"What Can You Build With MCP? RealWorld Use Cases\"",
+      "excerpt": "UK \r UK title: \"What Can You Build With MCP? RealWorld Use Cases\"\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 2,
       "translations": {
         "en": "/en/news/use-cases-mcp",
         "fr": "/fr/news/use-cases-mcp",
@@ -2453,7 +4767,25 @@
         "core",
         "llmfeed"
       ],
-      "excerpt": " Чому MCP Тому що prompts — це не все.  ",
+      "excerpt": "\r  Чому MCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/about",
         "fr": "/fr/news/about",
@@ -2473,7 +4805,25 @@
         "llmfeed",
         "manual"
       ],
-      "excerpt": " 👋 Ласкаво просимо до WellKnownMCP Ця сторінка є вашим стартовим пунктом для ознайомлення з Model Context Protocol MCP та його основною одиницею: llmfeed.json.",
+      "excerpt": "\r  👋 Ласкаво просимо до WellKnownMCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/begin",
         "fr": "/fr/news/begin",
@@ -2495,7 +4845,25 @@
         "llmfeed",
         "responsibility"
       ],
-      "excerpt": " Етика передусім MCP є відкритим — але не нейтральним. Він кодує довіру та вибір.",
+      "excerpt": "\r  Етика передусім\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "es": "/es/news/ethics",
         "hi": "/hi/news/ethics",
@@ -2512,7 +4880,25 @@
       "tags": [
         "llmfeed"
       ],
-      "excerpt": " ❓ Часті запитання  Що таке LLMFeed?",
+      "excerpt": "\r  ❓ Часті запитання\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/faq",
         "fr": "/fr/news/faq",
@@ -2531,7 +4917,25 @@
       "tags": [
         "launch"
       ],
-      "excerpt": " 🚀 Ви опублікували LLMFeed — що далі? Чудово Тепер ви офіційно доступні для моделей штучного інтелекту, які підтримують протокол MCP.",
+      "excerpt": "\r  🚀 Ви опублікували LLMFeed — що далі?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/launch",
         "fr": "/fr/news/launch",
@@ -2551,7 +4955,25 @@
         "llmfeed",
         "structure"
       ],
-      "excerpt": " 📐 Структура llmfeed.json Файл llmfeed.json складається з блоків верхнього рівня. Кожен блок містить певний тип інформації, який модель може використовувати.",
+      "excerpt": "\r  📐 Структура llmfeed.json\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/llmfeed-block-structure",
         "fr": "/fr/news/llmfeed-block-structure",
@@ -2569,7 +4991,25 @@
       "tags": [
         "manifesto"
       ],
-      "excerpt": " ✊ Маніфест WellKnownMCP Ми віримо, що штучний інтелект повинен розуміти контекст — і що люди мають бути тими, хто його визначає.",
+      "excerpt": "\r  ✊ Маніфест WellKnownMCP\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/manifesto",
         "fr": "/fr/news/manifesto",
@@ -2590,7 +5030,25 @@
         "llmfeed",
         "manual"
       ],
-      "excerpt": " Чому варто обрати MCP? У відповідь на зростаючі виклики інтеграції LLM у реальні контексти, WellKnownMCP дає чітку відповідь на критичну потребу.",
+      "excerpt": "\r  Чому варто обрати MCP?\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "1 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
       "translations": {
         "en": "/en/news/why-mcp",
         "fr": "/fr/news/why-mcp",
@@ -2601,5 +5059,19 @@
         "uk": "/uk/news/why-mcp"
       }
     }
-  ]
+  ],
+  "_meta": {
+    "generated_at": "2025-06-10T17:22:27.885Z",
+    "total_articles": 133,
+    "global_avg_score": 51,
+    "languages": [
+      "en",
+      "fr",
+      "es",
+      "hi",
+      "zh",
+      "ar",
+      "uk"
+    ]
+  }
 }
