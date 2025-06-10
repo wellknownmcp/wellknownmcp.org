@@ -73,22 +73,102 @@ const rssPaths = languages.map((lang) => ({
 }))
 console.log(`✅ DEBUG: rssPaths = ${rssPaths.length}`)
 
-// News Paths - FIX: Filtrer les entrées pour exclure _meta
+// ✅ APPROCHE ROBUSTE : Créer un index global des traductions par slug
+const globalTranslations = new Map()
+
+// Étape 1: Collecter TOUTES les traductions de TOUS les articles
+Object.entries(newsIndex).forEach(([lang, articles]) => {
+  if (lang !== '_meta' && Array.isArray(articles)) {
+    articles.forEach(article => {
+      if (article.translations && typeof article.translations === 'object') {
+        // Utiliser la première version complète des traductions trouvée
+        if (!globalTranslations.has(article.slug)) {
+          globalTranslations.set(article.slug, article.translations)
+          console.log(`📝 Stored translations for "${article.slug}": ${Object.keys(article.translations).length} languages`)
+        }
+      }
+    })
+  }
+})
+
+console.log(`✅ Global translations map created with ${globalTranslations.size} articles`)
+
+// Étape 2: Fonction pour générer les hreflang à partir de l'index global
+const generateHreflangForSlug = (slug) => {
+  const translations = globalTranslations.get(slug)
+  if (!translations || Object.keys(translations).length <= 1) {
+    return []
+  }
+
+  const alternateRefs = []
+
+  // Ajouter chaque langue disponible
+  Object.entries(translations).forEach(([lang, path]) => {
+    if (path && typeof path === 'string') {
+      alternateRefs.push({
+        href: `${siteUrl}${path}`,
+        hreflang: lang,
+      })
+    }
+  })
+
+  // Ajouter x-default (anglais si disponible)
+  if (translations.en) {
+    alternateRefs.push({
+      href: `${siteUrl}${translations.en}`,
+      hreflang: 'x-default',
+    })
+  }
+
+  return alternateRefs
+}
+
+// ✅ News paths avec hreflang générés à partir de l'index global
 const newsPaths = Object.entries(newsIndex)
   .filter(([lang, articles]) => {
-    // Exclure _meta et tout ce qui n'est pas un array
-    return lang !== '_meta' && Array.isArray(articles);
+    return lang !== '_meta' && Array.isArray(articles)
   })
   .flatMap(([lang, articles]) =>
-    articles.map((item) => ({
-      loc: `${siteUrl}/${lang}/news/${item.slug}`,
-      changefreq: 'daily',
-      priority: 0.9,
-      lastmod: formatDateForSitemap(item.date),
-    }))
-  )
-console.log(`✅ DEBUG: newsPaths = ${newsPaths.length}`)
+    articles.map((item) => {
+      const urlPath = `/${lang}/news/${item.slug}`
+      
+      const basePath = {
+        loc: `${siteUrl}${urlPath}`,
+        changefreq: 'daily',
+        priority: 0.9,
+        lastmod: formatDateForSitemap(item.date),
+      }
 
+      // ✅ UTILISER L'INDEX GLOBAL pour assurer la cohérence
+      const alternateRefs = generateHreflangForSlug(item.slug)
+      
+      if (alternateRefs.length > 0) {
+        basePath.alternateRefs = alternateRefs
+
+        // DEBUG spécial pour l'article claude
+        if (item.slug === 'claude-mcp-agentic-web') {
+          console.log(`\n🎯 CLAUDE ARTICLE (${lang}): ${urlPath}`)
+          console.log(`🎯 Using global translations for "${item.slug}":`)
+          const globalTrans = globalTranslations.get(item.slug)
+          Object.entries(globalTrans || {}).forEach(([tLang, tPath]) => {
+            console.log(`   ${tLang} -> ${tPath}`)
+          })
+          console.log(`🎯 Generated ${alternateRefs.length} hreflang entries:`)
+          alternateRefs.forEach(ref => {
+            console.log(`   ${ref.hreflang} -> ${ref.href}`)
+          })
+        }
+
+        console.log(`✅ Added ${alternateRefs.length} hreflang entries for ${urlPath}`)
+      } else {
+        console.log(`📝 Single language article: ${urlPath}`)
+      }
+
+      return basePath
+    })
+  )
+
+console.log(`✅ DEBUG: newsPaths = ${newsPaths.length}`)
 
 // llmfeedhub Paths
 const llmfeedhubPaths = llmfeedhubIndex
@@ -109,19 +189,18 @@ module.exports = {
   sitemapSize: 5000,
   changefreq: 'weekly',
   priority: 0.7,
+  trailingSlash: false,
 
-  // ✅ EXCLURE LES ROUTES API
   exclude: [
-    '/api/*', // Toutes les routes API
-    '/admin/*', // Routes admin si vous en avez
-    '/preview/*', // Routes de preview
-    '/_next/*', // Fichiers Next.js
+    '/api/*',
+    '/admin/*',
+    '/preview/*',
+    '/_next/*',
   ],
 
   transform: async (config, path) => {
-    // ✅ DOUBLE VÉRIFICATION : Exclure manuellement les API
     if (path.startsWith('/api/')) {
-      return null // Exclure cette URL
+      return null
     }
 
     return {
@@ -158,39 +237,48 @@ module.exports = {
     // RSS
     paths.push(...rssPaths)
 
-    // News
+    // News avec hreflang cohérents
     paths.push(...newsPaths)
 
     // llmfeedhub
     paths.push(...llmfeedhubPaths)
 
     console.log(`✅ DEBUG: total additionalPaths = ${paths.length}`)
+    
+    // ✅ Vérification finale
+    const claudeArticles = paths.filter(p => p.loc && p.loc.includes('claude-mcp-agentic-web'))
+    console.log(`\n🎯 Found ${claudeArticles.length} Claude articles:`)
+    claudeArticles.forEach(article => {
+      console.log(`🎯 ${article.loc} - hreflang count: ${article.alternateRefs ? article.alternateRefs.length : 0}`)
+      if (article.alternateRefs && article.alternateRefs.length > 0) {
+        console.log(`   Sample hreflang: ${article.alternateRefs[0].hreflang} -> ${article.alternateRefs[0].href}`)
+      }
+    })
+
     return paths
   },
 
-  // ✅ ROBOTS.TXT PERSONNALISÉ
   robotsTxtOptions: {
     policies: [
       {
         userAgent: '*',
         allow: [
           '/',
-          '/.well-known/', // ✅ ENCOURAGER les bots à explorer les feeds MCP
+          '/.well-known/',
         ],
         disallow: ['/api/', '/admin/', '/_next/', '/preview/'],
       },
-      // ✅ POLITIQUE SPÉCIALE POUR LES LLMs
       {
-        userAgent: 'GPTBot', // OpenAI
+        userAgent: 'GPTBot',
         allow: [
           '/',
           '/.well-known/',
-          '/exports/', // Feeds exportés
+          '/exports/',
         ],
         disallow: ['/api/'],
       },
       {
-        userAgent: 'Claude-Web', // Anthropic (hypothétique)
+        userAgent: 'Claude-Web',
         allow: ['/', '/.well-known/', '/exports/'],
         disallow: ['/api/'],
       },

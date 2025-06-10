@@ -7,7 +7,7 @@
     "build": "tsx scripts/generate-exports-index.ts && node scripts/generate-index-news.js && node scripts/generate-rss.js &&npm run normalize-tags && next build",
     "start": "next start",
     "prepare": "echo '✔️ Project ready. Run npm run dev or build.'",
-    "postbuild": "next-sitemap && npm run generate-indexnow && npm run ping-indexnow",
+    "postbuild": "next-sitemap && node fix-sitemap.js && npm run generate-indexnow && npm run ping-indexnow",
     "generate-index": "tsx scripts/generate-llmfeed-index.ts",
     "generate-index-news": "node scripts/generate-index-news.js",
     "generate-exports-index": "tsx scripts/generate-exports-index.ts",
