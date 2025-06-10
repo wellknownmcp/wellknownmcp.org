@@ -2,15 +2,15 @@
   "global": [
     {
       "tag": "llmfeed",
-      "count": 93
+      "count": 95
     },
     {
       "tag": "mcp",
-      "count": 53
+      "count": 54
     },
     {
       "tag": "trust",
-      "count": 29
+      "count": 30
     },
     {
       "tag": "agentic-web",
@@ -21,16 +21,16 @@
       "count": 19
     },
     {
+      "tag": "ai-agents",
+      "count": 19
+    },
+    {
       "tag": "manual",
       "count": 17
     },
     {
-      "tag": "ai-agents",
-      "count": 17
-    },
-    {
       "tag": "llm",
-      "count": 12
+      "count": 13
     },
     {
       "tag": "manifesto",
@@ -49,24 +49,20 @@
       "count": 10
     },
     {
-      "tag": "announcement",
-      "count": 8
-    },
-    {
       "tag": "certification",
-      "count": 8
+      "count": 9
     },
     {
       "tag": "interoperability",
+      "count": 9
+    },
+    {
+      "tag": "announcement",
       "count": 8
     },
     {
       "tag": "ia-marche-francais",
       "count": 8
-    },
-    {
-      "tag": "ai-standards",
-      "count": 7
     },
     {
       "tag": "llmca",
@@ -77,7 +73,15 @@
       "count": 6
     },
     {
+      "tag": "ai-standards",
+      "count": 6
+    },
+    {
       "tag": "claude",
+      "count": 6
+    },
+    {
+      "tag": "signature",
       "count": 6
     },
     {
@@ -109,16 +113,16 @@
       "count": 5
     },
     {
-      "tag": "signature",
-      "count": 5
-    },
-    {
       "tag": "open-standards",
       "count": 5
     },
     {
       "tag": "aio",
       "count": 5
+    },
+    {
+      "tag": "developers",
+      "count": 4
     },
     {
       "tag": "agent-interoperability",
@@ -159,6 +163,10 @@
     {
       "tag": "souverainete-numerique",
       "count": 4
+    },
+    {
+      "tag": "search",
+      "count": 3
     },
     {
       "tag": "seo",
@@ -211,14 +219,6 @@
     {
       "tag": "llmfeedforge",
       "count": 3
-    },
-    {
-      "tag": "developers",
-      "count": 2
-    },
-    {
-      "tag": "search",
-      "count": 2
     },
     {
       "tag": "aiovsseo",
@@ -454,6 +454,18 @@
     },
     {
       "tag": "implementation",
+      "count": 1
+    },
+    {
+      "tag": "agentic-seo",
+      "count": 1
+    },
+    {
+      "tag": "business",
+      "count": 1
+    },
+    {
+      "tag": "web-optimization",
       "count": 1
     },
     {
@@ -727,11 +739,11 @@
     "en": [
       {
         "tag": "mcp",
-        "count": 35
+        "count": 36
       },
       {
         "tag": "llmfeed",
-        "count": 29
+        "count": 31
       },
       {
         "tag": "agentic-web",
@@ -739,15 +751,15 @@
       },
       {
         "tag": "trust",
-        "count": 19
+        "count": 20
       },
       {
         "tag": "ai-agents",
-        "count": 12
+        "count": 14
       },
       {
         "tag": "llm",
-        "count": 10
+        "count": 11
       },
       {
         "tag": "well-known",
@@ -755,26 +767,22 @@
       },
       {
         "tag": "certification",
-        "count": 7
+        "count": 8
+      },
+      {
+        "tag": "interoperability",
+        "count": 6
       },
       {
         "tag": "web",
         "count": 6
       },
       {
-        "tag": "interoperability",
+        "tag": "signature",
         "count": 5
       },
       {
-        "tag": "ai-standards",
-        "count": 4
-      },
-      {
         "tag": "claude",
-        "count": 4
-      },
-      {
-        "tag": "signature",
         "count": 4
       },
       {
@@ -790,6 +798,10 @@
         "count": 4
       },
       {
+        "tag": "ai-standards",
+        "count": 3
+      },
+      {
         "tag": "anthropic",
         "count": 3
       },
@@ -802,7 +814,15 @@
         "count": 3
       },
       {
+        "tag": "search",
+        "count": 2
+      },
+      {
         "tag": "seo",
+        "count": 2
+      },
+      {
+        "tag": "developers",
         "count": 2
       },
       {
@@ -851,10 +871,6 @@
       },
       {
         "tag": "open-agents",
-        "count": 1
-      },
-      {
-        "tag": "search",
         "count": 1
       },
       {
@@ -1003,6 +1019,18 @@
       },
       {
         "tag": "privacy",
+        "count": 1
+      },
+      {
+        "tag": "agentic-seo",
+        "count": 1
+      },
+      {
+        "tag": "business",
+        "count": 1
+      },
+      {
+        "tag": "web-optimization",
         "count": 1
       },
       {

@@ -80,13 +80,13 @@ MCP and `.llmfeed.json` introduce:
 
 👉 It shifts from:
 
-| Scraping | Declaring |
-|----------|-----------|
-| Guess intent | Declare intent |
+| Scraping              | Declaring                       |
+| --------------------- | ------------------------------- |
+| Guess intent          | Declare intent                  |
 | Parse surface content | Expose structured agent context |
-| No trust model | Signed and certifiable |
-| Fragile and lossy | Explicit and robust |
-| No session awareness | Context-aware and replayable |
+| No trust model        | Signed and certifiable          |
+| Fragile and lossy     | Explicit and robust             |
+| No session awareness  | Context-aware and replayable    |
 
 ---
 
