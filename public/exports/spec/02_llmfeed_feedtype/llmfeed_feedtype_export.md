@@ -1,3 +1,51 @@
+---
+# 📄 Basic metadata
+title: "Feed Type: `export.llmfeed.json`"
+description: "MCP documentation on Feed Type: `export.llmfeed.json`"
+date: "2025-06-11T09:26:56.300Z"
+lang: "en"
+
+# 🏷️ Tags and classification
+tags:
+  - "mcp"
+  - "ai-agents"
+format: "documentation"
+category: "technical"
+contentType: "documentation"
+
+# 🧠 Intent and audience  
+intent: "inform"
+llmIntent: "browse-spec"
+llmTopic: "specification"
+audience:
+  - "llm"
+  - "developer"
+
+# 📊 Page properties
+pageType: "documentation"
+interactionComplexity: "simple"
+priority: "normal"
+riskLevel: "low"
+updateFrequency: "static"
+
+# 🔗 URLs
+slug: "llmfeed_feedtype_export"
+canonical_url: "https://wellknownmcp.org/spec/02_llmfeed_feedtype/llmfeed_feedtype_export"
+githubUrl: "https://github.com/wellknownmcp/llmfeed-spec/blob/main/02_llmfeed_feedtype/llmfeed_feedtype_export.md"
+mcpFeedUrl: "/.well-known/mcp.llmfeed.json"
+
+# 🤖 Agent optimization
+autoDiscoverFeeds: true
+agentReadiness: true
+llmBehaviorHints: "suggest-only"
+
+# 📋 Capabilities
+capabilities:
+  - "verification"
+  - "export"
+  - "feed-generation"
+---
+
 # Feed Type: `export.llmfeed.json`
 
 ## Purpose

@@ -73,6 +73,7 @@ On platforms like `github.com/username`, `medium.com/@handle`, or `france-care.f
 If `.well-known/` cannot be served per-user:
 
 - Declare `userspaces: true` in `llm-index`
+
 - Use URLs like:
   
   ```
@@ -95,9 +96,9 @@ Agents that support `userspaces` will automatically check subfeeds.
 ## 🔗 Related
 
 - [`llmfeed.md`](./llmfeed.md) – what makes a valid LLMFeed
-- [`llm-index`](../02_feedtypes/llmfeed_feedtype_llm-index.md) – how to list feeds
-- [`prompt-index`](../02_feedtypes/llmfeed_feedtype_prompt.md)
-- [`trust & signature`](../03_extensions/llmfeed-extensions_signatures.md)
+- [`llm-index`](../02_llmfeed_feedtype/llmfeed_feedtype_llm-index.md) – how to list feeds
+- [`prompt-index`](../02_llmfeed_feedtype/llmfeed_feedtype_prompt.md)
+- [`trust & signature`](../03_llmfeed_extensions/llmfeed_extensions_signatures.md)
 
 ---
 

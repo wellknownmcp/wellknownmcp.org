@@ -82,8 +82,8 @@ Issued by a trusted authority (like LLMCA), it certifies the whole feed or key p
 ## 📌 Related Specs
 
 - [`llmfeed.md`](./llmfeed.md) – foundational rules
-- [`llmfeed_extensions_signatures.md`](../03_extensions/llmfeed_extensions_signatures.md)
-- [`llmfeed_feedtype_export.md`](../02_feedtypes/llmfeed_feedtype_export.md)
+- [`llmfeed_extensions_signatures.md`](../03_llmfeed_extensions/llmfeed_extensions_signatures.md)
+- [`llmfeed_feedtype_export.md`](../02_llmfeed_feedtype/llmfeed_feedtype_export.md)
 
 ---
 

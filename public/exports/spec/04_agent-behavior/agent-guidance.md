@@ -47,14 +47,14 @@ Feeds may include **agent guidance** to:
 
 ## 📚 Fields
 
-| Field                         | Purpose                                       |
-| ----------------------------- | --------------------------------------------- |
-| `max_inference_depth`         | Suggests limiting depth of reasoning/inference |
-| `interaction_tone`            | Preferred tone (e.g. `formal`, `friendly`)    |
-| `consent_hint`                | Suggests when to seek human consent           |
-| `risk_tolerance`              | Recommended risk posture (`low`, `medium`, `high`) |
+| Field                         | Purpose                                                |
+| ----------------------------- | ------------------------------------------------------ |
+| `max_inference_depth`         | Suggests limiting depth of reasoning/inference         |
+| `interaction_tone`            | Preferred tone (e.g. `formal`, `friendly`)             |
+| `consent_hint`                | Suggests when to seek human consent                    |
+| `risk_tolerance`              | Recommended risk posture (`low`, `medium`, `high`)     |
 | `preferred_explanation_style` | UX hint (e.g. `bullet-points`, `summary`, `narrative`) |
-| `custom_notes`                | Free-text notes for agent developers          |
+| `custom_notes`                | Free-text notes for agent developers                   |
 
 ---
 
