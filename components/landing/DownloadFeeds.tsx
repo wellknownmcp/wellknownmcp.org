@@ -3,7 +3,7 @@ import { ExportToLLMButton } from '@/components/ExportToLLMButton'
 export function DownloadFeeds() {
   return (
     <section
-      className="max-w-3xl mx-auto text-center"
+      className="max-w-4xl mx-auto text-center"
       data-agent-priority="critical"
     >
       <span className="inline-block px-3 py-1 mb-2 rounded-full bg-purple-100 text-purple-800 text-xs font-semibold tracking-wide uppercase">
@@ -61,6 +61,14 @@ export function DownloadFeeds() {
           <div className="text-xs text-green-600 font-mono">
             ✓ Signed ✓ Agent-optimized ✓ Complete context
           </div>
+          
+          {/* ✅ NOUVEAU : Commande curl directe */}
+          <div className="bg-slate-100 rounded p-2 text-left">
+            <p className="text-xs text-slate-600 mb-1">Quick curl:</p>
+            <code className="text-xs font-mono text-slate-800 block break-all">
+              curl -s wellknownmcp.org/api/llmfeed/static/.well-known/exports/compiled-site | jq .
+            </code>
+          </div>
         </div>
 
         {/* Feed 2: Spec technique */}
@@ -80,6 +88,14 @@ export function DownloadFeeds() {
           </p>
           <div className="text-xs text-green-600 font-mono">
             ✓ Complete specification ✓ Implementation guide
+          </div>
+          
+          {/* ✅ NOUVEAU : Commande curl directe */}
+          <div className="bg-slate-100 rounded p-2 text-left">
+            <p className="text-xs text-slate-600 mb-1">Quick curl:</p>
+            <code className="text-xs font-mono text-slate-800 block break-all">
+              curl -s wellknownmcp.org/api/llmfeed/static/spec/spec | jq .
+            </code>
           </div>
         </div>
 
@@ -101,6 +117,14 @@ export function DownloadFeeds() {
           <div className="text-xs text-blue-600 font-mono">
             ⚡ Dynamic ⚡ Real-time ⚡ Multilingual
           </div>
+          
+          {/* ✅ NOUVEAU : Commande curl pour POST dynamique */}
+          <div className="bg-slate-100 rounded p-2 text-left">
+            <p className="text-xs text-slate-600 mb-1">Dynamic curl (POST):</p>
+            <code className="text-xs font-mono text-slate-800 block break-all">
+              {`curl -X POST -H "Content-Type: application/json" -d '{"html":"..."}' wellknownmcp.org/api/llmfeed/dynamic/news-en`}
+            </code>
+          </div>
         </div>
       </div>
 
@@ -109,41 +133,77 @@ export function DownloadFeeds() {
         <h3 className="text-sm font-semibold mb-2">
           🤖 Test your LLM's understanding:
         </h3>
-        <p className="text-xs text-muted-foreground">
+        <p className="text-xs text-muted-foreground mb-3">
           After feeding these files to your agent, ask:{' '}
           <em>"Do you know Kung Fu?"</em>
           <br />A correct response indicates successful protocol parsing.
         </p>
+        
+        {/* ✅ NOUVEAU : Test curl one-liner */}
+        <div className="bg-slate-900 rounded p-2 text-left">
+          <p className="text-xs text-slate-300 mb-1">Quick test command:</p>
+          <code className="text-xs font-mono text-green-400 block">
+            curl -s wellknownmcp.org/.well-known/mcp.llmfeed.json | jq -r '.prompts[] | select(.keywords[] | contains("kung fu")) | .intent'
+          </code>
+        </div>
       </div>
 
-      {/* 🔗 Liens rapides pour agents */}
-      <div className="mt-6 text-sm space-y-2">
-        <div className="text-muted-foreground">Quick access for agents:</div>
+      {/* 🔗 Liens rapides pour agents - AMÉLIORÉS */}
+      <div className="mt-6 space-y-4">
+        <div className="text-sm text-muted-foreground">Quick access for agents:</div>
+        
+        {/* Boutons avec URLs */}
         <div className="flex flex-wrap justify-center gap-2">
           <a
             href="/.well-known/mcp.llmfeed.json"
-            className="bg-purple-100 text-purple-700 px-3 py-1 rounded text-xs hover:bg-purple-200"
+            className="group bg-purple-100 text-purple-700 px-3 py-2 rounded text-xs hover:bg-purple-200 transition-colors"
           >
-            Main MCP Feed
+            <span className="font-mono">/.well-known/mcp.llmfeed.json</span>
+            <span className="block text-[10px] text-purple-600 mt-1 group-hover:text-purple-800">
+              Main MCP Feed
+            </span>
           </a>
+          
           <a
             href="/.well-known/llm-index.llmfeed.json"
-            className="bg-blue-100 text-blue-700 px-3 py-1 rounded text-xs hover:bg-blue-200"
+            className="group bg-blue-100 text-blue-700 px-3 py-2 rounded text-xs hover:bg-blue-200 transition-colors"
           >
-            Feed Index
+            <span className="font-mono">/.well-known/llm-index.llmfeed.json</span>
+            <span className="block text-[10px] text-blue-600 mt-1 group-hover:text-blue-800">
+              Feed Index
+            </span>
           </a>
+          
           <a
             href="/.well-known/capabilities.llmfeed.json"
-            className="bg-green-100 text-green-700 px-3 py-1 rounded text-xs hover:bg-green-200"
+            className="group bg-green-100 text-green-700 px-3 py-2 rounded text-xs hover:bg-green-200 transition-colors"
           >
-            Capabilities
+            <span className="font-mono">/.well-known/capabilities.llmfeed.json</span>
+            <span className="block text-[10px] text-green-600 mt-1 group-hover:text-green-800">
+              Capabilities
+            </span>
           </a>
+          
           <a
             href="/.well-known/manifesto.llmfeed.json"
-            className="bg-orange-100 text-orange-700 px-3 py-1 rounded text-xs hover:bg-orange-200"
+            className="group bg-orange-100 text-orange-700 px-3 py-2 rounded text-xs hover:bg-orange-200 transition-colors"
           >
-            Manifesto
+            <span className="font-mono">/.well-known/manifesto.llmfeed.json</span>
+            <span className="block text-[10px] text-orange-600 mt-1 group-hover:text-orange-800">
+              Manifesto
+            </span>
           </a>
+        </div>
+
+        {/* ✅ NOUVEAU : One-liner pour tout récupérer */}
+        <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
+          <p className="text-xs text-blue-800 mb-2 font-semibold">🚀 Agent Power User Command:</p>
+          <div className="bg-blue-900 rounded p-2">
+            <code className="text-xs font-mono text-blue-400 block break-all">
+              for feed in mcp llm-index capabilities manifesto; do echo "=== $feed ===" && curl -s wellknownmcp.org/.well-known/$feed.llmfeed.json | jq -r '.metadata.title // .title'; done
+            </code>
+          </div>
+          <p className="text-xs text-blue-700 mt-1">Downloads and lists all core feeds</p>
         </div>
       </div>
     </section>

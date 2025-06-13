@@ -1,6 +1,7 @@
+// Amélioration du ExportToLLMButton.tsx existant
 'use client'
 import { useState } from 'react'
-import { BrainCircuit, Copy, Shield, Lock, Package, Loader } from 'lucide-react'
+import { BrainCircuit, Copy, Shield, Lock, Package, Loader, Terminal, ExternalLink, Check } from 'lucide-react'
 
 function extractSignatureStatus(feed: any): 'none' | 'signed' | 'certified' {
   if (feed?.certification?.value) return 'certified'
@@ -23,6 +24,8 @@ interface ExportToLLMButtonProps {
   mini?: boolean
   clipboard?: boolean
   showSignatureStatus?: boolean
+  showCurlCommand?: boolean  // ✅ NOUVEAU
+  showDirectUrl?: boolean    // ✅ NOUVEAU
 }
 
 export function ExportToLLMButton({
@@ -33,11 +36,54 @@ export function ExportToLLMButton({
   mini = false,
   clipboard = false,
   showSignatureStatus = false,
+  showCurlCommand = false,     // ✅ NOUVEAU
+  showDirectUrl = false,       // ✅ NOUVEAU
 }: ExportToLLMButtonProps) {
-  const [signatureStatus, setSignatureStatus] = useState<
-    'none' | 'signed' | 'certified'
-  >('none')
+  const [signatureStatus, setSignatureStatus] = useState<'none' | 'signed' | 'certified'>('none')
   const [loading, setLoading] = useState(false)
+  const [showTooltip, setShowTooltip] = useState(false)
+  const [copiedCurl, setCopiedCurl] = useState(false)
+
+  // ✅ NOUVEAU : Générer l'URL directe et la commande curl
+  const getDirectUrl = () => {
+    const baseUrl = 'https://wellknownmcp.org'
+    
+    switch (context) {
+      case 'static':
+        return `${baseUrl}/api/llmfeed/static/${staticPath ?? 'default'}`
+      case 'dynamic':
+        return `${baseUrl}/api/llmfeed/dynamic/${dynamicId ?? 'default'}`
+      case 'zip':
+        const zipPath = staticPath ? staticPath.replace(/\.zip$/, '') : 'default'
+        return `${baseUrl}/exports/${zipPath}.zip`
+      default:
+        return `${baseUrl}/api/export/feed`
+    }
+  }
+
+  const getCurlCommand = () => {
+    const url = getDirectUrl()
+    
+    if (context === 'zip') {
+      return `curl -L -o "feed.zip" "${url}"`
+    }
+    
+    if (context === 'current' || context === 'dynamic') {
+      return `curl -X POST -H "Content-Type: application/json" -d '{"html":"<html>...</html>"}' "${url}" | jq .`
+    }
+    
+    return `curl -s "${url}" | jq .`
+  }
+
+  const copyCurlCommand = async () => {
+    try {
+      await navigator.clipboard.writeText(getCurlCommand())
+      setCopiedCurl(true)
+      setTimeout(() => setCopiedCurl(false), 2000)
+    } catch (err) {
+      console.error('Failed to copy curl command:', err)
+    }
+  }
 
   const handleClick = async () => {
     setLoading(true)
@@ -176,14 +222,61 @@ export function ExportToLLMButton({
 
   return (
     <div className="relative inline-block" data-llm="ignore">
+      {/* ✅ NOUVEAU : Tooltip avec URL et curl */}
+      {showTooltip && (showCurlCommand || showDirectUrl) && (
+        <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 p-3 bg-slate-900 text-white rounded-lg shadow-lg z-10 min-w-64">
+          {showDirectUrl && (
+            <div className="mb-2">
+              <p className="text-xs text-slate-300 mb-1">Direct URL:</p>
+              <div className="flex items-center gap-2">
+                <code className="text-xs text-green-400 flex-1 break-all">
+                  {getDirectUrl()}
+                </code>
+                <a
+                  href={getDirectUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300"
+                >
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
+            </div>
+          )}
+          
+          {showCurlCommand && (
+            <div>
+              <p className="text-xs text-slate-300 mb-1">Curl command:</p>
+              <div className="flex items-center gap-2">
+                <code className="text-xs text-green-400 flex-1 break-all">
+                  {getCurlCommand()}
+                </code>
+                <button
+                  onClick={copyCurlCommand}
+                  className="text-blue-400 hover:text-blue-300"
+                  title="Copy curl command"
+                >
+                  {copiedCurl ? <Check className="w-3 h-3" /> : <Copy className="w-3 h-3" />}
+                </button>
+              </div>
+            </div>
+          )}
+          
+          {/* Flèche du tooltip */}
+          <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-slate-900"></div>
+        </div>
+      )}
+
       <button
         onClick={handleClick}
+        onMouseEnter={() => setShowTooltip(true)}
+        onMouseLeave={() => setShowTooltip(false)}
         disabled={loading}
         className={`flex items-center justify-center ${
           mini ? 'p-1' : 'px-4 py-2'
         } text-violet-600 rounded ${
           loading ? 'animate-pulse opacity-60 cursor-wait' : ''
-        }`}
+        } ${showCurlCommand || showDirectUrl ? 'border border-violet-200 hover:border-violet-400' : ''}`}
         title={`Export (${context}${
           context === 'static'
             ? `: ${staticPath}`
@@ -216,9 +309,13 @@ export function ExportToLLMButton({
                 {context === 'zip' ? 'Download ZIP' : 'Export LLMFeed'}
               </span>
             )}
+            {(showCurlCommand || showDirectUrl) && (
+              <Terminal className="w-3 h-3 ml-1 text-slate-400" />
+            )}
           </>
         )}
       </button>
+
       {highlight && (
         <span className="absolute -top-2 -right-3 bg-violet-600 text-white text-[10px] rounded-full px-1.5 py-0.5 font-bold shadow">
           NEW

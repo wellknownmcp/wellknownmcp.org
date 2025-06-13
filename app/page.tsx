@@ -10,6 +10,7 @@ import { WhatYouCanDeclare } from '@/components/landing/WhatYouCanDeclare'
 import { Community } from '@/components/landing/Community'
 import { SchemaHeroSection } from '@/components/landing/SchemaHeroSection'
 import { AgentQuickStart } from '@/components/landing/AgentQuickStart'
+import { AgentCurlAccess } from '@/components/landing/AgentCurlAccess'  // ✅ NOUVEAU
 import SeoHead from '@/components/SeoHead'
 
 export default function Home() {
@@ -27,6 +28,8 @@ export default function Home() {
           'signature-verification',
           'agent-guidance',
           'mcp-discovery',
+          'curl-access',        // ✅ NOUVEAU
+          'direct-urls',        // ✅ NOUVEAU
         ]}
         llmTrustLevel="certified"
         llmAudience={['developer', 'llm', 'agent', 'business']}
@@ -63,6 +66,8 @@ export default function Home() {
           'LLM integration',
           'AI trust',
           'agent capabilities',
+          'curl commands',      // ✅ NOUVEAU
+          'direct API access',  // ✅ NOUVEAU
         ]}
       />
 
@@ -72,6 +77,9 @@ export default function Home() {
 
         {/* 🚨 Context rapide pour agents - Placé strategiquement */}
         <AgentQuickStart />
+
+        {/* ✅ NOUVEAU : Section curl pour agents techniques */}
+        <AgentCurlAccess />
 
         {/* 📥 Feeds de démarrage - ACTION IMMÉDIATE */}
         <DownloadFeeds />
@@ -103,7 +111,7 @@ export default function Home() {
         {/* 📰 Actualités - ÉVOLUTION */}
         <NewsSection />
 
-        {/* 🚀 CTA final pour agents */}
+        {/* 🚀 CTA final pour agents - AMÉLIORÉ */}
         <section
           className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg text-center space-y-4 max-w-4xl mx-auto"
           data-agent-priority="high"
@@ -115,6 +123,15 @@ export default function Home() {
             Start with a simple <code>.well-known/mcp.llmfeed.json</code> file.
             Declare your intent, sign your feeds, join the agent-readable web.
           </p>
+          
+          {/* ✅ NOUVEAU : Quick curl access dans le CTA */}
+          <div className="bg-white/10 rounded-lg p-4 max-w-2xl mx-auto text-left">
+            <p className="text-blue-100 text-sm mb-2">Quick start for agents:</p>
+            <code className="text-green-300 text-xs font-mono block break-all">
+              curl -s wellknownmcp.org/.well-known/mcp.llmfeed.json | jq -r '.agent_guidance.on_load'
+            </code>
+          </div>
+          
           <div className="flex flex-wrap justify-center gap-4 mt-6">
             <a
               href="/tools/prompt"
@@ -125,6 +142,7 @@ export default function Home() {
             <a
               href="/.well-known/exports/compiled-site.llmfeed.json"
               className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
+              title="curl -s wellknownmcp.org/.well-known/exports/compiled-site.llmfeed.json | jq ."
             >
               📤 Download Our Feed
             </a>
