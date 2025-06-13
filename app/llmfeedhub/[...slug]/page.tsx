@@ -1,3 +1,4 @@
+// app/llmfeedhub/[...slug]/page.tsx
 'use client'
 
 import { useEffect, useState, useRef } from 'react'
@@ -25,45 +26,50 @@ export default function LLMFeedHubPage() {
 
   useEffect(() => {
     if (!slug) return
-// ✅ NOUVEAU : Gérer les feeds temporaires depuis sessionStorage
-  if (typeof slug === 'string' && slug.startsWith('temp-')) {
-    const storedFeed = sessionStorage.getItem(`llmfeed-${slug}`)
-    if (storedFeed) {
-      try {
-        const parsedFeed = JSON.parse(storedFeed)
-        handleFeedLoaded(parsedFeed)
-        // Nettoyer le storage après utilisation
-        sessionStorage.removeItem(`llmfeed-${slug}`)
-        return
-      } catch (err) {
-        console.error('Failed to parse stored feed:', err)
+
+    // ✅ NOUVEAU : Convertir le slug array en string
+    const slugString = Array.isArray(slug) ? slug.join('/') : slug
+    console.log('🔍 Processing slug:', { slug, slugString })
+
+    // ✅ NOUVEAU : Gérer les feeds temporaires depuis sessionStorage
+    if (slugString.startsWith('temp-')) {
+      const storedFeed = sessionStorage.getItem(`llmfeed-${slugString}`)
+      if (storedFeed) {
+        try {
+          const parsedFeed = JSON.parse(storedFeed)
+          handleFeedLoaded(parsedFeed)
+          // Nettoyer le storage après utilisation
+          sessionStorage.removeItem(`llmfeed-${slugString}`)
+          return
+        } catch (err) {
+          console.error('Failed to parse stored feed:', err)
+        }
       }
     }
-  }
+
     setIsLoading(true)
     setError(null)
 
     // ✅ NOUVEAU : Détecter si c'est une URL complète
     const isExternalUrl =
-      typeof slug === 'string' &&
-      (slug.startsWith('http://') ||
-        slug.startsWith('https://') ||
-        slug.startsWith('http%3A//') ||
-        slug.startsWith('https%3A//'))
+      slugString.startsWith('http://') ||
+      slugString.startsWith('https://') ||
+      slugString.startsWith('http%3A//') ||
+      slugString.startsWith('https%3A//')
 
     let fetchUrl: string
     let sourceType: string
 
     if (isExternalUrl) {
       // URL externe - décoder si nécessaire
-      fetchUrl = slug.startsWith('http')
-        ? (slug as string)
-        : decodeURIComponent(slug as string)
+      fetchUrl = slugString.startsWith('http')
+        ? slugString
+        : decodeURIComponent(slugString)
       sourceType = 'external'
       console.log(`🌐 Fetching external URL: ${fetchUrl}`)
     } else {
-      // Fichier local
-      fetchUrl = `/exports/${slug}.llmfeed.json`
+      // Fichier local - utiliser le slug complet
+      fetchUrl = `/exports/${slugString}.llmfeed.json`
       sourceType = 'local'
       console.log(`📁 Fetching local file: ${fetchUrl}`)
     }
@@ -86,6 +92,7 @@ export default function LLMFeedHubPage() {
 
     fetch(fetchUrl)
       .then((res) => {
+        console.log(`📡 Fetch Response: ${res.status} ${res.statusText}`)
         if (!res.ok) {
           throw new Error(`HTTP ${res.status}: ${res.statusText}`)
         }
@@ -93,6 +100,11 @@ export default function LLMFeedHubPage() {
       })
       .then((json) => {
         console.log(`✅ Successfully loaded ${sourceType} feed`)
+        console.log('📄 Feed info:', {
+          title: json?.metadata?.title || 'Untitled',
+          feedType: json?.feed_type || 'unknown',
+          slug: slugString
+        })
         handleFeedLoaded(json)
       })
       .catch((err) => {
@@ -111,25 +123,42 @@ export default function LLMFeedHubPage() {
   // Générer l'URL JSON appropriée pour le SEO
   const jsonUrl = slug
     ? (() => {
+        const slugString = Array.isArray(slug) ? slug.join('/') : slug
         const isExternal =
-          typeof slug === 'string' &&
-          (slug.startsWith('http://') ||
-            slug.startsWith('https://') ||
-            slug.startsWith('http%3A//') ||
-            slug.startsWith('https%3A//'))
+          slugString.startsWith('http://') ||
+          slugString.startsWith('https://') ||
+          slugString.startsWith('http%3A//') ||
+          slugString.startsWith('https%3A//')
 
         return isExternal
-          ? slug.startsWith('http')
-            ? slug
-            : decodeURIComponent(slug as string)
+          ? slugString.startsWith('http')
+            ? slugString
+            : decodeURIComponent(slugString)
           : `${
               process.env.NEXT_PUBLIC_SITE_URL || 'https://wellknownmcp.org'
-            }/exports/${slug}.llmfeed.json`
+            }/exports/${slugString}.llmfeed.json`
       })()
     : ''
 
   return (
     <div className="max-w-5xl mx-auto p-4 space-y-6">
+      {/* Debug info en développement */}
+      {process.env.NODE_ENV === 'development' && (
+        <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded text-sm">
+          <details>
+            <summary className="font-semibold cursor-pointer">🐛 Debug Info</summary>
+            <pre className="mt-2 text-xs">
+              {JSON.stringify({
+                slug,
+                slugString: Array.isArray(slug) ? slug.join('/') : slug,
+                isArray: Array.isArray(slug),
+                jsonUrl
+              }, null, 2)}
+            </pre>
+          </details>
+        </div>
+      )}
+
       {/* SEO alternate link */}
       {slug && (
         <Head>

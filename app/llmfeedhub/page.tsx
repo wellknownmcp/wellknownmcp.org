@@ -1,3 +1,4 @@
+// app/llmfeedhub/page.tsx (pas de changement structurel majeur)
 'use client'
 
 import { useState } from 'react'
@@ -34,8 +35,9 @@ export default function LLMFeedHubIndexPage() {
       const encodedUrl = encodeURIComponent(inputValue.trim())
       router.push(`/llmfeedhub/${encodedUrl}`)
     } else {
-      // Slug local
+      // Slug local - ✅ IMPORTANT: ne pas nettoyer les slashes
       const cleanSlug = inputValue.trim().replace(/\.llmfeed\.json$/, '')
+      // ✅ Les slashes dans cleanSlug seront gérés par [...slug]
       router.push(`/llmfeedhub/${cleanSlug}`)
     }
   }
@@ -43,7 +45,7 @@ export default function LLMFeedHubIndexPage() {
   const quickLinks = [
     {
       title: 'Demo Kung Fu',
-      slug: 'demo/kungfu',
+      slug: 'demo/kungfu', // ✅ Garder le slash
       description: 'Example prompt feed with signature',
     },
     {
@@ -101,7 +103,7 @@ export default function LLMFeedHubIndexPage() {
           </div>
 
           <div className="text-sm text-gray-500">
-            💡 Examples: <code>demo/kungfu</code>, <code>mcp</code>, or{' '}
+            💡 Examples: <code>demo/kungfu</code>, <code>api/v1/spec</code>, or{' '}
             <code>https://site.com/feed.llmfeed.json</code>
           </div>
         </form>
@@ -128,12 +130,18 @@ export default function LLMFeedHubIndexPage() {
                       {link.url}
                     </p>
                   )}
+                  {/* ✅ Afficher le slug local pour debug */}
+                  {link.slug && (
+                    <p className="text-xs text-green-600 mt-1">
+                      Slug: {link.slug}
+                    </p>
+                  )}
                 </div>
                 <Link
                   href={
                     link.url
                       ? `/llmfeedhub/${encodeURIComponent(link.url)}`
-                      : `/llmfeedhub/${link.slug}`
+                      : `/llmfeedhub/${link.slug}` // ✅ Utiliser le slug avec slash
                   }
                   className="ml-4 px-3 py-1 bg-blue-100 text-blue-700 rounded text-sm hover:bg-blue-200 whitespace-nowrap"
                 >
