@@ -45,15 +45,15 @@
       "count": 10
     },
     {
+      "tag": "interoperability",
+      "count": 10
+    },
+    {
       "tag": "well-known",
       "count": 10
     },
     {
       "tag": "certification",
-      "count": 9
-    },
-    {
-      "tag": "interoperability",
       "count": 9
     },
     {
@@ -89,6 +89,10 @@
       "count": 6
     },
     {
+      "tag": "open-standards",
+      "count": 6
+    },
+    {
       "tag": "structure",
       "count": 6
     },
@@ -110,10 +114,6 @@
     },
     {
       "tag": "principles",
-      "count": 5
-    },
-    {
-      "tag": "open-standards",
       "count": 5
     },
     {
@@ -557,6 +557,26 @@
       "count": 1
     },
     {
+      "tag": "ai-platforms",
+      "count": 1
+    },
+    {
+      "tag": "data-ownership",
+      "count": 1
+    },
+    {
+      "tag": "session.llmfeed.json",
+      "count": 1
+    },
+    {
+      "tag": "user-control",
+      "count": 1
+    },
+    {
+      "tag": "vendor-lock-in",
+      "count": 1
+    },
+    {
       "tag": "compatibility",
       "count": 1
     },
@@ -791,7 +811,7 @@
       },
       {
         "tag": "interoperability",
-        "count": 6
+        "count": 7
       },
       {
         "tag": "web",
@@ -804,6 +824,10 @@
       {
         "tag": "signature",
         "count": 5
+      },
+      {
+        "tag": "open-standards",
+        "count": 4
       },
       {
         "tag": "llmca",
@@ -823,10 +847,6 @@
       },
       {
         "tag": "anthropic",
-        "count": 3
-      },
-      {
-        "tag": "open-standards",
         "count": 3
       },
       {
@@ -1255,6 +1275,26 @@
       },
       {
         "tag": "use-cases",
+        "count": 1
+      },
+      {
+        "tag": "ai-platforms",
+        "count": 1
+      },
+      {
+        "tag": "data-ownership",
+        "count": 1
+      },
+      {
+        "tag": "session.llmfeed.json",
+        "count": 1
+      },
+      {
+        "tag": "user-control",
+        "count": 1
+      },
+      {
+        "tag": "vendor-lock-in",
         "count": 1
       },
       {

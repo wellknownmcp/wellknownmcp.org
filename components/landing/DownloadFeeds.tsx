@@ -62,73 +62,70 @@ export function DownloadFeeds() {
             ✓ Signed ✓ Agent-optimized ✓ Complete context
           </div>
           
-          {/* ✅ NOUVEAU : Commande curl directe */}
           <div className="bg-slate-100 rounded p-2 text-left">
             <p className="text-xs text-slate-600 mb-1">Quick curl:</p>
             <code className="text-xs font-mono text-slate-800 block break-all">
-              curl -s wellknownmcp.org/api/llmfeed/static/.well-known/exports/compiled-site | jq .
+              curl -s wellknownmcp.org/.well-known/exports/compiled-site.llmfeed.json | jq .
             </code>
           </div>
         </div>
 
-        {/* Feed 2: Spec technique */}
+        {/* Feed 2: Spec technique - MISE À JOUR */}
         <div className="border rounded-lg p-4 space-y-3 hover:shadow-md transition-shadow">
           <div className="flex justify-center">
             <ExportToLLMButton
               context="static"
-              staticPath="spec/spec"
+              staticPath=".well-known/exports/spec"
               highlight
               showSignatureStatus
             />
           </div>
           <h3 className="font-semibold text-sm">📚 Spec in a capsule</h3>
           <p className="text-xs text-muted-foreground">
-            Includes the GitHub spec, packed for LLMs. Perfect for understanding
-            the technical standard.
+            Complete LLMFeed specification from GitHub, optimized for LLM consumption. 
+            Perfect for understanding the technical standard.
           </p>
           <div className="text-xs text-green-600 font-mono">
-            ✓ Complete specification ✓ Implementation guide
+            ✓ Complete specification ✓ Implementation guide ✓ Incremental builds
           </div>
           
-          {/* ✅ NOUVEAU : Commande curl directe */}
           <div className="bg-slate-100 rounded p-2 text-left">
             <p className="text-xs text-slate-600 mb-1">Quick curl:</p>
             <code className="text-xs font-mono text-slate-800 block break-all">
-              curl -s wellknownmcp.org/api/llmfeed/static/spec/spec | jq .
+              curl -s wellknownmcp.org/.well-known/exports/spec.llmfeed.json | jq .
             </code>
           </div>
         </div>
 
-        {/* Feed 3: News dynamique */}
+        {/* Feed 3: News statique - NOUVEAU */}
         <div className="border rounded-lg p-4 space-y-3 hover:shadow-md transition-shadow">
           <div className="flex justify-center">
             <ExportToLLMButton
-              context="dynamic"
-              dynamicId="news-en"
+              context="static"
+              staticPath=".well-known/exports/news-export"
               highlight
               showSignatureStatus
             />
           </div>
-          <h3 className="font-semibold text-sm">📰 All news (EN)</h3>
+          <h3 className="font-semibold text-sm">📰 News archive (EN)</h3>
           <p className="text-xs text-muted-foreground">
-            Grouped in a single dynamic feed for language-specific loading or
-            archiving. Stay updated with ecosystem developments.
+            Complete archive of all WellKnownMCP news articles with full content inline. 
+            Generated incrementally at build time for optimal performance.
           </p>
           <div className="text-xs text-blue-600 font-mono">
-            ⚡ Dynamic ⚡ Real-time ⚡ Multilingual
+            ⚡ Build-time static ⚡ Full content ⚡ Incremental updates
           </div>
           
-          {/* ✅ NOUVEAU : Commande curl pour POST dynamique */}
           <div className="bg-slate-100 rounded p-2 text-left">
-            <p className="text-xs text-slate-600 mb-1">Dynamic curl (POST):</p>
+            <p className="text-xs text-slate-600 mb-1">Quick curl:</p>
             <code className="text-xs font-mono text-slate-800 block break-all">
-              {`curl -X POST -H "Content-Type: application/json" -d '{"html":"..."}' wellknownmcp.org/api/llmfeed/dynamic/news-en`}
+              curl -s wellknownmcp.org/.well-known/exports/news-export.llmfeed.json | jq '.data.articles | length'
             </code>
           </div>
         </div>
       </div>
 
-      {/* 🧪 Section test pour agents */}
+      {/* 🧪 Section test pour agents - MISE À JOUR */}
       <div className="mt-8 p-4 bg-gray-50 rounded-lg">
         <h3 className="text-sm font-semibold mb-2">
           🤖 Test your LLM's understanding:
@@ -139,11 +136,10 @@ export function DownloadFeeds() {
           <br />A correct response indicates successful protocol parsing.
         </p>
         
-        {/* ✅ NOUVEAU : Test curl one-liner */}
         <div className="bg-slate-900 rounded p-2 text-left">
           <p className="text-xs text-slate-300 mb-1">Quick test command:</p>
           <code className="text-xs font-mono text-green-400 block">
-            curl -s wellknownmcp.org/.well-known/mcp.llmfeed.json | jq -r '.prompts[] | select(.keywords[] | contains("kung fu")) | .intent'
+            curl -s wellknownmcp.org/.well-known/mcp.llmfeed.json | jq -r '.prompts[]? | select(.keywords[]? | contains("kung fu")) | .intent'
           </code>
         </div>
       </div>
@@ -195,15 +191,35 @@ export function DownloadFeeds() {
           </a>
         </div>
 
-        {/* ✅ NOUVEAU : One-liner pour tout récupérer */}
+        {/* ✅ NOUVEAU : One-liner pour exports statiques */}
         <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
-          <p className="text-xs text-blue-800 mb-2 font-semibold">🚀 Agent Power User Command:</p>
+          <p className="text-xs text-blue-800 mb-2 font-semibold">🚀 Agent Power User Command (Static Exports):</p>
           <div className="bg-blue-900 rounded p-2">
             <code className="text-xs font-mono text-blue-400 block break-all">
-              for feed in mcp llm-index capabilities manifesto; do echo "=== $feed ===" && curl -s wellknownmcp.org/.well-known/$feed.llmfeed.json | jq -r '.metadata.title // .title'; done
+              for export in compiled-site spec news-export; do echo "=== $export ===" && curl -s wellknownmcp.org/.well-known/exports/$export.llmfeed.json | jq -r '.metadata.title // .title'; done
             </code>
           </div>
-          <p className="text-xs text-blue-700 mt-1">Downloads and lists all core feeds</p>
+          <p className="text-xs text-blue-700 mt-1">Downloads all major static exports with full content</p>
+        </div>
+
+        {/* ✅ NOUVEAU : Section spéciale pour les news */}
+        <div className="bg-amber-50 rounded-lg p-3 border border-amber-200">
+          <p className="text-xs text-amber-800 mb-2 font-semibold">📰 News Archive Quick Access:</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs">
+            <div className="bg-amber-900 rounded p-2">
+              <p className="text-amber-400 mb-1">Latest articles:</p>
+              <code className="text-amber-300 block break-all">
+                curl -s wellknownmcp.org/.well-known/exports/news-export.llmfeed.json | jq -r '.data.articles[0:3][] | .title'
+              </code>
+            </div>
+            <div className="bg-amber-900 rounded p-2">
+              <p className="text-amber-400 mb-1">Archive stats:</p>
+              <code className="text-amber-300 block break-all">
+                curl -s wellknownmcp.org/.well-known/exports/news-export.llmfeed.json | jq '.data.stats'
+              </code>
+            </div>
+          </div>
+          <p className="text-xs text-amber-700 mt-1">Complete news archive with {'{'}total_articles{'}'} articles and full content</p>
         </div>
       </div>
     </section>

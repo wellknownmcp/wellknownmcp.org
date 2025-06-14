@@ -47,15 +47,22 @@ export function AgentCurlAccess() {
     {
       name: "Spec Documentation",
       description: "Technical specification",
-      url: "/exports/spec.llmfeed.json",
-      command: "curl -s https://wellknownmcp.org/exports/spec.llmfeed.json | jq .",
+      url: ".well-known/exports/spec.llmfeed.json",
+      command: "curl -s https://wellknownmcp.org/.well-known/exports/spec.llmfeed.json | jq .",
+      type: "export"
+    },
+    {
+      name: "News article",
+      description: "News article published by wellknownmcp Team mostly",
+      url: ".well-known/exports/news-export.llmfeed.json",
+      command: "curl -s https://wellknownmcp.org/.well-known/exports/news-export.llmfeed.json | jq .",
       type: "export"
     },
     {
       name: "LLMFeedHub Analysis",
       description: "Analyze any feed via API",
-      url: "/api/external-feed?url=...",
-      command: "curl -s 'https://wellknownmcp.org/api/external-feed?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmicrosoft%2Fvscode' | jq .",
+      url: "/llmfeedhub",
+      command: "curl -s 'https://wellknownmcp.org/llmfeedhub | jq .",
       type: "api"
     }
   ]
