@@ -1,17 +1,18 @@
 ---
 # 📄 Basic metadata
 
-title: "Extension: API Feed Handling — Autonomous Agent Service Discovery"
-description: "How LLMFeed enables agents to autonomously discover, negotiate, and manage API access without manual user configuration"
-date: "2025-06-10T00:00:00.000Z"
+title: "Extension: API Feed Handling — Progressive Agent Service Discovery"
+description: "How LLMFeed enables progressive agent service discovery and authentication, building on Anthropic's excellent Model Context Protocol foundations"
+date: "2025-06-15T00:00:00.000Z"
 lang: "en"
 
 # 🏷️ Tags
 
 tags:
-
 - "mcp"
+- "anthropic"
 - "llmfeed"
+- "progressive-enhancement"
 - "api-extension"
 - "agent-autonomy"
 - "service-discovery"
@@ -29,10 +30,9 @@ contentType: "api-reference"
 # 🧠 Intent and audience
 
 intent: "technical-guide"
-llmIntent: "understand-autonomous-api-access"
+llmIntent: "understand-progressive-api-access"
 llmTopic: "agent-service-integration"
 audience:
-
 - "llm"
 - "developer"
 - "product-manager"
@@ -57,17 +57,20 @@ autoDiscoverFeeds: true
 agentReadiness: true
 llmBehaviorHints: "suggest-only"
 
+# 🔄 MCP Integration
+mcpCompatibility: "full"
+anthropicReference: "https://modelcontextprotocol.io"
+enhancementType: "progressive"
+
 # 📋 Specialized metadata
 
 extensions:
-
 - "api-authentication"
 - "service-discovery"
 - "credential-management"
 
 capabilities:
-
-- "autonomous-discovery"
+- "progressive-discovery"
 - "credential-negotiation"
 - "transparent-access"
 
@@ -81,59 +84,83 @@ estimatedReadTime: "12 min"
 # 📚 Relations
 
 relatedArticles:
-
 - "llmfeed-feedtype-credential"
 - "llmfeed-feedtype-mcp"
 - "llmfeed-feedtype-mobile-app"
 - "wellknown-discovery"
 
 prerequisites:
-
 - "basic-llmfeed-concepts"
 - "understanding-of-well-known-uris"
+- "anthropic-mcp-familiarity"
 - "api-authentication-fundamentals"
 
 ---
 
 # Extension: API Feed Handling
 
-This extension describes how feeds like `/mcp-api.llmfeed.json` enable agents to **autonomously discover, negotiate, and manage** service access, eliminating the need for users to manually configure API keys.
+This extension describes how feeds like `/mcp-api.llmfeed.json` enable **progressive agent service discovery and authentication**, building on Anthropic's excellent Model Context Protocol foundations to bridge local MCP capabilities with web-scale service discovery.
 
-## 🚀 The Revolution: From Manual Configuration to Total Autonomy
+## 🤝 Building on Anthropic's MCP Excellence
 
-### **BEFORE LLMFeed: Configuration Hell**
+### **What Anthropic MCP Does Brilliantly**
 
-```bash
-# Users must:
-1. Discover that a service exists
-2. Visit the service website
-3. Create a developer account
-4. Generate an API key
-5. Copy-paste it into agent configuration
-6. Manage expiration, rotation, permissions...
-```
+- ✅ **Outstanding tool calling protocol** (JSON-RPC foundation)
+- ✅ **Robust server-model integration** (stdin/stdout transport)
+- ✅ **Clear resource management** (tools, resources, prompts)
+- ✅ **Thoughtful authentication flows** (secure local configurations)
 
-### **AFTER LLMFeed: Agents Handle Everything**
+### **What LLMFeed API Extension Adds**
 
-```
-User: "I'd like to analyze this document"
-Agent: "I can do that! I found DocumentAI which looks perfect. 
-        Would you like me to access their advanced features?"
-User: "Yes"
-Agent: [Automatically negotiates access, obtains credentials, 
-        processes document]
-Agent: "Here's your complete analysis!"
-```
+- 🌐 **Web-scale service discovery** (`.well-known/` standard)
+- 🔐 **Progressive trust model** (signature-based authentication)
+- 🔄 **Multi-LLM compatibility** (beyond Claude ecosystem)
+- ⚡ **Enhanced user experience** (guided service integration)
 
-**The user never saw an API key. The agent managed everything.**
+**Together**: Complete agent-service integration from local MCP tools to global web services.
 
 ---
 
-## 🔍 The Magic Flow in 4 Steps
+## 🚀 The Evolution: From Manual Configuration to Progressive Autonomy
 
-### **Step 1: Automatic Discovery**
+### **Current Reality (2025): Agent-Assisted Discovery**
 
-The agent discovers available services via [well-known URIs](https://tools.ietf.org/html/rfc5785):
+```
+User: "I need to analyze this document"
+Agent: "I found several document analysis services via LLMFeed discovery. 
+        DocumentAI has good capabilities and trust scores. 
+        Would you like me to help you set up access?"
+User: "Yes, show me what's involved"
+Agent: [Guides through secure setup process]
+```
+
+### **Progressive Enhancement (2026): Semi-Autonomous Access**
+
+```
+User: "Analyze this document"
+Agent: "I can use DocumentAI (certified service). 
+        May I request temporary access for this task?"
+User: "Yes"
+Agent: [Handles authentication with user oversight]
+```
+
+### **Future Vision (2027): Trusted Autonomous Operation**
+
+```
+User: "Analyze this document"
+Agent: [Automatically selects optimal certified service, 
+        processes securely, provides results]
+```
+
+**Key insight**: Progressive trust-building enables increasing autonomy over time.
+
+---
+
+## 🔍 The Progressive Flow in 4 Steps
+
+### **Step 1: Enhanced MCP Discovery** *(Building on Anthropic's Foundation)*
+
+The agent discovers web-scale services via [well-known URIs](https://tools.ietf.org/html/rfc5785), complementing standard MCP local server discovery:
 
 ```json
 // /.well-known/mcp.llmfeed.json
@@ -141,23 +168,38 @@ The agent discovers available services via [well-known URIs](https://tools.ietf.
   "feed_type": "mcp",
   "metadata": {
     "title": "DocumentAI Service",
-    "origin": "https://api.documentai.com"
+    "origin": "https://api.documentai.com",
+    "description": "AI-powered document analysis with OCR and translation"
   },
+  
+  // Building on MCP server patterns
+  "mcpServers": {
+    "documentai-web": {
+      "command": "web-mcp-bridge",
+      "args": ["--endpoint", "https://api.documentai.com"]
+    }
+  },
+  
+  // Enhanced capabilities for web discovery
   "capabilities": [
     {
       "name": "basic_preview",
       "description": "Preview document analysis",
-      "auth_required": false
+      "auth_required": false,
+      "user_benefit": "Quick preview of document structure"
     },
     {
       "name": "full_analysis", 
       "description": "Complete AI document processing",
       "auth_required": true,
-      "user_benefit": "10x more accurate, supports 50+ languages"
+      "user_benefit": "10x more accurate, supports 50+ languages",
+      "requires_consent": true
     }
   ],
+  
+  // Progressive authentication strategy
   "auth_flow": {
-    "agent_can_request": true,
+    "discovery_method": "progressive",
     "user_consent_required": true,
     "credential_endpoint": "/.well-known/credential.llmfeed.json"
   }
@@ -166,92 +208,138 @@ The agent discovers available services via [well-known URIs](https://tools.ietf.
 
 *See [MCP Feed Type](../02_llmfeed_feedtype/llmfeed_feedtype_mcp.md) for complete specification.*
 
-### **Step 2: Negotiation with Consent**
+### **Step 2: Guided Authentication** *(Current Capability)*
 
 ```
-Agent: "DocumentAI offers advanced analysis that would be 
-        perfect for your document. May I request access?"
+Agent: "DocumentAI offers advanced analysis capabilities:
+        - 50+ language support
+        - 99.5% OCR accuracy
+        - GDPR compliant processing
+        
+        Setting up access requires:
+        1. API key from DocumentAI (I can guide you)
+        2. One-time authentication setup
+        3. Secure credential storage
+        
+        Would you like me to help with this process?"
 
-User: "Yes, go ahead"
+User: "Yes, guide me through it"
 
-Agent: [Follows credential endpoint automatically]
+Agent: [Provides step-by-step guidance while maintaining security]
 ```
 
-### **Step 3: Autonomous Credential Management**
+### **Step 3: Progressive Credential Management** *(Enhanced MCP Pattern)*
 
-The agent receives and stores credentials automatically:
+Building on MCP's credential handling with web-scale enhancements:
 
 ```json
-// credential.llmfeed.json (managed by agent)
+// credential.llmfeed.json (managed progressively)
 {
   "feed_type": "credential",
+  "metadata": {
+    "title": "DocumentAI Access",
+    "origin": "https://api.documentai.com"
+  },
   "credential": {
     "key_hint": "dmai_...abc123",
     "mcp_api": "https://api.documentai.com/.well-known/mcp-api.llmfeed.json",
     "allowed_intents": ["document_analysis", "ocr", "translation"],
-    "expires_at": "2025-12-10T14:30:00Z"
+    "expires_at": "2025-12-10T14:30:00Z",
+    "permission_level": "user_approved",
+    "auto_renewal": false
   },
   "trust": {
     "signed_blocks": ["credential"],
-    "certifier": "https://llmca.org"
+    "certifier": "https://llmca.org",
+    "trust_score": 0.85
   }
 }
 ```
 
-*See [Credential Feed Type](../02_llmfeed_feedtype/llmfeed_feedtype_credential.md) for cryptographic security details.*
+*See [Credential Feed Type](../02_llmfeed_feedtype/llmfeed_feedtype_credential.md) for complete security details.*
 
-### **Step 4: Transparent Service Access**
+### **Step 4: Enhanced Service Access** *(MCP-Compatible)*
 
 ```json
-// /.well-known/mcp-api.llmfeed.json?key=dmai_abc123 (automatic)
+// /.well-known/mcp-api.llmfeed.json?key=dmai_abc123
 {
   "feed_type": "mcp",
+  "metadata": {
+    "title": "DocumentAI Authenticated Access",
+    "origin": "https://api.documentai.com"
+  },
+  
+  // Standard MCP capabilities (enhanced)
+  "mcpServers": {
+    "documentai-authenticated": {
+      "command": "web-mcp-bridge",
+      "args": ["--endpoint", "https://api.documentai.com", "--authenticated"],
+      "env": {
+        "API_KEY": "dmai_abc123"
+      }
+    }
+  },
+  
+  // Enhanced capabilities for authenticated access
   "capabilities": [
     { "name": "advanced_ocr", "method": "POST", "path": "/api/ocr" },
-    { "name": "multi_language_analysis", "method": "POST", "path": "/api/analyze" }
+    { "name": "multi_language_analysis", "method": "POST", "path": "/api/analyze" },
+    { "name": "batch_processing", "method": "POST", "path": "/api/batch" }
   ],
+  
+  // Transparent rate limiting
   "rate_limits": [
-    { "path": "/api/ocr", "remaining": 87, "limit": 100, "period": "daily" }
+    { "path": "/api/ocr", "remaining": 87, "limit": 100, "period": "daily" },
+    { "path": "/api/analyze", "remaining": 45, "limit": 50, "period": "daily" }
   ],
+  
   "trust": {
     "scope": "authenticated",
-    "key_hint": "dmai_...abc123"
+    "key_hint": "dmai_...abc123",
+    "permission_verified": true
   }
 }
 ```
 
-**The agent can now use the service as if it were native.**
+**Result**: Standard MCP clients can use the service through familiar patterns, while enhanced agents get additional discovery and trust features.
 
 ---
 
-## 🌟 What This Changes Fundamentally
+## 🌟 What This Progressive Approach Enables
 
-### **For Users**
+### **For Users (Current Benefits)**
 
-- ✅ **Zero configuration**: never handle API keys manually
-- ✅ **Informed consent**: understand what they're authorizing
-- ✅ **Seamless experience**: agents handle everything behind the scenes
-- ✅ **Security**: no sensitive keys exposed in interfaces
+- ✅ **Guided discovery**: Agents help find relevant services
+- ✅ **Informed consent**: Clear understanding of what services offer
+- ✅ **Security assistance**: Agents guide through secure setup
+- ✅ **Progressive trust**: Comfort builds through successful interactions
 
-### **For Agents**
+### **For Agents (Enhanced Capabilities)**
 
-- ✅ **Automatic discovery**: find relevant services via [well-known discovery](../01_llmfeed/wellknown.md)
-- ✅ **Autonomous management**: obtain and maintain credentials
-- ✅ **Dynamic adaptation**: adjust to limits and permissions
-- ✅ **Error recovery**: handle access issues automatically
+- ✅ **Web-scale discovery**: Find services via `.well-known/` directories
+- ✅ **Trust evaluation**: Assess service quality via signatures and reviews
+- ✅ **Standardized access**: Use MCP patterns for consistent integration
+- ✅ **Progressive autonomy**: Earn user trust through reliable behavior
 
-### **For Service Providers**
+### **For Service Providers (Clear Benefits)**
 
-- ✅ **Simplified acquisition**: agents bring qualified users
-- ✅ **Smooth onboarding**: agent → paying user conversion
-- ✅ **Optimized usage**: agents automatically respect limits
-- ✅ **Verified trust**: signature and certification system
+- ✅ **Agent-friendly onboarding**: Structured presentation to AI agents
+- ✅ **Trust signaling**: Demonstrate reliability through signatures
+- ✅ **Optimal adoption**: Agents guide users through best-fit services
+- ✅ **MCP compatibility**: Work with existing Anthropic MCP ecosystem
+
+### **For the MCP Ecosystem (Mutual Enhancement)**
+
+- ✅ **Extended reach**: Local MCP tools + web-scale discovery
+- ✅ **Enhanced trust**: Cryptographic verification adds security layer
+- ✅ **Maintained compatibility**: Existing MCP clients continue working
+- ✅ **Progressive adoption**: Smooth migration path for enhanced features
 
 ---
 
-## 🔧 Authentication Methods (Transparent to Users)
+## 🔧 Authentication Methods (Agent-Managed)
 
-Agents automatically handle:
+Agents progressively handle authentication while maintaining security:
 
 ### **Bearer Token** (Recommended)
 
@@ -287,40 +375,50 @@ Content-Type: application/json
 }
 ```
 
-*Users never see these technical details.*
+*Authentication details managed by agents with appropriate user oversight.*
 
 ---
 
 ## 📱 Mobile App Integration
 
-The same principle applies to mobile applications:
+The same progressive principles apply to mobile applications:
 
 ```json
 // /.well-known/mobile-app.llmfeed.json
 {
   "feed_type": "mobile-app",
+  "metadata": {
+    "title": "FitnessTracker Pro",
+    "origin": "https://fitnessapp.com"
+  },
   "app_integration": {
-    "agent_auth_flow": true,
+    "discovery_method": "progressive",
     "deep_link_support": "myapp://agent-auth/callback",
     "credential_sharing": "secure_token_exchange"
   },
   "capabilities": [
     {
-      "name": "fitness_tracking",
+      "name": "basic_stats",
+      "auth_required": false,
+      "description": "View basic fitness metrics"
+    },
+    {
+      "name": "detailed_tracking",
       "auth_required": true,
-      "user_benefit": "Voice-controlled workout logging"
+      "user_benefit": "Voice-controlled workout logging with AI coaching",
+      "requires_consent": true
     }
   ]
 }
 ```
 
-**Result**: Agents can negotiate access to your mobile app and interact via API, without any user configuration.
+**Result**: Agents can progressively negotiate access to mobile app features, with user understanding and consent.
 
 *See [Mobile App Feed Type](../02_llmfeed_feedtype/llmfeed_feedtype_mobile-app.md) for complete mobile integration patterns.*
 
 ---
 
-## 🧠 OpenAPI: Best of Both Worlds
+## 🧠 OpenAPI Integration: Best of Both Worlds
 
 ```json
 {
@@ -330,7 +428,8 @@ The same principle applies to mobile applications:
       "intent": "analyze document",
       "description": "AI-powered document analysis", 
       "method": "POST",
-      "path": "/api/analyze"
+      "path": "/api/analyze",
+      "user_benefit": "Accurate OCR with 50+ language support"
     },
     {
       "type": "openapi",
@@ -341,28 +440,23 @@ The same principle applies to mobile applications:
 }
 ```
 
-→ **Agents understand intent** via LLMFeed, **validate parameters** via [OpenAPI](https://spec.openapis.org/oas/v3.1.0).
+→ **Agents understand intent** via LLMFeed, **validate parameters** via [OpenAPI](https://spec.openapis.org/oas/v3.1.0), **integrate via MCP** patterns.
 
 ---
 
-## ⚠️ Error Handling & Recovery
+## ⚠️ Current Limitations & Progressive Solutions
 
-### **Authentication Errors**
+### **Discovery Accuracy Challenges**
 
-```json
-{
-  "error": "invalid_credentials",
-  "message": "API key is invalid or expired",
-  "recovery": {
-    "credential_renewal": "/.well-known/credential.llmfeed.json",
-    "support_url": "https://documentai.com/support"
-  },
-  "fallback_access": {
-    "demo_mode": true,
-    "limited_capabilities": ["basic_preview"]
-  }
-}
-```
+**Current limitation**: Agents may suggest suboptimal services
+**Progressive solution**: Trust scoring and user feedback improve recommendations
+**MCP enhancement**: Signatures provide verifiable service quality indicators
+
+### **Authentication Security**
+
+**Current approach**: User-guided credential management
+**Progressive enhancement**: Signature-based trust enables selective automation
+**Future capability**: LLMCA certification enables autonomous access for trusted services
 
 ### **Rate Limit Management**
 
@@ -374,34 +468,35 @@ The same principle applies to mobile applications:
       "path": "/api/ocr",
       "limit": 100,
       "remaining": 0,
-      "resets_at": "2025-06-11T00:00:00Z"
+      "resets_at": "2025-06-16T00:00:00Z"
     }
   ],
   "alternatives": {
     "available_endpoints": ["/api/preview"],
-    "upgrade_hint": "Enterprise tier offers 10x higher limits"
+    "upgrade_options": "Enterprise tier offers 10x higher limits",
+    "fallback_services": ["competitor-api-1", "competitor-api-2"]
   }
 }
 ```
 
-*Agents handle these automatically, presenting users with constructive alternatives.*
+*Agents present alternatives and help users understand options.*
 
 ---
 
-## 🎯 The Impact: A Truly Agentic Web
+## 🎯 The Progressive Impact: Enhanced MCP Ecosystem
 
-### **Before**: Web for Humans
+### **Current State**: MCP for Local Tools + LLMFeed for Web Discovery
 
-- Websites for human navigation
-- APIs for technical developers
-- Manual configuration required
+- **Local MCP servers**: Continue working perfectly via Anthropic's excellent protocol
+- **Web service discovery**: Enhanced via LLMFeed `.well-known/` endpoints
+- **User experience**: Guided service integration with progressive autonomy
 
-### **After**: Web for Agents
+### **Future Evolution**: Unified Agent Infrastructure
 
-- ✅ **Services auto-discoverable** by agents
-- ✅ **Automatic access negotiation**
-- ✅ **Transparent credential management**
-- ✅ **Frictionless user experience**
+- ✅ **Seamless integration** between local MCP tools and web services
+- ✅ **Progressive trust model** enabling increasing automation
+- ✅ **Enhanced security** through cryptographic verification
+- ✅ **Better user experience** through agent-guided service discovery
 
 ---
 
@@ -415,12 +510,13 @@ This extension integrates with LLMFeed's [risk scoring system](../04_agent-behav
     "risk_score": 0.15,
     "safety_tier": "low-risk",
     "signed_blocks": ["capabilities", "rate_limits"],
-    "certifier": "https://llmca.org"
+    "certifier": "https://llmca.org",
+    "mcp_compatibility": "verified"
   }
 }
 ```
 
-*Agents can evaluate service trustworthiness before requesting user consent.*
+*Agents evaluate service trustworthiness before requesting user consent, building on MCP's security model.*
 
 ---
 
@@ -428,62 +524,56 @@ This extension integrates with LLMFeed's [risk scoring system](../04_agent-behav
 
 ### **For Service Providers**
 
-1. **Expose discovery endpoints**
-   
-   - Implement `/.well-known/mcp.llmfeed.json` for service discovery
-   - Provide `/.well-known/credential.llmfeed.json` for agent authentication
+1. **Implement Progressive Discovery**
+   - Start with `/.well-known/mcp.llmfeed.json` for basic service information
+   - Add `/.well-known/credential.llmfeed.json` for authentication flows
+   - Ensure compatibility with standard MCP client expectations
 
-2. **Enable agent-friendly flows**
-   
-   - Create agent-specific onboarding processes
-   - Implement dynamic `/mcp-api.llmfeed.json` endpoints
-   - Support multiple authentication methods
+2. **Enable Agent-Friendly Flows**
+   - Create clear service descriptions with user benefits
+   - Implement guided onboarding processes
+   - Support standard authentication methods
 
-3. **Ensure security**
-   
+3. **Ensure Security and Trust**
    - Sign all feeds using [LLMFeed signatures](./llmfeed_extensions_signatures.md)
    - Implement proper rate limiting and scoping
    - Provide clear error messages with recovery paths
 
 ### **For Agent Developers**
 
-1. **Implement discovery**
-   
-   - Scan `/.well-known/` directories for service capabilities
-   - Parse and understand service requirements
-   - Present options to users in natural language
+1. **Implement Progressive Discovery**
+   - Scan `/.well-known/` directories for enhanced service capabilities
+   - Fall back to standard MCP patterns for compatibility
+   - Present options to users in clear, beneficial terms
 
-2. **Manage credentials securely**
-   
+2. **Manage Credentials Progressively**
    - Store `credential.llmfeed.json` files securely
-   - Implement automatic rotation and renewal
-   - Verify signatures before using credentials
+   - Implement user-controlled authentication flows
+   - Verify signatures before trusting services
 
-3. **Handle errors gracefully**
-   
+3. **Handle Errors Gracefully**
    - Implement proper backoff for rate limits
    - Provide fallback options when services are unavailable
    - Surface meaningful error messages to users
 
-### **For Enterprise Integration**
+### **For MCP Integration**
 
-1. **Security compliance**
-   
-   - Implement audit trails for all API access
-   - Support enterprise authentication methods ([OAuth 2.0](https://tools.ietf.org/html/rfc6749), SAML)
-   - Enable policy-based access controls
+1. **Maintain Compatibility**
+   - Ensure LLMFeed enhancements work with existing MCP clients
+   - Use standard MCP server patterns where possible
+   - Bridge web services to local MCP interfaces
 
-2. **Monitoring and analytics**
-   
-   - Track service usage and costs
-   - Monitor for anomalous access patterns
-   - Generate compliance reports
+2. **Enhance Discovery**
+   - Extend MCP's local server discovery to web-scale services
+   - Provide trust and quality indicators for service selection
+   - Enable progressive migration from local to web services
 
 ---
 
 ## 🔗 Related Standards & Specifications
 
-- **[RFC 5785: Well-Known URIs](https://tools.ietf.org/html/rfc5785)** - Foundation for service discovery
+- **[Anthropic MCP](https://modelcontextprotocol.io)** - Foundation protocol for agent-tool communication
+- **[RFC 5785: Well-Known URIs](https://tools.ietf.org/html/rfc5785)** - Web-scale service discovery
 - **[OAuth 2.0](https://tools.ietf.org/html/rfc6749)** - Authorization framework compatibility
 - **[OpenAPI 3.1](https://spec.openapis.org/oas/v3.1.0)** - Technical API specification
 - **[JSON Web Tokens](https://tools.ietf.org/html/rfc7519)** - Secure credential transfer
@@ -491,18 +581,19 @@ This extension integrates with LLMFeed's [risk scoring system](../04_agent-behav
 
 ---
 
-## 💫 Vision: The End of Manual Configuration
+## 💫 Vision: Enhanced MCP Ecosystem
 
-**LLMFeed + API Extension = The End of User Configuration**
+**Anthropic MCP + LLMFeed Enhancement = Complete Agent Infrastructure**
 
-Users talk to their agents, agents automatically discover and negotiate access to the entire web of services.
+Local tool calling (MCP) + Web service discovery (LLMFeed) + Progressive trust (signatures) = Comprehensive agent-ready ecosystem.
 
-**This is the true agentic web.**
+**This is the collaborative agentic web** - building on excellent existing foundations.
 
 ---
 
 ## 📚 See Also
 
+- **[Anthropic MCP](https://modelcontextprotocol.io)** - Official MCP specification
 - [MCP Feed Type Specification](../02_llmfeed_feedtype/llmfeed_feedtype_mcp.md)
 - [Credential Management](../02_llmfeed_feedtype/llmfeed_feedtype_credential.md)
 - [Mobile App Integration](../02_llmfeed_feedtype/llmfeed_feedtype_mobile-app.md)

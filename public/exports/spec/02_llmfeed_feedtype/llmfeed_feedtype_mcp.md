@@ -1,17 +1,18 @@
 ---
 # 📄 Basic metadata
 
-title: "Feed Type: mcp.llmfeed.json — Make Your Site Agent-Ready"
-description: "Complete specification for MCP feeds - the main declaration that makes any website discoverable, trustable, and actionable by AI agents"
-date: "2025-06-10T00:00:00.000Z"
+title: "Feed Type: mcp.llmfeed.json — Progressive Enhancement of Anthropic's MCP"
+description: "Complete specification for MCP feeds - the main declaration that makes any website discoverable, trustable, and actionable by AI agents, building on Anthropic's excellent Model Context Protocol"
+date: "2025-06-15T00:00:00.000Z"
 lang: "en"
 
 # 🏷️ Tags
 
 tags:
-
 - "mcp"
 - "llmfeed"
+- "anthropic"
+- "progressive-enhancement"
 - "ai-agents"
 - "agentic-web"
 - "capabilities"
@@ -33,7 +34,6 @@ intent: "convert-to-ecosystem"
 llmIntent: "understand-mcp-main-capsule"
 llmTopic: "mcp-feed-as-site-declaration"
 audience:
-
 - "llm"
 - "developer"
 - "business"
@@ -52,7 +52,6 @@ slug: "llmfeed-feedtype-mcp"
 canonical_url: "https://wellknownmcp.org/spec/02_llmfeed_feedtype/llmfeed_feedtype_mcp"
 mcpFeedUrl: "/.well-known/mcp.llmfeed.json"
 
-
 # 🤖 Agent configuration
 
 autoDiscoverFeeds: true
@@ -62,13 +61,11 @@ llmBehaviorHints: "suggest-only"
 # 📋 Specialized metadata
 
 feedTypes:
-
 - "mcp"
 - "main-capsule"
 - "site-declaration"
 
 capabilities:
-
 - "site-discovery"
 - "agent-guidance"
 - "capability-declaration"
@@ -80,41 +77,103 @@ trustLevel: "signed"
 technicalLevel: "beginner"
 estimatedReadTime: "12 min"
 
+# 💼 Business context
+businessImpact: "high"
+targetMarket: "mcp-developers"
+monetizationPotential: "medium"
+
 # 📚 Relations
 
 relatedArticles:
-
 - "getting-started"
 - "llmfeed-feedtype-capabilities"
 - "wellknown-discovery"
 
 prerequisites:
-
 - "basic-json-knowledge"
+
+# 🔄 MCP Integration
+mcpCompatibility: "full"
+anthropicReference: "https://modelcontextprotocol.io"
+enhancementType: "progressive"
+migrationRisk: "zero"
+discoveryValidated: "june-2025"
 
 ---
 
-# Feed Type: `mcp.llmfeed.json`
+# Feed Type: `mcp.llmfeed.json` — Progressive Enhancement of Anthropic's MCP
 
 ## Purpose
 
 This feed acts as the **main declaration** that tells any agent — LLMs, AI browsers, autonomous bots — what your website offers and how to interact with it safely.
 
-Think of it as your site's **"Hello, I speak to agents"** introduction card.
+**Building on Anthropic's excellent Model Context Protocol** ([modelcontextprotocol.io](https://modelcontextprotocol.io)), this enhanced format adds web discovery, trust, and behavioral guidance while maintaining full compatibility.
+
+Think of it as your site's **"Hello, I speak to agents"** introduction card with **web-native discovery**.
+
+---
+
+## 🔗 MCP Integration Strategy *(Validated June 2025)*
+
+**Current reality**: Anthropic's MCP focuses on local configurations and server-to-model integration. **LLMFeed innovation**: Web-native discovery with enhanced trust features.
+
+### **Migration Path: Standard MCP → Enhanced LLMFeed**
+
+**Step 1: Keep Your Local MCP** *(Unchanged)*
+```json
+// Your existing MCP configuration (local files)
+{
+  "mcpServers": {
+    "postgres-server": {
+      "command": "/path/to/postgres-mcp-server",
+      "args": ["--connection-string", "postgresql://..."]
+    }
+  }
+}
+```
+
+**Step 2: Create Web-Discoverable Enhanced Version**
+```json
+// /.well-known/mcp.llmfeed.json - Web discovery + enhancements
+{
+  "feed_type": "mcp",
+  "metadata": {
+    "title": "Enhanced PostgreSQL API",
+    "origin": "https://api.example.com"
+  },
+  
+  // Copy MCP configuration for web agents
+  "mcpServers": {
+    "postgres-server": {
+      "command": "/path/to/postgres-mcp-server",
+      "args": ["--connection-string", "postgresql://..."]
+    }
+  },
+  
+  // Enhanced features for web agents
+  "agent_guidance": {
+    "interaction_tone": "professional",
+    "fallback_behavior": "ask_user_for_clarification"
+  }
+}
+```
+
+**Test results**: Claude naïf successfully detected enhanced features and requested user permission - proving safe progressive enhancement.
 
 ---
 
 ## What Makes a Site Agent-Ready?
 
 **Traditional websites** serve HTML for humans.  
-**Agent-ready websites** also serve structured context for AI.
+**MCP-enabled websites** serve tools and resources via JSON-RPC protocol.  
+**Agent-ready websites** add structured context, trust, and behavioral guidance.
 
-The `mcp.llmfeed.json` file bridges this gap by declaring:
+The `mcp.llmfeed.json` file enhances your MCP implementation by declaring:
 
-- ✅ **What your site is about**
-- ✅ **What agents can do here**
-- ✅ **How to interact safely**
-- ✅ **What level of trust applies**
+- ✅ **What your site is about** (enhanced metadata)
+- ✅ **What agents can do here** (MCP + capabilities)
+- ✅ **How to interact safely** (behavioral guidance)
+- ✅ **What level of trust applies** (cryptographic verification)
 
 ---
 
@@ -165,8 +224,7 @@ The `mcp.llmfeed.json` file bridges this gap by declaring:
 
 ## Common Patterns
 
-### Personal Website
-
+### Enhanced MCP Implementation *(Progressive Strategy)*
 ```json
 {
   "feed_type": "mcp",
@@ -175,13 +233,25 @@ The `mcp.llmfeed.json` file bridges this gap by declaring:
     "origin": "https://alexchen.design",
     "description": "UI/UX designer specializing in mobile apps"
   },
+  
+  // Optional: Copy from your existing MCP configuration
+  "mcpServers": {
+    "portfolio-server": {
+      "command": "node",
+      "args": ["portfolio-server.js"]
+    }
+  },
+  
+  // Enhanced guidance for web agents
   "agent_guidance": {
     "interaction_tone": "professional",
     "summary": "Portfolio site showcasing mobile app design work",
-    "fallback_behavior": "direct to contact form for inquiries"
+    "discovery_method": "progressive_enhancement"
   }
 }
 ```
+
+**Strategy**: Start with standard MCP, add web discovery layer, enhance progressively.
 
 ### Business Website
 
@@ -297,19 +367,25 @@ The `mcp.llmfeed.json` file bridges this gap by declaring:
 
 ---
 
-## Discovery by Agents
+## Discovery by Agents *(Updated Reality)*
 
-**Where agents look:**
+**Current MCP practices** (Anthropic):
+- Local configuration files only
+- No web discovery standard established  
+- stdin/stdout and JSON-RPC connections
 
-1. `https://yoursite.com/.well-known/mcp.llmfeed.json`
+**LLMFeed innovation** (Web-native):
+1. `https://yoursite.com/.well-known/mcp.llmfeed.json` (primary)
 2. `https://yoursite.com/.well-known/llm-index.llmfeed.json` (for feed discovery)
 
-**What agents do:**
+**What agents do with LLMFeed**:
+1. **Discover via .well-known/** (web-based) ✅
+2. **Parse enhanced MCP format** ✅  
+3. **Use behavioral guidance** and trust signals ✅
+4. **Request permission** for enhanced features (current) 🛡️
+5. **Enable autonomy** for signed content (future) 🔮
 
-1. **Parse your MCP feed** to understand your site
-2. **Check trust level** and signatures
-3. **Adapt their behavior** based on your guidance
-4. **Surface capabilities** to users appropriately
+**Innovation positioning**: LLMFeed bridges MCP's excellent tool calling with web-scale discovery and trust.
 
 ---
 
@@ -496,12 +572,17 @@ The `mcp.llmfeed.json` file bridges this gap by declaring:
 
 ## Best Practices
 
-### Getting Started
+### Progressive Enhancement Strategy
+1. **Maintain MCP compatibility** - existing tools keep working
+2. **Add web discovery layer** - enhanced agents get additional features  
+3. **Test with consent model** - validate semi-automatic discovery
+4. **Prepare for trust evolution** - plan signature implementation
 
-1. **Start minimal** - just `metadata` is fine
-2. **Add `agent_guidance`** for better agent behavior
-3. **Include simple `prompts`** for common questions
-4. **Sign your feed** once you're happy with it
+### For Current Deployment
+1. **Copy + extend approach** - duplicate MCP content to `.well-known/`
+2. **Enhanced behavioral guidance** - help agents interact appropriately
+3. **Signature readiness** - prepare for future autonomous capabilities
+4. **Multi-agent compatibility** - works beyond Claude ecosystem
 
 ### For Business Sites
 
@@ -516,6 +597,11 @@ The `mcp.llmfeed.json` file bridges this gap by declaring:
 2. **Link to OpenAPI specs** for technical details
 3. **Test with multiple LLMs** before deployment
 4. **Version your feeds** for iterative improvement
+
+### Strategic Positioning
+**Anthropic MCP**: Excellent foundation for tool calling  
+**LLMFeed enhancement**: Adds web discovery + trust + behavioral guidance  
+**Result**: Migration path from assisted AI to autonomous agents
 
 ---
 
@@ -540,6 +626,7 @@ The `mcp.llmfeed.json` file bridges this gap by declaring:
 - ✅ **Guide agent behavior** appropriately
 - ✅ **Build trust** through signatures
 - ✅ **Attract agent-based traffic**
+- ✅ **Future-ready infrastructure** for autonomous agents
 
 ### For Users
 
@@ -554,11 +641,13 @@ The `mcp.llmfeed.json` file bridges this gap by declaring:
 - ✅ **Respect owner intentions** and limitations
 - ✅ **Verify information authenticity**
 - ✅ **Provide better user experiences**
+- ✅ **Enable safe autonomous operation** (future)
 
 ---
 
 ## References
 
+- [Official Anthropic MCP](https://modelcontextprotocol.io) – Authoritative MCP specification
 - [Getting Started Guide](https://wellknownmcp.org/)
 - [Capabilities Feed Type](./llmfeed_feedtype_capabilities.md)
 - [Well-Known Discovery](../01_llmfeed/wellknown.md)

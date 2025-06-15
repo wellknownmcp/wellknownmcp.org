@@ -6,15 +6,15 @@
     },
     {
       "tag": "mcp",
-      "count": 54
+      "count": 55
     },
     {
       "tag": "trust",
-      "count": 30
+      "count": 31
     },
     {
       "tag": "agentic-web",
-      "count": 29
+      "count": 30
     },
     {
       "tag": "ai-agents",
@@ -37,10 +37,6 @@
       "count": 11
     },
     {
-      "tag": "ethics",
-      "count": 10
-    },
-    {
       "tag": "launch",
       "count": 10
     },
@@ -51,6 +47,10 @@
     {
       "tag": "well-known",
       "count": 10
+    },
+    {
+      "tag": "ethics",
+      "count": 9
     },
     {
       "tag": "certification",
@@ -71,6 +71,10 @@
     {
       "tag": "llmca",
       "count": 7
+    },
+    {
+      "tag": "anthropic",
+      "count": 6
     },
     {
       "tag": "agentic web",
@@ -101,10 +105,6 @@
       "count": 5
     },
     {
-      "tag": "anthropic",
-      "count": 5
-    },
-    {
       "tag": "homomorphic",
       "count": 5
     },
@@ -113,7 +113,11 @@
       "count": 5
     },
     {
-      "tag": "principles",
+      "tag": "cryptographic-verification",
+      "count": 5
+    },
+    {
+      "tag": "innovation",
       "count": 5
     },
     {
@@ -125,6 +129,10 @@
       "count": 4
     },
     {
+      "tag": "principles",
+      "count": 4
+    },
+    {
       "tag": "agent-interoperability",
       "count": 4
     },
@@ -133,15 +141,11 @@
       "count": 4
     },
     {
-      "tag": "cryptographic-verification",
-      "count": 4
-    },
-    {
-      "tag": "innovation",
-      "count": 4
-    },
-    {
       "tag": "mcp-implementation",
+      "count": 4
+    },
+    {
+      "tag": "privacy",
       "count": 4
     },
     {
@@ -174,10 +178,6 @@
     },
     {
       "tag": "encryption",
-      "count": 3
-    },
-    {
-      "tag": "privacy",
       "count": 3
     },
     {
@@ -489,6 +489,26 @@
       "count": 1
     },
     {
+      "tag": "agent-infrastructure",
+      "count": 1
+    },
+    {
+      "tag": "community",
+      "count": 1
+    },
+    {
+      "tag": "governance",
+      "count": 1
+    },
+    {
+      "tag": "homomorphic-encryption",
+      "count": 1
+    },
+    {
+      "tag": "progressive-enhancement",
+      "count": 1
+    },
+    {
       "tag": "agent-discovery",
       "count": 1
     },
@@ -779,7 +799,7 @@
     "en": [
       {
         "tag": "mcp",
-        "count": 36
+        "count": 37
       },
       {
         "tag": "llmfeed",
@@ -787,11 +807,11 @@
       },
       {
         "tag": "agentic-web",
-        "count": 22
+        "count": 23
       },
       {
         "tag": "trust",
-        "count": 20
+        "count": 21
       },
       {
         "tag": "ai-agents",
@@ -826,6 +846,10 @@
         "count": 5
       },
       {
+        "tag": "anthropic",
+        "count": 4
+      },
+      {
         "tag": "open-standards",
         "count": 4
       },
@@ -846,7 +870,11 @@
         "count": 3
       },
       {
-        "tag": "anthropic",
+        "tag": "cryptographic-verification",
+        "count": 3
+      },
+      {
+        "tag": "innovation",
         "count": 3
       },
       {
@@ -878,15 +906,11 @@
         "count": 2
       },
       {
-        "tag": "cryptographic-verification",
-        "count": 2
-      },
-      {
-        "tag": "innovation",
-        "count": 2
-      },
-      {
         "tag": "mcp-implementation",
+        "count": 2
+      },
+      {
+        "tag": "privacy",
         "count": 2
       },
       {
@@ -1074,10 +1098,6 @@
         "count": 1
       },
       {
-        "tag": "privacy",
-        "count": 1
-      },
-      {
         "tag": "agentic-seo",
         "count": 1
       },
@@ -1158,11 +1178,23 @@
         "count": 1
       },
       {
-        "tag": "ethics",
+        "tag": "agent-infrastructure",
         "count": 1
       },
       {
-        "tag": "principles",
+        "tag": "community",
+        "count": 1
+      },
+      {
+        "tag": "governance",
+        "count": 1
+      },
+      {
+        "tag": "homomorphic-encryption",
+        "count": 1
+      },
+      {
+        "tag": "progressive-enhancement",
         "count": 1
       },
       {

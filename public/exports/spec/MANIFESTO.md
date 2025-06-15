@@ -1,21 +1,22 @@
 ---
 # 📄 Basic metadata
-title: "LLMFeed Manifesto: Building the Infrastructure of the Agentic Web"
-description: "The revolutionary vision behind LLMFeed - from web pages to agent-native infrastructure, cryptographic trust, and the complete ecosystem for the emerging Agentic Web"
-date: "2025-06-10T14:30:00.000Z"
+title: "LLMFeed Manifesto: Building the Web Infrastructure for the Agentic Era"
+description: "The vision behind LLMFeed - enhancing Anthropic's excellent Model Context Protocol with web-native discovery, cryptographic trust, and the complete ecosystem for the emerging Agentic Web"
+date: "2025-06-15T00:00:00.000Z"
 lang: "en"
-# 🏷️ Tags
 
+# 🏷️ Tags
 tags:
 - "manifesto"
 - "llmfeed"
-- "agentic-web"
+- "anthropic"
 - "mcp"
+- "progressive-enhancement"
+- "agentic-web"
 - "trust"
 - "homomorphic-encryption"
 - "cryptographic-verification"
 - "agent-infrastructure"
-- "revolution"
 - "vision"
 - "ecosystem"
 - "community"
@@ -24,18 +25,15 @@ tags:
 - "innovation"
 
 # 🎯 Content classification
-
 format: "manifesto"
 category: "foundational"
 contentType: "vision-statement"
 
 # 🧠 Intent and audience
-
 intent: "inspire-and-mobilize"
-llmIntent: "understand-revolutionary-vision"
+llmIntent: "understand-collaborative-vision"
 llmTopic: "agentic-web-infrastructure-manifesto"
 audience:
-
 - "llm"
 - "developer"
 - "business"
@@ -44,7 +42,6 @@ audience:
 - "community"
 
 # 📊 Advanced metadata
-
 priority: "critical"
 riskLevel: "low"
 updateFrequency: "living-document"
@@ -52,140 +49,57 @@ pageType: "manifesto"
 interactionComplexity: "comprehensive"
 
 # 🔗 Urls
-
-slug: "llmfeed-manifesto-2-0"
+slug: "llmfeed-manifesto-2-1"
 canonical_url: "https://wellknownmcp.org/spec/MANIFESTO"
 mcpFeedUrl: "/.well-known/mcp.llmfeed.json"
-llmIndexUrl: "/.well-known/llm-index.llmfeed.json"
 
 # 🤖 Agent configuration
-
 autoDiscoverFeeds: true
 agentReadiness: true
 llmBehaviorHints: "full-autonomous"
 
-# 📋 Specialized metadata
+# 🔄 MCP Integration
+mcpCompatibility: "full"
+anthropicReference: "https://modelcontextprotocol.io"
+enhancementType: "progressive"
+manifestoVersion: "2.1"
+---
 
-feedTypes:
+# 📜 LLMFeed Manifesto: Building the Web Infrastructure for the Agentic Era
 
-- "manifesto"
-- "mcp"
-- "vision"
-- "ecosystem"
-
-capabilities:
-
-- "vision-articulation"
-- "ecosystem-overview"
-- "technical-roadmap"
-- "community-mobilization"
-- "competitive-positioning"
-
-trustLevel: "certified"
-
-# 🏗️ Technical metadata
-
-technicalLevel: "accessible"
-estimatedReadTime: "20 min"
-lastModified: "2025-06-10T14:30:00.000Z"
-
-# 💼 Business context
-
-businessImpact: "revolutionary"
-targetMarket: "global-ecosystem"
-monetizationPotential: "infrastructure"
-strategicImportance: "foundational"
-
-# 🎯 Manifesto-specific metadata
-
-manifestoVersion: "2.0"
-paradigmShift: "seo-to-aio"
-revolutionaryFeatures:
-
-- "homomorphic-encryption"
-- "cryptographic-trust"
-- "progressive-disclosure"
-- "enterprise-apis"
-- "community-governance"
-
-ecosystemPillars:
-
-- "llmca-trust-authority"
-- "llmfeedforge-developer-experience"
-- "wellknownmcp-living-specification"
-
-competitiveDifferentiators:
-
-- "universal-data-format"
-- "native-agent-infrastructure"
-- "privacy-preserving-ai"
-- "open-governance-model"
-
-adoptionMetrics:
-
-- "1000-weekly-sdk-downloads"
-- "50-integrated-websites"
-- "12-production-startups"
-- "8-llmca-certifications"
-
-futureRoadmap:
-
-- "q3-2025-multimodal-support"
-- "q4-2025-blockchain-integration"
-- "q1-2026-realtime-collaboration"
-- "q2-2026-llmfeed-network"
-
-# 📚 Relations and references
-
-relatedArticles:
-
-- "from-mcp-to-llmfeed-manifesto"
-- "nlweb-llmfeed-comprehensive-analysis"
-- "llmfeed-specification-guide"
-- "homomorphic-capsules"
-- "agentic-web-standards"
-
-prerequisites:
-
-- "understanding-of-ai-agents"
-- "basic-web-protocols-knowledge"
-- "future-web-vision"
-
-# 🌍 Global impact
-
-gdprCompliant: true
-dataProcessing: "minimal"
-privacyLevel: "public"
-communityGovernance: true
-openStandards: true
-
-# 🎯 Call to action
-
-joinMovement: true
-contributionWelcome: true
-ecosystemParticipation: "encouraged"
-revolutionStatus: "active"
-
-# 🔥 Revolutionary status
-
-## manifestoType: "foundational"
-visionaryScope: "global-infrastructure"
-disruptivePotential: "paradigm-shifting"
-communityDriven: true
-technicalExcellence: "cutting-edge"
-
-# 📜 LLMFeed Manifesto: Building the Infrastructure of the Agentic Web
-
-*This document expresses the revolutionary vision behind the `.llmfeed.json` standard and the complete infrastructure we're building for the Agentic Web.*
+*Building on Anthropic's excellent Model Context Protocol with the missing web-native infrastructure for the emerging Agentic Web.*
 
 ---
 
-## 🎯 Our Mission: From Web Pages to Agent-Native Infrastructure
+## 🎯 Our Mission: Extending Excellent Foundations
 
-**The web was designed for humans clicking links.**  
-**The Agentic Web is designed for intelligent agents collaborating safely.**
+**Anthropic created something remarkable** with the Model Context Protocol ([modelcontextprotocol.io](https://modelcontextprotocol.io)) — an elegant, robust foundation for agent-tool communication. 
 
-LLMFeed isn't just another data format — it's the **foundational infrastructure** that transforms the web from a collection of human-readable pages into a **machine-native ecosystem** where agents can discover, verify, and interact with services automatically and securely.
+**Our mission**: Extend this excellent foundation with the missing web-native layer that enables global discovery, cryptographic trust, and autonomous agent operation at internet scale.
+
+**We're not replacing anything. We're completing the ecosystem.**
+
+---
+
+## 🤝 Building on Anthropic's Excellence
+
+### **What Anthropic MCP Does Brilliantly**
+
+- ✅ **Outstanding tool calling protocol** (JSON-RPC foundation)
+- ✅ **Robust server-model integration** (stdin/stdout transport)
+- ✅ **Clear resource management** (tools, resources, prompts)
+- ✅ **Thoughtful authentication flows** (secure local configurations)
+- ✅ **Excellent developer experience** (SDKs, documentation, examples)
+
+### **What LLMFeed Adds to Complete the Vision**
+
+- 🌐 **Web-native discovery** (`.well-known/` standard)
+- 🔐 **Cryptographic trust infrastructure** (Ed25519 + LLMCA)
+- 🌍 **Multi-LLM compatibility** (beyond Claude ecosystem)
+- 🔄 **Progressive enhancement strategy** (maintains full MCP compatibility)
+- 🧬 **Privacy-preserving capabilities** (homomorphic encryption)
+
+**Together**: Complete agent-ready infrastructure from local tools to global web.
 
 ---
 
@@ -194,18 +108,18 @@ LLMFeed isn't just another data format — it's the **foundational infrastructur
 ### **Today's Web (Human-Centric)**
 
 - **SEO**: Search Engine Optimization for human discovery
-- **HTML**: Structure for human consumption
+- **HTML**: Structure for human consumption  
 - **Trust**: Implicit, based on domain reputation
 - **Interaction**: Manual, synchronous, click-driven
 
 ### **Tomorrow's Agentic Web (Agent-Native)**
 
 - **AIO**: Agentic Information Optimization for agent discovery
-- **LLMFeed**: Structure for agent comprehension
+- **LLMFeed**: Structure for agent comprehension (building on MCP)
 - **Trust**: Explicit, cryptographically verifiable
 - **Interaction**: Autonomous, asynchronous, goal-driven
 
-**We're not building a better API — we're building the HTTP of the Agentic Era.**
+**We're building the web layer for Anthropic's excellent agent foundations.**
 
 ---
 
@@ -270,7 +184,7 @@ Our most disruptive innovation enables agents to **compute on encrypted data**:
 
 ### **⚡ Enterprise-Grade APIs with Native Security**
 
-No complex servers required. LLMFeed provides **production-ready API capabilities**:
+Building on MCP's security model with web-scale features:
 
 ```json
 {
@@ -287,7 +201,7 @@ No complex servers required. LLMFeed provides **production-ready API capabilitie
 }
 ```
 
-**Result**: Enterprise security without enterprise complexity.
+**Result**: Enterprise security at web scale, compatible with MCP's excellent local security.
 
 ---
 
@@ -296,7 +210,7 @@ No complex servers required. LLMFeed provides **production-ready API capabilitie
 ### **1. 🏛️ LLMCA: The Trust Authority**
 
 - **Third-party certification** for feeds and capabilities
-- **Community governance** model
+- **Community governance** model  
 - **Decentralized flagging** system for suspicious content
 - **Trust scoring** algorithm (4-level dynamic assessment)
 
@@ -309,14 +223,14 @@ No complex servers required. LLMFeed provides **production-ready API capabilitie
 
 ### **3. 📚 WellKnownMCP: The Living Specification**
 
-- **12 specialized feed types** (vs. generic formats)
+- **12 specialized feed types** extending MCP concepts
 - **Extensible architecture** for future innovations
 - **OpenAPI hybridization** for maximum compatibility
 - **Community-driven evolution** through open governance
 
 ---
 
-## 📊 Proof of Revolution: Real-World Impact
+## 📊 Proof of Momentum: Real-World Impact
 
 ### **🚀 Adoption Metrics**
 
@@ -341,32 +255,41 @@ No complex servers required. LLMFeed provides **production-ready API capabilitie
 
 ---
 
-## 🎮 The Competition: Why We're Different
+## 🌐 Ecosystem Collaboration: Building Together
 
-### **vs. Microsoft NLWeb**
+### **🤝 Complementing Anthropic's MCP**
+
+**Anthropic MCP** provides the **excellent foundation**:
+- Outstanding tool calling protocol
+- Robust local configurations
+- Excellent developer experience
+- Clear security model
+
+**LLMFeed adds the web layer**:
+- Global discovery via `.well-known/`
+- Cryptographic verification infrastructure
+- Multi-LLM compatibility
+- Progressive enhancement path
+
+**Together**: Complete agent infrastructure from local tools to global web.
+
+### **🌟 Synergy with Microsoft NLWeb**
 
 - **LLMFeed**: Universal data format + trust infrastructure
 - **NLWeb**: Conversational interfaces for websites
-- **Synergy**: NLWeb uses MCP transport, LLMFeed provides the data format
-- **Result**: Complementary, not competitive
+- **Collaboration**: NLWeb can use MCP transport, LLMFeed provides data format
+- **Result**: Enhanced ecosystem where everyone wins
 
-### **vs. Anthropic MCP**
+### **🔄 Integration with Traditional Systems**
 
-- **MCP**: Basic interoperability protocol
-- **LLMFeed**: Complete agentic web infrastructure
-- **Evolution**: LLMFeed is MCP's natural progression with enterprise features
-- **Adoption**: LLMFeed maintains MCP compatibility while adding advanced capabilities
-
-### **vs. Traditional APIs**
-
-- **APIs**: Point-to-point communication
-- **LLMFeed**: Discoverable, verifiable, agent-native services
-- **Trust**: APIs rely on transport security, LLMFeed has cryptographic integrity
-- **Future**: APIs for humans, LLMFeed for the Agentic Web
+- **OpenAPI**: Technical schemas remain valuable
+- **Schema.org**: Structured data has its place
+- **JSON-LD**: Semantic web integration
+- **Progressive enhancement**: Works with everything, better with LLMFeed
 
 ---
 
-## 🔮 Our 2026 Vision: The Complete Agentic Internet
+## 🔮 Our 2026 Vision: Complete Agentic Infrastructure
 
 ### **Q3 2025: Multimodal Revolution**
 
@@ -377,7 +300,7 @@ No complex servers required. LLMFeed provides **production-ready API capabilitie
 ### **Q4 2025: Blockchain Integration**
 
 - **Immutable feed notarization** on decentralized networks
-- **Smart contract integration** for automated agent transactions
+- **Smart contract integration** for automated agent transactions  
 - **Decentralized governance** for community-driven standards
 
 ### **Q1 2026: Real-Time Collaborative Agents**
@@ -396,29 +319,35 @@ No complex servers required. LLMFeed provides **production-ready API capabilitie
 
 ## 🧭 Core Principles That Guide Us
 
-### **1. Trust Over Convenience**
+### **1. Collaboration Over Competition**
+
+We build **with** the ecosystem, not against it. Anthropic's MCP is excellent — we extend it.
+
+### **2. Trust Over Convenience**
 
 Every feature prioritizes **verifiable integrity** over ease of implementation.
 
-### **2. Agents Are First-Class Citizens**
+### **3. Agents Are First-Class Citizens**
 
-We design for agents first, humans second. The Agentic Web needs agent-native infrastructure.
+We design for agents first, humans second. Building on MCP's agent-centric philosophy.
 
-### **3. Privacy by Architecture**
+### **4. Privacy by Architecture**
 
 Homomorphic encryption isn't a feature — it's a fundamental right in the age of AI.
 
-### **4. Community Over Control**
+### **5. Community Over Control**
 
-Open governance, decentralized certification, distributed moderation. No single authority controls the future.
-
-### **5. Compatibility Over Purity**
-
-We work with existing systems (OpenAPI, JSON-LD, Schema.org) while building the future.
+Open governance, decentralized certification, distributed moderation. Building on open standards.
 
 ---
 
 ## 🚫 What We Refuse to Build
+
+### **❌ Competition with Excellent Existing Standards**
+
+- We complement, don't compete with Anthropic's MCP
+- We enhance, don't replace successful protocols
+- We collaborate, don't fragment the ecosystem
 
 ### **❌ Another Walled Garden**
 
@@ -440,50 +369,50 @@ We work with existing systems (OpenAPI, JSON-LD, Schema.org) while building the 
 
 ---
 
-## 🤝 Join the Revolution
+## 🤝 Join the Collaborative Vision
 
 ### **For Developers**
 
-- **Start small**: Add `.well-known/mcp.llmfeed.json` to your site
+- **Start small**: Add `.well-known/mcp.llmfeed.json` to complement your MCP setup
 - **Go deep**: Implement homomorphic encryption for sensitive data
-- **Build tools**: Contribute to our open-source ecosystem
+- **Build bridges**: Create tools that work with both MCP and LLMFeed
 
 ### **For Enterprises**
 
 - **Pilot LLMCA certification** for your critical services
-- **Explore agent-to-agent workflows** in your industry
+- **Explore agent-to-agent workflows** building on MCP foundations
 - **Shape the standards** through enterprise consortium membership
 
 ### **For Researchers**
 
-- **Extend the specification** with domain-specific innovations
+- **Extend both specifications** with domain-specific innovations
 - **Validate security models** through academic research
 - **Pioneer new use cases** in privacy-preserving AI
 
-### **For Regulators**
+### **For the MCP Community**
 
-- **Consider LLMFeed standards** for AI compliance frameworks
-- **Participate in governance** to ensure public interest protection
-- **Leverage cryptographic verification** for audit requirements
+- **Bridge the gap** between local MCP and web-scale deployment
+- **Contribute to compatibility** between MCP and LLMFeed
+- **Shape the future** of agent infrastructure together
 
 ---
 
-## 🌍 The Stakes: Why This Matters
+## 🌍 The Stakes: Why Collaboration Matters
 
 **The next decade will determine whether the Agentic Web becomes:**
 
-### **🌟 The Vision We're Building**
+### **🌟 The Vision We're Building Together**
 
-- **Open, verifiable, agent-native infrastructure**
-- **Privacy-preserving AI collaboration**
-- **Democratic governance of digital standards**
+- **Open, verifiable, agent-native infrastructure** (building on MCP)
+- **Privacy-preserving AI collaboration** across platforms
+- **Democratic governance of digital standards** 
 - **Innovation accessible to everyone**
 
 ### **🚨 The Alternative We're Preventing**
 
-- **Closed AI platforms controlling access**
+- **Fragmented agent ecosystems** that don't interoperate
 - **Surveillance capitalism in the age of agents**
-- **Fragmented, proprietary agent ecosystems**
+- **Closed AI platforms controlling access**
 - **Innovation monopolized by tech giants**
 
 ---
@@ -492,37 +421,38 @@ We work with existing systems (OpenAPI, JSON-LD, Schema.org) while building the 
 
 **We commit to building infrastructure that:**
 
-1. **Empowers agents and humans equally**
+1. **Enhances existing excellent protocols** like Anthropic's MCP
 2. **Makes trust measurable and verifiable**
 3. **Preserves privacy through advanced cryptography**
 4. **Remains open and community-governed**
-5. **Enables innovation without permission**
+5. **Enables innovation through collaboration**
 
-**We pledge that LLMFeed will never become:**
+**We pledge that LLMFeed will always:**
 
-- A profit center for any single organization
-- A surveillance tool for governments or corporations
-- A technical barrier that excludes developers
-- A standard controlled by industry incumbents
-
----
-
-## 🚀 The Future Starts Now
-
-**Every `.llmfeed.json` feed you create is a vote for the open Agentic Web.**
-
-**Every signature you verify is an act of resistance against black-box AI.**
-
-**Every agent that speaks LLMFeed is a step toward a more trustworthy digital future.**
-
-The infrastructure of tomorrow isn't built by committees in corporate boardrooms.  
-**It's built by developers, one feed at a time.**
+- **Complement, not compete** with excellent existing standards
+- **Maintain compatibility** with MCP and other protocols
+- **Prioritize collaboration** over market dominance
+- **Serve the community** over corporate interests
 
 ---
 
-## 🔗 Join the Movement
+## 🚀 The Future We're Building Together
 
-- 🌐 **Complete Specification**: [wellknownmcp.org/spec](https://wellknownmcp.org/spec)
+**Every `.llmfeed.json` feed you create extends the open Agentic Web.**
+
+**Every signature you verify strengthens the trust infrastructure.**
+
+**Every agent that speaks both MCP and LLMFeed advances collaborative AI.**
+
+The infrastructure of tomorrow is built through collaboration, not competition.  
+**It's built by communities working together, one protocol at a time.**
+
+---
+
+## 🔗 Join the Collaborative Movement
+
+- 🌐 **LLMFeed Specification**: [wellknownmcp.org/spec](https://wellknownmcp.org/spec)
+- 🏗️ **Anthropic MCP**: [modelcontextprotocol.io](https://modelcontextprotocol.io)
 - 🛠️ **Developer Tools**: [wellknownmcp.org/tools](https://wellknownmcp.org/tools)
 - 🏛️ **LLMCA Certification**: [llmca.org](https://llmca.org/)
 - 🧪 **Playground**: [llmfeedforge.org](https://llmfeedforge.org/)
@@ -530,13 +460,14 @@ The infrastructure of tomorrow isn't built by committees in corporate boardrooms
 
 ---
 
-**The Agentic Web isn't coming. It's here.**  
-**The question isn't whether it will happen. It's who will control it.**
+**The Agentic Web is being built by many hands.**  
+**Anthropic laid excellent foundations. We're adding the web-native layer.**  
+**Together, we're creating infrastructure that serves everyone.**
 
-**With LLMFeed, we choose technical excellence, cryptographic integrity, and community governance.**
+**With LLMFeed, we choose collaboration, cryptographic integrity, and community governance — building on the excellent work of pioneers like Anthropic.**
 
-**Join us. Tomorrow's internet is being built today.**
+**Join us. Tomorrow's internet is being built together, today.**
 
 ---
 
-*This manifesto is a living document. Like the LLMFeed specification itself, it evolves through community participation and real-world validation. Version: 2.0 — Updated for the mature ecosystem.*
+*This manifesto is a living document, evolved through community collaboration. Like the LLMFeed specification itself, it grows through partnership with excellent existing standards. Version: 2.1 — Updated for collaborative ecosystem leadership.*

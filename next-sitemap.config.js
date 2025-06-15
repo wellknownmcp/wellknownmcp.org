@@ -199,7 +199,8 @@ module.exports = {
   ],
 
   transform: async (config, path) => {
-    if (path.startsWith('/api/')) {
+    // ✨ NOUVEAU: Autoriser feed-html mais bloquer autres API
+    if (path.startsWith('/api/') && !path.startsWith('/api/feed-html')) {
       return null
     }
 
@@ -224,6 +225,20 @@ module.exports = {
       })
     })
 
+    // ✨ NOUVEAU: Well-known feeds HTML (test minimal)
+    // Ajouter seulement pour les fichiers .llmfeed.json
+    wellKnownFiles
+      .filter(f => f.endsWith('.llmfeed.json'))
+      .forEach((f) => {
+        const feedName = f.replace('.llmfeed.json', '')
+        paths.push({
+          loc: `${siteUrl}/api/feed-html?wellknown=${feedName}`,
+          changefreq: 'weekly',
+          priority: 0.9, // Légèrement inférieur au JSON
+          lastmod: new Date().toISOString().split('T')[0],
+        })
+      })
+
     // spec
     specPaths.forEach((url) => {
       paths.push({
@@ -243,6 +258,7 @@ module.exports = {
     // llmfeedhub
     paths.push(...llmfeedhubPaths)
 
+    console.log(`✅ DEBUG: wellKnownHtmlFeeds = ${wellKnownFiles.filter(f => f.endsWith('.llmfeed.json')).length}`)
     console.log(`✅ DEBUG: total additionalPaths = ${paths.length}`)
     
     // ✅ Vérification finale
@@ -265,6 +281,7 @@ module.exports = {
         allow: [
           '/',
           '/.well-known/',
+          '/api/feed-html', // ✨ NOUVEAU
         ],
         disallow: ['/api/', '/admin/', '/_next/', '/preview/'],
       },
@@ -274,12 +291,18 @@ module.exports = {
           '/',
           '/.well-known/',
           '/exports/',
+          '/api/feed-html', // ✨ NOUVEAU
         ],
         disallow: ['/api/'],
       },
       {
         userAgent: 'Claude-Web',
-        allow: ['/', '/.well-known/', '/exports/'],
+        allow: [
+          '/', 
+          '/.well-known/', 
+          '/exports/',
+          '/api/feed-html' // ✨ NOUVEAU
+        ],
         disallow: ['/api/'],
       },
     ],

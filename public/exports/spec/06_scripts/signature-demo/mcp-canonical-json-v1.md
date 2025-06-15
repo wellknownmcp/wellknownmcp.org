@@ -1,3 +1,51 @@
+---
+# 📄 Basic metadata
+title: "MCP Canonicalization v1"
+description: "MCP documentation on MCP Canonicalization v1"
+date: "2025-06-11T09:26:56.430Z"
+lang: "en"
+
+# 🏷️ Tags and classification
+tags:
+  - "mcp"
+  - "ai-agents"
+format: "documentation"
+category: "technical"
+contentType: "documentation"
+
+# 🧠 Intent and audience  
+intent: "inform"
+llmIntent: "browse-spec"
+llmTopic: "specification"
+audience:
+  - "llm"
+  - "developer"
+
+# 📊 Page properties
+pageType: "documentation"
+interactionComplexity: "simple"
+priority: "normal"
+riskLevel: "low"
+updateFrequency: "static"
+
+# 🔗 URLs
+slug: "mcp-canonical-json-v1"
+canonical_url: "https://wellknownmcp.org/spec/06_scripts/mcp-canonical-json-v1"
+githubUrl: "https://github.com/wellknownmcp/llmfeed-spec/blob/main/06_scripts/mcp-canonical-json-v1.md"
+mcpFeedUrl: "/.well-known/mcp.llmfeed.json"
+
+# 🤖 Agent optimization
+autoDiscoverFeeds: true
+agentReadiness: true
+llmBehaviorHints: "suggest-only"
+
+# 📋 Capabilities
+capabilities:
+  - "signature"
+  - "verification"
+  - "feed-generation"
+---
+
 
 # MCP Canonicalization v1
 

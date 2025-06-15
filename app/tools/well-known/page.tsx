@@ -17,9 +17,27 @@ export default function WellKnownPage() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <SeoHead 
-          title="Enhanced MCP Implementation via .well-known/ - LLMFeed Spec"
-          description="Advanced guide to implementing LLMFeed extensions of the Model Context Protocol through .well-known/ directory structure"
-           />
+          title="Enhanced MCP Implementation via .well-known/ - Semi-Automatic Discovery (As of June 2025)"
+          description="Advanced guide to implementing LLMFeed extensions of the Model Context Protocol with semi-automatic discovery and trust-based autonomy evolution"
+          canonicalUrl="https://wellknownmcp.org/spec/wellknown"
+          llmIntent="technical-guide"
+          llmTopic="wellknown-mcp-implementation"
+          llmIndexUrl="/.well-known/llm-index.llmfeed.json"
+          llmCapabilities={["discovery", "trust", "signatures", "mcp-integration"]}
+          llmTrustLevel="signed"
+          llmAudience={["developer", "business", "llm"]}
+          llmFeedTypes={["mcp", "capabilities", "manifesto"]}
+          llmBehaviorHints="suggest-only"
+          llmRiskLevel="low"
+          llmContentType="api-reference"
+          llmUpdateFrequency="weekly"
+          mcpFeedUrl="/.well-known/mcp.llmfeed.json"
+          autoDiscoverFeeds={true}
+          agentReadiness={true}
+          pageType="api-reference"
+          interactionComplexity="moderate"
+          keywords={["mcp", "llmfeed", "discovery", "trust", "signatures", "well-known", "agents"]}
+        />
 
         {/* Critical Disclaimers */}
         <div className="space-y-4 mb-8">
@@ -56,7 +74,7 @@ export default function WellKnownPage() {
               <div>
                 <p className="text-purple-800 font-medium">🤖 For AI Assistants & Developers</p>
                 <p className="text-purple-700 text-sm mt-1">
-                  Download <a href="/.well-known/exports/spec.llmfeed.json" className="underline font-medium">spec.llmfeed.json</a> to give your AI assistant complete context about our specification.
+                  Download <a href="/.well-known/spec.llmfeed.json" className="underline font-medium">spec.llmfeed.json</a> to give your AI assistant complete context about our specification.
                 </p>
               </div>
             </div>
@@ -86,7 +104,7 @@ export default function WellKnownPage() {
                   <li>• <strong>Dynamic</strong>: JSON-RPC 2.0 real-time protocol</li>
                   <li>• <strong>Server-based</strong>: Active connections to expose tools</li>
                   <li>• <strong>Runtime</strong>: Resources/Tools served live</li>
-                  <li>• <strong>Config</strong>: .mcp.json for server setup</li>
+                  <li>• <strong>Trust</strong>: No built-in verification system</li>
                 </ul>
               </div>
               <div>
@@ -95,13 +113,19 @@ export default function WellKnownPage() {
                   <li>• <strong>Static+</strong>: File-based with cryptographic signatures</li>
                   <li>• <strong>Discovery-based</strong>: .well-known/ autonomous finding</li>
                   <li>• <strong>Archive</strong>: Portable, signable content bundles</li>
-                  <li>• <strong>Content</strong>: .llmfeed.json with rich metadata</li>
+                  <li>• <strong>Trust</strong>: Built-in verification & certification</li>
                 </ul>
               </div>
             </div>
-            <p className="text-blue-800 text-sm mt-4 font-medium">
-              💡 <strong>Both approaches are complementary!</strong> LLMFeed can wrap/extend MCP configurations while adding trust, discovery, and portability layers.
-            </p>
+            <div className="mt-4 p-3 bg-white border border-blue-200 rounded">
+              <p className="text-blue-800 text-sm font-medium">
+                💡 <strong>The Breakthrough:</strong> LLMFeed's cryptographic trust system solves the core AI autonomy challenge - 
+                enabling safe autonomous agent behavior while MCP requires constant human oversight.
+              </p>
+              <p className="text-blue-700 text-xs mt-2">
+                Both approaches are complementary, but LLMFeed uniquely enables the transition from "AI assistant" to "autonomous AI agent."
+              </p>
+            </div>
           </div>
         </div>
 
@@ -110,43 +134,43 @@ export default function WellKnownPage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <GitMerge className="w-5 h-5 text-green-600" />
-              Automatic LLMFeed Discovery via Standard MCP
+              Semi-Automatic Discovery via Standard MCP (As of June 2025)
             </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-gray-700 mb-4">
-              <strong>Genius strategy:</strong> Add a link in your standard <code>mcp.json</code> pointing to <code>mcp.llmfeed.json</code>. 
-              All LLMs trained on MCP will <strong>automatically discover</strong> your enhanced LLMFeed file!
+              <strong>Tested strategy:</strong> Add a link in your standard <code>mcp.json</code> pointing to <code>mcp.llmfeed.json</code>. 
+              LLMs trained on MCP can <strong>detect and follow these links</strong> with user consent for enhanced features!
             </p>
             
             <div className="bg-green-50 border border-green-200 rounded-lg p-4">
               <h4 className="font-semibold text-green-900 mb-3 flex items-center gap-2">
                 <LinkIcon className="w-4 h-4" />
-                100% Compatibility Strategy
+                100% Compatibility + Trust-Based Evolution
               </h4>
               <div className="grid md:grid-cols-2 gap-4 text-sm">
                 <div>
-                  <h5 className="font-medium text-blue-800 mb-2">📋 Standard MCP File</h5>
+                  <h5 className="font-medium text-blue-800 mb-2">📋 Current Behavior (June 2025)</h5>
                   <ul className="space-y-1 text-blue-700">
-                    <li>• Keep your <code>.mcp.json</code> unchanged</li>
-                    <li>• Add discovery link to LLMFeed</li>
-                    <li>• 100% backward compatibility</li>
-                    <li>• All MCP clients work normally</li>
+                    <li>• LLMs detect discovery links ✅</li>
+                    <li>• Request user consent for security 🛡️</li>
+                    <li>• Follow links after approval ✅</li>
+                    <li>• Standard MCP clients unaffected ✅</li>
                   </ul>
                 </div>
                 <div>
-                  <h5 className="font-medium text-green-800 mb-2">➕ Automatic Discovery</h5>
+                  <h5 className="font-medium text-green-800 mb-2">🚀 Trust-Based Future</h5>
                   <ul className="space-y-1 text-green-700">
-                    <li>• MCP-trained LLMs find the link</li>
-                    <li>• Follow to enhanced LLMFeed version</li>
-                    <li>• Get rich metadata + trust features</li>
-                    <li>• Progressive enhancement for free!</li>
+                    <li>• <strong>Signed links</strong>: Automatic with notification</li>
+                    <li>• <strong>LLMCA certified</strong>: Fully autonomous</li>
+                    <li>• <strong>Enterprise verified</strong>: Zero friction</li>
+                    <li>• <strong>Unsigned</strong>: Still requires consent</li>
                   </ul>
                 </div>
               </div>
               
               <p className="text-green-800 text-sm mt-3 font-medium">
-                💡 <strong>Result:</strong> Perfect migration path - standard MCP compatibility + automatic LLMFeed discovery!
+                💡 <strong>LLMFeed Advantage:</strong> Cryptographic trust enables safe autonomous behavior - solving the core challenge of AI autonomy!
               </p>
             </div>
 
@@ -154,8 +178,119 @@ export default function WellKnownPage() {
               context="static"
               staticPath="demo/.well-known/auto-discovery-mcp"
               mini={true}
-              
+              showCurlCommand={true}
+              showDirectUrl={true}
             />
+          </CardContent>
+        </Card>
+
+        {/* Trust-Based Autonomy Evolution */}
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Settings className="w-5 h-5 text-purple-600" />
+              Trust-Driven Autonomy Evolution
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-gray-700 mb-4">
+              <strong>The key insight:</strong> LLMFeed's cryptographic trust system solves the fundamental challenge of AI autonomy - 
+              how to give agents more freedom while maintaining security.
+            </p>
+            
+            <div className="bg-purple-50 border border-purple-200 rounded-lg p-4 mb-4">
+              <h4 className="font-semibold text-purple-900 mb-3">🎯 The Autonomy Security Dilemma</h4>
+              <div className="text-sm text-purple-800 space-y-2">
+                <p><strong>Challenge:</strong> More AI autonomy = More security risks</p>
+                <p><strong>Standard MCP:</strong> No trust layer → Manual oversight required</p>
+                <p><strong>LLMFeed Solution:</strong> Cryptographic trust → Safe autonomous behavior</p>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <h4 className="font-semibold text-gray-900">🔐 Trust-Differentiated Autonomy Levels</h4>
+              
+              <div className="grid gap-3">
+                {[
+                  {
+                    level: "Unsigned Content",
+                    icon: "🔓",
+                    autonomy: "User consent required",
+                    timeline: "Current (June 2025)",
+                    security: "Unknown trustworthiness",
+                    color: "red"
+                  },
+                  {
+                    level: "Cryptographically Signed", 
+                    icon: "🔏",
+                    autonomy: "Automatic with notification",
+                    timeline: "Q4 2025",
+                    security: "Verified authenticity & integrity",
+                    color: "yellow"
+                  },
+                  {
+                    level: "LLMCA Certified",
+                    icon: "🔐", 
+                    autonomy: "Fully autonomous",
+                    timeline: "Q2 2026",
+                    security: "Third-party validated trust",
+                    color: "green"
+                  },
+                  {
+                    level: "Enterprise Verified",
+                    icon: "🏛️",
+                    autonomy: "Zero-friction access", 
+                    timeline: "2027+",
+                    security: "Institutional-grade certification",
+                    color: "blue"
+                  }
+                ].map((item, index) => (
+                  <div key={index} className={`border rounded-lg p-3 ${
+                    item.color === 'red' ? 'border-red-200 bg-red-50' :
+                    item.color === 'yellow' ? 'border-yellow-200 bg-yellow-50' :
+                    item.color === 'green' ? 'border-green-200 bg-green-50' :
+                    'border-blue-200 bg-blue-50'
+                  }`}>
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="flex items-center gap-2">
+                        <span className="text-lg">{item.icon}</span>
+                        <span className="font-medium text-gray-900">{item.level}</span>
+                      </div>
+                      <span className={`px-2 py-1 text-xs font-medium rounded-full ${
+                        item.color === 'red' ? 'bg-red-100 text-red-700' :
+                        item.color === 'yellow' ? 'bg-yellow-100 text-yellow-700' :
+                        item.color === 'green' ? 'bg-green-100 text-green-700' :
+                        'bg-blue-100 text-blue-700'
+                      }`}>
+                        {item.timeline}
+                      </span>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-2 text-sm">
+                      <div>
+                        <span className="font-medium">Autonomy:</span> {item.autonomy}
+                      </div>
+                      <div>
+                        <span className="font-medium">Security:</span> {item.security}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-6 p-4 bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 rounded-lg">
+              <h4 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
+                <Lightbulb className="w-4 h-4 text-purple-600" />
+                Why This Matters for the Industry
+              </h4>
+              <p className="text-sm text-gray-700 mb-2">
+                <strong>Current bottleneck:</strong> Every AI interaction requires human oversight because there's no way to verify trust.
+              </p>
+              <p className="text-sm text-gray-700">
+                <strong>LLMFeed breakthrough:</strong> Cryptographic signatures + certification hierarchy = agents can act autonomously on trusted content, 
+                dramatically improving user experience while maintaining security.
+              </p>
+            </div>
           </CardContent>
         </Card>
 
@@ -166,13 +301,12 @@ export default function WellKnownPage() {
               <Folder className="w-5 h-5 text-blue-600" />
               Hybrid .well-known/ Structure (2025)
             </CardTitle>
-            <CardContent className="p-0">
-              <p className="text-gray-600 mb-4">
-                File structure supporting both standard MCP and LLMFeed extensions
-              </p>
-            </CardContent>
           </CardHeader>
           <CardContent>
+            <p className="text-gray-600 mb-4">
+              File structure supporting both standard MCP and LLMFeed extensions
+            </p>
+            
             <div className="space-y-4">
               {/* Essential Files */}
               <div>
@@ -316,7 +450,7 @@ export default function WellKnownPage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Code className="w-5 h-5 text-green-600" />
-              Automatic Discovery Implementation
+              Semi-Automatic Discovery Implementation
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -421,7 +555,7 @@ export default function WellKnownPage() {
 }`}
                   </pre>
                   <p className="text-xs text-gray-600 mt-2">
-                    ✨ <strong>Automatic discovery:</strong> MCP-aware LLMs follow the link and get enhanced features!
+                    ✨ <strong>Semi-automatic discovery:</strong> MCP-aware LLMs follow the link and get enhanced features!
                   </p>
                 </div>
               </div>
@@ -430,31 +564,37 @@ export default function WellKnownPage() {
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                 <h4 className="font-semibold text-blue-900 mb-2 flex items-center gap-2">
                   <ArrowRight className="w-4 h-4" />
-                  Automatic Discovery Flow
+                  Semi-Automatic Discovery Flow (Tested June 2025)
                 </h4>
                 <div className="space-y-3 text-sm">
                   <div className="flex items-center gap-3">
                     <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold">1</div>
-                    <span className="text-blue-800"><strong>LLM reads</strong> standard <code>.mcp.json</code></span>
+                    <span className="text-blue-800"><strong>LLM reads</strong> standard <code>.mcp.json</code> ✅</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold">2</div>
-                    <span className="text-blue-800"><strong>Discovers</strong> <code>llmfeed_extension</code> link</span>
+                    <span className="text-blue-800"><strong>Detects</strong> <code>llmfeed_extension</code> link ✅</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-xs font-bold">3</div>
-                    <span className="text-green-800"><strong>Follows link</strong> to enhanced LLMFeed file</span>
+                    <div className="w-6 h-6 bg-orange-500 text-white rounded-full flex items-center justify-center text-xs font-bold">3</div>
+                    <span className="text-orange-800"><strong>Requests permission</strong> to access enhanced features 🛡️</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-xs font-bold">4</div>
-                    <span className="text-green-800"><strong>Uses enhanced</strong> metadata, trust, capabilities</span>
+                    <span className="text-green-800"><strong>Follows link</strong> after user consent ✅</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-xs font-bold">5</div>
+                    <span className="text-green-800"><strong>Uses enhanced</strong> metadata, trust, capabilities ✅</span>
                   </div>
                 </div>
                 
                 <div className="mt-3 p-3 bg-white rounded border border-blue-200">
-                  <p className="text-xs text-blue-800">
-                    <strong>100% Compatibility:</strong> Standard MCP clients ignore the link and work normally. 
-                    Enhanced LLM agents automatically discover and use the rich LLMFeed version!
+                  <p className="text-xs text-blue-800 mb-2">
+                    <strong>Real-world validation:</strong> Claude naïve successfully detected discovery links and requested explicit user permission before accessing enhanced features.
+                  </p>
+                  <p className="text-xs text-green-800">
+                    <strong>Security by design:</strong> Current behavior ensures user control while proving the technical foundation for future trust-based autonomy.
                   </p>
                 </div>
               </div>
@@ -465,7 +605,8 @@ export default function WellKnownPage() {
               staticPath="demo/.well-known/auto-discovery-complete"
               mini={true}
               showCurlCommand={true}
-                />
+              showDirectUrl={true}
+            />
           </CardContent>
         </Card>
 
@@ -474,7 +615,7 @@ export default function WellKnownPage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <MapPin className="w-5 h-5 text-purple-600" />
-              Automatic Discovery Implementation
+              Discovery Implementation + Trust Evolution
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -485,56 +626,56 @@ export default function WellKnownPage() {
                   title: "Add Discovery Link to Standard MCP",
                   status: "30 seconds",
                   statusColor: "green",
-                  description: "Add one line to your existing .mcp.json for automatic LLMFeed discovery",
+                  description: "Add one line to your existing .mcp.json for semi-automatic LLMFeed discovery",
                   actions: [
                     "Add 'llmfeed_extension': '/.well-known/mcp.llmfeed.json' to .mcp.json",
                     "Keep all existing mcpServers configurations unchanged",
                     "Test that MCP clients still work normally",
-                    "Verify link syntax is valid JSON"
+                    "Verify LLMs detect link and request permission (tested ✅)"
                   ],
-                  note: "One line addition = automatic discovery for enhanced LLMs!"
+                  note: "Validated: LLMs detect links and request user consent for security"
                 },
                 {
                   step: "2", 
                   title: "Create Enhanced LLMFeed File",
                   status: "2 minutes",
                   statusColor: "blue",
-                  description: "Copy your MCP config and add LLMFeed enhancements",
+                  description: "Copy your MCP config and add LLMFeed enhancements with trust features",
                   actions: [
                     "Copy .mcp.json content to /.well-known/mcp.llmfeed.json",
                     "Add feed_type: \"mcp\" and metadata block",
                     "Keep mcpServers block identical to original",
-                    "Test automatic discovery with LLMFeed-aware agents"
+                    "Add basic trust block for future autonomy"
                   ],
-                  note: "Native MCP compatibility + enhanced features"
+                  note: "Foundation: Native MCP compatibility + trust-ready architecture"
                 },
                 {
                   step: "3",
-                  title: "Enhanced Agent Features",
-                  status: "Optional",
+                  title: "Add Cryptographic Signatures",
+                  status: "Q4 2025",
                   statusColor: "purple", 
-                  description: "Add agent guidance and enhanced capabilities",
-                  actions: [
-                    "Add agent_guidance with server priorities and behavior",
-                    "Include capabilities that extend MCP servers",
-                    "Add interaction guidelines and fallback behaviors",
-                    "Create llm-index.llmfeed.json for discovery optimization"
-                  ],
-                  note: "Improves agent behavior and user experience"
-                },
-                {
-                  step: "4",
-                  title: "Cryptographic Trust", 
-                  status: "Production",
-                  statusColor: "orange",
-                  description: "Add signatures for enterprise-grade verification",
+                  description: "Enable automatic discovery for signed content (no consent required)",
                   actions: [
                     "Generate Ed25519 key pair",
                     "Add public.pem to .well-known/",
                     "Sign mcpServers and enhancement blocks",
-                    "Consider LLMCA certification for maximum trust"
+                    "Test automatic link following for signed content"
                   ],
-                  note: "Production-grade authenticity and integrity verification"
+                  note: "Evolution: Signed content = automatic discovery with notification"
+                },
+                {
+                  step: "4",
+                  title: "LLMCA Certification & Full Autonomy", 
+                  status: "Q2 2026",
+                  statusColor: "orange",
+                  description: "Enable fully autonomous agent behavior on certified content",
+                  actions: [
+                    "Submit feeds for LLMCA third-party certification",
+                    "Implement certificate validation in feeds",
+                    "Configure for zero-friction agent access",
+                    "Monitor autonomous agent interactions"
+                  ],
+                  note: "Future: Certified content = fully autonomous agent behavior"
                 }
               ].map((phase, index) => (
                 <div key={index} className="flex gap-4">
@@ -573,15 +714,17 @@ export default function WellKnownPage() {
             <div className="mt-6 p-4 bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg">
               <h4 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <Lightbulb className="w-4 h-4 text-green-600" />
-                Automatic Discovery Philosophy
+                The Trust-Autonomy Evolution Path
               </h4>
               <p className="text-sm text-gray-700 mb-2">
-                <strong>Perfect migration strategy:</strong> Standard MCP file gains automatic discovery link. 
-                Enhanced LLMs follow the link to rich LLMFeed features, while standard MCP clients work unchanged.
+                <strong>Phase 1 (Current):</strong> Semi-automatic discovery with user consent validates the technical foundation.
+              </p>
+              <p className="text-sm text-gray-700 mb-2">
+                <strong>Phase 2-4 (Future):</strong> Trust-based autonomy levels enable safe agent behavior without constant human oversight.
               </p>
               <div className="text-xs text-green-800 bg-white p-2 rounded border border-green-200">
-                <strong>Genius insight:</strong> One line in standard MCP enables automatic discovery of enhanced features 
-                for LLMFeed-aware agents - 100% backward compatibility guaranteed!
+                <strong>Strategic advantage:</strong> LLMFeed provides the only viable path from "AI assistant requiring permission" 
+                to "autonomous AI agent operating safely" - solving the industry's core scalability challenge.
               </div>
             </div>
           </CardContent>
@@ -592,13 +735,13 @@ export default function WellKnownPage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Zap className="w-5 h-5 text-green-600" />
-              Ready for Automatic LLMFeed Discovery?
+              Ready for Semi-Automatic Discovery? (Tested June 2025)
             </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h4 className="font-semibold text-gray-900 mb-3">⚡ Super Quick Start (30 seconds)</h4>
+                <h4 className="font-semibold text-gray-900 mb-3">⚡ Immediate Implementation (30 seconds)</h4>
                 <div className="space-y-2 text-sm">
                   <div className="flex items-start gap-2">
                     <ArrowRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
@@ -613,25 +756,25 @@ export default function WellKnownPage() {
                   </div>
                   <div className="flex items-start gap-2">
                     <ArrowRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span>Enhanced LLMs auto-discover and use rich features!</span>
+                    <span>LLMs detect link & request user permission ✅</span>
                   </div>
                 </div>
               </div>
               
               <div>
-                <h4 className="font-semibold text-gray-900 mb-3">🔬 Why This is Genius</h4>
+                <h4 className="font-semibold text-gray-900 mb-3">🚀 Trust-Based Future</h4>
                 <div className="space-y-2 text-sm">
                   <div className="flex items-start gap-2">
                     <ArrowRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span><strong>100% backward compatibility</strong> - all MCP clients work</span>
+                    <span><strong>Current:</strong> Semi-automatic with user consent</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <ArrowRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span><strong>Automatic discovery</strong> for enhanced agents</span>
+                    <span><strong>Signed content:</strong> Automatic with notification</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <ArrowRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span><strong>Zero migration risk</strong> - perfect transition path</span>
+                    <span><strong>LLMCA certified:</strong> Fully autonomous</span>
                   </div>
                 </div>
               </div>
@@ -640,20 +783,24 @@ export default function WellKnownPage() {
             <div className="mt-6 p-4 bg-white border border-green-200 rounded-lg">
               <h5 className="font-medium text-green-900 mb-2 flex items-center gap-2">
                 <CheckCircle className="w-4 h-4" />
-                Perfect Migration Strategy
+                The Validated Migration Strategy
               </h5>
-              <p className="text-sm text-green-800">
-                <strong>Standard MCP:</strong> Works exactly as before + gets discovery link<br/>
-                <strong>Enhanced LLMs:</strong> Automatically find and use rich LLMFeed features<br/>
-                <strong>Result:</strong> Best of both worlds with zero disruption!
+              <p className="text-sm text-green-800 mb-2">
+                <strong>Phase 1 (Now):</strong> Standard MCP + discovery link → Semi-automatic with consent<br/>
+                <strong>Phase 2-4 (Future):</strong> Trust-based autonomy levels → Zero-friction AI agent behavior<br/>
               </p>
+              <div className="text-xs text-green-800 bg-green-50 p-2 rounded border border-green-200">
+                <strong>Real-world validation:</strong> Claude successfully detected discovery links and requested user permission, 
+                proving the technical foundation for future trust-based autonomy.
+              </div>
             </div>
 
             <div className="mt-6 flex flex-wrap gap-3">
               <ExportToLLMButton
                 context="static"
-                staticPath="demo/.well-known/auto-discovery-starter"
-                
+                staticPath="demo/.well-known/semi-auto-discovery-starter"
+                showCurlCommand={true}
+                showDirectUrl={true}
               />
               
               <a
@@ -665,7 +812,7 @@ export default function WellKnownPage() {
               </a>
               
               <a
-                href="/.well-known/exports/spec.llmfeed.json"
+                href="/.well-known/spec.llmfeed.json"
                 className="inline-flex items-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors text-sm font-medium"
                 download
               >
@@ -681,11 +828,13 @@ export default function WellKnownPage() {
           <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
             <h4 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
               <AlertCircle className="w-4 h-4 text-gray-600" />
-              Important Disclaimers
+              Important Disclaimers & Test Results
             </h4>
             <div className="text-sm text-gray-700 space-y-1">
               <p>• <strong>Research Project:</strong> LLMFeed is experimental research, not an official standard</p>
               <p>• <strong>MCP Compatibility:</strong> Official MCP docs at <a href="https://modelcontextprotocol.io" className="text-blue-600 underline">modelcontextprotocol.io</a></p>
+              <p>• <strong>Test Validation (June 2025):</strong> Semi-automatic discovery with user consent has been successfully tested with Claude</p>
+              <p>• <strong>Future Evolution:</strong> Trust-based autonomy levels are experimental projections, not guaranteed features</p>
               <p>• <strong>Production Use:</strong> Thoroughly test before deploying in production environments</p>
               <p>• <strong>Community:</strong> Contribute feedback and research at <a href="https://github.com/wellknownmcp/llmfeed-spec" className="text-blue-600 underline">our GitHub</a></p>
             </div>
@@ -693,8 +842,7 @@ export default function WellKnownPage() {
         </div>
 
         <ShareButtons 
-          title="Enhanced MCP Implementation via .well-known/ - LLMFeed Spec"
-        
+          title="Enhanced MCP Implementation via .well-known/ - Semi-Automatic Discovery (As of June 2025)"
         />
       </div>
     </div>

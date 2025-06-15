@@ -5,6 +5,9 @@ node_modules/
 .next/
 out/
 
+# local
+Temp/
+
 # Logs and runtime
 npm-debug.log*
 yarn-debug.log*
