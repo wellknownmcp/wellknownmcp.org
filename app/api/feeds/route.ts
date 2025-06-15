@@ -1,568 +1,545 @@
-'use client'
+// app/api/feed-html/route.ts
+import { NextRequest, NextResponse } from 'next/server'
+import { promises as fs } from 'fs'
+import { join } from 'path'
+import { verifyFeedSignature, verifyFeedCertification } from '@/lib/verifyCrypto'
+import { analyzeBlocks } from '@/lib/analyzeBlocks'
 
-import { useEffect, useState } from 'react'
-import Link from 'next/link'
-import { ExportToLLMButton } from '@/components/ExportToLLMButton'
-import SeoHead from '@/components/SeoHead'
-import { Search, Filter, ExternalLink, Shield, Award, Globe, FileText, Zap } from 'lucide-react'
-
-interface FeedEntry {
-  path: string
-  feed_type: string
-  signed: boolean
-  certified: boolean
-  size: string
-  title?: string
-  description?: string
-  trust_score?: number
-  source_type: 'wellknown' | 'exports' | 'demo' | 'ecosystem'
-  last_updated?: string
-  audience?: string[]
-  validation_status?: 'valid' | 'invalid' | 'unknown'
-  crypto_valid?: boolean
+interface FeedData {
+  feed_type?: string
+  feedtype?: string
+  metadata?: {
+    title?: string
+    description?: string
+    origin?: string
+    last_updated?: string
+  }
+  trust?: {
+    signature?: string
+    signed_blocks?: string[]
+  }
+  capabilities?: any
+  tags?: string[]
+  [key: string]: any
 }
 
-interface FeedStats {
-  total: number
-  by_type: Record<string, number>
-  by_source: Record<string, number>
-  signed_count: number
-  certified_count: number
-  crypto_validated: number
+interface ValidationResult {
+  isValid: boolean
+  errors: ValidationError[]
+  warnings?: string[]
 }
 
-export default function EnhancedFeedsPage() {
-  const [allFeeds, setAllFeeds] = useState<FeedEntry[]>([])
-  const [filteredFeeds, setFilteredFeeds] = useState<FeedEntry[]>([])
-  const [stats, setStats] = useState<FeedStats | null>(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
+interface ValidationError {
+  field: string
+  message: string
+  severity: 'error' | 'warning'
+  suggestion?: string
+}
+
+interface CryptoValidationResult {
+  signature: {
+    present: boolean
+    valid: boolean
+    message: string
+    algorithm?: string
+  }
+  certification: {
+    present: boolean
+    valid: boolean
+    message: string
+    certifier?: string
+    level?: string
+  }
+  blocks: Array<{
+    blockName: string
+    isSigned: boolean
+    isCertified: boolean
+    signatureValid?: boolean
+    certificationValid?: boolean
+  }>
+  trustLevel: 'none' | 'basic' | 'signed' | 'certified' | 'invalid'
+  trustScore: number // 0-100
+}
+
+interface SourceInfo {
+  url: string
+  type: 'external' | 'local' | 'wellknown'
+  sanitized: boolean
+}
+
+interface ValidatedParams {
+  external?: string
+  slug?: string
+  wellknown?: string
+  isValid: boolean
+  error?: string
+}
+
+// 🛡️ SÉCURITÉ HTML - Fonctions d'échappement et sanitisation
+function escapeHtml(unsafe: string): string {
+  if (typeof unsafe !== 'string') return String(unsafe)
+  return unsafe
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;")
+}
+
+function sanitizeUrl(url: string): string {
+  if (typeof url !== 'string') return ''
+  const urlPattern = /^https?:\/\/[^\s<>"'\\]+$/i
+  return urlPattern.test(url) ? url : ''
+}
+
+function sanitizeJsonForHtml(obj: any): string {
+  try {
+    const jsonString = JSON.stringify(obj, null, 2)
+    return escapeHtml(jsonString)
+  } catch (error) {
+    return escapeHtml('{"error": "Invalid JSON structure"}')
+  }
+}
+
+function sanitizeMetadata(metadata: any): {
+  title: string
+  description: string
+  origin: string
+  lastUpdated: string
+} {
+  const defaultValues = {
+    title: 'Untitled Feed',
+    description: '',
+    origin: 'Unknown',
+    lastUpdated: 'Unknown'
+  }
+
+  if (!metadata || typeof metadata !== 'object') {
+    return defaultValues
+  }
+
+  return {
+    title: escapeHtml(String(metadata.title || defaultValues.title)).substring(0, 200),
+    description: escapeHtml(String(metadata.description || defaultValues.description)).substring(0, 500),
+    origin: escapeHtml(String(metadata.origin || defaultValues.origin)).substring(0, 200),
+    lastUpdated: metadata.last_updated ? 
+      escapeHtml(String(metadata.last_updated)).substring(0, 50) : 
+      defaultValues.lastUpdated
+  }
+}
+
+function sanitizeTags(tags: any): string {
+  if (!Array.isArray(tags)) return 'None'
   
-  // Filters state
-  const [searchTerm, setSearchTerm] = useState('')
-  const [selectedType, setSelectedType] = useState<string | null>(null)
-  const [selectedSource, setSelectedSource] = useState<string | null>(null)
-  const [selectedTrust, setSelectedTrust] = useState<string | null>(null)
-  const [showOnlyValidated, setShowOnlyValidated] = useState(false)
+  const safeTags = tags
+    .filter(tag => typeof tag === 'string')
+    .map(tag => escapeHtml(tag.substring(0, 50)))
+    .slice(0, 10) // Max 10 tags
+    
+  return safeTags.length > 0 ? safeTags.join(', ') : 'None'
+}
 
-  useEffect(() => {
-    async function loadAllFeeds() {
-      setLoading(true)
-      try {
-        // Charger les feeds depuis différentes sources
-        const feedSources = await Promise.allSettled([
-          loadWellKnownFeeds(),
-          loadExportsFeeds(),
-          loadDemoFeeds(),
-          loadEcosystemFeeds()
-        ])
+function validateAndSanitizeParams(searchParams: URLSearchParams): ValidatedParams {
+  const external = searchParams.get('external')
+  const slug = searchParams.get('slug')
+  const wellknown = searchParams.get('wellknown')
 
-        const allFeedsData: FeedEntry[] = []
-        feedSources.forEach((result, index) => {
-          if (result.status === 'fulfilled') {
-            allFeedsData.push(...result.value)
-          } else {
-            console.warn(`Failed to load feeds from source ${index}:`, result.reason)
-          }
-        })
+  // Validation exclusive des paramètres
+  const paramCount = [external, slug, wellknown].filter(p => p !== null).length
+  if (paramCount !== 1) {
+    return {
+      isValid: false,
+      error: 'Exactly one parameter required: external, slug, or wellknown'
+    }
+  }
 
-        // Enrichir avec validation crypto en arrière-plan
-        const enrichedFeeds = await enrichFeedsWithValidation(allFeedsData)
-        
-        setAllFeeds(enrichedFeeds)
-        setFilteredFeeds(enrichedFeeds)
-        setStats(calculateStats(enrichedFeeds))
-      } catch (err) {
-        setError(`Failed to load feeds: ${err instanceof Error ? err.message : 'Unknown error'}`)
-      } finally {
-        setLoading(false)
+  if (external) {
+    const sanitizedUrl = sanitizeUrl(external)
+    if (!sanitizedUrl) {
+      return {
+        isValid: false,
+        error: 'Invalid external URL format'
       }
     }
+    return { external: sanitizedUrl, isValid: true }
+  }
 
-    loadAllFeeds()
-  }, [])
-
-  // Filtrage en temps réel
-  useEffect(() => {
-    let filtered = allFeeds
-
-    // Recherche textuelle
-    if (searchTerm) {
-      const term = searchTerm.toLowerCase()
-      filtered = filtered.filter(feed => 
-        feed.path.toLowerCase().includes(term) ||
-        feed.title?.toLowerCase().includes(term) ||
-        feed.description?.toLowerCase().includes(term) ||
-        feed.feed_type.toLowerCase().includes(term)
-      )
-    }
-
-    // Filtres par catégorie
-    if (selectedType) {
-      filtered = filtered.filter(feed => feed.feed_type === selectedType)
-    }
-    
-    if (selectedSource) {
-      filtered = filtered.filter(feed => feed.source_type === selectedSource)
-    }
-
-    if (selectedTrust) {
-      switch (selectedTrust) {
-        case 'certified':
-          filtered = filtered.filter(feed => feed.certified)
-          break
-        case 'signed':
-          filtered = filtered.filter(feed => feed.signed)
-          break
-        case 'validated':
-          filtered = filtered.filter(feed => feed.crypto_valid)
-          break
+  if (slug) {
+    const slugPattern = /^[a-zA-Z0-9\-\/]+$/
+    const cleanSlug = String(slug).substring(0, 200)
+    if (!slugPattern.test(cleanSlug)) {
+      return {
+        isValid: false,
+        error: 'Invalid slug format. Use alphanumeric characters, hyphens, and forward slashes only.'
       }
     }
+    return { slug: cleanSlug, isValid: true }
+  }
 
-    if (showOnlyValidated) {
-      filtered = filtered.filter(feed => feed.validation_status === 'valid')
-    }
-
-    setFilteredFeeds(filtered)
-  }, [allFeeds, searchTerm, selectedType, selectedSource, selectedTrust, showOnlyValidated])
-
-  async function loadWellKnownFeeds(): Promise<FeedEntry[]> {
-    // Liste des feeds well-known connus
-    const wellKnownFeeds = [
-      'mcp', 'capabilities', 'llm-index', 'manifesto', 'spec', 
-      'public', 'index', 'compiled-site'
-    ]
-    
-    const feeds: FeedEntry[] = []
-    
-    for (const feedName of wellKnownFeeds) {
-      try {
-        const response = await fetch(`/.well-known/${feedName}.llmfeed.json`, { method: 'HEAD' })
-        if (response.ok) {
-          feeds.push({
-            path: `/.well-known/${feedName}.llmfeed.json`,
-            feed_type: feedName === 'mcp' ? 'mcp' : feedName === 'capabilities' ? 'capabilities' : 'export',
-            signed: false, // Will be enriched later
-            certified: false, // Will be enriched later
-            size: response.headers.get('content-length') ? 
-              Math.round(parseInt(response.headers.get('content-length')!) / 1024).toString() : '?',
-            source_type: 'wellknown',
-            title: `${feedName.charAt(0).toUpperCase() + feedName.slice(1)} Declaration`,
-            last_updated: response.headers.get('last-modified') || undefined
-          })
-        }
-      } catch (err) {
-        console.warn(`Could not check well-known feed: ${feedName}`)
+  if (wellknown) {
+    const wellknownPattern = /^[a-zA-Z0-9\-]+$/
+    const cleanWellknown = String(wellknown).substring(0, 100)
+    if (!wellknownPattern.test(cleanWellknown)) {
+      return {
+        isValid: false,
+        error: 'Invalid wellknown format. Use alphanumeric characters and hyphens only.'
       }
     }
-    
-    return feeds
+    return { wellknown: cleanWellknown, isValid: true }
   }
 
-  async function loadExportsFeeds(): Promise<FeedEntry[]> {
-    try {
-      const response = await fetch('/exports/index.json')
-      const data = await response.json()
-      
-      return data.map((item: any) => ({
-        ...item,
-        source_type: 'exports' as const,
-        title: item.title || item.path.split('/').pop()?.replace('.llmfeed.json', ''),
-        validation_status: 'unknown' as const
-      }))
-    } catch (err) {
-      console.warn('Could not load exports index')
-      return []
-    }
-  }
+  return { isValid: false, error: 'No valid parameter provided' }
+}
 
-  async function loadDemoFeeds(): Promise<FeedEntry[]> {
-    // Les feeds de demo (kungfu, etc.)
-    const demoFeeds = ['kungfu', 'example', 'tutorial']
-    const feeds: FeedEntry[] = []
-    
-    for (const demo of demoFeeds) {
-      try {
-        const response = await fetch(`/exports/demo/${demo}.llmfeed.json`, { method: 'HEAD' })
-        if (response.ok) {
-          feeds.push({
-            path: `/exports/demo/${demo}.llmfeed.json`,
-            feed_type: 'demo',
-            signed: false,
-            certified: false,
-            size: response.headers.get('content-length') ? 
-              Math.round(parseInt(response.headers.get('content-length')!) / 1024).toString() : '?',
-            source_type: 'demo',
-            title: `${demo.charAt(0).toUpperCase() + demo.slice(1)} Demo`
-          })
-        }
-      } catch (err) {
-        // Ignore missing demo feeds
-      }
-    }
-    
-    return feeds
-  }
-
-  async function loadEcosystemFeeds(): Promise<FeedEntry[]> {
-    // Feeds ecosystem (partenaires, exemples externes)
-    return [] // À implémenter selon ta structure
-  }
-
-  async function enrichFeedsWithValidation(feeds: FeedEntry[]): Promise<FeedEntry[]> {
-    // Enrichir chaque feed avec validation crypto en parallèle (max 5 simultanés)
-    const chunks = []
-    for (let i = 0; i < feeds.length; i += 5) {
-      chunks.push(feeds.slice(i, i + 5))
-    }
-
-    const enrichedFeeds: FeedEntry[] = []
-    
-    for (const chunk of chunks) {
-      const enrichedChunk = await Promise.all(
-        chunk.map(async (feed) => {
-          try {
-            // Charger le contenu du feed pour validation
-            const response = await fetch(feed.path)
-            if (!response.ok) {
-              return { ...feed, validation_status: 'invalid' as const }
-            }
-            
-            const feedData = await response.json()
-            
-            // Validation basique LLMFeed
-            const isValidLLMFeed = feedData.feed_type || feedData.feedtype
-            const hasMetadata = feedData.metadata
-            
-            // Détection crypto
-            const hasSig = Boolean(feedData.signature)
-            const hasCert = Boolean(feedData.certification)
-            const trustScore = hasCert ? 95 : hasSig ? 75 : 50
-            
-            return {
-              ...feed,
-              title: feedData.metadata?.title || feed.title,
-              description: feedData.metadata?.description || feed.description,
-              signed: hasSig,
-              certified: hasCert,
-              trust_score: trustScore,
-              validation_status: (isValidLLMFeed && hasMetadata) ? 'valid' : 'invalid' as const,
-              crypto_valid: hasSig || hasCert,
-              audience: feedData.metadata?.audience || [],
-              last_updated: feedData.metadata?.last_updated || feed.last_updated
-            }
-          } catch (err) {
-            return { ...feed, validation_status: 'invalid' as const }
-          }
-        })
-      )
-      
-      enrichedFeeds.push(...enrichedChunk)
-    }
-
-    return enrichedFeeds
-  }
-
-  function calculateStats(feeds: FeedEntry[]): FeedStats {
-    const stats: FeedStats = {
-      total: feeds.length,
-      by_type: {},
-      by_source: {},
-      signed_count: 0,
-      certified_count: 0,
-      crypto_validated: 0
-    }
-
-    feeds.forEach(feed => {
-      // Par type
-      stats.by_type[feed.feed_type] = (stats.by_type[feed.feed_type] || 0) + 1
-      
-      // Par source
-      stats.by_source[feed.source_type] = (stats.by_source[feed.source_type] || 0) + 1
-      
-      // Compteurs crypto
-      if (feed.signed) stats.signed_count++
-      if (feed.certified) stats.certified_count++
-      if (feed.crypto_valid) stats.crypto_validated++
+export async function GET(request: NextRequest) {
+  const { searchParams } = new URL(request.url)
+  
+  // 🛡️ VALIDATION ET SANITISATION DES PARAMÈTRES
+  const params = validateAndSanitizeParams(searchParams)
+  if (!params.isValid) {
+    return new NextResponse(generateErrorHtml(params.error || 'Invalid parameters'), { 
+      status: 400,
+      headers: { 'Content-Type': 'text/html; charset=utf-8' }
     })
-
-    return stats
   }
 
-  function getTrustBadge(feed: FeedEntry) {
-    if (feed.certified) {
-      return <span className="inline-flex items-center gap-1 bg-gradient-to-r from-yellow-100 to-green-100 text-yellow-800 text-xs px-2 py-1 rounded border border-yellow-300">
-        <Award className="w-3 h-3" />
-        Certified
-      </span>
+  try {
+    let feedData: FeedData
+    let sourceInfo: SourceInfo
+
+    if (params.external) {
+      sourceInfo = { url: params.external, type: 'external', sanitized: true }
+      feedData = await fetchExternalFeed(params.external)
+    } else if (params.wellknown) {
+      sourceInfo = { 
+        url: `/.well-known/${params.wellknown}.llmfeed.json`, 
+        type: 'wellknown',
+        sanitized: true
+      }
+      feedData = await fetchWellKnownFeed(params.wellknown)
+    } else if (params.slug) {
+      sourceInfo = { 
+        url: `/exports/${params.slug}.llmfeed.json`, 
+        type: 'local',
+        sanitized: true
+      }
+      feedData = await fetchLocalFeed(params.slug)
+    } else {
+      return new NextResponse(generateErrorHtml('Missing feed source parameter'), { 
+        status: 400,
+        headers: { 'Content-Type': 'text/html; charset=utf-8' }
+      })
     }
+
+    // ✅ VALIDATION CRITIQUE : Vérifier que c'est bien un LLMFeed valide
+    const validationResult = validateLLMFeed(feedData, sourceInfo)
+    if (!validationResult.isValid) {
+      return new NextResponse(
+        generateValidationErrorHtml(validationResult.errors, sourceInfo), 
+        { 
+          status: 422,
+          headers: { 'Content-Type': 'text/html; charset=utf-8' }
+        }
+      )
+    }
+
+    // 🔐 VALIDATION CRYPTOGRAPHIQUE
+    const cryptoValidation = await performCryptoValidation(feedData)
+
+    // 🛡️ GÉNÉRATION HTML SÉCURISÉE
+    const htmlContent = generateSecureFeedHtml(feedData, {
+      sourceUrl: sourceInfo.url,
+      sourceType: sourceInfo.type,
+      pageUrl: request.url,
+      jsonApiUrl: getJsonApiUrl(sourceInfo),
+      siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://wellknownmcp.org',
+      params: params // Passer les paramètres pour éviter les erreurs de scope
+    }, cryptoValidation)
+
+    return new NextResponse(htmlContent, {
+      headers: {
+        'Content-Type': 'text/html; charset=utf-8',
+        'Cache-Control': 'public, max-age=300, stale-while-revalidate=600',
+        'X-LLM-Feed-Type': feedData.feed_type || feedData.feedtype || 'unknown',
+        'X-LLM-Trust-Level': cryptoValidation.trustLevel,
+        'X-LLM-Trust-Score': cryptoValidation.trustScore.toString(),
+        'X-LLM-Signature-Valid': cryptoValidation.signature.valid.toString(),
+        'X-LLM-Certification-Valid': cryptoValidation.certification.valid.toString(),
+        'X-LLM-Content-Format': 'html-embedded-json',
+        'X-LLM-Source-Type': sourceInfo.type,
+        'X-LLM-Validation': 'passed',
+        'X-LLM-Crypto-Validation': 'performed',
+        'X-LLM-Security': 'sanitized',
+        'X-Robots-Tag': 'index, follow',
+        'Vary': 'Accept, User-Agent',
+        'X-Content-Type-Options': 'nosniff',
+        'X-Frame-Options': 'DENY',
+        'X-XSS-Protection': '1; mode=block',
+        'Referrer-Policy': 'strict-origin-when-cross-origin',
+        'Content-Security-Policy': "default-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; object-src 'none'; base-uri 'self';",
+        'X-MCP-Version': '1.0',
+        'X-LLMFeed-API': 'validated-secure-crypto'
+      }
+    })
+  } catch (error: any) {
+    console.error('❌ Feed HTML generation error:', error)
     
-    if (feed.signed) {
-      return <span className="inline-flex items-center gap-1 bg-green-100 text-green-800 text-xs px-2 py-1 rounded border border-green-300">
-        <Shield className="w-3 h-3" />
-        Signed
-      </span>
-    }
+    const errorHtml = generateErrorHtml(
+      `Failed to load feed: ${error.message}`,
+      {
+        requestedSource: params.external || params.wellknown || params.slug || 'unknown',
+        sourceType: params.external ? 'external' : params.wellknown ? 'wellknown' : 'local',
+        error: error.message
+      }
+    )
     
-    if (feed.validation_status === 'valid') {
-      return <span className="inline-flex items-center gap-1 bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded border border-blue-300">
-        <FileText className="w-3 h-3" />
-        Valid
-      </span>
+    return new NextResponse(errorHtml, { 
+      status: 500,
+      headers: { 'Content-Type': 'text/html; charset=utf-8' }
+    })
+  }
+}
+
+// Fonctions utilitaires...
+async function performCryptoValidation(feed: any): Promise<CryptoValidationResult> {
+  const result: CryptoValidationResult = {
+    signature: { present: false, valid: false, message: 'No signature found' },
+    certification: { present: false, valid: false, message: 'No certification found' },
+    blocks: [],
+    trustLevel: 'none',
+    trustScore: 0
+  }
+
+  // Validation signature
+  if (feed.signature && feed.trust?.signed_blocks) {
+    result.signature.present = true
+    result.signature.algorithm = feed.signature.algorithm || 'ed25519'
+    
+    try {
+      const signatureResult = await verifyFeedSignature(feed)
+      result.signature.valid = signatureResult.ok
+      result.signature.message = signatureResult.message
+    } catch (error: any) {
+      result.signature.valid = false
+      result.signature.message = `Signature verification failed: ${error.message}`
     }
-
-    return <span className="inline-flex items-center gap-1 bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded border border-gray-300">
-      ⚠️ Basic
-    </span>
   }
 
-  function getSourceIcon(sourceType: string) {
-    switch (sourceType) {
-      case 'wellknown': return <Globe className="w-4 h-4 text-blue-600" />
-      case 'exports': return <FileText className="w-4 h-4 text-green-600" />
-      case 'demo': return <Zap className="w-4 h-4 text-purple-600" />
-      case 'ecosystem': return <ExternalLink className="w-4 h-4 text-orange-600" />
-      default: return <FileText className="w-4 h-4 text-gray-600" />
+  // Validation certification
+  const certifications = Array.isArray(feed.certification) 
+    ? feed.certification 
+    : feed.certification ? [feed.certification] : []
+
+  if (certifications.length > 0) {
+    result.certification.present = true
+    
+    try {
+      const certResults = await Promise.all(
+        certifications.map(cert => verifyFeedCertification(feed, cert))
+      )
+      
+      const validCerts = certResults.filter(r => r.ok)
+      result.certification.valid = validCerts.length > 0
+      
+      if (validCerts.length > 0) {
+        const firstValidCert = certifications[certResults.findIndex(r => r.ok)]
+        result.certification.certifier = firstValidCert.public_key_hint
+        result.certification.level = firstValidCert.certification_level || 'basic'
+        result.certification.message = `${validCerts.length} valid certification(s)`
+      } else {
+        result.certification.message = `All ${certifications.length} certification(s) invalid`
+      }
+    } catch (error: any) {
+      result.certification.valid = false
+      result.certification.message = `Certification verification failed: ${error.message}`
     }
   }
 
-  if (loading) {
-    return (
-      <div className="max-w-6xl mx-auto p-4">
-        <div className="animate-pulse space-y-4">
-          <div className="h-8 bg-gray-200 rounded w-1/3"></div>
-          <div className="h-4 bg-gray-200 rounded w-2/3"></div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[...Array(6)].map((_, i) => (
-              <div key={i} className="h-32 bg-gray-200 rounded"></div>
-            ))}
-          </div>
-        </div>
-      </div>
-    )
+  // Analyse des blocs
+  try {
+    const blockAnalysis = analyzeBlocks(feed)
+    result.blocks = blockAnalysis.map(block => ({
+      blockName: block.blockName,
+      isSigned: block.isSigned,
+      isCertified: block.isCertificationPresent,
+      signatureValid: block.isSigned ? result.signature.valid : undefined,
+      certificationValid: block.isCertificationPresent ? result.certification.valid : undefined
+    }))
+  } catch (error) {
+    console.warn('Block analysis failed:', error)
   }
 
-  if (error) {
-    return (
-      <div className="max-w-6xl mx-auto p-4">
-        <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-          <h2 className="text-red-800 font-semibold">Error Loading Feeds</h2>
-          <p className="text-red-600">{error}</p>
-        </div>
-      </div>
-    )
+  // Calcul du niveau de confiance
+  if (result.certification.valid) {
+    result.trustLevel = 'certified'
+    result.trustScore = 90 + (result.signature.valid ? 10 : 0)
+  } else if (result.signature.valid) {
+    result.trustLevel = 'signed' 
+    result.trustScore = 70 + (result.certification.present ? 10 : 0)
+  } else if (result.signature.present || result.certification.present) {
+    result.trustLevel = 'invalid'
+    result.trustScore = 20
+  } else {
+    result.trustLevel = 'basic'
+    result.trustScore = 50
   }
 
-  const feedTypes = Array.from(new Set(allFeeds.map(f => f.feed_type))).sort()
-  const sourceTypes = Array.from(new Set(allFeeds.map(f => f.source_type))).sort()
+  return result
+}
 
-  return (
-    <>
-      <SeoHead
-        title="Feed Directory — WellKnownMCP"
-        description={`Comprehensive directory of ${stats?.total || 0} LLMFeed files with crypto validation. Explore well-known declarations, exports, demos, and ecosystem feeds with real-time trust verification.`}
-        canonicalUrl="https://wellknownmcp.org/feeds"
-        ogImage="/og/feed-directory.png"
-        llmIntent="browse-feed-directory"
-        llmTopic="llmfeed-directory"
-        llmlang="en"
-        keywords={[
-          'LLMFeed directory',
-          'feed validation',
-          'crypto verification',
-          'MCP feeds',
-          'well-known feeds',
-          'signed feeds',
-          'certified feeds',
-          'agent interoperability',
-          'trust verification',
-          'WellKnownMCP'
-        ]}
-      />
+function validateLLMFeed(feedData: any, sourceInfo: SourceInfo): ValidationResult {
+  const errors: ValidationError[] = []
+  const warnings: string[] = []
 
-      <main className="max-w-6xl mx-auto p-4 space-y-6">
-        {/* Header */}
-        <div className="border-b pb-6">
-          <h1 className="text-3xl font-bold mb-2">Feed Directory</h1>
-          <p className="text-gray-600 mb-4">
-            Comprehensive directory of LLMFeed files with real-time crypto validation and trust verification.
-          </p>
-          
-          {/* Stats Overview */}
-          {stats && (
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
-                <div className="text-2xl font-bold text-blue-700">{stats.total}</div>
-                <div className="text-sm text-blue-600">Total Feeds</div>
-              </div>
-              <div className="bg-green-50 border border-green-200 rounded-lg p-3">
-                <div className="text-2xl font-bold text-green-700">{stats.crypto_validated}</div>
-                <div className="text-sm text-green-600">Crypto Validated</div>
-              </div>
-              <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
-                <div className="text-2xl font-bold text-yellow-700">{stats.certified_count}</div>
-                <div className="text-sm text-yellow-600">Certified</div>
-              </div>
-              <div className="bg-purple-50 border border-purple-200 rounded-lg p-3">
-                <div className="text-2xl font-bold text-purple-700">{stats.signed_count}</div>
-                <div className="text-sm text-purple-600">Signed</div>
-              </div>
-            </div>
-          )}
-        </div>
+  if (!feedData || typeof feedData !== 'object') {
+    errors.push({
+      field: 'root',
+      message: 'Invalid JSON structure',
+      severity: 'error',
+      suggestion: 'Ensure the content is valid JSON'
+    })
+    return { isValid: false, errors, warnings }
+  }
 
-        {/* Search and Filters */}
-        <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 space-y-4">
-          {/* Search */}
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
-            <input
-              type="text"
-              placeholder="Search feeds by name, type, or description..."
-              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-          </div>
+  const feedType = feedData.feed_type || feedData.feedtype
+  if (!feedType) {
+    errors.push({
+      field: 'feed_type',
+      message: 'Missing required field: feed_type or feedtype',
+      severity: 'error',
+      suggestion: 'Add "feed_type": "mcp" or another valid feed type'
+    })
+  }
 
-          {/* Filters */}
-          <div className="flex flex-wrap gap-3">
-            <select
-              value={selectedType || ''}
-              onChange={(e) => setSelectedType(e.target.value || null)}
-              className="px-3 py-1 border border-gray-300 rounded text-sm"
-            >
-              <option value="">All Types</option>
-              {feedTypes.map(type => (
-                <option key={type} value={type}>{type}</option>
-              ))}
-            </select>
+  if (!feedData.metadata) {
+    errors.push({
+      field: 'metadata',
+      message: 'Missing required field: metadata',
+      severity: 'error',
+      suggestion: 'Add "metadata": {"title": "...", "origin": "..."}'
+    })
+  }
 
-            <select
-              value={selectedSource || ''}
-              onChange={(e) => setSelectedSource(e.target.value || null)}
-              className="px-3 py-1 border border-gray-300 rounded text-sm"
-            >
-              <option value="">All Sources</option>
-              {sourceTypes.map(source => (
-                <option key={source} value={source}>
-                  {source.charAt(0).toUpperCase() + source.slice(1)}
-                </option>
-              ))}
-            </select>
+  return {
+    isValid: errors.length === 0,
+    errors,
+    warnings: warnings.length > 0 ? warnings : undefined
+  }
+}
 
-            <select
-              value={selectedTrust || ''}
-              onChange={(e) => setSelectedTrust(e.target.value || null)}
-              className="px-3 py-1 border border-gray-300 rounded text-sm"
-            >
-              <option value="">All Trust Levels</option>
-              <option value="certified">Certified</option>
-              <option value="signed">Signed</option>
-              <option value="validated">Crypto Validated</option>
-            </select>
+function generateSecureFeedHtml(
+  feed: FeedData, 
+  urls: {
+    sourceUrl: string
+    sourceType: string
+    pageUrl: string
+    jsonApiUrl: string
+    siteUrl: string
+    params: ValidatedParams
+  }, 
+  cryptoValidation: CryptoValidationResult
+): string {
+  const safeMetadata = sanitizeMetadata(feed.metadata)
+  const safeTags = sanitizeTags(feed.tags)
+  const safeJsonContent = sanitizeJsonForHtml(feed)
+  
+  const getTrustBadge = () => {
+    switch (cryptoValidation.trustLevel) {
+      case 'certified': return { status: 'Certified & Verified ✅🏆', class: 'trust-certified' }
+      case 'signed': return { status: 'Cryptographically Verified ✅', class: 'trust-signed' }
+      case 'invalid': return { status: 'Invalid Signature ❌', class: 'trust-invalid' }
+      default: return { status: 'Unverified ⚠️', class: 'trust-basic' }
+    }
+  }
+  
+  const trustBadge = getTrustBadge()
+  const safeJsonApiUrl = sanitizeUrl(urls.jsonApiUrl) || '#'
+  const safeSiteUrl = sanitizeUrl(urls.siteUrl) || 'https://wellknownmcp.org'
 
-            <label className="flex items-center gap-2 text-sm">
-              <input
-                type="checkbox"
-                checked={showOnlyValidated}
-                onChange={(e) => setShowOnlyValidated(e.target.checked)}
-                className="rounded"
-              />
-              Only Valid Feeds
-            </label>
-          </div>
+  // Construction du lien LLMFeedHub sécurisé
+  const buildLLMFeedHubUrl = () => {
+    if (urls.params.external) {
+      return `${safeSiteUrl}/llmfeedhub?external=${encodeURIComponent(safeJsonApiUrl)}`
+    } else if (urls.params.wellknown) {
+      return `${safeSiteUrl}/llmfeedhub?wellknown=${encodeURIComponent(urls.params.wellknown)}`
+    } else if (urls.params.slug) {
+      return `${safeSiteUrl}/llmfeedhub?slug=${encodeURIComponent(urls.params.slug)}`
+    }
+    return `${safeSiteUrl}/llmfeedhub`
+  }
 
-          <div className="text-sm text-gray-600">
-            Showing {filteredFeeds.length} of {allFeeds.length} feeds
-          </div>
-        </div>
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LLMFeed: ${safeMetadata.title}</title>
+  <meta name="llm-trust-score" content="${cryptoValidation.trustScore}">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; }
+    .trust-certified { background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(251, 191, 36, 0.15)); color: #059669; }
+    .trust-signed { background: rgba(16, 185, 129, 0.1); color: #10b981; }
+    .trust-basic { background: rgba(245, 158, 11, 0.1); color: #f59e0b; }
+    .trust-invalid { background: rgba(239, 68, 68, 0.1); color: #dc2626; }
+    .trust-badge { display: inline-block; padding: 6px 12px; border-radius: 6px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <h1>📦 ${safeMetadata.title}</h1>
+  <span class="trust-badge ${trustBadge.class}">${trustBadge.status}</span>
+  
+  <div>
+    <a href="${safeJsonApiUrl}">📄 Raw JSON</a>
+    <a href="${buildLLMFeedHubUrl()}">🧪 Analyze in LLMFeedHub</a>
+  </div>
 
-        {/* Feed Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filteredFeeds.map(feed => {
-            const fileName = feed.path.split('/').pop() || ''
-            const displayPath = feed.path.replace('.llmfeed.json', '')
-            
-            // URLs for different access methods
-            const hubUrl = feed.source_type === 'wellknown' 
-              ? `/llmfeedhub?wellknown=${fileName.replace('.llmfeed.json', '')}`
-              : `/llmfeedhub/${displayPath.replace('/exports/', '')}`
-            
-            const htmlUrl = feed.source_type === 'wellknown'
-              ? `/api/feed-html?wellknown=${fileName.replace('.llmfeed.json', '')}`
-              : `/api/feed-html?slug=${displayPath.replace('/exports/', '')}`
+  <script type="application/json" id="llmfeed-raw-data">
+${JSON.stringify(feed, null, 2)}
+  </script>
+  
+  <details open>
+    <summary>🔍 Complete JSON Data</summary>
+    <pre>${safeJsonContent}</pre>
+  </details>
+</body>
+</html>`
+}
 
-            return (
-              <div key={feed.path} className="border border-gray-200 rounded-lg p-4 space-y-3 hover:shadow-lg transition-shadow">
-                {/* Header */}
-                <div className="flex items-start justify-between">
-                  <div className="flex items-center gap-2">
-                    {getSourceIcon(feed.source_type)}
-                    <h3 className="font-semibold text-sm truncate" title={feed.title}>
-                      {feed.title || fileName}
-                    </h3>
-                  </div>
-                  {getTrustBadge(feed)}
-                </div>
+function getJsonApiUrl(sourceInfo: SourceInfo): string {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wellknownmcp.org'
+  return sourceInfo.type === 'external' ? sourceInfo.url : `${baseUrl}${sourceInfo.url}`
+}
 
-                {/* Description */}
-                {feed.description && (
-                  <p className="text-xs text-gray-600 line-clamp-2">{feed.description}</p>
-                )}
+function generateErrorHtml(message: string, details?: any): string {
+  return `<!DOCTYPE html>
+<html><head><title>Error</title></head>
+<body><h1>Error</h1><p>${escapeHtml(message)}</p></body></html>`
+}
 
-                {/* Metadata */}
-                <div className="text-xs text-gray-500 space-y-1">
-                  <div>Type: <span className="font-mono">{feed.feed_type}</span></div>
-                  <div>Size: {feed.size} KB</div>
-                  {feed.trust_score && (
-                    <div>Trust Score: <span className="font-semibold">{feed.trust_score}/100</span></div>
-                  )}
-                </div>
+function generateValidationErrorHtml(errors: ValidationError[], sourceInfo: SourceInfo): string {
+  const errorList = errors.map(error => 
+    `<li><strong>${escapeHtml(error.field)}:</strong> ${escapeHtml(error.message)}</li>`
+  ).join('')
+  
+  return `<!DOCTYPE html>
+<html><head><title>Validation Error</title></head>
+<body><h1>Invalid LLMFeed</h1><ul>${errorList}</ul></body></html>`
+}
 
-                {/* Actions */}
-                <div className="flex flex-wrap gap-2">
-                  <Link
-                    href={feed.path}
-                    className="inline-flex items-center gap-1 text-xs px-2 py-1 bg-gray-100 hover:bg-gray-200 rounded border text-gray-700"
-                  >
-                    📄 JSON
-                  </Link>
-                  
-                  <Link
-                    href={htmlUrl}
-                    className="inline-flex items-center gap-1 text-xs px-2 py-1 bg-blue-100 hover:bg-blue-200 rounded border text-blue-700"
-                  >
-                    🌐 HTML
-                  </Link>
+async function fetchExternalFeed(url: string): Promise<FeedData> {
+  const proxyUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/api/external-feed?${new URLSearchParams({ url })}`
+  const response = await fetch(proxyUrl)
+  if (!response.ok) throw new Error(`External feed fetch failed: ${response.statusText}`)
+  return response.json()
+}
 
-                  <Link
-                    href={hubUrl}
-                    className="inline-flex items-center gap-1 text-xs px-2 py-1 bg-green-100 hover:bg-green-200 rounded border text-green-700"
-                  >
-                    🧪 Analyze
-                  </Link>
+async function fetchWellKnownFeed(filename: string): Promise<FeedData> {
+  const filePath = join(process.cwd(), 'public', '.well-known', `${filename}.llmfeed.json`)
+  const fileContent = await fs.readFile(filePath, 'utf-8')
+  return JSON.parse(fileContent)
+}
 
-                  <ExportToLLMButton
-                    context="static"
-                    staticPath={displayPath}
-                    className="text-xs px-2 py-1"
-                  />
-                </div>
-              </div>
-            )
-          })}
-        </div>
-
-        {filteredFeeds.length === 0 && (
-          <div className="text-center py-12">
-            <Filter className="mx-auto w-12 h-12 text-gray-400 mb-4" />
-            <h3 className="text-lg font-semibold text-gray-600 mb-2">No feeds found</h3>
-            <p className="text-gray-500">Try adjusting your search terms or filters.</p>
-          </div>
-        )}
-      </main>
-    </>
-  )
+async function fetchLocalFeed(slug: string): Promise<FeedData> {
+  const filePath = join(process.cwd(), 'public', 'exports', `${slug}.llmfeed.json`)
+  const fileContent = await fs.readFile(filePath, 'utf-8')
+  return JSON.parse(fileContent)
 }
