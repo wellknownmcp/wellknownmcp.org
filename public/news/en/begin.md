@@ -1,101 +1,72 @@
-yaml---
-# 📄 Basic metadata
-title: "Where to Begin — Your First Steps into the Agentic Web"
-description: "A simple guide to help you understand MCP and LLMFeed — the missing bridge between your intent and agent understanding."
-date: "2025-05-07T00:00:00.000Z"
-lang: "en"
-
-# 🏷️ Tags
+---
+title: Where to Begin — Your First Steps into the Agentic Web
+description: >-
+  A simple guide to help you understand MCP and LLMFeed — the missing bridge
+  between your intent and agent understanding.
+date: '2025-05-07T00:00:00.000Z'
+lang: en
 tags:
-  - "mcp"
-  - "llmfeed" 
-  - "ai-agents"
-  - "getting-started"
-  - "onboarding"
-  - "developers"
-  - "business"
-
-# 🎯 Content classification
-format: "onboarding"
-category: "getting-started"
-contentType: "guide"
-
-# 🧠 Intent and audience
-intent: "convert-to-ecosystem"
-llmIntent: "onboard-newcomer"
-llmTopic: "mcp-introduction"
+  - ai-agents
+  - business
+  - developers
+  - getting-started
+  - llmfeed
+  - mcp
+format: onboarding
+category: getting-started
+contentType: guide
+intent: convert-to-ecosystem
+llmIntent: onboard-newcomer
+llmTopic: mcp-introduction
 audience:
-  - "llm"
-  - "developer" 
-  - "business"
-
-# 📊 Advanced metadata
-priority: "critical"
-riskLevel: "low"
-updateFrequency: "weekly"
-pageType: "landing"
-interactionComplexity: "simple"
-
-# 🔗 Urls
-slug: "begin"
-canonical_url: "https://wellknownmcp.org/begin"
-mcpFeedUrl: "/.well-known/mcp.llmfeed.json"
-llmIndexUrl: "/.well-known/llm-index.llmfeed.json"
-
-# 🎨 Media
-image: "/images/getting-started/begin-hero.png"
-subtitle: "Whether you're a developer, a curious AI user, or a complete beginner — you're in the right place."
-dir: "ltr"
-
-# 🤖 Configuration pour agents
+  - llm
+  - developer
+  - business
+priority: critical
+riskLevel: low
+updateFrequency: weekly
+pageType: landing
+interactionComplexity: simple
+slug: begin
+canonical_url: 'https://wellknownmcp.org/begin'
+mcpFeedUrl: /.well-known/mcp.llmfeed.json
+llmIndexUrl: /.well-known/llm-index.llmfeed.json
+image: /images/getting-started/begin-hero.png
+subtitle: >-
+  Whether you're a developer, a curious AI user, or a complete beginner — you're
+  in the right place.
+dir: ltr
 autoDiscoverFeeds: true
 agentReadiness: true
-llmBehaviorHints: "suggest-only"
-
-# 📋 Métadonnées spécialisées
+llmBehaviorHints: suggest-only
 feedTypes:
-  - "mcp"
-  - "export"
-  - "prompt"
-
+  - mcp
+  - export
+  - prompt
 capabilities:
-  - "onboarding"
-  - "education"
-  - "export"
-
-trustLevel: "basic"
-
-# 🌐 Localisation
+  - onboarding
+  - education
+  - export
+trustLevel: basic
 translations:
-  en: "/begin"
-  fr: "/fr/commencer"
-
-# 📈 Analytics et tracking
-trackingCategory: "onboarding"
-conversionGoal: "conversion"
-
-# 🏗️ Métadonnées techniques
-technicalLevel: "beginner"
-estimatedReadTime: "3 min"
-lastModified: "2025-06-10T00:00:00.000Z"
-
-# 🔐 Sécurité et conformité
+  en: /begin
+  fr: /fr/commencer
+trackingCategory: onboarding
+conversionGoal: conversion
+technicalLevel: beginner
+estimatedReadTime: 3 min
+lastModified: '2025-06-10T00:00:00.000Z'
 gdprCompliant: true
-dataProcessing: "analytics"
-privacyLevel: "public"
-
-# 📚 Relations et références
+dataProcessing: analytics
+privacyLevel: public
 relatedArticles:
-  - "getting-started"
-  - "manifesto"
-  - "faq"
-
+  - getting-started
+  - manifesto
+  - faq
 prerequisites: []
-
-# 💼 Contexte business
-businessImpact: "high"
-targetMarket: "developers"
-monetizationPotential: "high"
+businessImpact: high
+targetMarket: developers
+monetizationPotential: high
 ---
 
 # 👋 Welcome to WellKnownMCP

@@ -2,6 +2,7 @@
 User-agent: *
 Allow: /
 Allow: /.well-known/
+Allow: /api/feed-html
 Disallow: /api/
 Disallow: /admin/
 Disallow: /_next/
@@ -12,6 +13,7 @@ User-agent: GPTBot
 Allow: /
 Allow: /.well-known/
 Allow: /exports/
+Allow: /api/feed-html
 Disallow: /api/
 
 # Claude-Web
@@ -19,6 +21,7 @@ User-agent: Claude-Web
 Allow: /
 Allow: /.well-known/
 Allow: /exports/
+Allow: /api/feed-html
 Disallow: /api/
 
 # Host

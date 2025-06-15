@@ -4,7 +4,7 @@
         <title>News (en) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/en/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Tue, 10 Jun 2025 17:22:28 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 15 Jun 2025 20:09:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -15,6 +15,27 @@
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/llm-agent-readiness-framework-2025</guid>
             <pubDate>Sun, 15 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Exclusive framework reveals which AI models can handle structured, signed agent feeds. We expose the MCP implementation gap between chat and true autonomy — and propose the testing standard the industry needs to adopt.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[LLMFeed Manifesto: Building the Web Infrastructure for the Agentic Era]]></title>
+            <link>https://wellknownmcp.org/en/news/manifesto</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/manifesto</guid>
+            <pubDate>Sun, 15 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[The vision behind LLMFeed - enhancing Anthropic's excellent Model Context Protocol with web-native discovery, cryptographic trust, and the complete ecosystem for the emerging Agentic Web]]></description>
+        </item>
+        <item>
+            <title><![CDATA[End the Session Context Wars: Introducing session.llmfeed.json]]></title>
+            <link>https://wellknownmcp.org/en/news/user-controlled-memory</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/user-controlled-memory</guid>
+            <pubDate>Fri, 13 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[A revolutionary open standard for AI session context that puts users back in control and ends vendor lock-in]]></description>
+        </item>
+        <item>
+            <title><![CDATA[The Hidden Productivity Killer: Why Context Loss Between AI Conversations is Costing You Hours Every Week]]></title>
+            <link>https://wellknownmcp.org/en/news/ai-context-continuity-llmfeed-solution</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/ai-context-continuity-llmfeed-solution</guid>
+            <pubDate>Thu, 12 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Discover how LLMFeed solves context loss between ChatGPT, Claude, and other AI tools. Learn to maintain conversation continuity and boost AI productivity with portable session management.]]></description>
         </item>
         <item>
             <title><![CDATA[Microsoft NLWeb and LLMFeed: Complementary Standards for the Agentic Web]]></title>
@@ -329,13 +350,6 @@
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/llmfeed-block-structure</guid>
             <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Understand how each block of a .llmfeed.json works, and how to design your own feed.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Our Manifesto]]></title>
-            <link>https://wellknownmcp.org/en/news/manifesto</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/manifesto</guid>
-            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[The vision, values, and ethical commitments behind the WellKnownMCP standard.]]></description>
         </item>
         <item>
             <title><![CDATA[📢 Let’s Stop Scraping. Let’s Start Declaring.]]></title>

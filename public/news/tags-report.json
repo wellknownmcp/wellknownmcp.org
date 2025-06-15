@@ -2,11 +2,11 @@
   "global": [
     {
       "tag": "llmfeed",
-      "count": 95
+      "count": 96
     },
     {
       "tag": "mcp",
-      "count": 55
+      "count": 56
     },
     {
       "tag": "trust",
@@ -18,7 +18,7 @@
     },
     {
       "tag": "ai-agents",
-      "count": 20
+      "count": 21
     },
     {
       "tag": "core",
@@ -105,6 +105,10 @@
       "count": 5
     },
     {
+      "tag": "developers",
+      "count": 5
+    },
+    {
       "tag": "homomorphic",
       "count": 5
     },
@@ -123,10 +127,6 @@
     {
       "tag": "aio",
       "count": 5
-    },
-    {
-      "tag": "developers",
-      "count": 4
     },
     {
       "tag": "principles",
@@ -219,6 +219,10 @@
     {
       "tag": "llmfeedforge",
       "count": 3
+    },
+    {
+      "tag": "business",
+      "count": 2
     },
     {
       "tag": "aiovsseo",
@@ -417,6 +421,10 @@
       "count": 1
     },
     {
+      "tag": "getting-started",
+      "count": 1
+    },
+    {
       "tag": "agent-ready-content",
       "count": 1
     },
@@ -478,10 +486,6 @@
     },
     {
       "tag": "agentic-seo",
-      "count": 1
-    },
-    {
-      "tag": "business",
       "count": 1
     },
     {
@@ -799,11 +803,11 @@
     "en": [
       {
         "tag": "mcp",
-        "count": 37
+        "count": 38
       },
       {
         "tag": "llmfeed",
-        "count": 31
+        "count": 32
       },
       {
         "tag": "agentic-web",
@@ -815,7 +819,7 @@
       },
       {
         "tag": "ai-agents",
-        "count": 15
+        "count": 16
       },
       {
         "tag": "llm",
@@ -870,6 +874,10 @@
         "count": 3
       },
       {
+        "tag": "developers",
+        "count": 3
+      },
+      {
         "tag": "cryptographic-verification",
         "count": 3
       },
@@ -890,10 +898,6 @@
         "count": 2
       },
       {
-        "tag": "developers",
-        "count": 2
-      },
-      {
         "tag": "core",
         "count": 2
       },
@@ -903,6 +907,10 @@
       },
       {
         "tag": "ai-infrastructure",
+        "count": 2
+      },
+      {
+        "tag": "business",
         "count": 2
       },
       {
@@ -1018,6 +1026,10 @@
         "count": 1
       },
       {
+        "tag": "getting-started",
+        "count": 1
+      },
+      {
         "tag": "agent-ready-content",
         "count": 1
       },
@@ -1099,10 +1111,6 @@
       },
       {
         "tag": "agentic-seo",
-        "count": 1
-      },
-      {
-        "tag": "business",
         "count": 1
       },
       {

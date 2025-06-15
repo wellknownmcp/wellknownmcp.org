@@ -227,21 +227,6 @@
     "enriched_tags": []
   },
   {
-    "path": "demo/kungfu-unsigned.llmfeed.json",
-    "slug": "demo/kungfu-unsigned",
-    "feed_type": "example",
-    "signed": false,
-    "certified": false,
-    "size": "0.8",
-    "title": "Kung Fu Mode Activated",
-    "description": "Playful demo feed. Shows how a minimal llmfeed.json works with signature and certification.",
-    "mechanical_tags": [
-      "example",
-      "unsigned"
-    ],
-    "enriched_tags": []
-  },
-  {
     "path": "demo/kungfu.llmfeed.json",
     "slug": "demo/kungfu",
     "feed_type": "example",

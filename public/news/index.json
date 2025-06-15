@@ -48,6 +48,61 @@
       }
     },
     {
+      "slug": "manifesto",
+      "title": "LLMFeed Manifesto: Building the Web Infrastructure for the Agentic Era",
+      "description": "The vision behind LLMFeed - enhancing Anthropic's excellent Model Context Protocol with web-native discovery, cryptographic trust, and the complete ecosystem for the emerging Agentic Web",
+      "date": "2025-06-15",
+      "tags": [
+        "agent-infrastructure",
+        "agentic-web",
+        "anthropic",
+        "community",
+        "cryptographic-verification",
+        "governance",
+        "homomorphic-encryption",
+        "innovation",
+        "llmfeed",
+        "manifesto",
+        "mcp",
+        "privacy",
+        "progressive-enhancement",
+        "trust"
+      ],
+      "excerpt": " 📜 LLMFeed Manifesto: Building the Web Infrastructure for the Agentic Era Building on Anthropic's excellent Model Context Protocol with the missing webnative infrastructure for the emerging Agentic W",
+      "format": "manifesto",
+      "category": "foundational",
+      "intent": "inspire-and-mobilize",
+      "llmIntent": "understand-collaborative-vision",
+      "audience": [
+        "llm",
+        "developer",
+        "business",
+        "researcher",
+        "regulator",
+        "community"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "9 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "critical",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 90,
+      "translations": {
+        "en": "/en/news/manifesto",
+        "fr": "/fr/news/manifesto",
+        "es": "/es/news/manifesto",
+        "hi": "/hi/news/manifesto",
+        "zh": "/zh/news/manifesto",
+        "ar": "/ar/news/manifesto",
+        "uk": "/uk/news/manifesto"
+      }
+    },
+    {
       "slug": "user-controlled-memory",
       "title": "End the Session Context Wars: Introducing session.llmfeed.json",
       "description": "A revolutionary open standard for AI session context that puts users back in control and ends vendor lock-in",
@@ -1856,46 +1911,6 @@
         "hi": "/hi/news/llmfeed-block-structure",
         "zh": "/zh/news/llmfeed-block-structure",
         "uk": "/uk/news/llmfeed-block-structure"
-      }
-    },
-    {
-      "slug": "manifesto",
-      "title": "Our Manifesto",
-      "description": "The vision, values, and ethical commitments behind the WellKnownMCP standard.",
-      "date": "2025-05-21",
-      "tags": [
-        "ethics",
-        "llmfeed",
-        "manifesto",
-        "principles"
-      ],
-      "excerpt": "\r  🧭 The WellKnownMCP Manifesto\r",
-      "format": "news",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "3 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 52,
-      "translations": {
-        "en": "/en/news/manifesto",
-        "fr": "/fr/news/manifesto",
-        "es": "/es/news/manifesto",
-        "hi": "/hi/news/manifesto",
-        "zh": "/zh/news/manifesto",
-        "ar": "/ar/news/manifesto",
-        "uk": "/uk/news/manifesto"
       }
     },
     {
@@ -5151,7 +5166,7 @@
     }
   ],
   "_meta": {
-    "generated_at": "2025-06-14T16:59:30.570Z",
+    "generated_at": "2025-06-15T20:09:22.103Z",
     "total_articles": 135,
     "global_avg_score": 51,
     "languages": [

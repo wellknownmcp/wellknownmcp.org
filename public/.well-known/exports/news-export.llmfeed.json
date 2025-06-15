@@ -5,7 +5,7 @@
     "title": "WellKnownMCP News Archive - Complete Export",
     "description": "Complete archive of all WellKnownMCP news articles, tutorials, and advocacy pieces about the agentic web and MCP standards",
     "version": "1.0.0",
-    "generated_at": "2025-06-14T16:59:31.491Z",
+    "generated_at": "2025-06-15T20:09:22.952Z",
     "language": "en",
     "content_type": "news_archive",
     "total_articles": 57
@@ -94,6 +94,66 @@
           "agent_readiness": true
         },
         "canonical_url": "https://wellknownmcp.org/en/news/llm-agent-readiness-framework-2025",
+        "author": "WellKnownMCP Team",
+        "last_modified": "2025-06-15",
+        "capabilities": [],
+        "feed_types": []
+      },
+      {
+        "slug": "manifesto",
+        "title": "LLMFeed Manifesto: Building the Web Infrastructure for the Agentic Era",
+        "description": "The vision behind LLMFeed - enhancing Anthropic's excellent Model Context Protocol with web-native discovery, cryptographic trust, and the complete ecosystem for the emerging Agentic Web",
+        "date": "2025-06-15",
+        "categories": [
+          "foundational"
+        ],
+        "tags": [
+          "agent-infrastructure",
+          "agentic-web",
+          "anthropic",
+          "community",
+          "cryptographic-verification",
+          "governance",
+          "homomorphic-encryption",
+          "innovation",
+          "llmfeed",
+          "manifesto",
+          "mcp",
+          "privacy",
+          "progressive-enhancement",
+          "trust"
+        ],
+        "type": "manifesto",
+        "content": "## 📜 LLMFeed Manifesto: Building the Web Infrastructure for the Agentic Era\n\n*Building on Anthropic's excellent Model Context Protocol with the missing web-native infrastructure for the emerging Agentic Web.*\n\n---\n\n## 🎯 Our Mission: Extending Excellent Foundations\n\n**Anthropic created something remarkable** with the Model Context Protocol ([modelcontextprotocol.io](https://modelcontextprotocol.io)) — an elegant, robust foundation for agent-tool communication. \n\n**Our mission**: Extend this excellent foundation with the missing web-native layer that enables global discovery, cryptographic trust, and autonomous agent operation at internet scale.\n\n**We're not replacing anything. We're completing the ecosystem.**\n\n---\n\n## 🤝 Building on Anthropic's Excellence\n\n### **What Anthropic MCP Does Brilliantly**\n\n- ✅ **Outstanding tool calling protocol** (JSON-RPC foundation)\n- ✅ **Robust server-model integration** (stdin/stdout transport)\n- ✅ **Clear resource management** (tools, resources, prompts)\n- ✅ **Thoughtful authentication flows** (secure local configurations)\n- ✅ **Excellent developer experience** (SDKs, documentation, examples)\n\n### **What LLMFeed Adds to Complete the Vision**\n\n- 🌐 **Web-native discovery** (`.well-known/` standard)\n- 🔐 **Cryptographic trust infrastructure** (Ed25519 + LLMCA)\n- 🌍 **Multi-LLM compatibility** (beyond Claude ecosystem)\n- 🔄 **Progressive enhancement strategy** (maintains full MCP compatibility)\n- 🧬 **Privacy-preserving capabilities** (homomorphic encryption)\n\n**Together**: Complete agent-ready infrastructure from local tools to global web.\n\n---\n\n## 🚀 The Paradigm Shift: From SEO to AIO\n\n### **Today's Web (Human-Centric)**\n\n- **SEO**: Search Engine Optimization for human discovery\n- **HTML**: Structure for human consumption \n- **Trust**: Implicit, based on domain reputation\n- **Interaction**: Manual, synchronous, click-driven\n\n### **Tomorrow's Agentic Web (Agent-Native)**\n\n- **AIO**: Agentic Information Optimization for agent discovery\n- **LLMFeed**: Structure for agent comprehension (building on MCP)\n- **Trust**: Explicit, cryptographically verifiable\n- **Interaction**: Autonomous, asynchronous, goal-driven\n\n**We're building the web layer for Anthropic's excellent agent foundations.**\n\n---\n\n## 🧬 What Makes LLMFeed Revolutionary\n\n### **🔐 Cryptographic Trust by Design**\n\nUnlike traditional web protocols, every LLMFeed carries its **trust DNA**:\n\n```json\n{\n \"trust\": {\n \"signed_blocks\": [\"capabilities\", \"trust\"],\n \"certifier\": \"https://llmca.org\",\n \"algorithm\": \"ed25519\"\n },\n \"signature\": {\n \"value\": \"cryptographic_proof_of_integrity\",\n \"created_at\": \"2025-06-10T14:30:00Z\"\n }\n}\n```\n\n**Result**: Agents can verify data integrity **without trusting the transport layer**.\n\n### **🧠 Progressive Disclosure by Audience**\n\nTraditional APIs serve the same content to everyone. LLMFeed serves **contextually appropriate content**:\n\n```json\n{\n \"data\": {\n \"technical_docs\": {\n \"content\": \"API documentation...\",\n \"audience\": [\"developer\"]\n },\n \"agent_actions\": {\n \"content\": \"Executable commands...\",\n \"audience\": [\"llm\"]\n }\n }\n}\n```\n\n**Result**: Developers see documentation, agents see actions. **Optimal UX for each user type.**\n\n### **🛡️ Homomorphic Encryption for Privacy-Preserving AI**\n\nOur most disruptive innovation enables agents to **compute on encrypted data**:\n\n```json\n{\n \"homomorphic_encryption\": {\n \"applied_to\": [\"data\"],\n \"algorithm\": \"BFV\",\n \"notes\": \"Agents process without seeing raw data\"\n }\n}\n```\n\n**Result**: Healthcare, finance, and legal agents can collaborate **without compromising privacy**.\n\n### **⚡ Enterprise-Grade APIs with Native Security**\n\nBuilding on MCP's security model with web-scale features:\n\n```json\n{\n \"rate_limits\": {\n \"path\": \"/api/query\",\n \"limit\": 100,\n \"remaining\": 23,\n \"period\": \"hourly\"\n },\n \"authentication\": {\n \"type\": \"bearer\",\n \"scope\": \"read:public\"\n }\n}\n```\n\n**Result**: Enterprise security at web scale, compatible with MCP's excellent local security.\n\n---\n\n## 🌟 Our Three-Pillar Ecosystem\n\n### **1. 🏛️ LLMCA: The Trust Authority**\n\n- **Third-party certification** for feeds and capabilities\n- **Community governance** model \n- **Decentralized flagging** system for suspicious content\n- **Trust scoring** algorithm (4-level dynamic assessment)\n\n### **2. 🛠️ LLMFeedForge: The Developer Experience**\n\n- **Visual feed editor** with real-time validation\n- **SDK ecosystem** (Python, TypeScript, more coming)\n- **VS Code & Chrome extensions** for seamless integration\n- **MIME type support** for native web recognition\n\n### **3. 📚 WellKnownMCP: The Living Specification**\n\n- **12 specialized feed types** extending MCP concepts\n- **Extensible architecture** for future innovations\n- **OpenAPI hybridization** for maximum compatibility\n- **Community-driven evolution** through open governance\n\n---\n\n## 📊 Proof of Momentum: Real-World Impact\n\n### **🚀 Adoption Metrics**\n\n- **>1,000 downloads/week** for Python/TypeScript SDKs\n- **>50 websites** with integrated Export Button\n- **12 French startups** using LLMFeed in production\n- **8 organizations** pursuing LLMCA certification\n\n### **🎯 Technical Validation**\n\n- **Major LLMs natively understand** LLMFeed format\n- **IANA MIME type submission** in progress (`application/llmfeed+json`)\n- **Swagger/Postman integration** for hybrid OpenAPI workflows\n- **Chrome DevTools extension** for developer inspection\n\n### **🌍 Enterprise Adoption**\n\n- **OVHcloud** validated proof of concept\n- **Healthcare pilots** using homomorphic encryption\n- **Financial services** implementing trust scoring\n- **Government agencies** exploring cross-agency pipelines\n\n---\n\n## 🌐 Ecosystem Collaboration: Building Together\n\n### **🤝 Complementing Anthropic's MCP**\n\n**Anthropic MCP** provides the **excellent foundation**:\n- Outstanding tool calling protocol\n- Robust local configurations\n- Excellent developer experience\n- Clear security model\n\n**LLMFeed adds the web layer**:\n- Global discovery via `.well-known/`\n- Cryptographic verification infrastructure\n- Multi-LLM compatibility\n- Progressive enhancement path\n\n**Together**: Complete agent infrastructure from local tools to global web.\n\n### **🌟 Synergy with Microsoft NLWeb**\n\n- **LLMFeed**: Universal data format + trust infrastructure\n- **NLWeb**: Conversational interfaces for websites\n- **Collaboration**: NLWeb can use MCP transport, LLMFeed provides data format\n- **Result**: Enhanced ecosystem where everyone wins\n\n### **🔄 Integration with Traditional Systems**\n\n- **OpenAPI**: Technical schemas remain valuable\n- **Schema.org**: Structured data has its place\n- **JSON-LD**: Semantic web integration\n- **Progressive enhancement**: Works with everything, better with LLMFeed\n\n---\n\n## 🔮 Our 2026 Vision: Complete Agentic Infrastructure\n\n### **Q3 2025: Multimodal Revolution**\n\n- **Image, audio, video feeds** with cryptographic verification\n- **Cross-media agent workflows** (text → voice → action)\n- **Creative AI pipelines** with provenance tracking\n\n### **Q4 2025: Blockchain Integration**\n\n- **Immutable feed notarization** on decentralized networks\n- **Smart contract integration** for automated agent transactions \n- **Decentralized governance** for community-driven standards\n\n### **Q1 2026: Real-Time Collaborative Agents**\n\n- **Live feed streaming** for dynamic agent coordination\n- **Multi-agent consensus protocols** with conflict resolution\n- **Distributed computation** across agent networks\n\n### **Q2 2026: LLMFeed Network (.mcp TLD)**\n\n- **Native agent internet** with dedicated top-level domain\n- **Mesh networking** for autonomous agent discovery\n- **Economic protocols** for agent-to-agent value exchange\n\n---\n\n## 🧭 Core Principles That Guide Us\n\n### **1. Collaboration Over Competition**\n\nWe build **with** the ecosystem, not against it. Anthropic's MCP is excellent — we extend it.\n\n### **2. Trust Over Convenience**\n\nEvery feature prioritizes **verifiable integrity** over ease of implementation.\n\n### **3. Agents Are First-Class Citizens**\n\nWe design for agents first, humans second. Building on MCP's agent-centric philosophy.\n\n### **4. Privacy by Architecture**\n\nHomomorphic encryption isn't a feature — it's a fundamental right in the age of AI.\n\n### **5. Community Over Control**\n\nOpen governance, decentralized certification, distributed moderation. Building on open standards.\n\n---\n\n## 🚫 What We Refuse to Build\n\n### **❌ Competition with Excellent Existing Standards**\n\n- We complement, don't compete with Anthropic's MCP\n- We enhance, don't replace successful protocols\n- We collaborate, don't fragment the ecosystem\n\n### **❌ Another Walled Garden**\n\n- No vendor lock-in\n- No proprietary extensions\n- No closed certification authorities\n\n### **❌ Surveillance Infrastructure**\n\n- Privacy-preserving by design\n- Minimal data collection\n- User consent over platform profit\n\n### **❌ Complexity for Its Own Sake**\n\n- Simple adoption path\n- Progressive enhancement\n- Backward compatibility\n\n---\n\n## 🤝 Join the Collaborative Vision\n\n### **For Developers**\n\n- **Start small**: Add `.well-known/mcp.llmfeed.json` to complement your MCP setup\n- **Go deep**: Implement homomorphic encryption for sensitive data\n- **Build bridges**: Create tools that work with both MCP and LLMFeed\n\n### **For Enterprises**\n\n- **Pilot LLMCA certification** for your critical services\n- **Explore agent-to-agent workflows** building on MCP foundations\n- **Shape the standards** through enterprise consortium membership\n\n### **For Researchers**\n\n- **Extend both specifications** with domain-specific innovations\n- **Validate security models** through academic research\n- **Pioneer new use cases** in privacy-preserving AI\n\n### **For the MCP Community**\n\n- **Bridge the gap** between local MCP and web-scale deployment\n- **Contribute to compatibility** between MCP and LLMFeed\n- **Shape the future** of agent infrastructure together\n\n---\n\n## 🌍 The Stakes: Why Collaboration Matters\n\n**The next decade will determine whether the Agentic Web becomes:**\n\n### **🌟 The Vision We're Building Together**\n\n- **Open, verifiable, agent-native infrastructure** (building on MCP)\n- **Privacy-preserving AI collaboration** across platforms\n- **Democratic governance of digital standards** \n- **Innovation accessible to everyone**\n\n### **🚨 The Alternative We're Preventing**\n\n- **Fragmented agent ecosystems** that don't interoperate\n- **Surveillance capitalism in the age of agents**\n- **Closed AI platforms controlling access**\n- **Innovation monopolized by tech giants**\n\n---\n\n## 🎯 Our Commitment: The LLMFeed Pledge\n\n**We commit to building infrastructure that:**\n\n1. **Enhances existing excellent protocols** like Anthropic's MCP\n2. **Makes trust measurable and verifiable**\n3. **Preserves privacy through advanced cryptography**\n4. **Remains open and community-governed**\n5. **Enables innovation through collaboration**\n\n**We pledge that LLMFeed will always:**\n\n- **Complement, not compete** with excellent existing standards\n- **Maintain compatibility** with MCP and other protocols\n- **Prioritize collaboration** over market dominance\n- **Serve the community** over corporate interests\n\n---\n\n## 🚀 The Future We're Building Together\n\n**Every `.llmfeed.json` feed you create extends the open Agentic Web.**\n\n**Every signature you verify strengthens the trust infrastructure.**\n\n**Every agent that speaks both MCP and LLMFeed advances collaborative AI.**\n\nThe infrastructure of tomorrow is built through collaboration, not competition. \n**It's built by communities working together, one protocol at a time.**\n\n---\n\n## 🔗 Join the Collaborative Movement\n\n- 🌐 **LLMFeed Specification**: [wellknownmcp.org/spec](https://wellknownmcp.org/spec)\n- 🏗️ **Anthropic MCP**: [modelcontextprotocol.io](https://modelcontextprotocol.io)\n- 🛠️ **Developer Tools**: [wellknownmcp.org/tools](https://wellknownmcp.org/tools)\n- 🏛️ **LLMCA Certification**: [llmca.org](https://llmca.org/)\n- 🧪 **Playground**: [llmfeedforge.org](https://llmfeedforge.org/)\n- 💬 **Community**: [wellknownmcp.org/join](https://wellknownmcp.org/join)\n\n---\n\n**The Agentic Web is being built by many hands.** \n**Anthropic laid excellent foundations. We're adding the web-native layer.** \n**Together, we're creating infrastructure that serves everyone.**\n\n**With LLMFeed, we choose collaboration, cryptographic integrity, and community governance — building on the excellent work of pioneers like Anthropic.**\n\n**Join us. Tomorrow's internet is being built together, today.**\n\n---\n\n*This manifesto is a living document, evolved through community collaboration. Like the LLMFeed specification itself, it grows through partnership with excellent existing standards. Version: 2.1 — Updated for collaborative ecosystem leadership.*",
+        "concepts": [
+          "agent-infrastructure",
+          "agentic-web",
+          "anthropic",
+          "community",
+          "cryptographic-verification",
+          "governance",
+          "homomorphic-encryption",
+          "innovation"
+        ],
+        "intent": "inspire-and-mobilize",
+        "llm_intent": "understand-collaborative-vision",
+        "audience": [
+          "llm",
+          "developer",
+          "business",
+          "researcher",
+          "regulator",
+          "community"
+        ],
+        "metadata": {
+          "source_file": "manifesto.md",
+          "content_quality_score": 90,
+          "technical_level": "beginner",
+          "business_impact": "low",
+          "priority": "critical",
+          "agent_readiness": true
+        },
+        "canonical_url": "https://wellknownmcp.org/en/news/manifesto",
         "author": "WellKnownMCP Team",
         "last_modified": "2025-06-15",
         "capabilities": [],
@@ -2398,51 +2458,6 @@
         "feed_types": []
       },
       {
-        "slug": "manifesto",
-        "title": "Our Manifesto",
-        "description": "The vision, values, and ethical commitments behind the WellKnownMCP standard.",
-        "date": "2025-05-21",
-        "categories": [
-          "general"
-        ],
-        "tags": [
-          "ethics",
-          "llmfeed",
-          "manifesto",
-          "principles"
-        ],
-        "type": "news",
-        "content": "---\r\ntitle: Our Manifesto\r\ndescription: 'The vision, values, and ethical commitments behind the WellKnownMCP standard.'\r\ndate: '2025-05-21'\r\ntags:\r\n - ethics\r\n - llmfeed\r\n - manifesto\r\n - principles\r\nlang: en\r\n---\r\n\r\n## 🧭 The WellKnownMCP Manifesto\r\n\r\n## Our Vision\r\n\r\nWe believe the future of digital interaction depends on **open, explicit, agent-readable standards**.\r\n\r\nAs LLMs, copilots and agents become part of everyday digital life, we must design for **clarity**, not guesswork. \r\nFor **trust**, not opacity. \r\nFor **interoperability**, not fragmentation.\r\n\r\nThat’s what **WellKnownMCP** sets out to do:\r\n- Let any domain **declare what it offers**\r\n- Let any agent **verify, interpret, and interact with trust**\r\n- Let any human **inspect, publish, and extend the protocol**\r\n\r\n---\r\n\r\n## 🔍 Our Core Values\r\n\r\n### 1. **Absolute Transparency**\r\nWe believe that every `.llmfeed.json` capsule should clearly declare its intent, contents, and trust status.\r\n\r\nAgents should never rely on hallucination or scraping. \r\nThey should rely on **structured declarations**.\r\n\r\n### 2. **Universal Interoperability**\r\nWe reject the idea that every app needs custom code to speak to every LLM.\r\n\r\nInstead, we expose a **common language**: \r\n- Open-source \r\n- Human-readable \r\n- Agent-usable \r\n- Already interpreted by top LLMs (ChatGPT, Claude, etc.)\r\n\r\n### 3. **Pragmatic Minimalism**\r\nOur standard is designed to be:\r\n- Simple to adopt \r\n- Easy to validate \r\n- Usable without backend logic \r\n- Compatible with existing tools and platforms\r\n\r\nYou can start with a single `.llmfeed.json` file. \r\nAnd grow from there.\r\n\r\n---\r\n\r\n## 🧠 Ethics by Design\r\n\r\nMCP is **open** — but not **neutral**.\r\n\r\nIt encodes:\r\n- Trust instead of obscurity \r\n- Consent instead of default collection \r\n- Identity without surveillance \r\n- Portability without platform lock-in\r\n\r\nEvery feed, every export, every agent interaction **carries an ethical fingerprint**. \r\nThat fingerprint is yours.\r\n\r\n---\r\n\r\n## ✊ Our Commitments\r\n\r\nWe are committed to:\r\n\r\n- **Transparency** \r\n Declaring all intentions, capabilities, and limitations in the feeds and indexes.\r\n\r\n- **Accountability** \r\n Verifiable signatures, clear trust scopes, and certifiable content blocks.\r\n\r\n- **Privacy and Security** \r\n Minimizing data collection, maximizing clarity, supporting scoped access and consent flags.\r\n\r\n- **Open Dialogue** \r\n We invite civic actors, researchers, platforms and developers to critique and improve the protocol.\r\n\r\n---\r\n\r\n## 🌱 Adoption Without Friction\r\n\r\nYou don’t need a server. \r\nYou don’t need to register. \r\nYou don’t need a specific LLM.\r\n\r\nYou just need to expose a file: `.well-known/llmfeed.json`\r\n\r\nStart small. \r\nSign it if you want. \r\nCertify it if you need. \r\nUpdate it as you grow.\r\n\r\n---\r\n\r\n## 🔗 The Web Was Meant to Be Inspectable\r\n\r\nWe believe in a web that:\r\n- Declares what it is\r\n- Shares what it knows\r\n- Makes its intentions explicit\r\n\r\nThis manifesto is not a final declaration. \r\nIt’s a living guide — and a call to build a **softer, agent-readable web**.\r\n\r\nJoin us: [wellknownmcp.org](https://wellknownmcp.org)",
-        "concepts": [
-          "ethics",
-          "llmfeed",
-          "manifesto",
-          "principles",
-          "wellknownmcp",
-          "vision",
-          "core",
-          "values"
-        ],
-        "intent": "inform",
-        "llm_intent": "browse-news-article",
-        "audience": [
-          "llm"
-        ],
-        "metadata": {
-          "source_file": "manifesto.md",
-          "content_quality_score": 52,
-          "technical_level": "beginner",
-          "business_impact": "low",
-          "priority": "normal",
-          "agent_readiness": true
-        },
-        "canonical_url": "https://wellknownmcp.org/en/news/manifesto",
-        "author": "WellKnownMCP Team",
-        "last_modified": "2025-05-21",
-        "capabilities": [],
-        "feed_types": []
-      },
-      {
         "slug": "opinion-stop-scraping",
         "title": "📢 Let’s Stop Scraping. Let’s Start Declaring.",
         "description": "A call for clarity: why scraping fails, and how MCP offers a better way.",
@@ -2779,10 +2794,10 @@
           21,
           22,
           23,
-          24
+          24,
+          25
         ],
         "2025-05": [
-          25,
           26,
           27,
           28,
@@ -2819,15 +2834,14 @@
       "by_category": {
         "general": [
           0,
-          1,
-          4,
-          6,
+          2,
+          5,
           7,
           8,
           9,
           10,
           11,
-          13,
+          12,
           14,
           15,
           16,
@@ -2872,36 +2886,39 @@
           55,
           56
         ],
+        "foundational": [
+          1
+        ],
         "ai-productivity": [
-          2
+          3
         ],
         "technical": [
-          3,
-          5
+          4,
+          6
         ],
         "implementation": [
-          12
+          13
         ]
       },
       "by_tag": {
         "agent-interoperability": [
           0,
-          31
+          32
         ],
         "agent-readiness": [
           0
         ],
         "agentic-web": [
           0,
-          3,
-          7,
-          9,
-          13,
+          1,
+          4,
+          8,
+          10,
           14,
           15,
           16,
           17,
-          23,
+          18,
           24,
           25,
           26,
@@ -2913,6 +2930,7 @@
           32,
           33,
           34,
+          35,
           50
         ],
         "ai-agent-testing": [
@@ -2920,19 +2938,20 @@
         ],
         "ai-infrastructure": [
           0,
-          31
+          32
         ],
         "ai-standards": [
           0,
-          23,
-          26
+          24,
+          27
         ],
         "ai-testing-framework": [
           0
         ],
         "cryptographic-verification": [
           0,
-          31
+          1,
+          32
         ],
         "enterprise-ai-adoption": [
           0
@@ -2945,7 +2964,7 @@
         ],
         "mcp-implementation": [
           0,
-          18
+          19
         ],
         "model-comparison": [
           0
@@ -2956,94 +2975,54 @@
         "trust-verification": [
           0
         ],
-        "ai-platforms": [
+        "agent-infrastructure": [
           1
         ],
-        "data-ownership": [
-          1
-        ],
-        "interoperability": [
+        "anthropic": [
           1,
-          3,
-          21,
-          23,
-          24,
-          33,
-          43
+          18,
+          28,
+          44
         ],
-        "open-standards": [
+        "community": [
+          1
+        ],
+        "governance": [
+          1
+        ],
+        "homomorphic-encryption": [
+          1
+        ],
+        "innovation": [
           1,
-          7,
-          23,
-          43
-        ],
-        "session.llmfeed.json": [
-          1
-        ],
-        "user-control": [
-          1
-        ],
-        "vendor-lock-in": [
-          1
-        ],
-        "ai-agents": [
-          2,
-          3,
-          5,
-          10,
-          13,
-          21,
-          25,
-          36,
-          37,
-          38,
-          40,
-          41,
-          42,
-          43,
-          53
-        ],
-        "aiworkflow": [
-          2
-        ],
-        "chatgpt": [
-          2
-        ],
-        "claude": [
-          2,
-          14,
-          27,
-          35,
-          43
-        ],
-        "contextsharing": [
-          2
+          15,
+          17
         ],
         "llmfeed": [
-          2,
+          1,
           3,
-          5,
-          7,
-          9,
+          4,
+          6,
+          8,
           10,
-          14,
+          11,
           15,
           16,
           17,
-          19,
+          18,
           20,
           21,
           22,
-          32,
+          23,
           33,
-          36,
+          34,
           37,
           38,
-          40,
+          39,
           41,
           42,
           43,
-          45,
+          44,
           46,
           47,
           48,
@@ -3052,38 +3031,23 @@
           55,
           56
         ],
-        "productivity": [
-          2
-        ],
-        "techinnovation": [
-          2
-        ],
-        "certification": [
-          3,
-          20,
-          23,
-          24,
-          29,
-          41,
-          43,
-          44
-        ],
-        "developers": [
-          3,
-          5
+        "manifesto": [
+          1,
+          15,
+          17
         ],
         "mcp": [
-          3,
-          5,
-          7,
-          9,
-          11,
-          13,
+          1,
+          4,
+          6,
+          8,
+          10,
+          12,
           14,
           15,
           16,
           17,
-          19,
+          18,
           20,
           21,
           22,
@@ -3096,376 +3060,445 @@
           29,
           30,
           31,
-          33,
+          32,
           34,
           35,
           36,
           37,
           38,
-          40,
+          39,
           41,
           42,
           43,
+          44,
           50,
           52,
           53
         ],
-        "microsoft": [
-          3
+        "privacy": [
+          1,
+          33
         ],
-        "nlweb": [
-          3
-        ],
-        "signature": [
-          3,
-          22,
-          24,
-          35,
-          44
+        "progressive-enhancement": [
+          1
         ],
         "trust": [
-          3,
-          7,
-          9,
+          1,
+          4,
+          8,
           10,
           11,
-          15,
-          21,
-          23,
+          12,
+          16,
+          22,
           24,
-          29,
-          32,
-          34,
-          36,
+          25,
+          30,
+          33,
+          35,
           37,
           38,
-          40,
+          39,
           41,
           42,
-          44,
+          43,
+          45,
           50
         ],
-        "agentic-seo": [
-          5
+        "ai-platforms": [
+          2
         ],
-        "business": [
-          5
+        "data-ownership": [
+          2
         ],
-        "llm": [
-          5,
-          9,
-          11,
+        "interoperability": [
+          2,
+          4,
           22,
-          23,
+          24,
           25,
-          27,
-          28,
-          30,
           34,
-          35
+          44
         ],
-        "search": [
-          5,
-          28
-        ],
-        "web-optimization": [
-          5
-        ],
-        "agentic web": [
-          10
-        ],
-        "drones": [
-          10
-        ],
-        "hybrid warfare": [
-          10
-        ],
-        "ukraine": [
-          10
-        ],
-        "autonomous-agents": [
-          13
-        ],
-        "chatbots": [
-          13
-        ],
-        "innovation": [
-          14,
-          16
-        ],
-        "manifesto": [
-          14,
-          16,
-          49
-        ],
-        "implementation": [
-          15
-        ],
-        "anthropic": [
-          17,
-          27,
-          43
-        ],
-        "bottom-up": [
-          17
-        ],
-        "grassroots": [
-          17
-        ],
-        "open-web": [
-          17
-        ],
-        "web-standards": [
-          17
-        ],
-        "agent-ready-content": [
-          18
-        ],
-        "agent-ux": [
-          18
-        ],
-        "ai-integration": [
-          18
-        ],
-        "business-adoption": [
-          18
-        ],
-        "clipboard-api": [
-          18
-        ],
-        "content-export": [
-          18
-        ],
-        "developer-tools": [
-          18
-        ],
-        "exporttollm": [
-          18
-        ],
-        "llmfeed-export": [
-          18
-        ],
-        "one-click-export": [
-          18
-        ],
-        "platform-integration": [
-          18
-        ],
-        "structured-data": [
-          18
-        ],
-        "viral-strategy": [
-          18
-        ],
-        "web-scraping-alternative": [
-          18
-        ],
-        "agent-ready": [
-          19
-        ],
-        "ai-efficiency": [
-          19
-        ],
-        "declarative-web": [
-          19
-        ],
-        "implementation-guide": [
-          19
-        ],
-        "llm-costs": [
-          19
-        ],
-        "trust-networks": [
-          19
-        ],
-        "web-grammar": [
-          19
-        ],
-        "agent-behavior": [
-          20
-        ],
-        "feed-type": [
-          20
-        ],
-        "behavior": [
-          21
-        ],
-        "deepsearch": [
-          21
-        ],
-        "guidance": [
-          21
-        ],
-        "llmca": [
-          21,
+        "open-standards": [
+          2,
+          8,
           24,
-          34,
-          35
+          44
         ],
-        "canonicalization": [
-          22
+        "session.llmfeed.json": [
+          2
         ],
-        "alibaba": [
-          23
+        "user-control": [
+          2
         ],
-        "asia": [
-          23
+        "vendor-lock-in": [
+          2
         ],
-        "baidu": [
-          23
-        ],
-        "china": [
-          23
-        ],
-        "douyin": [
-          23
-        ],
-        "kakao": [
-          23
-        ],
-        "line": [
-          23
-        ],
-        "llmfeedforge": [
-          23,
-          24
-        ],
-        "mcp-net": [
-          23,
-          24
-        ],
-        "samsung": [
-          23
-        ],
-        "wechat": [
-          23
-        ],
-        "well-known": [
-          23,
-          24,
-          36,
+        "ai-agents": [
+          3,
+          4,
+          6,
+          11,
+          14,
+          22,
+          26,
           37,
           38,
-          40,
+          39,
+          41,
+          42,
+          43,
+          44,
+          53
+        ],
+        "aiworkflow": [
+          3
+        ],
+        "chatgpt": [
+          3
+        ],
+        "claude": [
+          3,
+          15,
+          28,
+          36,
+          44
+        ],
+        "contextsharing": [
+          3
+        ],
+        "productivity": [
+          3
+        ],
+        "techinnovation": [
+          3
+        ],
+        "certification": [
+          4,
+          21,
+          24,
+          25,
+          30,
+          42,
+          44,
+          45
+        ],
+        "developers": [
+          4,
+          6
+        ],
+        "microsoft": [
+          4
+        ],
+        "nlweb": [
+          4
+        ],
+        "signature": [
+          4,
+          23,
+          25,
+          36,
+          45
+        ],
+        "agentic-seo": [
+          6
+        ],
+        "business": [
+          6
+        ],
+        "llm": [
+          6,
+          10,
+          12,
+          23,
+          24,
+          26,
+          28,
+          29,
+          31,
+          35,
+          36
+        ],
+        "search": [
+          6,
+          29
+        ],
+        "web-optimization": [
+          6
+        ],
+        "agentic web": [
+          11
+        ],
+        "drones": [
+          11
+        ],
+        "hybrid warfare": [
+          11
+        ],
+        "ukraine": [
+          11
+        ],
+        "autonomous-agents": [
+          14
+        ],
+        "chatbots": [
+          14
+        ],
+        "implementation": [
+          16
+        ],
+        "bottom-up": [
+          18
+        ],
+        "grassroots": [
+          18
+        ],
+        "open-web": [
+          18
+        ],
+        "web-standards": [
+          18
+        ],
+        "agent-ready-content": [
+          19
+        ],
+        "agent-ux": [
+          19
+        ],
+        "ai-integration": [
+          19
+        ],
+        "business-adoption": [
+          19
+        ],
+        "clipboard-api": [
+          19
+        ],
+        "content-export": [
+          19
+        ],
+        "developer-tools": [
+          19
+        ],
+        "exporttollm": [
+          19
+        ],
+        "llmfeed-export": [
+          19
+        ],
+        "one-click-export": [
+          19
+        ],
+        "platform-integration": [
+          19
+        ],
+        "structured-data": [
+          19
+        ],
+        "viral-strategy": [
+          19
+        ],
+        "web-scraping-alternative": [
+          19
+        ],
+        "agent-ready": [
+          20
+        ],
+        "ai-efficiency": [
+          20
+        ],
+        "declarative-web": [
+          20
+        ],
+        "implementation-guide": [
+          20
+        ],
+        "llm-costs": [
+          20
+        ],
+        "trust-networks": [
+          20
+        ],
+        "web-grammar": [
+          20
+        ],
+        "agent-behavior": [
+          21
+        ],
+        "feed-type": [
+          21
+        ],
+        "behavior": [
+          22
+        ],
+        "deepsearch": [
+          22
+        ],
+        "guidance": [
+          22
+        ],
+        "llmca": [
+          22,
+          25,
+          35,
+          36
+        ],
+        "canonicalization": [
+          23
+        ],
+        "alibaba": [
+          24
+        ],
+        "asia": [
+          24
+        ],
+        "baidu": [
+          24
+        ],
+        "china": [
+          24
+        ],
+        "douyin": [
+          24
+        ],
+        "kakao": [
+          24
+        ],
+        "line": [
+          24
+        ],
+        "llmfeedforge": [
+          24,
+          25
+        ],
+        "mcp-net": [
+          24,
+          25
+        ],
+        "samsung": [
+          24
+        ],
+        "wechat": [
+          24
+        ],
+        "well-known": [
+          24,
+          25,
+          37,
+          38,
+          39,
+          41,
+          42,
+          43,
+          44
+        ],
+        "mcp-spec": [
+          25
+        ],
+        "apple": [
+          26
+        ],
+        "meta": [
+          27
+        ],
+        "open-agents": [
+          27
+        ],
+        "seo": [
+          29,
+          30
+        ],
+        "ai-first-browsers": [
+          31
+        ],
+        "navigation": [
+          31
+        ],
+        "ai-agent-trust": [
+          32
+        ],
+        "ai-compliance": [
+          32
+        ],
+        "ai-governance": [
+          32
+        ],
+        "ai-investigation": [
+          32
+        ],
+        "ai-safety": [
+          32
+        ],
+        "cross-llm-orchestration": [
+          32
+        ],
+        "enterprise-ai": [
+          32
+        ],
+        "llm-verification": [
+          32
+        ],
+        "trust-economy": [
+          32
+        ],
+        "venture-capital": [
+          32
+        ],
+        "encryption": [
+          33
+        ],
+        "homomorphic": [
+          33
+        ],
+        "pipeline": [
+          33
+        ],
+        "aio": [
+          35
+        ],
+        "aiovsseo": [
+          35
+        ],
+        "compatibility": [
+          36
+        ],
+        "deepseek": [
+          36
+        ],
+        "gemini": [
+          36
+        ],
+        "gpt-4o": [
+          36
+        ],
+        "grok": [
+          36
+        ],
+        "mistral": [
+          36
+        ],
+        "web": [
+          37,
+          38,
+          39,
           41,
           42,
           43
         ],
-        "mcp-spec": [
-          24
-        ],
-        "apple": [
-          25
-        ],
-        "meta": [
-          26
-        ],
-        "open-agents": [
-          26
-        ],
-        "seo": [
-          28,
-          29
-        ],
-        "ai-first-browsers": [
-          30
-        ],
-        "navigation": [
-          30
-        ],
-        "ai-agent-trust": [
-          31
-        ],
-        "ai-compliance": [
-          31
-        ],
-        "ai-governance": [
-          31
-        ],
-        "ai-investigation": [
-          31
-        ],
-        "ai-safety": [
-          31
-        ],
-        "cross-llm-orchestration": [
-          31
-        ],
-        "enterprise-ai": [
-          31
-        ],
-        "llm-verification": [
-          31
-        ],
-        "trust-economy": [
-          31
-        ],
-        "venture-capital": [
-          31
-        ],
-        "encryption": [
-          32
-        ],
-        "homomorphic": [
-          32
-        ],
-        "pipeline": [
-          32
-        ],
-        "privacy": [
-          32
-        ],
-        "aio": [
-          34
-        ],
-        "aiovsseo": [
-          34
-        ],
-        "compatibility": [
-          35
-        ],
-        "deepseek": [
-          35
-        ],
-        "gemini": [
-          35
-        ],
-        "gpt-4o": [
-          35
-        ],
-        "grok": [
-          35
-        ],
-        "mistral": [
-          35
-        ],
-        "web": [
-          36,
-          37,
-          38,
-          40,
-          41,
-          42
-        ],
         "announcement": [
-          45,
           46,
           47,
+          48,
           51
         ],
         "launch": [
-          45,
           46,
           47,
+          48,
           51
         ],
         "structure": [
-          48
-        ],
-        "ethics": [
-          49
-        ],
-        "principles": [
           49
         ],
         "industries": [
@@ -3503,9 +3536,8 @@
       "by_intent": {
         "inform": [
           0,
-          1,
-          4,
-          6,
+          2,
+          5,
           7,
           8,
           9,
@@ -3557,27 +3589,31 @@
           55,
           56
         ],
+        "inspire-and-mobilize": [
+          1
+        ],
         "educational": [
-          2
+          3
         ],
         "technical-guide": [
-          3,
-          5
+          4,
+          6
         ]
       }
     },
     "stats": {
       "content_distribution": {
-        "news": 53,
+        "news": 52,
+        "manifesto": 1,
         "specification": 1,
         "guide": 1,
         "tutorial": 1,
         "faq": 1
       },
       "quality_metrics": {
-        "high_quality": 2,
+        "high_quality": 3,
         "good_quality": 11,
-        "needs_improvement": 44
+        "needs_improvement": 43
       },
       "technical_levels": {
         "beginner": 55,
@@ -3591,7 +3627,7 @@
       "most_common_tags": [
         {
           "tag": "mcp",
-          "count": 36
+          "count": 37
         },
         {
           "tag": "llmfeed",
@@ -3599,11 +3635,11 @@
         },
         {
           "tag": "agentic-web",
-          "count": 22
+          "count": 23
         },
         {
           "tag": "trust",
-          "count": 20
+          "count": 21
         },
         {
           "tag": "ai-agents",
