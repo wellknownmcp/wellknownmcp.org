@@ -48,6 +48,96 @@
       }
     },
     {
+      "slug": "user-controlled-memory",
+      "title": "End the Session Context Wars: Introducing session.llmfeed.json",
+      "description": "A revolutionary open standard for AI session context that puts users back in control and ends vendor lock-in",
+      "date": "2025-06-13",
+      "tags": [
+        "ai-platforms",
+        "data-ownership",
+        "interoperability",
+        "open-standards",
+        "session.llmfeed.json",
+        "user-control",
+        "vendor-lock-in"
+      ],
+      "excerpt": "\r  End the Session Context Wars: Introducing session.llmfeed.json\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "developer",
+        "business",
+        "ai-platform-vendors",
+        "users"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "6 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "high",
+      "feedTypes": [
+        "session",
+        "mcp",
+        "capabilities"
+      ],
+      "capabilities": [
+        "session_context_export",
+        "cross_platform_import",
+        "user_controlled_memory"
+      ],
+      "agentReadiness": true,
+      "aioScore": 65,
+      "translations": {
+        "en": "/en/news/user-controlled-memory"
+      }
+    },
+    {
+      "slug": "ai-context-continuity-llmfeed-solution",
+      "title": "The Hidden Productivity Killer: Why Context Loss Between AI Conversations is Costing You Hours Every Week",
+      "description": "Discover how LLMFeed solves context loss between ChatGPT, Claude, and other AI tools. Learn to maintain conversation continuity and boost AI productivity with portable session management.",
+      "date": "2025-06-12",
+      "tags": [
+        "ai-agents",
+        "aiworkflow",
+        "chatgpt",
+        "claude",
+        "contextsharing",
+        "llmfeed",
+        "productivity",
+        "techinnovation"
+      ],
+      "excerpt": "\r  The Hidden Productivity Killer: Why Context Loss Between AI Conversations is Costing You Hours Every Week\r",
+      "format": "news",
+      "category": "ai-productivity",
+      "intent": "educational",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "developers",
+        "ai-users",
+        "productivity-enthusiasts",
+        "students",
+        "professionals"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "15 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 65,
+      "translations": {
+        "en": "/en/news/ai-context-continuity-llmfeed-solution"
+      }
+    },
+    {
       "slug": "2025-07-05-microsoft-nlweb-protocol",
       "title": "Microsoft NLWeb and LLMFeed: Complementary Standards for the Agentic Web",
       "description": "Comprehensive technical analysis of Microsoft's NLWeb protocol and LLMFeed specification, their synergies, architectural differences, and combined role in building the future Agentic Web infrastructure.",
@@ -2862,7 +2952,7 @@
         "privacy-healthcare",
         "sante-connectee"
       ],
-      "excerpt": "\r  🏥 FranceCare : L'Assistance Personnalisée en santé  qui Révolutionne l'Accès aux Soins\r",
+      "excerpt": "\r \r",
       "format": "news",
       "category": "general",
       "intent": "inform",
@@ -2873,7 +2963,7 @@
       "image": null,
       "subtitle": null,
       "technicalLevel": "beginner",
-      "estimatedReadTime": "26 min",
+      "estimatedReadTime": "15 min",
       "trustLevel": "basic",
       "businessImpact": "low",
       "priority": "normal",
@@ -5061,8 +5151,8 @@
     }
   ],
   "_meta": {
-    "generated_at": "2025-06-10T17:22:27.885Z",
-    "total_articles": 133,
+    "generated_at": "2025-06-14T16:59:30.570Z",
+    "total_articles": 135,
     "global_avg_score": 51,
     "languages": [
       "en",

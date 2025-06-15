@@ -112,7 +112,7 @@ export default function OptimizedFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
+                <Link href="en/faq" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
                   ❓ Frequently Asked Questions
                 </Link>
               </li>

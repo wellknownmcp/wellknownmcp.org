@@ -115,7 +115,7 @@ export default function OptimizedNavbar() {
                   🔌 API Explained
                 </Link>
                 <Link 
-                  href="/faq" 
+                  href="en/faq" 
                   className="block px-2 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
                 >
                   ❓ FAQ
