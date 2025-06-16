@@ -9,11 +9,11 @@
       "count": 56
     },
     {
-      "tag": "trust",
-      "count": 31
+      "tag": "agentic-web",
+      "count": 32
     },
     {
-      "tag": "agentic-web",
+      "tag": "trust",
       "count": 30
     },
     {
@@ -45,15 +45,15 @@
       "count": 10
     },
     {
-      "tag": "well-known",
-      "count": 10
-    },
-    {
       "tag": "ethics",
       "count": 9
     },
     {
       "tag": "certification",
+      "count": 9
+    },
+    {
+      "tag": "well-known",
       "count": 9
     },
     {
@@ -89,10 +89,6 @@
       "count": 6
     },
     {
-      "tag": "web",
-      "count": 6
-    },
-    {
       "tag": "open-standards",
       "count": 6
     },
@@ -118,6 +114,10 @@
     },
     {
       "tag": "cryptographic-verification",
+      "count": 5
+    },
+    {
+      "tag": "web",
       "count": 5
     },
     {
@@ -238,6 +238,26 @@
     },
     {
       "tag": "guidance",
+      "count": 2
+    },
+    {
+      "tag": "community-research",
+      "count": 2
+    },
+    {
+      "tag": "paradigm-shift",
+      "count": 2
+    },
+    {
+      "tag": "proof-of-concept",
+      "count": 2
+    },
+    {
+      "tag": "token-economics",
+      "count": 2
+    },
+    {
+      "tag": "web-standards",
       "count": 2
     },
     {
@@ -493,6 +513,30 @@
       "count": 1
     },
     {
+      "tag": "efficiency-optimization",
+      "count": 1
+    },
+    {
+      "tag": "ai-optimization",
+      "count": 1
+    },
+    {
+      "tag": "economic-analysis",
+      "count": 1
+    },
+    {
+      "tag": "environmental-benefits",
+      "count": 1
+    },
+    {
+      "tag": "global-impact",
+      "count": 1
+    },
+    {
+      "tag": "llm-efficiency",
+      "count": 1
+    },
+    {
       "tag": "agent-infrastructure",
       "count": 1
     },
@@ -546,10 +590,6 @@
     },
     {
       "tag": "open-web",
-      "count": 1
-    },
-    {
-      "tag": "web-standards",
       "count": 1
     },
     {
@@ -811,11 +851,11 @@
       },
       {
         "tag": "agentic-web",
-        "count": 23
+        "count": 25
       },
       {
         "tag": "trust",
-        "count": 21
+        "count": 20
       },
       {
         "tag": "ai-agents",
@@ -826,11 +866,11 @@
         "count": 11
       },
       {
-        "tag": "well-known",
-        "count": 9
+        "tag": "certification",
+        "count": 8
       },
       {
-        "tag": "certification",
+        "tag": "well-known",
         "count": 8
       },
       {
@@ -838,15 +878,15 @@
         "count": 7
       },
       {
-        "tag": "web",
-        "count": 6
-      },
-      {
         "tag": "claude",
         "count": 5
       },
       {
         "tag": "signature",
+        "count": 5
+      },
+      {
+        "tag": "web",
         "count": 5
       },
       {
@@ -919,6 +959,26 @@
       },
       {
         "tag": "privacy",
+        "count": 2
+      },
+      {
+        "tag": "community-research",
+        "count": 2
+      },
+      {
+        "tag": "paradigm-shift",
+        "count": 2
+      },
+      {
+        "tag": "proof-of-concept",
+        "count": 2
+      },
+      {
+        "tag": "token-economics",
+        "count": 2
+      },
+      {
+        "tag": "web-standards",
         "count": 2
       },
       {
@@ -1166,6 +1226,30 @@
         "count": 1
       },
       {
+        "tag": "efficiency-optimization",
+        "count": 1
+      },
+      {
+        "tag": "ai-optimization",
+        "count": 1
+      },
+      {
+        "tag": "economic-analysis",
+        "count": 1
+      },
+      {
+        "tag": "environmental-benefits",
+        "count": 1
+      },
+      {
+        "tag": "global-impact",
+        "count": 1
+      },
+      {
+        "tag": "llm-efficiency",
+        "count": 1
+      },
+      {
         "tag": "structure",
         "count": 1
       },
@@ -1275,10 +1359,6 @@
       },
       {
         "tag": "open-web",
-        "count": 1
-      },
-      {
-        "tag": "web-standards",
         "count": 1
       },
       {

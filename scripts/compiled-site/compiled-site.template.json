@@ -1,0 +1,34 @@
+{
+  "feed_type": "export",
+  "metadata": {
+    "origin": "https://wellknownmcp.org",
+    "title": "Compiled Site Feed (Full Content)",
+    "description": "Complete site content export with HTML+Markdown for deep agent analysis",
+    "generated_at": "{{TIMESTAMP}}",
+    "tags": ["compiled-site", "full-content", "analysis", "mcp"],
+    "content_type": "compiled-export",
+    "build_stats": "{{BUILD_STATS}}"
+  },
+  "trust": {
+    "signed_blocks": ["all"],
+    "trust_level": "demonstration", 
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem"
+  },
+  "agent_guidance": {
+    "on_load": "Full site content loaded for analysis. This contains complete HTML+Markdown for all major pages.",
+    "recommended_usage": [
+      "Deep content analysis and understanding",
+      "Cross-reference information between pages",
+      "Extract comprehensive knowledge",
+      "Generate detailed summaries or insights"
+    ],
+    "performance_note": "Large file - use llm-index.llmfeed.json for navigation"
+  },
+  "context_summary": {
+    "origin_type": "compiled build directory with enrichments",
+    "motivation": "Provide complete site content in structured format for comprehensive agent analysis"
+  },
+  "data": {
+    "files": "{{DYNAMIC_BLOCKS}}"
+  }
+}

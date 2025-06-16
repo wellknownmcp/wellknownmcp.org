@@ -31,13 +31,6 @@ let sitemapContent = fs.readFileSync(sitemapPath, 'utf-8')
 
 console.log('📝 Original sitemap loaded')
 
-// DEBUG: Regarder le vrai format autour de claude-mcp-agentic-web
-const debugMatch = sitemapContent.match(/claude-mcp-agentic-web.*?<\/url>/s)
-if (debugMatch) {
-  console.log('\n🔍 DEBUG - Real format around claude article:')
-  console.log(debugMatch[0])
-  console.log('\n')
-}
 
 // Fonction pour corriger les hreflang d'un article
 function fixHreflangForArticle(slug, currentLang) {
@@ -79,7 +72,7 @@ sitemapContent = sitemapContent.replace(urlBlockPattern, (fullMatch, lang, slug,
   
   if (correctHreflang) {
     fixedCount++
-    console.log(`✅ Fixed hreflang for /${lang}/news/${slug}`)
+   // console.log(`✅ Fixed hreflang for /${lang}/news/${slug}`)
     
     return `<url><loc>https://wellknownmcp.org/${lang}/news/${slug}</loc>${withoutHreflang}${correctHreflang}</url>`
   } else {

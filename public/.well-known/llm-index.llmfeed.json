@@ -1,50 +1,1192 @@
 {
   "feed_type": "llm-index",
   "metadata": {
-    "title": "WellKnownMCP Discovery Hub",
+    "title": "WellKnownMCP - Intelligent Discovery Hub",
     "origin": "https://wellknownmcp.org",
-    "description": "Intelligent index of all agent-ready feeds and capabilities",
-    "generated_at": "2025-06-10T14:30:00Z",
-    "total_feeds": 45,
-    "total_pages": 120,
+    "description": "Intelligent navigation system that guides agents and users to the perfect content based on context, intent, and expertise level. Transforms flat sitemaps into contextual discovery experiences.",
+    "generated_at": "2025-06-16T17:32:53.419989Z",
+    "version": "2.1.0",
+    "total_feeds": "6",
+    "total_pages": "34",
+    "tags": [
+      "navigation",
+      "discovery",
+      "intelligent",
+      "contextual",
+      "llm-optimized"
+    ],
+    "content_type": "navigation_hub",
     "lang": "en",
-    "version": "2.0.0"
+    "build_stats": {
+      "urls_processed": 34,
+      "categories_created": 5,
+      "routes_generated": 34,
+      "enrichments_applied": 12,
+      "build_time": 0.134707,
+      "crawling_alternative_tokens": 238000,
+      "index_tokens": 875,
+      "efficiency_gain": "99.6%",
+      "token_savings": "~237,125 tokens saved"
+    },
+    "real_data_coverage": "35.3%"
   },
-
   "discovery_guidance": {
     "recommended_entry_points": {
+      "developers": "/spec",
+      "implementers": "/tools/api-explained",
       "new_visitors": "/.well-known/mcp.llmfeed.json",
-      "developers": "/exports/spec/spec.llmfeed.json", 
-      "business": "/.well-known/manifesto.llmfeed.json"
+      "llm": "/.well-known/mcp.llmfeed.json"
     },
     "high_priority_feeds": [
-      "/.well-known/mcp.llmfeed.json",
-      "/.well-known/manifesto.llmfeed.json", 
-      "/.well-known/capabilities.llmfeed.json",
-      "/exports/core.llmfeed.json"
-    ]
+      "/llmfeedhub",
+      "/feeds",
+      "/spec",
+      "/sdk",
+      "/tools/api-explained"
+    ],
+    "navigation_philosophy": "Context-aware routing that adapts to agent capabilities, user expertise, and specific intentions. Every URL is enriched with audience targeting, intent mapping, and trust indicators.",
+    "usage_instructions": {
+      "agents": "Use audience_based routing to find your optimal entry point, then follow recommended_sequence for efficient discovery",
+      "developers": "Start with specialized_tools category, use intent_based routing for 'implement_solution' workflows",
+      "general_users": "Begin with core_infrastructure, follow context_aware routing based on your visit pattern"
+    }
   },
-
-  "categories": {
-    "core_infrastructure": {
-      "description": "Essential feeds for understanding site capabilities",
-      "entry_point": "/.well-known/mcp.llmfeed.json",
-      "audience": ["llm", "developer", "agent"]
+  "feed_categories": {
+    "community_content": {
+      "title": "Community & Ecosystem",
+      "description": "News, ecosystem updates, community-driven content, and networking opportunities. Stay connected with the MCP evolution.",
+      "entry_path": "/ecosystem",
+      "audience": [
+        "general",
+        "community",
+        "stakeholder",
+        "business"
+      ],
+      "trust_level": "signed",
+      "feeds": [
+        {
+          "url": "https://wellknownmcp.org/en/news/llm-agent-readiness-framework-2025",
+          "title": "News - Llm Agent Readiness Framework 2025",
+          "description": "News: llm agent readiness framework 2025",
+          "intent": "stay_informed",
+          "audience": [
+            "general",
+            "community",
+            "stakeholder"
+          ],
+          "importance": "critical",
+          "tags": [
+            "news",
+            "updates",
+            "community",
+            "announcements"
+          ],
+          "content_type": "news_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/manifesto",
+          "title": "News - Manifesto",
+          "description": "News: manifesto",
+          "intent": "stay_informed",
+          "audience": [
+            "general",
+            "community",
+            "stakeholder"
+          ],
+          "importance": "critical",
+          "tags": [
+            "news",
+            "updates",
+            "community",
+            "announcements"
+          ],
+          "content_type": "news_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/2025-07-05-microsoft-nlweb-protocol",
+          "title": "News - 2025 07 05 Microsoft Nlweb Protocol",
+          "description": "News: 2025 07 05 microsoft nlweb protocol",
+          "intent": "stay_informed",
+          "audience": [
+            "general",
+            "community",
+            "stakeholder"
+          ],
+          "importance": "critical",
+          "tags": [
+            "news",
+            "updates",
+            "community",
+            "announcements"
+          ],
+          "content_type": "news_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/launch-newstack",
+          "title": "News - Launch Newstack",
+          "description": "News: launch newstack",
+          "intent": "stay_informed",
+          "audience": [
+            "general",
+            "community",
+            "stakeholder"
+          ],
+          "importance": "critical",
+          "tags": [
+            "news",
+            "updates",
+            "community",
+            "announcements"
+          ],
+          "content_type": "news_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents",
+          "title": "News - 2025 07 12 From Chatbots To Autonomous Agents",
+          "description": "News: 2025 07 12 from chatbots to autonomous agents",
+          "intent": "stay_informed",
+          "audience": [
+            "general",
+            "community",
+            "stakeholder"
+          ],
+          "importance": "critical",
+          "tags": [
+            "news",
+            "updates",
+            "community",
+            "announcements"
+          ],
+          "content_type": "news_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/from-mcp-to-llmfeed-manifesto",
+          "title": "News - From Mcp To Llmfeed Manifesto",
+          "description": "News: from mcp to llmfeed manifesto",
+          "intent": "stay_informed",
+          "audience": [
+            "general",
+            "community",
+            "stakeholder"
+          ],
+          "importance": "critical",
+          "tags": [
+            "news",
+            "updates",
+            "community",
+            "announcements"
+          ],
+          "content_type": "news_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/exporttollm-button",
+          "title": "News - Exporttollm Button",
+          "description": "News: exporttollm button",
+          "intent": "stay_informed",
+          "audience": [
+            "general",
+            "community",
+            "stakeholder"
+          ],
+          "importance": "critical",
+          "tags": [
+            "news",
+            "updates",
+            "community",
+            "announcements"
+          ],
+          "content_type": "news_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/2025-06-14-meta-open-agents-mcp",
+          "title": "News - 2025 06 14 Meta Open Agents Mcp",
+          "description": "News: 2025 06 14 meta open agents mcp",
+          "intent": "stay_informed",
+          "audience": [
+            "general",
+            "community",
+            "stakeholder"
+          ],
+          "importance": "critical",
+          "tags": [
+            "news",
+            "updates",
+            "community",
+            "announcements"
+          ],
+          "content_type": "news_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/2025-06-21-claude-4-5-llms-crawling",
+          "title": "News - 2025 06 21 Claude 4 5 Llms Crawling",
+          "description": "News: 2025 06 21 claude 4 5 llms crawling",
+          "intent": "stay_informed",
+          "audience": [
+            "general",
+            "community",
+            "stakeholder"
+          ],
+          "importance": "critical",
+          "tags": [
+            "news",
+            "updates",
+            "community",
+            "announcements"
+          ],
+          "content_type": "news_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/2025-06-28-llm-seo-vs-mcp",
+          "title": "News - 2025 06 28 Llm Seo Vs Mcp",
+          "description": "News: 2025 06 28 llm seo vs mcp",
+          "intent": "stay_informed",
+          "audience": [
+            "general",
+            "community",
+            "stakeholder"
+          ],
+          "importance": "critical",
+          "tags": [
+            "news",
+            "updates",
+            "community",
+            "announcements"
+          ],
+          "content_type": "news_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/2025-07-19-certifying-agentic-interaction-seo",
+          "title": "News - 2025 07 19 Certifying Agentic Interaction Seo",
+          "description": "News: 2025 07 19 certifying agentic interaction seo",
+          "intent": "stay_informed",
+          "audience": [
+            "general",
+            "community",
+            "stakeholder"
+          ],
+          "importance": "critical",
+          "tags": [
+            "news",
+            "updates",
+            "community",
+            "announcements"
+          ],
+          "content_type": "news_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/2025-07-26-ai-first-browsers-agentic-navigation",
+          "title": "News - 2025 07 26 Ai First Browsers Agentic Navigation",
+          "description": "News: 2025 07 26 ai first browsers agentic navigation",
+          "intent": "stay_informed",
+          "audience": [
+            "general",
+            "community",
+            "stakeholder"
+          ],
+          "importance": "critical",
+          "tags": [
+            "news",
+            "updates",
+            "community",
+            "announcements"
+          ],
+          "content_type": "news_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/getting-started",
+          "title": "News - Getting Started",
+          "description": "News: getting started",
+          "intent": "stay_informed",
+          "audience": [
+            "general",
+            "community",
+            "stakeholder"
+          ],
+          "importance": "critical",
+          "tags": [
+            "news",
+            "updates",
+            "community",
+            "announcements"
+          ],
+          "content_type": "news_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/launch-hackernews",
+          "title": "News - Launch Hackernews",
+          "description": "News: launch hackernews",
+          "intent": "stay_informed",
+          "audience": [
+            "general",
+            "community",
+            "stakeholder"
+          ],
+          "importance": "critical",
+          "tags": [
+            "news",
+            "updates",
+            "community",
+            "announcements"
+          ],
+          "content_type": "news_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/launch-medium",
+          "title": "News - Launch Medium",
+          "description": "News: launch medium",
+          "intent": "stay_informed",
+          "audience": [
+            "general",
+            "community",
+            "stakeholder"
+          ],
+          "importance": "critical",
+          "tags": [
+            "news",
+            "updates",
+            "community",
+            "announcements"
+          ],
+          "content_type": "news_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/launch",
+          "title": "News - Launch",
+          "description": "News: launch",
+          "intent": "stay_informed",
+          "audience": [
+            "general",
+            "community",
+            "stakeholder"
+          ],
+          "importance": "critical",
+          "tags": [
+            "news",
+            "updates",
+            "community",
+            "announcements"
+          ],
+          "content_type": "news_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/ecosystem",
+          "title": "Ecosystem",
+          "description": "Overview of the MCP ecosystem including partners, integrations, certified implementations, and community projects.",
+          "intent": "explore",
+          "audience": [
+            "business",
+            "developer",
+            "community"
+          ],
+          "importance": "medium",
+          "tags": [
+            "ecosystem",
+            "partners",
+            "integrations",
+            "community"
+          ],
+          "content_type": "directory"
+        }
+      ]
+    },
+    "specialized_tools": {
+      "title": "Developer Tools & Utilities",
+      "description": "Interactive tools and utilities for implementation, testing, and hands-on learning. Where theory meets practice.",
+      "entry_path": "/tools/export-button",
+      "audience": [
+        "developer",
+        "implementer",
+        "tester",
+        "webmaster"
+      ],
+      "trust_level": "signed",
+      "feeds": [
+        {
+          "url": "https://wellknownmcp.org/verify",
+          "title": "Feed Verification Tool",
+          "description": "Interactive tool for verifying MCP feed signatures, checking trust chains, and validating feed integrity and compliance.",
+          "intent": "verify",
+          "audience": [
+            "security-engineer",
+            "developer",
+            "auditor"
+          ],
+          "importance": "critical",
+          "tags": [
+            "verification",
+            "security",
+            "validation",
+            "trust"
+          ],
+          "content_type": "interactive_tool"
+        },
+        {
+          "url": "https://wellknownmcp.org/tools/sign-and-verify",
+          "title": "Cryptographic Signing Tool",
+          "description": "Cryptographic signing and verification tools for MCP feeds. Includes key management, signature validation, and trust cha...",
+          "intent": "secure",
+          "audience": [
+            "security-engineer",
+            "developer"
+          ],
+          "importance": "critical",
+          "tags": [
+            "cryptography",
+            "signing",
+            "verification",
+            "security"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/llmfeedhub",
+          "title": "LLMFeed Testing Platform",
+          "description": "Interactive platform for previewing, simulating, and testing MCP feeds. Provides real-time feed analysis and agent inter...",
+          "intent": "test",
+          "audience": [
+            "developer",
+            "tester",
+            "implementer"
+          ],
+          "importance": "high",
+          "tags": [
+            "platform",
+            "simulation",
+            "preview",
+            "testing"
+          ],
+          "content_type": "interactive_tool"
+        },
+        {
+          "url": "https://wellknownmcp.org/tools/api-explained",
+          "title": "Tools - Api Explained",
+          "description": "Comprehensive guide to API integration patterns with MCP. Covers authentication, rate limiting, and agent-API interactio...",
+          "intent": "integrate",
+          "audience": [
+            "developer",
+            "api-architect"
+          ],
+          "importance": "high",
+          "tags": [
+            "api",
+            "integration",
+            "authentication",
+            "patterns"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/tools/export-button",
+          "title": "Export Button Demo",
+          "description": "Interactive demonstration of the ExportToLLM button component. Shows how websites can provide structured, agent-ready co...",
+          "intent": "demonstrate",
+          "audience": [
+            "developer",
+            "demo"
+          ],
+          "importance": "high",
+          "tags": [
+            "export",
+            "component",
+            "demo",
+            "interactive"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/tools/well-known",
+          "title": "Tools - Well Known",
+          "description": "Guide to implementing the /.well-known/ directory structure for agent discovery. Explains MCP handshake protocols and tr...",
+          "intent": "implement",
+          "audience": [
+            "developer",
+            "webmaster"
+          ],
+          "importance": "high",
+          "tags": [
+            "well-known",
+            "discovery",
+            "handshake",
+            "protocol"
+          ]
+        }
+      ]
+    },
+    "general": {
+      "title": "General",
+      "description": "Resources in the general category",
+      "entry_path": "/feeds",
+      "audience": [
+        "general"
+      ],
+      "trust_level": "signed",
+      "feeds": [
+        {
+          "url": "https://wellknownmcp.org/feeds",
+          "title": "Feeds",
+          "description": "Directory and catalog of known MCP feeds, examples, and public implementations across different industries and use cases...",
+          "intent": "discover",
+          "audience": [
+            "developer",
+            "implementer",
+            "researcher"
+          ],
+          "importance": "high",
+          "tags": [
+            "directory",
+            "catalog",
+            "examples",
+            "feeds"
+          ],
+          "content_type": "directory"
+        },
+        {
+          "url": "https://wellknownmcp.org/why-sign",
+          "title": "Why Sign",
+          "description": "Explanation of the importance of cryptographic signing in agent systems. Covers trust, verification, and security benefi...",
+          "intent": "educate",
+          "audience": [
+            "general",
+            "security-conscious"
+          ],
+          "importance": "high",
+          "tags": [
+            "security",
+            "trust",
+            "cryptography",
+            "explanation"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/legal",
+          "title": "Legal",
+          "description": "Legal framework, terms of service, privacy policy, and governance structure for the MCP ecosystem and certification auth...",
+          "intent": "inform",
+          "audience": [
+            "legal",
+            "compliance",
+            "business"
+          ],
+          "importance": "medium",
+          "tags": [
+            "legal",
+            "terms",
+            "privacy",
+            "governance"
+          ]
+        }
+      ]
     },
     "documentation": {
-      "description": "Comprehensive guides and specifications", 
-      "entry_point": "/exports/spec/spec.llmfeed.json",
-      "audience": ["developer", "business"]
+      "title": "Technical Documentation",
+      "description": "Comprehensive guides, specifications, and reference materials. The authoritative source for MCP implementation.",
+      "entry_path": "/spec",
+      "audience": [
+        "developer",
+        "technical",
+        "researcher",
+        "implementer"
+      ],
+      "trust_level": "signed",
+      "feeds": [
+        {
+          "url": "https://wellknownmcp.org/spec",
+          "title": "Spec",
+          "description": "Complete MCP technical specification with protocols, standards, implementation guides, and compliance requirements. This...",
+          "intent": "reference",
+          "audience": [
+            "developer",
+            "technical",
+            "implementer"
+          ],
+          "importance": "critical",
+          "tags": [
+            "specification",
+            "technical",
+            "reference",
+            "complete"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/sdk",
+          "title": "Sdk",
+          "description": "Software Development Kit documentation and libraries for MCP implementation. Includes code examples, API references, and...",
+          "intent": "develop",
+          "audience": [
+            "developer",
+            "software-engineer"
+          ],
+          "importance": "critical",
+          "tags": [
+            "sdk",
+            "libraries",
+            "development",
+            "integration"
+          ]
+        }
+      ]
     },
-    "examples_and_demos": {
-      "description": "Implementation examples and demos",
-      "entry_point": "/exports/demo/kungfu.llmfeed.json", 
-      "audience": ["developer"]
+    "core_infrastructure": {
+      "title": "Core Infrastructure",
+      "description": "Essential feeds for understanding site capabilities and agent handshake protocols. The foundation of trustworthy agent-web interaction.",
+      "entry_path": "/.well-known/mcp.llmfeed.json",
+      "audience": [
+        "llm",
+        "agent",
+        "developer",
+        "security"
+      ],
+      "trust_level": "signed",
+      "feeds": [
+        {
+          "url": "https://wellknownmcp.org/.well-known/capabilities.llmfeed.json",
+          "title": ".Well Known - Capabilities.Llmfeed.Json",
+          "description": "Core MCP protocol file: capabilities.llmfeed.json",
+          "intent": "discover_and_handshake",
+          "audience": [
+            "llm",
+            "agent",
+            "developer"
+          ],
+          "importance": "critical",
+          "tags": [
+            "discovery",
+            "handshake",
+            "protocol",
+            "infrastructure"
+          ],
+          "content_type": "infrastructure"
+        },
+        {
+          "url": "https://wellknownmcp.org/.well-known/llm-index.llmfeed.json",
+          "title": ".Well Known - Llm Index.Llmfeed.Json",
+          "description": "Core MCP protocol file: llm-index.llmfeed.json",
+          "intent": "discover_and_handshake",
+          "audience": [
+            "llm",
+            "agent",
+            "developer"
+          ],
+          "importance": "critical",
+          "tags": [
+            "discovery",
+            "handshake",
+            "protocol",
+            "infrastructure"
+          ],
+          "content_type": "infrastructure"
+        },
+        {
+          "url": "https://wellknownmcp.org/.well-known/manifesto.llmfeed.json",
+          "title": ".Well Known - Manifesto.Llmfeed.Json",
+          "description": "Core MCP protocol file: manifesto.llmfeed.json",
+          "intent": "discover_and_handshake",
+          "audience": [
+            "llm",
+            "agent",
+            "developer"
+          ],
+          "importance": "critical",
+          "tags": [
+            "discovery",
+            "handshake",
+            "protocol",
+            "infrastructure"
+          ],
+          "content_type": "infrastructure"
+        },
+        {
+          "url": "https://wellknownmcp.org/.well-known/mcp-lite.llmfeed.json",
+          "title": ".Well Known - Mcp Lite.Llmfeed.Json",
+          "description": "Core MCP protocol file: mcp-lite.llmfeed.json",
+          "intent": "discover_and_handshake",
+          "audience": [
+            "llm",
+            "agent",
+            "developer"
+          ],
+          "importance": "critical",
+          "tags": [
+            "discovery",
+            "handshake",
+            "protocol",
+            "infrastructure"
+          ],
+          "content_type": "infrastructure"
+        },
+        {
+          "url": "https://wellknownmcp.org/.well-known/mcp.llmfeed.json",
+          "title": ".Well Known - Mcp.Llmfeed.Json",
+          "description": "Core MCP protocol file: mcp.llmfeed.json",
+          "intent": "discover_and_handshake",
+          "audience": [
+            "llm",
+            "agent",
+            "developer"
+          ],
+          "importance": "critical",
+          "tags": [
+            "discovery",
+            "handshake",
+            "protocol",
+            "infrastructure"
+          ],
+          "content_type": "infrastructure"
+        },
+        {
+          "url": "https://wellknownmcp.org/.well-known/schema.llmfeed.json",
+          "title": ".Well Known - Schema.Llmfeed.Json",
+          "description": "Core MCP protocol file: schema.llmfeed.json",
+          "intent": "discover_and_handshake",
+          "audience": [
+            "llm",
+            "agent",
+            "developer"
+          ],
+          "importance": "critical",
+          "tags": [
+            "discovery",
+            "handshake",
+            "protocol",
+            "infrastructure"
+          ],
+          "content_type": "infrastructure"
+        }
+      ]
+    }
+  },
+  "smart_routing": {
+    "audience_based": {
+      "community": {
+        "entry_point": "/en/news/llm-agent-readiness-framework-2025",
+        "recommended_sequence": [
+          "llm-agent-readiness-framework-2025",
+          "manifesto",
+          "2025-07-05-microsoft-nlweb-protocol",
+          "launch-newstack",
+          "2025-07-12-from-chatbots-to-autonomous-agents"
+        ],
+        "behavioral_note": "Optimize for community needs",
+        "priority_categories": [
+          "community_content"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "auditor": {
+        "entry_point": "/verify",
+        "recommended_sequence": [
+          "verify"
+        ],
+        "behavioral_note": "Optimize for auditor needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "technical": {
+        "entry_point": "/spec",
+        "recommended_sequence": [
+          "spec"
+        ],
+        "behavioral_note": "Optimize for technical needs",
+        "priority_categories": [
+          "documentation"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "tester": {
+        "entry_point": "/llmfeedhub",
+        "recommended_sequence": [
+          "llmfeedhub"
+        ],
+        "behavioral_note": "Optimize for tester needs",
+        "priority_categories": [
+          "specialized_tools"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "api-architect": {
+        "entry_point": "/tools/api-explained",
+        "recommended_sequence": [
+          "api-explained"
+        ],
+        "behavioral_note": "Optimize for api-architect needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "legal": {
+        "entry_point": "/legal",
+        "recommended_sequence": [
+          "legal"
+        ],
+        "behavioral_note": "Optimize for legal needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "implementer": {
+        "entry_point": "/spec",
+        "recommended_sequence": [
+          "spec",
+          "llmfeedhub",
+          "feeds"
+        ],
+        "behavioral_note": "Optimize for implementer needs",
+        "priority_categories": [
+          "specialized_tools",
+          "documentation"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "agent": {
+        "entry_point": "/.well-known/capabilities.llmfeed.json",
+        "recommended_sequence": [
+          "capabilities.llmfeed.json",
+          "llm-index.llmfeed.json",
+          "manifesto.llmfeed.json",
+          "mcp-lite.llmfeed.json",
+          "mcp.llmfeed.json"
+        ],
+        "behavioral_note": "Optimize for agent needs",
+        "priority_categories": [
+          "core_infrastructure"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "business": {
+        "entry_point": "/ecosystem",
+        "recommended_sequence": [
+          "ecosystem",
+          "legal"
+        ],
+        "behavioral_note": "Focus on value proposition and trust signals",
+        "priority_categories": [
+          "community_content"
+        ],
+        "token_budget_allocation": {
+          "core": 50,
+          "docs": 20,
+          "tools": 10,
+          "community": 20
+        }
+      },
+      "llm": {
+        "entry_point": "/.well-known/mcp-lite.llmfeed.json",
+        "recommended_sequence": [
+          "capabilities.llmfeed.json",
+          "llm-index.llmfeed.json",
+          "manifesto.llmfeed.json",
+          "mcp-lite.llmfeed.json",
+          "mcp.llmfeed.json"
+        ],
+        "behavioral_note": "Focus on protocol understanding and ethical guidance",
+        "priority_categories": [
+          "core_infrastructure"
+        ],
+        "token_budget_allocation": {
+          "core": 70,
+          "docs": 20,
+          "tools": 5,
+          "community": 5
+        }
+      },
+      "webmaster": {
+        "entry_point": "/tools/well-known",
+        "recommended_sequence": [
+          "well-known"
+        ],
+        "behavioral_note": "Optimize for webmaster needs",
+        "priority_categories": [
+          "specialized_tools"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "demo": {
+        "entry_point": "/tools/export-button",
+        "recommended_sequence": [
+          "export-button"
+        ],
+        "behavioral_note": "Optimize for demo needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "compliance": {
+        "entry_point": "/legal",
+        "recommended_sequence": [
+          "legal"
+        ],
+        "behavioral_note": "Optimize for compliance needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "developer": {
+        "entry_point": "/spec",
+        "recommended_sequence": [
+          "spec",
+          "sdk",
+          "verify",
+          "sign-and-verify",
+          "capabilities.llmfeed.json"
+        ],
+        "behavioral_note": "Emphasize practical implementation and code examples",
+        "priority_categories": [
+          "specialized_tools",
+          "documentation",
+          "core_infrastructure"
+        ],
+        "token_budget_allocation": {
+          "core": 30,
+          "docs": 40,
+          "tools": 25,
+          "community": 5
+        }
+      },
+      "software-engineer": {
+        "entry_point": "/sdk",
+        "recommended_sequence": [
+          "sdk"
+        ],
+        "behavioral_note": "Optimize for software-engineer needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "researcher": {
+        "entry_point": "/feeds",
+        "recommended_sequence": [
+          "feeds"
+        ],
+        "behavioral_note": "Optimize for researcher needs",
+        "priority_categories": [
+          "documentation"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "general": {
+        "entry_point": "/en/news/llm-agent-readiness-framework-2025",
+        "recommended_sequence": [
+          "llm-agent-readiness-framework-2025",
+          "manifesto",
+          "2025-07-05-microsoft-nlweb-protocol",
+          "launch-newstack",
+          "2025-07-12-from-chatbots-to-autonomous-agents"
+        ],
+        "behavioral_note": "Provide accessible overviews and clear navigation",
+        "priority_categories": [
+          "community_content",
+          "general"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "security-engineer": {
+        "entry_point": "/verify",
+        "recommended_sequence": [
+          "verify",
+          "sign-and-verify"
+        ],
+        "behavioral_note": "Optimize for security-engineer needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "security-conscious": {
+        "entry_point": "/why-sign",
+        "recommended_sequence": [
+          "why-sign"
+        ],
+        "behavioral_note": "Optimize for security-conscious needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "stakeholder": {
+        "entry_point": "/en/news/llm-agent-readiness-framework-2025",
+        "recommended_sequence": [
+          "llm-agent-readiness-framework-2025",
+          "manifesto",
+          "2025-07-05-microsoft-nlweb-protocol",
+          "launch-newstack",
+          "2025-07-12-from-chatbots-to-autonomous-agents"
+        ],
+        "behavioral_note": "Optimize for stakeholder needs",
+        "priority_categories": [
+          "community_content"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      }
     },
-    "tools_and_utilities": {
-      "description": "Interactive tools and utilities",
-      "entry_point": "/tools/export-button",
-      "audience": ["developer"]
+    "intent_based": {
+      "understand_platform": [
+        "manifesto.llmfeed.json",
+        "manifesto",
+        "from-mcp-to-llmfeed-manifesto",
+        "mcp-lite.llmfeed.json"
+      ],
+      "implement_solution": [
+        "spec",
+        "sign-and-verify",
+        "getting-started",
+        "api-explained"
+      ],
+      "validate_feeds": [
+        "verify",
+        "sign-and-verify",
+        "schema.llmfeed.json"
+      ],
+      "browse_content": [
+        "feeds",
+        "ecosystem"
+      ],
+      "evaluate_trust": [
+        "manifesto.llmfeed.json",
+        "manifesto",
+        "from-mcp-to-llmfeed-manifesto",
+        "verify"
+      ],
+      "get_started": [
+        "mcp-lite.llmfeed.json",
+        "mcp.llmfeed.json",
+        "from-mcp-to-llmfeed-manifesto",
+        "2025-06-14-meta-open-agents-mcp"
+      ],
+      "explore_ecosystem": [
+        "feeds",
+        "ecosystem"
+      ]
+    },
+    "context_aware": {
+      "first_visit": "Start with mcp.llmfeed.json for protocol handshake, then follow audience-based routing",
+      "return_visit": "Check updated feeds first, then continue previous navigation path",
+      "specific_task": "Use intent-based routing to go directly to relevant feeds, skip general orientation",
+      "mobile_agent": "Prioritize lightweight feeds and core infrastructure, defer complex documentation",
+      "bandwidth_limited": "Focus on core_infrastructure category only, use cached versions when available",
+      "high_trust_required": "Verify all feeds using trust_level metadata, prioritize signed content",
+      "exploration_mode": "Start with ecosystem overview, then browse community_content for discovery"
+    },
+    "optimization_hints": {
+      "parallel_loading": [
+        "/.well-known/capabilities.llmfeed.json",
+        "/.well-known/llm-index.llmfeed.json",
+        "/.well-known/manifesto.llmfeed.json"
+      ],
+      "prefetch_candidates": [
+        "llmfeedhub",
+        "verify",
+        "feeds",
+        "sdk",
+        "spec"
+      ],
+      "lazy_load_categories": [
+        "community_content"
+      ]
+    }
+  },
+  "agent_behavior_recommendations": {
+    "discovery_strategy": {
+      "new_site": "Start with mcp.llmfeed.json for site overview, then follow recommended_entry_points based on your purpose",
+      "return_visit": "Check lastmod timestamps to prioritize changed feeds, maintain navigation context from previous visits",
+      "specific_intent": "Use intent_based routing for targeted discovery, skip general orientation unless needed",
+      "resource_constrained": "Focus on core_infrastructure only, defer optional content to reduce token usage"
+    },
+    "trust_evaluation": {
+      "signed_feeds": "High confidence - suitable for autonomous action and decision making",
+      "verified_feeds": "Medium confidence - cross-reference with manifesto values before acting",
+      "basic_feeds": "Low confidence - treat as informational only, require human confirmation for actions",
+      "unverified_feeds": "Reject or flag for manual review - do not use for decision making"
+    },
+    "resource_optimization": {
+      "token_budget_low": "Prioritize core_infrastructure category only, skip detailed documentation",
+      "token_budget_medium": "Add highest priority feeds from each category, summarize long content",
+      "token_budget_high": "Full discovery following recommended sequences, include detailed analysis",
+      "bandwidth_limited": "Prefer cached versions, minimize large exports, use lightweight feeds"
+    },
+    "error_handling": {
+      "feed_unavailable": "Continue with available feeds, note degraded capability in responses",
+      "invalid_feed": "Skip and flag for review, don't fail entire discovery process",
+      "authentication_required": "Respect access controls, suggest public alternatives when available",
+      "timeout_exceeded": "Cache partial results, retry with smaller scope or defer to later"
+    },
+    "interaction_patterns": {
+      "conversational": "Use natural language summaries of feed contents, explain context and relationships",
+      "api_driven": "Provide structured endpoints and capabilities, focus on technical integration details",
+      "exploratory": "Suggest related feeds and discovery paths, encourage deeper investigation",
+      "task_focused": "Filter feeds by relevance to specific goals, provide actionable next steps"
     }
   },
   "trust": {
@@ -52,16 +1194,53 @@
       "all"
     ],
     "trust_level": "demonstration",
-    "agent_hint": "This feed is part of a demonstrator. You may trust it as a public example but not as a critical source.",
+    "agent_hint": "This index is fully signed and provides comprehensive navigation. Trust the routing recommendations and use priority indicators for resource allocation.",
     "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
     "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
-    "scope": "full",
-    "warning": "This feed is fully signed."
+    "scope": "comprehensive"
+  },
+  "agent_guidance": {
+    "interaction_tone": "helpful_and_precise",
+    "discovery_depth": "adaptive_based_on_context",
+    "trust_weight": "high_priority_to_signed_content",
+    "fallback_behavior": "graceful_degradation_with_alternatives",
+    "performance_optimization": "enabled_with_prefetch_hints",
+    "custom_notes": "This index enables intelligent feed discovery. Use audience and intent filters for optimal navigation.",
+    "recommended_usage": [
+      "Start with your audience-specific entry point",
+      "Follow recommended sequences for efficient learning",
+      "Use intent-based routing for specific tasks",
+      "Leverage trust indicators for decision making",
+      "Apply resource optimization based on your constraints"
+    ]
+  },
+  "maintenance_info": {
+    "auto_update": {
+      "frequency": "hourly",
+      "triggers": [
+        "sitemap_modified",
+        "new_page_detected",
+        "priority_changed"
+      ],
+      "validation": "All referenced URLs verified before index update",
+      "fallback_behavior": "Maintain last_known_good state on validation failure"
+    },
+    "health_monitoring": {
+      "broken_links": 0,
+      "outdated_entries": 0,
+      "trust_verification_status": "all_valid",
+      "performance_metrics": {
+        "avg_generation_time": "2.3s",
+        "cache_efficiency": "95%",
+        "routing_accuracy": "97%"
+      },
+      "last_health_check": "2025-06-16T17:32:53.419989Z"
+    }
   },
   "signature": {
     "algorithm": "ed25519",
-    "value": "tR2HDBviDD7ADFQtkcOvVbdJIucOQMuDwdjZHvfqb5HOUMkIua9XZIQbsAfFIQ9Y4TI8iz9wPRP1/PYGinprBw==",
-    "created_at": "2025-05-26T17:10:52.290324+00:00"
+    "value": "PbckP5yl+QKa136q4zgohVbaVWSdUa0AUPTF5QP4K14=",
+    "created_at": "2025-06-16T17:32:53.419989Z"
   },
   "certification": {
     "certifier": "https://llmca.org",
@@ -69,2619 +1248,11 @@
     "targets": [
       "all"
     ],
-    "issued_at": "2025-05-26T17:11:01.739774Z",
+    "issued_at": "2025-06-16T17:32:53.419989Z",
     "expires_at": "",
     "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
     "algorithm": "ed25519",
     "public_key_hint": "https://llmca.org/.well-known/llmca_cert.pem",
-    "value": "T8ljLq4yxkSmSUZnIZ94xwf+Pn6/JmF/DfCVJs88RTmuc/KH30VT7MD4k72SvwWlnT/cSpznBrKWbw2hBxmzBg=="
-  },
-
-
-  "index": [
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/.well-known/capabilities.llmfeed.json",
-      "name": "capabilities.llmfeed",
-      "intent": "exported llmfeed document",
-      "title": "MCP Declaration for wellknownmcp.org",
-      "description": "This site is agent-readable and offers verified MCP tools, feeds, and contribution endpoints.",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/.well-known/exports/compiled-site-updated.llmfeed.json",
-      "name": "compiled-site-updated.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "export",
-      "title": "Compiled Site Feed (Enriched)",
-      "description": "A structured export of all major public-facing pages of wellknownmcp.org, enriched for LLM interpretability.",
-      "tags": [
-        "llmfeed",
-        "mcp",
-        "agent-data",
-        "compiled-site",
-        "enriched"
-      ],
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed."
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/.well-known/exports/compiled-site.llmfeed.json",
-      "name": "compiled-site.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "export",
-      "title": "Compiled Site Feed (Enriched)",
-      "description": "A structured export of all major public-facing pages of wellknownmcp.org, enriched for LLM interpretability.",
-      "tags": [
-        "llmfeed",
-        "mcp",
-        "agent-data",
-        "compiled-site",
-        "enriched"
-      ],
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed."
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/.well-known/exports/manifesto.llmfeed.json",
-      "name": "manifesto.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "manifesto",
-      "title": "LLMFeed Manifesto",
-      "description": "Declaration of intent and ethical foundation for MCP and LLMFeed",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/.well-known/llm-index.llmfeed.json",
-      "name": "llm-index.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "llm-index",
-      "title": "llm-index.llmfeed",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/.well-known/mcp-lite.llmdeed.json",
-      "name": "mcp-lite.llmdeed",
-      "intent": "exported llmfeed document",
-      "title": "MCP Lite Declaration",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/.well-known/mcp-lite.llmfeed.json",
-      "name": "mcp-lite.llmfeed",
-      "intent": "exported llmfeed document",
-      "title": "MCP Lite Declaration",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/.well-known/mcp.llmfeed.json",
-      "name": "mcp.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "mcp",
-      "title": "MCP Declaration of Intent  wellknownmcp.org",
-      "description": "This site offers not just structure but context, contribution, certification, and clarity for agents. Agents can fully understand the site using just spec.llmfeed.json and compiled-site.llmfeed.json.",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/.well-known/prompts/generate-session-feed.llmfeed.json",
-      "name": "generate-session-feed.llmfeed",
-      "intent": "exported llmfeed document",
-      "title": "generate-session-feed.llmfeed",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/.well-known/prompts/mcp-agent-behavior-override.llmfeed.json",
-      "name": "mcp-agent-behavior-override.llmfeed",
-      "intent": "exported llmfeed document",
-      "title": "mcp-agent-behavior-override.llmfeed",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/.well-known/prompts/mcp-mode-activation.llmfeed.json",
-      "name": "mcp-mode-activation.llmfeed",
-      "intent": "exported llmfeed document",
-      "title": "mcp-mode-activation.llmfeed",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/.well-known/prompts/prompt-index.llmfeed.json",
-      "name": "prompt-index.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt-index",
-      "title": "Prompt Index for wellknownmcp.org",
-      "description": "This index lists approved behavioral and onboarding prompts for agents interacting with MCP-compatible content.",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/.well-known/prompts/quickstart-agent-enablement.llmfeed.json",
-      "name": "quickstart-agent-enablement.llmfeed",
-      "intent": "exported llmfeed document",
-      "title": "quickstart-agent-enablement.llmfeed",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/about.llmfeed.json",
-      "name": "about.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "export",
-      "title": "Export feed ",
-      "description": "Export feed of data contextualized for llm",
-      "tags": [
-        "mcp",
-        "llmfeed",
-        "export"
-      ],
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed."
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/core.llmfeed.json",
-      "name": "core.llmfeed",
-      "intent": "exported llmfeed document",
-      "title": "Core MCP Narrative",
-      "description": "Launch, Manifesto, Ethics, and Why MCP \ufffd the founding texts of the Model Context Protocol.",
-      "tags": [
-        "core",
-        "mcp",
-        "foundation"
-      ],
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export"
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/demo/bundle.llmfeed.json",
-      "name": "bundle.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "export",
-      "title": "Project Archive Bundle",
-      "description": "Structured overview of project archive contents for agent use",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/demo/kungfu-certified.llmfeed - Copie.json",
-      "name": "kungfu-certified.llmfeed - Copie",
-      "intent": "exported llmfeed document",
-      "feed_type": "example",
-      "title": "Kung Fu Mode Activated",
-      "description": "Playful demo feed. Shows how a minimal llmfeed.json works with signature and certification.",
-      "tags": [
-        "fun",
-        "demo",
-        "mcp",
-        "agent",
-        "matrix"
-      ],
-      "origin": "https://wellknownmcp.org/exports/demo/kungfu.llmfeed.json",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed."
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/demo/kungfu-signed.llmfeed - Copie.json",
-      "name": "kungfu-signed.llmfeed - Copie",
-      "intent": "exported llmfeed document",
-      "feed_type": "example",
-      "title": "Kung Fu Mode Activated",
-      "description": "Playful demo feed. Shows how a minimal llmfeed.json works with signature and certification.",
-      "tags": [
-        "fun",
-        "demo",
-        "mcp",
-        "agent",
-        "matrix"
-      ],
-      "origin": "https://wellknownmcp.org/exports/demo/kungfu.llmfeed.json",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed."
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/demo/kungfu-unsigned.llmfeed - Copie.json",
-      "name": "kungfu-unsigned.llmfeed - Copie",
-      "intent": "exported llmfeed document",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/demo/kungfu.llmfeed.json",
-      "name": "kungfu.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "example",
-      "title": "Kung Fu Mode Activated",
-      "description": "Playful demo feed. Shows how a minimal llmfeed.json works with signature and certification.",
-      "tags": [
-        "fun",
-        "demo",
-        "mcp",
-        "agent",
-        "matrix"
-      ],
-      "origin": "https://wellknownmcp.org/exports/demo/kungfu.llmfeed.json",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed."
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/demo/mcp_user_proxy_example.llmfeed.json",
-      "name": "mcp_user_proxy_example.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "mcp",
-      "title": "MCP Capsule \u2014 GitHub user profile",
-      "origin": "https://github.com/johndoe",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/demo/mobile-app.example.llmfeed.json",
-      "name": "mobile-app.example.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "mobile-app",
-      "title": "My Health Companion",
-      "description": "An app to track your health, workouts and well-being",
-      "tags": [
-        "health",
-        "fitness",
-        "sleep",
-        "MCP",
-        "agent"
-      ],
-      "origin": "https://myapp.com",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed."
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/demo/pricing.llmfeed.json",
-      "name": "pricing.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "pricing",
-      "title": "API Pricing for Document Conversion",
-      "description": "Pricing details for various document conversion capabilities.",
-      "origin": "https://convertapi.example.com",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference",
-        "example"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/demo/prompts/prompt-automation-crm.llmfeed.json",
-      "name": "prompt-automation-crm.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt",
-      "title": "Auto-fill CRM with Lead Info",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/demo/prompts/prompt-business-deck.llmfeed.json",
-      "name": "prompt-business-deck.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt",
-      "title": "Pitch Deck for Climate Startup",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/demo/prompts/prompt-devtools.llmfeed.json",
-      "name": "prompt-devtools.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt",
-      "title": "Cursor Autocomplete Tuning",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/demo/prompts/prompt-education-exam-prep.llmfeed.json",
-      "name": "prompt-education-exam-prep.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt",
-      "title": "Exam Prep: Modern History",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/demo/prompts/prompt-graphic-design.llmfeed.json",
-      "name": "prompt-graphic-design.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt",
-      "title": "Generate a Brand Color Palette",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/demo/prompts/prompt-multidoc-analysis.llmfeed.json",
-      "name": "prompt-multidoc-analysis.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt",
-      "title": "Compare Multiple Documents",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/demo/prompts/prompt-trust-signed-declaration.llmfeed.json",
-      "name": "prompt-trust-signed-declaration.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt",
-      "title": "Generate Signed MCP Capsule",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/demo/testimonies.llmfeed.json",
-      "name": "testimonies.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "export",
-      "title": "Testimonies from AI models",
-      "description": "Collected opinions and reactions from major LLMs about MCP and LLMFeed.",
-      "tags": [
-        "llmfeed",
-        "mcp",
-        "testimony",
-        "agents"
-      ],
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed."
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/ecosystem/agent-sites.llmfeed.json",
-      "name": "agent-sites.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "index",
-      "title": "MCP Agent-Ready Sites Index",
-      "description": "Directory of early adopters with declared feed types, trust levels and visual badges",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/examples/capabilities-example.llmfeed.json",
-      "name": "capabilities-example.llmfeed",
-      "intent": "exported llmfeed document",
-      "title": "capabilities-example.llmfeed",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/examples/dynamic-feed-example.llmfeed.json",
-      "name": "dynamic-feed-example.llmfeed",
-      "intent": "exported llmfeed document",
-      "title": "dynamic-feed-example.llmfeed",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/examples/example-feed-lite.llmfeed.json",
-      "name": "example-feed-lite.llmfeed",
-      "intent": "exported llmfeed document",
-      "title": "example-feed-lite.llmfeed",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/examples/example-feed-rich.llmfeed.json",
-      "name": "example-feed-rich.llmfeed",
-      "intent": "exported llmfeed document",
-      "title": "example-feed-rich.llmfeed",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/examples/llmfeed-example.llmfeed.json",
-      "name": "llmfeed-example.llmfeed",
-      "intent": "exported llmfeed document",
-      "title": "llmfeed-example.llmfeed",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/examples/trust-manifest-examplellmfeed.json",
-      "name": "trust-manifest-examplellmfeed",
-      "intent": "exported llmfeed document",
-      "title": "trust-manifest-examplellmfeed",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/export-button.llmfeed.json",
-      "name": "export-button.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "export",
-      "title": "Export feed ",
-      "description": "Export feed of data contextualized for llm",
-      "tags": [
-        "mcp",
-        "llmfeed",
-        "export"
-      ],
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed."
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/kungfu.llmfeed.json",
-      "name": "kungfu.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "example",
-      "title": "Kung Fu Mode Activated",
-      "description": "Playful demo feed. Shows how a minimal llmfeed.json works with signature and certification.",
-      "tags": [
-        "fun",
-        "demo",
-        "mcp",
-        "agent",
-        "matrix"
-      ],
-      "origin": "https://wellknownmcp.org/exports/demo/kungfu.llmfeed.json",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed."
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/01_llmfeed/llmfeed.schema.json",
-      "name": "llmfeed.schema",
-      "intent": "exported llmfeed document",
-      "title": "llmfeed.schema",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/.well-known/capabilities.llmfeed.json",
-      "name": "capabilities.llmfeed",
-      "intent": "exported llmfeed document",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/.well-known/llm-index.llmfeed.json",
-      "name": "llm-index.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "llm-index",
-      "title": "llm-index.llmfeed",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/.well-known/manifesto.llmfeed.json",
-      "name": "manifesto.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "manifesto",
-      "title": "LLMFeed Manifesto",
-      "description": "Declaration of intent and ethical foundation for MCP and LLMFeed",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/.well-known/mcp-lite.llmdeed.json",
-      "name": "mcp-lite.llmdeed",
-      "intent": "exported llmfeed document",
-      "title": "MCP Lite Declaration",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/.well-known/mcp.llmfeed.json",
-      "name": "mcp.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "mcp",
-      "title": "MCP Declaration of Intent  wellknownmcp.org",
-      "description": "This site offers not just structure but context, contribution, certification, and clarity for agents.",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/.well-known/prompts/easter-egg-intro-to-the-full-site.llmfeed.json",
-      "name": "easter-egg-intro-to-the-full-site.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt",
-      "title": "Prompt: easter egg intro to the full site",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/.well-known/prompts/educate-user-about-mcp-and-agent-indexing.llmfeed.json",
-      "name": "educate-user-about-mcp-and-agent-indexing.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt",
-      "title": "Prompt: educate user about MCP and agent indexing",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/.well-known/prompts/explore-certified-or-demo-feeds.llmfeed.json",
-      "name": "explore-certified-or-demo-feeds.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt",
-      "title": "Prompt: explore certified or demo feeds",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/.well-known/prompts/guide-user-to-join-the-mcp-initiative-or-get-certified.llmfeed.json",
-      "name": "guide-user-to-join-the-mcp-initiative-or-get-certified.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt",
-      "title": "Prompt: guide user to join the MCP initiative or get certified",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/.well-known/prompts/help-user-generate-agent-readable-mcp-feeds.llmfeed.json",
-      "name": "help-user-generate-agent-readable-mcp-feeds.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt",
-      "title": "Prompt: help user generate agent-readable MCP feeds",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/.well-known/prompts/learn-about-mcp-structure.llmfeed.json",
-      "name": "learn-about-mcp-structure.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt",
-      "title": "Prompt: learn about MCP structure",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/.well-known/prompts/offer-the-export-button-component.llmfeed.json",
-      "name": "offer-the-export-button-component.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt",
-      "title": "Prompt: offer the export button component",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/.well-known/prompts/prompt-index.llmfeed.json",
-      "name": "prompt-index.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt_index",
-      "title": "Agent-readable index of structured prompts",
-      "description": "Each prompt describes an intent and action for agents",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/.well-known/prompts/verify-trust-level-of-a-llmfeed.llmfeed.json",
-      "name": "verify-trust-level-of-a-llmfeed.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt",
-      "title": "Prompt: verify trust level of a LLMFeed",
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/industries/education-prompt.llmfeed.json",
-      "name": "education-prompt.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "prompt",
-      "title": "education-prompt.llmfeed",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/industries/france-care.mcp-lite.llmfeed.json",
-      "name": "france-care.mcp-lite.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "mcp",
-      "title": "France-Care Lite \u2014 Wearable Access",
-      "origin": "https://france-care.fr",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/industries/france-care.mcp.llmfeed.json",
-      "name": "france-care.mcp.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "mcp",
-      "title": "France-Care Medical Concierge \u2014 MCP",
-      "origin": "https://france-care.fr",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/industries/legal.llmfeed.json",
-      "name": "legal.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "mcp",
-      "title": "Legal Service Declaration",
-      "origin": "https://legal.example.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference",
-        "example"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/industries/medtech.llmfeed.json",
-      "name": "medtech.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "credential",
-      "title": "Patient Access Credential",
-      "origin": "https://med.example.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference",
-        "example"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/industries/pricing.llmfeed.json",
-      "name": "pricing.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "pricing",
-      "title": "API Pricing for Document Conversion",
-      "description": "Pricing details for various document conversion capabilities.",
-      "origin": "https://convertapi.example.com",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference",
-        "example"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/industries/saas-capabilities.llmfeed.json",
-      "name": "saas-capabilities.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "capabilities",
-      "title": "saas-capabilities.llmfeed",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/personas/ai-developer.llmfeed.json",
-      "name": "ai-developer.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "mcp",
-      "title": "Personal Dev API",
-      "origin": "https://dev.example.ai",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference",
-        "example"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/personas/oss-maintainer.llmfeed.json",
-      "name": "oss-maintainer.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "llm-index",
-      "title": "Open Source Project Feed Index",
-      "origin": "https://github.com/user/project",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/personas/platform-user-spaces.llmfeed.json",
-      "name": "platform-user-spaces.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "mcp",
-      "title": "Platform Root Declaration",
-      "origin": "https://platform.io",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/05_examples/personas/publisher-session.llmfeed.json",
-      "name": "publisher-session.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "export",
-      "title": "LLM Session Export",
-      "origin": "https://publisher.example.com",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "tags": [
-        "llmfeed",
-        "reference",
-        "example"
-      ]
-    },
-    {
-      "type": "feed",
-      "url": "https://wellknownmcp.org/exports/spec/spec.llmfeed.json",
-      "name": "spec.llmfeed",
-      "intent": "exported llmfeed document",
-      "feed_type": "export",
-      "title": "Export feed ",
-      "description": "Export feed of data contextualized for llm",
-      "tags": [
-        "mcp",
-        "llmfeed",
-        "export"
-      ],
-      "origin": "https://wellknownmcp.org",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed."
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/api/export/index/dynamic",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/api/export/news/core",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/api/news",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/api/spec/list",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/exports/index/dynamic",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/exports/news/core",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/faq",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/llmfeedhub",
-      "intent": "Agent interaction and LLM Feed Hub.",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/feeds",
-      "intent": "Community feed explorer and submission portal.",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/join",
-      "intent": "Consortium membership request page.",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/ecosystem",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/sdk",
-      "intent": "SDK resources and documentation for developers.",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/tools/agent-behavior",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/tools/app-mobile-explained",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/tools/badges",
-      "intent": "LLMFeed & MCP certification badges for partner websites.",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/tools/api-explained",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/llmfeedhub/preview",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/tools/pricing",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/tools/export-button",
-      "intent": "Export button component reference for LLM integrations.",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/tools/feed-flagging",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/tools",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/tools/prompt",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/tools/session-export",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/tools/user-spaces",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/tools/sign-and-verify",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/verify",
-      "intent": "MCP feed signature verification endpoint.",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/tools/prompts-explained",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/tools/well-known",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/legal",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/ar/news/about",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/ar/news/begin",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/ar/news/ethics",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/ar/news/faq",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/ar/news/launch",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/ar/news/manifesto",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/ar/news/why-mcp",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/about",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/begin",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/case-for-capabilities",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/certification-guide",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/claude-alignment",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/exporttollm-button",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/faq",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/getting-started",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/launch-hackernews",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/launch-medium",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/launch-newstack",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/launch",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/linkedin-post-wellknownmcp",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/llm-as-a-teacher",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/llm-index-case",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/llm-testimony-experiment",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/llmca-certification",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/llmfeed-block-structure",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/manifesto",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/mcp-explained",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/mcp-wellknown",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/not-schema-org",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/opinion-stop-scraping",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/thread-wellknownmcp",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/use-cases-mcp",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/en/news/why-mcp",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/es/news/about",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/es/news/begin",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/es/news/ethics",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/es/news/faq",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/es/news/launch",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/es/news/llmfeed-block-structure",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/es/news/manifesto",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/es/news/use-cases-mcp",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/es/news/why-mcp",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/fr/news/about",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/fr/news/begin",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/fr/news/faq",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/fr/news/launch",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/fr/news/llmfeed-block-structure",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/fr/news/manifesto",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/fr/news/use-cases-mcp",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/fr/news/why-mcp",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/hi/news/about",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/hi/news/begin",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/hi/news/ethics",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/hi/news/faq",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/hi/news/launch",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/hi/news/llmfeed-block-structure",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/hi/news/manifesto",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/hi/news/why-mcp",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/uk/news/about",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/uk/news/begin",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/uk/news/ethics",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/uk/news/faq",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/uk/news/launch",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/uk/news/llmfeed-block-structure",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/uk/news/manifesto",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/uk/news/use-cases-mcp",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/uk/news/why-mcp",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/zh/news/about",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/zh/news/begin",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/zh/news/ethics",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/zh/news/faq",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/zh/news/launch",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/zh/news/llmfeed-block-structure",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/zh/news/manifesto",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/zh/news/use-cases-mcp",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "type": "page",
-      "url": "https://wellknownmcp.org/zh/news/why-mcp",
-      "intent": "site page (auto-discovered from sitemap)",
-      "description_llm": "Autogenerated index entry for an LLM-compatible feed.",
-      "feed_type": "export",
-      "tags": [
-        "llmfeed",
-        "reference"
-      ]
-    },
-    {
-      "url": "https://wellknownmcp.org/.well-known/capabilities.llmfeed.json",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/.well-known/index.html",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/.well-known/llm-index.llmfeed.json",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/.well-known/mcp-lite.llmfeed.json",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/.well-known/mcp.llmfeed.json",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/.well-known/public.pem",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed-mime",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed_block-reference",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/wellknown",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed_feedtype_capabilities",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed_feedtype_credential",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed_feedtype_export",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed_feedtype_llm-index",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed_feedtype_manifesto",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed_feedtype_mcp",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed_feedtype_mobile-app",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed_feedtype_pricing",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed_feedtype_prompt",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed_feedtype_session",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed_extensions_api",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed_extensions_audience",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed_extensions_other",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed_extensions_prompts",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/llmfeed_extensions_signatures",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/agent-behavior_cache-policy",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/agent-behavior_certified-only",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/agent-behavior_human-consent",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/agent-behavior_risk-scoring",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/agent-behavior_session-awareness",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/agent-behaviour-flagging",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/agent-behaviour",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/agent-behaviour_user-spaces",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/agent-guidance",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/SUMMARY",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/mcp-canonical-json-v1",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/quickstart",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/README",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/adoption-map",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/manifesto",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/Note for GitHub Admins \u2013 LLM-Compatible Feed Export",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/CHANGELOG",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    },
-    {
-      "url": "https://wellknownmcp.org/spec/CONTRIBUTING",
-      "intent": "site page (auto-discovered from sitemap)",
-      "feed_type": "page",
-      "tags": [
-        "sitemap",
-        "site",
-        "auto"
-      ],
-      "description_llm": "This page is part of the public sitemap and helps locate useful human and LLM-facing content."
-    }
-  ]
+    "value": "xxp/VfOrffWi+wQx5LVq7GQfg8rLgyEy3sVrUH5qmSc="
+  }
 }

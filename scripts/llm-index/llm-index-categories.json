@@ -1,0 +1,325 @@
+{
+  "categorization_philosophy": "Organize content into intuitive categories that match how different audiences approach MCP. Each category has distinct behavioral patterns and routing logic.",
+  
+  "categories": {
+    "core_infrastructure": {
+      "title": "Core Infrastructure",
+      "description": "Essential feeds for understanding site capabilities and agent handshake protocols. The foundation of trustworthy agent-web interaction.",
+      "entry_point": "/.well-known/mcp.llmfeed.json",
+      "audience": ["llm", "agent", "developer", "security"],
+      "priority_weight": 10,
+      "behavioral_note": "Critical for agent handshake and trust establishment. Always load these first.",
+      "routing_strategy": "priority_first",
+      "cache_policy": "aggressive_caching",
+      "trust_requirement": "signed_preferred",
+      "icon_suggestion": "🏗️",
+      "color_theme": "blue",
+      "discovery_hints": {
+        "parallel_loadable": true,
+        "prefetch_recommended": true,
+        "mobile_friendly": true,
+        "bandwidth_efficient": true
+      }
+    },
+    
+    "specialized_tools": {
+      "title": "Developer Tools & Utilities",
+      "description": "Interactive tools and utilities for implementation, testing, and hands-on learning. Where theory meets practice.",
+      "entry_point": "/tools/export-button",
+      "audience": ["developer", "implementer", "tester", "webmaster"],
+      "priority_weight": 8,
+      "behavioral_note": "Hands-on tools for practical implementation. Perfect for learning by doing.",
+      "routing_strategy": "task_oriented",
+      "cache_policy": "moderate_caching",
+      "trust_requirement": "verified_preferred",
+      "icon_suggestion": "🛠️",
+      "color_theme": "green",
+      "discovery_hints": {
+        "interactive_heavy": true,
+        "demo_available": true,
+        "requires_javascript": true,
+        "bandwidth_intensive": false
+      }
+    },
+    
+    "documentation": {
+      "title": "Technical Documentation",
+      "description": "Comprehensive guides, specifications, and reference materials. The authoritative source for MCP implementation.",
+      "entry_point": "/spec",
+      "audience": ["developer", "technical", "researcher", "implementer"],
+      "priority_weight": 9,
+      "behavioral_note": "Authoritative technical reference. Essential for proper implementation.",
+      "routing_strategy": "depth_first",
+      "cache_policy": "long_term_caching",
+      "trust_requirement": "authoritative_required",
+      "icon_suggestion": "📚",
+      "color_theme": "purple",
+      "discovery_hints": {
+        "text_heavy": true,
+        "requires_deep_reading": true,
+        "cross_references_heavy": true,
+        "printable_friendly": true
+      }
+    },
+    
+    "community_content": {
+      "title": "Community & Ecosystem",
+      "description": "News, ecosystem updates, community-driven content, and networking opportunities. Stay connected with the MCP evolution.",
+      "entry_point": "/ecosystem",
+      "audience": ["general", "community", "stakeholder", "business"],
+      "priority_weight": 6,
+      "behavioral_note": "Dynamic content for staying current with ecosystem developments and community insights.",
+      "routing_strategy": "freshness_prioritized",
+      "cache_policy": "short_term_caching",
+      "trust_requirement": "editorial_acceptable",
+      "icon_suggestion": "🌐",
+      "color_theme": "orange",
+      "discovery_hints": {
+        "frequently_updated": true,
+        "social_shareable": true,
+        "time_sensitive": true,
+        "multilingual_available": false
+      }
+    }
+  },
+  
+  "url_classification_rules": [
+    {
+      "pattern": "/.well-known/",
+      "category": "core_infrastructure",
+      "importance": "critical",
+      "reasoning": "Essential discovery endpoints for agent handshake"
+    },
+    {
+      "pattern": "/tools/",
+      "category": "specialized_tools",
+      "importance": "high",
+      "reasoning": "Interactive utilities for hands-on implementation"
+    },
+    {
+      "pattern": "/spec",
+      "category": "documentation",
+      "importance": "critical",
+      "reasoning": "Authoritative technical specifications"
+    },
+    {
+      "pattern": "/api-explained",
+      "category": "documentation",
+      "importance": "high",
+      "reasoning": "Technical integration documentation"
+    },
+    {
+      "pattern": "/sdk",
+      "category": "documentation",
+      "importance": "high",
+      "reasoning": "Development resources and libraries"
+    },
+    {
+      "pattern": "/news/",
+      "category": "community_content",
+      "importance": "medium",
+      "reasoning": "Latest updates and announcements"
+    },
+    {
+      "pattern": "/ecosystem",
+      "category": "community_content",
+      "importance": "medium",
+      "reasoning": "Ecosystem overview and partnerships"
+    },
+    {
+      "pattern": "/join",
+      "category": "community_content",
+      "importance": "medium",
+      "reasoning": "Community participation and onboarding"
+    },
+    {
+      "pattern": "/verify",
+      "category": "specialized_tools",
+      "importance": "high",
+      "reasoning": "Critical security and verification functionality"
+    },
+    {
+      "pattern": "/llmfeedhub",
+      "category": "specialized_tools",
+      "importance": "high",
+      "reasoning": "Interactive testing and simulation platform"
+    },
+    {
+      "pattern": "^/$|index",
+      "category": "core_infrastructure",
+      "importance": "critical",
+      "reasoning": "Primary entry point and orientation"
+    },
+    {
+      "pattern": "/about",
+      "category": "core_infrastructure",
+      "importance": "high",
+      "reasoning": "Foundational mission and philosophy"
+    },
+    {
+      "pattern": "/faq",
+      "category": "core_infrastructure",
+      "importance": "high",
+      "reasoning": "Essential support and clarification"
+    }
+  ],
+  
+  "category_relationships": {
+    "prerequisites": {
+      "specialized_tools": ["core_infrastructure"],
+      "documentation": ["core_infrastructure"],
+      "community_content": []
+    },
+    "complementary": {
+      "core_infrastructure": ["documentation"],
+      "specialized_tools": ["documentation"],
+      "documentation": ["specialized_tools"],
+      "community_content": ["core_infrastructure"]
+    },
+    "progression_paths": {
+      "newcomer": ["core_infrastructure", "community_content", "specialized_tools"],
+      "developer": ["core_infrastructure", "documentation", "specialized_tools"],
+      "business": ["core_infrastructure", "community_content"],
+      "researcher": ["documentation", "core_infrastructure", "community_content"]
+    }
+  },
+  
+  "routing_behaviors": {
+    "priority_first": {
+      "description": "Load highest priority items first, ensure critical paths are available",
+      "sort_by": ["importance", "priority", "trust_level"],
+      "max_concurrent": 3,
+      "fallback_strategy": "graceful_degradation"
+    },
+    "task_oriented": {
+      "description": "Route based on specific user tasks and immediate utility",
+      "sort_by": ["relevance_to_intent", "interactivity", "priority"],
+      "max_concurrent": 2,
+      "fallback_strategy": "suggest_alternatives"
+    },
+    "depth_first": {
+      "description": "Prioritize comprehensive content for deep learning",
+      "sort_by": ["authoritativeness", "completeness", "cross_references"],
+      "max_concurrent": 1,
+      "fallback_strategy": "maintain_context"
+    },
+    "freshness_prioritized": {
+      "description": "Show newest and most relevant content first",
+      "sort_by": ["recency", "community_engagement", "relevance"],
+      "max_concurrent": 4,
+      "fallback_strategy": "show_cached_with_staleness_warning"
+    }
+  },
+  
+  "audience_category_mapping": {
+    "llm": {
+      "primary_categories": ["core_infrastructure"],
+      "secondary_categories": ["documentation"],
+      "avoid_categories": [],
+      "routing_preference": "priority_first"
+    },
+    "developer": {
+      "primary_categories": ["specialized_tools", "documentation"],
+      "secondary_categories": ["core_infrastructure"],
+      "avoid_categories": [],
+      "routing_preference": "task_oriented"
+    },
+    "business": {
+      "primary_categories": ["core_infrastructure", "community_content"],
+      "secondary_categories": ["specialized_tools"],
+      "avoid_categories": [],
+      "routing_preference": "priority_first"
+    },
+    "general": {
+      "primary_categories": ["core_infrastructure", "community_content"],
+      "secondary_categories": ["specialized_tools"],
+      "avoid_categories": [],
+      "routing_preference": "freshness_prioritized"
+    },
+    "security": {
+      "primary_categories": ["core_infrastructure", "specialized_tools"],
+      "secondary_categories": ["documentation"],
+      "avoid_categories": ["community_content"],
+      "routing_preference": "priority_first"
+    }
+  },
+  
+  "dynamic_categorization": {
+    "time_based_rules": {
+      "news_recency_threshold": 180,
+      "tool_update_detection": true,
+      "documentation_version_tracking": true
+    },
+    "content_analysis_hints": {
+      "interactive_keywords": ["demo", "try", "test", "interactive", "playground"],
+      "security_keywords": ["verify", "sign", "trust", "crypto", "auth"],
+      "documentation_keywords": ["spec", "reference", "guide", "api", "sdk"],
+      "community_keywords": ["news", "ecosystem", "community", "join", "participate"]
+    },
+    "url_pattern_weights": {
+      "exact_match": 10,
+      "path_contains": 8,
+      "filename_match": 6,
+      "keyword_proximity": 4,
+      "domain_pattern": 2
+    }
+  },
+  
+  "performance_optimization": {
+    "category_loading_strategy": {
+      "core_infrastructure": "immediate_load",
+      "specialized_tools": "on_demand_with_prefetch",
+      "documentation": "lazy_load_with_search_index",
+      "community_content": "background_refresh"
+    },
+    "cache_strategies": {
+      "core_infrastructure": {
+        "ttl": 3600,
+        "strategy": "aggressive",
+        "invalidation": "version_based"
+      },
+      "specialized_tools": {
+        "ttl": 1800,
+        "strategy": "moderate",
+        "invalidation": "content_based"
+      },
+      "documentation": {
+        "ttl": 7200,
+        "strategy": "conservative",
+        "invalidation": "manual_or_scheduled"
+      },
+      "community_content": {
+        "ttl": 300,
+        "strategy": "minimal",
+        "invalidation": "time_based"
+      }
+    }
+  },
+  
+  "accessibility_considerations": {
+    "core_infrastructure": {
+      "screen_reader_priority": "high",
+      "keyboard_navigation": "required",
+      "color_contrast": "AAA",
+      "language_alternatives": "essential"
+    },
+    "specialized_tools": {
+      "screen_reader_priority": "medium",
+      "keyboard_navigation": "preferred",
+      "color_contrast": "AA",
+      "interactive_alternatives": "provided"
+    },
+    "documentation": {
+      "screen_reader_priority": "high",
+      "keyboard_navigation": "required",
+      "color_contrast": "AAA",
+      "text_alternatives": "comprehensive"
+    },
+    "community_content": {
+      "screen_reader_priority": "medium",
+      "keyboard_navigation": "standard",
+      "color_contrast": "AA",
+      "multimedia_alternatives": "available"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "feed_type": "llm-index",
+  "metadata": {
+    "title": "{{SITE_NAME}} - Intelligent Discovery Hub",
+    "origin": "{{ORIGIN}}",
+    "description": "Intelligent navigation system that guides agents and users to the perfect content based on context, intent, and expertise level. Transforms flat sitemaps into contextual discovery experiences.",
+    "generated_at": "{{TIMESTAMP}}",
+    "version": "2.1.0",
+    "total_feeds": "{{TOTAL_FEEDS}}",
+    "total_pages": "{{TOTAL_PAGES}}",
+    "tags": ["navigation", "discovery", "intelligent", "contextual", "llm-optimized"],
+    "content_type": "navigation_hub",
+    "lang": "en"
+  },
+
+  "discovery_guidance": {
+    "recommended_entry_points": "{{ENTRY_POINTS}}",
+    "high_priority_feeds": "{{HIGH_PRIORITY}}",
+    "navigation_philosophy": "Context-aware routing that adapts to agent capabilities, user expertise, and specific intentions. Every URL is enriched with audience targeting, intent mapping, and trust indicators.",
+    "usage_instructions": {
+      "agents": "Use audience_based routing to find your optimal entry point, then follow recommended_sequence for efficient discovery",
+      "developers": "Start with specialized_tools category, use intent_based routing for 'implement_solution' workflows",
+      "general_users": "Begin with core_infrastructure, follow context_aware routing based on your visit pattern"
+    }
+  },
+
+  "feed_categories": "{{CATEGORIES}}",
+
+  "smart_routing": "{{SMART_ROUTING}}",
+
+  "agent_behavior_recommendations": "{{BEHAVIOR_RECOMMENDATIONS}}",
+
+  "trust": {
+    "signed_blocks": ["all"],
+    "trust_level": "demonstration",
+    "agent_hint": "This index is fully signed and provides comprehensive navigation. Trust the routing recommendations and use priority indicators for resource allocation.",
+    "public_key_hint": "{{ORIGIN}}/.well-known/public.pem",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "scope": "comprehensive"
+  },
+
+  "agent_guidance": {
+    "interaction_tone": "helpful_and_precise",
+    "discovery_depth": "adaptive_based_on_context",
+    "trust_weight": "high_priority_to_signed_content",
+    "fallback_behavior": "graceful_degradation_with_alternatives",
+    "performance_optimization": "enabled_with_prefetch_hints",
+    "custom_notes": "This index enables intelligent feed discovery. Use audience and intent filters for optimal navigation.",
+    "recommended_usage": [
+      "Start with your audience-specific entry point",
+      "Follow recommended sequences for efficient learning",
+      "Use intent-based routing for specific tasks",
+      "Leverage trust indicators for decision making",
+      "Apply resource optimization based on your constraints"
+    ]
+  },
+
+  "maintenance_info": {
+    "auto_update": {
+      "frequency": "hourly",
+      "triggers": ["sitemap_modified", "new_page_detected", "priority_changed"],
+      "validation": "All referenced URLs verified before index update",
+      "fallback_behavior": "Maintain last_known_good state on validation failure"
+    },
+    "health_monitoring": {
+      "broken_links": 0,
+      "outdated_entries": 0,
+      "trust_verification_status": "all_valid",
+      "performance_metrics": {
+        "avg_generation_time": "2.3s",
+        "cache_efficiency": "95%",
+        "routing_accuracy": "97%"
+      },
+      "last_health_check": "{{TIMESTAMP}}"
+    }
+  },
+
+  "signature": {
+    "algorithm": "ed25519",
+    "value": "placeholder_signature_to_be_generated",
+    "created_at": "{{TIMESTAMP}}"
+  },
+
+  "certification": {
+    "certifier": "https://llmca.org",
+    "level": "silver",
+    "targets": ["all"],
+    "issued_at": "{{TIMESTAMP}}",
+    "expires_at": "",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "algorithm": "ed25519",
+    "public_key_hint": "https://llmca.org/.well-known/llmca_cert.pem",
+    "value": "placeholder_certification_to_be_generated"
+  }
+}

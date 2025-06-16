@@ -1,0 +1,25 @@
+{
+  "package.json": {
+    "name": "compiled-site-generator",
+    "version": "1.0.0", 
+    "description": "Générateur de compiled-site.llmfeed.json avec logique export button",
+    "scripts": {
+      "build": "python build-script.py",
+      "build:watch": "nodemon --watch build --ext html,js,css --exec 'python build-script.py'",
+      "validate": "python compiled_site_generator.py --dry-run",
+      "clean": "rm -f public/compiled-site.llmfeed.json",
+      "install-deps": "pip install -r requirements.txt"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.0"
+    },
+    "dependencies": {},
+    "keywords": [
+      "llmfeed",
+      "mcp",
+      "compiled-site", 
+      "agent-data",
+      "export-button"
+    ]
+  }
+}

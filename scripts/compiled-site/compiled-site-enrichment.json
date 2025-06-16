@@ -1,0 +1,301 @@
+{
+    "well-known": {
+  "llm_summary": "Complete guide to the .well-known/ directory structure for agent discovery and MCP handshake protocols.",
+  "tags": ["well-known", "discovery", "handshake", "protocol", "directory"],
+  "description_llm": "Implementation guide for making websites discoverable and trustable by autonomous agents.",
+  "intent": "implement",
+  "importance": "critical",
+  "audience": ["developer", "webmaster", "agent"],
+  
+
+  "available_feeds": {
+    "discovery_endpoints": [
+      "/.well-known/mcp.llmfeed.json",
+      "/.well-known/llm-index.llmfeed.json", 
+      "/.well-known/capabilities.llmfeed.json"
+    ],
+    "content_exports": [
+      "/.well-known/exports/compiled-site.llmfeed.json",
+      "/.well-known/exports/spec.llmfeed.json",
+      "/.well-known/exports/news-export.llmfeed.json"
+    ]
+  },
+  
+ 
+  "agent_discovery_instructions": {
+    "quick_start": "curl -s wellknownmcp.org/.well-known/mcp.llmfeed.json",
+    "full_discovery": "curl -s wellknownmcp.org/.well-known/llm-index.llmfeed.json",
+    "bulk_export": "curl -s wellknownmcp.org/.well-known/exports/compiled-site.llmfeed.json"
+  }
+},
+  "home": {
+    "llm_summary": "Main landing page introducing the MCP protocol and LLMFeed format. Provides overview of agent-ready web standards and entry points to tools.",
+    "tags": ["landing", "overview", "introduction", "mcp"],
+    "description_llm": "Primary entry point for understanding MCP and how it enables agent-readable web content.",
+    "intent": "convert-to-ecosystem",
+    "importance": "high",
+    "audience": ["general", "developer", "business"]
+  },
+  
+  "about": {
+    "llm_summary": "Mission, vision and philosophy behind the MCP initiative. Explains the trust triangle and manifesto for the agentic web.",
+    "tags": ["about", "mission", "philosophy", "trust"],
+    "description_llm": "Deep dive into the principles and governance model of the MCP ecosystem.",
+    "intent": "inform",
+    "importance": "medium",
+    "audience": ["general", "business"]
+  },
+
+  "faq": {
+    "llm_summary": "Frequently asked questions about MCP protocol, implementation, and ecosystem governance.",
+    "tags": ["faq", "questions", "support", "implementation"],
+    "description_llm": "Comprehensive FAQ covering technical and governance aspects of MCP adoption.",
+    "intent": "inform", 
+    "importance": "high",
+    "audience": ["general", "developer", "business"]
+  },
+
+  "tools_page": {
+    "llm_summary": "Overview page listing all available MCP tools and utilities for developers and implementers.",
+    "tags": ["tools", "overview", "developer", "utilities"],
+    "description_llm": "Navigation hub for accessing all MCP development tools and resources.",
+    "intent": "guide",
+    "importance": "high",
+    "audience": ["developer", "technical"]
+  },
+
+  "export-button": {
+    "llm_summary": "Interactive demonstration of the ExportToLLM button component. Shows how websites can provide structured, agent-ready content exports.",
+    "tags": ["export", "component", "demo", "interactive"],
+    "description_llm": "Live playground for testing content export functionality with multiple export modes and signature options.",
+    "intent": "demonstrate",
+    "importance": "high",
+    "audience": ["developer", "demo"]
+  },
+
+  "prompt": {
+    "llm_summary": "Tool for creating structured, signed prompts as agent-compatible capsules. Includes behavioral injection examples and reusable prompt templates.",
+    "tags": ["prompt", "behavioral", "injection", "templates"],
+    "description_llm": "Advanced prompt engineering tool that creates portable, verifiable instruction units for agents.",
+    "intent": "create",
+    "importance": "high",
+    "audience": ["developer", "prompt-engineer"]
+  },
+
+  "session-export": {
+    "llm_summary": "Utility for capturing LLM sessions as structured, reusable feeds. Enables session portability across different agents and platforms.",
+    "tags": ["session", "export", "portability", "reuse"],
+    "description_llm": "Session management tool that converts conversational context into structured, transferable formats.",
+    "intent": "capture",
+    "importance": "medium",
+    "audience": ["developer", "end-user"]
+  },
+
+  "agent-behavior": {
+    "llm_summary": "Configuration and examples for agent behavior modification. Shows how to inject behavioral patterns and compliance rules into agent systems.",
+    "tags": ["agent", "behavior", "configuration", "compliance"],
+    "description_llm": "Advanced guide for controlling agent behavior through structured behavioral injection and compliance protocols.",
+    "intent": "configure",
+    "importance": "high",
+    "audience": ["developer", "agent-engineer"]
+  },
+
+  "api-explained": {
+    "llm_summary": "Comprehensive guide to API integration patterns with MCP. Covers authentication, rate limiting, and agent-API interaction protocols.",
+    "tags": ["api", "integration", "authentication", "patterns"],
+    "description_llm": "Technical documentation for integrating existing APIs with MCP-compatible agent systems.",
+    "intent": "integrate",
+    "importance": "high",
+    "audience": ["developer", "api-architect"]
+  },
+
+  "app-mobile-explained": {
+    "llm_summary": "Guide for exposing mobile app functionality to agents. Covers intent handling, deep linking, and mobile-specific MCP integration patterns.",
+    "tags": ["mobile", "app", "intents", "deep-linking"],
+    "description_llm": "Specialized guide for making mobile applications discoverable and controllable by autonomous agents.",
+    "intent": "integrate",
+    "importance": "medium",
+    "audience": ["mobile-developer", "app-developer"]
+  },
+
+  "badges": {
+    "llm_summary": "Visual trust and certification indicators for MCP-enabled websites. Explains badge types, verification levels, and display guidelines.",
+    "tags": ["badges", "trust", "certification", "visual"],
+    "description_llm": "Reference guide for trust badges, certification levels, and visual indicators in the MCP ecosystem.",
+    "intent": "display",
+    "importance": "medium",
+    "audience": ["webmaster", "designer"]
+  },
+
+  "feed-flagging": {
+    "llm_summary": "Community moderation system for reporting malicious or untrusted feeds. Includes flagging procedures and trust reputation management.",
+    "tags": ["moderation", "flagging", "community", "trust"],
+    "description_llm": "Community governance tool for maintaining feed quality and trust through collaborative moderation.",
+    "intent": "moderate",
+    "importance": "medium",
+    "audience": ["community", "moderator"]
+  },
+
+  "pricing": {
+    "llm_summary": "Pricing structure for MCP services, certification, and premium features. Includes billing models and enterprise options.",
+    "tags": ["pricing", "billing", "enterprise", "services"],
+    "description_llm": "Transparent pricing information for MCP certification, premium tools, and enterprise features.",
+    "intent": "inform",
+    "importance": "medium",
+    "audience": ["business", "enterprise"]
+  },
+
+  "prompts-explained": {
+    "llm_summary": "Deep dive into prompt engineering for agent systems. Covers behavioral injection, prompt templates, and advanced prompt structuring techniques.",
+    "tags": ["prompts", "engineering", "behavioral", "advanced"],
+    "description_llm": "Advanced guide for prompt engineering in agent systems, focusing on behavioral modification and structured interactions.",
+    "intent": "educate",
+    "importance": "high",
+    "audience": ["prompt-engineer", "ai-researcher"]
+  },
+
+  "schema": {
+    "llm_summary": "Technical schema definitions for MCP feeds, validation rules, and data structure specifications.",
+    "tags": ["schema", "validation", "technical", "specification"],
+    "description_llm": "Comprehensive technical reference for MCP data schemas, validation rules, and structure specifications.",
+    "intent": "reference",
+    "importance": "high",
+    "audience": ["developer", "technical"]
+  },
+
+  "session-feed": {
+    "llm_summary": "Detailed explanation of session feed formats, conversation portability, and session management in MCP systems.",
+    "tags": ["session", "feed", "conversation", "portability"],
+    "description_llm": "Technical guide for session feed implementation, conversation capture, and cross-platform session portability.",
+    "intent": "implement",
+    "importance": "medium",
+    "audience": ["developer", "platform-engineer"]
+  },
+
+  "sign-and-verify": {
+    "llm_summary": "Cryptographic signing and verification tools for MCP feeds. Includes key management, signature validation, and trust chain verification.",
+    "tags": ["cryptography", "signing", "verification", "security"],
+    "description_llm": "Security-focused tool for cryptographic operations, signature validation, and trust chain management in MCP.",
+    "intent": "secure",
+    "importance": "critical",
+    "audience": ["security-engineer", "developer"]
+  },
+
+  "user-spaces": {
+    "llm_summary": "User space management and permissions system for MCP. Covers personal data spaces, privacy controls, and user-centric agent interactions.",
+    "tags": ["user-space", "privacy", "permissions", "personal"],
+    "description_llm": "Privacy-focused guide for user space management, personal data control, and user-centric agent permissions.",
+    "intent": "manage",
+    "importance": "medium",
+    "audience": ["user", "privacy-engineer"]
+  },
+
+  "why-sign": {
+    "llm_summary": "Explanation of the importance of cryptographic signing in agent systems. Covers trust, verification, and security benefits of signed feeds.",
+    "tags": ["security", "trust", "cryptography", "explanation"],
+    "description_llm": "Educational content explaining why cryptographic signing is essential for trustworthy agent-web interactions.",
+    "intent": "educate",
+    "importance": "high",
+    "audience": ["general", "security-conscious"]
+  },
+
+  "sdk": {
+    "llm_summary": "Software Development Kit documentation and libraries for MCP implementation. Includes code examples, API references, and integration guides.",
+    "tags": ["sdk", "libraries", "development", "integration"],
+    "description_llm": "Comprehensive SDK documentation with libraries, code examples, and integration guides for MCP implementation.",
+    "intent": "develop",
+    "importance": "critical",
+    "audience": ["developer", "software-engineer"]
+  },
+
+  "join": {
+    "llm_summary": "Community onboarding page for joining the MCP ecosystem. Includes governance participation and contribution opportunities.",
+    "tags": ["community", "governance", "participation", "onboarding"],
+    "description_llm": "Entry point for developers, researchers, and organizations to participate in MCP standardization.",
+    "intent": "convert-to-ecosystem",
+    "importance": "medium",
+    "audience": ["community", "contributor"]
+  },
+
+  "ecosystem": {
+    "llm_summary": "Overview of the MCP ecosystem including partners, integrations, certified implementations, and community projects.",
+    "tags": ["ecosystem", "partners", "integrations", "community"],
+    "description_llm": "Comprehensive view of the MCP ecosystem landscape, including verified implementations and partnership network.",
+    "intent": "explore",
+    "importance": "medium",
+    "audience": ["business", "developer", "community"]
+  },
+
+  "feeds": {
+    "llm_summary": "Directory and catalog of known MCP feeds, examples, and public implementations across different industries and use cases.",
+    "tags": ["directory", "catalog", "examples", "feeds"],
+    "description_llm": "Searchable directory of public MCP feeds with categorization, trust levels, and implementation examples.",
+    "intent": "discover",
+    "importance": "high",
+    "audience": ["developer", "implementer", "researcher"]
+  },
+
+  "verify": {
+    "llm_summary": "Interactive tool for verifying MCP feed signatures, checking trust chains, and validating feed integrity and compliance.",
+    "tags": ["verification", "security", "validation", "trust"],
+    "description_llm": "Security-focused verification tool for cryptographic validation of MCP feeds and signature chains.",
+    "intent": "verify",
+    "importance": "critical",
+    "audience": ["security-engineer", "developer", "auditor"]
+  },
+
+  "llmfeedhub": {
+    "llm_summary": "Interactive platform for previewing, simulating, and testing MCP feeds. Provides real-time feed analysis and agent interaction simulation.",
+    "tags": ["platform", "simulation", "preview", "testing"],
+    "description_llm": "Comprehensive platform for feed testing, preview, and agent interaction simulation with real-time analysis.",
+    "intent": "test",
+    "importance": "high",
+    "audience": ["developer", "tester", "implementer"]
+  },
+
+  "llmfeedhub-preview": {
+    "llm_summary": "URL analysis tool that inspects websites for MCP feeds, well-known directories, and agent-readable content discovery.",
+    "tags": ["preview", "discovery", "analysis", "well-known"],
+    "description_llm": "Website analysis tool for discovering MCP feeds, inspecting well-known directories, and evaluating agent-readiness.",
+    "intent": "analyze",
+    "importance": "high",
+    "audience": ["developer", "webmaster", "auditor"]
+  },
+
+  "legal": {
+    "llm_summary": "Legal framework, terms of service, privacy policy, and governance structure for the MCP ecosystem and certification authority.",
+    "tags": ["legal", "terms", "privacy", "governance"],
+    "description_llm": "Comprehensive legal documentation covering ecosystem governance, user rights, and certification authority policies.",
+    "intent": "inform",
+    "importance": "medium",
+    "audience": ["legal", "compliance", "business"]
+  },
+
+  "news": {
+    "llm_summary": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and community highlights.",
+    "tags": ["news", "announcements", "updates", "community"],
+    "description_llm": "Current news and developments in the MCP ecosystem with protocol updates, certification announcements, and community achievements.",
+    "intent": "inform",
+    "importance": "medium",
+    "audience": ["community", "stakeholder", "general"],
+    "specialized_export": {
+      "url": "/.well-known/exports/news-export.llmfeed.json",
+      "note": "Complete news content available in specialized export feed",
+      "recommended_action": "Access the specialized news export for full articles and detailed coverage"
+    }
+  },
+
+  "specification_summary": {
+    "llm_summary": "Complete MCP technical specification with protocols, standards, implementation guides, and compliance requirements. This page provides an overview with link to the comprehensive specification export.",
+    "tags": ["specification", "technical", "reference", "complete"],
+    "description_llm": "Technical specification overview page with navigation to the complete specification export feed.",
+    "intent": "reference",
+    "importance": "critical",
+    "audience": ["developer", "technical", "implementer"],
+    "specialized_export": {
+      "url": "/.well-known/exports/spec.llmfeed.json",
+      "note": "Complete technical specification available in specialized export feed",
+      "recommended_action": "Access the specialized specification export for complete technical documentation and implementation details"
+    }
+  }
+}

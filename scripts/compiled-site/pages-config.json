@@ -1,0 +1,285 @@
+{
+  "domain": "https://wellknownmcp.org",
+  "site_name": "WellKnownMCP",
+  "build_detection": {
+    "possible_dirs": [".next/server/app", ".next/server/pages", "out", "build", "dist"],
+    "required_files": ["index.html", "page.html"]
+  },
+  "pages": [
+    {
+      "path": "index.html",
+      "block_name": "home",
+      "priority": 1,
+      "include_full_content": true,
+      "content_selector": "main, .main-content",
+      "description": "Main landing page with MCP overview"
+    },
+    {
+      "path": "en/about",
+      "block_name": "about",
+      "priority": 2,
+      "include_full_content": true,
+      "content_selector": "main, article",
+      "description": "About page with mission and philosophy",
+      "special_processing": "markdown_from_exports"
+    },
+    {
+      "path": "en/faq", 
+      "block_name": "faq",
+      "priority": 2,
+      "include_full_content": true,
+      "content_selector": "main, article",
+      "description": "FAQ page",
+      "special_processing": "markdown_from_exports"
+    },
+    {
+      "path": "tools",
+      "block_name": "tools_page",
+      "priority": 1,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Tools overview page"
+    },
+    {
+      "path": "tools/export-button",
+      "block_name": "export-button",
+      "priority": 1,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Export button demo and implementation"
+    },
+    {
+      "path": "tools/prompt",
+      "block_name": "prompt",
+      "priority": 1,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Prompt tool for structured agent instructions"
+    },
+    {
+      "path": "tools/session-export",
+      "block_name": "session-export",
+      "priority": 1,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Session export utility"
+    },
+    {
+      "path": "tools/well-known",
+      "block_name": "well-known",
+      "priority": 1,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Well-known directory explanation"
+    },
+    {
+      "path": "tools/agent-behavior",
+      "block_name": "agent-behavior",
+      "priority": 1,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Agent behavior configuration and examples"
+    },
+    {
+      "path": "tools/api-explained",
+      "block_name": "api-explained",
+      "priority": 1,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "API integration and access patterns"
+    },
+    {
+      "path": "tools/app-mobile-explained",
+      "block_name": "app-mobile-explained",
+      "priority": 1,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Mobile app integration with MCP"
+    },
+    {
+      "path": "tools/badges",
+      "block_name": "badges",
+      "priority": 2,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Trust and certification badges"
+    },
+    {
+      "path": "tools/feed-flagging",
+      "block_name": "feed-flagging",
+      "priority": 2,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Feed reporting and moderation"
+    },
+    {
+      "path": "tools/pricing",
+      "block_name": "pricing",
+      "priority": 2,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Pricing structure and billing"
+    },
+    {
+      "path": "tools/prompts-explained",
+      "block_name": "prompts-explained",
+      "priority": 1,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Prompt engineering and behavioral injection"
+    },
+    {
+      "path": "tools/schema",
+      "block_name": "schema",
+      "priority": 2,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Schema definitions and validation rules"
+    },
+    {
+      "path": "tools/session-feed",
+      "block_name": "session-feed",
+      "priority": 1,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Session feed format and usage"
+    },
+    {
+      "path": "tools/sign-and-verify",
+      "block_name": "sign-and-verify",
+      "priority": 1,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Cryptographic signing and verification"
+    },
+    {
+      "path": "tools/user-spaces",
+      "block_name": "user-spaces",
+      "priority": 2,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "User space management and permissions"
+    },
+    {
+      "path": "why-sign",
+      "block_name": "why-sign",
+      "priority": 2,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Explanation of cryptographic signing importance"
+    },
+    {
+      "path": "sdk",
+      "block_name": "sdk",
+      "priority": 2,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Software Development Kit and libraries"
+    },
+    {
+      "path": "join",
+      "block_name": "join",
+      "priority": 2,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Community onboarding page"
+    },
+    {
+      "path": "ecosystem",
+      "block_name": "ecosystem",
+      "priority": 2,
+      "include_full_content": false,
+      "content_selector": "main",
+      "description": "MCP ecosystem, partners, and integrations",
+      "special_processing": "summary_only"
+    },
+    {
+      "path": "feeds",
+      "block_name": "feeds",
+      "priority": 2,
+      "include_full_content": false,
+      "content_selector": "main",
+      "description": "Directory of known feeds and examples",
+      "special_processing": "summary_only"
+    },
+    {
+      "path": "verify",
+      "block_name": "verify",
+      "priority": 1,
+      "include_full_content": false,
+      "content_selector": "main",
+      "description": "Feed verification and signature validation tool",
+      "special_processing": "form_interface"
+    },
+    {
+      "path": "llmfeedhub",
+      "block_name": "llmfeedhub",
+      "priority": 1,
+      "include_full_content": false,
+      "content_selector": "main",
+      "description": "Feed preview and simulation platform",
+      "special_processing": "form_interface"
+    },
+    {
+      "path": "llmfeedhub/preview",
+      "block_name": "llmfeedhub-preview",
+      "priority": 1,
+      "include_full_content": false,
+      "content_selector": "main",
+      "description": "URL preview and well-known discovery tool",
+      "special_processing": "form_interface"
+    },
+    {
+      "path": "legal",
+      "block_name": "legal",
+      "priority": 3,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Legal terms, privacy policy, and governance"
+    },
+    {
+      "path": "en/news",
+      "block_name": "news",
+      "priority": 2,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Latest news and announcements"
+    },
+    {
+      "path": "spec",
+      "block_name": "specification_summary",
+      "priority": 1,
+      "include_full_content": true,
+      "content_selector": "main",
+      "description": "Technical specification overview"
+    }
+  ],
+  "special_processing_config": {
+    "markdown_exports_base": "public/exports/news",
+    "summary_only_config": {
+      "max_paragraphs": 3,
+      "include_headings": true,
+      "extract_key_stats": true,
+      "word_limit": 500
+    },
+    "form_interface_config": {
+      "describe_functionality": true,
+      "extract_instructions": true,
+      "ignore_dynamic_content": true,
+      "focus_on_capabilities": true
+    }
+  },
+  "exclusions": [
+    "node_modules",
+    ".git",
+    "local-only",
+    "temp",
+    "*.tmp",
+    "compiled-site.llmfeed.json"
+  ],
+  "content_cleaning": {
+    "remove_selectors": ["nav", "footer", ".share-buttons", "[data-llm=\"ignore\"]"],
+    "keep_selectors": ["main", "article", ".content", ".main-content"],
+    "max_word_count": 5000
+  }
+}

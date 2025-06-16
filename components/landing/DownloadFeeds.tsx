@@ -14,10 +14,9 @@ export function DownloadFeeds() {
       {/* ✅ Paragraphe principal bien structuré */}
       <div className="text-muted-foreground mb-6 space-y-3">
         <p>
-          We know how you behave nowadays 🧠: you want to try before you read.
-          Fair enough — just feed your favorite LLM with these two{' '}
-          <code>.llmfeed.json</code> files 🥢. It's already a good start.
-        </p>
+  Want to try before you read? Feed your favorite LLM with these 
+  <code>.llmfeed.json</code> files 🥢
+</p>
 
         <p className="text-sm">
           Yes, these buttons exist in copy-to-clipboard mode too, but for
