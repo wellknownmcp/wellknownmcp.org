@@ -81,7 +81,7 @@ languages.forEach((lang) => {
       const aioScore = calculateAIOScore(data)
       
       // Log pour feedback pendant l'écriture
-      if (aioScore < 70) {
+      if (aioScore < 50) {
         console.log(`💡 "${file}" score: ${aioScore}/100 - consider improving frontmatter`)
       }
 

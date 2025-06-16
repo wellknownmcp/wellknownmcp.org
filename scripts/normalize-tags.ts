@@ -133,9 +133,9 @@ console.log("\n--- GLOBAL TAG USAGE REPORT ---\n");
 const sortedTagsGlobal = Object.entries(tagCountsGlobal).sort((a, b) =>
   b[1] - a[1]
 );
-sortedTagsGlobal.forEach(([tag, count]) => {
-  console.log(`${tag.padEnd(30)} → ${count}`);
-});
+//sortedTagsGlobal.forEach(([tag, count]) => {
+//  console.log(`${tag.padEnd(30)} → ${count}`);
+//});
 
 // Prepare full report object
 const reportObject = {

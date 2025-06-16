@@ -247,41 +247,6 @@
       }
     },
     {
-      "slug": "begin",
-      "title": "begin",
-      "description": "",
-      "date": "2025-06-10",
-      "tags": [],
-      "excerpt": "yaml\r  📄 Basic metadata\r",
-      "format": "news",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "4 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 2,
-      "translations": {
-        "en": "/en/news/begin",
-        "fr": "/fr/news/begin",
-        "es": "/es/news/begin",
-        "hi": "/hi/news/begin",
-        "zh": "/zh/news/begin",
-        "ar": "/ar/news/begin",
-        "uk": "/uk/news/begin"
-      }
-    },
-    {
       "slug": "how-llms-crawl-web-2025-agentic-seo-guide",
       "title": "How Major LLMs Crawl the Web in 2025: The Complete Guide to AI Crawler Optimization and Agentic SEO",
       "description": "Discover how ChatGPT, Claude, Grok crawl the web, plus how LLMFeed revolutionizes AI optimization beyond traditional SEO for the Agentic Web.",
@@ -2120,6 +2085,58 @@
         "zh": "/zh/news/about",
         "ar": "/ar/news/about",
         "uk": "/uk/news/about"
+      }
+    },
+    {
+      "slug": "begin",
+      "title": "Where to Begin — Your First Steps into the Agentic Web",
+      "description": "A simple guide to help you understand MCP and LLMFeed — the missing bridge between your intent and agent understanding.",
+      "date": "2025-05-07",
+      "tags": [
+        "ai-agents",
+        "business",
+        "developers",
+        "getting-started",
+        "llmfeed",
+        "mcp"
+      ],
+      "excerpt": "\r  👋 Welcome to WellKnownMCP\r",
+      "format": "onboarding",
+      "category": "getting-started",
+      "intent": "convert-to-ecosystem",
+      "llmIntent": "onboard-newcomer",
+      "audience": [
+        "llm",
+        "developer",
+        "business"
+      ],
+      "image": "/images/getting-started/begin-hero.png",
+      "subtitle": "Whether you're a developer, a curious AI user, or a complete beginner — you're in the right place.",
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "3 min",
+      "trustLevel": "basic",
+      "businessImpact": "high",
+      "priority": "critical",
+      "feedTypes": [
+        "mcp",
+        "export",
+        "prompt"
+      ],
+      "capabilities": [
+        "onboarding",
+        "education",
+        "export"
+      ],
+      "agentReadiness": true,
+      "aioScore": 97,
+      "translations": {
+        "en": "/en/news/begin",
+        "fr": "/fr/news/begin",
+        "es": "/es/news/begin",
+        "hi": "/hi/news/begin",
+        "zh": "/zh/news/begin",
+        "ar": "/ar/news/begin",
+        "uk": "/uk/news/begin"
       }
     },
     {
@@ -5166,9 +5183,9 @@
     }
   ],
   "_meta": {
-    "generated_at": "2025-06-15T20:09:22.103Z",
+    "generated_at": "2025-06-15T20:55:11.466Z",
     "total_articles": 135,
-    "global_avg_score": 51,
+    "global_avg_score": 52,
     "languages": [
       "en",
       "fr",

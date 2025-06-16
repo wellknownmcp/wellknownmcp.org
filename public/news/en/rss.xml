@@ -4,7 +4,7 @@
         <title>News (en) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/en/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Sun, 15 Jun 2025 20:09:23 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 15 Jun 2025 20:55:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -43,12 +43,6 @@
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-07-05-microsoft-nlweb-protocol</guid>
             <pubDate>Tue, 10 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Comprehensive technical analysis of Microsoft's NLWeb protocol and LLMFeed specification, their synergies, architectural differences, and combined role in building the future Agentic Web infrastructure.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[begin]]></title>
-            <link>https://wellknownmcp.org/en/news/begin</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/begin</guid>
-            <pubDate>Tue, 10 Jun 2025 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[How Major LLMs Crawl the Web in 2025: The Complete Guide to AI Crawler Optimization and Agentic SEO]]></title>
@@ -392,6 +386,13 @@
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/about</guid>
             <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[An overview of the WellKnownMCP initiative, its purpose, and its goals.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Where to Begin — Your First Steps into the Agentic Web]]></title>
+            <link>https://wellknownmcp.org/en/news/begin</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/begin</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[A simple guide to help you understand MCP and LLMFeed — the missing bridge between your intent and agent understanding.]]></description>
         </item>
         <item>
             <title><![CDATA[Why MCP?]]></title>

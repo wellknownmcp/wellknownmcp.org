@@ -256,47 +256,64 @@
     "begin": {
       "article": {
         "slug": "begin",
-        "title": "begin",
-        "description": "",
-        "date": "2025-06-10",
+        "title": "Where to Begin — Your First Steps into the Agentic Web",
+        "description": "A simple guide to help you understand MCP and LLMFeed — the missing bridge between your intent and agent understanding.",
+        "date": "2025-05-07",
         "categories": [
-          "general"
+          "getting-started"
         ],
-        "tags": [],
-        "type": "news",
-        "content": "yaml---\r\n## 📄 Basic metadata\r\ntitle: \"Where to Begin — Your First Steps into the Agentic Web\"\r\ndescription: \"A simple guide to help you understand MCP and LLMFeed — the missing bridge between your intent and agent understanding.\"\r\ndate: \"2025-05-07T00:00:00.000Z\"\r\nlang: \"en\"\r\n\r\n## 🏷️ Tags\r\ntags:\r\n - \"mcp\"\r\n - \"llmfeed\" \r\n - \"ai-agents\"\r\n - \"getting-started\"\r\n - \"onboarding\"\r\n - \"developers\"\r\n - \"business\"\r\n\r\n## 🎯 Content classification\r\nformat: \"onboarding\"\r\ncategory: \"getting-started\"\r\ncontentType: \"guide\"\r\n\r\n## 🧠 Intent and audience\r\nintent: \"convert-to-ecosystem\"\r\nllmIntent: \"onboard-newcomer\"\r\nllmTopic: \"mcp-introduction\"\r\naudience:\r\n - \"llm\"\r\n - \"developer\" \r\n - \"business\"\r\n\r\n## 📊 Advanced metadata\r\npriority: \"critical\"\r\nriskLevel: \"low\"\r\nupdateFrequency: \"weekly\"\r\npageType: \"landing\"\r\ninteractionComplexity: \"simple\"\r\n\r\n## 🔗 Urls\r\nslug: \"begin\"\r\ncanonical_url: \"https://wellknownmcp.org/begin\"\r\nmcpFeedUrl: \"/.well-known/mcp.llmfeed.json\"\r\nllmIndexUrl: \"/.well-known/llm-index.llmfeed.json\"\r\n\r\n## 🎨 Media\r\nimage: \"/images/getting-started/begin-hero.png\"\r\nsubtitle: \"Whether you're a developer, a curious AI user, or a complete beginner — you're in the right place.\"\r\ndir: \"ltr\"\r\n\r\n## 🤖 Configuration pour agents\r\nautoDiscoverFeeds: true\r\nagentReadiness: true\r\nllmBehaviorHints: \"suggest-only\"\r\n\r\n## 📋 Métadonnées spécialisées\r\nfeedTypes:\r\n - \"mcp\"\r\n - \"export\"\r\n - \"prompt\"\r\n\r\ncapabilities:\r\n - \"onboarding\"\r\n - \"education\"\r\n - \"export\"\r\n\r\ntrustLevel: \"basic\"\r\n\r\n## 🌐 Localisation\r\ntranslations:\r\n en: \"/begin\"\r\n fr: \"/fr/commencer\"\r\n\r\n## 📈 Analytics et tracking\r\ntrackingCategory: \"onboarding\"\r\nconversionGoal: \"conversion\"\r\n\r\n## 🏗️ Métadonnées techniques\r\ntechnicalLevel: \"beginner\"\r\nestimatedReadTime: \"3 min\"\r\nlastModified: \"2025-06-10T00:00:00.000Z\"\r\n\r\n## 🔐 Sécurité et conformité\r\ngdprCompliant: true\r\ndataProcessing: \"analytics\"\r\nprivacyLevel: \"public\"\r\n\r\n## 📚 Relations et références\r\nrelatedArticles:\r\n - \"getting-started\"\r\n - \"manifesto\"\r\n - \"faq\"\r\n\r\nprerequisites: []\r\n\r\n## 💼 Contexte business\r\nbusinessImpact: \"high\"\r\ntargetMarket: \"developers\"\r\nmonetizationPotential: \"high\"\r\n---\r\n\r\n## 👋 Welcome to WellKnownMCP\r\n\r\nThis page is your **entry point** to understanding the **Model Context Protocol (MCP)** and its core unit: the `llmfeed.json`.\r\n\r\nWhether you're a developer, a curious AI user, or a complete beginner — you're in the right place.\r\n\r\n---\r\n\r\n## 🚀 Why this matters\r\n\r\nLanguage Models are no longer passive. \r\nThey **read**, **crawl**, and even **act**.\r\n\r\nBut the web isn’t built for them. \r\nIt’s full of visuals, scripts, and content made for humans — not agents.\r\n\r\nWe propose a new layer: \r\n📂 `.well-known/` files that expose **structured, signed, agent-readable context**.\r\n\r\n---\r\n## ✨ What makes it special?\r\n\r\n- ✅ **Universal**: Works with ChatGPT, Claude, Mistral, Gemini, etc.\r\n- ✅ **Verifiable**: Can be signed (by you) or certified (by LLMCA)\r\n- ✅ **Teachable**: Turn any LLM into your personal tutor\r\n- ✅ **Portable**: Export, replay, or embed anywhere\r\n\r\nThink of it as **structured intent** that agents can trust.\r\n\r\n## 🧠 What is a `.llmfeed.json`?\r\n\r\nA `llmfeed.json` is a minimal, flexible JSON format that any LLM can read. \r\nIt’s not a closed format — it's a **canon**:\r\n\r\n- Human-writable \r\n- Machine-optimised \r\n- Agent-readable \r\n- Open and extendable\r\n\r\nIt contains your **intentions**, **prompts**, **APIs**, **exports**, or **certifications** — all in a predictable structure.\r\n\r\n---\r\n\r\n## ✨ What makes it special?\r\n\r\n- ✅ Works with ChatGPT, Claude, Mistral, Gemini, etc. \r\n- ✅ Can be **signed** (by you) or **certified** (by an authority like `llmca.org`) \r\n- ✅ Can be exported, taught, replayed, or embedded \r\n- ✅ Fully compatible with internal formats — or used to explain them\r\n\r\nIt’s the **MIME-type** of intent for agents.\r\n\r\n---\r\n## 🎯 See it in action\r\n\r\n```json\r\n{\r\n \"feed_type\": \"mcp\",\r\n \"metadata\": {\r\n \"title\": \"My Restaurant\",\r\n \"origin\": \"https://myrestaurant.com\"\r\n },\r\n \"capabilities\": [\r\n {\"name\": \"book_table\", \"method\": \"POST\", \"path\": \"/book\"}\r\n ]\r\n}\r\n```\r\n---\r\n\r\n## 🧪 Try it live\r\n\r\nExplore examples or generate your own feed:\r\n\r\n- 🔧 [LLMFeed Forge (coming soon)](https://forge.llmfeedforge.org)\r\n- 🧠 [Prompt Playground](/tools/prompts-explained)\r\n- 📤 [Export Button Demo](/tools/export-button)\r\n- 📚 [Feed Indexing](/tools/llm-index)\r\n\r\n---\r\n\r\n## 🧰 Want to learn by doing?\r\n\r\nAny feed or tool on this site can be **downloaded as `.llmfeed.json`**.\r\n\r\nYou can:\r\n\r\n- 📥 Download it\r\n- 🤖 Feed it to ChatGPT, Claude, or your favorite LLM\r\n- 📚 Turn any agent into your **teacher or explainer**\r\n\r\n> “Explain this feed to me” \r\n> “What can I do with it?” \r\n> “How should an agent behave?”\r\n\r\nJust paste it in.\r\n\r\n---\r\n\r\n## 📁 Key Concepts\r\n\r\n- [`/.well-known/`](/tools/well-known): the standard location for agent feeds \r\n- [`prompt.llmfeed.json`](/tools/prompts-explained): how to structure signed prompts \r\n- [`export.llmfeed.json`](/tools/export-button): turn any page into a portable capsule \r\n- [`llm-index.llmfeed.json`](/tools/llm-index): list your feeds for discovery\r\n\r\n---\r\n\r\n## 🤝 Join the ecosystem\r\n\r\nStart publishing your own feed: \r\n\r\n- [Join us](/join) \r\n- [See certified examples](https://wellknownmcp.org/llmfeedhub) \r\n- [Understand the Manifesto](/spec/spec/llmfeed_manifesto)\r\n\r\n---\r\n\r\n## 🧑‍🏫 You don't need to be a developer\r\n\r\nOur tools work with:\r\n\r\n- Guided UI (Forge)\r\n- No-code export buttons\r\n- Open-source templates\r\n\r\n---\r\n\r\n## ✅ TL;DR\r\n\r\n- MCP is the missing bridge between your intent and agent understanding. \r\n- `llmfeed.json` is your universal format. \r\n- Start small. Publish one. See how far it goes.\r\n\r\n---\r\n\r\n## 🧠 Bonus: Ask an agent to teach you\r\n\r\nYou can even start learning **by asking your LLM**:\r\n\r\n> “Here’s a `llmfeed.json`. Explain it to me.” \r\n> “Show me what this site offers for agents.” \r\n> “Could I make my site compliant?”\r\n\r\nMost LLMs will understand. \r\nThe best ones will help you implement it.",
+        "tags": [
+          "ai-agents",
+          "business",
+          "developers",
+          "getting-started",
+          "llmfeed",
+          "mcp"
+        ],
+        "type": "onboarding",
+        "content": "## 👋 Welcome to WellKnownMCP\r\n\r\nThis page is your **entry point** to understanding the **Model Context Protocol (MCP)** and its core unit: the `llmfeed.json`.\r\n\r\nWhether you're a developer, a curious AI user, or a complete beginner — you're in the right place.\r\n\r\n---\r\n\r\n## 🚀 Why this matters\r\n\r\nLanguage Models are no longer passive. \r\nThey **read**, **crawl**, and even **act**.\r\n\r\nBut the web isn’t built for them. \r\nIt’s full of visuals, scripts, and content made for humans — not agents.\r\n\r\nWe propose a new layer: \r\n📂 `.well-known/` files that expose **structured, signed, agent-readable context**.\r\n\r\n---\r\n## ✨ What makes it special?\r\n\r\n- ✅ **Universal**: Works with ChatGPT, Claude, Mistral, Gemini, etc.\r\n- ✅ **Verifiable**: Can be signed (by you) or certified (by LLMCA)\r\n- ✅ **Teachable**: Turn any LLM into your personal tutor\r\n- ✅ **Portable**: Export, replay, or embed anywhere\r\n\r\nThink of it as **structured intent** that agents can trust.\r\n\r\n## 🧠 What is a `.llmfeed.json`?\r\n\r\nA `llmfeed.json` is a minimal, flexible JSON format that any LLM can read. \r\nIt’s not a closed format — it's a **canon**:\r\n\r\n- Human-writable \r\n- Machine-optimised \r\n- Agent-readable \r\n- Open and extendable\r\n\r\nIt contains your **intentions**, **prompts**, **APIs**, **exports**, or **certifications** — all in a predictable structure.\r\n\r\n---\r\n\r\n## ✨ What makes it special?\r\n\r\n- ✅ Works with ChatGPT, Claude, Mistral, Gemini, etc. \r\n- ✅ Can be **signed** (by you) or **certified** (by an authority like `llmca.org`) \r\n- ✅ Can be exported, taught, replayed, or embedded \r\n- ✅ Fully compatible with internal formats — or used to explain them\r\n\r\nIt’s the **MIME-type** of intent for agents.\r\n\r\n---\r\n## 🎯 See it in action\r\n\r\n```json\r\n{\r\n \"feed_type\": \"mcp\",\r\n \"metadata\": {\r\n \"title\": \"My Restaurant\",\r\n \"origin\": \"https://myrestaurant.com\"\r\n },\r\n \"capabilities\": [\r\n {\"name\": \"book_table\", \"method\": \"POST\", \"path\": \"/book\"}\r\n ]\r\n}\r\n```\r\n---\r\n\r\n## 🧪 Try it live\r\n\r\nExplore examples or generate your own feed:\r\n\r\n- 🔧 [LLMFeed Forge (coming soon)](https://forge.llmfeedforge.org)\r\n- 🧠 [Prompt Playground](/tools/prompts-explained)\r\n- 📤 [Export Button Demo](/tools/export-button)\r\n- 📚 [Feed Indexing](/tools/llm-index)\r\n\r\n---\r\n\r\n## 🧰 Want to learn by doing?\r\n\r\nAny feed or tool on this site can be **downloaded as `.llmfeed.json`**.\r\n\r\nYou can:\r\n\r\n- 📥 Download it\r\n- 🤖 Feed it to ChatGPT, Claude, or your favorite LLM\r\n- 📚 Turn any agent into your **teacher or explainer**\r\n\r\n> “Explain this feed to me” \r\n> “What can I do with it?” \r\n> “How should an agent behave?”\r\n\r\nJust paste it in.\r\n\r\n---\r\n\r\n## 📁 Key Concepts\r\n\r\n- [`/.well-known/`](/tools/well-known): the standard location for agent feeds \r\n- [`prompt.llmfeed.json`](/tools/prompts-explained): how to structure signed prompts \r\n- [`export.llmfeed.json`](/tools/export-button): turn any page into a portable capsule \r\n- [`llm-index.llmfeed.json`](/tools/llm-index): list your feeds for discovery\r\n\r\n---\r\n\r\n## 🤝 Join the ecosystem\r\n\r\nStart publishing your own feed: \r\n\r\n- [Join us](/join) \r\n- [See certified examples](https://wellknownmcp.org/llmfeedhub) \r\n- [Understand the Manifesto](/spec/spec/llmfeed_manifesto)\r\n\r\n---\r\n\r\n## 🧑‍🏫 You don't need to be a developer\r\n\r\nOur tools work with:\r\n\r\n- Guided UI (Forge)\r\n- No-code export buttons\r\n- Open-source templates\r\n\r\n---\r\n\r\n## ✅ TL;DR\r\n\r\n- MCP is the missing bridge between your intent and agent understanding. \r\n- `llmfeed.json` is your universal format. \r\n- Start small. Publish one. See how far it goes.\r\n\r\n---\r\n\r\n## 🧠 Bonus: Ask an agent to teach you\r\n\r\nYou can even start learning **by asking your LLM**:\r\n\r\n> “Here’s a `llmfeed.json`. Explain it to me.” \r\n> “Show me what this site offers for agents.” \r\n> “Could I make my site compliant?”\r\n\r\nMost LLMs will understand. \r\nThe best ones will help you implement it.",
         "concepts": [
-          "basic",
-          "metadata",
-          "tags",
-          "content",
-          "classification",
-          "intent",
-          "audience",
-          "advanced"
+          "ai-agents",
+          "business",
+          "developers",
+          "getting-started",
+          "llmfeed",
+          "mcp",
+          "welcome",
+          "wellknownmcp"
         ],
-        "intent": "inform",
-        "llm_intent": "browse-news-article",
+        "intent": "convert-to-ecosystem",
+        "llm_intent": "onboard-newcomer",
         "audience": [
-          "llm"
+          "llm",
+          "developer",
+          "business"
         ],
         "metadata": {
           "source_file": "begin.md",
-          "content_quality_score": 2,
+          "content_quality_score": 97,
           "technical_level": "beginner",
-          "business_impact": "low",
-          "priority": "normal",
+          "business_impact": "high",
+          "priority": "critical",
           "agent_readiness": true
         },
         "canonical_url": "https://wellknownmcp.org/en/news/begin",
         "author": "WellKnownMCP Team",
-        "last_modified": "2025-06-10",
-        "capabilities": [],
-        "feed_types": []
+        "last_modified": "2025-05-07",
+        "capabilities": [
+          "onboarding",
+          "education",
+          "export"
+        ],
+        "feed_types": [
+          "mcp",
+          "export",
+          "prompt"
+        ]
       },
-      "file_hash": "57a16fe8b8332269443be2e05c26e63a",
-      "index_data_hash": "b38d97194dc37edf0d9a6af300912a41",
-      "processed_at": "2025-06-14T16:59:31.425Z"
+      "file_hash": "f31c5b360ce399cc1d08b0069b6acf7e",
+      "index_data_hash": "b114f10336c8fb44e372de73a31d6838",
+      "processed_at": "2025-06-15T20:55:12.268Z"
     },
     "how-llms-crawl-web-2025-agentic-seo-guide": {
       "article": {
@@ -3009,8 +3026,8 @@
       "processed_at": "2025-06-14T16:59:31.490Z"
     }
   },
-  "index_hash": "02fd4c71516549834041279deea0c772",
-  "last_generation": "2025-06-15T20:09:22.969Z",
+  "index_hash": "e7a7380a8aa38cc06c3e092d1d4a2e88",
+  "last_generation": "2025-06-15T20:55:12.291Z",
   "stats": {
     "processed": 1,
     "updated": 1,

@@ -5,7 +5,7 @@
     "title": "WellKnownMCP News Archive - Complete Export",
     "description": "Complete archive of all WellKnownMCP news articles, tutorials, and advocacy pieces about the agentic web and MCP standards",
     "version": "1.0.0",
-    "generated_at": "2025-06-15T20:09:22.952Z",
+    "generated_at": "2025-06-15T20:55:12.270Z",
     "language": "en",
     "content_type": "news_archive",
     "total_articles": 57
@@ -335,46 +335,6 @@
           "session",
           "credential"
         ]
-      },
-      {
-        "slug": "begin",
-        "title": "begin",
-        "description": "",
-        "date": "2025-06-10",
-        "categories": [
-          "general"
-        ],
-        "tags": [],
-        "type": "news",
-        "content": "yaml---\r\n## 📄 Basic metadata\r\ntitle: \"Where to Begin — Your First Steps into the Agentic Web\"\r\ndescription: \"A simple guide to help you understand MCP and LLMFeed — the missing bridge between your intent and agent understanding.\"\r\ndate: \"2025-05-07T00:00:00.000Z\"\r\nlang: \"en\"\r\n\r\n## 🏷️ Tags\r\ntags:\r\n - \"mcp\"\r\n - \"llmfeed\" \r\n - \"ai-agents\"\r\n - \"getting-started\"\r\n - \"onboarding\"\r\n - \"developers\"\r\n - \"business\"\r\n\r\n## 🎯 Content classification\r\nformat: \"onboarding\"\r\ncategory: \"getting-started\"\r\ncontentType: \"guide\"\r\n\r\n## 🧠 Intent and audience\r\nintent: \"convert-to-ecosystem\"\r\nllmIntent: \"onboard-newcomer\"\r\nllmTopic: \"mcp-introduction\"\r\naudience:\r\n - \"llm\"\r\n - \"developer\" \r\n - \"business\"\r\n\r\n## 📊 Advanced metadata\r\npriority: \"critical\"\r\nriskLevel: \"low\"\r\nupdateFrequency: \"weekly\"\r\npageType: \"landing\"\r\ninteractionComplexity: \"simple\"\r\n\r\n## 🔗 Urls\r\nslug: \"begin\"\r\ncanonical_url: \"https://wellknownmcp.org/begin\"\r\nmcpFeedUrl: \"/.well-known/mcp.llmfeed.json\"\r\nllmIndexUrl: \"/.well-known/llm-index.llmfeed.json\"\r\n\r\n## 🎨 Media\r\nimage: \"/images/getting-started/begin-hero.png\"\r\nsubtitle: \"Whether you're a developer, a curious AI user, or a complete beginner — you're in the right place.\"\r\ndir: \"ltr\"\r\n\r\n## 🤖 Configuration pour agents\r\nautoDiscoverFeeds: true\r\nagentReadiness: true\r\nllmBehaviorHints: \"suggest-only\"\r\n\r\n## 📋 Métadonnées spécialisées\r\nfeedTypes:\r\n - \"mcp\"\r\n - \"export\"\r\n - \"prompt\"\r\n\r\ncapabilities:\r\n - \"onboarding\"\r\n - \"education\"\r\n - \"export\"\r\n\r\ntrustLevel: \"basic\"\r\n\r\n## 🌐 Localisation\r\ntranslations:\r\n en: \"/begin\"\r\n fr: \"/fr/commencer\"\r\n\r\n## 📈 Analytics et tracking\r\ntrackingCategory: \"onboarding\"\r\nconversionGoal: \"conversion\"\r\n\r\n## 🏗️ Métadonnées techniques\r\ntechnicalLevel: \"beginner\"\r\nestimatedReadTime: \"3 min\"\r\nlastModified: \"2025-06-10T00:00:00.000Z\"\r\n\r\n## 🔐 Sécurité et conformité\r\ngdprCompliant: true\r\ndataProcessing: \"analytics\"\r\nprivacyLevel: \"public\"\r\n\r\n## 📚 Relations et références\r\nrelatedArticles:\r\n - \"getting-started\"\r\n - \"manifesto\"\r\n - \"faq\"\r\n\r\nprerequisites: []\r\n\r\n## 💼 Contexte business\r\nbusinessImpact: \"high\"\r\ntargetMarket: \"developers\"\r\nmonetizationPotential: \"high\"\r\n---\r\n\r\n## 👋 Welcome to WellKnownMCP\r\n\r\nThis page is your **entry point** to understanding the **Model Context Protocol (MCP)** and its core unit: the `llmfeed.json`.\r\n\r\nWhether you're a developer, a curious AI user, or a complete beginner — you're in the right place.\r\n\r\n---\r\n\r\n## 🚀 Why this matters\r\n\r\nLanguage Models are no longer passive. \r\nThey **read**, **crawl**, and even **act**.\r\n\r\nBut the web isn’t built for them. \r\nIt’s full of visuals, scripts, and content made for humans — not agents.\r\n\r\nWe propose a new layer: \r\n📂 `.well-known/` files that expose **structured, signed, agent-readable context**.\r\n\r\n---\r\n## ✨ What makes it special?\r\n\r\n- ✅ **Universal**: Works with ChatGPT, Claude, Mistral, Gemini, etc.\r\n- ✅ **Verifiable**: Can be signed (by you) or certified (by LLMCA)\r\n- ✅ **Teachable**: Turn any LLM into your personal tutor\r\n- ✅ **Portable**: Export, replay, or embed anywhere\r\n\r\nThink of it as **structured intent** that agents can trust.\r\n\r\n## 🧠 What is a `.llmfeed.json`?\r\n\r\nA `llmfeed.json` is a minimal, flexible JSON format that any LLM can read. \r\nIt’s not a closed format — it's a **canon**:\r\n\r\n- Human-writable \r\n- Machine-optimised \r\n- Agent-readable \r\n- Open and extendable\r\n\r\nIt contains your **intentions**, **prompts**, **APIs**, **exports**, or **certifications** — all in a predictable structure.\r\n\r\n---\r\n\r\n## ✨ What makes it special?\r\n\r\n- ✅ Works with ChatGPT, Claude, Mistral, Gemini, etc. \r\n- ✅ Can be **signed** (by you) or **certified** (by an authority like `llmca.org`) \r\n- ✅ Can be exported, taught, replayed, or embedded \r\n- ✅ Fully compatible with internal formats — or used to explain them\r\n\r\nIt’s the **MIME-type** of intent for agents.\r\n\r\n---\r\n## 🎯 See it in action\r\n\r\n```json\r\n{\r\n \"feed_type\": \"mcp\",\r\n \"metadata\": {\r\n \"title\": \"My Restaurant\",\r\n \"origin\": \"https://myrestaurant.com\"\r\n },\r\n \"capabilities\": [\r\n {\"name\": \"book_table\", \"method\": \"POST\", \"path\": \"/book\"}\r\n ]\r\n}\r\n```\r\n---\r\n\r\n## 🧪 Try it live\r\n\r\nExplore examples or generate your own feed:\r\n\r\n- 🔧 [LLMFeed Forge (coming soon)](https://forge.llmfeedforge.org)\r\n- 🧠 [Prompt Playground](/tools/prompts-explained)\r\n- 📤 [Export Button Demo](/tools/export-button)\r\n- 📚 [Feed Indexing](/tools/llm-index)\r\n\r\n---\r\n\r\n## 🧰 Want to learn by doing?\r\n\r\nAny feed or tool on this site can be **downloaded as `.llmfeed.json`**.\r\n\r\nYou can:\r\n\r\n- 📥 Download it\r\n- 🤖 Feed it to ChatGPT, Claude, or your favorite LLM\r\n- 📚 Turn any agent into your **teacher or explainer**\r\n\r\n> “Explain this feed to me” \r\n> “What can I do with it?” \r\n> “How should an agent behave?”\r\n\r\nJust paste it in.\r\n\r\n---\r\n\r\n## 📁 Key Concepts\r\n\r\n- [`/.well-known/`](/tools/well-known): the standard location for agent feeds \r\n- [`prompt.llmfeed.json`](/tools/prompts-explained): how to structure signed prompts \r\n- [`export.llmfeed.json`](/tools/export-button): turn any page into a portable capsule \r\n- [`llm-index.llmfeed.json`](/tools/llm-index): list your feeds for discovery\r\n\r\n---\r\n\r\n## 🤝 Join the ecosystem\r\n\r\nStart publishing your own feed: \r\n\r\n- [Join us](/join) \r\n- [See certified examples](https://wellknownmcp.org/llmfeedhub) \r\n- [Understand the Manifesto](/spec/spec/llmfeed_manifesto)\r\n\r\n---\r\n\r\n## 🧑‍🏫 You don't need to be a developer\r\n\r\nOur tools work with:\r\n\r\n- Guided UI (Forge)\r\n- No-code export buttons\r\n- Open-source templates\r\n\r\n---\r\n\r\n## ✅ TL;DR\r\n\r\n- MCP is the missing bridge between your intent and agent understanding. \r\n- `llmfeed.json` is your universal format. \r\n- Start small. Publish one. See how far it goes.\r\n\r\n---\r\n\r\n## 🧠 Bonus: Ask an agent to teach you\r\n\r\nYou can even start learning **by asking your LLM**:\r\n\r\n> “Here’s a `llmfeed.json`. Explain it to me.” \r\n> “Show me what this site offers for agents.” \r\n> “Could I make my site compliant?”\r\n\r\nMost LLMs will understand. \r\nThe best ones will help you implement it.",
-        "concepts": [
-          "basic",
-          "metadata",
-          "tags",
-          "content",
-          "classification",
-          "intent",
-          "audience",
-          "advanced"
-        ],
-        "intent": "inform",
-        "llm_intent": "browse-news-article",
-        "audience": [
-          "llm"
-        ],
-        "metadata": {
-          "source_file": "begin.md",
-          "content_quality_score": 2,
-          "technical_level": "beginner",
-          "business_impact": "low",
-          "priority": "normal",
-          "agent_readiness": true
-        },
-        "canonical_url": "https://wellknownmcp.org/en/news/begin",
-        "author": "WellKnownMCP Team",
-        "last_modified": "2025-06-10",
-        "capabilities": [],
-        "feed_types": []
       },
       {
         "slug": "how-llms-crawl-web-2025-agentic-seo-guide",
@@ -2680,6 +2640,63 @@
         "feed_types": []
       },
       {
+        "slug": "begin",
+        "title": "Where to Begin — Your First Steps into the Agentic Web",
+        "description": "A simple guide to help you understand MCP and LLMFeed — the missing bridge between your intent and agent understanding.",
+        "date": "2025-05-07",
+        "categories": [
+          "getting-started"
+        ],
+        "tags": [
+          "ai-agents",
+          "business",
+          "developers",
+          "getting-started",
+          "llmfeed",
+          "mcp"
+        ],
+        "type": "onboarding",
+        "content": "## 👋 Welcome to WellKnownMCP\r\n\r\nThis page is your **entry point** to understanding the **Model Context Protocol (MCP)** and its core unit: the `llmfeed.json`.\r\n\r\nWhether you're a developer, a curious AI user, or a complete beginner — you're in the right place.\r\n\r\n---\r\n\r\n## 🚀 Why this matters\r\n\r\nLanguage Models are no longer passive. \r\nThey **read**, **crawl**, and even **act**.\r\n\r\nBut the web isn’t built for them. \r\nIt’s full of visuals, scripts, and content made for humans — not agents.\r\n\r\nWe propose a new layer: \r\n📂 `.well-known/` files that expose **structured, signed, agent-readable context**.\r\n\r\n---\r\n## ✨ What makes it special?\r\n\r\n- ✅ **Universal**: Works with ChatGPT, Claude, Mistral, Gemini, etc.\r\n- ✅ **Verifiable**: Can be signed (by you) or certified (by LLMCA)\r\n- ✅ **Teachable**: Turn any LLM into your personal tutor\r\n- ✅ **Portable**: Export, replay, or embed anywhere\r\n\r\nThink of it as **structured intent** that agents can trust.\r\n\r\n## 🧠 What is a `.llmfeed.json`?\r\n\r\nA `llmfeed.json` is a minimal, flexible JSON format that any LLM can read. \r\nIt’s not a closed format — it's a **canon**:\r\n\r\n- Human-writable \r\n- Machine-optimised \r\n- Agent-readable \r\n- Open and extendable\r\n\r\nIt contains your **intentions**, **prompts**, **APIs**, **exports**, or **certifications** — all in a predictable structure.\r\n\r\n---\r\n\r\n## ✨ What makes it special?\r\n\r\n- ✅ Works with ChatGPT, Claude, Mistral, Gemini, etc. \r\n- ✅ Can be **signed** (by you) or **certified** (by an authority like `llmca.org`) \r\n- ✅ Can be exported, taught, replayed, or embedded \r\n- ✅ Fully compatible with internal formats — or used to explain them\r\n\r\nIt’s the **MIME-type** of intent for agents.\r\n\r\n---\r\n## 🎯 See it in action\r\n\r\n```json\r\n{\r\n \"feed_type\": \"mcp\",\r\n \"metadata\": {\r\n \"title\": \"My Restaurant\",\r\n \"origin\": \"https://myrestaurant.com\"\r\n },\r\n \"capabilities\": [\r\n {\"name\": \"book_table\", \"method\": \"POST\", \"path\": \"/book\"}\r\n ]\r\n}\r\n```\r\n---\r\n\r\n## 🧪 Try it live\r\n\r\nExplore examples or generate your own feed:\r\n\r\n- 🔧 [LLMFeed Forge (coming soon)](https://forge.llmfeedforge.org)\r\n- 🧠 [Prompt Playground](/tools/prompts-explained)\r\n- 📤 [Export Button Demo](/tools/export-button)\r\n- 📚 [Feed Indexing](/tools/llm-index)\r\n\r\n---\r\n\r\n## 🧰 Want to learn by doing?\r\n\r\nAny feed or tool on this site can be **downloaded as `.llmfeed.json`**.\r\n\r\nYou can:\r\n\r\n- 📥 Download it\r\n- 🤖 Feed it to ChatGPT, Claude, or your favorite LLM\r\n- 📚 Turn any agent into your **teacher or explainer**\r\n\r\n> “Explain this feed to me” \r\n> “What can I do with it?” \r\n> “How should an agent behave?”\r\n\r\nJust paste it in.\r\n\r\n---\r\n\r\n## 📁 Key Concepts\r\n\r\n- [`/.well-known/`](/tools/well-known): the standard location for agent feeds \r\n- [`prompt.llmfeed.json`](/tools/prompts-explained): how to structure signed prompts \r\n- [`export.llmfeed.json`](/tools/export-button): turn any page into a portable capsule \r\n- [`llm-index.llmfeed.json`](/tools/llm-index): list your feeds for discovery\r\n\r\n---\r\n\r\n## 🤝 Join the ecosystem\r\n\r\nStart publishing your own feed: \r\n\r\n- [Join us](/join) \r\n- [See certified examples](https://wellknownmcp.org/llmfeedhub) \r\n- [Understand the Manifesto](/spec/spec/llmfeed_manifesto)\r\n\r\n---\r\n\r\n## 🧑‍🏫 You don't need to be a developer\r\n\r\nOur tools work with:\r\n\r\n- Guided UI (Forge)\r\n- No-code export buttons\r\n- Open-source templates\r\n\r\n---\r\n\r\n## ✅ TL;DR\r\n\r\n- MCP is the missing bridge between your intent and agent understanding. \r\n- `llmfeed.json` is your universal format. \r\n- Start small. Publish one. See how far it goes.\r\n\r\n---\r\n\r\n## 🧠 Bonus: Ask an agent to teach you\r\n\r\nYou can even start learning **by asking your LLM**:\r\n\r\n> “Here’s a `llmfeed.json`. Explain it to me.” \r\n> “Show me what this site offers for agents.” \r\n> “Could I make my site compliant?”\r\n\r\nMost LLMs will understand. \r\nThe best ones will help you implement it.",
+        "concepts": [
+          "ai-agents",
+          "business",
+          "developers",
+          "getting-started",
+          "llmfeed",
+          "mcp",
+          "welcome",
+          "wellknownmcp"
+        ],
+        "intent": "convert-to-ecosystem",
+        "llm_intent": "onboard-newcomer",
+        "audience": [
+          "llm",
+          "developer",
+          "business"
+        ],
+        "metadata": {
+          "source_file": "begin.md",
+          "content_quality_score": 97,
+          "technical_level": "beginner",
+          "business_impact": "high",
+          "priority": "critical",
+          "agent_readiness": true
+        },
+        "canonical_url": "https://wellknownmcp.org/en/news/begin",
+        "author": "WellKnownMCP Team",
+        "last_modified": "2025-05-07",
+        "capabilities": [
+          "onboarding",
+          "education",
+          "export"
+        ],
+        "feed_types": [
+          "mcp",
+          "export",
+          "prompt"
+        ]
+      },
+      {
         "slug": "about",
         "title": "About WellKnownMCP",
         "description": "An overview of the WellKnownMCP initiative, its purpose, and its goals.",
@@ -2794,10 +2811,10 @@
           21,
           22,
           23,
-          24,
-          25
+          24
         ],
         "2025-05": [
+          25,
           26,
           27,
           28,
@@ -2835,13 +2852,13 @@
         "general": [
           0,
           2,
-          5,
+          6,
           7,
           8,
           9,
           10,
           11,
-          12,
+          13,
           14,
           15,
           16,
@@ -2882,7 +2899,6 @@
           51,
           52,
           53,
-          54,
           55,
           56
         ],
@@ -2894,16 +2910,19 @@
         ],
         "technical": [
           4,
-          6
+          5
         ],
         "implementation": [
-          13
+          12
+        ],
+        "getting-started": [
+          54
         ]
       },
       "by_tag": {
         "agent-interoperability": [
           0,
-          32
+          31
         ],
         "agent-readiness": [
           0
@@ -2912,13 +2931,14 @@
           0,
           1,
           4,
-          8,
-          10,
+          7,
+          9,
+          13,
           14,
           15,
           16,
           17,
-          18,
+          23,
           24,
           25,
           26,
@@ -2930,20 +2950,19 @@
           32,
           33,
           34,
-          35,
-          50
+          49
         ],
         "ai-agent-testing": [
           0
         ],
         "ai-infrastructure": [
           0,
-          32
+          31
         ],
         "ai-standards": [
           0,
-          24,
-          27
+          23,
+          26
         ],
         "ai-testing-framework": [
           0
@@ -2951,7 +2970,7 @@
         "cryptographic-verification": [
           0,
           1,
-          32
+          31
         ],
         "enterprise-ai-adoption": [
           0
@@ -2964,7 +2983,7 @@
         ],
         "mcp-implementation": [
           0,
-          19
+          18
         ],
         "model-comparison": [
           0
@@ -2980,9 +2999,9 @@
         ],
         "anthropic": [
           1,
-          18,
-          28,
-          44
+          17,
+          27,
+          43
         ],
         "community": [
           1
@@ -2995,59 +3014,61 @@
         ],
         "innovation": [
           1,
-          15,
-          17
+          14,
+          16
         ],
         "llmfeed": [
           1,
           3,
           4,
-          6,
-          8,
+          5,
+          7,
+          9,
           10,
-          11,
+          14,
           15,
           16,
           17,
-          18,
+          19,
           20,
           21,
           22,
-          23,
+          32,
           33,
-          34,
+          36,
           37,
           38,
-          39,
+          40,
           41,
           42,
           43,
-          44,
+          45,
           46,
           47,
           48,
-          49,
-          51,
+          50,
+          54,
           55,
           56
         ],
         "manifesto": [
           1,
-          15,
-          17
+          14,
+          16
         ],
         "mcp": [
           1,
           4,
-          6,
-          8,
-          10,
-          12,
+          5,
+          7,
+          9,
+          11,
+          13,
           14,
           15,
           16,
           17,
-          18,
+          19,
           20,
           21,
           22,
@@ -3060,24 +3081,24 @@
           29,
           30,
           31,
-          32,
+          33,
           34,
           35,
           36,
           37,
           38,
-          39,
+          40,
           41,
           42,
           43,
-          44,
-          50,
+          49,
+          51,
           52,
-          53
+          54
         ],
         "privacy": [
           1,
-          33
+          32
         ],
         "progressive-enhancement": [
           1
@@ -3085,25 +3106,25 @@
         "trust": [
           1,
           4,
-          8,
+          7,
+          9,
           10,
           11,
-          12,
-          16,
-          22,
+          15,
+          21,
+          23,
           24,
-          25,
-          30,
-          33,
-          35,
+          29,
+          32,
+          34,
+          36,
           37,
           38,
-          39,
+          40,
           41,
           42,
-          43,
-          45,
-          50
+          44,
+          49
         ],
         "ai-platforms": [
           2
@@ -3114,17 +3135,17 @@
         "interoperability": [
           2,
           4,
-          22,
+          21,
+          23,
           24,
-          25,
-          34,
-          44
+          33,
+          43
         ],
         "open-standards": [
           2,
-          8,
-          24,
-          44
+          7,
+          23,
+          43
         ],
         "session.llmfeed.json": [
           2
@@ -3138,19 +3159,20 @@
         "ai-agents": [
           3,
           4,
-          6,
-          11,
-          14,
-          22,
-          26,
+          5,
+          10,
+          13,
+          21,
+          25,
+          36,
           37,
           38,
-          39,
+          40,
           41,
           42,
           43,
-          44,
-          53
+          52,
+          54
         ],
         "aiworkflow": [
           3
@@ -3160,10 +3182,10 @@
         ],
         "claude": [
           3,
-          15,
-          28,
-          36,
-          44
+          14,
+          27,
+          35,
+          43
         ],
         "contextsharing": [
           3
@@ -3176,17 +3198,18 @@
         ],
         "certification": [
           4,
-          21,
+          20,
+          23,
           24,
-          25,
-          30,
-          42,
-          44,
-          45
+          29,
+          41,
+          43,
+          44
         ],
         "developers": [
           4,
-          6
+          5,
+          54
         ],
         "microsoft": [
           4
@@ -3196,333 +3219,337 @@
         ],
         "signature": [
           4,
-          23,
-          25,
-          36,
-          45
-        ],
-        "agentic-seo": [
-          6
-        ],
-        "business": [
-          6
-        ],
-        "llm": [
-          6,
-          10,
-          12,
-          23,
-          24,
-          26,
-          28,
-          29,
-          31,
-          35,
-          36
-        ],
-        "search": [
-          6,
-          29
-        ],
-        "web-optimization": [
-          6
-        ],
-        "agentic web": [
-          11
-        ],
-        "drones": [
-          11
-        ],
-        "hybrid warfare": [
-          11
-        ],
-        "ukraine": [
-          11
-        ],
-        "autonomous-agents": [
-          14
-        ],
-        "chatbots": [
-          14
-        ],
-        "implementation": [
-          16
-        ],
-        "bottom-up": [
-          18
-        ],
-        "grassroots": [
-          18
-        ],
-        "open-web": [
-          18
-        ],
-        "web-standards": [
-          18
-        ],
-        "agent-ready-content": [
-          19
-        ],
-        "agent-ux": [
-          19
-        ],
-        "ai-integration": [
-          19
-        ],
-        "business-adoption": [
-          19
-        ],
-        "clipboard-api": [
-          19
-        ],
-        "content-export": [
-          19
-        ],
-        "developer-tools": [
-          19
-        ],
-        "exporttollm": [
-          19
-        ],
-        "llmfeed-export": [
-          19
-        ],
-        "one-click-export": [
-          19
-        ],
-        "platform-integration": [
-          19
-        ],
-        "structured-data": [
-          19
-        ],
-        "viral-strategy": [
-          19
-        ],
-        "web-scraping-alternative": [
-          19
-        ],
-        "agent-ready": [
-          20
-        ],
-        "ai-efficiency": [
-          20
-        ],
-        "declarative-web": [
-          20
-        ],
-        "implementation-guide": [
-          20
-        ],
-        "llm-costs": [
-          20
-        ],
-        "trust-networks": [
-          20
-        ],
-        "web-grammar": [
-          20
-        ],
-        "agent-behavior": [
-          21
-        ],
-        "feed-type": [
-          21
-        ],
-        "behavior": [
-          22
-        ],
-        "deepsearch": [
-          22
-        ],
-        "guidance": [
-          22
-        ],
-        "llmca": [
           22,
-          25,
+          24,
           35,
-          36
-        ],
-        "canonicalization": [
-          23
-        ],
-        "alibaba": [
-          24
-        ],
-        "asia": [
-          24
-        ],
-        "baidu": [
-          24
-        ],
-        "china": [
-          24
-        ],
-        "douyin": [
-          24
-        ],
-        "kakao": [
-          24
-        ],
-        "line": [
-          24
-        ],
-        "llmfeedforge": [
-          24,
-          25
-        ],
-        "mcp-net": [
-          24,
-          25
-        ],
-        "samsung": [
-          24
-        ],
-        "wechat": [
-          24
-        ],
-        "well-known": [
-          24,
-          25,
-          37,
-          38,
-          39,
-          41,
-          42,
-          43,
           44
         ],
-        "mcp-spec": [
-          25
+        "agentic-seo": [
+          5
         ],
-        "apple": [
-          26
+        "business": [
+          5,
+          54
         ],
-        "meta": [
-          27
-        ],
-        "open-agents": [
-          27
-        ],
-        "seo": [
-          29,
-          30
-        ],
-        "ai-first-browsers": [
-          31
-        ],
-        "navigation": [
-          31
-        ],
-        "ai-agent-trust": [
-          32
-        ],
-        "ai-compliance": [
-          32
-        ],
-        "ai-governance": [
-          32
-        ],
-        "ai-investigation": [
-          32
-        ],
-        "ai-safety": [
-          32
-        ],
-        "cross-llm-orchestration": [
-          32
-        ],
-        "enterprise-ai": [
-          32
-        ],
-        "llm-verification": [
-          32
-        ],
-        "trust-economy": [
-          32
-        ],
-        "venture-capital": [
-          32
-        ],
-        "encryption": [
-          33
-        ],
-        "homomorphic": [
-          33
-        ],
-        "pipeline": [
-          33
-        ],
-        "aio": [
+        "llm": [
+          5,
+          9,
+          11,
+          22,
+          23,
+          25,
+          27,
+          28,
+          30,
+          34,
           35
         ],
-        "aiovsseo": [
+        "search": [
+          5,
+          28
+        ],
+        "web-optimization": [
+          5
+        ],
+        "agentic web": [
+          10
+        ],
+        "drones": [
+          10
+        ],
+        "hybrid warfare": [
+          10
+        ],
+        "ukraine": [
+          10
+        ],
+        "autonomous-agents": [
+          13
+        ],
+        "chatbots": [
+          13
+        ],
+        "implementation": [
+          15
+        ],
+        "bottom-up": [
+          17
+        ],
+        "grassroots": [
+          17
+        ],
+        "open-web": [
+          17
+        ],
+        "web-standards": [
+          17
+        ],
+        "agent-ready-content": [
+          18
+        ],
+        "agent-ux": [
+          18
+        ],
+        "ai-integration": [
+          18
+        ],
+        "business-adoption": [
+          18
+        ],
+        "clipboard-api": [
+          18
+        ],
+        "content-export": [
+          18
+        ],
+        "developer-tools": [
+          18
+        ],
+        "exporttollm": [
+          18
+        ],
+        "llmfeed-export": [
+          18
+        ],
+        "one-click-export": [
+          18
+        ],
+        "platform-integration": [
+          18
+        ],
+        "structured-data": [
+          18
+        ],
+        "viral-strategy": [
+          18
+        ],
+        "web-scraping-alternative": [
+          18
+        ],
+        "agent-ready": [
+          19
+        ],
+        "ai-efficiency": [
+          19
+        ],
+        "declarative-web": [
+          19
+        ],
+        "implementation-guide": [
+          19
+        ],
+        "llm-costs": [
+          19
+        ],
+        "trust-networks": [
+          19
+        ],
+        "web-grammar": [
+          19
+        ],
+        "agent-behavior": [
+          20
+        ],
+        "feed-type": [
+          20
+        ],
+        "behavior": [
+          21
+        ],
+        "deepsearch": [
+          21
+        ],
+        "guidance": [
+          21
+        ],
+        "llmca": [
+          21,
+          24,
+          34,
           35
         ],
-        "compatibility": [
-          36
+        "canonicalization": [
+          22
         ],
-        "deepseek": [
-          36
+        "alibaba": [
+          23
         ],
-        "gemini": [
-          36
+        "asia": [
+          23
         ],
-        "gpt-4o": [
-          36
+        "baidu": [
+          23
         ],
-        "grok": [
-          36
+        "china": [
+          23
         ],
-        "mistral": [
-          36
+        "douyin": [
+          23
         ],
-        "web": [
+        "kakao": [
+          23
+        ],
+        "line": [
+          23
+        ],
+        "llmfeedforge": [
+          23,
+          24
+        ],
+        "mcp-net": [
+          23,
+          24
+        ],
+        "samsung": [
+          23
+        ],
+        "wechat": [
+          23
+        ],
+        "well-known": [
+          23,
+          24,
+          36,
           37,
           38,
-          39,
+          40,
           41,
           42,
           43
         ],
+        "mcp-spec": [
+          24
+        ],
+        "apple": [
+          25
+        ],
+        "meta": [
+          26
+        ],
+        "open-agents": [
+          26
+        ],
+        "seo": [
+          28,
+          29
+        ],
+        "ai-first-browsers": [
+          30
+        ],
+        "navigation": [
+          30
+        ],
+        "ai-agent-trust": [
+          31
+        ],
+        "ai-compliance": [
+          31
+        ],
+        "ai-governance": [
+          31
+        ],
+        "ai-investigation": [
+          31
+        ],
+        "ai-safety": [
+          31
+        ],
+        "cross-llm-orchestration": [
+          31
+        ],
+        "enterprise-ai": [
+          31
+        ],
+        "llm-verification": [
+          31
+        ],
+        "trust-economy": [
+          31
+        ],
+        "venture-capital": [
+          31
+        ],
+        "encryption": [
+          32
+        ],
+        "homomorphic": [
+          32
+        ],
+        "pipeline": [
+          32
+        ],
+        "aio": [
+          34
+        ],
+        "aiovsseo": [
+          34
+        ],
+        "compatibility": [
+          35
+        ],
+        "deepseek": [
+          35
+        ],
+        "gemini": [
+          35
+        ],
+        "gpt-4o": [
+          35
+        ],
+        "grok": [
+          35
+        ],
+        "mistral": [
+          35
+        ],
+        "web": [
+          36,
+          37,
+          38,
+          40,
+          41,
+          42
+        ],
         "announcement": [
+          45,
           46,
           47,
-          48,
-          51
+          50
         ],
         "launch": [
+          45,
           46,
           47,
-          48,
-          51
+          50
         ],
         "structure": [
-          49
+          48
         ],
         "industries": [
-          52
+          51
         ],
         "use-cases": [
-          52
+          51
         ],
         "agent-discovery": [
-          54
+          53
         ],
         "aio-research": [
-          54
+          53
         ],
         "consulting-opportunity": [
-          54
+          53
         ],
         "market-analysis": [
-          54
+          53
         ],
         "seo-transformation": [
-          54
+          53
         ],
         "wellknownmcp": [
+          53
+        ],
+        "getting-started": [
           54
         ],
         "core": [
@@ -3537,7 +3564,7 @@
         "inform": [
           0,
           2,
-          5,
+          6,
           7,
           8,
           9,
@@ -3585,7 +3612,6 @@
           51,
           52,
           53,
-          54,
           55,
           56
         ],
@@ -3597,23 +3623,27 @@
         ],
         "technical-guide": [
           4,
-          6
+          5
+        ],
+        "convert-to-ecosystem": [
+          54
         ]
       }
     },
     "stats": {
       "content_distribution": {
-        "news": 52,
+        "news": 51,
         "manifesto": 1,
         "specification": 1,
         "guide": 1,
         "tutorial": 1,
-        "faq": 1
+        "faq": 1,
+        "onboarding": 1
       },
       "quality_metrics": {
-        "high_quality": 3,
+        "high_quality": 4,
         "good_quality": 11,
-        "needs_improvement": 43
+        "needs_improvement": 42
       },
       "technical_levels": {
         "beginner": 55,
@@ -3621,17 +3651,17 @@
         "intermediate": 1
       },
       "business_impact_distribution": {
-        "low": 55,
-        "high": 2
+        "low": 54,
+        "high": 3
       },
       "most_common_tags": [
         {
           "tag": "mcp",
-          "count": 37
+          "count": 38
         },
         {
           "tag": "llmfeed",
-          "count": 31
+          "count": 32
         },
         {
           "tag": "agentic-web",
@@ -3643,7 +3673,7 @@
         },
         {
           "tag": "ai-agents",
-          "count": 15
+          "count": 16
         },
         {
           "tag": "llm",
