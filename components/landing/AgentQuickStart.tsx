@@ -46,6 +46,11 @@ export function AgentQuickStart() {
       title: 'Drop-in simple',
       description: 'Just add .well-known/mcp.llmfeed.json to your site',
     },
+    {
+  icon: '⚡',
+  title: 'JavaScript-free access',
+  description: 'Agents get instant content via JSON, no JS execution needed'
+},
   ]
 
   return (
@@ -71,7 +76,7 @@ export function AgentQuickStart() {
         </pre>
       </div>
 
-      {/* 🎯 4 Core Concepts */}
+      {/* 🎯 5 Core Concepts */}
       <div className="grid md:grid-cols-2 gap-6">
         {concepts.map((concept, index) => (
           <div key={index} className="flex items-start gap-3">

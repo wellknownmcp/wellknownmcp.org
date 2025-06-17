@@ -1,6 +1,86 @@
 {
   "en": [
     {
+      "slug": "llm-index-case",
+      "title": "🗺️ The Case for .well-known/llm-index.llmfeed.json",
+      "description": "Proven 93% token savings through intelligent agent discovery. Real data shows how LLM indexes transform blind crawling into contextual navigation, creating the foundation for the agentic web.",
+      "date": "2025-06-16",
+      "tags": [
+        "agentic-web",
+        "ai-agents",
+        "community-research",
+        "efficiency-optimization",
+        "llmfeed",
+        "mcp",
+        "paradigm-shift",
+        "proof-of-concept",
+        "token-economics",
+        "web-standards"
+      ],
+      "excerpt": "\r  🗺️ The Case for .wellknown/llmindex.llmfeed.json\r",
+      "format": "analysis",
+      "category": "paradigm-shift",
+      "intent": "inform",
+      "llmIntent": "understand-token-economics-and-paradigm-shift",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": "From Blind Crawling to Intelligent Discovery: The 93% Token Revolution",
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "10 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "high",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 64,
+      "translations": {
+        "en": "/en/news/llm-index-case"
+      }
+    },
+    {
+      "slug": "llm-index-revolution",
+      "title": "💡 The LLM Index Revolution: How Smart Discovery Saves Millions of Tokens",
+      "description": "Deep analysis of the token economics revolution enabled by intelligent LLM indexes. Real-world data shows 93% efficiency gains and billion-token global impact potential.",
+      "date": "2025-06-16",
+      "tags": [
+        "agentic-web",
+        "ai-optimization",
+        "community-research",
+        "economic-analysis",
+        "environmental-benefits",
+        "global-impact",
+        "llm-efficiency",
+        "paradigm-shift",
+        "proof-of-concept",
+        "token-economics"
+      ],
+      "excerpt": "\r  💡 The LLM Index Revolution: How Smart Discovery Saves Millions of Tokens\r",
+      "format": "article",
+      "category": "token-economics",
+      "intent": "inform",
+      "llmIntent": "analyze-token-economics-and-global-impact",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": "From Brute-Force to Intelligence: Quantifying the Paradigm Shift",
+      "technicalLevel": "intermediate",
+      "estimatedReadTime": "7 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "high",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 64,
+      "translations": {
+        "en": "/en/news/llm-index-revolution"
+      }
+    },
+    {
       "slug": "llm-agent-readiness-framework-2025",
       "title": "🧪 The 2025 Agent Readiness Challenge: Which LLMs Can Actually Build the Agentic Web?",
       "description": "Exclusive framework reveals which AI models can handle structured, signed agent feeds. We expose the MCP implementation gap between chat and true autonomy — and propose the testing standard the industry needs to adopt.",
@@ -1488,42 +1568,6 @@
       "aioScore": 60,
       "translations": {
         "en": "/en/news/getting-started"
-      }
-    },
-    {
-      "slug": "llm-index-case",
-      "title": "🗺️ The Case for .well-known/llm-index.llmfeed.json",
-      "description": "Why LLMs need a sitemap built for agent intent, not HTML crawlers.",
-      "date": "2025-05-25",
-      "tags": [
-        "ai-agents",
-        "llmfeed",
-        "mcp",
-        "trust",
-        "web",
-        "well-known"
-      ],
-      "excerpt": "\r  🗺️ The Case for .wellknown/llmindex.llmfeed.json\r",
-      "format": "news",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "2 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 60,
-      "translations": {
-        "en": "/en/news/llm-index-case"
       }
     },
     {
@@ -5183,8 +5227,8 @@
     }
   ],
   "_meta": {
-    "generated_at": "2025-06-15T20:55:11.466Z",
-    "total_articles": 135,
+    "generated_at": "2025-06-17T11:23:50.091Z",
+    "total_articles": 136,
     "global_avg_score": 52,
     "languages": [
       "en",

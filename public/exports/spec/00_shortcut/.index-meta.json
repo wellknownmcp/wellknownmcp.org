@@ -1,0 +1,28 @@
+{
+  "generated_at": "2025-06-17T11:53:10.332Z",
+  "content_hash": "e5b43543826deeba9ec9a18114c22e5d",
+  "file_stats": [
+    {
+      "path": ".index-meta.json",
+      "size": 472,
+      "mtime": 1750160562592
+    },
+    {
+      "path": "readme.md",
+      "size": 6035,
+      "mtime": 1749998041722
+    },
+    {
+      "path": "spec-essential.llmfeed.json",
+      "size": 90108,
+      "mtime": 1750002968755
+    },
+    {
+      "path": "spec.llmfeed.json",
+      "size": 554027,
+      "mtime": 1750002968703
+    }
+  ],
+  "total_files": 4,
+  "generator_version": "2.0.0"
+}

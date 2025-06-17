@@ -1,0 +1,128 @@
+{
+  "generated_at": "2025-06-17T11:53:09.652Z",
+  "content_hash": "5856daa60b7f3ddd07c2d79777708636",
+  "file_stats": [
+    {
+      "path": ".index-meta.json",
+      "size": 2713,
+      "mtime": 1750160562160
+    },
+    {
+      "path": "agent-behavior.llmfeed.json",
+      "size": 553,
+      "mtime": 1749568745567
+    },
+    {
+      "path": "capabilities.llmfeed.json",
+      "size": 17690,
+      "mtime": 1749977729887
+    },
+    {
+      "path": "exports/compiled-site.llmfeed.json",
+      "size": 343866,
+      "mtime": 1750160251743
+    },
+    {
+      "path": "exports/manifesto.llmfeed.json",
+      "size": 2105,
+      "mtime": 1749568745588
+    },
+    {
+      "path": "exports/news-export.llmfeed.json",
+      "size": 505471,
+      "mtime": 1750159430872
+    },
+    {
+      "path": "exports/spec.llmfeed.json",
+      "size": 554027,
+      "mtime": 1750002968703
+    },
+    {
+      "path": "llm-index.llmfeed.json",
+      "size": 43049,
+      "mtime": 1750160253008
+    },
+    {
+      "path": "manifesto.llmfeed.json",
+      "size": 2105,
+      "mtime": 1749568745588
+    },
+    {
+      "path": "mcp-lite.llmfeed.json",
+      "size": 5185,
+      "mtime": 1749568745593
+    },
+    {
+      "path": "mcp.json",
+      "size": 396,
+      "mtime": 1749987661338
+    },
+    {
+      "path": "mcp.llmfeed.json",
+      "size": 21227,
+      "mtime": 1750144416742
+    },
+    {
+      "path": "prompts/generate-llm-index.llmfeed.json",
+      "size": 5239,
+      "mtime": 1749653561134
+    },
+    {
+      "path": "prompts/generate-llm-index.prompt.llmfeed.json",
+      "size": 5239,
+      "mtime": 1749653049608
+    },
+    {
+      "path": "prompts/generate-session-feed.llmfeed.json",
+      "size": 3830,
+      "mtime": 1749568745598
+    },
+    {
+      "path": "prompts/mcp-agent-behavior-override.llmfeed.json",
+      "size": 16297,
+      "mtime": 1749568745610
+    },
+    {
+      "path": "prompts/mcp-mode-activation.llmfeed.json",
+      "size": 2202,
+      "mtime": 1749568745613
+    },
+    {
+      "path": "prompts/mcp_signature_readiness_test.llmfeed.json",
+      "size": 2270,
+      "mtime": 1749568745617
+    },
+    {
+      "path": "prompts/prompt-index.llmfeed.json",
+      "size": 2858,
+      "mtime": 1749568745617
+    },
+    {
+      "path": "prompts/quickstart-agent-enablement.llmfeed.json",
+      "size": 2212,
+      "mtime": 1749568745632
+    },
+    {
+      "path": "public.pem",
+      "size": 116,
+      "mtime": 1749568745656
+    },
+    {
+      "path": "schema.annotated.llmfeed.json",
+      "size": 5022,
+      "mtime": 1749568745657
+    },
+    {
+      "path": "schema.lite.llmfeed.json",
+      "size": 4912,
+      "mtime": 1749568745658
+    },
+    {
+      "path": "schema.llmfeed.json",
+      "size": 4538,
+      "mtime": 1749568745728
+    }
+  ],
+  "total_files": 24,
+  "generator_version": "2.0.0"
+}

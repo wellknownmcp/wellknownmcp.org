@@ -4,10 +4,10 @@
     "title": "WellKnownMCP - Intelligent Discovery Hub",
     "origin": "https://wellknownmcp.org",
     "description": "Intelligent navigation system that guides agents and users to the perfect content based on context, intent, and expertise level. Transforms flat sitemaps into contextual discovery experiences.",
-    "generated_at": "2025-06-16T17:32:53.419989Z",
+    "generated_at": "2025-06-17T11:37:32.989752Z",
     "version": "2.1.0",
     "total_feeds": "6",
-    "total_pages": "34",
+    "total_pages": "36",
     "tags": [
       "navigation",
       "discovery",
@@ -18,31 +18,32 @@
     "content_type": "navigation_hub",
     "lang": "en",
     "build_stats": {
-      "urls_processed": 34,
+      "urls_processed": 36,
       "categories_created": 5,
-      "routes_generated": 34,
-      "enrichments_applied": 12,
-      "build_time": 0.134707,
-      "crawling_alternative_tokens": 238000,
+      "routes_generated": 35,
+      "enrichments_applied": 28,
+      "build_time": 0.05097,
+      "crawling_alternative_tokens": 252000,
       "index_tokens": 875,
-      "efficiency_gain": "99.6%",
-      "token_savings": "~237,125 tokens saved"
+      "efficiency_gain": "99.7%",
+      "token_savings": "~251,125 tokens saved"
     },
-    "real_data_coverage": "35.3%"
+    "real_data_coverage": "77.8%"
   },
   "discovery_guidance": {
     "recommended_entry_points": {
       "developers": "/spec",
       "implementers": "/tools/api-explained",
+      "business": "/about",
       "new_visitors": "/.well-known/mcp.llmfeed.json",
       "llm": "/.well-known/mcp.llmfeed.json"
     },
     "high_priority_feeds": [
       "/llmfeedhub",
-      "/feeds",
-      "/spec",
       "/sdk",
-      "/tools/api-explained"
+      "/spec",
+      "/tools/api-explained",
+      "/tools/export-button"
     ],
     "navigation_philosophy": "Context-aware routing that adapts to agent capabilities, user expertise, and specific intentions. Every URL is enriched with audience targeting, intent mapping, and trust indicators.",
     "usage_instructions": {
@@ -65,310 +66,6 @@
       "trust_level": "signed",
       "feeds": [
         {
-          "url": "https://wellknownmcp.org/en/news/llm-agent-readiness-framework-2025",
-          "title": "News - Llm Agent Readiness Framework 2025",
-          "description": "News: llm agent readiness framework 2025",
-          "intent": "stay_informed",
-          "audience": [
-            "general",
-            "community",
-            "stakeholder"
-          ],
-          "importance": "critical",
-          "tags": [
-            "news",
-            "updates",
-            "community",
-            "announcements"
-          ],
-          "content_type": "news_content"
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/manifesto",
-          "title": "News - Manifesto",
-          "description": "News: manifesto",
-          "intent": "stay_informed",
-          "audience": [
-            "general",
-            "community",
-            "stakeholder"
-          ],
-          "importance": "critical",
-          "tags": [
-            "news",
-            "updates",
-            "community",
-            "announcements"
-          ],
-          "content_type": "news_content"
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/2025-07-05-microsoft-nlweb-protocol",
-          "title": "News - 2025 07 05 Microsoft Nlweb Protocol",
-          "description": "News: 2025 07 05 microsoft nlweb protocol",
-          "intent": "stay_informed",
-          "audience": [
-            "general",
-            "community",
-            "stakeholder"
-          ],
-          "importance": "critical",
-          "tags": [
-            "news",
-            "updates",
-            "community",
-            "announcements"
-          ],
-          "content_type": "news_content"
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/launch-newstack",
-          "title": "News - Launch Newstack",
-          "description": "News: launch newstack",
-          "intent": "stay_informed",
-          "audience": [
-            "general",
-            "community",
-            "stakeholder"
-          ],
-          "importance": "critical",
-          "tags": [
-            "news",
-            "updates",
-            "community",
-            "announcements"
-          ],
-          "content_type": "news_content"
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents",
-          "title": "News - 2025 07 12 From Chatbots To Autonomous Agents",
-          "description": "News: 2025 07 12 from chatbots to autonomous agents",
-          "intent": "stay_informed",
-          "audience": [
-            "general",
-            "community",
-            "stakeholder"
-          ],
-          "importance": "critical",
-          "tags": [
-            "news",
-            "updates",
-            "community",
-            "announcements"
-          ],
-          "content_type": "news_content"
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/from-mcp-to-llmfeed-manifesto",
-          "title": "News - From Mcp To Llmfeed Manifesto",
-          "description": "News: from mcp to llmfeed manifesto",
-          "intent": "stay_informed",
-          "audience": [
-            "general",
-            "community",
-            "stakeholder"
-          ],
-          "importance": "critical",
-          "tags": [
-            "news",
-            "updates",
-            "community",
-            "announcements"
-          ],
-          "content_type": "news_content"
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/exporttollm-button",
-          "title": "News - Exporttollm Button",
-          "description": "News: exporttollm button",
-          "intent": "stay_informed",
-          "audience": [
-            "general",
-            "community",
-            "stakeholder"
-          ],
-          "importance": "critical",
-          "tags": [
-            "news",
-            "updates",
-            "community",
-            "announcements"
-          ],
-          "content_type": "news_content"
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/2025-06-14-meta-open-agents-mcp",
-          "title": "News - 2025 06 14 Meta Open Agents Mcp",
-          "description": "News: 2025 06 14 meta open agents mcp",
-          "intent": "stay_informed",
-          "audience": [
-            "general",
-            "community",
-            "stakeholder"
-          ],
-          "importance": "critical",
-          "tags": [
-            "news",
-            "updates",
-            "community",
-            "announcements"
-          ],
-          "content_type": "news_content"
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/2025-06-21-claude-4-5-llms-crawling",
-          "title": "News - 2025 06 21 Claude 4 5 Llms Crawling",
-          "description": "News: 2025 06 21 claude 4 5 llms crawling",
-          "intent": "stay_informed",
-          "audience": [
-            "general",
-            "community",
-            "stakeholder"
-          ],
-          "importance": "critical",
-          "tags": [
-            "news",
-            "updates",
-            "community",
-            "announcements"
-          ],
-          "content_type": "news_content"
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/2025-06-28-llm-seo-vs-mcp",
-          "title": "News - 2025 06 28 Llm Seo Vs Mcp",
-          "description": "News: 2025 06 28 llm seo vs mcp",
-          "intent": "stay_informed",
-          "audience": [
-            "general",
-            "community",
-            "stakeholder"
-          ],
-          "importance": "critical",
-          "tags": [
-            "news",
-            "updates",
-            "community",
-            "announcements"
-          ],
-          "content_type": "news_content"
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/2025-07-19-certifying-agentic-interaction-seo",
-          "title": "News - 2025 07 19 Certifying Agentic Interaction Seo",
-          "description": "News: 2025 07 19 certifying agentic interaction seo",
-          "intent": "stay_informed",
-          "audience": [
-            "general",
-            "community",
-            "stakeholder"
-          ],
-          "importance": "critical",
-          "tags": [
-            "news",
-            "updates",
-            "community",
-            "announcements"
-          ],
-          "content_type": "news_content"
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/2025-07-26-ai-first-browsers-agentic-navigation",
-          "title": "News - 2025 07 26 Ai First Browsers Agentic Navigation",
-          "description": "News: 2025 07 26 ai first browsers agentic navigation",
-          "intent": "stay_informed",
-          "audience": [
-            "general",
-            "community",
-            "stakeholder"
-          ],
-          "importance": "critical",
-          "tags": [
-            "news",
-            "updates",
-            "community",
-            "announcements"
-          ],
-          "content_type": "news_content"
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/getting-started",
-          "title": "News - Getting Started",
-          "description": "News: getting started",
-          "intent": "stay_informed",
-          "audience": [
-            "general",
-            "community",
-            "stakeholder"
-          ],
-          "importance": "critical",
-          "tags": [
-            "news",
-            "updates",
-            "community",
-            "announcements"
-          ],
-          "content_type": "news_content"
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/launch-hackernews",
-          "title": "News - Launch Hackernews",
-          "description": "News: launch hackernews",
-          "intent": "stay_informed",
-          "audience": [
-            "general",
-            "community",
-            "stakeholder"
-          ],
-          "importance": "critical",
-          "tags": [
-            "news",
-            "updates",
-            "community",
-            "announcements"
-          ],
-          "content_type": "news_content"
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/launch-medium",
-          "title": "News - Launch Medium",
-          "description": "News: launch medium",
-          "intent": "stay_informed",
-          "audience": [
-            "general",
-            "community",
-            "stakeholder"
-          ],
-          "importance": "critical",
-          "tags": [
-            "news",
-            "updates",
-            "community",
-            "announcements"
-          ],
-          "content_type": "news_content"
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/launch",
-          "title": "News - Launch",
-          "description": "News: launch",
-          "intent": "stay_informed",
-          "audience": [
-            "general",
-            "community",
-            "stakeholder"
-          ],
-          "importance": "critical",
-          "tags": [
-            "news",
-            "updates",
-            "community",
-            "announcements"
-          ],
-          "content_type": "news_content"
-        },
-        {
           "url": "https://wellknownmcp.org/ecosystem",
           "title": "Ecosystem",
           "description": "Overview of the MCP ecosystem including partners, integrations, certified implementations, and community projects.",
@@ -386,6 +83,294 @@
             "community"
           ],
           "content_type": "directory"
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/llm-agent-readiness-framework-2025",
+          "title": "News - Llm Agent Readiness Framework 2025",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/manifesto",
+          "title": "News - Manifesto",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/2025-07-05-microsoft-nlweb-protocol",
+          "title": "News - 2025 07 05 Microsoft Nlweb Protocol",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/launch-newstack",
+          "title": "News - Launch Newstack",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents",
+          "title": "News - 2025 07 12 From Chatbots To Autonomous Agents",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/from-mcp-to-llmfeed-manifesto",
+          "title": "News - From Mcp To Llmfeed Manifesto",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/exporttollm-button",
+          "title": "News - Exporttollm Button",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/2025-06-14-meta-open-agents-mcp",
+          "title": "News - 2025 06 14 Meta Open Agents Mcp",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/2025-06-21-claude-4-5-llms-crawling",
+          "title": "News - 2025 06 21 Claude 4 5 Llms Crawling",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/2025-06-28-llm-seo-vs-mcp",
+          "title": "News - 2025 06 28 Llm Seo Vs Mcp",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/2025-07-19-certifying-agentic-interaction-seo",
+          "title": "News - 2025 07 19 Certifying Agentic Interaction Seo",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/2025-07-26-ai-first-browsers-agentic-navigation",
+          "title": "News - 2025 07 26 Ai First Browsers Agentic Navigation",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/getting-started",
+          "title": "News - Getting Started",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/launch-hackernews",
+          "title": "News - Launch Hackernews",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/launch-medium",
+          "title": "News - Launch Medium",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/en/news/launch",
+          "title": "News - Launch",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
         }
       ]
     },
@@ -401,6 +386,23 @@
       ],
       "trust_level": "signed",
       "feeds": [
+        {
+          "url": "https://wellknownmcp.org/tools/sign-and-verify",
+          "title": "Cryptographic Signing Tool",
+          "description": "Cryptographic signing and verification tools for MCP feeds. Includes key management, signature validation, and trust cha...",
+          "intent": "secure",
+          "audience": [
+            "security-engineer",
+            "developer"
+          ],
+          "importance": "critical",
+          "tags": [
+            "cryptography",
+            "signing",
+            "verification",
+            "security"
+          ]
+        },
         {
           "url": "https://wellknownmcp.org/verify",
           "title": "Feed Verification Tool",
@@ -421,20 +423,22 @@
           "content_type": "interactive_tool"
         },
         {
-          "url": "https://wellknownmcp.org/tools/sign-and-verify",
-          "title": "Cryptographic Signing Tool",
-          "description": "Cryptographic signing and verification tools for MCP feeds. Includes key management, signature validation, and trust cha...",
-          "intent": "secure",
+          "url": "https://wellknownmcp.org/tools/well-known",
+          "title": "Tools - Well Known",
+          "description": "Complete guide to the .well-known/ directory structure for agent discovery and MCP handshake protocols.",
+          "intent": "implement",
           "audience": [
-            "security-engineer",
-            "developer"
+            "developer",
+            "webmaster",
+            "agent"
           ],
           "importance": "critical",
           "tags": [
-            "cryptography",
-            "signing",
-            "verification",
-            "security"
+            "well-known",
+            "discovery",
+            "handshake",
+            "protocol",
+            "directory"
           ]
         },
         {
@@ -489,88 +493,6 @@
             "demo",
             "interactive"
           ]
-        },
-        {
-          "url": "https://wellknownmcp.org/tools/well-known",
-          "title": "Tools - Well Known",
-          "description": "Guide to implementing the /.well-known/ directory structure for agent discovery. Explains MCP handshake protocols and tr...",
-          "intent": "implement",
-          "audience": [
-            "developer",
-            "webmaster"
-          ],
-          "importance": "high",
-          "tags": [
-            "well-known",
-            "discovery",
-            "handshake",
-            "protocol"
-          ]
-        }
-      ]
-    },
-    "general": {
-      "title": "General",
-      "description": "Resources in the general category",
-      "entry_path": "/feeds",
-      "audience": [
-        "general"
-      ],
-      "trust_level": "signed",
-      "feeds": [
-        {
-          "url": "https://wellknownmcp.org/feeds",
-          "title": "Feeds",
-          "description": "Directory and catalog of known MCP feeds, examples, and public implementations across different industries and use cases...",
-          "intent": "discover",
-          "audience": [
-            "developer",
-            "implementer",
-            "researcher"
-          ],
-          "importance": "high",
-          "tags": [
-            "directory",
-            "catalog",
-            "examples",
-            "feeds"
-          ],
-          "content_type": "directory"
-        },
-        {
-          "url": "https://wellknownmcp.org/why-sign",
-          "title": "Why Sign",
-          "description": "Explanation of the importance of cryptographic signing in agent systems. Covers trust, verification, and security benefi...",
-          "intent": "educate",
-          "audience": [
-            "general",
-            "security-conscious"
-          ],
-          "importance": "high",
-          "tags": [
-            "security",
-            "trust",
-            "cryptography",
-            "explanation"
-          ]
-        },
-        {
-          "url": "https://wellknownmcp.org/legal",
-          "title": "Legal",
-          "description": "Legal framework, terms of service, privacy policy, and governance structure for the MCP ecosystem and certification auth...",
-          "intent": "inform",
-          "audience": [
-            "legal",
-            "compliance",
-            "business"
-          ],
-          "importance": "medium",
-          "tags": [
-            "legal",
-            "terms",
-            "privacy",
-            "governance"
-          ]
         }
       ]
     },
@@ -586,6 +508,23 @@
       ],
       "trust_level": "signed",
       "feeds": [
+        {
+          "url": "https://wellknownmcp.org/sdk",
+          "title": "Sdk",
+          "description": "Software Development Kit documentation and libraries for MCP implementation. Includes code examples, API references, and...",
+          "intent": "develop",
+          "audience": [
+            "developer",
+            "software-engineer"
+          ],
+          "importance": "critical",
+          "tags": [
+            "sdk",
+            "libraries",
+            "development",
+            "integration"
+          ]
+        },
         {
           "url": "https://wellknownmcp.org/spec",
           "title": "Spec",
@@ -603,23 +542,6 @@
             "reference",
             "complete"
           ]
-        },
-        {
-          "url": "https://wellknownmcp.org/sdk",
-          "title": "Sdk",
-          "description": "Software Development Kit documentation and libraries for MCP implementation. Includes code examples, API references, and...",
-          "intent": "develop",
-          "audience": [
-            "developer",
-            "software-engineer"
-          ],
-          "importance": "critical",
-          "tags": [
-            "sdk",
-            "libraries",
-            "development",
-            "integration"
-          ]
         }
       ]
     },
@@ -635,6 +557,46 @@
       ],
       "trust_level": "signed",
       "feeds": [
+        {
+          "url": "https://wellknownmcp.org/about",
+          "title": "About the MCP Initiative",
+          "description": "Mission, philosophy, and governance structure of the MCP initiative. Deep dive into the principles driving the agentic w...",
+          "intent": "understand_mission_and_values",
+          "audience": [
+            "general",
+            "stakeholder",
+            "business"
+          ],
+          "importance": "critical",
+          "tags": [
+            "mission",
+            "philosophy",
+            "governance",
+            "values"
+          ],
+          "content_type": "foundational_content"
+        },
+        {
+          "url": "https://wellknownmcp.org/faq",
+          "title": "Frequently Asked Questions",
+          "description": "Comprehensive frequently asked questions covering technical implementation, governance, and ecosystem participation.",
+          "intent": "get_answers_and_clarification",
+          "audience": [
+            "general",
+            "developer",
+            "business",
+            "newcomer"
+          ],
+          "importance": "critical",
+          "tags": [
+            "faq",
+            "questions",
+            "support",
+            "implementation",
+            "governance"
+          ],
+          "content_type": "support_content"
+        },
         {
           "url": "https://wellknownmcp.org/.well-known/capabilities.llmfeed.json",
           "title": ".Well Known - Capabilities.Llmfeed.Json",
@@ -750,23 +712,83 @@
           "content_type": "infrastructure"
         }
       ]
+    },
+    "general": {
+      "title": "General",
+      "description": "Resources in the general category",
+      "entry_path": "/why-sign",
+      "audience": [
+        "general"
+      ],
+      "trust_level": "signed",
+      "feeds": [
+        {
+          "url": "https://wellknownmcp.org/why-sign",
+          "title": "Why Sign",
+          "description": "Explanation of the importance of cryptographic signing in agent systems. Covers trust, verification, and security benefi...",
+          "intent": "educate",
+          "audience": [
+            "general",
+            "security-conscious"
+          ],
+          "importance": "high",
+          "tags": [
+            "security",
+            "trust",
+            "cryptography",
+            "explanation"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/feeds",
+          "title": "Feeds",
+          "description": "Directory and catalog of known MCP feeds, examples, and public implementations across different industries and use cases...",
+          "intent": "discover",
+          "audience": [
+            "developer",
+            "implementer",
+            "researcher"
+          ],
+          "importance": "high",
+          "tags": [
+            "directory",
+            "catalog",
+            "examples",
+            "feeds"
+          ],
+          "content_type": "directory"
+        },
+        {
+          "url": "https://wellknownmcp.org/legal",
+          "title": "Legal",
+          "description": "Legal framework, terms of service, privacy policy, and governance structure for the MCP ecosystem and certification auth...",
+          "intent": "inform",
+          "audience": [
+            "legal",
+            "compliance",
+            "business"
+          ],
+          "importance": "medium",
+          "tags": [
+            "legal",
+            "terms",
+            "privacy",
+            "governance"
+          ]
+        }
+      ]
     }
   },
   "smart_routing": {
     "audience_based": {
-      "community": {
-        "entry_point": "/en/news/llm-agent-readiness-framework-2025",
+      "security-engineer": {
+        "entry_point": "/tools/sign-and-verify",
         "recommended_sequence": [
-          "llm-agent-readiness-framework-2025",
-          "manifesto",
-          "2025-07-05-microsoft-nlweb-protocol",
-          "launch-newstack",
-          "2025-07-12-from-chatbots-to-autonomous-agents"
+          "sign-and-verify",
+          "verify"
         ],
-        "behavioral_note": "Optimize for community needs",
-        "priority_categories": [
-          "community_content"
-        ],
+        "behavioral_note": "Optimize for security-engineer needs",
+        "priority_categories": [],
         "token_budget_allocation": {
           "core": 40,
           "docs": 25,
@@ -788,15 +810,13 @@
           "community": 20
         }
       },
-      "technical": {
-        "entry_point": "/spec",
+      "software-engineer": {
+        "entry_point": "/sdk",
         "recommended_sequence": [
-          "spec"
+          "sdk"
         ],
-        "behavioral_note": "Optimize for technical needs",
-        "priority_categories": [
-          "documentation"
-        ],
+        "behavioral_note": "Optimize for software-engineer needs",
+        "priority_categories": [],
         "token_budget_allocation": {
           "core": 40,
           "docs": 25,
@@ -820,12 +840,32 @@
           "community": 20
         }
       },
-      "api-architect": {
-        "entry_point": "/tools/api-explained",
+      "llm": {
+        "entry_point": "/.well-known/mcp-lite.llmfeed.json",
         "recommended_sequence": [
-          "api-explained"
+          "capabilities.llmfeed.json",
+          "llm-index.llmfeed.json",
+          "manifesto.llmfeed.json",
+          "mcp-lite.llmfeed.json",
+          "mcp.llmfeed.json"
         ],
-        "behavioral_note": "Optimize for api-architect needs",
+        "behavioral_note": "Focus on protocol understanding and ethical guidance",
+        "priority_categories": [
+          "core_infrastructure"
+        ],
+        "token_budget_allocation": {
+          "core": 70,
+          "docs": 20,
+          "tools": 5,
+          "community": 5
+        }
+      },
+      "security-conscious": {
+        "entry_point": "/why-sign",
+        "recommended_sequence": [
+          "why-sign"
+        ],
+        "behavioral_note": "Optimize for security-conscious needs",
         "priority_categories": [],
         "token_budget_allocation": {
           "core": 40,
@@ -834,13 +874,19 @@
           "community": 20
         }
       },
-      "legal": {
-        "entry_point": "/legal",
+      "stakeholder": {
+        "entry_point": "/about",
         "recommended_sequence": [
-          "legal"
+          "about",
+          "llm-agent-readiness-framework-2025",
+          "manifesto",
+          "2025-07-05-microsoft-nlweb-protocol",
+          "launch-newstack"
         ],
-        "behavioral_note": "Optimize for legal needs",
-        "priority_categories": [],
+        "behavioral_note": "Optimize for stakeholder needs",
+        "priority_categories": [
+          "community_content"
+        ],
         "token_budget_allocation": {
           "core": 40,
           "docs": 25,
@@ -867,29 +913,11 @@
           "community": 20
         }
       },
-      "agent": {
-        "entry_point": "/.well-known/capabilities.llmfeed.json",
-        "recommended_sequence": [
-          "capabilities.llmfeed.json",
-          "llm-index.llmfeed.json",
-          "manifesto.llmfeed.json",
-          "mcp-lite.llmfeed.json",
-          "mcp.llmfeed.json"
-        ],
-        "behavioral_note": "Optimize for agent needs",
-        "priority_categories": [
-          "core_infrastructure"
-        ],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
       "business": {
-        "entry_point": "/ecosystem",
+        "entry_point": "/about",
         "recommended_sequence": [
+          "about",
+          "faq",
           "ecosystem",
           "legal"
         ],
@@ -904,24 +932,34 @@
           "community": 20
         }
       },
-      "llm": {
-        "entry_point": "/.well-known/mcp-lite.llmfeed.json",
+      "technical": {
+        "entry_point": "/spec",
         "recommended_sequence": [
-          "capabilities.llmfeed.json",
-          "llm-index.llmfeed.json",
-          "manifesto.llmfeed.json",
-          "mcp-lite.llmfeed.json",
-          "mcp.llmfeed.json"
+          "spec"
         ],
-        "behavioral_note": "Focus on protocol understanding and ethical guidance",
+        "behavioral_note": "Optimize for technical needs",
         "priority_categories": [
-          "core_infrastructure"
+          "documentation"
         ],
         "token_budget_allocation": {
-          "core": 70,
-          "docs": 20,
-          "tools": 5,
-          "community": 5
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "api-architect": {
+        "entry_point": "/tools/api-explained",
+        "recommended_sequence": [
+          "api-explained"
+        ],
+        "behavioral_note": "Optimize for api-architect needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
         }
       },
       "webmaster": {
@@ -954,6 +992,20 @@
           "community": 20
         }
       },
+      "legal": {
+        "entry_point": "/legal",
+        "recommended_sequence": [
+          "legal"
+        ],
+        "behavioral_note": "Optimize for legal needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
       "compliance": {
         "entry_point": "/legal",
         "recommended_sequence": [
@@ -971,11 +1023,11 @@
       "developer": {
         "entry_point": "/spec",
         "recommended_sequence": [
-          "spec",
           "sdk",
-          "verify",
+          "spec",
           "sign-and-verify",
-          "capabilities.llmfeed.json"
+          "verify",
+          "well-known"
         ],
         "behavioral_note": "Emphasize practical implementation and code examples",
         "priority_categories": [
@@ -988,20 +1040,6 @@
           "docs": 40,
           "tools": 25,
           "community": 5
-        }
-      },
-      "software-engineer": {
-        "entry_point": "/sdk",
-        "recommended_sequence": [
-          "sdk"
-        ],
-        "behavioral_note": "Optimize for software-engineer needs",
-        "priority_categories": [],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
         }
       },
       "researcher": {
@@ -1020,14 +1058,28 @@
           "community": 20
         }
       },
-      "general": {
-        "entry_point": "/en/news/llm-agent-readiness-framework-2025",
+      "newcomer": {
+        "entry_point": "/faq",
         "recommended_sequence": [
+          "faq"
+        ],
+        "behavioral_note": "Optimize for newcomer needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "general": {
+        "entry_point": "/about",
+        "recommended_sequence": [
+          "about",
+          "faq",
+          "why-sign",
           "llm-agent-readiness-framework-2025",
-          "manifesto",
-          "2025-07-05-microsoft-nlweb-protocol",
-          "launch-newstack",
-          "2025-07-12-from-chatbots-to-autonomous-agents"
+          "manifesto"
         ],
         "behavioral_note": "Provide accessible overviews and clear navigation",
         "priority_categories": [
@@ -1041,14 +1093,19 @@
           "community": 20
         }
       },
-      "security-engineer": {
-        "entry_point": "/verify",
+      "agent": {
+        "entry_point": "/tools/well-known",
         "recommended_sequence": [
-          "verify",
-          "sign-and-verify"
+          "well-known",
+          "capabilities.llmfeed.json",
+          "llm-index.llmfeed.json",
+          "manifesto.llmfeed.json",
+          "mcp-lite.llmfeed.json"
         ],
-        "behavioral_note": "Optimize for security-engineer needs",
-        "priority_categories": [],
+        "behavioral_note": "Optimize for agent needs",
+        "priority_categories": [
+          "core_infrastructure"
+        ],
         "token_budget_allocation": {
           "core": 40,
           "docs": 25,
@@ -1056,30 +1113,16 @@
           "community": 20
         }
       },
-      "security-conscious": {
-        "entry_point": "/why-sign",
+      "community": {
+        "entry_point": "/ecosystem",
         "recommended_sequence": [
-          "why-sign"
-        ],
-        "behavioral_note": "Optimize for security-conscious needs",
-        "priority_categories": [],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "stakeholder": {
-        "entry_point": "/en/news/llm-agent-readiness-framework-2025",
-        "recommended_sequence": [
+          "ecosystem",
           "llm-agent-readiness-framework-2025",
           "manifesto",
           "2025-07-05-microsoft-nlweb-protocol",
-          "launch-newstack",
-          "2025-07-12-from-chatbots-to-autonomous-agents"
+          "launch-newstack"
         ],
-        "behavioral_note": "Optimize for stakeholder needs",
+        "behavioral_note": "Optimize for community needs",
         "priority_categories": [
           "community_content"
         ],
@@ -1093,20 +1136,20 @@
     },
     "intent_based": {
       "understand_platform": [
+        "about",
         "manifesto.llmfeed.json",
-        "manifesto",
-        "from-mcp-to-llmfeed-manifesto",
-        "mcp-lite.llmfeed.json"
+        "mcp-lite.llmfeed.json",
+        "mcp.llmfeed.json"
       ],
       "implement_solution": [
         "spec",
         "sign-and-verify",
-        "getting-started",
+        "well-known",
         "api-explained"
       ],
       "validate_feeds": [
-        "verify",
         "sign-and-verify",
+        "verify",
         "schema.llmfeed.json"
       ],
       "browse_content": [
@@ -1115,15 +1158,15 @@
       ],
       "evaluate_trust": [
         "manifesto.llmfeed.json",
-        "manifesto",
-        "from-mcp-to-llmfeed-manifesto",
-        "verify"
+        "sign-and-verify",
+        "verify",
+        "manifesto"
       ],
       "get_started": [
         "mcp-lite.llmfeed.json",
         "mcp.llmfeed.json",
-        "from-mcp-to-llmfeed-manifesto",
-        "2025-06-14-meta-open-agents-mcp"
+        "sign-and-verify",
+        "well-known"
       ],
       "explore_ecosystem": [
         "feeds",
@@ -1141,16 +1184,16 @@
     },
     "optimization_hints": {
       "parallel_loading": [
-        "/.well-known/capabilities.llmfeed.json",
-        "/.well-known/llm-index.llmfeed.json",
-        "/.well-known/manifesto.llmfeed.json"
+        "/about",
+        "/faq",
+        "/.well-known/capabilities.llmfeed.json"
       ],
       "prefetch_candidates": [
-        "llmfeedhub",
-        "verify",
-        "feeds",
+        "sign-and-verify",
         "sdk",
-        "spec"
+        "spec",
+        "llmfeedhub",
+        "api-explained"
       ],
       "lazy_load_categories": [
         "community_content"
@@ -1234,13 +1277,13 @@
         "cache_efficiency": "95%",
         "routing_accuracy": "97%"
       },
-      "last_health_check": "2025-06-16T17:32:53.419989Z"
+      "last_health_check": "2025-06-17T11:37:32.989752Z"
     }
   },
   "signature": {
     "algorithm": "ed25519",
-    "value": "PbckP5yl+QKa136q4zgohVbaVWSdUa0AUPTF5QP4K14=",
-    "created_at": "2025-06-16T17:32:53.419989Z"
+    "value": "vCpE/Y9rWtP+yaUmtZwEpUSgalLUjg7hR85nkQhpxGo=",
+    "created_at": "2025-06-17T11:37:32.989752Z"
   },
   "certification": {
     "certifier": "https://llmca.org",
@@ -1248,11 +1291,11 @@
     "targets": [
       "all"
     ],
-    "issued_at": "2025-06-16T17:32:53.419989Z",
+    "issued_at": "2025-06-17T11:37:32.989752Z",
     "expires_at": "",
     "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
     "algorithm": "ed25519",
     "public_key_hint": "https://llmca.org/.well-known/llmca_cert.pem",
-    "value": "xxp/VfOrffWi+wQx5LVq7GQfg8rLgyEy3sVrUH5qmSc="
+    "value": "p8bxoK53SfmODjZGoJs9PSfapM2hmJMaJB09rh0UDQM="
   }
 }

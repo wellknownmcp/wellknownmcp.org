@@ -1,0 +1,83 @@
+{
+  "generated_at": "2025-06-17T11:53:10.210Z",
+  "content_hash": "30265e7c5cc6f29a6fcbe468f1f7e01b",
+  "file_stats": [
+    {
+      "path": ".index-meta.json",
+      "size": 1715,
+      "mtime": 1750160562526
+    },
+    {
+      "path": "capabilities.llmfeed.json",
+      "size": 5053,
+      "mtime": 1749568759422
+    },
+    {
+      "path": "exports/.index-meta.json",
+      "size": 480,
+      "mtime": 1750161190193
+    },
+    {
+      "path": "exports/compiled-site.llmfeed.json",
+      "size": 98171,
+      "mtime": 1749568759889
+    },
+    {
+      "path": "exports/manifesto.llmfeed.json",
+      "size": 2105,
+      "mtime": 1749568759951
+    },
+    {
+      "path": "llm-index.llmfeed.json",
+      "size": 88842,
+      "mtime": 1749568761226
+    },
+    {
+      "path": "mcp-lite.llmfeed.json",
+      "size": 5185,
+      "mtime": 1749568761387
+    },
+    {
+      "path": "mcp.llmfeed.json",
+      "size": 11962,
+      "mtime": 1749568761519
+    },
+    {
+      "path": "prompts/.index-meta.json",
+      "size": 843,
+      "mtime": 1750161190198
+    },
+    {
+      "path": "prompts/generate-session-feed.llmfeed.json",
+      "size": 3830,
+      "mtime": 1749568761722
+    },
+    {
+      "path": "prompts/mcp-agent-behavior-override.llmfeed.json",
+      "size": 16297,
+      "mtime": 1749568761792
+    },
+    {
+      "path": "prompts/mcp-mode-activation.llmfeed.json",
+      "size": 2202,
+      "mtime": 1749568762018
+    },
+    {
+      "path": "prompts/prompt-index.llmfeed.json",
+      "size": 2858,
+      "mtime": 1749568762110
+    },
+    {
+      "path": "prompts/quickstart-agent-enablement.llmfeed.json",
+      "size": 2212,
+      "mtime": 1749568762173
+    },
+    {
+      "path": "public.pem",
+      "size": 116,
+      "mtime": 1749568762268
+    }
+  ],
+  "total_files": 15,
+  "generator_version": "2.0.0"
+}

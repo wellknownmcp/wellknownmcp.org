@@ -1,0 +1,63 @@
+{
+  "generated_at": "2025-06-17T11:53:10.223Z",
+  "content_hash": "7b288cf29bf48444af9ed06ba9c79c92",
+  "file_stats": [
+    {
+      "path": ".index-meta.json",
+      "size": 1332,
+      "mtime": 1750160562534
+    },
+    {
+      "path": "generate-session-feed.llmfeed.json",
+      "size": 2080,
+      "mtime": 1749568764186
+    },
+    {
+      "path": "mcp-agent-behavior-override.llmfeed.json",
+      "size": 1924,
+      "mtime": 1749568764320
+    },
+    {
+      "path": "mcp-mode-activation.llmfeed.json",
+      "size": 1904,
+      "mtime": 1749568764452
+    },
+    {
+      "path": "prompt-automation-crm.llmfeed.json",
+      "size": 1468,
+      "mtime": 1749568764514
+    },
+    {
+      "path": "prompt-business-deck.llmfeed.json",
+      "size": 1375,
+      "mtime": 1749568764711
+    },
+    {
+      "path": "prompt-devtools.llmfeed.json",
+      "size": 1376,
+      "mtime": 1749568764842
+    },
+    {
+      "path": "prompt-education-exam-prep.llmfeed.json",
+      "size": 1379,
+      "mtime": 1749568764907
+    },
+    {
+      "path": "prompt-graphic-design.llmfeed.json",
+      "size": 1418,
+      "mtime": 1749568764976
+    },
+    {
+      "path": "prompt-multidoc-analysis.llmfeed.json",
+      "size": 1539,
+      "mtime": 1749568765015
+    },
+    {
+      "path": "prompt-trust-signed-declaration.llmfeed.json",
+      "size": 1408,
+      "mtime": 1749568765337
+    }
+  ],
+  "total_files": 11,
+  "generator_version": "2.0.0"
+}

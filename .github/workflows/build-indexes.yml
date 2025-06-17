@@ -1,0 +1,166 @@
+name: 🏗️ Build Directory Indexes
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - 'public/.well-known/**'
+      - 'public/exports/**'
+      - 'public/prompts/**'
+      - 'public/demo/**'
+      - 'scripts/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'public/.well-known/**'
+      - 'public/exports/**'
+      - 'public/prompts/**'
+      - 'public/demo/**'
+  
+  workflow_dispatch:
+    inputs:
+      force_rebuild:
+        description: 'Force rebuild all indexes'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  build-indexes:
+    name: 🚀 Generate Directory Indexes
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # Pour détecter les changements
+      
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: 📋 Install dependencies
+        run: npm ci
+      
+      - name: 🔍 Check for feed changes
+        id: changes
+        run: |
+          echo "Checking for changes in feed directories..."
+          
+          if git diff --name-only HEAD~1 HEAD | grep -E "\.(llmfeed\.json|json)$"; then
+            echo "feeds_changed=true" >> $GITHUB_OUTPUT
+            echo "📝 Feed files have changed"
+          else
+            echo "feeds_changed=false" >> $GITHUB_OUTPUT
+            echo "ℹ️  No feed files changed"
+          fi
+      
+      - name: 🧪 Dry run - Preview changes
+        run: npm run build:indexes:dry-run
+      
+      - name: 🏗️ Build indexes (smart)
+        if: ${{ steps.changes.outputs.feeds_changed == 'true' || github.event_name == 'workflow_dispatch' }}
+        run: |
+          if [[ "${{ github.event.inputs.force_rebuild }}" == "true" ]]; then
+            echo "🔄 Force rebuilding all indexes..."
+            npm run build:indexes:force
+          else
+            echo "⚡ Smart rebuild (only changed)..."
+            npm run build:indexes
+          fi
+      
+      - name: 🏗️ Build indexes (force on main)
+        if: ${{ github.ref == 'refs/heads/main' && steps.changes.outputs.feeds_changed == 'false' }}
+        run: |
+          echo "🔄 Force rebuild on main branch..."
+          npm run build:indexes:force
+      
+      - name: ✅ Verify generated indexes
+        run: |
+          echo "🔍 Verifying generated indexes..."
+          find public -name "index.html" -type f | while read file; do
+            echo "✓ Found: $file"
+            # Vérifier que le fichier n'est pas vide
+            if [ ! -s "$file" ]; then
+              echo "❌ Empty index file: $file"
+              exit 1
+            fi
+          done
+          
+          echo "📊 Index files summary:"
+          find public -name "index.html" -exec wc -l {} + | tail -1
+      
+      - name: 📤 Commit updated indexes
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          if git diff --quiet; then
+            echo "📝 No changes to commit"
+          else
+            echo "📝 Committing updated indexes..."
+            git add public/**/index.html
+            git add public/**/.index-meta.json
+            git commit -m "🤖 Auto-update directory indexes [skip ci]" || echo "Nothing to commit"
+            git push
+          fi
+      
+      - name: 📋 Upload index artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: directory-indexes
+          path: |
+            public/**/index.html
+            public/**/.index-meta.json
+          retention-days: 30
+      
+      - name: 📊 Report summary
+        run: |
+          echo "## 📊 Build Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          echo "### Generated Indexes" >> $GITHUB_STEP_SUMMARY
+          find public -name "index.html" -type f | while read file; do
+            size=$(stat -c%s "$file" 2>/dev/null || stat -f%z "$file")
+            echo "- \`$file\` (${size} bytes)" >> $GITHUB_STEP_SUMMARY
+          done
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### LLMFeed Files Processed" >> $GITHUB_STEP_SUMMARY
+          find public -name "*.llmfeed.json" -type f | wc -l | xargs echo "Total LLMFeed files:" >> $GITHUB_STEP_SUMMARY
+
+  validate-feeds:
+    name: 🔍 Validate LLMFeed Files
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'pull_request' }}
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: 📋 Install dependencies
+        run: npm ci
+      
+      - name: 🔍 Validate LLMFeed syntax
+        run: |
+          echo "🔍 Validating LLMFeed JSON syntax..."
+          find public -name "*.llmfeed.json" -type f | while read file; do
+            echo "Checking: $file"
+            if ! jq . "$file" > /dev/null 2>&1; then
+              echo "❌ Invalid JSON in: $file"
+              exit 1
+            else
+              echo "✅ Valid JSON: $file"
+            fi
+          done
+          echo "✅ All LLMFeed files have valid JSON syntax"

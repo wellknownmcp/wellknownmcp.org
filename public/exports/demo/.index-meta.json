@@ -1,0 +1,108 @@
+{
+  "generated_at": "2025-06-17T11:53:10.233Z",
+  "content_hash": "c0aac23cedb63d474c4b591d765d8fdc",
+  "file_stats": [
+    {
+      "path": ".index-meta.json",
+      "size": 2359,
+      "mtime": 1750160562545
+    },
+    {
+      "path": "bundle.llmfeed.json",
+      "size": 2201,
+      "mtime": 1749568762581
+    },
+    {
+      "path": "kungfu-certified.llmfeed.json",
+      "size": 1846,
+      "mtime": 1749568762644
+    },
+    {
+      "path": "kungfu-signed.llmfeed.json",
+      "size": 1301,
+      "mtime": 1749568762736
+    },
+    {
+      "path": "kungfu.llmfeed.json",
+      "size": 1291,
+      "mtime": 1749568763379
+    },
+    {
+      "path": "mcp_user_proxy_example.llmfeed.json",
+      "size": 1591,
+      "mtime": 1749568763599
+    },
+    {
+      "path": "mobile-app.example.llmfeed.json",
+      "size": 2504,
+      "mtime": 1749568763665
+    },
+    {
+      "path": "pricing.llmfeed.json",
+      "size": 2347,
+      "mtime": 1749568763806
+    },
+    {
+      "path": "prompts/.index-meta.json",
+      "size": 1428,
+      "mtime": 1750161190226
+    },
+    {
+      "path": "prompts/generate-session-feed.llmfeed.json",
+      "size": 2080,
+      "mtime": 1749568764186
+    },
+    {
+      "path": "prompts/mcp-agent-behavior-override.llmfeed.json",
+      "size": 1924,
+      "mtime": 1749568764320
+    },
+    {
+      "path": "prompts/mcp-mode-activation.llmfeed.json",
+      "size": 1904,
+      "mtime": 1749568764452
+    },
+    {
+      "path": "prompts/prompt-automation-crm.llmfeed.json",
+      "size": 1468,
+      "mtime": 1749568764514
+    },
+    {
+      "path": "prompts/prompt-business-deck.llmfeed.json",
+      "size": 1375,
+      "mtime": 1749568764711
+    },
+    {
+      "path": "prompts/prompt-devtools.llmfeed.json",
+      "size": 1376,
+      "mtime": 1749568764842
+    },
+    {
+      "path": "prompts/prompt-education-exam-prep.llmfeed.json",
+      "size": 1379,
+      "mtime": 1749568764907
+    },
+    {
+      "path": "prompts/prompt-graphic-design.llmfeed.json",
+      "size": 1418,
+      "mtime": 1749568764976
+    },
+    {
+      "path": "prompts/prompt-multidoc-analysis.llmfeed.json",
+      "size": 1539,
+      "mtime": 1749568765015
+    },
+    {
+      "path": "prompts/prompt-trust-signed-declaration.llmfeed.json",
+      "size": 1408,
+      "mtime": 1749568765337
+    },
+    {
+      "path": "testimonies.llmfeed.json",
+      "size": 3551,
+      "mtime": 1749568765882
+    }
+  ],
+  "total_files": 20,
+  "generator_version": "2.0.0"
+}

@@ -1,4 +1,3 @@
-'use client'
 
 import { PageTitle } from '@/components/PageTitle'
 import SeoHead from '@/components/SeoHead'

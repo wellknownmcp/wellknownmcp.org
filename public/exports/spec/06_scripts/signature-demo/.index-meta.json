@@ -1,0 +1,78 @@
+{
+  "generated_at": "2025-06-17T11:53:10.517Z",
+  "content_hash": "6f98e8823bfbccf2de935369332459d5",
+  "file_stats": [
+    {
+      "path": ".index-meta.json",
+      "size": 1483,
+      "mtime": 1750160562695
+    },
+    {
+      "path": "examples/.index-meta.json",
+      "size": 582,
+      "mtime": 1750161190515
+    },
+    {
+      "path": "examples/simple_example.llmfeed.json",
+      "size": 150,
+      "mtime": 1749804517641
+    },
+    {
+      "path": "examples/test_input.llmfeed.json",
+      "size": 452,
+      "mtime": 1749804488530
+    },
+    {
+      "path": "examples/test_signed.llmfeed.json",
+      "size": 890,
+      "mtime": 1749804579735
+    },
+    {
+      "path": "mcp-canonical-json-v1.md",
+      "size": 3093,
+      "mtime": 1749648423825
+    },
+    {
+      "path": "private.pem",
+      "size": 1679,
+      "mtime": 1748273521251
+    },
+    {
+      "path": "public.pem",
+      "size": 451,
+      "mtime": 1748273521350
+    },
+    {
+      "path": "README.md",
+      "size": 4587,
+      "mtime": 1749804339093
+    },
+    {
+      "path": "sign_reference.js",
+      "size": 5174,
+      "mtime": 1749804737801
+    },
+    {
+      "path": "sign_reference.py",
+      "size": 4719,
+      "mtime": 1749804641197
+    },
+    {
+      "path": "sripts py et ts.py",
+      "size": 20264,
+      "mtime": 1749803514062
+    },
+    {
+      "path": "verify_reference.js",
+      "size": 5715,
+      "mtime": 1749804826009
+    },
+    {
+      "path": "verify_reference.py",
+      "size": 4638,
+      "mtime": 1749804685177
+    }
+  ],
+  "total_files": 14,
+  "generator_version": "2.0.0"
+}

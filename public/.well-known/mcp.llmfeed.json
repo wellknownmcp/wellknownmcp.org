@@ -83,7 +83,7 @@
       ],
       "examples": {
         "local_nested": "https://wellknownmcp.org/llmfeedhub/demo/kungfu",
-        "external_query": "https://wellknownmcp.org/llmfeedhub?external=https%3A%2F%2Fapi.github.com%2Frepos%2Fmicrosoft%2Fvscode",
+        "external_query": "https://wellknownmcp.org/llmfeedhub?external=https//wellknownmcp.org/.well-known/mcp.llmfeed.json",
         "upload_interface": "https://wellknownmcp.org/llmfeedhub"
       }
     },
@@ -362,12 +362,12 @@
         "cors proxy",
         "analyze any feed"
       ],
-      "intent": "demonstrate universal feed loading capabilities",
+      "intent": "demonstrate universal llmfeed loading capabilities",
       "description": "Showcase the CORS proxy and universal loading by analyzing external feeds through LLMFeedHub.",
       "restricted": false,
       "api_key_required": false,
       "prompt_type": "demonstration",
-      "example_usage": "https://wellknownmcp.org/llmfeedhub?external=https%3A%2F%2Fapi.github.com%2Frepos%2Fmicrosoft%2Fvscode"
+      "example_usage": "https://wellknownmcp.org/llmfeedhub?external=https://wellknownmcp.org/.well-known/mcp.llmfeed.json"
     }
   ],
   "prompt_directory": "https://wellknownmcp.org/.well-known/prompts/",

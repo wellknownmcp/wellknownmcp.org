@@ -4,11 +4,25 @@
         <title>News (en) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/en/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Sun, 15 Jun 2025 20:55:12 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 17 Jun 2025 11:23:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>© 2025 WellKnownMCP</copyright>
+        <item>
+            <title><![CDATA[🗺️ The Case for .well-known/llm-index.llmfeed.json]]></title>
+            <link>https://wellknownmcp.org/en/news/llm-index-case</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/llm-index-case</guid>
+            <pubDate>Mon, 16 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Proven 93% token savings through intelligent agent discovery. Real data shows how LLM indexes transform blind crawling into contextual navigation, creating the foundation for the agentic web.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[💡 The LLM Index Revolution: How Smart Discovery Saves Millions of Tokens]]></title>
+            <link>https://wellknownmcp.org/en/news/llm-index-revolution</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/llm-index-revolution</guid>
+            <pubDate>Mon, 16 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Deep analysis of the token economics revolution enabled by intelligent LLM indexes. Real-world data shows 93% efficiency gains and billion-token global impact potential.]]></description>
+        </item>
         <item>
             <title><![CDATA[🧪 The 2025 Agent Readiness Challenge: Which LLMs Can Actually Build the Agentic Web?]]></title>
             <link>https://wellknownmcp.org/en/news/llm-agent-readiness-framework-2025</link>
@@ -269,13 +283,6 @@
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/getting-started</guid>
             <pubDate>Sun, 25 May 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Turn any site into an agent-aware node in under 5 minutes.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[🗺️ The Case for .well-known/llm-index.llmfeed.json]]></title>
-            <link>https://wellknownmcp.org/en/news/llm-index-case</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/llm-index-case</guid>
-            <pubDate>Sun, 25 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Why LLMs need a sitemap built for agent intent, not HTML crawlers.]]></description>
         </item>
         <item>
             <title><![CDATA[We Fed the LLMs: What They Told Us About MCP]]></title>

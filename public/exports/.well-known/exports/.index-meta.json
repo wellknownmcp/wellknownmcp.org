@@ -1,0 +1,23 @@
+{
+  "generated_at": "2025-06-17T11:53:10.191Z",
+  "content_hash": "4088d0a5d6ac519679028d8fc6a4a7b5",
+  "file_stats": [
+    {
+      "path": ".index-meta.json",
+      "size": 385,
+      "mtime": 1750160562471
+    },
+    {
+      "path": "compiled-site.llmfeed.json",
+      "size": 98171,
+      "mtime": 1749568759889
+    },
+    {
+      "path": "manifesto.llmfeed.json",
+      "size": 2105,
+      "mtime": 1749568759951
+    }
+  ],
+  "total_files": 3,
+  "generator_version": "2.0.0"
+}

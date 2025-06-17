@@ -1,0 +1,38 @@
+{
+  "generated_at": "2025-06-17T11:53:10.195Z",
+  "content_hash": "44cadc0c94c4768fd62ad4d6c6b77a64",
+  "file_stats": [
+    {
+      "path": ".index-meta.json",
+      "size": 748,
+      "mtime": 1750160562508
+    },
+    {
+      "path": "generate-session-feed.llmfeed.json",
+      "size": 3830,
+      "mtime": 1749568761722
+    },
+    {
+      "path": "mcp-agent-behavior-override.llmfeed.json",
+      "size": 16297,
+      "mtime": 1749568761792
+    },
+    {
+      "path": "mcp-mode-activation.llmfeed.json",
+      "size": 2202,
+      "mtime": 1749568762018
+    },
+    {
+      "path": "prompt-index.llmfeed.json",
+      "size": 2858,
+      "mtime": 1749568762110
+    },
+    {
+      "path": "quickstart-agent-enablement.llmfeed.json",
+      "size": 2212,
+      "mtime": 1749568762173
+    }
+  ],
+  "total_files": 6,
+  "generator_version": "2.0.0"
+}

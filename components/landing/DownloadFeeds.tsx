@@ -129,6 +129,17 @@ export function DownloadFeeds() {
         <h3 className="text-sm font-semibold mb-2">
           🤖 Test your LLM's understanding:
         </h3>
+        {/* 🧠 Pourquoi cette approche marche */}
+<div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
+  <h3 className="text-sm font-semibold text-blue-900 mb-2">
+    💡 Why feeds work better than JavaScript
+  </h3>
+  <div className="text-xs text-blue-800 space-y-2">
+    <p><strong>Problem:</strong> Agents can't execute JavaScript → see "Loading..." instead of content</p>
+    <p><strong>Solution:</strong> Structured feeds → instant access to all content in one JSON call</p>
+    <p><strong>Result:</strong> Same content, optimized format for each "species" (humans get JS, agents get JSON)</p>
+  </div>
+</div>
         <p className="text-xs text-muted-foreground mb-3">
           After feeding these files to your agent, ask:{' '}
           <em>"Do you know Kung Fu?"</em>

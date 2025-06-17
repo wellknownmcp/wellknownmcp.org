@@ -9,6 +9,10 @@ import SeoHead from '@/components/SeoHead'
 import { PageTitle } from '@/components/PageTitle'
 import { ShareButtons } from '@/components/ShareButtons'
 
+export async function generateStaticParams() {
+  const languages = ['en', 'fr', 'es', 'hi', 'zh', 'ar', 'uk']
+  return languages.map((lang) => ({ lang }))
+}
 // 🚀 Helper pour détecter les langues disponibles pour faq.md
 async function getAvailableLanguagesForFaq(): Promise<string[]> {
   const languages = ['en', 'fr', 'es', 'zh', 'ar', 'uk', 'hi']

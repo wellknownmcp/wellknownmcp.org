@@ -1,0 +1,53 @@
+{
+  "generated_at": "2025-06-17T11:53:10.342Z",
+  "content_hash": "8930d95064009e924b1962cf1f6e6ab4",
+  "file_stats": [
+    {
+      "path": ".index-meta.json",
+      "size": 979,
+      "mtime": 1750160562599
+    },
+    {
+      "path": "llmfeed-mime.md",
+      "size": 3060,
+      "mtime": 1749648954039
+    },
+    {
+      "path": "llmfeed.md",
+      "size": 18771,
+      "mtime": 1749992874581
+    },
+    {
+      "path": "llmfeed.schema.annotated.json",
+      "size": 15626,
+      "mtime": 1749807275823
+    },
+    {
+      "path": "llmfeed.schema.json",
+      "size": 7491,
+      "mtime": 1749807109707
+    },
+    {
+      "path": "llmfeed_block-reference.md",
+      "size": 4097,
+      "mtime": 1749634016274
+    },
+    {
+      "path": "llmfeed_lite.schema.json",
+      "size": 5106,
+      "mtime": 1749807036875
+    },
+    {
+      "path": "understanding-llmfeed.md",
+      "size": 18701,
+      "mtime": 1749714765574
+    },
+    {
+      "path": "wellknown.md",
+      "size": 11681,
+      "mtime": 1749992596643
+    }
+  ],
+  "total_files": 9,
+  "generator_version": "2.0.0"
+}
