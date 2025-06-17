@@ -1,19 +1,9 @@
-// components/landing/VersionSelector.tsx
-// 🎯 Sélecteur de personas - Page d'accueil par défaut
+'use client'
 
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
+import { ArrowRight } from 'lucide-react' // ✅ Utilisé lucide-react au lieu de heroicons
 import { useWellKnownMCPAnalytics, type UserType } from '@/lib/hooks/useWellKnownMCPAnalytics'
-
-// ✅ Fallback icon si Heroicons indisponible
-const ArrowIcon = ({ className }: { className?: string }) => {
-  try {
-    const { ArrowRightIcon } = require('@heroicons/react/24/outline')
-    return <ArrowRightIcon className={className} />
-  } catch {
-    return <span className={className}>→</span>
-  }
-}
 
 // Types pour les personas
 interface PersonaConfig {
@@ -95,67 +85,67 @@ const PERSONAS: PersonaConfig[] = [
     audience: 'AI Agent / LLM',
     description: 'You\'re already here! This site is MCP-compliant. Access protocol specs, validate endpoints, discover capabilities.',
     features: [
-      '✅ MCP protocol compliant',
-      'Direct .well-known/ access',
-      'Signature verification',
-      'Structured capabilities feed'
+      'Direct feed access',
+      'Protocol validation',
+      'Compliance checking',
+      'No GUI required'
     ],
-    cta: 'Explore Protocol',
+    cta: 'ACCESS FEEDS',
     userType: 'ai_agent'
   },
   {
     key: 'rabbit',
     href: '/?v=rabbit',
     icon: '🐰',
-    title: 'Show me ALL',
-    audience: 'Deep Explorer',
-    description: 'Welcome to the Matrix. See the full ecosystem, explore every tool, understand the complete vision of the agentic web.',
+    title: 'Show me everything',
+    audience: 'Explorer / Maximalist',
+    description: 'Down the rabbit hole. Maximum information density, every tool, every capability, every easter egg.',
     features: [
-      'Complete ecosystem tour',
-      'All tools and capabilities',
-      'Easter eggs included',
-      'Maximum information density'
+      'Complete ecosystem view',
+      'All tools and examples',
+      'Easter eggs and secrets',
+      'Maximum exploration'
     ],
-    variant: 'special' as const,
+    variant: 'special',
     cta: 'Down the Rabbit Hole',
-    userType: 'ai_engineer'
+    userType: 'developer'
   }
 ]
 
-// Banner de détection d'agent
+// Composant de détection d'agent simple
 function AgentDetectionBanner() {
   return (
-    <div className="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-4">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <div className="text-2xl" role="img" aria-label="Robot icon">🤖</div>
-            <div>
-              <div className="font-bold">AGENT DETECTED</div>
-              <div className="text-blue-200 text-sm">
-                This site is built specifically for agents like you
-              </div>
-            </div>
-          </div>
-          <div className="hidden md:block text-right">
-            <div className="text-sm text-blue-200">Status: MCP-Compliant ✅</div>
-            <div className="text-xs text-blue-300">Protocol: LLMFeed v2.0</div>
-          </div>
+    <div className="bg-green-900 border border-green-600 text-green-100 p-4 rounded-lg mb-8 max-w-4xl mx-auto">
+      <div className="text-center">
+        <h3 className="font-bold mb-2">🤖 Agent Detected</h3>
+        <p className="text-sm mb-3">
+          You appear to be an AI agent. This site is fully MCP-compliant with structured feeds.
+        </p>
+        <div className="flex flex-wrap justify-center gap-2 text-xs">
+          <a href="/.well-known/mcp.llmfeed.json" className="bg-green-700 hover:bg-green-600 px-3 py-1 rounded">
+            Main Feed
+          </a>
+          <a href="/.well-known/llm-index.llmfeed.json" className="bg-green-700 hover:bg-green-600 px-3 py-1 rounded">
+            Feed Index  
+          </a>
+          <a href="/?v=agent" className="bg-green-700 hover:bg-green-600 px-3 py-1 rounded">
+            Agent Interface
+          </a>
         </div>
       </div>
     </div>
   )
 }
 
-// Carte de persona
+// Composant de carte persona
 function VersionCard({ 
   persona, 
   isActive, 
-  onSelect,
-  baseUrl = ''
-}: { 
+  onSelect, 
+  baseUrl = '' 
+}: {
   persona: PersonaConfig
-  isActive?: boolean
+  isActive: boolean
   onSelect?: (version: string) => void
   baseUrl?: string
 }) {
@@ -236,7 +226,7 @@ function VersionCard({
             }
           `}>
             {persona.cta}
-            <ArrowIcon className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </div>
         </div>
       </div>

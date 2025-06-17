@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-06-17T11:53:10.401Z",
-  "content_hash": "b805814d07f2541828744b4d6168dff4",
+  "generated_at": "2025-06-17T21:03:29.707Z",
+  "content_hash": "d32650560d4d45d88e26a94d4a6fb270",
   "file_stats": [
     {
       "path": ".index-meta.json",
-      "size": 1147,
-      "mtime": 1750160562617
+      "size": 1244,
+      "mtime": 1750161190404
     },
     {
       "path": "agent-behavior-flagging.md",

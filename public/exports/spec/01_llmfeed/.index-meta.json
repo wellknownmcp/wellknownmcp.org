@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-06-17T11:53:10.342Z",
-  "content_hash": "8930d95064009e924b1962cf1f6e6ab4",
+  "generated_at": "2025-06-17T21:03:29.692Z",
+  "content_hash": "d7db587747ec7d747389357a8941e941",
   "file_stats": [
     {
       "path": ".index-meta.json",
-      "size": 979,
-      "mtime": 1750160562599
+      "size": 1074,
+      "mtime": 1750161190342
     },
     {
       "path": "llmfeed-mime.md",

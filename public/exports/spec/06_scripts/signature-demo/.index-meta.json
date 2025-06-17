@@ -1,16 +1,16 @@
 {
-  "generated_at": "2025-06-17T11:53:10.517Z",
-  "content_hash": "6f98e8823bfbccf2de935369332459d5",
+  "generated_at": "2025-06-17T21:03:29.779Z",
+  "content_hash": "d0b8daa256112c1741c5a2860505e4c8",
   "file_stats": [
     {
       "path": ".index-meta.json",
-      "size": 1483,
-      "mtime": 1750160562695
+      "size": 1579,
+      "mtime": 1750161190520
     },
     {
       "path": "examples/.index-meta.json",
       "size": 582,
-      "mtime": 1750161190515
+      "mtime": 1750194209775
     },
     {
       "path": "examples/simple_example.llmfeed.json",

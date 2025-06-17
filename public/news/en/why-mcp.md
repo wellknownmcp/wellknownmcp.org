@@ -1,5 +1,5 @@
 ---
-title: Why MCP?
+title: Why Llmfeed?
 description: >-
   Explaining the rationale behind adopting the Model Context Protocol (MCP)
   standard.
@@ -11,7 +11,7 @@ tags:
 lang: en
 ---
 
-## Why Choose MCP?
+## Why Choose MCP llmfeed?
 
 Faced with the increasing challenges of integrating LLMs into real-world contexts, WellKnownMCP clearly addresses a critical need:
 
@@ -32,4 +32,4 @@ MCP isn't just practical—it's specifically designed to secure interactions thr
 - **Verifiable signatures**
 - **Explicit resource access controls**
 
-By choosing MCP, you're not just making a sound technological choice—you're actively participating in shaping an open, secure, and widely adopted industry standard.
+By choosing MCP LLMfeed, you're not just making a sound technological choice—you're actively participating in shaping an open, secure, and widely adopted industry standard.

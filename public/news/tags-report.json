@@ -2,7 +2,7 @@
   "global": [
     {
       "tag": "llmfeed",
-      "count": 96
+      "count": 97
     },
     {
       "tag": "mcp",
@@ -33,12 +33,12 @@
       "count": 13
     },
     {
-      "tag": "manifesto",
+      "tag": "launch",
       "count": 11
     },
     {
-      "tag": "launch",
-      "count": 10
+      "tag": "manifesto",
+      "count": 11
     },
     {
       "tag": "interoperability",
@@ -49,16 +49,16 @@
       "count": 9
     },
     {
+      "tag": "announcement",
+      "count": 9
+    },
+    {
       "tag": "certification",
       "count": 9
     },
     {
       "tag": "well-known",
       "count": 9
-    },
-    {
-      "tag": "announcement",
-      "count": 8
     },
     {
       "tag": "ia-marche-francais",
@@ -847,7 +847,7 @@
       },
       {
         "tag": "llmfeed",
-        "count": 32
+        "count": 33
       },
       {
         "tag": "agentic-web",
@@ -890,6 +890,14 @@
         "count": 5
       },
       {
+        "tag": "announcement",
+        "count": 5
+      },
+      {
+        "tag": "launch",
+        "count": 5
+      },
+      {
         "tag": "anthropic",
         "count": 4
       },
@@ -899,14 +907,6 @@
       },
       {
         "tag": "llmca",
-        "count": 4
-      },
-      {
-        "tag": "announcement",
-        "count": 4
-      },
-      {
-        "tag": "launch",
         "count": 4
       },
       {

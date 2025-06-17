@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-06-17T11:53:09.652Z",
-  "content_hash": "5856daa60b7f3ddd07c2d79777708636",
+  "generated_at": "2025-06-17T21:03:29.184Z",
+  "content_hash": "02425d460030b113f02e23ccbf8f76ad",
   "file_stats": [
     {
       "path": ".index-meta.json",
-      "size": 2713,
-      "mtime": 1750160562160
+      "size": 2809,
+      "mtime": 1750161189653
     },
     {
       "path": "agent-behavior.llmfeed.json",
@@ -30,7 +30,7 @@
     {
       "path": "exports/news-export.llmfeed.json",
       "size": 505471,
-      "mtime": 1750159430872
+      "mtime": 1750193889581
     },
     {
       "path": "exports/spec.llmfeed.json",

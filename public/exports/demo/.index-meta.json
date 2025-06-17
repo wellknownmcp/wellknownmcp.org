@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-06-17T11:53:10.233Z",
-  "content_hash": "c0aac23cedb63d474c4b591d765d8fdc",
+  "generated_at": "2025-06-17T21:03:29.646Z",
+  "content_hash": "67aae62cbca43f77cbac35daccb532a7",
   "file_stats": [
     {
       "path": ".index-meta.json",
-      "size": 2359,
-      "mtime": 1750160562545
+      "size": 2455,
+      "mtime": 1750161190235
     },
     {
       "path": "bundle.llmfeed.json",
@@ -45,7 +45,7 @@
     {
       "path": "prompts/.index-meta.json",
       "size": 1428,
-      "mtime": 1750161190226
+      "mtime": 1750194209637
     },
     {
       "path": "prompts/generate-session-feed.llmfeed.json",

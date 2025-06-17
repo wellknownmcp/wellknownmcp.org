@@ -443,6 +443,61 @@ export default function WellKnownPage() {
           </CardContent>
         </Card>
 
+        {/* Live Example */}
+        <Card className="mb-8 border-purple-200 bg-purple-50/50">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <ExternalLink className="w-5 h-5 text-purple-600" />
+              Live Example: Complete .well-known/ Directory
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="bg-white border border-purple-200 rounded-lg p-6">
+              <h4 className="font-semibold text-purple-900 mb-3 flex items-center gap-2">
+                <Globe className="w-4 h-4" />
+                Explore a Real Implementation
+              </h4>
+              <p className="text-purple-800 mb-4">
+                See exactly what a complete .well-known/ directory looks like with our live demonstration. 
+                This interactive index shows all MCP feeds, trust levels, and file organization in action.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="https://wellknownmcp.org/.well-known/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors text-sm font-medium"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  Browse Live Directory
+                </a>
+                
+                <a
+                  href="https://wellknownmcp.org/.well-known/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 border border-purple-300 text-purple-700 rounded-lg hover:bg-purple-50 transition-colors text-sm font-medium"
+                >
+                  <FileText className="w-4 h-4" />
+                  View Source HTML
+                </a>
+              </div>
+              
+              <div className="mt-4 p-3 bg-purple-50 rounded border border-purple-200">
+                <h5 className="font-medium text-purple-900 mb-2">🎯 What You'll See:</h5>
+                <ul className="text-sm text-purple-800 space-y-1">
+                  <li>• <strong>24 organized files</strong> with categorization and trust indicators</li>
+                  <li>• <strong>Interactive content preview</strong> for each feed type</li>
+                  <li>• <strong>Trust badges</strong> showing certification levels</li>
+                  <li>• <strong>File statistics</strong> and metadata display</li>
+                  <li>• <strong>Direct download links</strong> and curl commands</li>
+                </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Integration Examples */}
         <Card className="mb-8">
           <CardHeader>

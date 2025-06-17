@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-06-17T11:53:10.508Z",
-  "content_hash": "8b651ab20556237f228934792df3e6ff",
+  "generated_at": "2025-06-17T21:03:29.767Z",
+  "content_hash": "81255a662c6ec07680a61da8d87bfded",
   "file_stats": [
     {
       "path": ".index-meta.json",
-      "size": 665,
-      "mtime": 1750160562683
+      "size": 760,
+      "mtime": 1750161190511
     },
     {
       "path": "demo.html",

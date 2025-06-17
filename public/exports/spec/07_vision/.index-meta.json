@@ -1,11 +1,16 @@
 {
-  "generated_at": "2025-06-17T11:53:10.528Z",
-  "content_hash": "be7526165b23c364dc82c2da6d237d31",
+  "generated_at": "2025-06-17T21:03:29.791Z",
+  "content_hash": "d5e3d2e4653d39307383e72986bd023a",
   "file_stats": [
     {
       "path": ".index-meta.json",
-      "size": 420,
-      "mtime": 1750160562709
+      "size": 515,
+      "mtime": 1750161190531
+    },
+    {
+      "path": "enterprise-security-roadmap.md",
+      "size": 11977,
+      "mtime": 1750170273820
     },
     {
       "path": "Github like and LLM-Compatible Feed Export.md",
@@ -16,8 +21,18 @@
       "path": "llm-guidance-optimization-research.md",
       "size": 13489,
       "mtime": 1749715190888
+    },
+    {
+      "path": "llm-token-optimization-research.md",
+      "size": 15453,
+      "mtime": 1750091209283
+    },
+    {
+      "path": "roadmap-progressive-integration.md",
+      "size": 4628,
+      "mtime": 1750170337426
     }
   ],
-  "total_files": 3,
+  "total_files": 6,
   "generator_version": "2.0.0"
 }

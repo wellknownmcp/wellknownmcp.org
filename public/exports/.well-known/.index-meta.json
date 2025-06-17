@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-06-17T11:53:10.210Z",
-  "content_hash": "30265e7c5cc6f29a6fcbe468f1f7e01b",
+  "generated_at": "2025-06-17T21:03:29.627Z",
+  "content_hash": "be7bb77ed8e328ea302bf84cf313f562",
   "file_stats": [
     {
       "path": ".index-meta.json",
-      "size": 1715,
-      "mtime": 1750160562526
+      "size": 1811,
+      "mtime": 1750161190213
     },
     {
       "path": "capabilities.llmfeed.json",
@@ -15,7 +15,7 @@
     {
       "path": "exports/.index-meta.json",
       "size": 480,
-      "mtime": 1750161190193
+      "mtime": 1750194209608
     },
     {
       "path": "exports/compiled-site.llmfeed.json",
@@ -45,7 +45,7 @@
     {
       "path": "prompts/.index-meta.json",
       "size": 843,
-      "mtime": 1750161190198
+      "mtime": 1750194209614
     },
     {
       "path": "prompts/generate-session-feed.llmfeed.json",
