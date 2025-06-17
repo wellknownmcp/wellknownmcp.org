@@ -13,6 +13,50 @@ declare global {
   }
 }
 
+// 🎯 Types TypeScript pour meilleure DX et détection d'agents
+export type EcosystemDestination = "llmca" | "forge";
+export type FeedType =
+  | "mcp"
+  | "export"
+  | "capabilities"
+  | "manifesto"
+  | "prompt"
+  | "session"
+  | "credential";
+
+// ✅ FIXED: Type unifié pour détection d'agents
+export type UserType =
+  | "developer"
+  | "ai_engineer" 
+  | "business_decision_maker"
+  | "ai_agent"           // ✅ Agent autonome détecté
+  | "llm_instance"       // ✅ Instance LLM directe (Claude, GPT, etc.)
+  | "agent_crawler"      // ✅ Bot/crawler agent-aware
+  | "unknown";
+
+export type EngagementDepth = "surface" | "deep";
+export type ConversionStage =
+  | "interest"
+  | "evaluation"
+  | "implementation"
+  | "adoption";
+
+// 🤖 Types spécifiques pour détection d'agents
+export type AgentBehaviorSignal = 
+  | "structured_data_preference"
+  | "direct_feed_access"
+  | "no_javascript_execution"
+  | "curl_like_patterns"
+  | "api_endpoint_discovery"
+  | "schema_validation_requests";
+
+export type AgentDetectionMethod =
+  | "user_agent_pattern"
+  | "behavior_analysis"
+  | "explicit_declaration"
+  | "api_access_pattern"
+  | "feed_interaction_style";
+
 export const useWellKnownMCPAnalytics = () => {
   const pathname = usePathname();
 
@@ -32,7 +76,7 @@ export const useWellKnownMCPAnalytics = () => {
 
   // 📖 Engagement avec la spécification
   const trackSpecEngagement = useCallback(
-    (section: string, timeSpent?: number, depth?: "surface" | "deep") => {
+    (section: string, timeSpent?: number, depth?: EngagementDepth) => {
       trackEvent("Spec Engagement", {
         section,
         time_spent_seconds: timeSpent,
@@ -46,7 +90,7 @@ export const useWellKnownMCPAnalytics = () => {
   // 🌐 Navigation vers l'écosystème LLMCA
   const trackEcosystemNavigation = useCallback(
     (
-      destination: "llmca" | "forge",
+      destination: EcosystemDestination,
       intent?: string,
       cta_location?: string,
     ) => {
@@ -91,14 +135,16 @@ export const useWellKnownMCPAnalytics = () => {
     [trackEvent],
   );
 
-  // 🤖 Fonctionnalités spécifiques aux agents
+  // 🤖 Fonctionnalités spécifiques aux agents - ✅ FIXED
   const trackAgentFeature = useCallback(
-    (feature: string, user_type?: "developer" | "ai_engineer" | "business") => {
+    (feature: string, user_type?: UserType, detection_signals?: AgentBehaviorSignal[]) => {
       trackEvent("Agent Feature Interest", {
         feature,
-        user_type: user_type || "developer",
+        user_type: user_type || "unknown",
+        detection_signals: detection_signals || [],
         implementation_complexity: "evaluating",
         agent_readiness_focus: true,
+        is_likely_agent: user_type?.includes('agent') || user_type?.includes('llm'),
       });
     },
     [trackEvent],
@@ -133,7 +179,7 @@ export const useWellKnownMCPAnalytics = () => {
   // 🎯 Conversion potentielle
   const trackConversionIntent = useCallback(
     (
-      stage: "interest" | "evaluation" | "implementation" | "adoption",
+      stage: ConversionStage,
       trigger?: string,
     ) => {
       trackEvent("Conversion Funnel", {
@@ -146,19 +192,57 @@ export const useWellKnownMCPAnalytics = () => {
     [trackEvent],
   );
 
-  // 📱 Détection du type d'utilisateur
+  // 📱 Détection du type d'utilisateur - ✅ ENHANCED
   const trackUserClassification = useCallback(
     (
-      classification:
-        | "human_developer"
-        | "ai_agent"
-        | "business_decision_maker"
-        | "unknown",
+      classification: UserType,
+      detection_method?: AgentDetectionMethod,
+      confidence?: "low" | "medium" | "high"
     ) => {
       trackEvent("User Classification", {
         user_type: classification,
-        detection_method: "behavior_analysis",
+        detection_method: detection_method || "behavior_analysis",
+        confidence: confidence || "medium",
         first_interaction: true,
+        agent_likelihood: classification.includes('agent') || classification.includes('llm') ? "high" : "low",
+      });
+    },
+    [trackEvent],
+  );
+
+  // 🤖 Nouvelles fonctions pour meilleure détection d'agents
+  const trackAgentBehavior = useCallback(
+    (signals: AgentBehaviorSignal[], detected_type?: UserType) => {
+      trackEvent("Agent Behavior Detected", {
+        behavior_signals: signals,
+        detected_agent_type: detected_type,
+        signal_count: signals.length,
+        confidence_score: signals.length / 6, // Score basé sur le nombre de signaux
+      });
+    },
+    [trackEvent],
+  );
+
+  const trackDirectAPIAccess = useCallback(
+    (endpoint: string, method: "GET" | "POST" | "PUT" | "DELETE", user_agent?: string) => {
+      trackEvent("Direct API Access", {
+        endpoint,
+        method,
+        user_agent_hint: user_agent?.substring(0, 50), // Tronqué pour privacy
+        likely_agent: !user_agent?.includes('Mozilla'), // Heuristique simple
+        access_pattern: "programmatic",
+      });
+    },
+    [trackEvent],
+  );
+
+  const trackFeedValidation = useCallback(
+    (feed_url: string, validation_result: "valid" | "invalid" | "error", agent_initiated?: boolean) => {
+      trackEvent("Feed Validation", {
+        feed_url,
+        validation_result,
+        agent_initiated: agent_initiated || false,
+        validation_timestamp: new Date().toISOString(),
       });
     },
     [trackEvent],
@@ -171,11 +255,16 @@ export const useWellKnownMCPAnalytics = () => {
     trackEcosystemNavigation,
     trackFeedTypeInterest,
     trackToolUsage,
-    trackAgentFeature,
+    trackAgentFeature, // ✅ FIXED: Maintenant compatible avec tous les types
     trackExampleInteraction,
     trackSearch,
     trackConversionIntent,
     trackUserClassification,
+
+    // ✅ NOUVEAU: Fonctions spécifiques aux agents
+    trackAgentBehavior,
+    trackDirectAPIAccess,
+    trackFeedValidation,
 
     // Helpers pour usage courant
     trackDownload: (filename: string) =>
@@ -186,6 +275,14 @@ export const useWellKnownMCPAnalytics = () => {
       trackEcosystemNavigation("forge", intent),
     trackNavToLLMCA: (intent = "verify") =>
       trackEcosystemNavigation("llmca", intent),
+
+    // ✅ NOUVEAU: Helpers pour agents
+    trackAgentDiscovery: (feed_path: string) =>
+      trackAgentFeature("feed_discovery", "ai_agent", ["structured_data_preference"]),
+    trackCurlAccess: (command: string) =>
+      trackAgentBehavior(["curl_like_patterns", "direct_feed_access"], "agent_crawler"),
+    trackSchemaValidation: (schema_type: string) =>
+      trackAgentBehavior(["schema_validation_requests"], "llm_instance"),
   };
 };
 
@@ -253,27 +350,55 @@ export const usePerformanceTracking = () => {
   return { trackError, trackPerformanceMetric };
 };
 
-// 🎯 Types TypeScript pour meilleure DX
-export type EcosystemDestination = "llmca" | "forge";
-export type FeedType =
-  | "mcp"
-  | "export"
-  | "capabilities"
-  | "manifesto"
-  | "prompt"
-  | "session"
-  | "credential";
-export type UserType =
-  | "developer"
-  | "ai_engineer"
-  | "business_decision_maker"
-  | "ai_agent";
-export type EngagementDepth = "surface" | "deep";
-export type ConversionStage =
-  | "interest"
-  | "evaluation"
-  | "implementation"
-  | "adoption";
+// 🤖 Hook spécialisé pour détection d'agents automatique
+export const useAgentDetection = () => {
+  const { trackUserClassification, trackAgentBehavior } = useWellKnownMCPAnalytics();
+
+  useEffect(() => {
+    // Détection automatique basée sur User-Agent
+    const userAgent = navigator.userAgent;
+    const signals: AgentBehaviorSignal[] = [];
+    let detectedType: UserType = "unknown";
+
+    // Patterns d'agents connus
+    const agentPatterns = [
+      /bot/i, /crawler/i, /spider/i, /agent/i, 
+      /claude/i, /gpt/i, /gemini/i, /mistral/i,
+      /curl/i, /wget/i, /python/i, /node/i
+    ];
+
+    if (agentPatterns.some(pattern => pattern.test(userAgent))) {
+      signals.push("curl_like_patterns");
+      detectedType = "agent_crawler";
+    }
+
+    // Détection comportementale
+    if (!userAgent.includes('Mozilla')) {
+      signals.push("no_javascript_execution");
+      detectedType = "llm_instance";
+    }
+
+    // Préférence pour les données structurées (détection heuristique)
+    if (window.location.pathname.includes('/.well-known/') || 
+        window.location.search.includes('format=json')) {
+      signals.push("structured_data_preference");
+      detectedType = "ai_agent";
+    }
+
+    if (signals.length > 0) {
+      trackUserClassification(detectedType, "user_agent_pattern", "medium");
+      trackAgentBehavior(signals, detectedType);
+    }
+  }, [trackUserClassification, trackAgentBehavior]);
+
+  return {
+    isLikelyAgent: () => {
+      const userAgent = navigator.userAgent;
+      return !userAgent.includes('Mozilla') || 
+             /bot|crawler|spider|agent|claude|gpt|curl/i.test(userAgent);
+    }
+  };
+};
 
 // 🚀 Export par défaut
 export default useWellKnownMCPAnalytics;

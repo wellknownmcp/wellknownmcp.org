@@ -1,6 +1,3 @@
-
-"use client";
-
 import {PageTitle} from "@/components/PageTitle";
 import SeoHead from "@/components/SeoHead";
 import {ShareButtons} from "@/components/ShareButtons";
@@ -162,6 +159,27 @@ export default function ExportPlaygroundPage() {
             <p>We provide an official `export-to-llm-kit` to test this component inside your websites or apps.</p>
             <p>Coming soon: <strong>a full open source NPM package version (`@wellknownmcp/export-button`)</strong> for developer integration.</p>
             <p>If you want to help, contribute, or partner:<br /><code>opensource@wellknownmcp.org</code></p>
+          <hr className="my-4" />
+
+<h3 className="text-lg font-semibold">🌟 The Future Vision</h3>
+<p>Export buttons are just Level 3 of a <strong>5-level progressive integration strategy</strong>:</p>
+<ul className="list-disc pl-5 space-y-1">
+  <li><strong>Level 1-3</strong>: Web integration (✅ what you see here)</li>
+  <li><strong>Level 4</strong>: Browser-native right-click → "Export for LLM"</li>
+  <li><strong>Level 5</strong>: OS-level intelligent copy-paste</li>
+</ul>
+<p>
+  <strong>Enterprise ready?</strong> We have security roadmaps for CISOs and compliance officers.
+</p>
+<div className="flex gap-2 mt-3">
+  <a href="/vision/roadmap-progressive-integration" className="text-primary hover:underline">
+    🚀 View the Complete Roadmap
+  </a>
+  <span>•</span>
+  <a href="/vision/enterprise-security-roadmap" className="text-primary hover:underline">
+    🏢 Enterprise Security Guide
+  </a>
+</div>
           </CardContent>
         </Card>
 <Card>

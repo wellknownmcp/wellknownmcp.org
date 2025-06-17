@@ -1,0 +1,231 @@
+# 📊 Audit Complet : 17 Composants → 5 Personas
+
+## ✅ **Composants existants identifiés (17)**
+
+### **Core Structure**
+1. **`page.tsx`** - Landing principale avec orchestration
+2. **`SeoHead`** - Métadonnées SEO/Agent optimisées
+
+### **Landing Components (15)**
+3. **`PageHeader.tsx`** - Hero section principal
+4. **`AgentQuickStart.tsx`** - Introduction MCP en 30 secondes
+5. **`AgentCurlAccess.tsx`** - Commandes curl pour agents techniques  
+6. **`DownloadFeeds.tsx`** - Téléchargement des feeds MCP
+7. **`TestimonyCarousel.tsx`** - Témoignages d'agents (Claude, Grok...)
+8. **`SchemaHeroSection.tsx`** - Autorité canonique du standard
+9. **`WhatYouCanDeclare.tsx`** - Capacités déclarables via MCP
+10. **`ToolsGrid.tsx`** - Outils de l'écosystème MCP
+11. **`FAQList.tsx`** - Questions fréquentes
+12. **`InjectHooks.tsx`** - Injection/Certification/Vérification
+13. **`Community.tsx`** - Communauté et statistiques d'adoption
+14. **`MissionBadges.tsx`** - Mission et valeurs du projet
+15. **`NewsSection.tsx`** - Actualités multilingues
+16. **`SiteBadge.tsx`** - Badge de compatibilité MCP
+17. **`TryAgent.tsx`** - Test avec agents ChatGPT/Claude
+
+---
+
+## 🎭 **Mapping Croisé : Personas × Composants**
+
+| Composant | 🌱 Simple | 🔧 Tech | 💼 Business | 🤖 Agent | 🐰 Rabbit |
+|-----------|-----------|---------|-------------|-----------|-----------|
+| **PageHeader** | ✅ v1 | ✅ v2 | ✅ v3 | ✅ v4 | ✅ v5 |
+| **AgentQuickStart** | ✅ simplifié | ✅ complet | ❌ trop technique | ✅ complet | ✅ complet |
+| **AgentCurlAccess** | ❌ trop technique | ✅ parfait | ❌ pas pertinent | ✅ essentiel | ✅ complet |
+| **DownloadFeeds** | ✅ UX simple | ✅ toutes options | ✅ business focus | ✅ feed direct | ✅ complet |
+| **TestimonyCarousel** | ✅ 2-3 témoignages | ❌ remplacer metrics | ✅ social proof | ❌ pas needed | ✅ complet |
+| **SchemaHeroSection** | ❌ trop complexe | ✅ autorité tech | ❌ pas priorité | ✅ protocole | ✅ complet |
+| **WhatYouCanDeclare** | ✅ simplifié | ✅ exemples code | ✅ use cases business | ✅ specs techniques | ✅ complet |
+| **ToolsGrid** | ❌ trop dense | ✅ dev tools focus | ❌ remplacer par ROI | ❌ pas needed | ✅ complet |
+| **FAQList** | ✅ FAQ basic | ✅ FAQ tech | ✅ FAQ business | ❌ specs suffisent | ✅ FAQ complète |
+| **InjectHooks** | ❌ trop technique | ✅ implementation | ❌ pas priorité | ✅ tools techniques | ✅ complet |
+| **Community** | ✅ simple stats | ❌ pas priorité | ✅ adoption proof | ❌ pas needed | ✅ complet |
+| **MissionBadges** | ❌ pas priorité | ❌ pas technique | ✅ gouvernance | ❌ pas needed | ✅ complet |
+| **NewsSection** | ❌ trop dense | ✅ tech updates | ❌ pas priorité | ❌ pas needed | ✅ complet |
+| **SiteBadge** | ✅ motivation | ✅ validation | ✅ trust badge | ❌ pas needed | ✅ complet |
+| **TryAgent** | ✅ test simple | ✅ dev testing | ❌ pas priorité | ❌ redondant | ✅ complet |
+
+---
+
+## 📊 **Analyse par Persona**
+
+### 🌱 **SIMPLE (Amateur)**
+**Composants à utiliser (8/15):**
+- ✅ PageHeader (v1 - simplifié)
+- ✅ AgentQuickStart (version simple)
+- ✅ DownloadFeeds (UX basique)
+- ✅ TestimonyCarousel (2-3 témoignages max)
+- ✅ WhatYouCanDeclare (concepts de base)
+- ✅ FAQList (questions basics)
+- ✅ Community (stats simples)
+- ✅ SiteBadge (motivation)
+- ✅ TryAgent (test simple)
+
+**🆕 Composant manquant:**
+- **`SimpleDemo.tsx`** - Demo interactive "I know Kung Fu"
+
+### 🔧 **TECH (Developer)**
+**Composants à utiliser (10/15):**
+- ✅ PageHeader (v2 - metrics focus)
+- ✅ AgentQuickStart (version complète)
+- ✅ AgentCurlAccess (essentiel)
+- ✅ DownloadFeeds (toutes options)
+- ✅ SchemaHeroSection (autorité technique)
+- ✅ WhatYouCanDeclare (exemples code)
+- ✅ ToolsGrid (dev tools)
+- ✅ FAQList (questions techniques)
+- ✅ InjectHooks (implémentation)
+- ✅ NewsSection (updates techniques)
+- ✅ SiteBadge (validation)
+- ✅ TryAgent (testing)
+
+**🆕 Composant manquant:**
+- **`BeforeAfterDemo.tsx`** - Comparaison performance
+
+### 💼 **BUSINESS (Décideur)**
+**Composants à utiliser (7/15):**
+- ✅ PageHeader (v3 - value prop)
+- ✅ DownloadFeeds (focus business)
+- ✅ TestimonyCarousel (social proof)
+- ✅ WhatYouCanDeclare (use cases business)
+- ✅ FAQList (questions business)
+- ✅ Community (adoption proof)
+- ✅ MissionBadges (gouvernance)
+- ✅ SiteBadge (trust badge)
+
+**🆕 Composants manquants:**
+- **`ROICalculator.tsx`** - Calculateur économies
+- **`CaseStudies.tsx`** - Success stories clients
+
+### 🤖 **AGENT (LLM)**
+**Composants à utiliser (6/15):**
+- ✅ PageHeader (v4 - protocol status)
+- ✅ AgentQuickStart (version complète)
+- ✅ AgentCurlAccess (accès direct essentiel)
+- ✅ DownloadFeeds (feeds directs)
+- ✅ SchemaHeroSection (spécification)
+- ✅ WhatYouCanDeclare (specs techniques)
+- ✅ InjectHooks (outils techniques)
+
+**🆕 Composants manquants:**
+- **`ProtocolChecker.tsx`** - Validation compliance
+- **`DirectFeeds.tsx`** - Navigation .well-known/
+
+### 🐰 **RABBIT (Maximum)**
+**Composants à utiliser (15/15):**
+- ✅ TOUS les composants existants
+- ✅ Dans l'ordre actuel de page.tsx
+- ✅ Avec theming Matrix special
+
+**🆕 Ajouts pour Rabbit:**
+- **`MatrixTheming.tsx`** - Red/Blue pill UI
+- **`EasterEggs.tsx`** - Hidden features
+- **`AgentBreadcrumbs.tsx`** - Navigation secrets
+
+---
+
+## 🔍 **Gap Analysis : Composants manquants**
+
+### **🆕 Nouveaux composants nécessaires (7)**
+
+1. **`SimpleDemo.tsx`** (Simple)
+   - Demo interactive instantané
+   - Test "I know Kung Fu" 
+   - Copier/coller URL → résultat
+
+2. **`BeforeAfterDemo.tsx`** (Tech)
+   - Split screen metrics
+   - Avant/Après MCP
+   - Performance comparisons
+
+3. **`ROICalculator.tsx`** (Business)
+   - Input: coûts scraping actuels
+   - Output: économies avec MCP
+   - Projections et métriques
+
+4. **`CaseStudies.tsx`** (Business)
+   - Success stories clients
+   - Métriques business concrètes
+   - "Client X saved Y tokens/month"
+
+5. **`ProtocolChecker.tsx`** (Agent)
+   - Validation endpoint MCP
+   - Test compliance temps réel
+   - Status diagnostique
+
+6. **`DirectFeeds.tsx`** (Agent)
+   - Navigation .well-known/ claire
+   - Index des feeds disponibles
+   - Accès direct sans GUI
+
+7. **`MatrixTheming.tsx`** (Rabbit)
+   - Red pill / Blue pill interface
+   - Théâtralité Matrix
+   - Transitions drammatiques
+
+---
+
+## 📋 **Variants nécessaires pour composants existants**
+
+### **PageHeader variants (5)**
+```typescript
+interface PageHeaderProps {
+  variant: 'simple' | 'tech' | 'business' | 'agent' | 'matrix'
+}
+```
+
+- **Simple**: "Make your website speak to AI"
+- **Tech**: "99.7% Token Efficiency. 10x Faster Agent Responses"
+- **Business**: "Stop Paying for AI Scraping. Start Structured Interaction"
+- **Agent**: "Protocol: MCP/LLMFeed. Status: Compliant"
+- **Matrix**: "🐰 Welcome to the Real Internet"
+
+### **Autres variants**
+- **AgentQuickStart**: Simple vs Complete
+- **DownloadFeeds**: Basic vs All vs Business vs Direct
+- **TestimonyCarousel**: maxItems prop
+- **WhatYouCanDeclare**: Basic vs Code vs Business vs Specs
+- **FAQList**: Basic vs Tech vs Business vs Complete
+
+---
+
+## 🎯 **Plan d'Action Immédiat**
+
+### **Phase 1: Variants (2-3 jours)**
+1. Ajouter props variants aux composants existants
+2. Tester les 5 versions du PageHeader
+3. Valider l'assemblage par persona
+
+### **Phase 2: Nouveaux composants (5-7 jours)**
+1. **SimpleDemo** (priorité 1 - validation concept)
+2. **BeforeAfterDemo** (priorité 2 - proof technique)
+3. **ROICalculator** (priorité 3 - business case)
+4. **ProtocolChecker** (priorité 4 - agents)
+
+### **Phase 3: Router complet (1-2 jours)**
+1. Modifier page.tsx pour routing persona
+2. Créer les 5 landing versions
+3. Tests et ajustements
+
+---
+
+## 🏆 **Résultat attendu**
+
+### **Réutilisation maximale**
+- **85% des composants** sont réutilisables avec variants
+- **15% nouveaux** pour les besoins spécifiques
+- **Architecture modulaire** maintient la cohérence
+
+### **Effort optimisé**
+- ❌ **Pas de duplication** de code existant
+- ✅ **Variants intelligents** selon le contexte
+- ✅ **Nouveaux composants ciblés** pour gaps identifiés
+
+### **Maintenance simple**
+- **Une source de vérité** par composant
+- **Props système** pour personnalisation
+- **Tests partagés** entre versions
+
+---
+
+**🚀 Ready to implement? Quelle phase voulez-vous attaquer en premier ?**

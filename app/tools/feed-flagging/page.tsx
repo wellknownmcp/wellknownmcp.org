@@ -1,5 +1,3 @@
-"use client";
-
 import { PageTitle } from "@/components/PageTitle";
 import SeoHead from "@/components/SeoHead";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
