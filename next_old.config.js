@@ -1,13 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   trailingSlash: false, // important pour éviter les 404 avec / à la fin
-
-  i18n: {
-    locales: ['fr', 'en', 'es', 'zh', 'uk', 'ar', 'hi'], // langues supportées
-    defaultLocale: 'en',
-  },
-
-  async redirects() {
+ async redirects() {
     return [
       // Redirection slash final -> sans slash
       {
