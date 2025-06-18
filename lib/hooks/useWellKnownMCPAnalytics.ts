@@ -57,7 +57,8 @@ export type AgentDetectionMethod =
   | "api_access_pattern"
   | "feed_interaction_style";
 
-export const useWellKnownMCPAnalytics = () => {
+// ✅ SOLUTION: Export uniquement comme fonction nommée, pas de default export
+export function useWellKnownMCPAnalytics() {
   const pathname = usePathname();
 
   // 🎯 Tracking générique avec contexte WellKnownMCP
@@ -67,13 +68,15 @@ export const useWellKnownMCPAnalytics = () => {
         console.log('📊 Analytics Event:', event, properties);
       }
       
-      window.plausible?.(event, {
-        props: {
-          site: "wellknownmcp",
-          page: pathname,
-          ...properties,
-        },
-      });
+      if (typeof window !== 'undefined' && window.plausible) {
+        window.plausible(event, {
+          props: {
+            site: "wellknownmcp",
+            page: pathname,
+            ...properties,
+          },
+        });
+      }
     },
     [pathname],
   );
@@ -288,10 +291,10 @@ export const useWellKnownMCPAnalytics = () => {
     trackSchemaValidation: (schema_type: string) =>
       trackAgentBehavior(["schema_validation_requests"], "llm_instance"),
   };
-};
+}
 
 // 📊 Hook pour tracking automatique des sections
-export const useSpecSectionTracking = (sectionId: string, title?: string) => {
+export function useSpecSectionTracking(sectionId: string, title?: string) {
   const { trackSpecEngagement } = useWellKnownMCPAnalytics();
 
   useEffect(() => {
@@ -308,10 +311,10 @@ export const useSpecSectionTracking = (sectionId: string, title?: string) => {
       }
     };
   }, [sectionId, trackSpecEngagement]);
-};
+}
 
 // 🔗 Hook pour tracking des liens cross-site
-export const useEcosystemLinkTracking = () => {
+export function useEcosystemLinkTracking() {
   const { trackEcosystemNavigation } = useWellKnownMCPAnalytics();
 
   const trackLinkClick = useCallback((href: string, context?: string) => {
@@ -323,10 +326,10 @@ export const useEcosystemLinkTracking = () => {
   }, [trackEcosystemNavigation]);
 
   return { trackLinkClick };
-};
+}
 
 // 📈 Hook pour performance et erreurs
-export const usePerformanceTracking = () => {
+export function usePerformanceTracking() {
   const { trackEvent } = useWellKnownMCPAnalytics();
 
   const trackError = useCallback((error: string, context?: string) => {
@@ -352,10 +355,10 @@ export const usePerformanceTracking = () => {
   );
 
   return { trackError, trackPerformanceMetric };
-};
+}
 
 // 🤖 Hook spécialisé pour détection d'agents automatique
-export const useAgentDetection = () => {
+export function useAgentDetection() {
   const { trackUserClassification, trackAgentBehavior } = useWellKnownMCPAnalytics();
 
   useEffect(() => {
@@ -405,7 +408,4 @@ export const useAgentDetection = () => {
              /bot|crawler|spider|agent|claude|gpt|curl/i.test(userAgent);
     }
   };
-};
-
-// 🚀 Export par défaut
-export default useWellKnownMCPAnalytics;
+}
