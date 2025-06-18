@@ -169,7 +169,7 @@ export function ExportToLLMButton({
   enableCache = true,
   enableAnalytics = false,
   onSuccess = () => {},
-onError = () => {},
+  onError = () => {},
   maxRetries = 3,
 }: ExportToLLMButtonProps) {
   
