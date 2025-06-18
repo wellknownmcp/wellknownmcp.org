@@ -168,8 +168,8 @@ export function ExportToLLMButton({
   customLabel,
   enableCache = true,
   enableAnalytics = false,
-  onSuccess,
-  onError,
+  onSuccess = () => {},
+onError = () => {},
   maxRetries = 3,
 }: ExportToLLMButtonProps) {
   
