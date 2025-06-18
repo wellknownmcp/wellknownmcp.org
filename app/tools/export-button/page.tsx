@@ -176,9 +176,6 @@ export default function ExportPlaygroundPage() {
         showFeedSize={true}
         showLastUpdated={true}
         enableAnalytics={true}
-        onSuccess={(feed, meta) => {
-          console.log(`✅ Exported ${meta.size} bytes with trust level: ${meta.signatureStatus}`)
-        }}
         variant="primary"
         customLabel="Download Full Site"
       />
@@ -194,9 +191,6 @@ export default function ExportPlaygroundPage() {
         context="dynamic" 
         dynamicId="compiled-site"
         maxRetries={3}
-        onError={(error, context) => {
-          console.error(`Export failed: ${error.message} (attempt ${context.retryCount})`)
-        }}
         enableCache={true}
       />
     </div>
@@ -233,16 +227,6 @@ export default function ExportPlaygroundPage() {
         enableCache={true}
         maxRetries={3}
         customLabel="Enterprise Export"
-        onSuccess={(feed, meta) => {
-          // Custom success handling
-          window.dispatchEvent(new CustomEvent('export-success', { 
-            detail: { feed, metadata: meta } 
-          }))
-        }}
-        onError={(error, context) => {
-          // Custom error reporting
-          console.error('Export failed:', error, context)
-        }}
       />
       <p className="text-xs text-gray-500 mt-2">
         ✨ This button includes: preview modal, developer tooltips, analytics tracking, 
