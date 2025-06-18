@@ -1,3 +1,4 @@
+"use client"
 // components/landing/AgentQuickStart.tsx
 import { CodeBlock } from '@/components/ui/code-block'
 import { useWellKnownMCPAnalytics } from '@/lib/hooks/useWellKnownMCPAnalytics'

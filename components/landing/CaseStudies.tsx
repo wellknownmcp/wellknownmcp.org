@@ -34,7 +34,7 @@ export function CaseStudies() {
   const caseStudies: CaseStudy[] = [
     {
       id: 'techcorp-saas',
-      company: 'TechCorp',
+      company: 'TechCorp (placeholder)',
       industry: 'SaaS/Technology',
       size: '500-1000 employees',
       challenge: 'Customer support agents were overwhelmed with documentation queries. AI agents took 15+ seconds to find relevant information, causing poor user experience and high support ticket volume.',
@@ -82,7 +82,7 @@ export function CaseStudies() {
     },
     {
       id: 'fintech-platform',
-      company: 'FinanceFlow',
+      company: 'FinanceFlow (placeholder)',
       industry: 'Financial Services',
       size: '200-500 employees',
       challenge: 'Compliance agents needed to verify regulatory information quickly. Traditional scraping was slow and unreliable for time-sensitive financial decisions.',

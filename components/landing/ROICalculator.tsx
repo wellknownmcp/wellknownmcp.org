@@ -315,7 +315,7 @@ export function ROICalculator() {
         {/* Results Panel */}
         <div className="bg-white border border-gray-200 rounded-lg p-6">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">
-            🎯 Your ROI Analysis
+            🎯 Your ROI Analysis (Not real for now)
           </h3>
 
           {results && (

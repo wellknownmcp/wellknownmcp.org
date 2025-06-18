@@ -1,5 +1,6 @@
 'use client'
 
+
 import { useState, useEffect } from 'react'
 import { Play, Pause, RotateCcw, Zap, Clock, Brain, TrendingUp } from 'lucide-react'
 import { useWellKnownMCPAnalytics } from '@/lib/hooks/useWellKnownMCPAnalytics'
