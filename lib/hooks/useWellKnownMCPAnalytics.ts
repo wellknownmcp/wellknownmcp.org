@@ -1,4 +1,4 @@
-// hooks/useWellKnownMCPAnalytics.ts
+// lib/hooks/useWellKnownMCPAnalytics.ts
 "use client";
 
 import { useCallback, useEffect } from "react";
@@ -63,6 +63,10 @@ export const useWellKnownMCPAnalytics = () => {
   // 🎯 Tracking générique avec contexte WellKnownMCP
   const trackEvent = useCallback(
     (event: string, properties?: Record<string, any>) => {
+      if (process.env.NODE_ENV === 'development') {
+        console.log('📊 Analytics Event:', event, properties);
+      }
+      
       window.plausible?.(event, {
         props: {
           site: "wellknownmcp",
@@ -356,6 +360,8 @@ export const useAgentDetection = () => {
 
   useEffect(() => {
     // Détection automatique basée sur User-Agent
+    if (typeof window === 'undefined') return;
+    
     const userAgent = navigator.userAgent;
     const signals: AgentBehaviorSignal[] = [];
     let detectedType: UserType = "unknown";
@@ -393,6 +399,7 @@ export const useAgentDetection = () => {
 
   return {
     isLikelyAgent: () => {
+      if (typeof window === 'undefined') return false;
       const userAgent = navigator.userAgent;
       return !userAgent.includes('Mozilla') || 
              /bot|crawler|spider|agent|claude|gpt|curl/i.test(userAgent);
