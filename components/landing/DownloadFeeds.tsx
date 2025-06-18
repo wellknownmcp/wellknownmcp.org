@@ -1,3 +1,5 @@
+'use client'
+
 import { ExportToLLMButton } from '@/components/ExportToLLMButton'
 import { useWellKnownMCPAnalytics } from '@/lib/hooks/useWellKnownMCPAnalytics'
 import { useEffect } from 'react'
