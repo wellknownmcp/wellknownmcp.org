@@ -1,6 +1,6 @@
+"use client"
 // components/landing/WhatYouCanDeclare.tsx
 import Link from 'next/link'
-import { useWellKnownMCPAnalytics } from '@/lib/hooks/useWellKnownMCPAnalytics'
 
 interface WhatYouCanDeclareProps {
   variant?: 'default' | 'basic' | 'code' | 'business' | 'specs' | 'complete'
@@ -25,18 +25,6 @@ interface DeclarationConfig {
 }
 
 export function WhatYouCanDeclare({ variant = 'default' }: WhatYouCanDeclareProps) {
-  const { trackEvent } = useWellKnownMCPAnalytics()
-
-  // 🎯 Handler de tracking pour les liens
-  const handleLinkClick = (variant: string, fileName: string, linkType: string) => {
-    trackEvent('WhatYouCanDeclare Link Click', {
-      variant,
-      file_name: fileName,
-      link_type: linkType,
-      component: 'WhatYouCanDeclare'
-    })
-  }
-
   // 🎯 Configuration par variant
   const configs: Record<string, DeclarationConfig> = {
     default: {
@@ -312,7 +300,7 @@ export function WhatYouCanDeclare({ variant = 'default' }: WhatYouCanDeclareProp
                       variant === 'complete' ? 'text-red-300' :
                       'text-purple-700'
                     }`}
-                    onClick={() => handleLinkClick(variant, item.file, 'learn_more')}
+                    onClick={() => {}}
                   >
                     {variant === 'specs' ? 'ACCESS' : 
                      variant === 'basic' ? 'Learn more' :
@@ -349,14 +337,14 @@ export function WhatYouCanDeclare({ variant = 'default' }: WhatYouCanDeclareProp
             <Link 
               href="/tools/well-known" 
               className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
-              onClick={() => handleLinkClick(variant, 'mcp.llmfeed.json', 'get_started')}
+              onClick={() => {}}
             >
               🌱 Create Your First File
             </Link>
             <Link 
               href="/examples" 
               className="border border-green-600 text-green-600 px-6 py-3 rounded-lg hover:bg-green-50 transition-colors"
-              onClick={() => handleLinkClick(variant, 'examples', 'view_examples')}
+              onClick={() => {}}
             >
               📝 See Examples
             </Link>
@@ -374,14 +362,14 @@ export function WhatYouCanDeclare({ variant = 'default' }: WhatYouCanDeclareProp
             <Link 
               href="/tools/roi-calculator" 
               className="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
-              onClick={() => handleLinkClick(variant, 'roi-calculator', 'calculate_roi')}
+              onClick={() => {}}
             >
               💰 ROI Calculator
             </Link>
             <Link 
               href="/case-studies" 
               className="border border-purple-600 text-purple-600 px-6 py-3 rounded-lg hover:bg-purple-50 transition-colors"
-              onClick={() => handleLinkClick(variant, 'case-studies', 'view_cases')}
+              onClick={() => {}}
             >
               📈 Case Studies
             </Link>
@@ -399,14 +387,14 @@ export function WhatYouCanDeclare({ variant = 'default' }: WhatYouCanDeclareProp
             <Link 
               href="/tools/export-button" 
               className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
-              onClick={() => handleLinkClick(variant, 'export-everything', 'build_matrix')}
+              onClick={() => {}}
             >
               🚀 Build Your Matrix
             </Link>
             <Link 
               href="/easter-eggs" 
               className="border border-red-400 text-red-300 px-6 py-3 rounded-lg hover:bg-red-900/20 transition-colors"
-              onClick={() => handleLinkClick(variant, 'easter-eggs', 'find_secrets')}
+              onClick={() => {}}
             >
               🥚 Find Easter Eggs
             </Link>

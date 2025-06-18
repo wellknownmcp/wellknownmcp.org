@@ -1,6 +1,7 @@
+"use client"
+
 import Link from 'next/link'
 import { BadgeCheck, Globe, Sparkles, ArrowRight, Users, Code, Building2, Zap } from 'lucide-react'
-import { useWellKnownMCPAnalytics } from '@/lib/hooks/useWellKnownMCPAnalytics'
 
 interface CommunityProps {
   variant?: 'simple' | 'tech' | 'business' | 'enterprise' | 'complete'
@@ -8,8 +9,6 @@ interface CommunityProps {
 }
 
 export function Community({ variant = 'complete', className = '' }: CommunityProps) {
-  const { trackEvent, trackConversionIntent } = useWellKnownMCPAnalytics()
-
   // 🎯 Configuration par variant
   const getVariantConfig = () => {
     switch (variant) {
@@ -108,20 +107,6 @@ export function Community({ variant = 'complete', className = '' }: CommunityPro
 
   const metrics = getMetrics()
 
-  // 🎯 Analytics tracking
-  const handleLinkClick = (linkType: string, href: string) => {
-    trackEvent('Community Link Click', {
-      variant,
-      link_type: linkType,
-      href,
-      focus: config.focus
-    })
-    
-    if (linkType === 'cta') {
-      trackConversionIntent('adoption', `community_${variant}_cta`)
-    }
-  }
-
   return (
     <section className={`mt-16 max-w-4xl mx-auto text-center ${className}`}>
       <div className="mb-4">
@@ -167,14 +152,14 @@ export function Community({ variant = 'complete', className = '' }: CommunityPro
             <>
               <Link
                 href="/join"
-                onClick={() => handleLinkClick('join', '/join')}
+                onClick={() => {}}
                 className="text-green-600 text-sm hover:underline"
               >
                 🤝 Join Community
               </Link>
               <Link
                 href="/.well-known/mcp.llmfeed.json"
-                onClick={() => handleLinkClick('feed', '/.well-known/mcp.llmfeed.json')}
+                onClick={() => {}}
                 className="text-green-600 text-sm hover:underline"
               >
                 📁 Try Our Feed
@@ -186,21 +171,21 @@ export function Community({ variant = 'complete', className = '' }: CommunityPro
             <>
               <Link
                 href="https://github.com/wellknownmcp"
-                onClick={() => handleLinkClick('github', 'https://github.com/wellknownmcp')}
+                onClick={() => {}}
                 className="text-blue-600 text-sm hover:underline"
               >
                 💻 GitHub
               </Link>
               <Link
                 href="/spec"
-                onClick={() => handleLinkClick('spec', '/spec')}
+                onClick={() => {}}
                 className="text-blue-600 text-sm hover:underline"
               >
                 📚 Full Spec
               </Link>
               <Link
                 href="https://llmfeedforge.org"
-                onClick={() => handleLinkClick('forge', 'https://llmfeedforge.org')}
+                onClick={() => {}}
                 className="text-blue-600 text-sm hover:underline"
               >
                 🛠️ LLMFeedForge
@@ -212,21 +197,21 @@ export function Community({ variant = 'complete', className = '' }: CommunityPro
             <>
               <Link
                 href="/enterprise"
-                onClick={() => handleLinkClick('enterprise', '/enterprise')}
+                onClick={() => {}}
                 className="text-purple-600 text-sm hover:underline"
               >
                 🏢 Enterprise
               </Link>
               <Link
                 href="/security"
-                onClick={() => handleLinkClick('security', '/security')}
+                onClick={() => {}}
                 className="text-purple-600 text-sm hover:underline"
               >
                 🛡️ Security
               </Link>
               <Link
                 href="/support"
-                onClick={() => handleLinkClick('support', '/support')}
+                onClick={() => {}}
                 className="text-purple-600 text-sm hover:underline"
               >
                 🎯 Support
@@ -238,28 +223,28 @@ export function Community({ variant = 'complete', className = '' }: CommunityPro
             <>
               <Link
                 href="/ecosystem"
-                onClick={() => handleLinkClick('ecosystem', '/ecosystem')}
+                onClick={() => {}}
                 className="text-purple-600 text-sm hover:underline"
               >
                 🌐 Ecosystem
               </Link>
               <Link
                 href="/.well-known/llm-index.llmfeed.json"
-                onClick={() => handleLinkClick('feeds', '/.well-known/llm-index.llmfeed.json')}
+                onClick={() => {}}
                 className="text-purple-600 text-sm hover:underline"
               >
                 📁 Feeds
               </Link>
               <Link
                 href="/join"
-                onClick={() => handleLinkClick('join', '/join')}
+                onClick={() => {}}
                 className="text-purple-600 text-sm hover:underline"
               >
                 🤝 Join
               </Link>
               <Link
                 href="https://llmfeedforge.org"
-                onClick={() => handleLinkClick('forge', 'https://llmfeedforge.org')}
+                onClick={() => {}}
                 className="text-purple-600 text-sm hover:underline"
               >
                 🛠️ Try LLMFeedForge
@@ -294,7 +279,7 @@ export function Community({ variant = 'complete', className = '' }: CommunityPro
       <div className="mt-8">
         <Link
           href={config.ctaLink}
-          onClick={() => handleLinkClick('cta', config.ctaLink)}
+          onClick={() => {}}
           className={`inline-flex items-center gap-2 text-sm hover:underline ${
             variant === 'simple' 
               ? 'text-green-700'

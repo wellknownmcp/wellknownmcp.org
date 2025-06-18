@@ -1,3 +1,4 @@
+"use client"
 // components/landing/FAQList.tsx
 import {
   Accordion,
@@ -5,7 +6,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
-import { useWellKnownMCPAnalytics } from '@/lib/hooks/useWellKnownMCPAnalytics'
 
 interface FAQListProps {
   variant?: 'default' | 'basic' | 'tech' | 'business' | 'complete'
@@ -30,27 +30,6 @@ interface FAQConfig {
 }
 
 export function FAQList({ variant = 'default', maxQuestions, showPreview = true }: FAQListProps) {
-  const { trackEvent } = useWellKnownMCPAnalytics()
-
-  // 🎯 Handler de tracking pour les questions ouvertes
-  const handleQuestionClick = (variant: string, questionId: string, questionText: string) => {
-    trackEvent('FAQ Question Opened', {
-      variant,
-      question_id: questionId,
-      question_text: questionText.substring(0, 50),
-      component: 'FAQList',
-      is_preview: showPreview
-    })
-  }
-
-  const handleViewAllClick = (variant: string, faqUrl: string) => {
-    trackEvent('FAQ View All Clicked', {
-      variant,
-      destination: faqUrl,
-      component: 'FAQList'
-    })
-  }
-
   // 🎯 Configuration par variant
   const configs: Record<string, FAQConfig> = {
     default: {
@@ -225,7 +204,7 @@ export function FAQList({ variant = 'default', maxQuestions, showPreview = true 
                 variant === 'complete' ? 'text-red-700' :
                 ''
               }`}
-              onClick={() => handleQuestionClick(variant, faq.id, faq.question)}
+              onClick={() => {}}
             >
               {faq.question}
             </AccordionTrigger>
@@ -252,7 +231,7 @@ export function FAQList({ variant = 'default', maxQuestions, showPreview = true 
             variant === 'complete' ? 'text-red-600' :
             'text-purple-600'
           }`}
-          onClick={() => handleViewAllClick(variant, config.faqUrl)}
+          onClick={() => {}}
         >
           {showPreview && maxQuestions 
             ? `View all ${variant === 'default' ? '' : variant + ' '}questions →`
@@ -289,7 +268,7 @@ export function FAQList({ variant = 'default', maxQuestions, showPreview = true 
                 variant === 'business' ? 'bg-purple-600 text-white hover:bg-purple-700' :
                 'bg-gray-600 text-white hover:bg-gray-700'
               }`}
-              onClick={() => handleViewAllClick(variant, config.faqUrl)}
+              onClick={() => {}}
             >
               📚 Complete FAQ
             </a>
