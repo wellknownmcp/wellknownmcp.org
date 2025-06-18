@@ -1,5 +1,6 @@
 import { ExportToLLMButton } from '@/components/ExportToLLMButton'
 import { useWellKnownMCPAnalytics } from '@/lib/hooks/useWellKnownMCPAnalytics'
+import { useEffect } from 'react'
 
 interface DownloadFeedsProps {
   variant?: 'simple' | 'tech' | 'business' | 'complete'
@@ -8,6 +9,42 @@ interface DownloadFeedsProps {
 
 export function DownloadFeeds({ variant = 'complete', className = '' }: DownloadFeedsProps) {
   const { trackEvent, trackConversionIntent } = useWellKnownMCPAnalytics()
+
+  // ✅ NOUVEAU: Event listeners pour les événements DOM du ExportToLLMButton
+  useEffect(() => {
+    const handleSuccess = (e: CustomEvent) => {
+      const { context, size } = e.detail
+      
+      trackEvent('Download Feeds Success', {
+        variant,
+        context,
+        feed_size: size,
+        component: 'DownloadFeeds'
+      })
+      
+      trackConversionIntent('implementation', `feed_export_success_${variant}`)
+    }
+
+    const handleError = (e: CustomEvent) => {
+      const { error, operation } = e.detail
+      
+      trackEvent('Download Feeds Error', {
+        variant,
+        error,
+        operation,
+        component: 'DownloadFeeds'
+      })
+    }
+
+    // Écouter les événements émis par ExportToLLMButton
+    window.addEventListener('llmfeed-success', handleSuccess as EventListener)
+    window.addEventListener('llmfeed-error', handleError as EventListener)
+
+    return () => {
+      window.removeEventListener('llmfeed-success', handleSuccess as EventListener)
+      window.removeEventListener('llmfeed-error', handleError as EventListener)
+    }
+  }, [variant, trackEvent, trackConversionIntent])
 
   // 🎯 Configuration adaptée par variant
   const getVariantConfig = () => {
@@ -61,17 +98,17 @@ export function DownloadFeeds({ variant = 'complete', className = '' }: Download
 
   const config = getVariantConfig()
 
-  // 🎯 Analytics tracking
-  const handleFeedInteraction = (feedType: string, action: string) => {
-    trackEvent('Download Feeds Interaction', {
+  // 🎯 Analytics tracking pour les interactions directes
+  const handleDirectInteraction = (feedType: string, action: string) => {
+    trackEvent('Download Feeds Direct Interaction', {
       variant,
       feed_type: feedType,
       action,
       component: 'DownloadFeeds'
     })
     
-    if (action === 'download' || action === 'copy') {
-      trackConversionIntent('implementation', `feed_${action}_${feedType}`)
+    if (action === 'direct_access') {
+      trackConversionIntent('interest', `feed_direct_access_${feedType}`)
     }
   }
 
@@ -172,7 +209,6 @@ export function DownloadFeeds({ variant = 'complete', className = '' }: Download
                   staticPath={feed.path}
                   highlight
                   showSignatureStatus
-                  
                 />
               </div>
               
@@ -262,7 +298,7 @@ export function DownloadFeeds({ variant = 'complete', className = '' }: Download
               <a
                 key={path}
                 href={path}
-                onClick={() => handleFeedInteraction(label.toLowerCase().replace(' ', '_'), 'direct_access')}
+                onClick={() => handleDirectInteraction(label.toLowerCase().replace(' ', '_'), 'direct_access')}
                 className={`group bg-${color}-100 text-${color}-700 px-3 py-2 rounded text-xs hover:bg-${color}-200 transition-colors`}
               >
                 <span className="font-mono">{path}</span>

@@ -482,24 +482,28 @@
     "linkedin-post-wellknownmcp": {
       "article": {
         "slug": "linkedin-post-wellknownmcp",
-        "title": "linkedin-post-wellknownmcp",
-        "description": "",
-        "date": "2025-06-10",
+        "title": "LinkedIn Post — Launching wellknownmcp.org (Enhanced Version)",
+        "description": "Launch communication draft for wellknownmcp.org with proactive messaging and higher clarity",
+        "date": "2025-05-21",
         "categories": [
           "general"
         ],
-        "tags": [],
+        "tags": [
+          "announcement",
+          "launch",
+          "llmfeed"
+        ],
         "type": "news",
-        "content": "---\r\ntitle: 'LinkedIn Post — Launching wellknownmcp.org (Enhanced Version)'\r\ndescription: 'Launch communication draft for wellknownmcp.org with proactive messaging and higher clarity'\r\ndate: 2025-05-21\r\ntags:\r\n - launch\r\n - announcement\r\n - llmfeed\r\nlang: en\r\n---\r\n\r\n🌐 Just launched: [**wellknownmcp.org**](https://wellknownmcp.org)\r\n\r\nGive your website a voice. \r\nMake it **readable by agents**, **verifiable by LLMs**, and **trustable by design** — with nothing but a simple JSON file.\r\n\r\n---\r\n\r\n## 🧠 What is it?\r\n\r\nWe define **`.llmfeed.json`** — a lightweight, signed, structured format served from `.well-known/`.\r\n\r\nEach feed lets your domain declare:\r\n\r\n- ✅ What your service does \r\n- 🧠 What prompts, actions, or APIs it exposes \r\n- 🔐 What’s trusted, signed, or certified \r\n- 🔁 How agents should behave (scope, fallback, expectations)\r\n\r\nThink of it as `robots.txt` for meaning, \r\nor `schema.org` — but inspectable, signed, and agent-native.\r\n\r\n---\r\n\r\n## 💼 Why it matters\r\n\r\nLLMs are entering every interface — \r\nbut they still guess what your site is about.\r\n\r\nThis changes that.\r\n\r\n- 🧭 Improves discoverability of APIs, tools, and services \r\n- 🛡️ Enables certified context capsules \r\n- 📦 Lets agents reuse, replay, or route sessions \r\n- 🔄 Creates a semantic layer between websites and assistants \r\n- 🧩 Works with Claude, ChatGPT, Gemini, open-source LLMs...\r\n\r\n---\r\n\r\n## ⚙️ Live tools & examples\r\n\r\n- [🛠 Prompt Tool (demo)](https://wellknownmcp.org/tools/prompt) \r\n- [🌍 Ecosystem Explorer](https://wellknownmcp.org/ecosystem) \r\n- [📘 Full Spec](https://github.com/wellknownmcp/llmfeed-spec) \r\n- [✨ Join the movement](https://wellknownmcp.org/join)\r\n\r\n---\r\n\r\nThe web gave us `HTML`. \r\nThe mobile era gave us `manifests`. \r\nThe agent era needs **`intent`** — and a format to trust it.\r\n\r\n**This is not a plugin. Not a wrapper. Not a lock-in.** \r\nIt’s an open grammar for agents and humans to align.\r\n\r\nWe’re not adding noise. \r\nWe’re adding **signal**.\r\n\r\n#LLM #AI #Web #SemanticWeb #OpenStandards #AgentTech #Interoperability #llmfeed #MCP #TrustByDesign #AIAlignment",
+        "content": "🌐 Just launched: [**wellknownmcp.org**](https://wellknownmcp.org)\r\n\r\nGive your website a voice. \r\nMake it **readable by agents**, **verifiable by LLMs**, and **trustable by design** — with nothing but a simple JSON file.\r\n\r\n---\r\n\r\n## 🧠 What is it?\r\n\r\nWe define **`.llmfeed.json`** — a lightweight, signed, structured format served from `.well-known/`.\r\n\r\nEach feed lets your domain declare:\r\n\r\n- ✅ What your service does \r\n- 🧠 What prompts, actions, or APIs it exposes \r\n- 🔐 What’s trusted, signed, or certified \r\n- 🔁 How agents should behave (scope, fallback, expectations)\r\n\r\nThink of it as `robots.txt` for meaning, \r\nor `schema.org` — but inspectable, signed, and agent-native.\r\n\r\n---\r\n\r\n## 💼 Why it matters\r\n\r\nLLMs are entering every interface — \r\nbut they still guess what your site is about.\r\n\r\nThis changes that.\r\n\r\n- 🧭 Improves discoverability of APIs, tools, and services \r\n- 🛡️ Enables certified context capsules \r\n- 📦 Lets agents reuse, replay, or route sessions \r\n- 🔄 Creates a semantic layer between websites and assistants \r\n- 🧩 Works with Claude, ChatGPT, Gemini, open-source LLMs...\r\n\r\n---\r\n\r\n## ⚙️ Live tools & examples\r\n\r\n- [🛠 Prompt Tool (demo)](https://wellknownmcp.org/tools/prompt) \r\n- [🌍 Ecosystem Explorer](https://wellknownmcp.org/ecosystem) \r\n- [📘 Full Spec](https://github.com/wellknownmcp/llmfeed-spec) \r\n- [✨ Join the movement](https://wellknownmcp.org/join)\r\n\r\n---\r\n\r\nThe web gave us `HTML`. \r\nThe mobile era gave us `manifests`. \r\nThe agent era needs **`intent`** — and a format to trust it.\r\n\r\n**This is not a plugin. Not a wrapper. Not a lock-in.** \r\nIt’s an open grammar for agents and humans to align.\r\n\r\nWe’re not adding noise. \r\nWe’re adding **signal**.\r\n\r\n#LLM #AI #Web #SemanticWeb #OpenStandards #AgentTech #Interoperability #llmfeed #MCP #TrustByDesign #AIAlignment",
         "concepts": [
+          "announcement",
+          "launch",
+          "llmfeed",
           "what",
           "matters",
           "live",
           "tools",
-          "llmfeed",
-          "mcp",
-          "agent",
-          "session"
+          "mcp"
         ],
         "intent": "inform",
         "llm_intent": "browse-news-article",
@@ -508,7 +512,7 @@
         ],
         "metadata": {
           "source_file": "linkedin-post-wellknownmcp.md",
-          "content_quality_score": 2,
+          "content_quality_score": 52,
           "technical_level": "beginner",
           "business_impact": "low",
           "priority": "normal",
@@ -516,13 +520,13 @@
         },
         "canonical_url": "https://wellknownmcp.org/en/news/linkedin-post-wellknownmcp",
         "author": "WellKnownMCP Team",
-        "last_modified": "2025-06-10",
+        "last_modified": "2025-05-21",
         "capabilities": [],
         "feed_types": []
       },
-      "file_hash": "b26f5ccc9475260921117b0dffb0ca74",
-      "index_data_hash": "8ad7a864d3532a360b44d74b0e936ad7",
-      "processed_at": "2025-06-14T16:59:31.430Z"
+      "file_hash": "6ecab6736786700d7253a0a55cad24cc",
+      "index_data_hash": "ec4ccef34b3ab0197ce144188ed361ee",
+      "processed_at": "2025-06-18T08:51:35.204Z"
     },
     "llm-as-a-teacher": {
       "article": {
@@ -2983,7 +2987,7 @@
     "why-mcp": {
       "article": {
         "slug": "why-mcp",
-        "title": "Why MCP?",
+        "title": "Why Llmfeed?",
         "description": "Explaining the rationale behind adopting the Model Context Protocol (MCP) standard.",
         "date": "2025-05-07",
         "categories": [
@@ -2995,13 +2999,13 @@
           "manual"
         ],
         "type": "news",
-        "content": "---\r\ntitle: Why MCP?\r\ndescription: >-\r\n Explaining the rationale behind adopting the Model Context Protocol (MCP)\r\n standard.\r\ndate: '2025-05-07'\r\ntags:\r\n - core\r\n - llmfeed\r\n - manual\r\nlang: en\r\n---\r\n\r\n## Why Choose MCP?\r\n\r\nFaced with the increasing challenges of integrating LLMs into real-world contexts, WellKnownMCP clearly addresses a critical need:\r\n\r\n### 🧩 Solving Integration Complexity\r\nHistorically, each new integration for language models required costly, fragmented, custom development. MCP eliminates this complexity by defining a standardized, universal interface.\r\n\r\n### 🌐 Open, Universal Standard\r\nChoosing MCP is both strategic and pragmatic:\r\n\r\n- **Total Interoperability**: MCP acts as a universal connector, enabling rapid and secure integration with external data and tools.\r\n- **Rich and Open Ecosystem**: Supported and adopted by major industry players such as Anthropic, OpenAI, Google, and numerous innovative startups, MCP is quickly becoming an industry-wide standard.\r\n- **Scalability and Flexibility**: MCP is designed for easy adoption and sufficient flexibility to accommodate future needs, ensuring its long-term viability.\r\n\r\n### 🔐 Built-in Enhanced Security\r\nMCP isn't just practical—it's specifically designed to secure interactions through integrated mechanisms such as:\r\n\r\n- **Granular permissions**\r\n- **Verifiable signatures**\r\n- **Explicit resource access controls**\r\n\r\nBy choosing MCP, you're not just making a sound technological choice—you're actively participating in shaping an open, secure, and widely adopted industry standard.",
+        "content": "---\r\ntitle: Why Llmfeed?\r\ndescription: >-\r\n Explaining the rationale behind adopting the Model Context Protocol (MCP)\r\n standard.\r\ndate: '2025-05-07'\r\ntags:\r\n - core\r\n - llmfeed\r\n - manual\r\nlang: en\r\n---\r\n\r\n## Why Choose MCP llmfeed?\r\n\r\nFaced with the increasing challenges of integrating LLMs into real-world contexts, WellKnownMCP clearly addresses a critical need:\r\n\r\n### 🧩 Solving Integration Complexity\r\nHistorically, each new integration for language models required costly, fragmented, custom development. MCP eliminates this complexity by defining a standardized, universal interface.\r\n\r\n### 🌐 Open, Universal Standard\r\nChoosing MCP is both strategic and pragmatic:\r\n\r\n- **Total Interoperability**: MCP acts as a universal connector, enabling rapid and secure integration with external data and tools.\r\n- **Rich and Open Ecosystem**: Supported and adopted by major industry players such as Anthropic, OpenAI, Google, and numerous innovative startups, MCP is quickly becoming an industry-wide standard.\r\n- **Scalability and Flexibility**: MCP is designed for easy adoption and sufficient flexibility to accommodate future needs, ensuring its long-term viability.\r\n\r\n### 🔐 Built-in Enhanced Security\r\nMCP isn't just practical—it's specifically designed to secure interactions through integrated mechanisms such as:\r\n\r\n- **Granular permissions**\r\n- **Verifiable signatures**\r\n- **Explicit resource access controls**\r\n\r\nBy choosing MCP LLMfeed, you're not just making a sound technological choice—you're actively participating in shaping an open, secure, and widely adopted industry standard.",
         "concepts": [
           "core",
           "llmfeed",
           "manual",
           "choose",
-          "mcp?",
+          "llmfeed?",
           "solving",
           "integration",
           "open,"
@@ -3025,9 +3029,9 @@
         "capabilities": [],
         "feed_types": []
       },
-      "file_hash": "5613b5e3d31295bd27f32a4b050cb061",
-      "index_data_hash": "c5eb4e74bb3e1deb4d5999660f53f9d5",
-      "processed_at": "2025-06-14T16:59:31.490Z"
+      "file_hash": "4c609b5dee8ebed58e9808e690a84467",
+      "index_data_hash": "39e6081d9779b98ec937939cb3df8e49",
+      "processed_at": "2025-06-18T08:51:35.205Z"
     },
     "llm-index-revolution": {
       "article": {
@@ -3086,12 +3090,12 @@
       "processed_at": "2025-06-16T18:22:52.211Z"
     }
   },
-  "index_hash": "fa7688e9afaa922a60353e84e5e7a8a1",
-  "last_generation": "2025-06-17T20:58:09.582Z",
+  "index_hash": "0f1e0464d4b7bb6b70d5d3e1e241564c",
+  "last_generation": "2025-06-18T08:51:35.222Z",
   "stats": {
-    "processed": 0,
-    "updated": 0,
+    "processed": 2,
+    "updated": 2,
     "removed": 0,
-    "cached": 0
+    "cached": 56
   }
 }

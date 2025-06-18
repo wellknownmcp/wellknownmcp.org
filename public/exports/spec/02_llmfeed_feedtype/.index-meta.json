@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-06-17T21:03:29.697Z",
-  "content_hash": "acbc2e3525a25d5302cd8245e8dedd1c",
+  "generated_at": "2025-06-18T08:58:05.324Z",
+  "content_hash": "9e0aa6e862032aae0d1a7e904d333059",
   "file_stats": [
     {
       "path": ".index-meta.json",
-      "size": 1474,
-      "mtime": 1750161190391
+      "size": 1475,
+      "mtime": 1750194209699
     },
     {
       "path": "llmfeed_feedtype_agent-economy.md",

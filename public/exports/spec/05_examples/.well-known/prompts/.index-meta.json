@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-06-17T21:03:29.723Z",
-  "content_hash": "8006d5260dbbe9e2f547c600227674f7",
+  "generated_at": "2025-06-18T08:58:05.372Z",
+  "content_hash": "fb50417116dce880040102a555b9f912",
   "file_stats": [
     {
       "path": ".index-meta.json",
       "size": 1872,
-      "mtime": 1750161190459
+      "mtime": 1750194209725
     },
     {
       "path": "easter-egg-intro-to-the-full-site.llmfeed.json",

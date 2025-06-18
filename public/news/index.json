@@ -443,35 +443,6 @@
       }
     },
     {
-      "slug": "linkedin-post-wellknownmcp",
-      "title": "linkedin-post-wellknownmcp",
-      "description": "",
-      "date": "2025-06-10",
-      "tags": [],
-      "excerpt": "\r \r",
-      "format": "news",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "2 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 2,
-      "translations": {
-        "en": "/en/news/linkedin-post-wellknownmcp"
-      }
-    },
-    {
       "slug": "llm-as-a-teacher",
       "title": "Turning LLMs into Teachers, Auditors, and Publishers",
       "description": "How LLMs can actively teach, audit, and generate llmfeed.json files — a unique design choice of the MCP standard.",
@@ -1886,6 +1857,39 @@
       }
     },
     {
+      "slug": "linkedin-post-wellknownmcp",
+      "title": "LinkedIn Post — Launching wellknownmcp.org (Enhanced Version)",
+      "description": "Launch communication draft for wellknownmcp.org with proactive messaging and higher clarity",
+      "date": "2025-05-21",
+      "tags": [
+        "announcement",
+        "launch",
+        "llmfeed"
+      ],
+      "excerpt": "\r 🌐 Just launched: wellknownmcp.orghttps://wellknownmcp.org\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "2 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
+      "translations": {
+        "en": "/en/news/linkedin-post-wellknownmcp"
+      }
+    },
+    {
       "slug": "llmfeed-block-structure",
       "title": "The Anatomy of a LLMFeed — Block by Block",
       "description": "Understand how each block of a .llmfeed.json works, and how to design your own feed.",
@@ -2185,7 +2189,7 @@
     },
     {
       "slug": "why-mcp",
-      "title": "Why MCP?",
+      "title": "Why Llmfeed?",
       "description": "Explaining the rationale behind adopting the Model Context Protocol (MCP) standard.",
       "date": "2025-05-07",
       "tags": [
@@ -2193,7 +2197,7 @@
         "llmfeed",
         "manual"
       ],
-      "excerpt": "\r  Why Choose MCP?\r",
+      "excerpt": "\r  Why Choose MCP llmfeed?\r",
       "format": "news",
       "category": "general",
       "intent": "inform",
@@ -5227,9 +5231,9 @@
     }
   ],
   "_meta": {
-    "generated_at": "2025-06-17T20:58:08.502Z",
+    "generated_at": "2025-06-18T08:51:34.067Z",
     "total_articles": 136,
-    "global_avg_score": 52,
+    "global_avg_score": 53,
     "languages": [
       "en",
       "fr",

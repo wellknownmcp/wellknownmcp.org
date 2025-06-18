@@ -4,7 +4,7 @@
     "title": "WellKnownMCP - Intelligent Discovery Hub",
     "origin": "https://wellknownmcp.org",
     "description": "Intelligent navigation system that guides agents and users to the perfect content based on context, intent, and expertise level. Transforms flat sitemaps into contextual discovery experiences.",
-    "generated_at": "2025-06-17T21:03:39.824632Z",
+    "generated_at": "2025-06-18T08:58:36.220227Z",
     "version": "2.1.0",
     "total_feeds": "6",
     "total_pages": "36",
@@ -22,7 +22,7 @@
       "categories_created": 5,
       "routes_generated": 35,
       "enrichments_applied": 28,
-      "build_time": 0.119804,
+      "build_time": 0.125525,
       "crawling_alternative_tokens": 252000,
       "index_tokens": 875,
       "efficiency_gain": "99.7%",
@@ -33,7 +33,7 @@
   "discovery_guidance": {
     "recommended_entry_points": {
       "developers": "/spec",
-      "implementers": "/tools/export-button",
+      "implementers": "/tools/api-explained",
       "business": "/about",
       "new_visitors": "/.well-known/mcp.llmfeed.json",
       "llm": "/.well-known/mcp.llmfeed.json"
@@ -43,7 +43,7 @@
       "/llmfeedhub",
       "/spec",
       "/sdk",
-      "/tools/export-button"
+      "/tools/api-explained"
     ],
     "navigation_philosophy": "Context-aware routing that adapts to agent capabilities, user expertise, and specific intentions. Every URL is enriched with audience targeting, intent mapping, and trust indicators.",
     "usage_instructions": {
@@ -452,6 +452,23 @@
       "trust_level": "signed",
       "feeds": [
         {
+          "url": "https://wellknownmcp.org/tools/sign-and-verify",
+          "title": "Cryptographic Signing Tool",
+          "description": "Cryptographic signing and verification tools for MCP feeds. Includes key management, signature validation, and trust cha...",
+          "intent": "secure",
+          "audience": [
+            "security-engineer",
+            "developer"
+          ],
+          "importance": "critical",
+          "tags": [
+            "cryptography",
+            "signing",
+            "verification",
+            "security"
+          ]
+        },
+        {
           "url": "https://wellknownmcp.org/verify",
           "title": "Feed Verification Tool",
           "description": "Interactive tool for verifying MCP feed signatures, checking trust chains, and validating feed integrity and compliance.",
@@ -469,23 +486,6 @@
             "trust"
           ],
           "content_type": "interactive_tool"
-        },
-        {
-          "url": "https://wellknownmcp.org/tools/sign-and-verify",
-          "title": "Cryptographic Signing Tool",
-          "description": "Cryptographic signing and verification tools for MCP feeds. Includes key management, signature validation, and trust cha...",
-          "intent": "secure",
-          "audience": [
-            "security-engineer",
-            "developer"
-          ],
-          "importance": "critical",
-          "tags": [
-            "cryptography",
-            "signing",
-            "verification",
-            "security"
-          ]
         },
         {
           "url": "https://wellknownmcp.org/tools/well-known",
@@ -526,23 +526,6 @@
           "content_type": "interactive_tool"
         },
         {
-          "url": "https://wellknownmcp.org/tools/export-button",
-          "title": "Export Button Demo",
-          "description": "Interactive demonstration of the ExportToLLM button component. Shows how websites can provide structured, agent-ready co...",
-          "intent": "demonstrate",
-          "audience": [
-            "developer",
-            "demo"
-          ],
-          "importance": "high",
-          "tags": [
-            "export",
-            "component",
-            "demo",
-            "interactive"
-          ]
-        },
-        {
           "url": "https://wellknownmcp.org/tools/api-explained",
           "title": "Tools - Api Explained",
           "description": "Comprehensive guide to API integration patterns with MCP. Covers authentication, rate limiting, and agent-API interactio...",
@@ -557,6 +540,23 @@
             "integration",
             "authentication",
             "patterns"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/tools/export-button",
+          "title": "Export Button Demo",
+          "description": "Interactive demonstration of the ExportToLLM button component. Shows how websites can provide structured, agent-ready co...",
+          "intent": "demonstrate",
+          "audience": [
+            "developer",
+            "demo"
+          ],
+          "importance": "high",
+          "tags": [
+            "export",
+            "component",
+            "demo",
+            "interactive"
           ]
         }
       ]
@@ -801,12 +801,128 @@
           "community": 20
         }
       },
-      "api-architect": {
-        "entry_point": "/tools/api-explained",
+      "legal": {
+        "entry_point": "/legal",
         "recommended_sequence": [
-          "api-explained"
+          "legal"
         ],
-        "behavioral_note": "Optimize for api-architect needs",
+        "behavioral_note": "Optimize for legal needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "business": {
+        "entry_point": "/about",
+        "recommended_sequence": [
+          "about",
+          "faq",
+          "ecosystem",
+          "legal"
+        ],
+        "behavioral_note": "Focus on value proposition and trust signals",
+        "priority_categories": [
+          "community_content"
+        ],
+        "token_budget_allocation": {
+          "core": 50,
+          "docs": 20,
+          "tools": 10,
+          "community": 20
+        }
+      },
+      "software-engineer": {
+        "entry_point": "/sdk",
+        "recommended_sequence": [
+          "sdk"
+        ],
+        "behavioral_note": "Optimize for software-engineer needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "newcomer": {
+        "entry_point": "/faq",
+        "recommended_sequence": [
+          "faq"
+        ],
+        "behavioral_note": "Optimize for newcomer needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "stakeholder": {
+        "entry_point": "/about",
+        "recommended_sequence": [
+          "about",
+          "llm-agent-readiness-framework-2025",
+          "manifesto",
+          "2025-07-05-microsoft-nlweb-protocol",
+          "launch-newstack"
+        ],
+        "behavioral_note": "Optimize for stakeholder needs",
+        "priority_categories": [
+          "community_content"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "implementer": {
+        "entry_point": "/spec",
+        "recommended_sequence": [
+          "spec",
+          "feeds",
+          "llmfeedhub"
+        ],
+        "behavioral_note": "Optimize for implementer needs",
+        "priority_categories": [
+          "specialized_tools",
+          "documentation"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "technical": {
+        "entry_point": "/spec",
+        "recommended_sequence": [
+          "spec"
+        ],
+        "behavioral_note": "Optimize for technical needs",
+        "priority_categories": [
+          "documentation"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "demo": {
+        "entry_point": "/tools/export-button",
+        "recommended_sequence": [
+          "export-button"
+        ],
+        "behavioral_note": "Optimize for demo needs",
         "priority_categories": [],
         "token_budget_allocation": {
           "core": 40,
@@ -829,6 +945,40 @@
           "community": 20
         }
       },
+      "compliance": {
+        "entry_point": "/legal",
+        "recommended_sequence": [
+          "legal"
+        ],
+        "behavioral_note": "Optimize for compliance needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "llm": {
+        "entry_point": "/.well-known/mcp-lite.llmfeed.json",
+        "recommended_sequence": [
+          "capabilities.llmfeed.json",
+          "llm-index.llmfeed.json",
+          "manifesto.llmfeed.json",
+          "mcp-lite.llmfeed.json",
+          "mcp.llmfeed.json"
+        ],
+        "behavioral_note": "Focus on protocol understanding and ethical guidance",
+        "priority_categories": [
+          "core_infrastructure"
+        ],
+        "token_budget_allocation": {
+          "core": 70,
+          "docs": 20,
+          "tools": 5,
+          "community": 5
+        }
+      },
       "tester": {
         "entry_point": "/llmfeedhub",
         "recommended_sequence": [
@@ -838,20 +988,6 @@
         "priority_categories": [
           "specialized_tools"
         ],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "software-engineer": {
-        "entry_point": "/sdk",
-        "recommended_sequence": [
-          "sdk"
-        ],
-        "behavioral_note": "Optimize for software-engineer needs",
-        "priority_categories": [],
         "token_budget_allocation": {
           "core": 40,
           "docs": 25,
@@ -880,149 +1016,6 @@
           "community": 20
         }
       },
-      "developer": {
-        "entry_point": "/spec",
-        "recommended_sequence": [
-          "spec",
-          "sdk",
-          "verify",
-          "sign-and-verify",
-          "faq"
-        ],
-        "behavioral_note": "Emphasize practical implementation and code examples",
-        "priority_categories": [
-          "specialized_tools",
-          "documentation",
-          "core_infrastructure"
-        ],
-        "token_budget_allocation": {
-          "core": 30,
-          "docs": 40,
-          "tools": 25,
-          "community": 5
-        }
-      },
-      "researcher": {
-        "entry_point": "/feeds",
-        "recommended_sequence": [
-          "feeds"
-        ],
-        "behavioral_note": "Optimize for researcher needs",
-        "priority_categories": [
-          "documentation"
-        ],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "implementer": {
-        "entry_point": "/spec",
-        "recommended_sequence": [
-          "spec",
-          "feeds",
-          "llmfeedhub"
-        ],
-        "behavioral_note": "Optimize for implementer needs",
-        "priority_categories": [
-          "specialized_tools",
-          "documentation"
-        ],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "llm": {
-        "entry_point": "/.well-known/mcp-lite.llmfeed.json",
-        "recommended_sequence": [
-          "capabilities.llmfeed.json",
-          "llm-index.llmfeed.json",
-          "manifesto.llmfeed.json",
-          "mcp-lite.llmfeed.json",
-          "mcp.llmfeed.json"
-        ],
-        "behavioral_note": "Focus on protocol understanding and ethical guidance",
-        "priority_categories": [
-          "core_infrastructure"
-        ],
-        "token_budget_allocation": {
-          "core": 70,
-          "docs": 20,
-          "tools": 5,
-          "community": 5
-        }
-      },
-      "stakeholder": {
-        "entry_point": "/about",
-        "recommended_sequence": [
-          "about",
-          "llm-agent-readiness-framework-2025",
-          "manifesto",
-          "2025-07-05-microsoft-nlweb-protocol",
-          "launch-newstack"
-        ],
-        "behavioral_note": "Optimize for stakeholder needs",
-        "priority_categories": [
-          "community_content"
-        ],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "compliance": {
-        "entry_point": "/legal",
-        "recommended_sequence": [
-          "legal"
-        ],
-        "behavioral_note": "Optimize for compliance needs",
-        "priority_categories": [],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "webmaster": {
-        "entry_point": "/tools/well-known",
-        "recommended_sequence": [
-          "well-known"
-        ],
-        "behavioral_note": "Optimize for webmaster needs",
-        "priority_categories": [
-          "specialized_tools"
-        ],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "technical": {
-        "entry_point": "/spec",
-        "recommended_sequence": [
-          "spec"
-        ],
-        "behavioral_note": "Optimize for technical needs",
-        "priority_categories": [
-          "documentation"
-        ],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
       "community": {
         "entry_point": "/ecosystem",
         "recommended_sequence": [
@@ -1036,67 +1029,6 @@
         "priority_categories": [
           "community_content"
         ],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "legal": {
-        "entry_point": "/legal",
-        "recommended_sequence": [
-          "legal"
-        ],
-        "behavioral_note": "Optimize for legal needs",
-        "priority_categories": [],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "demo": {
-        "entry_point": "/tools/export-button",
-        "recommended_sequence": [
-          "export-button"
-        ],
-        "behavioral_note": "Optimize for demo needs",
-        "priority_categories": [],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "business": {
-        "entry_point": "/about",
-        "recommended_sequence": [
-          "about",
-          "faq",
-          "ecosystem",
-          "legal"
-        ],
-        "behavioral_note": "Focus on value proposition and trust signals",
-        "priority_categories": [
-          "community_content"
-        ],
-        "token_budget_allocation": {
-          "core": 50,
-          "docs": 20,
-          "tools": 10,
-          "community": 20
-        }
-      },
-      "newcomer": {
-        "entry_point": "/faq",
-        "recommended_sequence": [
-          "faq"
-        ],
-        "behavioral_note": "Optimize for newcomer needs",
-        "priority_categories": [],
         "token_budget_allocation": {
           "core": 40,
           "docs": 25,
@@ -1119,13 +1051,81 @@
         }
       },
       "security-engineer": {
-        "entry_point": "/verify",
+        "entry_point": "/tools/sign-and-verify",
         "recommended_sequence": [
-          "verify",
-          "sign-and-verify"
+          "sign-and-verify",
+          "verify"
         ],
         "behavioral_note": "Optimize for security-engineer needs",
         "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "researcher": {
+        "entry_point": "/feeds",
+        "recommended_sequence": [
+          "feeds"
+        ],
+        "behavioral_note": "Optimize for researcher needs",
+        "priority_categories": [
+          "documentation"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "api-architect": {
+        "entry_point": "/tools/api-explained",
+        "recommended_sequence": [
+          "api-explained"
+        ],
+        "behavioral_note": "Optimize for api-architect needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "developer": {
+        "entry_point": "/spec",
+        "recommended_sequence": [
+          "spec",
+          "sdk",
+          "sign-and-verify",
+          "verify",
+          "well-known"
+        ],
+        "behavioral_note": "Emphasize practical implementation and code examples",
+        "priority_categories": [
+          "specialized_tools",
+          "documentation",
+          "core_infrastructure"
+        ],
+        "token_budget_allocation": {
+          "core": 30,
+          "docs": 40,
+          "tools": 25,
+          "community": 5
+        }
+      },
+      "webmaster": {
+        "entry_point": "/tools/well-known",
+        "recommended_sequence": [
+          "well-known"
+        ],
+        "behavioral_note": "Optimize for webmaster needs",
+        "priority_categories": [
+          "specialized_tools"
+        ],
         "token_budget_allocation": {
           "core": 40,
           "docs": 25,
@@ -1145,11 +1145,11 @@
         "spec",
         "sign-and-verify",
         "well-known",
-        "export-button"
+        "api-explained"
       ],
       "validate_feeds": [
-        "verify",
         "sign-and-verify",
+        "verify",
         "schema.llmfeed.json"
       ],
       "browse_content": [
@@ -1158,8 +1158,8 @@
       ],
       "evaluate_trust": [
         "manifesto.llmfeed.json",
-        "verify",
         "sign-and-verify",
+        "verify",
         "manifesto"
       ],
       "get_started": [
@@ -1189,10 +1189,10 @@
         "/.well-known/capabilities.llmfeed.json"
       ],
       "prefetch_candidates": [
+        "llmfeedhub",
+        "sign-and-verify",
         "sdk",
         "feeds",
-        "verify",
-        "llmfeedhub",
         "spec"
       ],
       "lazy_load_categories": [
@@ -1277,13 +1277,13 @@
         "cache_efficiency": "95%",
         "routing_accuracy": "97%"
       },
-      "last_health_check": "2025-06-17T21:03:39.824632Z"
+      "last_health_check": "2025-06-18T08:58:36.220227Z"
     }
   },
   "signature": {
     "algorithm": "ed25519",
     "value": "vCpE/Y9rWtP+yaUmtZwEpUSgalLUjg7hR85nkQhpxGo=",
-    "created_at": "2025-06-17T21:03:39.824632Z"
+    "created_at": "2025-06-18T08:58:36.220227Z"
   },
   "certification": {
     "certifier": "https://llmca.org",
@@ -1291,7 +1291,7 @@
     "targets": [
       "all"
     ],
-    "issued_at": "2025-06-17T21:03:39.824632Z",
+    "issued_at": "2025-06-18T08:58:36.220227Z",
     "expires_at": "",
     "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
     "algorithm": "ed25519",

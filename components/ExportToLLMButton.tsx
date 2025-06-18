@@ -25,11 +25,8 @@ interface ExportToLLMButtonProps {
   customLabel?: string
   enableCache?: boolean
   enableAnalytics?: boolean
-  
-  // Callbacks supprimés - utiliser les événements DOM à la place :
-  // window.addEventListener('llmfeed-success', (e) => console.log(e.detail))
-  // window.addEventListener('llmfeed-error', (e) => console.log(e.detail))
-  
+  onSuccess?: (feed: any, metadata: { size: number, signatureStatus: string }) => void
+  onError?: (error: Error, context: { operation: string, retryCount: number }) => void
   maxRetries?: number
 }
 
@@ -171,6 +168,8 @@ export function ExportToLLMButton({
   customLabel,
   enableCache = true,
   enableAnalytics = false,
+  onSuccess,
+  onError,
   maxRetries = 3,
 }: ExportToLLMButtonProps) {
   
@@ -319,11 +318,10 @@ export function ExportToLLMButton({
       setRetryCount(0)
       trackEvent('export_error', false, { operation, error: error.message })
       
-      // Événement d'erreur DOM
-      if (typeof window !== 'undefined') {
-        window.dispatchEvent(new CustomEvent('llmfeed-error', {
-          detail: { error: error.message, operation, retryCount: currentRetry, context }
-        }))
+      if (onError) {
+        onError(error as Error, { operation, retryCount: currentRetry })
+      } else {
+        console.error(`${operation} failed after ${maxRetries} retries:`, error)
       }
       
       throw error
@@ -418,12 +416,7 @@ export function ExportToLLMButton({
         if (clipboard) {
           await copyToClipboard(JSON.stringify(feed, null, 2))
           trackEvent('export_completed', true, { context, clipboard: true, size })
-          // Événement de succès DOM
-      if (typeof window !== 'undefined') {
-        window.dispatchEvent(new CustomEvent('llmfeed-success', {
-          detail: { feed, size, signatureStatus: extractSignatureStatus(feed), context }
-        }))
-      }
+          onSuccess?.(feed, { size, signatureStatus: extractSignatureStatus(feed) })
           return
         }
 
@@ -434,12 +427,7 @@ export function ExportToLLMButton({
         window.open(url, '_blank')
         
         trackEvent('export_completed', true, { context, size })
-        // Événement de succès DOM
-        if (typeof window !== 'undefined') {
-          window.dispatchEvent(new CustomEvent('llmfeed-success', {
-            detail: { feed, size, signatureStatus: extractSignatureStatus(feed), context }
-          }))
-        }
+        onSuccess?.(feed, { size, signatureStatus: extractSignatureStatus(feed) })
         return
       }
 
@@ -451,13 +439,7 @@ export function ExportToLLMButton({
           await copyToClipboard(JSON.stringify(feed, null, 2))
           
           trackEvent('export_completed', true, { context, clipboard: true, size: feedSize })
-                  
-        // Événement de succès DOM
-        if (typeof window !== 'undefined') {
-          window.dispatchEvent(new CustomEvent('llmfeed-success', {
-            detail: { feed, size: feedSize, signatureStatus: extractSignatureStatus(feed), context }
-          }))
-        }
+          onSuccess?.(feed, { size: feedSize, signatureStatus: extractSignatureStatus(feed) })
           return
         }
 
@@ -468,12 +450,7 @@ export function ExportToLLMButton({
           const status = extractSignatureStatus(feed)
           setSignatureStatus(status)
           
-          // Événement de succès DOM
-          if (typeof window !== 'undefined') {
-            window.dispatchEvent(new CustomEvent('llmfeed-success', {
-              detail: { feed, size: feedSize, signatureStatus: status, context }
-            }))
-          }
+          onSuccess?.(feed, { size: feedSize, signatureStatus: status })
         }
 
         trackEvent('export_completed', true, { context })
@@ -506,12 +483,7 @@ export function ExportToLLMButton({
         if (clipboard) {
           await copyToClipboard(JSON.stringify(feed, null, 2))
           trackEvent('export_completed', true, { context, clipboard: true, size })
-          // Événement de succès DOM
-        if (typeof window !== 'undefined') {
-          window.dispatchEvent(new CustomEvent('llmfeed-success', {
-            detail: { feed, size, signatureStatus: extractSignatureStatus(feed), context }
-          }))
-        }
+          onSuccess?.(feed, { size, signatureStatus: extractSignatureStatus(feed) })
           return
         }
 
@@ -522,13 +494,7 @@ export function ExportToLLMButton({
         window.open(url, '_blank')
         
         trackEvent('export_completed', true, { context, size })
-                
-        // Événement de succès DOM
-        if (typeof window !== 'undefined') {
-          window.dispatchEvent(new CustomEvent('llmfeed-success', {
-            detail: { feed, size, signatureStatus: extractSignatureStatus(feed), context }
-          }))
-        }
+        onSuccess?.(feed, { size, signatureStatus: extractSignatureStatus(feed) })
         return
       }
 

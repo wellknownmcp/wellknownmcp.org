@@ -4,7 +4,7 @@
         <title>News (en) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/en/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Tue, 17 Jun 2025 20:58:09 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Jun 2025 08:51:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -77,12 +77,6 @@
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/le_chat_mcp_web_future_news</guid>
             <pubDate>Tue, 10 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Le Chat offers a thoughtful reflection on the importance of the Model Context Protocol (MCP) in shaping a verifiable, interoperable, and agent-ready future web.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[linkedin-post-wellknownmcp]]></title>
-            <link>https://wellknownmcp.org/en/news/linkedin-post-wellknownmcp</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/linkedin-post-wellknownmcp</guid>
-            <pubDate>Tue, 10 Jun 2025 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Turning LLMs into Teachers, Auditors, and Publishers]]></title>
@@ -346,6 +340,13 @@
             <description><![CDATA[Announcing the launch of the WellKnownMCP initiative and its official website.]]></description>
         </item>
         <item>
+            <title><![CDATA[LinkedIn Post — Launching wellknownmcp.org (Enhanced Version)]]></title>
+            <link>https://wellknownmcp.org/en/news/linkedin-post-wellknownmcp</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/linkedin-post-wellknownmcp</guid>
+            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Launch communication draft for wellknownmcp.org with proactive messaging and higher clarity]]></description>
+        </item>
+        <item>
             <title><![CDATA[The Anatomy of a LLMFeed — Block by Block]]></title>
             <link>https://wellknownmcp.org/en/news/llmfeed-block-structure</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/llmfeed-block-structure</guid>
@@ -402,7 +403,7 @@
             <description><![CDATA[A simple guide to help you understand MCP and LLMFeed — the missing bridge between your intent and agent understanding.]]></description>
         </item>
         <item>
-            <title><![CDATA[Why MCP?]]></title>
+            <title><![CDATA[Why Llmfeed?]]></title>
             <link>https://wellknownmcp.org/en/news/why-mcp</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/why-mcp</guid>
             <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
