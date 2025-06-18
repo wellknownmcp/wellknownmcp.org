@@ -55,7 +55,7 @@ It’s like a sitemap — but for agent logic.
 
 - 🛠 [Prompt Tool](https://wellknownmcp.org/tools/prompt)  
 - 🌐 [Ecosystem Explorer](https://wellknownmcp.org/ecosystem)  
-- 📜 [Manifesto](https://wellknownmcp.org/spec/spec/llmfeed_manifesto)
+- 📜 [Manifesto](https://wellknownmcp.org/spec/spec/manifesto)
 
 No login. No vendor lock. Just clarity.
 

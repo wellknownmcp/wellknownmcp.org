@@ -666,8 +666,7 @@ The AI industry needs:
 ## 🚀 **Resources to Start TODAY**
 
 - **Spec**: [wellknownmcp.org/spec](https://wellknownmcp.org/spec)
-- **Templates**: [wellknownmcp.org/templates](https://wellknownmcp.org/templates)
-- **Validator**: [wellknownmcp.org/validate](https://wellknownmcp.org/validate)
+  - **Validator**: [wellknownmcp.org/validate](https://wellknownmcp.org/llmfeedhub)
 - **Community**: Join the ecosystem for real-time help
 
 ---

@@ -201,7 +201,7 @@ It’s simple. Open. Powerful. Already adopted.
 👉 [LLMFeed Specification (GitHub)](https://github.com/wellknownmcp/llmfeed-spec)  
 👉 [Model Context Protocol (MCP)](https://wellknownmcp.org/spec/)  
 👉 [LLMCA Certification Authority](https://llmca.org)  
-👉 [LLMFeedHub](https://wellknownmcp.org/preview)  
+👉 [LLMFeedHub](https://wellknownmcp.org/llmfeedhub/)  
 
 ---
 

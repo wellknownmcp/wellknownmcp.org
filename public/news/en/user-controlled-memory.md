@@ -153,7 +153,7 @@ A structured, user-controlled file that captures session context in a platform-a
 }
 ```
 
----
+--- 
 
 ## Why This Changes Everything
 
@@ -327,15 +327,14 @@ await aiPlatform.initialize({ context })
 
 ### Implementation Resources
 
-- 📘 [Session LLMFeed Specification](https://wellknownmcp.org/spec/session)
-- 🛠️ [Reference Implementation](https://github.com/wellknownmcp/session-llmfeed)
-- 🧪 [Validation Tools](https://wellknownmcp.org/validate)
+- 📘 [Session LLMFeed Specification](https://wellknownmcp.org/spec/02_llmfeed_feedtype/llmfeed_feedtype_session)
+- 🛠️ [Reference Implementation](https://github.com/wellknownmcp/llmfeed-spec)
+- 🧪 [Validation Tools](https://wellknownmcp.org/llmfeedhub)
 
 ### Community
 
 - 💬 [GitHub Discussions](https://github.com/wellknownmcp/llmfeed-spec/discussions)
-- 🐦 [@wellknownmcp](https://twitter.com/wellknownmcp)
-- 📧 [Mailing List](https://wellknownmcp.org/newsletter)
+
 
 ---
 
@@ -365,7 +364,7 @@ The future of AI interaction shouldn't be determined by which platform happened 
 
 *The agentic web thrives on open standards, interoperability, and user control. Session context should be no different.*
 
-**Ready to take control of your AI context?** [Learn more about session.llmfeed.json →](https://wellknownmcp.org/spec/session)
+**Ready to take control of your AI context?** [Learn more about session.llmfeed.json →](https://wellknownmcp.org/spec/02_llmfeed_feedtype/llmfeed_feedtype_session)
 
 ---
 

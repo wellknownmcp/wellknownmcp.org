@@ -182,7 +182,7 @@ Start publishing your own feed:
 
 - [Join us](/join)  
 - [See certified examples](https://wellknownmcp.org/llmfeedhub)  
-- [Understand the Manifesto](/spec/spec/llmfeed_manifesto)
+- [Understand the Manifesto](/spec/spec/MANIFESTO)
 
 ---
 

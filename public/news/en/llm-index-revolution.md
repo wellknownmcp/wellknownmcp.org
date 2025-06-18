@@ -312,10 +312,11 @@ The LLM index system enables **meta-optimization** through real usage data:
 ### **Phase 1: Immediate Wins (This Week)**
 ```bash
 # Generate basic index for your site
-curl -s https://api.wellknownmcp.org/generate-index \
-  -d '{"url": "https://yoursite.com"}' | \
-  tee .well-known/llm-index.llmfeed.json
+curl -s https://wellknownmcp.org/.well-known/exports/spec.llmfeed.json
 ```
+Ask your llm : help me do a llm-index.llmfeed.json
+(or wait for a tool, coming soon)
+
 **Expected impact**: 80-90% token savings immediately
 
 ### **Phase 2: Optimization (Next Month)**

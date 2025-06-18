@@ -62,7 +62,7 @@ This is how agents start to understand you — not by guessing, but by declarati
 ## 🔧 What’s inside the launch?
 
 - 🧱 A complete [specification](https://wellknownmcp.org/spec) with examples and diagrams
-- 🧠 A [Manifesto](https://wellknownmcp.org/spec/spec/llmfeed_manifesto) to explain the vision
+- 🧠 A [Manifesto](https://wellknownmcp.org/spec/spec/MANIFESTO) to explain the vision
 - 📦 [Certified feeds](https://wellknownmcp.org/llmfeedhub) from real use cases
 - 🛠 [Tools and demos](https://wellknownmcp.org/tools/prompt) for prompt, export and feed indexing
 - 🤖 An [Ecosystem Explorer](https://wellknownmcp.org/ecosystem) to discover other agents and participants

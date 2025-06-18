@@ -66,8 +66,8 @@ The return of **Opera Neon** is positive news for Agentic Web advocates. It sign
 
 - [Official Opera Neon Announcement](https://press.opera.com/2025/05/28/opera-neon-the-first-ai-agentic-browser/)
 - [The Verge Article](https://www.theverge.com/news/675406/opera-neon-ai-agentic-browser-chat-do-make-launch-release-date)
-- [MCP Specification](https://wellknownmcp.org/spec/llmfeed.md)
+- [llmfeed Specification](https://wellknownmcp.org/spec/01_llmfeed/llmfeed.md)
 
 ---
 
-*Want to make your site agent-ready? Check out our guides and test your `.well-known` with our [LLMFeedHub](https://wellknownmcp.org/preview/).*
+*Want to make your site agent-ready? Check out our guides and test your `.well-known` with our [LLMFeedHub]*

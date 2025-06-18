@@ -181,7 +181,7 @@ Let’s build bridges — not silos.
 
 **Links:**
 
-- [MCP Specification](https://wellknownmcp.org/spec)
+- [llmfeed Specification](https://wellknownmcp.org/spec)
 - [Why Sign and Verify](https://wellknownmcp.org/why-sign)
 - [Join the Consortium](https://wellknownmcp.org/join)
 - [LLMFeedForge](https://forge.llmfeedforge.org)
