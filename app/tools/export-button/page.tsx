@@ -128,7 +128,150 @@ export default function ExportPlaygroundPage() {
     </p>
   </CardContent>
 </Card>
+<Card>
+  <CardHeader>
+    <CardTitle>🔧 Enhanced Developer Features</CardTitle>
+    <CardDescription>Advanced export capabilities for developers and power users</CardDescription>
+  </CardHeader>
+  <CardContent className="space-y-6">
+    
+    {/* Developer Mode avec curl */}
+    <div>
+      <h4 className="font-semibold mb-2">🖥️ Developer Mode (with curl commands)</h4>
+      <p className="text-sm text-gray-600 mb-3">
+        Hover to see direct URLs and curl commands. Perfect for automation and CLI integration.
+      </p>
+      <ExportToLLMButton 
+        context="static" 
+        staticPath=".well-known/exports/spec"
+        showCurlCommand={true}
+        showDirectUrl={true}
+        variant="developer"
+      />
+    </div>
 
+    {/* Preview Mode */}
+    <div>
+      <h4 className="font-semibold mb-2">👁️ Preview Mode (inspect before download)</h4>
+      <p className="text-sm text-gray-600 mb-3">
+        Preview feed content, metadata, and trust level before exporting. Great for validation.
+      </p>
+      <ExportToLLMButton 
+        context="dynamic" 
+        dynamicId="about-standard"
+        showPreview={true}
+        customLabel="Preview About + Spec"
+      />
+    </div>
+
+    {/* Analytics & Metadata */}
+    <div>
+      <h4 className="font-semibold mb-2">📊 Analytics & Metadata Display</h4>
+      <p className="text-sm text-gray-600 mb-3">
+        Track export usage and display feed metadata (size, last updated, trust level).
+      </p>
+      <ExportToLLMButton 
+        context="static" 
+        staticPath=".well-known/exports/compiled-site"
+        showFeedSize={true}
+        showLastUpdated={true}
+        enableAnalytics={true}
+        onSuccess={(feed, meta) => {
+          console.log(`✅ Exported ${meta.size} bytes with trust level: ${meta.signatureStatus}`)
+        }}
+        variant="primary"
+        customLabel="Download Full Site"
+      />
+    </div>
+
+    {/* Error Handling avec Retry */}
+    <div>
+      <h4 className="font-semibold mb-2">🔄 Smart Error Handling</h4>
+      <p className="text-sm text-gray-600 mb-3">
+        Automatic retry with exponential backoff and custom error callbacks.
+      </p>
+      <ExportToLLMButton 
+        context="dynamic" 
+        dynamicId="compiled-site"
+        maxRetries={3}
+        onError={(error, context) => {
+          console.error(`Export failed: ${error.message} (attempt ${context.retryCount})`)
+        }}
+        enableCache={true}
+      />
+    </div>
+
+    {/* Variants Showcase */}
+    <div>
+      <h4 className="font-semibold mb-2">🎨 Style Variants</h4>
+      <p className="text-sm text-gray-600 mb-3">
+        Different visual styles for different contexts and integrations.
+      </p>
+      <div className="flex flex-wrap gap-3">
+        <ExportToLLMButton variant="ghost-mini" context="current" customLabel="Ghost Mini" />
+        <ExportToLLMButton variant="primary" context="static" staticPath="demo/kungfu" customLabel="Primary" />
+        <ExportToLLMButton variant="developer" context="dynamic" dynamicId="about-standard" showCurlCommand customLabel="Developer" />
+        <ExportToLLMButton variant="default" context="current" customLabel="Default" />
+      </div>
+    </div>
+
+    {/* Advanced Integration */}
+    <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+      <h4 className="font-semibold mb-2">🚀 Advanced Integration Example</h4>
+      <p className="text-sm text-gray-600 mb-3">
+        Real-world example combining multiple features for enterprise usage.
+      </p>
+      <ExportToLLMButton 
+        context="dynamic"
+        dynamicId="compiled-site"
+        variant="developer"
+        showPreview={true}
+        showFeedSize={true}
+        showCurlCommand={true}
+        showDirectUrl={true}
+        enableAnalytics={true}
+        enableCache={true}
+        maxRetries={3}
+        customLabel="Enterprise Export"
+        onSuccess={(feed, meta) => {
+          // Custom success handling
+          window.dispatchEvent(new CustomEvent('export-success', { 
+            detail: { feed, metadata: meta } 
+          }))
+        }}
+        onError={(error, context) => {
+          // Custom error reporting
+          console.error('Export failed:', error, context)
+        }}
+      />
+      <p className="text-xs text-gray-500 mt-2">
+        ✨ This button includes: preview modal, developer tooltips, analytics tracking, 
+        smart caching, retry logic, and custom callbacks.
+      </p>
+    </div>
+
+    {/* Code Example */}
+    <div>
+      <h4 className="font-semibold mb-2">💻 Code Example</h4>
+      <pre className="bg-gray-100 dark:bg-gray-800 p-3 rounded text-xs overflow-x-auto">
+{`<ExportToLLMButton 
+  context="dynamic"
+  dynamicId="my-recipe"
+  variant="developer"
+  showPreview={true}
+  showFeedSize={true}
+  showCurlCommand={true}
+  enableAnalytics={true}
+  onSuccess={(feed, meta) => {
+    console.log('Export success:', meta)
+  }}
+  customLabel="Smart Export"
+/>`}
+      </pre>
+    </div>
+
+  </CardContent>
+</Card>
         {/* Variations + Call to Action */}
         <Card>
           <CardHeader>

@@ -21,6 +21,17 @@ export default function OptimizedFooter() {
             <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
               Building the infrastructure for the agentic web. Open standards, cryptographic trust, and universal interoperability.
             </p>
+            
+            {/* CTA plus visible */}
+            <div className="mb-4">
+              <Link 
+                href="/join" 
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:from-purple-600 hover:to-blue-600 transition-all shadow-sm"
+              >
+                🤝 Join the Community
+              </Link>
+            </div>
+            
             <div className="space-y-2">
               <p className="text-sm">
                 <a
@@ -43,37 +54,42 @@ export default function OptimizedFooter() {
             </div>
           </div>
 
-          {/* Core Platform */}
+          {/* Get Started & Core Platform */}
           <div>
-            <h4 className="font-semibold mb-3 text-gray-900 dark:text-gray-100">Core Platform</h4>
+            <h4 className="font-semibold mb-3 text-gray-900 dark:text-gray-100">Get Started</h4>
             <ul className="space-y-2">
+              <li>
+                <Link href="/downloads" className="text-violet-600 dark:text-violet-400 hover:text-violet-700 dark:hover:text-violet-300 font-medium transition-colors">
+                  📥 Download Feeds (Start Here!)
+                </Link>
+              </li>
               <li>
                 <Link href="/spec" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
                   📚 LLMFeed Specification
                 </Link>
               </li>
               <li>
-                <Link href="/llmfeedhub" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
-                  🔧 LLMFeedHub (Universal Analyzer)
+                <Link href={`/${lang}/faq`} className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
+                  ❓ Frequently Asked Questions
                 </Link>
               </li>
               <li>
-                <Link href={`/${lang}/news`} className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
-                  📰 Latest News & Updates
-                </Link>
-              </li>
-              <li>
-                <Link href="/ecosystem" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
-                  🌐 Ecosystem & Adopters
+                <Link href={`/${lang}/about`} className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
+                  🧭 About the Project
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Tools & Resources */}
+          {/* Platform & Tools */}
           <div>
-            <h4 className="font-semibold mb-3 text-gray-900 dark:text-gray-100">Tools & Resources</h4>
+            <h4 className="font-semibold mb-3 text-gray-900 dark:text-gray-100">Platform & Tools</h4>
             <ul className="space-y-2">
+              <li>
+                <Link href="/llmfeedhub" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
+                  🔧 LLMFeedHub (Universal Analyzer)
+                </Link>
+              </li>
               <li>
                 <Link href="/tools/prompt" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
                   ✍️ Prompt Builder
@@ -97,23 +113,18 @@ export default function OptimizedFooter() {
             </ul>
           </div>
 
-          {/* Get Started & Ecosystem */}
+          {/* Community & Ecosystem */}
           <div>
-            <h4 className="font-semibold mb-3 text-gray-900 dark:text-gray-100">Get Started</h4>
+            <h4 className="font-semibold mb-3 text-gray-900 dark:text-gray-100">Community & News</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/join" className="text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-medium transition-colors">
-                  🤝 Join the Community
+                <Link href={`/${lang}/news`} className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
+                  📰 Latest News & Updates
                 </Link>
               </li>
               <li>
-                <Link href={`/${lang}/about`} className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
-                  🧭 About the Project
-                </Link>
-              </li>
-              <li>
-                <Link href="en/faq" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
-                  ❓ Frequently Asked Questions
+                <Link href="/ecosystem" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
+                  🌐 Ecosystem & Adopters
                 </Link>
               </li>
               <li>
@@ -125,7 +136,7 @@ export default function OptimizedFooter() {
 
             {/* Ecosystem Partners */}
             <div className="mt-6">
-              <h5 className="font-semibold mb-2 text-gray-900 dark:text-gray-100 text-xs uppercase tracking-wide">Ecosystem</h5>
+              <h5 className="font-semibold mb-2 text-gray-900 dark:text-gray-100 text-xs uppercase tracking-wide">Ecosystem Partners</h5>
               <div className="space-y-1">
                 <Link 
                   href="https://llmca.org" 
@@ -148,39 +159,104 @@ export default function OptimizedFooter() {
           </div>
         </div>
 
-        {/* Agent-friendly section - SEO bonus */}
+        {/* Agent-friendly section - SEO bonus AMÉLIORÉ */}
         <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
-          <div className="bg-gray-50 dark:bg-gray-900/50 rounded-lg p-4">
-            <h4 className="font-semibold mb-3 text-gray-900 dark:text-gray-100 text-sm">🤖 Quick Access for AI Agents</h4>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs">
+          <div className="bg-gradient-to-r from-gray-50 to-purple-50 dark:from-gray-900/50 dark:to-purple-900/20 rounded-lg p-6 border border-purple-200 dark:border-purple-800">
+            <h4 className="font-semibold mb-4 text-gray-900 dark:text-gray-100 text-base flex items-center gap-2">
+              🤖 Quick Access for AI Agents
+              <span className="text-xs bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded-full">
+                Agent-Optimized
+              </span>
+            </h4>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+              {/* Core Infrastructure */}
+              <div>
+                <h5 className="font-medium text-gray-700 dark:text-gray-300 text-xs uppercase tracking-wide mb-2">Core Infrastructure</h5>
+                <div className="space-y-1">
+                  <Link 
+                    href="/.well-known/mcp.llmfeed.json" 
+                    className="block text-purple-600 dark:text-purple-400 hover:underline font-mono text-xs"
+                  >
+                    mcp.llmfeed.json
+                  </Link>
+                  <Link 
+                    href="/.well-known/capabilities.llmfeed.json" 
+                    className="block text-blue-600 dark:text-blue-400 hover:underline font-mono text-xs"
+                  >
+                    capabilities.llmfeed.json
+                  </Link>
+                  <Link 
+                    href="/.well-known/llm-index.llmfeed.json" 
+                    className="block text-indigo-600 dark:text-indigo-400 hover:underline font-mono text-xs"
+                  >
+                    llm-index.llmfeed.json
+                  </Link>
+                </div>
+              </div>
+
+              {/* Static Exports */}
+              <div>
+                <h5 className="font-medium text-gray-700 dark:text-gray-300 text-xs uppercase tracking-wide mb-2">Static Exports</h5>
+                <div className="space-y-1">
+                  <Link 
+                    href="/.well-known/exports/compiled-site.llmfeed.json" 
+                    className="block text-green-600 dark:text-green-400 hover:underline font-mono text-xs"
+                  >
+                    compiled-site.llmfeed.json
+                  </Link>
+                  <Link 
+                    href="/.well-known/exports/spec.llmfeed.json" 
+                    className="block text-orange-600 dark:text-orange-400 hover:underline font-mono text-xs"
+                  >
+                    spec.llmfeed.json
+                  </Link>
+                  <Link 
+                    href="/.well-known/exports/news-export.llmfeed.json" 
+                    className="block text-pink-600 dark:text-pink-400 hover:underline font-mono text-xs"
+                  >
+                    news-export.llmfeed.json
+                  </Link>
+                </div>
+              </div>
+
+              {/* Development & Validation */}
+              <div>
+                <h5 className="font-medium text-gray-700 dark:text-gray-300 text-xs uppercase tracking-wide mb-2">Schemas & Validation</h5>
+                <div className="space-y-1">
+                  <Link 
+                    href="/.well-known/schema.llmfeed.json" 
+                    className="block text-red-600 dark:text-red-400 hover:underline font-mono text-xs"
+                  >
+                    schema.llmfeed.json
+                  </Link>
+                  <Link 
+                    href="/.well-known/schema.annotated.llmfeed.json" 
+                    className="block text-amber-600 dark:text-amber-400 hover:underline font-mono text-xs"
+                  >
+                    schema.annotated.llmfeed.json
+                  </Link>
+                  <Link 
+                    href="/.well-known/manifesto.llmfeed.json" 
+                    className="block text-cyan-600 dark:text-cyan-400 hover:underline font-mono text-xs"
+                  >
+                    manifesto.llmfeed.json
+                  </Link>
+                </div>
+              </div>
+            </div>
+            
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 pt-4 border-t border-purple-200 dark:border-purple-700">
+              <p className="text-gray-600 dark:text-gray-400 text-xs">
+                ✅ All feeds are cryptographically signed and agent-optimized • 🔄 Updated incrementally
+              </p>
               <Link 
-                href="/.well-known/mcp.llmfeed.json" 
-                className="text-purple-600 dark:text-purple-400 hover:underline font-mono"
+                href="/downloads" 
+                className="text-violet-600 dark:text-violet-400 hover:text-violet-700 dark:hover:text-violet-300 text-xs font-medium hover:underline"
               >
-                MCP Declaration
-              </Link>
-              <Link 
-                href="/.well-known/capabilities.llmfeed.json" 
-                className="text-blue-600 dark:text-blue-400 hover:underline font-mono"
-              >
-                Site Capabilities
-              </Link>
-              <Link 
-                href="/.well-known/exports/news-export.llmfeed.json" 
-                className="text-green-600 dark:text-green-400 hover:underline font-mono"
-              >
-                News Archive
-              </Link>
-              <Link 
-                href="/.well-known/exports/spec.llmfeed.json" 
-                className="text-orange-600 dark:text-orange-400 hover:underline font-mono"
-              >
-                Complete Spec
+                📥 Download All Feeds →
               </Link>
             </div>
-            <p className="text-gray-500 dark:text-gray-400 text-xs mt-2">
-              All feeds are cryptographically signed and agent-optimized
-            </p>
           </div>
         </div>
 

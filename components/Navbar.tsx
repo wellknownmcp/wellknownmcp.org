@@ -7,6 +7,7 @@ import Image from 'next/image'
 
 export default function OptimizedNavbar() {
   const [toolsOpen, setToolsOpen] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
   const pathname = usePathname()
   const langMatch = pathname.match(/^\/(en|fr|es|zh|ar|uk)(\/|$)/)
   const lang = langMatch ? langMatch[1] : 'en'
@@ -26,130 +27,155 @@ export default function OptimizedNavbar() {
           />
         </Link>
 
-        {/* 🎯 SPEC plus visible - Point d'entrée technique */}
-        <Link
-          href="/spec"
-          className={`${
-            isActive('/spec') ? 'font-semibold border-b-2 border-purple-500' : ''
-          } hover:text-purple-600 transition-colors`}
-        >
-          📚 Spec
-        </Link>
+        {/* Navigation principale - Desktop */}
+        <div className="hidden md:flex items-center space-x-8">
+          {/* 🎯 DOWNLOADS - Nouveau point d'entrée principal */}
+          <Link
+            href="/downloads"
+            className={`${
+              isActive('/downloads') ? 'font-semibold border-b-2 border-violet-500' : ''
+            } hover:text-violet-600 transition-colors bg-gradient-to-r from-violet-50 to-purple-50 dark:from-violet-900/20 dark:to-purple-900/20 px-3 py-1.5 rounded-lg border border-violet-200 dark:border-violet-700`}
+          >
+            📥 Downloads
+          </Link>
 
-        {/* 🗞️ NEWS - Source principale de trafic */}
-        <Link
-          href={`/${lang}/news`}
-          className={`${
-            isActive(`/${lang}/news`) ? 'font-semibold border-b-2 border-blue-500' : ''
-          } hover:text-blue-600 transition-colors`}
-        >
-          📰 News
-        </Link>
+          {/* 📚 SPEC - Point d'entrée technique */}
+          <Link
+            href="/spec"
+            className={`${
+              isActive('/spec') ? 'font-semibold border-b-2 border-purple-500' : ''
+            } hover:text-purple-600 transition-colors`}
+          >
+            📚 Spec
+          </Link>
 
-        {/* 🔧 LLMFEEDHUB - Outil phare maintenant visible */}
-        <Link
-          href="/llmfeedhub"
-          className={`${
-            isActive('/llmfeedhub') ? 'font-semibold border-b-2 border-green-500' : ''
-          } hover:text-green-600 transition-colors bg-green-50 dark:bg-green-900/20 px-2 py-1 rounded-md`}
-        >
-          🔧 LLMFeedHub
-        </Link>
+          {/* 🔧 LLMFEEDHUB - Outil phare */}
+          <Link
+            href="/llmfeedhub"
+            className={`${
+              isActive('/llmfeedhub') ? 'font-semibold border-b-2 border-green-500' : ''
+            } hover:text-green-600 transition-colors`}
+          >
+            🔧 Analyzer
+          </Link>
 
-        {/* 🧰 TOOLS restructuré - Deuxième source de trafic */}
-        <div
-          className="relative"
-          onMouseEnter={() => setToolsOpen(true)}
-          onMouseLeave={() => setToolsOpen(false)}
-        >
-          <span className={`cursor-pointer hover:text-orange-600 transition-colors ${
-            isActive('/tools') ? 'font-semibold border-b-2 border-orange-500' : ''
-          }`}>
-            🧰 Tools ▾
-          </span>
-          {toolsOpen && (
-            <div className="absolute top-full left-0 mt-2 min-w-[280px] bg-white dark:bg-gray-900 border dark:border-gray-700 shadow-xl rounded-lg z-50 py-3">
-              
-              {/* Section Interactive */}
-              <div className="px-4 py-2">
-                <div className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-2">
-                  Interactive Tools
+          {/* 🧰 TOOLS restructuré */}
+          <div
+            className="relative"
+            onMouseEnter={() => setToolsOpen(true)}
+            onMouseLeave={() => setToolsOpen(false)}
+          >
+            <span className={`cursor-pointer hover:text-orange-600 transition-colors ${
+              isActive('/tools') ? 'font-semibold border-b-2 border-orange-500' : ''
+            }`}>
+              🧰 Tools ▾
+            </span>
+            {toolsOpen && (
+              <div className="absolute top-full left-0 mt-2 min-w-[280px] bg-white dark:bg-gray-900 border dark:border-gray-700 shadow-xl rounded-lg z-50 py-3">
+                
+                {/* Section Interactive */}
+                <div className="px-4 py-2">
+                  <div className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-2">
+                    Build & Generate
+                  </div>
+                  <Link 
+                    href="/tools/prompt" 
+                    className="block px-2 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
+                  >
+                    ✍️ Prompt Builder
+                  </Link>
+                  <Link 
+                    href="/tools/export-button" 
+                    className="block px-2 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
+                  >
+                    📤 Export Button
+                  </Link>
+                  <Link 
+                    href="/tools/sign-and-verify" 
+                    className="block px-2 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
+                  >
+                    🔐 Sign & Verify
+                  </Link>
                 </div>
-                <Link 
-                  href="/tools/prompt" 
-                  className="block px-2 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
-                >
-                  ✍️ Prompt Builder
-                </Link>
-                <Link 
-                  href="/tools/sign-and-verify" 
-                  className="block px-2 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
-                >
-                  🔐 Sign & Verify
-                </Link>
-                <Link 
-                  href="/tools/export-button" 
-                  className="block px-2 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
-                >
-                  📤 Export Button
-                </Link>
-              </div>
 
-              <div className="border-t border-gray-200 dark:border-gray-700 my-2"></div>
+                <div className="border-t border-gray-200 dark:border-gray-700 my-2"></div>
 
-              {/* Section Concepts */}
-              <div className="px-4 py-2">
-                <div className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-2">
-                  Learn & Understand
+                {/* Section Learn */}
+                <div className="px-4 py-2">
+                  <div className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-2">
+                    Learn & Understand
+                  </div>
+                  <Link 
+                    href={`/${lang}/faq`}
+                    className="block px-2 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
+                  >
+                    ❓ FAQ
+                  </Link>
+                  <Link 
+                    href="/tools/agent-behavior" 
+                    className="block px-2 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
+                  >
+                    🤖 Agent Behavior
+                  </Link>
+                  <Link 
+                    href="/tools/api-explained" 
+                    className="block px-2 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
+                  >
+                    🔌 API Explained
+                  </Link>
                 </div>
-                <Link 
-                  href="/tools/agent-behavior" 
-                  className="block px-2 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
-                >
-                  🤖 Agent Behavior
-                </Link>
-                <Link 
-                  href="/tools/api-explained" 
-                  className="block px-2 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
-                >
-                  🔌 API Explained
-                </Link>
-                <Link 
-                  href="en/faq" 
-                  className="block px-2 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
-                >
-                  ❓ FAQ
-                </Link>
-              </div>
 
-              <div className="border-t border-gray-200 dark:border-gray-700 my-2"></div>
+                <div className="border-t border-gray-200 dark:border-gray-700 my-2"></div>
 
-              {/* All Tools */}
-              <div className="px-4 py-2">
-                <Link 
-                  href="/tools" 
-                  className="block px-2 py-2 text-sm font-medium hover:bg-orange-50 dark:hover:bg-orange-900/20 rounded transition-colors text-orange-600 dark:text-orange-400"
-                >
-                  🧰 All Tools & Resources →
-                </Link>
+                {/* All Tools */}
+                <div className="px-4 py-2">
+                  <Link 
+                    href="/tools" 
+                    className="block px-2 py-2 text-sm font-medium hover:bg-orange-50 dark:hover:bg-orange-900/20 rounded transition-colors text-orange-600 dark:text-orange-400"
+                  >
+                    🧰 All Tools & Resources →
+                  </Link>
+                </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
+
+          {/* 📰 NEWS */}
+          <Link
+            href={`/${lang}/news`}
+            className={`${
+              isActive(`/${lang}/news`) ? 'font-semibold border-b-2 border-blue-500' : ''
+            } hover:text-blue-600 transition-colors`}
+          >
+            📰 News
+          </Link>
+
+          {/* 🌐 ECOSYSTEM */}
+          <Link
+            href="/ecosystem"
+            className={`${
+              isActive('/ecosystem') ? 'font-semibold border-b-2 border-indigo-500' : ''
+            } hover:text-indigo-600 transition-colors`}
+          >
+            🌐 Ecosystem
+          </Link>
         </div>
 
-        {/* 🌐 ECOSYSTEM - Groupé pour clarté */}
-        <Link
-          href="/ecosystem"
-          className={`${
-            isActive('/ecosystem') ? 'font-semibold border-b-2 border-indigo-500' : ''
-          } hover:text-indigo-600 transition-colors`}
+        {/* Mobile hamburger */}
+        <button
+          className="md:hidden flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-gray-800"
+          onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label="Toggle navigation menu"
         >
-          🌐 Ecosystem
-        </Link>
+          <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+          </svg>
+        </button>
       </div>
 
-      {/* Partie droite - Actions et liens externes */}
-      <div className="flex items-center space-x-4">
+      {/* Partie droite - Actions */}
+      <div className="hidden md:flex items-center space-x-4">
         {/* Join - Call to action */}
         <Link
           href="/join"
@@ -162,8 +188,9 @@ export default function OptimizedNavbar() {
         <Link
           href="https://github.com/wellknownmcp"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 transition-colors"
+          aria-label="Visit our GitHub repository"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -175,6 +202,22 @@ export default function OptimizedNavbar() {
           </svg>
         </Link>
       </div>
+
+      {/* Mobile menu */}
+      {mobileOpen && (
+        <div className="md:hidden absolute top-full left-0 w-full bg-white dark:bg-black border-b border-gray-200 dark:border-gray-800 z-40">
+          <div className="px-6 py-4 space-y-4">
+            <Link href="/downloads" className="block py-2 text-violet-600 font-medium">📥 Downloads</Link>
+            <Link href="/spec" className="block py-2">📚 Spec</Link>
+            <Link href="/llmfeedhub" className="block py-2">🔧 Analyzer</Link>
+            <Link href="/tools" className="block py-2">🧰 Tools</Link>
+            <Link href={`/${lang}/news`} className="block py-2">📰 News</Link>
+            <Link href="/ecosystem" className="block py-2">🌐 Ecosystem</Link>
+            <Link href={`/${lang}/faq`} className="block py-2">❓ FAQ</Link>
+            <Link href="/join" className="block py-2 text-purple-600 font-medium">🤝 Join</Link>
+          </div>
+        </div>
+      )}
     </nav>
   )
 }
