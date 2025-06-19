@@ -1,7 +1,5 @@
+// middleware.ts — Edge Runtime Compatible Version
 import { NextRequest, NextResponse } from 'next/server';
-import { writeFileSync, appendFileSync, existsSync, mkdirSync } from 'fs';
-import { join } from 'path';
-import { createHash } from 'crypto';
 
 // 🎯 Interface pour les events loggés
 interface AgentEvent {
@@ -44,22 +42,31 @@ const AGENT_PATTERNS = [
   { pattern: /brave/i, type: 'brave_search', confidence: 80 },
 ];
 
+// 🔐 Salt pour le hashing (fallback sécurisé)
+const getAnalyticsSalt = (): string => {
+  return process.env.ANALYTICS_SALT || `wellknownmcp_fallback_${Date.now().toString(36)}`;
+};
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   
   // 🎯 Track seulement les feeds et .well-known
   if (shouldTrackPath(pathname)) {
-    
-    // 📝 Log async et non-bloquant (performance critique)
-    setImmediate(() => {
-      try {
-        logAgentEvent(request);
-      } catch (error) {
+    // 📝 Log async via API route (non-bloquant, compatible Edge Runtime)
+    buildAgentEvent(request).then(event => {
+      // Fire-and-forget API call to logging endpoint
+      fetch(`${request.nextUrl.origin}/api/log-agent-event`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(event)
+      }).catch(() => {
         // Silent fail - jamais casser le site pour des analytics
         if (process.env.NODE_ENV === 'development') {
-          console.error('Agent analytics logging failed:', error);
+          console.warn('Agent analytics logging failed');
         }
-      }
+      });
+    }).catch(() => {
+      // Silent fail si même la construction de l'event échoue
     });
   }
   
@@ -71,17 +78,17 @@ function shouldTrackPath(pathname: string): boolean {
   return (
     pathname.includes('.llmfeed.json') ||
     pathname.startsWith('/.well-known/') ||
-    pathname.includes('/exports/') && pathname.includes('.json')
+    (pathname.includes('/exports/') && pathname.includes('.json'))
   );
 }
 
-function logAgentEvent(request: NextRequest) {
+async function buildAgentEvent(request: NextRequest): Promise<AgentEvent> {
   // 🤖 Détection et classification
   const userAgent = request.headers.get('user-agent') || '';
   const detection = detectAgentType(userAgent);
   
-  // 🔐 Génération session ID (IP + UA + timewindow de 30min)
-  const sessionId = generateSessionId(request);
+  // 🔐 Génération session ID (compatible Edge Runtime)
+  const sessionId = await generateSessionId(request);
   
   // 📊 Analyse des headers pour plus de contexte
   const headersAnalysis = analyzeHeaders(request);
@@ -89,8 +96,7 @@ function logAgentEvent(request: NextRequest) {
   // 📁 Contexte du feed
   const feedContext = analyzeFeedContext(request.nextUrl.pathname);
   
-  // 📝 Construction de l'event
-  const event: AgentEvent = {
+  return {
     timestamp: new Date().toISOString(),
     path: request.nextUrl.pathname,
     agent_type: detection.type,
@@ -98,14 +104,11 @@ function logAgentEvent(request: NextRequest) {
     user_agent: userAgent.substring(0, 150), // Truncate pour privacy/storage
     referer: request.headers.get('referer')?.substring(0, 100) || '',
     country: request.geo?.country || 'unknown',
-    ip_hash: hashIP(request.ip || ''),
+    ip_hash: await hashIP(request.ip || ''),
     session_id: sessionId,
     headers_analysis: headersAnalysis,
     feed_context: feedContext,
   };
-  
-  // 💾 Storage dans fichier JSONL
-  saveEventToFile(event);
 }
 
 function detectAgentType(userAgent: string): { type: string; confidence: number } {
@@ -133,40 +136,37 @@ function detectAgentType(userAgent: string): { type: string; confidence: number 
   return { type: 'unknown', confidence: 10 };
 }
 
-function generateSessionId(request: NextRequest): string {
+async function generateSessionId(request: NextRequest): Promise<string> {
   const ip = request.ip || 'unknown';
   const userAgent = request.headers.get('user-agent') || '';
   const timeWindow = Math.floor(Date.now() / (30 * 60 * 1000)); // 30min windows
   
-  return createHash('sha256')
-    .update(`${ip}:${userAgent}:${timeWindow}`)
-    .digest('hex')
-    .substring(0, 12);
+  // Use Web Crypto API (compatible with Edge Runtime)
+  const encoder = new TextEncoder();
+  const data = encoder.encode(`${ip}:${userAgent}:${timeWindow}`);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+  const hashArray = new Uint8Array(hashBuffer);
+  const hashHex = Array.from(hashArray).map(b => b.toString(16).padStart(2, '0')).join('');
+  
+  return hashHex.substring(0, 12);
 }
 
-function hashIP(ip: string): string {
+async function hashIP(ip: string): Promise<string> {
   if (!ip || ip === 'unknown') return 'unknown';
   
-  // Hash avec salt pour privacy
-  const salt = process.env.ANALYTICS_SALT || 'wellknownmcp_default_salt';
-  return createHash('sha256')
-    .update(ip + salt)
-    .digest('hex')
-    .substring(0, 10);
+  // Hash avec salt pour privacy (Web Crypto API)
+  const salt = getAnalyticsSalt();
+  const encoder = new TextEncoder();
+  const data = encoder.encode(ip + salt);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+  const hashArray = new Uint8Array(hashBuffer);
+  const hashHex = Array.from(hashArray).map(b => b.toString(16).padStart(2, '0')).join('');
+  
+  return hashHex.substring(0, 10);
 }
 
 function analyzeHeaders(request: NextRequest) {
   const headers = request.headers;
-  
-  // 📋 Headers standards qu'un browser humain aurait
-  const humanHeaders = [
-    'accept-language',
-    'accept-encoding', 
-    'cookie',
-    'sec-fetch-site',
-    'sec-fetch-mode',
-    'sec-ch-ua'
-  ];
   
   // 🔍 Headers custom/non-standard
   const customHeaders: string[] = [];
@@ -206,29 +206,6 @@ function analyzeFeedContext(pathname: string) {
   };
 }
 
-function saveEventToFile(event: AgentEvent) {
-  // 📁 Ensure data directory exists
-  const dataDir = join(process.cwd(), 'data');
-  if (!existsSync(dataDir)) {
-    mkdirSync(dataDir, { recursive: true });
-  }
-  
-  // 📝 Append to JSONL file (one JSON object per line)
-  const logPath = join(dataDir, 'agent-logs.jsonl');
-  const logLine = JSON.stringify(event) + '\n';
-  
-  try {
-    appendFileSync(logPath, logLine);
-  } catch (error) {
-    // Fallback: try to create file if it doesn't exist
-    if (error.code === 'ENOENT') {
-      writeFileSync(logPath, logLine);
-    } else {
-      throw error;
-    }
-  }
-}
-
 // 🎯 Configuration du matcher Next.js
 export const config = {
   matcher: [
@@ -246,6 +223,6 @@ export const config = {
 // 📊 Helper function pour debug en dev
 if (process.env.NODE_ENV === 'development') {
   console.log('🤖 Agent Analytics Middleware loaded');
-  console.log('📝 Logs will be saved to: data/agent-logs.jsonl');
+  console.log('📝 Logs will be saved via API route');
   console.log('🎯 Tracking paths:', config.matcher);
 }

@@ -32,3 +32,9 @@ Thumbs.db
 !public/**
 !public/.well-known/
 !public/.well-known/**
+
+# WellKnownMCP Analytics
+.env.local
+.analytics-salt
+data/agent-logs.jsonl
+data/agent-logs-backup-*.jsonl

@@ -27,7 +27,11 @@
     "indexes:wellknown": "node scripts/build-indexes.js --target=.well-known",
     "indexes:exports": "node scripts/build-indexes.js --target=exports",
     "indexes:prompts": "node scripts/build-indexes.js --target=prompts",
-    "verify:indexes": "node scripts/build-indexes.js --dry-run"
+    "verify:indexes": "node scripts/build-indexes.js --dry-run",
+    "analytics:setup": "node setup-analytics.js",
+    "analytics:clear": "rm -f data/agent-logs.jsonl && echo \"Analytics logs cleared\"",
+    "analytics:backup": "cp data/agent-logs.jsonl data/agent-logs-backup-$(date +%s).jsonl && echo \"Analytics logs backed up\"",
+    "analytics:status": "ls -la data/agent-logs.jsonl 2>/dev/null || echo \"No analytics data found\""
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",
@@ -61,6 +65,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-markdown": "^10.1.0",
+    "recharts": "^2.15.3",
     "rehype-raw": "^7.0.0",
     "remark-gfm": "^4.0.1",
     "shadcn": "^2.5.0",
