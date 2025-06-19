@@ -471,7 +471,7 @@ function generateIndexHtml(files, targetDir, context) {
     .header-subtitle { font-size: 0.9rem; opacity: 0.9; margin-top: 0.25rem; }
     
     .docs-link {
-      color: white; text-decoration: none; font-size: 0.9rem;
+      color: black; text-decoration: none; font-size: 0.9rem;
       padding: 0.25rem 0.5rem; border-radius: 4px;
       border: 1px solid rgba(255,255,255,0.3);
       transition: background-color 0.2s;
