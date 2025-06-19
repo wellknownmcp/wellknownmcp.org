@@ -1,7 +1,9 @@
-// ExportToLLMButton.tsx - Version finale optimisée
+// ExportToLLMButton.tsx - Version finale optimisée AVEC className ET analytics
 'use client'
+
 import { useState, useEffect } from 'react'
 import { BrainCircuit, Copy, Shield, Lock, Package, Loader, Terminal, ExternalLink, Check, Eye, AlertCircle } from 'lucide-react'
+import { useWellKnownMCPAnalytics } from '@/lib/hooks/useWellKnownMCPAnalytics'
 
 // ✅ TYPES ÉTENDUS (100% backward compatible)
 interface ExportToLLMButtonProps {
@@ -23,6 +25,7 @@ interface ExportToLLMButtonProps {
   showLastUpdated?: boolean
   showPreview?: boolean
   customLabel?: string
+  className?: string  // 🆕 AJOUT CLASSNAME
   enableCache?: boolean
   enableAnalytics?: boolean
   onSuccess?: (feed: any, metadata: { size: number, signatureStatus: string }) => void
@@ -166,12 +169,25 @@ export function ExportToLLMButton({
   showLastUpdated = false,
   showPreview = false,
   customLabel,
+  className,  // 🆕 AJOUT CLASSNAME
   enableCache = true,
-  enableAnalytics = false,
+  enableAnalytics = true,  // 🚀 ANALYTICS ENABLED BY DEFAULT
   onSuccess,
   onError,
   maxRetries = 3,
 }: ExportToLLMButtonProps) {
+  
+  // 🚀 ANALYTICS HOOK INTEGRATION
+  const {
+    trackToolUsage,
+    trackFeedTypeInterest,
+    trackAgentBehavior,
+    trackDirectAPIAccess,
+    trackFeedAccess,
+    trackCopyCode,
+    trackEvent,
+    detectAgentType
+  } = useWellKnownMCPAnalytics()
   
   // ✅ STATES (étendus mais compatibles)
   const [signatureStatus, setSignatureStatus] = useState<'none' | 'signed' | 'certified'>('none')
@@ -195,8 +211,17 @@ export function ExportToLLMButton({
     return 'default'
   }
 
-  // ✅ STYLE VARIANTS (backward compatible)
+  // ✅ STYLE VARIANTS (backward compatible AVEC className override)
   const getButtonStyles = (): string => {
+    // 🚀 SI className EST FOURNIE, ON L'UTILISE DIRECTEMENT
+    if (className) {
+      const baseStyles = `relative inline-flex items-center justify-center transition-all duration-200 ${
+        loading ? 'animate-pulse opacity-60 cursor-wait' : 'cursor-pointer'
+      }`
+      return `${baseStyles} ${className}`
+    }
+    
+    // SINON, comportement normal avec variants
     const resolvedVariant = getResolvedVariant()
     const baseStyles = `relative inline-flex items-center justify-center transition-all duration-200 ${
       loading ? 'animate-pulse opacity-60 cursor-wait' : 'cursor-pointer'
@@ -266,28 +291,56 @@ export function ExportToLLMButton({
     return data
   }
 
-  // ✅ ANALYTICS (nouveau, optionnel)
-  const trackEvent = (action: string, success: boolean, metadata?: any) => {
+  // ✅ ANALYTICS (intégration avec hook wellknownmcp)
+  const trackAnalytics = (action: string, success: boolean, metadata?: any) => {
     if (!enableAnalytics) return
     
     try {
-      // Custom event pour intégration analytics
-      if (typeof window !== 'undefined') {
-        window.dispatchEvent(new CustomEvent('llmfeed-analytics', {
-          detail: { action, success, context, metadata, timestamp: Date.now() }
-        }))
+      // Track général
+      trackEvent(`ExportButton ${action}`, {
+        context,
+        success,
+        ...metadata
+      })
+      
+      // Track spécifique selon l'action
+      switch (action) {
+        case 'export_started':
+          trackToolUsage('export_button', 'export_started', true)
+          trackFeedTypeInterest(context, 'export_attempt')
+          break
+          
+        case 'export_completed':
+          trackToolUsage('export_button', 'export_completed', success)
+          trackFeedTypeInterest(context, success ? 'export_success' : 'export_failed')
+          
+          // Track agent behavior si détecté
+          const agentInfo = detectAgentType()
+          if (agentInfo) {
+            trackAgentBehavior(['structured_data_preference'], 'ai_agent')
+          }
+          break
+          
+        case 'clipboard_copy':
+          trackCopyCode(context)
+          trackToolUsage('export_button', 'clipboard', success)
+          break
+          
+        case 'preview_opened':
+          trackToolUsage('export_button', 'preview', success)
+          trackFeedTypeInterest(context, 'preview_viewed')
+          break
+          
+        case 'curl_copied':
+          trackToolUsage('export_button', 'curl_command', success)
+          trackAgentBehavior(['curl_like_patterns'], 'developer')
+          break
+          
+        case 'direct_url_accessed':
+          trackDirectAPIAccess(getDirectUrl(), 'GET')
+          break
       }
       
-      // Google Analytics si disponible
-      if (typeof window !== 'undefined' && 'gtag' in window) {
-        // @ts-ignore
-        window.gtag('event', action, {
-          event_category: 'llmfeed_export',
-          event_label: context,
-          value: success ? 1 : 0,
-          ...metadata
-        })
-      }
     } catch (error) {
       console.warn('Analytics tracking failed:', error)
     }
@@ -316,7 +369,7 @@ export function ExportToLLMButton({
       
       // Max retries reached
       setRetryCount(0)
-      trackEvent('export_error', false, { operation, error: error.message })
+      trackAnalytics('export_error', false, { operation, error: error.message })
       
       if (onError) {
         onError(error as Error, { operation, retryCount: currentRetry })
@@ -341,7 +394,7 @@ export function ExportToLLMButton({
         setTimeout(() => setCopied(false), 2000)
       }
       
-      trackEvent('clipboard_copy', true, { type, size: content.length })
+      trackAnalytics('clipboard_copy', true, { type, size: content.length })
       
       // Custom event pour feedback UI
       if (typeof window !== 'undefined') {
@@ -352,12 +405,15 @@ export function ExportToLLMButton({
       
     } catch (err) {
       console.error('Clipboard failed:', err)
-      trackEvent('clipboard_copy', false, { type, error: err.message })
+      trackAnalytics('clipboard_copy', false, { type, error: err.message })
       throw err
     }
   }
 
-  const copyCurlCommand = () => copyToClipboard(getCurlCommand(), 'curl')
+  const copyCurlCommand = () => {
+    copyToClipboard(getCurlCommand(), 'curl')
+    trackAnalytics('curl_copied', true, { command: getCurlCommand().substring(0, 50) })
+  }
 
   // ✅ PREVIEW FUNCTION (nouvelle)
   const handlePreview = async () => {
@@ -369,10 +425,10 @@ export function ExportToLLMButton({
       const feed = await getCachedFeed(url)
       setPreviewData(feed)
       setShowPreviewModal(true)
-      trackEvent('preview_opened', true)
+      trackAnalytics('preview_opened', true)
     } catch (error) {
       console.error('Preview failed:', error)
-      trackEvent('preview_opened', false, { error: error.message })
+      trackAnalytics('preview_opened', false, { error: error.message })
     } finally {
       setLoading(false)
     }
@@ -388,7 +444,7 @@ export function ExportToLLMButton({
     setLoading(true)
     
     const operation = `export_${context}`
-    trackEvent('export_started', true, { context, clipboard, mini })
+    trackAnalytics('export_started', true, { context, clipboard, mini })
 
     await handleWithRetry(async () => {
       let html = document.documentElement.outerHTML
@@ -415,7 +471,7 @@ export function ExportToLLMButton({
 
         if (clipboard) {
           await copyToClipboard(JSON.stringify(feed, null, 2))
-          trackEvent('export_completed', true, { context, clipboard: true, size })
+          trackAnalytics('export_completed', true, { context, clipboard: true, size })
           onSuccess?.(feed, { size, signatureStatus: extractSignatureStatus(feed) })
           return
         }
@@ -426,7 +482,7 @@ export function ExportToLLMButton({
         const url = URL.createObjectURL(blob)
         window.open(url, '_blank')
         
-        trackEvent('export_completed', true, { context, size })
+        trackAnalytics('export_completed', true, { context, size })
         onSuccess?.(feed, { size, signatureStatus: extractSignatureStatus(feed) })
         return
       }
@@ -438,12 +494,13 @@ export function ExportToLLMButton({
           const feed = await getCachedFeed(`https://wellknownmcp.org${path}`)
           await copyToClipboard(JSON.stringify(feed, null, 2))
           
-          trackEvent('export_completed', true, { context, clipboard: true, size: feedSize })
+          trackAnalytics('export_completed', true, { context, clipboard: true, size: feedSize })
           onSuccess?.(feed, { size: feedSize, signatureStatus: extractSignatureStatus(feed) })
           return
         }
 
         window.open(path, '_blank')
+        trackAnalytics('direct_url_accessed', true, { url: path })
 
         if (showSignatureStatus) {
           const feed = await getCachedFeed(`https://wellknownmcp.org${path}`)
@@ -453,7 +510,7 @@ export function ExportToLLMButton({
           onSuccess?.(feed, { size: feedSize, signatureStatus: status })
         }
 
-        trackEvent('export_completed', true, { context })
+        trackAnalytics('export_completed', true, { context })
         return
       }
 
@@ -482,7 +539,7 @@ export function ExportToLLMButton({
 
         if (clipboard) {
           await copyToClipboard(JSON.stringify(feed, null, 2))
-          trackEvent('export_completed', true, { context, clipboard: true, size })
+          trackAnalytics('export_completed', true, { context, clipboard: true, size })
           onSuccess?.(feed, { size, signatureStatus: extractSignatureStatus(feed) })
           return
         }
@@ -493,7 +550,7 @@ export function ExportToLLMButton({
         const url = URL.createObjectURL(blob)
         window.open(url, '_blank')
         
-        trackEvent('export_completed', true, { context, size })
+        trackAnalytics('export_completed', true, { context, size })
         onSuccess?.(feed, { size, signatureStatus: extractSignatureStatus(feed) })
         return
       }
@@ -501,7 +558,7 @@ export function ExportToLLMButton({
       if (context === 'zip') {
         const zipPath = staticPath ? staticPath.replace(/\.zip$/, '') : 'default'
         window.open(`/exports/${zipPath}.zip`, '_blank')
-        trackEvent('export_completed', true, { context, format: 'zip' })
+        trackAnalytics('export_completed', true, { context, format: 'zip' })
         return
       }
     }, operation)
@@ -549,6 +606,20 @@ export function ExportToLLMButton({
       fetchMetadata()
     }
   }, [context, staticPath, showFeedSize, showLastUpdated, enableCache])
+
+  // 🚀 AUTO-TRACK FEED ACCESS (nouveau)
+  useEffect(() => {
+    if (enableAnalytics && context === 'static' && staticPath) {
+      // Track que ce feed est disponible/affiché
+      trackFeedAccess(staticPath)
+      trackAnalytics('feed_button_displayed', true, { 
+        feed_path: staticPath,
+        context,
+        has_signature_status: showSignatureStatus,
+        has_preview: showPreview
+      })
+    }
+  }, [staticPath, context, enableAnalytics])
 
   // ✅ TOOLTIP CONTENT (étendu)
   const getTooltipPosition = () => {

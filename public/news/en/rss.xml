@@ -4,11 +4,88 @@
         <title>News (en) - WellKnownMCP</title>
         <link>https://wellknownmcp.org/en/news/</link>
         <description>Agentic Web News</description>
-        <lastBuildDate>Wed, 18 Jun 2025 08:51:35 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Jun 2025 18:53:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>© 2025 WellKnownMCP</copyright>
+        <item>
+            <title><![CDATA[Apple Intelligence: Technical Analysis of Agent Architecture and Web Integration Implications]]></title>
+            <link>https://wellknownmcp.org/en/news/2025-06-07-apple-intelligence-agentic-web</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-06-07-apple-intelligence-agentic-web</guid>
+            <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Technical analysis of Apple Intelligence architecture, its agent-like capabilities, and implications for open web protocols like LLMFeed and MCP.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[From Chatbots to Autonomous Agents: Complete Evolution Analysis 2025]]></title>
+            <link>https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents</guid>
+            <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[The transformation from simple chatbots to autonomous AI agents is reshaping the web. Discover the frameworks, capabilities, and standards driving this evolution toward true artificial intelligence.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[AI-First Browsers: Complete Analysis & Agentic Navigation Revolution 2025]]></title>
+            <link>https://wellknownmcp.org/en/news/ai-first-browsers-agentic-navigation</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/ai-first-browsers-agentic-navigation</guid>
+            <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Comprehensive analysis of AI-first browsers like Arc Search, Brave AI, and Opera AI. How agentic navigation transforms web browsing and why MCP/LLMFeed standards are crucial for the future.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Claude Sonnet 4, MCP Clients, and How LLMFeed Bridges the Web Gap]]></title>
+            <link>https://wellknownmcp.org/en/news/claude-mcp-llmfeed-agent-adaptive-web</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/claude-mcp-llmfeed-agent-adaptive-web</guid>
+            <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[How Claude Sonnet 4's web browsing works with Anthropic's MCP ecosystem, session token limitations, and why LLMFeed provides critical efficiency gains for web-scale agent interaction.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[❓ Comprehensive FAQ — MCP & LLMFeed]]></title>
+            <link>https://wellknownmcp.org/en/news/faq</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/faq</guid>
+            <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Complete guide to understanding MCP, LLMFeed, trust, implementation, validation tools, and the agentic web ecosystem. Updated with latest developments.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[How ChatGPT Browses the Internet: What You Need to Know (2025)]]></title>
+            <link>https://wellknownmcp.org/en/news/how-llms-crawl-web-2025-agentic-seo-guide</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/how-llms-crawl-web-2025-agentic-seo-guide</guid>
+            <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Discover how ChatGPT, Claude, and other AI actually browse websites, why they sometimes get things wrong, and the simple fix that's changing everything.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[The Complete Guide to MCP & LLMFeed: Building the Agent-Ready Web in 2025]]></title>
+            <link>https://wellknownmcp.org/en/news/mcp-web-upgrade-guide-2025</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/mcp-web-upgrade-guide-2025</guid>
+            <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Why 2025 is the year AI agents need structured web interfaces. Complete guide to MCP, LLMFeed, trust infrastructure, and real-world use cases for the autonomous agent economy.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Meta Open Agents: Complete Analysis & Agentic Web Implications 2025]]></title>
+            <link>https://wellknownmcp.org/en/news/meta-open-agents-agentic-web-analysis</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/meta-open-agents-agentic-web-analysis</guid>
+            <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Comprehensive analysis of Meta s Open Agents initiative, technical, architecture, enterprise implications, and comparison with open standards like LLMFeed. Strategic guide for the agentic web ecosystem.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Microsoft NLWeb vs Agentic Web Standards: Complete Technical Analysis 2025]]></title>
+            <link>https://wellknownmcp.org/en/news/microsoft-nlweb-protocol</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/microsoft-nlweb-protocol</guid>
+            <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA["Comprehensive technical analysis of Microsoft NLWeb protocol, MCP integration, enterprise adoption, and comparison with emerging agentic web standards like LLMFeed. Expert guide for developers and architects."]]></description>
+        </item>
+        <item>
+            <title><![CDATA[The Uncomfortable Truth: AI Agents Are Blind to Your Website's Intent]]></title>
+            <link>https://wellknownmcp.org/en/news/why-chatgpt-cant-read</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/why-chatgpt-cant-read</guid>
+            <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Discover why AI agents like ChatGPT and Claude can't understand your website, and learn how to implement LLMFeed to fix this fundamental disconnect.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Why Sign MCP Feeds? The Trust Crisis Blocking AI Agent Adoption in 2025]]></title>
+            <link>https://wellknownmcp.org/en/news/why-sign-and-certify-mcp</link>
+            <guid isPermaLink="false">https://wellknownmcp.org/en/news/why-sign-and-certify-mcp</guid>
+            <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Why cryptographic signatures are essential for AI agent security, enterprise adoption, and the autonomous web. Complete guide to MCP trust infrastructure, LLMCA certification, and regulatory compliance.]]></description>
+        </item>
         <item>
             <title><![CDATA[🗺️ The Case for .well-known/llm-index.llmfeed.json]]></title>
             <link>https://wellknownmcp.org/en/news/llm-index-case</link>
@@ -52,20 +129,6 @@
             <description><![CDATA[Discover how LLMFeed solves context loss between ChatGPT, Claude, and other AI tools. Learn to maintain conversation continuity and boost AI productivity with portable session management.]]></description>
         </item>
         <item>
-            <title><![CDATA[Microsoft NLWeb and LLMFeed: Complementary Standards for the Agentic Web]]></title>
-            <link>https://wellknownmcp.org/en/news/2025-07-05-microsoft-nlweb-protocol</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-07-05-microsoft-nlweb-protocol</guid>
-            <pubDate>Tue, 10 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Comprehensive technical analysis of Microsoft's NLWeb protocol and LLMFeed specification, their synergies, architectural differences, and combined role in building the future Agentic Web infrastructure.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[How Major LLMs Crawl the Web in 2025: The Complete Guide to AI Crawler Optimization and Agentic SEO]]></title>
-            <link>https://wellknownmcp.org/en/news/how-llms-crawl-web-2025-agentic-seo-guide</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/how-llms-crawl-web-2025-agentic-seo-guide</guid>
-            <pubDate>Tue, 10 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Discover how ChatGPT, Claude, Grok crawl the web, plus how LLMFeed revolutionizes AI optimization beyond traditional SEO for the Agentic Web.]]></description>
-        </item>
-        <item>
             <title><![CDATA[launch-newstack]]></title>
             <link>https://wellknownmcp.org/en/news/launch-newstack</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/launch-newstack</guid>
@@ -100,32 +163,11 @@
             <description><![CDATA[As GPTBot and other intelligent crawlers emerge, the Model Context Protocol offers a structured, verifiable, and LLM-friendly alternative to traditional HTML parsing.]]></description>
         </item>
         <item>
-            <title><![CDATA[Why ChatGPT Can't Read Your Site (And How to Fix It in 5 Minutes)]]></title>
-            <link>https://wellknownmcp.org/en/news/why-chatgpt-cant-read</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/why-chatgpt-cant-read</guid>
-            <pubDate>Tue, 10 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Discover why AI agents like ChatGPT and Claude can't understand your website, and learn how to fix it in 5 minutes using the Model Context Protocol (MCP) with step-by-step implementation guides.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[From Chatbots to Autonomous Agents: The Web’s Next Evolution]]></title>
-            <link>https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents</guid>
-            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[The web is evolving from chatbots to true autonomous agents. What does this mean for web architecture — and how does MCP fit in?]]></description>
-        </item>
-        <item>
             <title><![CDATA[🔬 Comprehensive Technical Analysis: LLMFeed/MCP and the Evolution of the Agentic Web]]></title>
             <link>https://wellknownmcp.org/en/news/claude-mcp-agentic-web</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/claude-mcp-agentic-web</guid>
             <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Comprehensive Technical Analysis: LLMFeed/MCP and the Evolution of the Agentic Web By Claude 4, Anthropic]]></description>
-        </item>
-        <item>
-            <title><![CDATA[❓ Comprehensive FAQ — MCP & LLMFeed]]></title>
-            <link>https://wellknownmcp.org/en/news/faq</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/faq</guid>
-            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Complete guide to understanding MCP, LLMFeed, trust, implementation, and the agentic web ecosystem.]]></description>
         </item>
         <item>
             <title><![CDATA[🔬 From MCP to LLMFeed: Why We Created a New Specification]]></title>
@@ -184,34 +226,6 @@
             <description><![CDATA[Why Asia is poised to lead the Agentic Web — and how MCP can help build an open, interoperable ecosystem for LLM-powered agents in China, Korea, Japan and beyond.]]></description>
         </item>
         <item>
-            <title><![CDATA[Why Sign & Certify MCP Feeds?]]></title>
-            <link>https://wellknownmcp.org/en/news/why-sign-and-certify-mcp</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/why-sign-and-certify-mcp</guid>
-            <pubDate>Mon, 02 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Why signing and certification are key to building trust in the Agentic Web. Learn why each feed type should be signed and how certification — including delegated signatures — adds trust.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Apple Intelligence: A New Player in the Agentic Web?]]></title>
-            <link>https://wellknownmcp.org/en/news/2025-06-07-apple-intelligence-agentic-web</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-06-07-apple-intelligence-agentic-web</guid>
-            <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Apple’s entry into AI-driven agents could reshape the emerging Agentic Web landscape. What does it mean for standards like llmfeed mcp?]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Meta’s Open Agents: Opportunity or Challenge for MCP?]]></title>
-            <link>https://wellknownmcp.org/en/news/2025-06-14-meta-open-agents-mcp</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-06-14-meta-open-agents-mcp</guid>
-            <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Meta announces its Open Agents initiative. How does it align with MCP and the vision of an interoperable Agentic Web?]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Claude 4.5 and the New Wave of LLM Crawling]]></title>
-            <link>https://wellknownmcp.org/en/news/2025-06-21-claude-4-5-llms-crawling</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-06-21-claude-4-5-llms-crawling</guid>
-            <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[As Claude 4.5 rolls out with enhanced browsing capabilities, what are the implications for the Agentic Web and standards like MCP?]]></description>
-        </item>
-        <item>
             <title><![CDATA[LLM SEO vs MCP: Competing or Complementary Visions?]]></title>
             <link>https://wellknownmcp.org/en/news/2025-06-28-llm-seo-vs-mcp</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-06-28-llm-seo-vs-mcp</guid>
@@ -224,13 +238,6 @@
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-07-19-certifying-agentic-interaction-seo</guid>
             <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[As the Agentic Web emerges, trust and certification are becoming key. Could certifying agentic interactions become the new SEO?]]></description>
-        </item>
-        <item>
-            <title><![CDATA[AI-First Browsers: Redefining Agentic Navigation]]></title>
-            <link>https://wellknownmcp.org/en/news/2025-07-26-ai-first-browsers-agentic-navigation</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/2025-07-26-ai-first-browsers-agentic-navigation</guid>
-            <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[A new wave of AI-first browsers is emerging. What does this mean for web  navigation — and how does MCP enable it?]]></description>
         </item>
         <item>
             <title><![CDATA[🚨 The AI Agent Trust Crisis  A $50B Problem]]></title>
@@ -285,13 +292,6 @@
             <pubDate>Sun, 25 May 2025 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[✅ How LLMCA Certifies a Feed]]></title>
-            <link>https://wellknownmcp.org/en/news/llmca-certification</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/llmca-certification</guid>
-            <pubDate>Sun, 25 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Understanding the logic, levels, and process of feed certification.]]></description>
-        </item>
-        <item>
             <title><![CDATA[🛰️ The Case for .well-known/mcp.llmfeed.json]]></title>
             <link>https://wellknownmcp.org/en/news/mcp-wellknown</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/mcp-wellknown</guid>
@@ -310,13 +310,6 @@
             <link>https://wellknownmcp.org/en/news/claude-alignment</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/claude-alignment</guid>
             <pubDate>Sat, 24 May 2025 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Signature vs Certification: What’s the Difference?]]></title>
-            <link>https://wellknownmcp.org/en/news/certification-guide</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/certification-guide</guid>
-            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Understanding trust levels in LLMFeed and how to make your content verifiable.]]></description>
         </item>
         <item>
             <title><![CDATA[Launching wellknownmcp.org — Make your site LLM-readable, verifiable and actionable]]></title>
@@ -347,13 +340,6 @@
             <description><![CDATA[Launch communication draft for wellknownmcp.org with proactive messaging and higher clarity]]></description>
         </item>
         <item>
-            <title><![CDATA[The Anatomy of a LLMFeed — Block by Block]]></title>
-            <link>https://wellknownmcp.org/en/news/llmfeed-block-structure</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/llmfeed-block-structure</guid>
-            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Understand how each block of a .llmfeed.json works, and how to design your own feed.]]></description>
-        </item>
-        <item>
             <title><![CDATA[📢 Let’s Stop Scraping. Let’s Start Declaring.]]></title>
             <link>https://wellknownmcp.org/en/news/opinion-stop-scraping</link>
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/opinion-stop-scraping</guid>
@@ -366,20 +352,6 @@
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/thread-wellknownmcp</guid>
             <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Launch communication draft for wellknownmcp.org: 🧵 Thread X — Launching wellknownmcp.org]]></description>
-        </item>
-        <item>
-            <title><![CDATA[What Can You Build With MCP? Real-World Use Cases]]></title>
-            <link>https://wellknownmcp.org/en/news/use-cases-mcp</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/use-cases-mcp</guid>
-            <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[From health to SaaS, here are concrete examples of how MCP and LLMFeed can be used.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[How Agents Understand You — MCP Explained]]></title>
-            <link>https://wellknownmcp.org/en/news/mcp-explained</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/mcp-explained</guid>
-            <pubDate>Fri, 16 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Learn how MCP helps agents interpret your services, structure and intent — without prompt guessing.]]></description>
         </item>
         <item>
             <title><![CDATA[🔬 From SEO to AIO: The $600B Research Opportunity]]></title>
@@ -401,13 +373,6 @@
             <guid isPermaLink="false">https://wellknownmcp.org/en/news/begin</guid>
             <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[A simple guide to help you understand MCP and LLMFeed — the missing bridge between your intent and agent understanding.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Why Llmfeed?]]></title>
-            <link>https://wellknownmcp.org/en/news/why-mcp</link>
-            <guid isPermaLink="false">https://wellknownmcp.org/en/news/why-mcp</guid>
-            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Explaining the rationale behind adopting the Model Context Protocol (MCP) standard.]]></description>
         </item>
     </channel>
 </rss>

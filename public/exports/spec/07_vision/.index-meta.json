@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-06-18T08:58:05.545Z",
-  "content_hash": "6f06510a44768baca0cce7af34fe55e2",
+  "generated_at": "2025-06-19T18:59:24.218Z",
+  "content_hash": "4019d2fe8c502749d1c243462e0c937f",
   "file_stats": [
     {
       "path": ".index-meta.json",
       "size": 855,
-      "mtime": 1750194209793
+      "mtime": 1750358644679
     },
     {
       "path": "enterprise-security-roadmap.md",

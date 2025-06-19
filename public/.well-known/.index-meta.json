@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-06-18T08:58:04.638Z",
-  "content_hash": "542f5cecf128afd77af60d132b93d15c",
+  "generated_at": "2025-06-19T18:59:23.767Z",
+  "content_hash": "4eed3ece2a04bc86e331a8b2a628de72",
   "file_stats": [
     {
       "path": ".index-meta.json",
       "size": 2809,
-      "mtime": 1750194209185
+      "mtime": 1750358641890
     },
     {
       "path": "agent-behavior.llmfeed.json",
@@ -19,8 +19,8 @@
     },
     {
       "path": "exports/compiled-site.llmfeed.json",
-      "size": 287670,
-      "mtime": 1750194217787
+      "size": 572584,
+      "mtime": 1750358657346
     },
     {
       "path": "exports/manifesto.llmfeed.json",
@@ -29,8 +29,8 @@
     },
     {
       "path": "exports/news-export.llmfeed.json",
-      "size": 505460,
-      "mtime": 1750236695221
+      "size": 594537,
+      "mtime": 1750359236380
     },
     {
       "path": "exports/spec.llmfeed.json",
@@ -39,8 +39,8 @@
     },
     {
       "path": "llm-index.llmfeed.json",
-      "size": 42994,
-      "mtime": 1750194219853
+      "size": 40482,
+      "mtime": 1750358662339
     },
     {
       "path": "manifesto.llmfeed.json",

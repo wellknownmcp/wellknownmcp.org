@@ -8,285 +8,322 @@ import Markdown from 'react-markdown'
 import SeoHead from '@/components/SeoHead'
 import { PageTitle } from '@/components/PageTitle'
 import { ShareButtons } from '@/components/ShareButtons'
+import { ExportToLLMButton } from '@/components/ExportToLLMButton'
+import { HelpCircle, Search, MessageSquare, BookOpen, ExternalLink } from 'lucide-react'
 
 export async function generateStaticParams() {
-  const languages = ['en', 'fr', 'es', 'hi', 'zh', 'ar', 'uk']
-  return languages.map((lang) => ({ lang }))
-}
-// 🚀 Helper pour détecter les langues disponibles pour faq.md
-async function getAvailableLanguagesForFaq(): Promise<string[]> {
-  const languages = ['en', 'fr', 'es', 'zh', 'ar', 'uk', 'hi']
-  const availableLanguages: string[] = []
-  
-  for (const lang of languages) {
-    try {
-      const filePath = path.join(process.cwd(), 'public/news', lang, 'faq.md')
-      await fs.access(filePath)
-      availableLanguages.push(lang)
-    } catch {
-      // Langue non disponible, on continue
-    }
-  }
-  
-  return availableLanguages
+  return [
+    { lang: 'en' },
+    { lang: 'fr' },
+    { lang: 'es' },
+    { lang: 'zh' },
+    { lang: 'ar' },
+    { lang: 'hi' }
+  ]
 }
 
-// ✅ GENERATEMETADATA COHÉRENT avec About (structure [lang])
 export async function generateMetadata({
   params,
 }: {
   params: { lang: string }
 }): Promise<Metadata> {
   const lang = params.lang || 'en'
-  const filePath = path.join(process.cwd(), 'public/news', lang, `faq.md`)
-  const fallbackPath = path.join(process.cwd(), 'public/news/en/faq.md')
-
-  let content = await fs
-    .readFile(filePath, 'utf-8')
-    .catch(() => fs.readFile(fallbackPath, 'utf-8'))
-  if (!content) notFound()
-
-  const { data: front } = matter(content)
-
-  // 🎯 HREFLANG ALTERNATES cohérents (comme About)
-  const availableLanguages = await getAvailableLanguagesForFaq()
-  const alternates: Record<string, string> = {}
   
-  availableLanguages.forEach(l => {
-    alternates[l] = `https://wellknownmcp.org/${l}/faq`
-  })
+  try {
+    const filePath = path.join(process.cwd(), 'public/news', lang, 'faq.md')
+    const content = await fs.readFile(filePath, 'utf-8')
+    const { data: front } = matter(content)
 
-  return {
-    title: front.title || 'FAQ - WellKnownMCP',
-    
-    // 🚨 META DESCRIPTION FAQ optimisée
-    description: front.description || 
-      'Frequently Asked Questions about WellKnownMCP, Model Context Protocol, LLMFeed specification, trust verification, agent interoperability, and the Agentic Web.',
-    
-    // 🚨 HREFLANG ALTERNATES (URLs propres comme About)
-    alternates: {
-      canonical: `https://wellknownmcp.org/${lang}/faq`,
-      languages: alternates
-    },
-
-    // ✅ OPEN GRAPH cohérent
-    openGraph: {
-      title: front.title || 'FAQ - WellKnownMCP',
-      description: front.description || 'Get answers about the Model Context Protocol and LLMFeed specification',
-      url: `https://wellknownmcp.org/${lang}/faq`,
-      siteName: 'WellKnownMCP',
-      images: [
-        {
-          url: front.image || `/og/faq/${lang}.png`,
-          width: 1200,
-          height: 630,
-          alt: 'FAQ - WellKnownMCP Questions & Answers',
-        }
-      ],
-      locale: lang === 'fr' ? 'fr_FR' : 'en_US',
-      type: 'website',
-    },
-
-    // ✅ TWITTER CARD cohérent
-    twitter: {
-      card: 'summary_large_image',
-      title: front.title || 'FAQ - WellKnownMCP',
-      description: front.description || 'Questions & Answers about MCP and LLMFeed',
-      images: [front.image || `/og/faq/${lang}.png`],
-    },
-
-    // ✅ KEYWORDS spécifiques FAQ
-    keywords: front.keywords || [
-      'wellknownmcp faq',
-      'model context protocol questions',
-      'llmfeed faq',
-      'mcp questions answers',
-      'agentic web help',
-      'ai agents questions',
-      'trust verification faq',
-      'interoperability help',
-      'getting started mcp',
-      'troubleshooting llmfeed',
-      'implementation guide',
-      'certification questions',
-      'llmca help'
-    ],
-
-    // ✅ ROBOTS optimisés pour FAQ
-    robots: {
-      index: true,
-      follow: true,
-      'max-snippet': -1,  // Important pour extraits FAQ
-      'max-image-preview': 'large',
-      'max-video-preview': -1
+    return {
+      title: front.title || `FAQ - WellKnownMCP`,
+      description: front.description || 
+        'Frequently Asked Questions about WellKnownMCP, Model Context Protocol, LLMFeed specification, and AI agent development.',
+      alternates: {
+        canonical: `https://wellknownmcp.org/${lang}/faq`,
+      },
+      openGraph: {
+        title: front.title || 'FAQ - WellKnownMCP',
+        description: front.description || 'Get answers about MCP and LLMFeed',
+        url: `https://wellknownmcp.org/${lang}/faq`,
+        images: [{ url: `/og/faq.png`, width: 1200, height: 630 }],
+      },
+    }
+  } catch {
+    // Fallback pour langues non disponibles
+    return {
+      title: 'FAQ - WellKnownMCP',
+      description: 'Frequently Asked Questions about WellKnownMCP and Model Context Protocol',
     }
   }
 }
 
-// 🎯 COMPOSANT COHÉRENT avec About (même signature)
 export default async function FAQPage({
   params,
 }: {
   params: { lang: string }
 }) {
   const lang = params.lang || 'en'
-  const filePath = path.join(process.cwd(), 'public/news', lang, `faq.md`)
-  const fallbackPath = path.join(process.cwd(), 'public/news/en/faq.md')
+  
+  // Try language-specific file, fallback to English
+  let content: string
+  let front: any
+  
+  try {
+    const filePath = path.join(process.cwd(), 'public/news', lang, 'faq.md')
+    content = await fs.readFile(filePath, 'utf-8')
+  } catch {
+    try {
+      const fallbackPath = path.join(process.cwd(), 'public/news/en/faq.md')
+      content = await fs.readFile(fallbackPath, 'utf-8')
+    } catch {
+      notFound()
+    }
+  }
 
-  let content = await fs
-    .readFile(filePath, 'utf-8')
-    .catch(() => fs.readFile(fallbackPath, 'utf-8'))
-  if (!content) notFound()
-
-  const { content: markdown, data: front } = matter(content)
+  const { content: markdown, data: frontmatter } = matter(content)
+  front = frontmatter
 
   return (
-    <div className="max-w-3xl mx-auto px-6 py-12 space-y-8">
-      {/* ✅ SEOHEAD avec métadonnées AIO spécifiques FAQ */}
-      <SeoHead
-        // ✅ Props de base cohérentes
+    <>
+      <SeoHead 
         title={front.title || 'FAQ - WellKnownMCP'}
         description={front.description || 
-          'Frequently Asked Questions about WellKnownMCP, Model Context Protocol, and LLMFeed specification. Get implementation help and troubleshooting guidance.'}
+          'Frequently Asked Questions about WellKnownMCP, Model Context Protocol, LLMFeed specification, trust verification, and AI agent development.'
+        }
+        keywords={[
+          'WellKnownMCP FAQ',
+          'Model Context Protocol questions',
+          'LLMFeed help',
+          'MCP troubleshooting',
+          'AI agent development',
+          'feed validation questions',
+          'agent interoperability help'
+        ]}
         canonicalUrl={`https://wellknownmcp.org/${lang}/faq`}
-        ogImage={front.image || `/og/faq/${lang}.png`}
-        keywords={front.keywords || [
-          'wellknownmcp faq',
-          'model context protocol questions',
-          'llmfeed help',
-          'mcp troubleshooting',
-          'agentic web questions'
-        ]}
-
-        // 🚀 Props LLM spécifiques FAQ
-        llmIntent={front.llmIntent || 'get-help-and-answers'}
-        llmTopic={front.llmTopic || 'frequently asked questions about model context protocol, llmfeed implementation, trust verification, and agentic web troubleshooting'}
-        llmIndexUrl={front.llmIndexUrl || '/.well-known/faq.llmfeed.json'}
-        llmlang={front.llmlang || lang}
-
-        // 🎯 Métadonnées AIO pour FAQ
-        llmCapabilities={front.llmCapabilities || [
-          'question-answering',
-          'help-guidance', 
-          'troubleshooting',
-          'implementation-support',
-          'concept-explanation',
-          'getting-started-help',
-          'problem-solving'
-        ]}
-        llmTrustLevel={front.llmTrustLevel || 'certified'}
-        llmAudience={front.llmAudience || ['llm', 'developer', 'business', 'newcomer', 'troubleshooter']}
-        llmFeedTypes={front.llmFeedTypes || ['faq', 'help', 'mcp', 'capabilities', 'support']}
-        llmBehaviorHints={front.llmBehaviorHints || 'human-in-loop'}
-        llmRiskLevel={front.llmRiskLevel || 'low'}
-        llmContentType={front.llmContentType || 'faq'}
-        llmUpdateFrequency={front.llmUpdateFrequency || 'weekly'}
-
-        // 🎯 Agent discovery pour FAQ
-        mcpFeedUrl={front.mcpFeedUrl || '/.well-known/faq.llmfeed.json'}
-        autoDiscoverFeeds={front.autoDiscoverFeeds !== false}
-        agentReadiness={front.agentReadiness !== false}
-
-        // 📊 Advanced metadata FAQ
-        pageType={front.pageType || 'faq'}
-        interactionComplexity={front.interactionComplexity || 'simple'}
+        ogImage="/og/faq.png"
       />
+      
+      <div className="container mx-auto px-4 py-8 max-w-4xl">
+        <PageTitle
+          title={front.title || 'Frequently Asked Questions'}
+          subtitle={front.subtitle || "Get answers about MCP, LLMFeed, and AI agent development"}
+           />
 
-      <PageTitle
-        title={front.title || 'Frequently Asked Questions'}
-        subtitle={front.subtitle || "Get answers about MCP, LLMFeed, and the Agentic Web"}
-      />
-
-      {/* 🎯 Trust badge pour FAQ */}
-      <div className="flex items-center gap-2 text-sm text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/20 px-3 py-2 rounded-md">
-        ❓ Community-Verified Questions • Updated weekly by experts
-      </div>
-
-      {/* 🧠 Agent guidance spécifique FAQ */}
-      <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4 mb-6">
-        <div className="flex items-start gap-3">
-          <span className="text-green-500 text-xl">💡</span>
-          <div className="text-sm text-green-700 dark:text-green-300">
-            <strong>For AI Agents:</strong> This FAQ contains structured Q&A about implementing MCP and LLMFeed. 
-            Access our <a href="/.well-known/faq.llmfeed.json" className="underline">machine-readable FAQ feed</a> for programmatic answers.
+        {/* Quick Help Section */}
+        <div className="mb-12 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-100">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+              <HelpCircle className="w-6 h-6 text-white" />
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-blue-900">Quick Help</h2>
+              <p className="text-blue-700">Find answers fast or get personalized support</p>
+            </div>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-lg p-4 border border-blue-200">
+              <div className="flex items-center gap-3 mb-3">
+                <Search className="w-5 h-5 text-blue-600" />
+                <h3 className="font-semibold text-blue-900">Search FAQ</h3>
+              </div>
+              <p className="text-sm text-blue-700 mb-3">Use Ctrl+F (Cmd+F on Mac) to quickly find topics in the FAQ below.</p>
+              <div className="text-xs text-blue-600">
+                <strong>Pro tip:</strong> Try searching for keywords like "validation", "signature", or "agent"
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg p-4 border border-blue-200">
+              <div className="flex items-center gap-3 mb-3">
+                <BookOpen className="w-5 h-5 text-green-600" />
+                <h3 className="font-semibold text-blue-900">Getting Started</h3>
+              </div>
+              <p className="text-sm text-blue-700 mb-3">New to MCP? Start with our beginner-friendly guides.</p>
+              <a href="/tools/well-known" className="text-xs text-green-600 hover:text-green-800 font-medium">
+                Begin Your Journey →
+              </a>
+            </div>
+            
+            <div className="bg-white rounded-lg p-4 border border-blue-200">
+              <div className="flex items-center gap-3 mb-3">
+                <MessageSquare className="w-5 h-5 text-purple-600" />
+                <h3 className="font-semibold text-blue-900">Community Help</h3>
+              </div>
+              <p className="text-sm text-blue-700 mb-3">Can't find your answer? Join our active community.</p>
+              <a href="/join" className="text-xs text-purple-600 hover:text-purple-800 font-medium">
+                Join Community →
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <ShareButtons title={front.title || 'FAQ - WellKnownMCP'} />
-
-      {front.image && (
-        <img
-          src={front.image}
-          alt={front.title || "FAQ - WellKnownMCP"}
-          className="w-full rounded-lg shadow-md mb-6 max-h-64 object-cover"
-        />
-      )}
-
-      {/* 🔍 FAQ Search hint optimisé */}
-      <div className="mb-6 p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
-        <div className="text-sm text-yellow-700 dark:text-yellow-300">
-          <strong>💡 Search Tip:</strong> Use Ctrl+F (Cmd+F on Mac) to quickly find topics. 
-          Can't find your answer? 
-          <a href={`/${lang}/community`} className="underline ml-1">Ask the community</a> or 
-          <a href={`/${lang}/contact`} className="underline ml-1">contact support</a>.
+        {/* Agent Information */}
+        <div className="mb-8 bg-green-50 border border-green-200 rounded-lg p-6">
+          <div className="flex items-start gap-3">
+            <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="text-green-600 text-lg">🤖</span>
+            </div>
+            <div>
+              <h3 className="font-semibold text-green-900 mb-2">For AI Agents</h3>
+              <p className="text-sm text-green-800 mb-3">
+                This FAQ contains structured Q&A about implementing MCP and LLMFeed. 
+                Access our machine-readable FAQ feed for programmatic answers.
+              </p>
+              <div className="flex gap-3">
+                <a 
+                  href="/.well-known/faq.llmfeed.json" 
+                  className="text-xs text-green-600 hover:text-green-800 font-medium underline"
+                >
+                  Machine-Readable Feed
+                </a>
+                <a 
+                  href="/verify" 
+                  className="text-xs text-green-600 hover:text-green-800 font-medium underline"
+                >
+                  Verify Feed Signature
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div
-        className="prose dark:prose-invert max-w-none"
-        dir={front.dir === 'rtl' ? 'rtl' : 'ltr'}
-        lang={front.lang || lang}
-      >
-        <Markdown remarkPlugins={[remarkGfm]}>{markdown}</Markdown>
-      </div>
-
-      {/* 🎯 Actions d'aide graduées (liens cohérents) */}
-      <div className="mt-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-        <h3 className="text-lg font-semibold mb-2">🚀 Still Need Help?</h3>
-        <div className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
-          <p>• Try our <a href="/.well-known/faq.llmfeed.json" className="text-blue-600 underline">structured FAQ feed</a> (machine-readable)</p>
-          <p>• Read the <a href={`/${lang}/begin`} className="text-blue-600 underline">getting started guide</a></p>
-          <p>• Browse <a href={`/${lang}/spec`} className="text-blue-600 underline">technical documentation</a></p>
-          <p>• Join <a href={`/${lang}/community`} className="text-blue-600 underline">community discussions</a></p>
-          <p>• Use <a href="https://llmfeedforge.org" className="text-blue-600 underline" target="_blank" rel="noopener">LLMFeedForge tools</a></p>
-          <p>• Contact <a href={`/${lang}/contact`} className="text-blue-600 underline">technical support</a></p>
+        {/* FAQ Content */}
+        <div className="bg-white border border-gray-200 rounded-xl p-8 mb-8">
+          <div 
+            className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-headings:font-semibold prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm"
+            dir={front.dir === 'rtl' ? 'rtl' : 'ltr'}
+            lang={front.lang || lang}
+          >
+            <Markdown remarkPlugins={[remarkGfm]}>{markdown}</Markdown>
+          </div>
         </div>
-      </div>
 
-      {/* 🔧 Schema.org FAQPage pour SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            name: front.title || 'WellKnownMCP FAQ',
-            description: front.description || 'Frequently Asked Questions about Model Context Protocol and LLMFeed',
-            url: `https://wellknownmcp.org/${lang}/faq`,
-            inLanguage: lang,
-            isPartOf: {
-              '@type': 'WebSite',
-              name: 'WellKnownMCP',
-              url: 'https://wellknownmcp.org'
-            },
-            about: {
-              '@type': 'Thing',
-              name: 'Model Context Protocol',
-              description: 'Open standard for AI-readable websites and agent interoperability'
-            },
-            // Note: mainEntity avec vraies questions extraites du markdown serait idéal
-            mainEntity: {
-              '@type': 'Question',
-              name: 'What is the Model Context Protocol?',
-              acceptedAnswer: {
-                '@type': 'Answer',
-                text: 'The Model Context Protocol (MCP) is an open standard that makes websites AI-readable, trustworthy, and actionable for autonomous agents.'
+        {/* Additional Resources */}
+        <div className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">📚 Additional Resources</h2>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white border border-gray-200 rounded-xl p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">🚀 Getting Started</h3>
+              <div className="space-y-3">
+                <a href="/tools/well-known" className="block text-blue-600 hover:text-blue-800 text-sm font-medium">
+                  Well-Known Entrypoints →
+                </a>
+                <a href="/tools/validation-tools" className="block text-blue-600 hover:text-blue-800 text-sm font-medium">
+                  Validation Tools →
+                </a>
+                <a href="/tools/schema" className="block text-blue-600 hover:text-blue-800 text-sm font-medium">
+                  Schema Validation →
+                </a>
+                <a href="/llmfeedhub" className="block text-blue-600 hover:text-blue-800 text-sm font-medium">
+                  Test Your Feeds →
+                </a>
+              </div>
+            </div>
+            
+            <div className="bg-white border border-gray-200 rounded-xl p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">🛠️ Developer Tools</h3>
+              <div className="space-y-3">
+                <a href="https://llmfeedforge.org" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-blue-600 hover:text-blue-800 text-sm font-medium">
+                  LLMFeedForge Builder
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+                <a href="/tools/sign-and-verify" className="block text-blue-600 hover:text-blue-800 text-sm font-medium">
+                  Signature & Trust →
+                </a>
+                <a href="/tools/credential-explained" className="block text-blue-600 hover:text-blue-800 text-sm font-medium">
+                  Credential Management →
+                </a>
+                <a href="/sdk" className="block text-blue-600 hover:text-blue-800 text-sm font-medium">
+                  SDK Documentation →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Still Need Help */}
+        <div className="mb-12 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl p-8 border border-purple-100">
+          <h2 className="text-xl font-bold text-purple-900 mb-4">💬 Still Need Help?</h2>
+          <p className="text-purple-800 mb-6">
+            Our community and support team are here to help you succeed with MCP implementation.
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-4">
+            <a 
+              href="/join"
+              className="block bg-white border border-purple-200 rounded-lg p-4 hover:border-purple-300 transition-colors"
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
+                  <MessageSquare className="w-5 h-5 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-purple-900">Join Community</h3>
+                  <p className="text-sm text-purple-700">Connect with other developers</p>
+                </div>
+              </div>
+            </a>
+            
+            <a 
+              href="mailto:support@wellknownmcp.org"
+              className="block bg-white border border-purple-200 rounded-lg p-4 hover:border-purple-300 transition-colors"
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                  <HelpCircle className="w-5 h-5 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-purple-900">Direct Support</h3>
+                  <p className="text-sm text-purple-700">Email our technical team</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        {/* Export & Share */}
+        <div className="mt-12 pt-8 border-t border-gray-200">
+          <div className="flex justify-between items-center mb-6">
+            <h2 className="text-xl font-bold text-gray-900">📤 Share This FAQ</h2>
+            <ExportToLLMButton 
+              context="static"
+              showSignatureStatus
+              customLabel="Export FAQ Feed"
+            />
+          </div>
+          
+          <ShareButtons 
+            title={front.title || 'FAQ - WellKnownMCP'}
+            hashtags={['FAQ', 'MCP', 'help', 'support', 'AI']}
+          />
+        </div>
+
+        {/* Structured Data for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              name: front.title || 'WellKnownMCP FAQ',
+              description: front.description || 'Frequently Asked Questions about Model Context Protocol and LLMFeed',
+              url: `https://wellknownmcp.org/${lang}/faq`,
+              inLanguage: lang,
+              isPartOf: {
+                '@type': 'WebSite',
+                name: 'WellKnownMCP',
+                url: 'https://wellknownmcp.org'
+              },
+              about: {
+                '@type': 'Thing',
+                name: 'Model Context Protocol',
+                description: 'Open standard for AI-readable websites and agent interoperability'
               }
-            }
-          })
-        }}
-      />
-    </div>
+            })
+          }}
+        />
+      </div>
+    </>
   )
 }

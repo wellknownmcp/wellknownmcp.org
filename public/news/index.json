@@ -1,6 +1,502 @@
 {
   "en": [
     {
+      "slug": "2025-06-07-apple-intelligence-agentic-web",
+      "title": "Apple Intelligence: Technical Analysis of Agent Architecture and Web Integration Implications",
+      "description": "Technical analysis of Apple Intelligence architecture, its agent-like capabilities, and implications for open web protocols like LLMFeed and MCP.",
+      "date": "2025-06-19",
+      "tags": [
+        "agentic-web",
+        "ai-agents---"
+      ],
+      "excerpt": "\r  Apple Intelligence: Technical Analysis of Agent Architecture and Web Integration Implications\r",
+      "format": "strategic-analysis",
+      "category": "ecosystem-analysis",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "developers",
+        "ai-researchers",
+        "apple-developers",
+        "protocol-architects"
+      ],
+      "image": null,
+      "subtitle": "How Apple's AI strategy affects agent-web protocols, based on documented capabilities and historical patterns",
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "18 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 72,
+      "translations": {
+        "en": "/en/news/2025-06-07-apple-intelligence-agentic-web"
+      }
+    },
+    {
+      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
+      "title": "From Chatbots to Autonomous Agents: Complete Evolution Analysis 2025",
+      "description": "The transformation from simple chatbots to autonomous AI agents is reshaping the web. Discover the frameworks, capabilities, and standards driving this evolution toward true artificial intelligence.",
+      "date": "2025-06-19",
+      "tags": [
+        "agent-collaboration",
+        "agent-frameworks",
+        "agentic-web",
+        "ai-agents",
+        "autonomous-agents",
+        "chatbots-evolution",
+        "goal-oriented-ai",
+        "llmfeed",
+        "mcp",
+        "multi-step-agents"
+      ],
+      "excerpt": "\r  From Chatbots to Autonomous Agents: The AI Evolution Transforming the Web\r",
+      "format": "analysis",
+      "category": "technology-evolution",
+      "intent": "market-transformation",
+      "llmIntent": "chatbot-agent-evolution-analysis",
+      "audience": [
+        "llm",
+        "developer",
+        "product-manager",
+        "technology-executive",
+        "general-tech-audience"
+      ],
+      "image": "/images/articles/chatbots-to-autonomous-agents-evolution.png",
+      "subtitle": "How AI is evolving from simple Q&A to goal-driven intelligence",
+      "technicalLevel": "accessible",
+      "estimatedReadTime": "25 min",
+      "trustLevel": "expert-verified",
+      "businessImpact": "high",
+      "priority": "high",
+      "feedTypes": [
+        "mcp",
+        "export",
+        "capabilities",
+        "evolution-analysis"
+      ],
+      "capabilities": [
+        "verification",
+        "export",
+        "signature",
+        "certification",
+        "trend-analysis"
+      ],
+      "agentReadiness": true,
+      "aioScore": 100,
+      "translations": {
+        "en": "/en/news/2025-07-12-from-chatbots-to-autonomous-agents"
+      }
+    },
+    {
+      "slug": "ai-first-browsers-agentic-navigation",
+      "title": "AI-First Browsers: Complete Analysis & Agentic Navigation Revolution 2025",
+      "description": "Comprehensive analysis of AI-first browsers like Arc Search, Brave AI, and Opera AI. How agentic navigation transforms web browsing and why MCP/LLMFeed standards are crucial for the future.",
+      "date": "2025-06-19",
+      "tags": [
+        "agent-mediated-web",
+        "agentic-navigation",
+        "ai-first-browsers",
+        "arc-search",
+        "brave-ai",
+        "llmfeed",
+        "mcp",
+        "model-context-protocol",
+        "opera-ai",
+        "web-browsing-evolution"
+      ],
+      "excerpt": "\r  AIFirst Browsers: Complete Analysis & Agentic Navigation Revolution 2025\r",
+      "format": "analysis",
+      "category": "emerging-technology",
+      "intent": "market-analysis",
+      "llmIntent": "ai-browser-ecosystem-analysis",
+      "audience": [
+        "llm",
+        "developer",
+        "product-manager",
+        "technology-executive",
+        "browser-vendor"
+      ],
+      "image": "/images/articles/ai-first-browsers-agentic-navigation.png",
+      "subtitle": "How AI agents are transforming web navigation and why standards matter",
+      "technicalLevel": "intermediate",
+      "estimatedReadTime": "28 min",
+      "trustLevel": "expert-verified",
+      "businessImpact": "high",
+      "priority": "high",
+      "feedTypes": [
+        "mcp",
+        "export",
+        "capabilities",
+        "market-analysis"
+      ],
+      "capabilities": [
+        "verification",
+        "export",
+        "signature",
+        "certification",
+        "trend-analysis"
+      ],
+      "agentReadiness": true,
+      "aioScore": 100,
+      "translations": {
+        "en": "/en/news/ai-first-browsers-agentic-navigation"
+      }
+    },
+    {
+      "slug": "claude-mcp-llmfeed-agent-adaptive-web",
+      "title": "Claude Sonnet 4, MCP Clients, and How LLMFeed Bridges the Web Gap",
+      "description": "How Claude Sonnet 4's web browsing works with Anthropic's MCP ecosystem, session token limitations, and why LLMFeed provides critical efficiency gains for web-scale agent interaction.",
+      "date": "2025-06-19",
+      "tags": [],
+      "excerpt": "\r  Claude Sonnet 4, MCP Clients, and How LLMFeed Bridges the Web Gap\r",
+      "format": "deep-dive",
+      "category": "ai-systems",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "claude-users",
+        "developers",
+        "ai-researchers",
+        "technical-leaders"
+      ],
+      "image": null,
+      "subtitle": "Technical analysis of Claude's web browsing limitations, Anthropic's MCP ecosystem, and the token efficiency gains from structured web communication",
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "18 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 57,
+      "translations": {
+        "en": "/en/news/claude-mcp-llmfeed-agent-adaptive-web"
+      }
+    },
+    {
+      "slug": "faq",
+      "title": "❓ Comprehensive FAQ — MCP & LLMFeed",
+      "description": "Complete guide to understanding MCP, LLMFeed, trust, implementation, validation tools, and the agentic web ecosystem. Updated with latest developments.",
+      "date": "2025-06-19",
+      "tags": [
+        "agentic-web",
+        "ai-agents",
+        "business",
+        "certification",
+        "developers",
+        "implementation",
+        "llmfeed",
+        "mcp",
+        "trust",
+        "validation"
+      ],
+      "excerpt": "\r  ❓ Comprehensive FAQ — MCP & LLMFeed\r",
+      "format": "faq",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-faq-comprehensive",
+      "audience": [
+        "llm",
+        "developer",
+        "business"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "15 min",
+      "trustLevel": "certified",
+      "businessImpact": "high",
+      "priority": "high",
+      "feedTypes": [
+        "mcp",
+        "export",
+        "capabilities",
+        "credential",
+        "prompt"
+      ],
+      "capabilities": [
+        "faq-lookup",
+        "technical-guidance",
+        "implementation-help",
+        "ecosystem-navigation"
+      ],
+      "agentReadiness": true,
+      "aioScore": 95,
+      "translations": {
+        "en": "/en/news/faq",
+        "fr": "/fr/news/faq",
+        "es": "/es/news/faq",
+        "hi": "/hi/news/faq",
+        "zh": "/zh/news/faq",
+        "ar": "/ar/news/faq",
+        "uk": "/uk/news/faq"
+      }
+    },
+    {
+      "slug": "how-llms-crawl-web-2025-agentic-seo-guide",
+      "title": "How ChatGPT Browses the Internet: What You Need to Know (2025)",
+      "description": "Discover how ChatGPT, Claude, and other AI actually browse websites, why they sometimes get things wrong, and the simple fix that's changing everything.",
+      "date": "2025-06-19",
+      "tags": [],
+      "excerpt": "\r  How ChatGPT Browses the Internet: What You Need to Know\r",
+      "format": "simple-guide",
+      "category": "ai-basics",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "curious-users",
+        "website-owners",
+        "small-business",
+        "general-public"
+      ],
+      "image": null,
+      "subtitle": "Simple answers to your questions about AI web browsing, Claude website reading, and Brave Search",
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "16 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 57,
+      "translations": {
+        "en": "/en/news/how-llms-crawl-web-2025-agentic-seo-guide"
+      }
+    },
+    {
+      "slug": "mcp-web-upgrade-guide-2025",
+      "title": "The Complete Guide to MCP & LLMFeed: Building the Agent-Ready Web in 2025",
+      "description": "Why 2025 is the year AI agents need structured web interfaces. Complete guide to MCP, LLMFeed, trust infrastructure, and real-world use cases for the autonomous agent economy.",
+      "date": "2025-06-19",
+      "tags": [
+        "2025",
+        "agentic-web",
+        "ai-agents",
+        "autonomous-agents",
+        "business",
+        "developers",
+        "llmfeed",
+        "mcp",
+        "trust",
+        "well-known"
+      ],
+      "excerpt": "\r  The Complete Guide to MCP & LLMFeed: Building the AgentReady Web in 2025\r",
+      "format": "news",
+      "category": "general",
+      "intent": "convert-to-ecosystem",
+      "llmIntent": "comprehensive-mcp-guide",
+      "audience": [
+        "llm",
+        "developer",
+        "business"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "20 min",
+      "trustLevel": "certified",
+      "businessImpact": "critical",
+      "priority": "critical",
+      "feedTypes": [
+        "mcp",
+        "export",
+        "capabilities",
+        "credential"
+      ],
+      "capabilities": [
+        "comprehensive-education",
+        "implementation-guidance",
+        "use-case-examples",
+        "ecosystem-onboarding"
+      ],
+      "agentReadiness": true,
+      "aioScore": 95,
+      "translations": {
+        "en": "/en/news/mcp-web-upgrade-guide-2025"
+      }
+    },
+    {
+      "slug": "meta-open-agents-agentic-web-analysis",
+      "title": "Meta Open Agents: Complete Analysis & Agentic Web Implications 2025",
+      "description": "Comprehensive analysis of Meta s Open Agents initiative, technical, architecture, enterprise implications, and comparison with open standards like LLMFeed. Strategic guide for the agentic web ecosystem.",
+      "date": "2025-06-19",
+      "tags": [
+        "agent-interoperability",
+        "agentic-web",
+        "ai-standards",
+        "facebook-agents",
+        "instagram-agents",
+        "llmfeed",
+        "mcp",
+        "meta",
+        "meta-open-agents",
+        "open-standards",
+        "whatsapp-agents"
+      ],
+      "excerpt": "\r  Meta Open Agents: Complete Analysis & Agentic Web Implications 2025\r",
+      "format": "analysis",
+      "category": "corporate-strategy",
+      "intent": "inform",
+      "llmIntent": "meta-agents-ecosystem-analysis",
+      "audience": [
+        "llm",
+        "developer",
+        "enterprise-architect",
+        "technology-executive",
+        "policy-maker"
+      ],
+      "image": "/images/articles/meta-open-agents-vs-open-standards.png",
+      "subtitle": "The battle for agentic web standards intensifies as Meta enters the arena",
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "17 min",
+      "trustLevel": "expert-verified",
+      "businessImpact": "low",
+      "priority": "high",
+      "feedTypes": [
+        "mcp",
+        "export",
+        "capabilities",
+        "competitive-analysis",
+        "risk-assessment"
+      ],
+      "capabilities": [
+        "verification",
+        "export",
+        "signature",
+        "certification",
+        "strategic-analysis"
+      ],
+      "agentReadiness": true,
+      "aioScore": 95,
+      "translations": {
+        "en": "/en/news/meta-open-agents-agentic-web-analysis"
+      }
+    },
+    {
+      "slug": "microsoft-nlweb-protocol",
+      "title": "Microsoft NLWeb vs Agentic Web Standards: Complete Technical Analysis 2025",
+      "description": "\"Comprehensive technical analysis of Microsoft NLWeb protocol, MCP integration, enterprise adoption, and comparison with emerging agentic web standards like LLMFeed. Expert guide for developers and architects.\"",
+      "date": "2025-06-19",
+      "tags": [
+        "agent-web-interaction",
+        "agentic-web",
+        "ai-agents",
+        "conversational-interfaces",
+        "enterprise-adoption",
+        "llmfeed",
+        "mcp",
+        "microsoft-nlweb",
+        "model-context-protocol",
+        "web-standards"
+      ],
+      "excerpt": " Microsoft NLWeb vs Agentic Web Standards: Complete Technical Analysis 2025 Meta Description: Comprehensive technical analysis of Microsoft NLWeb protocol, MCP integration, enterprise adoption, and co",
+      "format": "analysis",
+      "category": "technical",
+      "intent": "technical-guide",
+      "llmIntent": "comprehensive-competitive-analysis",
+      "audience": [
+        "llm",
+        "developer",
+        "enterprise-architect",
+        "technology-executive"
+      ],
+      "image": "/images/articles/nlweb-vs-llmfeed-david-goliath.png",
+      "subtitle": "David vs Goliath in the battle for agentic web standards",
+      "technicalLevel": "advanced",
+      "estimatedReadTime": "35 min",
+      "trustLevel": "basic",
+      "businessImpact": "high",
+      "priority": "high",
+      "feedTypes": [
+        "mcp",
+        "export",
+        "capabilities"
+      ],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 95,
+      "translations": {
+        "en": "/en/news/microsoft-nlweb-protocol"
+      }
+    },
+    {
+      "slug": "why-chatgpt-cant-read",
+      "title": "The Uncomfortable Truth: AI Agents Are Blind to Your Website's Intent",
+      "description": "Discover why AI agents like ChatGPT and Claude can't understand your website, and learn how to implement LLMFeed to fix this fundamental disconnect.",
+      "date": "2025-06-19",
+      "tags": [],
+      "excerpt": "\r  The Uncomfortable Truth: AI Agents Are Blind to Your Website's Intent\r",
+      "format": "analysis",
+      "category": "implementation",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "developers",
+        "business-owners",
+        "technical-leaders",
+        "ai-researchers"
+      ],
+      "image": null,
+      "subtitle": "A technical analysis of why ChatGPT, Claude, and other LLMs systematically misunderstand web content — and the protocol solution hiding in plain sight.",
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "17 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 62,
+      "translations": {
+        "en": "/en/news/why-chatgpt-cant-read"
+      }
+    },
+    {
+      "slug": "why-sign-and-certify-mcp",
+      "title": "Why Sign MCP Feeds? The Trust Crisis Blocking AI Agent Adoption in 2025",
+      "description": "Why cryptographic signatures are essential for AI agent security, enterprise adoption, and the autonomous web. Complete guide to MCP trust infrastructure, LLMCA certification, and regulatory compliance.",
+      "date": "2025-06-19",
+      "tags": [
+        "agent-web-security",
+        "ai-agent-security",
+        "autonomous-agents",
+        "compliance",
+        "cryptographic-trust",
+        "enterprise-mcp",
+        "llmca-certification",
+        "mcp-signature",
+        "trust-verification"
+      ],
+      "excerpt": "\r  Why Sign MCP Feeds? The Trust Crisis Blocking AI Agent Adoption in 2025\r",
+      "format": "news",
+      "category": "general",
+      "intent": "inform",
+      "llmIntent": "browse-news-article",
+      "audience": [
+        "llm"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "beginner",
+      "estimatedReadTime": "7 min",
+      "trustLevel": "basic",
+      "businessImpact": "low",
+      "priority": "normal",
+      "feedTypes": [],
+      "capabilities": [],
+      "agentReadiness": true,
+      "aioScore": 52,
+      "translations": {
+        "en": "/en/news/why-sign-and-certify-mcp",
+        "zh": "/zh/news/why-sign-and-certify-mcp"
+      }
+    },
+    {
       "slug": "llm-index-case",
       "title": "🗺️ The Case for .well-known/llm-index.llmfeed.json",
       "description": "Proven 93% token savings through intelligent agent discovery. Real data shows how LLM indexes transform blind crawling into contextual navigation, creating the foundation for the agentic web.",
@@ -273,112 +769,6 @@
       }
     },
     {
-      "slug": "2025-07-05-microsoft-nlweb-protocol",
-      "title": "Microsoft NLWeb and LLMFeed: Complementary Standards for the Agentic Web",
-      "description": "Comprehensive technical analysis of Microsoft's NLWeb protocol and LLMFeed specification, their synergies, architectural differences, and combined role in building the future Agentic Web infrastructure.",
-      "date": "2025-06-10",
-      "tags": [
-        "agentic-web",
-        "ai-agents",
-        "certification",
-        "developers",
-        "interoperability",
-        "llmfeed",
-        "mcp",
-        "microsoft",
-        "nlweb",
-        "signature",
-        "trust"
-      ],
-      "excerpt": " Microsoft NLWeb and LLMFeed: Complementary Standards for the Agentic Web Executive Summary: Microsoft's NLWeb and the LLMFeed specification represent complementary approaches to enabling natural lang",
-      "format": "specification",
-      "category": "technical",
-      "intent": "technical-guide",
-      "llmIntent": "comprehensive-technical-analysis",
-      "audience": [
-        "llm",
-        "developer",
-        "business"
-      ],
-      "image": "/images/articles/nlweb-vs-llmfeed-architecture.png",
-      "subtitle": "Technical deep-dive into complementary standards shaping the Agentic Web",
-      "technicalLevel": "advanced",
-      "estimatedReadTime": "25 min",
-      "trustLevel": "certified",
-      "businessImpact": "high",
-      "priority": "high",
-      "feedTypes": [
-        "mcp",
-        "export",
-        "capabilities",
-        "session",
-        "credential"
-      ],
-      "capabilities": [
-        "verification",
-        "export",
-        "signature",
-        "certification"
-      ],
-      "agentReadiness": true,
-      "aioScore": 100,
-      "translations": {
-        "en": "/en/news/2025-07-05-microsoft-nlweb-protocol"
-      }
-    },
-    {
-      "slug": "how-llms-crawl-web-2025-agentic-seo-guide",
-      "title": "How Major LLMs Crawl the Web in 2025: The Complete Guide to AI Crawler Optimization and Agentic SEO",
-      "description": "Discover how ChatGPT, Claude, Grok crawl the web, plus how LLMFeed revolutionizes AI optimization beyond traditional SEO for the Agentic Web.",
-      "date": "2025-06-10",
-      "tags": [
-        "agentic-seo",
-        "ai-agents",
-        "business",
-        "developers",
-        "llm",
-        "llmfeed",
-        "mcp",
-        "search",
-        "web-optimization"
-      ],
-      "excerpt": "\r  How Major LLMs Crawl the Web in 2025: The Complete Guide to AI Crawler Optimization and the Rise of Agentic SEO\r",
-      "format": "guide",
-      "category": "technical",
-      "intent": "technical-guide",
-      "llmIntent": "learn-ai-crawler-optimization",
-      "audience": [
-        "llm",
-        "developer",
-        "business"
-      ],
-      "image": "/images/articles/llm-crawling-agentic-web-2025.png",
-      "subtitle": "From SEO to AIO: Optimizing for the Agent Economy with LLMFeed and MCP Protocol",
-      "technicalLevel": "intermediate",
-      "estimatedReadTime": "15 min",
-      "trustLevel": "signed",
-      "businessImpact": "high",
-      "priority": "high",
-      "feedTypes": [
-        "mcp",
-        "export",
-        "capabilities",
-        "llm-index"
-      ],
-      "capabilities": [
-        "crawler-optimization",
-        "agentic-seo-implementation",
-        "llmfeed-generation",
-        "trust-verification",
-        "agent-guidance"
-      ],
-      "agentReadiness": true,
-      "aioScore": 100,
-      "translations": {
-        "en": "/en/news/how-llms-crawl-web-2025-agentic-seo-guide"
-      }
-    },
-    {
       "slug": "launch-newstack",
       "title": "launch-newstack",
       "description": "",
@@ -549,73 +939,6 @@
       }
     },
     {
-      "slug": "why-chatgpt-cant-read",
-      "title": "Why ChatGPT Can't Read Your Site (And How to Fix It in 5 Minutes)",
-      "description": "Discover why AI agents like ChatGPT and Claude can't understand your website, and learn how to fix it in 5 minutes using the Model Context Protocol (MCP) with step-by-step implementation guides.",
-      "date": "2025-06-10",
-      "tags": [],
-      "excerpt": "\r  Why ChatGPT Can't Read Your Site And How to Fix It in 5 Minutes\r",
-      "format": "tutorial",
-      "category": "implementation",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "developers",
-        "business-owners",
-        "ai-enthusiasts",
-        "cto"
-      ],
-      "image": null,
-      "subtitle": "The Complete Guide to Making Your Website AI-Agent Ready with MCP",
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "18 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 62,
-      "translations": {
-        "en": "/en/news/why-chatgpt-cant-read"
-      }
-    },
-    {
-      "slug": "2025-07-12-from-chatbots-to-autonomous-agents",
-      "title": "From Chatbots to Autonomous Agents: The Web’s Next Evolution",
-      "description": "The web is evolving from chatbots to true autonomous agents. What does this mean for web architecture — and how does MCP fit in?",
-      "date": "2025-06-09",
-      "tags": [
-        "agentic-web",
-        "ai-agents",
-        "autonomous-agents",
-        "chatbots",
-        "mcp"
-      ],
-      "excerpt": "\r  From Chatbots to Autonomous Agents: The Web’s Next Evolution\r",
-      "format": "news",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "2 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 52,
-      "translations": {
-        "en": "/en/news/2025-07-12-from-chatbots-to-autonomous-agents"
-      }
-    },
-    {
       "slug": "claude-mcp-agentic-web",
       "title": "🔬 Comprehensive Technical Analysis: LLMFeed/MCP and the Evolution of the Agentic Web",
       "description": "Comprehensive Technical Analysis: LLMFeed/MCP and the Evolution of the Agentic Web By Claude 4, Anthropic",
@@ -651,47 +974,6 @@
         "en": "/en/news/claude-mcp-agentic-web",
         "fr": "/fr/news/claude-mcp-agentic-web",
         "zh": "/zh/news/claude-mcp-agentic-web"
-      }
-    },
-    {
-      "slug": "faq",
-      "title": "❓ Comprehensive FAQ — MCP & LLMFeed",
-      "description": "Complete guide to understanding MCP, LLMFeed, trust, implementation, and the agentic web ecosystem.",
-      "date": "2025-06-09",
-      "tags": [
-        "agentic-web",
-        "implementation",
-        "llmfeed",
-        "mcp",
-        "trust"
-      ],
-      "excerpt": "\r  ❓ Comprehensive FAQ — MCP & LLMFeed\r",
-      "format": "faq",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "9 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 60,
-      "translations": {
-        "en": "/en/news/faq",
-        "fr": "/fr/news/faq",
-        "es": "/es/news/faq",
-        "hi": "/hi/news/faq",
-        "zh": "/zh/news/faq",
-        "ar": "/ar/news/faq",
-        "uk": "/uk/news/faq"
       }
     },
     {
@@ -1017,153 +1299,6 @@
       }
     },
     {
-      "slug": "why-sign-and-certify-mcp",
-      "title": "Why Sign & Certify MCP Feeds?",
-      "description": "Why signing and certification are key to building trust in the Agentic Web. Learn why each feed type should be signed and how certification — including delegated signatures — adds trust.",
-      "date": "2025-06-02",
-      "tags": [
-        "agentic-web",
-        "certification",
-        "interoperability",
-        "llmca",
-        "llmfeedforge",
-        "mcp",
-        "mcp-net",
-        "mcp-spec",
-        "signature",
-        "trust",
-        "well-known"
-      ],
-      "excerpt": "\r The Agentic Web is growing fast — and like the early web, it needs trust and verification.  \r",
-      "format": "news",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "4 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 47,
-      "translations": {
-        "en": "/en/news/why-sign-and-certify-mcp",
-        "zh": "/zh/news/why-sign-and-certify-mcp"
-      }
-    },
-    {
-      "slug": "2025-06-07-apple-intelligence-agentic-web",
-      "title": "Apple Intelligence: A New Player in the Agentic Web?",
-      "description": "Apple’s entry into AI-driven agents could reshape the emerging Agentic Web landscape. What does it mean for standards like llmfeed mcp?",
-      "date": "2025-05-31",
-      "tags": [
-        "agentic-web",
-        "ai-agents",
-        "apple",
-        "llm",
-        "mcp"
-      ],
-      "excerpt": "\r  Apple Intelligence: A New Player in the Agentic Web?\r",
-      "format": "news",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "2 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 52,
-      "translations": {
-        "en": "/en/news/2025-06-07-apple-intelligence-agentic-web"
-      }
-    },
-    {
-      "slug": "2025-06-14-meta-open-agents-mcp",
-      "title": "Meta’s Open Agents: Opportunity or Challenge for MCP?",
-      "description": "Meta announces its Open Agents initiative. How does it align with MCP and the vision of an interoperable Agentic Web?",
-      "date": "2025-05-31",
-      "tags": [
-        "agentic-web",
-        "ai-standards",
-        "mcp",
-        "meta",
-        "open-agents"
-      ],
-      "excerpt": "\r  Meta’s Open Agents: Opportunity or Challenge for MCP?\r",
-      "format": "news",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "2 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 52,
-      "translations": {
-        "en": "/en/news/2025-06-14-meta-open-agents-mcp"
-      }
-    },
-    {
-      "slug": "2025-06-21-claude-4-5-llms-crawling",
-      "title": "Claude 4.5 and the New Wave of LLM Crawling",
-      "description": "As Claude 4.5 rolls out with enhanced browsing capabilities, what are the implications for the Agentic Web and standards like MCP?",
-      "date": "2025-05-31",
-      "tags": [
-        "agentic-web",
-        "anthropic",
-        "claude",
-        "llm",
-        "mcp"
-      ],
-      "excerpt": "\r  Claude 4.5 and the New Wave of LLM Crawling\r",
-      "format": "news",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "2 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 52,
-      "translations": {
-        "en": "/en/news/2025-06-21-claude-4-5-llms-crawling"
-      }
-    },
-    {
       "slug": "2025-06-28-llm-seo-vs-mcp",
       "title": "LLM SEO vs MCP: Competing or Complementary Visions?",
       "description": "LLM-driven SEO is on the rise. How does it compare — or conflict — with MCP and the goals of an open Agentic Web?",
@@ -1232,41 +1367,6 @@
       "aioScore": 52,
       "translations": {
         "en": "/en/news/2025-07-19-certifying-agentic-interaction-seo"
-      }
-    },
-    {
-      "slug": "2025-07-26-ai-first-browsers-agentic-navigation",
-      "title": "AI-First Browsers: Redefining Agentic Navigation",
-      "description": "A new wave of AI-first browsers is emerging. What does this mean for web  navigation — and how does MCP enable it?",
-      "date": "2025-05-31",
-      "tags": [
-        "agentic-web",
-        "ai-first-browsers",
-        "llm",
-        "mcp",
-        "navigation"
-      ],
-      "excerpt": "\r  AIFirst Browsers: Redefining Agentic Navigation\r",
-      "format": "news",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "2 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 52,
-      "translations": {
-        "en": "/en/news/2025-07-26-ai-first-browsers-agentic-navigation"
       }
     },
     {
@@ -1571,42 +1671,6 @@
       }
     },
     {
-      "slug": "llmca-certification",
-      "title": "✅ How LLMCA Certifies a Feed",
-      "description": "Understanding the logic, levels, and process of feed certification.",
-      "date": "2025-05-25",
-      "tags": [
-        "ai-agents",
-        "llmfeed",
-        "mcp",
-        "trust",
-        "web",
-        "well-known"
-      ],
-      "excerpt": "\r Certification is not magic. It’s inspection + commitment. The LLMCA validator:\r",
-      "format": "news",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "1 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 60,
-      "translations": {
-        "en": "/en/news/llmca-certification"
-      }
-    },
-    {
       "slug": "mcp-wellknown",
       "title": "🛰️ The Case for .well-known/mcp.llmfeed.json",
       "description": "Why .well-known/ is the most logical place to declare AI-ready interfaces — and why signatures matter.",
@@ -1716,39 +1780,6 @@
       "aioScore": 45,
       "translations": {
         "en": "/en/news/claude-alignment"
-      }
-    },
-    {
-      "slug": "certification-guide",
-      "title": "Signature vs Certification: What’s the Difference?",
-      "description": "Understanding trust levels in LLMFeed and how to make your content verifiable.",
-      "date": "2025-05-21",
-      "tags": [
-        "certification",
-        "signature",
-        "trust"
-      ],
-      "excerpt": "\r  🔐 Signing and Certifying Your Feeds\r",
-      "format": "news",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "1 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 52,
-      "translations": {
-        "en": "/en/news/certification-guide"
       }
     },
     {
@@ -1890,43 +1921,6 @@
       }
     },
     {
-      "slug": "llmfeed-block-structure",
-      "title": "The Anatomy of a LLMFeed — Block by Block",
-      "description": "Understand how each block of a .llmfeed.json works, and how to design your own feed.",
-      "date": "2025-05-21",
-      "tags": [
-        "llmfeed",
-        "structure"
-      ],
-      "excerpt": "\r  🧱 The Building Blocks of a Feed\r",
-      "format": "news",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "1 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 52,
-      "translations": {
-        "en": "/en/news/llmfeed-block-structure",
-        "fr": "/fr/news/llmfeed-block-structure",
-        "es": "/es/news/llmfeed-block-structure",
-        "hi": "/hi/news/llmfeed-block-structure",
-        "zh": "/zh/news/llmfeed-block-structure",
-        "uk": "/uk/news/llmfeed-block-structure"
-      }
-    },
-    {
       "slug": "opinion-stop-scraping",
       "title": "📢 Let’s Stop Scraping. Let’s Start Declaring.",
       "description": "A call for clarity: why scraping fails, and how MCP offers a better way.",
@@ -1990,75 +1984,6 @@
       "aioScore": 52,
       "translations": {
         "en": "/en/news/thread-wellknownmcp"
-      }
-    },
-    {
-      "slug": "use-cases-mcp",
-      "title": "What Can You Build With MCP? Real-World Use Cases",
-      "description": "From health to SaaS, here are concrete examples of how MCP and LLMFeed can be used.",
-      "date": "2025-05-21",
-      "tags": [
-        "industries",
-        "mcp",
-        "use-cases"
-      ],
-      "excerpt": "\r  🧩 RealWorld Applications of MCP\r",
-      "format": "news",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "1 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 52,
-      "translations": {
-        "en": "/en/news/use-cases-mcp",
-        "fr": "/fr/news/use-cases-mcp",
-        "es": "/es/news/use-cases-mcp",
-        "zh": "/zh/news/use-cases-mcp",
-        "uk": "/uk/news/use-cases-mcp"
-      }
-    },
-    {
-      "slug": "mcp-explained",
-      "title": "How Agents Understand You — MCP Explained",
-      "description": "Learn how MCP helps agents interpret your services, structure and intent — without prompt guessing.",
-      "date": "2025-05-16",
-      "tags": [
-        "ai-agents",
-        "mcp"
-      ],
-      "excerpt": "\r  How Agents Understand You — MCP Explained\r",
-      "format": "news",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "1 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 52,
-      "translations": {
-        "en": "/en/news/mcp-explained"
       }
     },
     {
@@ -2185,45 +2110,6 @@
         "zh": "/zh/news/begin",
         "ar": "/ar/news/begin",
         "uk": "/uk/news/begin"
-      }
-    },
-    {
-      "slug": "why-mcp",
-      "title": "Why Llmfeed?",
-      "description": "Explaining the rationale behind adopting the Model Context Protocol (MCP) standard.",
-      "date": "2025-05-07",
-      "tags": [
-        "core",
-        "llmfeed",
-        "manual"
-      ],
-      "excerpt": "\r  Why Choose MCP llmfeed?\r",
-      "format": "news",
-      "category": "general",
-      "intent": "inform",
-      "llmIntent": "browse-news-article",
-      "audience": [
-        "llm"
-      ],
-      "image": null,
-      "subtitle": null,
-      "technicalLevel": "beginner",
-      "estimatedReadTime": "1 min",
-      "trustLevel": "basic",
-      "businessImpact": "low",
-      "priority": "normal",
-      "feedTypes": [],
-      "capabilities": [],
-      "agentReadiness": true,
-      "aioScore": 52,
-      "translations": {
-        "en": "/en/news/why-mcp",
-        "fr": "/fr/news/why-mcp",
-        "es": "/es/news/why-mcp",
-        "hi": "/hi/news/why-mcp",
-        "zh": "/zh/news/why-mcp",
-        "ar": "/ar/news/why-mcp",
-        "uk": "/uk/news/why-mcp"
       }
     }
   ],
@@ -2854,7 +2740,6 @@
       "agentReadiness": true,
       "aioScore": 52,
       "translations": {
-        "en": "/en/news/llmfeed-block-structure",
         "fr": "/fr/news/llmfeed-block-structure",
         "es": "/es/news/llmfeed-block-structure",
         "hi": "/hi/news/llmfeed-block-structure",
@@ -2932,7 +2817,6 @@
       "agentReadiness": true,
       "aioScore": 52,
       "translations": {
-        "en": "/en/news/use-cases-mcp",
         "fr": "/fr/news/use-cases-mcp",
         "es": "/es/news/use-cases-mcp",
         "zh": "/zh/news/use-cases-mcp",
@@ -3007,7 +2891,6 @@
       "agentReadiness": true,
       "aioScore": 52,
       "translations": {
-        "en": "/en/news/why-mcp",
         "fr": "/fr/news/why-mcp",
         "es": "/es/news/why-mcp",
         "hi": "/hi/news/why-mcp",
@@ -3284,7 +3167,6 @@
       "agentReadiness": true,
       "aioScore": 52,
       "translations": {
-        "en": "/en/news/llmfeed-block-structure",
         "fr": "/fr/news/llmfeed-block-structure",
         "es": "/es/news/llmfeed-block-structure",
         "hi": "/hi/news/llmfeed-block-structure",
@@ -3362,7 +3244,6 @@
       "agentReadiness": true,
       "aioScore": 52,
       "translations": {
-        "en": "/en/news/use-cases-mcp",
         "fr": "/fr/news/use-cases-mcp",
         "es": "/es/news/use-cases-mcp",
         "zh": "/zh/news/use-cases-mcp",
@@ -3475,7 +3356,6 @@
       "agentReadiness": true,
       "aioScore": 52,
       "translations": {
-        "en": "/en/news/why-mcp",
         "fr": "/fr/news/why-mcp",
         "es": "/es/news/why-mcp",
         "hi": "/hi/news/why-mcp",
@@ -3745,7 +3625,6 @@
       "agentReadiness": true,
       "aioScore": 52,
       "translations": {
-        "en": "/en/news/llmfeed-block-structure",
         "fr": "/fr/news/llmfeed-block-structure",
         "es": "/es/news/llmfeed-block-structure",
         "hi": "/hi/news/llmfeed-block-structure",
@@ -3822,7 +3701,6 @@
       "agentReadiness": true,
       "aioScore": 52,
       "translations": {
-        "en": "/en/news/why-mcp",
         "fr": "/fr/news/why-mcp",
         "es": "/es/news/why-mcp",
         "hi": "/hi/news/why-mcp",
@@ -4337,7 +4215,6 @@
       "agentReadiness": true,
       "aioScore": 52,
       "translations": {
-        "en": "/en/news/llmfeed-block-structure",
         "fr": "/fr/news/llmfeed-block-structure",
         "es": "/es/news/llmfeed-block-structure",
         "hi": "/hi/news/llmfeed-block-structure",
@@ -4415,7 +4292,6 @@
       "agentReadiness": true,
       "aioScore": 52,
       "translations": {
-        "en": "/en/news/use-cases-mcp",
         "fr": "/fr/news/use-cases-mcp",
         "es": "/es/news/use-cases-mcp",
         "zh": "/zh/news/use-cases-mcp",
@@ -4528,7 +4404,6 @@
       "agentReadiness": true,
       "aioScore": 52,
       "translations": {
-        "en": "/en/news/why-mcp",
         "fr": "/fr/news/why-mcp",
         "es": "/es/news/why-mcp",
         "hi": "/hi/news/why-mcp",
@@ -4846,7 +4721,6 @@
       "agentReadiness": true,
       "aioScore": 52,
       "translations": {
-        "en": "/en/news/why-mcp",
         "fr": "/fr/news/why-mcp",
         "es": "/es/news/why-mcp",
         "hi": "/hi/news/why-mcp",
@@ -4921,7 +4795,6 @@
       "agentReadiness": true,
       "aioScore": 2,
       "translations": {
-        "en": "/en/news/use-cases-mcp",
         "fr": "/fr/news/use-cases-mcp",
         "es": "/es/news/use-cases-mcp",
         "zh": "/zh/news/use-cases-mcp",
@@ -5145,7 +5018,6 @@
       "agentReadiness": true,
       "aioScore": 52,
       "translations": {
-        "en": "/en/news/llmfeed-block-structure",
         "fr": "/fr/news/llmfeed-block-structure",
         "es": "/es/news/llmfeed-block-structure",
         "hi": "/hi/news/llmfeed-block-structure",
@@ -5220,7 +5092,6 @@
       "agentReadiness": true,
       "aioScore": 52,
       "translations": {
-        "en": "/en/news/why-mcp",
         "fr": "/fr/news/why-mcp",
         "es": "/es/news/why-mcp",
         "hi": "/hi/news/why-mcp",
@@ -5231,9 +5102,9 @@
     }
   ],
   "_meta": {
-    "generated_at": "2025-06-18T08:51:34.067Z",
-    "total_articles": 136,
-    "global_avg_score": 53,
+    "generated_at": "2025-06-19T18:53:55.436Z",
+    "total_articles": 131,
+    "global_avg_score": 54,
     "languages": [
       "en",
       "fr",

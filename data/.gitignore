@@ -1,0 +1,24 @@
+# 🔒 Agent Analytics Logs - Keep Private
+# Ne jamais commit les logs d'analytics pour privacy
+
+# Log files
+*.jsonl
+*.log
+agent-logs.*
+analytics-*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Cache files
+cache/
+*.cache
+
+# Analysis outputs
+reports/
+*.csv
+*.xlsx
+
+# Allow README for documentation
+!README.md

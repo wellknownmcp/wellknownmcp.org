@@ -4,10 +4,10 @@
     "title": "WellKnownMCP - Intelligent Discovery Hub",
     "origin": "https://wellknownmcp.org",
     "description": "Intelligent navigation system that guides agents and users to the perfect content based on context, intent, and expertise level. Transforms flat sitemaps into contextual discovery experiences.",
-    "generated_at": "2025-06-18T08:58:36.220227Z",
+    "generated_at": "2025-06-19T18:59:30.489241Z",
     "version": "2.1.0",
     "total_feeds": "6",
-    "total_pages": "36",
+    "total_pages": "32",
     "tags": [
       "navigation",
       "discovery",
@@ -18,17 +18,17 @@
     "content_type": "navigation_hub",
     "lang": "en",
     "build_stats": {
-      "urls_processed": 36,
+      "urls_processed": 32,
       "categories_created": 5,
       "routes_generated": 35,
-      "enrichments_applied": 28,
-      "build_time": 0.125525,
-      "crawling_alternative_tokens": 252000,
+      "enrichments_applied": 24,
+      "build_time": 0.058559,
+      "crawling_alternative_tokens": 224000,
       "index_tokens": 875,
-      "efficiency_gain": "99.7%",
-      "token_savings": "~251,125 tokens saved"
+      "efficiency_gain": "99.6%",
+      "token_savings": "~223,125 tokens saved"
     },
-    "real_data_coverage": "77.8%"
+    "real_data_coverage": "75.0%"
   },
   "discovery_guidance": {
     "recommended_entry_points": {
@@ -40,8 +40,8 @@
     },
     "high_priority_feeds": [
       "/feeds",
-      "/llmfeedhub",
       "/spec",
+      "/llmfeedhub",
       "/sdk",
       "/tools/api-explained"
     ],
@@ -85,6 +85,24 @@
           "content_type": "directory"
         },
         {
+          "url": "https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents",
+          "title": "News - 2025 07 12 From Chatbots To Autonomous Agents",
+          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
+          "intent": "inform",
+          "audience": [
+            "community",
+            "stakeholder",
+            "general"
+          ],
+          "importance": "medium",
+          "tags": [
+            "news",
+            "announcements",
+            "updates",
+            "community"
+          ]
+        },
+        {
           "url": "https://wellknownmcp.org/en/news/llm-agent-readiness-framework-2025",
           "title": "News - Llm Agent Readiness Framework 2025",
           "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
@@ -121,44 +139,8 @@
           ]
         },
         {
-          "url": "https://wellknownmcp.org/en/news/2025-07-05-microsoft-nlweb-protocol",
-          "title": "News - 2025 07 05 Microsoft Nlweb Protocol",
-          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
-          "intent": "inform",
-          "audience": [
-            "community",
-            "stakeholder",
-            "general"
-          ],
-          "importance": "medium",
-          "tags": [
-            "news",
-            "announcements",
-            "updates",
-            "community"
-          ]
-        },
-        {
           "url": "https://wellknownmcp.org/en/news/launch-newstack",
           "title": "News - Launch Newstack",
-          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
-          "intent": "inform",
-          "audience": [
-            "community",
-            "stakeholder",
-            "general"
-          ],
-          "importance": "medium",
-          "tags": [
-            "news",
-            "announcements",
-            "updates",
-            "community"
-          ]
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/2025-07-12-from-chatbots-to-autonomous-agents",
-          "title": "News - 2025 07 12 From Chatbots To Autonomous Agents",
           "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
           "intent": "inform",
           "audience": [
@@ -211,42 +193,6 @@
           ]
         },
         {
-          "url": "https://wellknownmcp.org/en/news/2025-06-14-meta-open-agents-mcp",
-          "title": "News - 2025 06 14 Meta Open Agents Mcp",
-          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
-          "intent": "inform",
-          "audience": [
-            "community",
-            "stakeholder",
-            "general"
-          ],
-          "importance": "medium",
-          "tags": [
-            "news",
-            "announcements",
-            "updates",
-            "community"
-          ]
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/2025-06-21-claude-4-5-llms-crawling",
-          "title": "News - 2025 06 21 Claude 4 5 Llms Crawling",
-          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
-          "intent": "inform",
-          "audience": [
-            "community",
-            "stakeholder",
-            "general"
-          ],
-          "importance": "medium",
-          "tags": [
-            "news",
-            "announcements",
-            "updates",
-            "community"
-          ]
-        },
-        {
           "url": "https://wellknownmcp.org/en/news/2025-06-28-llm-seo-vs-mcp",
           "title": "News - 2025 06 28 Llm Seo Vs Mcp",
           "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
@@ -267,24 +213,6 @@
         {
           "url": "https://wellknownmcp.org/en/news/2025-07-19-certifying-agentic-interaction-seo",
           "title": "News - 2025 07 19 Certifying Agentic Interaction Seo",
-          "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
-          "intent": "inform",
-          "audience": [
-            "community",
-            "stakeholder",
-            "general"
-          ],
-          "importance": "medium",
-          "tags": [
-            "news",
-            "announcements",
-            "updates",
-            "community"
-          ]
-        },
-        {
-          "url": "https://wellknownmcp.org/en/news/2025-07-26-ai-first-browsers-agentic-navigation",
-          "title": "News - 2025 07 26 Ai First Browsers Agentic Navigation",
           "description": "Latest announcements, updates, and developments in the MCP ecosystem including protocol updates, new certifications, and...",
           "intent": "inform",
           "audience": [
@@ -439,6 +367,55 @@
         }
       ]
     },
+    "documentation": {
+      "title": "Technical Documentation",
+      "description": "Comprehensive guides, specifications, and reference materials. The authoritative source for MCP implementation.",
+      "entry_path": "/spec",
+      "audience": [
+        "developer",
+        "technical",
+        "researcher",
+        "implementer"
+      ],
+      "trust_level": "signed",
+      "feeds": [
+        {
+          "url": "https://wellknownmcp.org/spec",
+          "title": "Spec",
+          "description": "Complete MCP technical specification with protocols, standards, implementation guides, and compliance requirements. This...",
+          "intent": "reference",
+          "audience": [
+            "developer",
+            "technical",
+            "implementer"
+          ],
+          "importance": "critical",
+          "tags": [
+            "specification",
+            "technical",
+            "reference",
+            "complete"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/sdk",
+          "title": "Sdk",
+          "description": "Software Development Kit documentation and libraries for MCP implementation. Includes code examples, API references, and...",
+          "intent": "develop",
+          "audience": [
+            "developer",
+            "software-engineer"
+          ],
+          "importance": "critical",
+          "tags": [
+            "sdk",
+            "libraries",
+            "development",
+            "integration"
+          ]
+        }
+      ]
+    },
     "specialized_tools": {
       "title": "Developer Tools & Utilities",
       "description": "Interactive tools and utilities for implementation, testing, and hands-on learning. Where theory meets practice.",
@@ -452,20 +429,22 @@
       "trust_level": "signed",
       "feeds": [
         {
-          "url": "https://wellknownmcp.org/tools/sign-and-verify",
-          "title": "Cryptographic Signing Tool",
-          "description": "Cryptographic signing and verification tools for MCP feeds. Includes key management, signature validation, and trust cha...",
-          "intent": "secure",
+          "url": "https://wellknownmcp.org/tools/well-known",
+          "title": "Tools - Well Known",
+          "description": "Complete guide to the .well-known/ directory structure for agent discovery and MCP handshake protocols.",
+          "intent": "implement",
           "audience": [
-            "security-engineer",
-            "developer"
+            "developer",
+            "webmaster",
+            "agent"
           ],
           "importance": "critical",
           "tags": [
-            "cryptography",
-            "signing",
-            "verification",
-            "security"
+            "well-known",
+            "discovery",
+            "handshake",
+            "protocol",
+            "directory"
           ]
         },
         {
@@ -488,22 +467,20 @@
           "content_type": "interactive_tool"
         },
         {
-          "url": "https://wellknownmcp.org/tools/well-known",
-          "title": "Tools - Well Known",
-          "description": "Complete guide to the .well-known/ directory structure for agent discovery and MCP handshake protocols.",
-          "intent": "implement",
+          "url": "https://wellknownmcp.org/tools/sign-and-verify",
+          "title": "Cryptographic Signing Tool",
+          "description": "Cryptographic signing and verification tools for MCP feeds. Includes key management, signature validation, and trust cha...",
+          "intent": "secure",
           "audience": [
-            "developer",
-            "webmaster",
-            "agent"
+            "security-engineer",
+            "developer"
           ],
           "importance": "critical",
           "tags": [
-            "well-known",
-            "discovery",
-            "handshake",
-            "protocol",
-            "directory"
+            "cryptography",
+            "signing",
+            "verification",
+            "security"
           ]
         },
         {
@@ -557,55 +534,6 @@
             "component",
             "demo",
             "interactive"
-          ]
-        }
-      ]
-    },
-    "documentation": {
-      "title": "Technical Documentation",
-      "description": "Comprehensive guides, specifications, and reference materials. The authoritative source for MCP implementation.",
-      "entry_path": "/spec",
-      "audience": [
-        "developer",
-        "technical",
-        "researcher",
-        "implementer"
-      ],
-      "trust_level": "signed",
-      "feeds": [
-        {
-          "url": "https://wellknownmcp.org/spec",
-          "title": "Spec",
-          "description": "Complete MCP technical specification with protocols, standards, implementation guides, and compliance requirements. This...",
-          "intent": "reference",
-          "audience": [
-            "developer",
-            "technical",
-            "implementer"
-          ],
-          "importance": "critical",
-          "tags": [
-            "specification",
-            "technical",
-            "reference",
-            "complete"
-          ]
-        },
-        {
-          "url": "https://wellknownmcp.org/sdk",
-          "title": "Sdk",
-          "description": "Software Development Kit documentation and libraries for MCP implementation. Includes code examples, API references, and...",
-          "intent": "develop",
-          "audience": [
-            "developer",
-            "software-engineer"
-          ],
-          "importance": "critical",
-          "tags": [
-            "sdk",
-            "libraries",
-            "development",
-            "integration"
           ]
         }
       ]
@@ -781,18 +709,82 @@
   },
   "smart_routing": {
     "audience_based": {
-      "agent": {
-        "entry_point": "/tools/well-known",
+      "newcomer": {
+        "entry_point": "/faq",
         "recommended_sequence": [
-          "well-known",
-          "capabilities.llmfeed.json",
-          "llm-index.llmfeed.json",
-          "manifesto.llmfeed.json",
-          "mcp-lite.llmfeed.json"
+          "faq"
         ],
-        "behavioral_note": "Optimize for agent needs",
+        "behavioral_note": "Optimize for newcomer needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "developer": {
+        "entry_point": "/spec",
+        "recommended_sequence": [
+          "spec",
+          "sdk",
+          "well-known",
+          "verify",
+          "sign-and-verify"
+        ],
+        "behavioral_note": "Emphasize practical implementation and code examples",
         "priority_categories": [
+          "documentation",
+          "specialized_tools",
           "core_infrastructure"
+        ],
+        "token_budget_allocation": {
+          "core": 30,
+          "docs": 40,
+          "tools": 25,
+          "community": 5
+        }
+      },
+      "api-architect": {
+        "entry_point": "/tools/api-explained",
+        "recommended_sequence": [
+          "api-explained"
+        ],
+        "behavioral_note": "Optimize for api-architect needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "demo": {
+        "entry_point": "/tools/export-button",
+        "recommended_sequence": [
+          "export-button"
+        ],
+        "behavioral_note": "Optimize for demo needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "stakeholder": {
+        "entry_point": "/about",
+        "recommended_sequence": [
+          "about",
+          "2025-07-12-from-chatbots-to-autonomous-agents",
+          "llm-agent-readiness-framework-2025",
+          "manifesto",
+          "launch-newstack"
+        ],
+        "behavioral_note": "Optimize for stakeholder needs",
+        "priority_categories": [
+          "community_content"
         ],
         "token_budget_allocation": {
           "core": 40,
@@ -801,13 +793,29 @@
           "community": 20
         }
       },
-      "legal": {
-        "entry_point": "/legal",
+      "software-engineer": {
+        "entry_point": "/sdk",
         "recommended_sequence": [
-          "legal"
+          "sdk"
         ],
-        "behavioral_note": "Optimize for legal needs",
+        "behavioral_note": "Optimize for software-engineer needs",
         "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "tester": {
+        "entry_point": "/llmfeedhub",
+        "recommended_sequence": [
+          "llmfeedhub"
+        ],
+        "behavioral_note": "Optimize for tester needs",
+        "priority_categories": [
+          "specialized_tools"
+        ],
         "token_budget_allocation": {
           "core": 40,
           "docs": 25,
@@ -834,123 +842,12 @@
           "community": 20
         }
       },
-      "software-engineer": {
-        "entry_point": "/sdk",
+      "security-conscious": {
+        "entry_point": "/why-sign",
         "recommended_sequence": [
-          "sdk"
+          "why-sign"
         ],
-        "behavioral_note": "Optimize for software-engineer needs",
-        "priority_categories": [],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "newcomer": {
-        "entry_point": "/faq",
-        "recommended_sequence": [
-          "faq"
-        ],
-        "behavioral_note": "Optimize for newcomer needs",
-        "priority_categories": [],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "stakeholder": {
-        "entry_point": "/about",
-        "recommended_sequence": [
-          "about",
-          "llm-agent-readiness-framework-2025",
-          "manifesto",
-          "2025-07-05-microsoft-nlweb-protocol",
-          "launch-newstack"
-        ],
-        "behavioral_note": "Optimize for stakeholder needs",
-        "priority_categories": [
-          "community_content"
-        ],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "implementer": {
-        "entry_point": "/spec",
-        "recommended_sequence": [
-          "spec",
-          "feeds",
-          "llmfeedhub"
-        ],
-        "behavioral_note": "Optimize for implementer needs",
-        "priority_categories": [
-          "specialized_tools",
-          "documentation"
-        ],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "technical": {
-        "entry_point": "/spec",
-        "recommended_sequence": [
-          "spec"
-        ],
-        "behavioral_note": "Optimize for technical needs",
-        "priority_categories": [
-          "documentation"
-        ],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "demo": {
-        "entry_point": "/tools/export-button",
-        "recommended_sequence": [
-          "export-button"
-        ],
-        "behavioral_note": "Optimize for demo needs",
-        "priority_categories": [],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "auditor": {
-        "entry_point": "/verify",
-        "recommended_sequence": [
-          "verify"
-        ],
-        "behavioral_note": "Optimize for auditor needs",
-        "priority_categories": [],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "compliance": {
-        "entry_point": "/legal",
-        "recommended_sequence": [
-          "legal"
-        ],
-        "behavioral_note": "Optimize for compliance needs",
+        "behavioral_note": "Optimize for security-conscious needs",
         "priority_categories": [],
         "token_budget_allocation": {
           "core": 40,
@@ -979,92 +876,6 @@
           "community": 5
         }
       },
-      "tester": {
-        "entry_point": "/llmfeedhub",
-        "recommended_sequence": [
-          "llmfeedhub"
-        ],
-        "behavioral_note": "Optimize for tester needs",
-        "priority_categories": [
-          "specialized_tools"
-        ],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "general": {
-        "entry_point": "/about",
-        "recommended_sequence": [
-          "about",
-          "faq",
-          "why-sign",
-          "llm-agent-readiness-framework-2025",
-          "manifesto"
-        ],
-        "behavioral_note": "Provide accessible overviews and clear navigation",
-        "priority_categories": [
-          "community_content",
-          "general"
-        ],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "community": {
-        "entry_point": "/ecosystem",
-        "recommended_sequence": [
-          "ecosystem",
-          "llm-agent-readiness-framework-2025",
-          "manifesto",
-          "2025-07-05-microsoft-nlweb-protocol",
-          "launch-newstack"
-        ],
-        "behavioral_note": "Optimize for community needs",
-        "priority_categories": [
-          "community_content"
-        ],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "security-conscious": {
-        "entry_point": "/why-sign",
-        "recommended_sequence": [
-          "why-sign"
-        ],
-        "behavioral_note": "Optimize for security-conscious needs",
-        "priority_categories": [],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
-      "security-engineer": {
-        "entry_point": "/tools/sign-and-verify",
-        "recommended_sequence": [
-          "sign-and-verify",
-          "verify"
-        ],
-        "behavioral_note": "Optimize for security-engineer needs",
-        "priority_categories": [],
-        "token_budget_allocation": {
-          "core": 40,
-          "docs": 25,
-          "tools": 15,
-          "community": 20
-        }
-      },
       "researcher": {
         "entry_point": "/feeds",
         "recommended_sequence": [
@@ -1081,12 +892,32 @@
           "community": 20
         }
       },
-      "api-architect": {
-        "entry_point": "/tools/api-explained",
+      "community": {
+        "entry_point": "/ecosystem",
         "recommended_sequence": [
-          "api-explained"
+          "ecosystem",
+          "2025-07-12-from-chatbots-to-autonomous-agents",
+          "llm-agent-readiness-framework-2025",
+          "manifesto",
+          "launch-newstack"
         ],
-        "behavioral_note": "Optimize for api-architect needs",
+        "behavioral_note": "Optimize for community needs",
+        "priority_categories": [
+          "community_content"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "auditor": {
+        "entry_point": "/verify",
+        "recommended_sequence": [
+          "verify"
+        ],
+        "behavioral_note": "Optimize for auditor needs",
         "priority_categories": [],
         "token_budget_allocation": {
           "core": 40,
@@ -1095,26 +926,24 @@
           "community": 20
         }
       },
-      "developer": {
-        "entry_point": "/spec",
+      "agent": {
+        "entry_point": "/tools/well-known",
         "recommended_sequence": [
-          "spec",
-          "sdk",
-          "sign-and-verify",
-          "verify",
-          "well-known"
+          "well-known",
+          "capabilities.llmfeed.json",
+          "llm-index.llmfeed.json",
+          "manifesto.llmfeed.json",
+          "mcp-lite.llmfeed.json"
         ],
-        "behavioral_note": "Emphasize practical implementation and code examples",
+        "behavioral_note": "Optimize for agent needs",
         "priority_categories": [
-          "specialized_tools",
-          "documentation",
           "core_infrastructure"
         ],
         "token_budget_allocation": {
-          "core": 30,
-          "docs": 40,
-          "tools": 25,
-          "community": 5
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
         }
       },
       "webmaster": {
@@ -1132,6 +961,105 @@
           "tools": 15,
           "community": 20
         }
+      },
+      "technical": {
+        "entry_point": "/spec",
+        "recommended_sequence": [
+          "spec"
+        ],
+        "behavioral_note": "Optimize for technical needs",
+        "priority_categories": [
+          "documentation"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "implementer": {
+        "entry_point": "/spec",
+        "recommended_sequence": [
+          "spec",
+          "feeds",
+          "llmfeedhub"
+        ],
+        "behavioral_note": "Optimize for implementer needs",
+        "priority_categories": [
+          "documentation",
+          "specialized_tools"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "legal": {
+        "entry_point": "/legal",
+        "recommended_sequence": [
+          "legal"
+        ],
+        "behavioral_note": "Optimize for legal needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "general": {
+        "entry_point": "/about",
+        "recommended_sequence": [
+          "about",
+          "faq",
+          "why-sign",
+          "2025-07-12-from-chatbots-to-autonomous-agents",
+          "llm-agent-readiness-framework-2025"
+        ],
+        "behavioral_note": "Provide accessible overviews and clear navigation",
+        "priority_categories": [
+          "community_content",
+          "general"
+        ],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "security-engineer": {
+        "entry_point": "/verify",
+        "recommended_sequence": [
+          "verify",
+          "sign-and-verify"
+        ],
+        "behavioral_note": "Optimize for security-engineer needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
+      },
+      "compliance": {
+        "entry_point": "/legal",
+        "recommended_sequence": [
+          "legal"
+        ],
+        "behavioral_note": "Optimize for compliance needs",
+        "priority_categories": [],
+        "token_budget_allocation": {
+          "core": 40,
+          "docs": 25,
+          "tools": 15,
+          "community": 20
+        }
       }
     },
     "intent_based": {
@@ -1143,13 +1071,13 @@
       ],
       "implement_solution": [
         "spec",
-        "sign-and-verify",
         "well-known",
+        "sign-and-verify",
         "api-explained"
       ],
       "validate_feeds": [
-        "sign-and-verify",
         "verify",
+        "sign-and-verify",
         "schema.llmfeed.json"
       ],
       "browse_content": [
@@ -1158,15 +1086,15 @@
       ],
       "evaluate_trust": [
         "manifesto.llmfeed.json",
-        "sign-and-verify",
         "verify",
+        "sign-and-verify",
         "manifesto"
       ],
       "get_started": [
         "mcp-lite.llmfeed.json",
         "mcp.llmfeed.json",
-        "sign-and-verify",
-        "well-known"
+        "well-known",
+        "sign-and-verify"
       ],
       "explore_ecosystem": [
         "feeds",
@@ -1189,11 +1117,11 @@
         "/.well-known/capabilities.llmfeed.json"
       ],
       "prefetch_candidates": [
-        "llmfeedhub",
-        "sign-and-verify",
-        "sdk",
         "feeds",
-        "spec"
+        "sdk",
+        "well-known",
+        "spec",
+        "llmfeedhub"
       ],
       "lazy_load_categories": [
         "community_content"
@@ -1277,13 +1205,13 @@
         "cache_efficiency": "95%",
         "routing_accuracy": "97%"
       },
-      "last_health_check": "2025-06-18T08:58:36.220227Z"
+      "last_health_check": "2025-06-19T18:59:30.489241Z"
     }
   },
   "signature": {
     "algorithm": "ed25519",
-    "value": "vCpE/Y9rWtP+yaUmtZwEpUSgalLUjg7hR85nkQhpxGo=",
-    "created_at": "2025-06-18T08:58:36.220227Z"
+    "value": "cmKqXKKO60v+is4oUTIX+r10uZt7hqvG3Tw9zCS+oFI=",
+    "created_at": "2025-06-19T18:59:30.489241Z"
   },
   "certification": {
     "certifier": "https://llmca.org",
@@ -1291,11 +1219,11 @@
     "targets": [
       "all"
     ],
-    "issued_at": "2025-06-18T08:58:36.220227Z",
+    "issued_at": "2025-06-19T18:59:30.489241Z",
     "expires_at": "",
     "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
     "algorithm": "ed25519",
     "public_key_hint": "https://llmca.org/.well-known/llmca_cert.pem",
-    "value": "p8bxoK53SfmODjZGoJs9PSfapM2hmJMaJB09rh0UDQM="
+    "value": "pt9HfFRs9nkF7nLrMTCJ25SYcP0X4ZOwK7YCxHOkGmw="
   }
 }

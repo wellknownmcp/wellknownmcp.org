@@ -2,35 +2,31 @@
   "global": [
     {
       "tag": "llmfeed",
-      "count": 95
+      "count": 97
     },
     {
       "tag": "mcp",
-      "count": 55
+      "count": 50
     },
     {
       "tag": "agentic-web",
-      "count": 32
+      "count": 30
     },
     {
       "tag": "trust",
-      "count": 29
+      "count": 27
     },
     {
       "tag": "ai-agents",
-      "count": 20
-    },
-    {
-      "tag": "core",
       "count": 19
     },
     {
-      "tag": "manual",
-      "count": 16
+      "tag": "core",
+      "count": 18
     },
     {
-      "tag": "llm",
-      "count": 13
+      "tag": "manual",
+      "count": 15
     },
     {
       "tag": "launch",
@@ -41,10 +37,6 @@
       "count": 11
     },
     {
-      "tag": "interoperability",
-      "count": 10
-    },
-    {
       "tag": "ethics",
       "count": 9
     },
@@ -53,7 +45,7 @@
       "count": 9
     },
     {
-      "tag": "certification",
+      "tag": "llm",
       "count": 9
     },
     {
@@ -61,23 +53,31 @@
       "count": 8
     },
     {
+      "tag": "interoperability",
+      "count": 8
+    },
+    {
       "tag": "ia-marche-francais",
       "count": 8
     },
     {
-      "tag": "claude",
+      "tag": "certification",
       "count": 7
     },
     {
-      "tag": "llmca",
+      "tag": "open-standards",
       "count": 7
-    },
-    {
-      "tag": "anthropic",
-      "count": 6
     },
     {
       "tag": "agentic web",
+      "count": 6
+    },
+    {
+      "tag": "claude",
+      "count": 6
+    },
+    {
+      "tag": "llmca",
       "count": 6
     },
     {
@@ -85,15 +85,11 @@
       "count": 6
     },
     {
-      "tag": "signature",
-      "count": 6
-    },
-    {
-      "tag": "open-standards",
-      "count": 6
-    },
-    {
       "tag": "responsibility",
+      "count": 5
+    },
+    {
+      "tag": "anthropic",
       "count": 5
     },
     {
@@ -106,6 +102,10 @@
     },
     {
       "tag": "pipeline",
+      "count": 5
+    },
+    {
+      "tag": "agent-interoperability",
       "count": 5
     },
     {
@@ -129,10 +129,6 @@
       "count": 4
     },
     {
-      "tag": "agent-interoperability",
-      "count": 4
-    },
-    {
       "tag": "ai-infrastructure",
       "count": 4
     },
@@ -149,15 +145,7 @@
       "count": 4
     },
     {
-      "tag": "mcp-net",
-      "count": 4
-    },
-    {
-      "tag": "industries",
-      "count": 4
-    },
-    {
-      "tag": "use-cases",
+      "tag": "trust-verification",
       "count": 4
     },
     {
@@ -169,11 +157,15 @@
       "count": 4
     },
     {
-      "tag": "search",
+      "tag": "seo",
       "count": 3
     },
     {
-      "tag": "seo",
+      "tag": "autonomous-agents",
+      "count": 3
+    },
+    {
+      "tag": "business",
       "count": 3
     },
     {
@@ -213,15 +205,31 @@
       "count": 3
     },
     {
-      "tag": "trust-verification",
+      "tag": "web-standards",
       "count": 3
     },
     {
-      "tag": "llmfeedforge",
+      "tag": "mcp-net",
       "count": 3
     },
     {
-      "tag": "business",
+      "tag": "signature",
+      "count": 3
+    },
+    {
+      "tag": "industries",
+      "count": 3
+    },
+    {
+      "tag": "use-cases",
+      "count": 3
+    },
+    {
+      "tag": "search",
+      "count": 2
+    },
+    {
+      "tag": "model-context-protocol",
       "count": 2
     },
     {
@@ -254,10 +262,6 @@
     },
     {
       "tag": "token-economics",
-      "count": 2
-    },
-    {
-      "tag": "web-standards",
       "count": 2
     },
     {
@@ -301,6 +305,10 @@
       "count": 2
     },
     {
+      "tag": "llmfeedforge",
+      "count": 2
+    },
+    {
       "tag": "samsung",
       "count": 2
     },
@@ -310,10 +318,6 @@
     },
     {
       "tag": "mistral",
-      "count": 2
-    },
-    {
-      "tag": "mcp-spec",
       "count": 2
     },
     {
@@ -333,6 +337,10 @@
       "count": 2
     },
     {
+      "tag": "2025",
+      "count": 1
+    },
+    {
       "tag": "تشفير",
       "count": 1
     },
@@ -345,39 +353,27 @@
       "count": 1
     },
     {
-      "tag": "apple",
+      "tag": "ai-agents---",
       "count": 1
     },
     {
-      "tag": "meta",
+      "tag": "agent-collaboration",
       "count": 1
     },
     {
-      "tag": "open-agents",
+      "tag": "agent-frameworks",
       "count": 1
     },
     {
-      "tag": "microsoft",
+      "tag": "chatbots-evolution",
       "count": 1
     },
     {
-      "tag": "nlweb",
+      "tag": "goal-oriented-ai",
       "count": 1
     },
     {
-      "tag": "autonomous-agents",
-      "count": 1
-    },
-    {
-      "tag": "chatbots",
-      "count": 1
-    },
-    {
-      "tag": "ai-first-browsers",
-      "count": 1
-    },
-    {
-      "tag": "navigation",
+      "tag": "multi-step-agents",
       "count": 1
     },
     {
@@ -438,6 +434,34 @@
     },
     {
       "tag": "techinnovation",
+      "count": 1
+    },
+    {
+      "tag": "agent-mediated-web",
+      "count": 1
+    },
+    {
+      "tag": "agentic-navigation",
+      "count": 1
+    },
+    {
+      "tag": "ai-first-browsers",
+      "count": 1
+    },
+    {
+      "tag": "arc-search",
+      "count": 1
+    },
+    {
+      "tag": "brave-ai",
+      "count": 1
+    },
+    {
+      "tag": "opera-ai",
+      "count": 1
+    },
+    {
+      "tag": "web-browsing-evolution",
       "count": 1
     },
     {
@@ -505,11 +529,7 @@
       "count": 1
     },
     {
-      "tag": "agentic-seo",
-      "count": 1
-    },
-    {
-      "tag": "web-optimization",
+      "tag": "validation",
       "count": 1
     },
     {
@@ -554,6 +574,42 @@
     },
     {
       "tag": "progressive-enhancement",
+      "count": 1
+    },
+    {
+      "tag": "facebook-agents",
+      "count": 1
+    },
+    {
+      "tag": "instagram-agents",
+      "count": 1
+    },
+    {
+      "tag": "meta",
+      "count": 1
+    },
+    {
+      "tag": "meta-open-agents",
+      "count": 1
+    },
+    {
+      "tag": "whatsapp-agents",
+      "count": 1
+    },
+    {
+      "tag": "agent-web-interaction",
+      "count": 1
+    },
+    {
+      "tag": "conversational-interfaces",
+      "count": 1
+    },
+    {
+      "tag": "enterprise-adoption",
+      "count": 1
+    },
+    {
+      "tag": "microsoft-nlweb",
       "count": 1
     },
     {
@@ -673,6 +729,34 @@
       "count": 1
     },
     {
+      "tag": "agent-web-security",
+      "count": 1
+    },
+    {
+      "tag": "ai-agent-security",
+      "count": 1
+    },
+    {
+      "tag": "compliance",
+      "count": 1
+    },
+    {
+      "tag": "cryptographic-trust",
+      "count": 1
+    },
+    {
+      "tag": "enterprise-mcp",
+      "count": 1
+    },
+    {
+      "tag": "llmca-certification",
+      "count": 1
+    },
+    {
+      "tag": "mcp-signature",
+      "count": 1
+    },
+    {
       "tag": "ai-act",
       "count": 1
     },
@@ -754,6 +838,10 @@
     },
     {
       "tag": "llm代理",
+      "count": 1
+    },
+    {
+      "tag": "mcp-spec",
       "count": 1
     }
   ],
@@ -842,35 +930,27 @@
     ],
     "en": [
       {
-        "tag": "mcp",
-        "count": 37
+        "tag": "llmfeed",
+        "count": 33
       },
       {
-        "tag": "llmfeed",
-        "count": 31
+        "tag": "mcp",
+        "count": 32
       },
       {
         "tag": "agentic-web",
-        "count": 25
+        "count": 23
       },
       {
         "tag": "trust",
-        "count": 19
+        "count": 17
       },
       {
         "tag": "ai-agents",
-        "count": 15
+        "count": 14
       },
       {
         "tag": "llm",
-        "count": 11
-      },
-      {
-        "tag": "certification",
-        "count": 8
-      },
-      {
-        "tag": "interoperability",
         "count": 7
       },
       {
@@ -878,11 +958,15 @@
         "count": 7
       },
       {
-        "tag": "claude",
+        "tag": "certification",
+        "count": 6
+      },
+      {
+        "tag": "interoperability",
         "count": 5
       },
       {
-        "tag": "signature",
+        "tag": "open-standards",
         "count": 5
       },
       {
@@ -894,7 +978,7 @@
         "count": 5
       },
       {
-        "tag": "anthropic",
+        "tag": "claude",
         "count": 4
       },
       {
@@ -902,15 +986,19 @@
         "count": 4
       },
       {
-        "tag": "open-standards",
-        "count": 4
+        "tag": "autonomous-agents",
+        "count": 3
       },
       {
-        "tag": "llmca",
-        "count": 4
+        "tag": "agent-interoperability",
+        "count": 3
       },
       {
-        "tag": "ai-standards",
+        "tag": "cryptographic-verification",
+        "count": 3
+      },
+      {
+        "tag": "business",
         "count": 3
       },
       {
@@ -918,7 +1006,7 @@
         "count": 3
       },
       {
-        "tag": "cryptographic-verification",
+        "tag": "anthropic",
         "count": 3
       },
       {
@@ -930,19 +1018,19 @@
         "count": 3
       },
       {
-        "tag": "search",
-        "count": 2
+        "tag": "llmca",
+        "count": 3
+      },
+      {
+        "tag": "ai-standards",
+        "count": 3
+      },
+      {
+        "tag": "web-standards",
+        "count": 3
       },
       {
         "tag": "seo",
-        "count": 2
-      },
-      {
-        "tag": "core",
-        "count": 2
-      },
-      {
-        "tag": "agent-interoperability",
         "count": 2
       },
       {
@@ -950,7 +1038,7 @@
         "count": 2
       },
       {
-        "tag": "business",
+        "tag": "model-context-protocol",
         "count": 2
       },
       {
@@ -959,6 +1047,10 @@
       },
       {
         "tag": "privacy",
+        "count": 2
+      },
+      {
+        "tag": "trust-verification",
         "count": 2
       },
       {
@@ -978,51 +1070,43 @@
         "count": 2
       },
       {
-        "tag": "web-standards",
+        "tag": "signature",
         "count": 2
       },
       {
-        "tag": "llmfeedforge",
-        "count": 2
-      },
-      {
-        "tag": "mcp-net",
-        "count": 2
-      },
-      {
-        "tag": "apple",
+        "tag": "2025",
         "count": 1
       },
       {
-        "tag": "meta",
+        "tag": "ai-agents---",
         "count": 1
       },
       {
-        "tag": "open-agents",
+        "tag": "search",
         "count": 1
       },
       {
-        "tag": "microsoft",
+        "tag": "agent-collaboration",
         "count": 1
       },
       {
-        "tag": "nlweb",
+        "tag": "agent-frameworks",
         "count": 1
       },
       {
-        "tag": "autonomous-agents",
+        "tag": "chatbots-evolution",
         "count": 1
       },
       {
-        "tag": "chatbots",
+        "tag": "goal-oriented-ai",
         "count": 1
       },
       {
-        "tag": "ai-first-browsers",
+        "tag": "multi-step-agents",
         "count": 1
       },
       {
-        "tag": "navigation",
+        "tag": "core",
         "count": 1
       },
       {
@@ -1083,6 +1167,34 @@
       },
       {
         "tag": "techinnovation",
+        "count": 1
+      },
+      {
+        "tag": "agent-mediated-web",
+        "count": 1
+      },
+      {
+        "tag": "agentic-navigation",
+        "count": 1
+      },
+      {
+        "tag": "ai-first-browsers",
+        "count": 1
+      },
+      {
+        "tag": "arc-search",
+        "count": 1
+      },
+      {
+        "tag": "brave-ai",
+        "count": 1
+      },
+      {
+        "tag": "opera-ai",
+        "count": 1
+      },
+      {
+        "tag": "web-browsing-evolution",
         "count": 1
       },
       {
@@ -1150,6 +1262,10 @@
         "count": 1
       },
       {
+        "tag": "validation",
+        "count": 1
+      },
+      {
         "tag": "aio",
         "count": 1
       },
@@ -1167,14 +1283,6 @@
       },
       {
         "tag": "pipeline",
-        "count": 1
-      },
-      {
-        "tag": "agentic-seo",
-        "count": 1
-      },
-      {
-        "tag": "web-optimization",
         "count": 1
       },
       {
@@ -1219,10 +1327,6 @@
       },
       {
         "tag": "open-source-ai",
-        "count": 1
-      },
-      {
-        "tag": "trust-verification",
         "count": 1
       },
       {
@@ -1314,11 +1418,55 @@
         "count": 1
       },
       {
+        "tag": "llmfeedforge",
+        "count": 1
+      },
+      {
+        "tag": "mcp-net",
+        "count": 1
+      },
+      {
         "tag": "samsung",
         "count": 1
       },
       {
         "tag": "wechat",
+        "count": 1
+      },
+      {
+        "tag": "facebook-agents",
+        "count": 1
+      },
+      {
+        "tag": "instagram-agents",
+        "count": 1
+      },
+      {
+        "tag": "meta",
+        "count": 1
+      },
+      {
+        "tag": "meta-open-agents",
+        "count": 1
+      },
+      {
+        "tag": "whatsapp-agents",
+        "count": 1
+      },
+      {
+        "tag": "agent-web-interaction",
+        "count": 1
+      },
+      {
+        "tag": "conversational-interfaces",
+        "count": 1
+      },
+      {
+        "tag": "enterprise-adoption",
+        "count": 1
+      },
+      {
+        "tag": "microsoft-nlweb",
         "count": 1
       },
       {
@@ -1386,14 +1534,6 @@
         "count": 1
       },
       {
-        "tag": "industries",
-        "count": 1
-      },
-      {
-        "tag": "use-cases",
-        "count": 1
-      },
-      {
         "tag": "ai-platforms",
         "count": 1
       },
@@ -1450,11 +1590,31 @@
         "count": 1
       },
       {
-        "tag": "manual",
+        "tag": "agent-web-security",
         "count": 1
       },
       {
-        "tag": "mcp-spec",
+        "tag": "ai-agent-security",
+        "count": 1
+      },
+      {
+        "tag": "compliance",
+        "count": 1
+      },
+      {
+        "tag": "cryptographic-trust",
+        "count": 1
+      },
+      {
+        "tag": "enterprise-mcp",
+        "count": 1
+      },
+      {
+        "tag": "llmca-certification",
+        "count": 1
+      },
+      {
+        "tag": "mcp-signature",
         "count": 1
       }
     ],

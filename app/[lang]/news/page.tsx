@@ -1,5 +1,7 @@
-// page.tsx - Server Component avec corrections complètes
+// page.tsx - Build-safe avec lecture fichiers + fetch hybride
 import { Suspense } from 'react'
+import { promises as fs } from 'fs'
+import path from 'path'
 import { ClientNewsInteractions } from './ClientNewsInteractions'
 import SeoHead from '@/components/SeoHead'
 import { LanguageSelector } from '@/components/LanguageSelector'
@@ -132,18 +134,74 @@ export async function generateStaticParams() {
   return languages.map((lang) => ({ lang }))
 }
 
-// 🚀 CORRECTION: Utilisation locale des fichiers pour le build
-async function getNewsData(lang: string) {
+// 🚀 SOLUTION: Détection environnement + lecture fichiers appropriée
+function isBuildTime(): boolean {
+  return (
+    process.env.NODE_ENV === 'production' && 
+    (process.env.VERCEL_ENV === undefined || process.env.VERCEL_PHASE === 'VERCEL_PHASE_PRODUCTION_BUILD')
+  ) || process.env.NEXT_PHASE === 'phase-production-build'
+}
+
+async function readDataFromFiles(lang: string) {
   try {
-    // 🎯 IMPORTANT: Utiliser des fichiers locaux au build, URL externe en runtime
-    const isBuilding = process.env.NODE_ENV === 'production' && process.env.VERCEL_ENV !== 'production'
-    const baseUrl = isBuilding ? 'http://localhost:3000' : 'https://wellknownmcp.org'
+    // Chemins vers les fichiers JSON dans le dossier public
+    const publicDir = path.join(process.cwd(), 'public')
+    const indexPath = path.join(publicDir, 'news', 'index.json')
+    const tagsPath = path.join(publicDir, 'news', 'tags-report.json')
+
+    console.log(`[Build] Reading files from filesystem for ${lang}`)
+
+    // Lire les fichiers directement
+    const [indexData, tagsData] = await Promise.allSettled([
+      fs.readFile(indexPath, 'utf8').then(content => JSON.parse(content)),
+      fs.readFile(tagsPath, 'utf8').then(content => JSON.parse(content)).catch(() => null)
+    ])
+
+    const data: IndexData = indexData.status === 'fulfilled' ? indexData.value : {}
+    const tagsReport = tagsData.status === 'fulfilled' ? tagsData.value : null
+
+    const articles = getArticlesByLang(data, lang).map(sanitizeArticle)
     
-    console.log(`[SSR] Loading news data for ${lang} from ${baseUrl}`)
+    let popularTags: { tag: string; count: number }[] = []
+    if (tagsReport) {
+      const langTags = tagsReport.perLang?.[lang] || []
+      popularTags = langTags
+        .filter((tagData: { tag: string; count: number }) =>
+          tagData.count > 5 && USER_FRIENDLY_TAGS.includes(tagData.tag)
+        )
+        .sort((a: { count: number }, b: { count: number }) => b.count - a.count)
+    }
+
+    console.log(`[Build] Loaded ${articles.length} articles from filesystem`)
+
+    return {
+      articles,
+      popularTags,
+      buildMetadata: data._metadata,
+      error: null
+    }
+  } catch (error) {
+    console.error('[Build] File reading failed:', error)
+    return {
+      articles: [],
+      popularTags: [],
+      buildMetadata: null,
+      error: `File reading failed: ${error instanceof Error ? error.message : 'Unknown error'}`
+    }
+  }
+}
+
+async function fetchDataFromHTTP(lang: string) {
+  try {
+    // En production runtime, utiliser l'URL publique
+    const baseUrl = process.env.NODE_ENV === 'production' 
+      ? 'https://wellknownmcp.org' 
+      : `http://localhost:3000`
+    
+    console.log(`[Runtime] Fetching data from ${baseUrl} for ${lang}`)
     
     const [indexRes, tagsRes] = await Promise.all([
       fetch(`${baseUrl}/news/index.json`, { 
-        // 🚀 CORRECTION: Cache avec revalidation au lieu de no-store
         next: { revalidate: 300 }, // 5 minutes
         headers: {
           'User-Agent': 'NextJS-SSR/1.0'
@@ -176,7 +234,7 @@ async function getNewsData(lang: string) {
         .sort((a: { count: number }, b: { count: number }) => b.count - a.count)
     }
 
-    console.log(`[SSR] Loaded ${articles.length} articles, ${popularTags.length} popular tags`)
+    console.log(`[Runtime] Loaded ${articles.length} articles via HTTP`)
 
     return {
       articles,
@@ -185,13 +243,24 @@ async function getNewsData(lang: string) {
       error: null
     }
   } catch (error) {
-    console.error('[SSR] Server-side news loading failed:', error)
+    console.error('[Runtime] HTTP fetch failed:', error)
     return {
       articles: [],
       popularTags: [],
       buildMetadata: null,
       error: error instanceof Error ? error.message : 'Unknown error occurred'
     }
+  }
+}
+
+// 🎯 FONCTION PRINCIPALE: Choix automatique selon l'environnement
+async function getNewsData(lang: string) {
+  if (isBuildTime()) {
+    // Build time: lire les fichiers directement
+    return await readDataFromFiles(lang)
+  } else {
+    // Runtime: utiliser HTTP fetch
+    return await fetchDataFromHTTP(lang)
   }
 }
 
@@ -261,7 +330,6 @@ export default async function NewsPage({ params }: PageProps) {
           </div>
         )}
 
-        {/* 🚀 CORRECTION: Wrapper avec Suspense pour useSearchParams */}
         <Suspense fallback={
           <div className="text-center">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500 mx-auto mb-4"></div>
