@@ -2913,11 +2913,12 @@
     }
   },
   "index_hash": "e0ffa10ec60c1763cb29e9b79a4c0ca7",
-  "last_generation": "2025-06-19T18:53:56.370Z",
+  "last_generation": "2025-06-20T15:36:48.959Z",
   "stats": {
     "processed": 0,
     "updated": 0,
     "removed": 0,
-    "cached": 0
+    "cached": 53,
+    "lite_selected": 0
   }
 }

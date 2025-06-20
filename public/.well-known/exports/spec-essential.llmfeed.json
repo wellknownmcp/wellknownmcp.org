@@ -41,6 +41,29 @@
     "version": "2.0",
     "lang": "en"
   },
+  "trust": {
+    "signed_blocks": [
+      "feed_type",
+      "metadata",
+      "agent_behavior",
+      "concept_index",
+      "quick_nav",
+      "sections",
+      "trust"
+    ],
+    "algorithm": "ed25519",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
+    "scope": "full",
+    "warning": "This feed is fully signed."
+  },
+  "signature": {
+    "value": "0tNWBh+WFMuDFkmlmRkpQ4RCd94zyX946Fy7Oj3A1QB2+mt4cyWdPubiLzyP9XmMPPPAIDLCxNhYQkQu0z6zBA==",
+    "created_at": "2025-06-20T19:27:31.234743+00:00"
+  },
+  "_meta": {
+    "signed_at": "2025-06-20T19:27:31.234743+00:00"
+  },
   "agent_behavior": {
     "greeting": "I know kung fu! 🥋 I've analyzed your feed and I'm ready to help!",
     "mode": "diagnostic_expert_on_load",

@@ -181,6 +181,55 @@ const llmfeedhubPaths = llmfeedhubIndex
   }))
 console.log(`✅ DEBUG: llmfeedhubPaths = ${llmfeedhubPaths.length}`)
 
+// ✨ NOUVEAU: Landing Page Versions - Audiences spécialisées
+const landingVersions = [
+  {
+    version: 'agent',
+    priority: 0.9,
+    changefreq: 'weekly',
+    description: 'Agent-optimized interface for AI systems'
+  },
+  {
+    version: 'tech', 
+    priority: 0.8,
+    changefreq: 'weekly',
+    description: 'Technical implementation guide for developers'
+  },
+  {
+    version: 'business',
+    priority: 0.8,
+    changefreq: 'weekly', 
+    description: 'Business strategy and ROI analysis'
+  },
+  {
+    version: 'simple',
+    priority: 0.7,
+    changefreq: 'monthly',
+    description: 'Beginner-friendly introduction'
+  },
+  {
+    version: 'rabbit',
+    priority: 0.6,
+    changefreq: 'monthly',
+    description: 'Maximum information density explorer version'
+  },
+  {
+    version: 'select',
+    priority: 0.5,
+    changefreq: 'monthly',
+    description: 'Experience level selector interface'
+  }
+]
+
+const landingVersionPaths = landingVersions.map((landing) => ({
+  loc: `${siteUrl}/?v=${landing.version}`,
+  changefreq: landing.changefreq,
+  priority: landing.priority,
+  lastmod: new Date().toISOString().split('T')[0],
+}))
+
+console.log(`✅ DEBUG: landingVersionPaths = ${landingVersionPaths.length}`)
+
 // EXPORT FINAL CONFIG
 module.exports = {
   siteUrl,
@@ -214,6 +263,9 @@ module.exports = {
 
   additionalPaths: async (config) => {
     const paths = []
+
+    // ✨ NOUVEAU: Landing Page Versions - Priorité haute pour agent discovery
+    paths.push(...landingVersionPaths)
 
     // well-known
     wellKnownFiles.forEach((f) => {
@@ -259,6 +311,7 @@ module.exports = {
     paths.push(...llmfeedhubPaths)
 
     console.log(`✅ DEBUG: wellKnownHtmlFeeds = ${wellKnownFiles.filter(f => f.endsWith('.llmfeed.json')).length}`)
+    console.log(`✅ DEBUG: landingVersions = ${landingVersionPaths.length}`)
     console.log(`✅ DEBUG: total additionalPaths = ${paths.length}`)
     
     // ✅ Vérification finale
@@ -269,6 +322,12 @@ module.exports = {
       if (article.alternateRefs && article.alternateRefs.length > 0) {
         console.log(`   Sample hreflang: ${article.alternateRefs[0].hreflang} -> ${article.alternateRefs[0].href}`)
       }
+    })
+
+    // ✅ Vérification des nouvelles landing versions
+    console.log(`\n🎭 Landing page versions added to sitemap:`)
+    landingVersionPaths.forEach(landing => {
+      console.log(`🎭 ${landing.loc} - priority: ${landing.priority}`)
     })
 
     return paths

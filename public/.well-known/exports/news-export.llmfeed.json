@@ -5,35 +5,36 @@
     "title": "WellKnownMCP News Archive - Complete Export",
     "description": "Complete archive of all WellKnownMCP news articles, tutorials, and advocacy pieces about the agentic web and MCP standards",
     "version": "1.0.0",
-    "generated_at": "2025-06-19T18:53:56.351Z",
+    "generated_at": "2025-06-20T15:36:48.912Z",
     "language": "en",
     "content_type": "news_archive",
-    "total_articles": 53
+    "total_articles": 53,
+    "usage_context": "project_context_comprehensive"
   },
-  "intent": {
-    "primary": "comprehensive_news_archive",
-    "secondary": [
-      "research",
-      "reference",
-      "analysis"
+  "trust": {
+    "scope": "full",
+    "signed_blocks": [
+      "feed_type",
+      "metadata",
+      "intent",
+      "llm_behavior",
+      "agent_instructions",
+      "data",
+      "trust"
     ],
-    "use_cases": [
-      "Research MCP protocol evolution",
-      "Understand agentic web trends",
-      "Reference implementation examples",
-      "Follow WellKnownMCP project timeline"
-    ]
+    "trust_level": "self-issued",
+    "content_authenticity": "source_verified",
+    "algorithm": "ed25519",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
+    "warning": "This feed is fully signed."
   },
-  "llm_behavior": {
-    "summarization_hint": "Focus on technical innovations, standard developments, and ecosystem evolution",
-    "analysis_depth": "comprehensive",
-    "key_themes": [
-      "interoperability",
-      "open_standards",
-      "agent_optimization",
-      "user_control"
-    ],
-    "context_preservation": "high"
+  "signature": {
+    "value": "nYxDID/Na5Vq1Yu0g1tfZNxoqSIISO2LA1lLOPs2I8ySpE4Ij1Mo0L5uI/JFPcnuJvAcA8AwcfxJWMoy72koAg==",
+    "created_at": "2025-06-20T19:17:37.837399+00:00"
+  },
+  "_meta": {
+    "signed_at": "2025-06-20T19:17:37.837399+00:00"
   },
   "agent_instructions": {
     "content_access": "All articles available with full content inline",
@@ -3683,14 +3684,29 @@
       }
     }
   },
-  "trust": {
-    "scope": "complete",
-    "signed_blocks": [
-      "feed_type",
-      "metadata",
-      "data"
+  "intent": {
+    "primary": "comprehensive_news_archive",
+    "secondary": [
+      "research",
+      "reference",
+      "analysis"
     ],
-    "trust_level": "self-issued",
-    "content_authenticity": "source_verified"
+    "use_cases": [
+      "Research MCP protocol evolution",
+      "Understand agentic web trends",
+      "Reference implementation examples",
+      "Follow WellKnownMCP project timeline"
+    ]
+  },
+  "llm_behavior": {
+    "summarization_hint": "Focus on technical innovations, standard developments, and ecosystem evolution",
+    "analysis_depth": "comprehensive",
+    "key_themes": [
+      "interoperability",
+      "open_standards",
+      "agent_optimization",
+      "user_control"
+    ],
+    "context_preservation": "high"
   }
 }

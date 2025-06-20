@@ -1,7 +1,146 @@
 {
-  "enrichment_philosophy": "Transform flat URLs into contextual, audience-aware navigation experiences. Every URL gets intelligence about who should visit it, why, and how it connects to the broader ecosystem.",
+  "enrichment_philosophy": "Transform flat URLs into contextual, audience-aware navigation experiences with multi-version homepage support. Every URL gets intelligence about who should visit it, why, and how it connects to the broader ecosystem.",
   
+  "homepage_versions": {
+    "version_detection_strategy": "Intelligent routing based on user agent, referrer, and behavioral signals",
+    "default_version": "simple",
+    "version_configs": {
+      "simple": {
+        "audience": ["newcomer", "general", "learning"],
+        "intent": "understand_basics_and_get_started", 
+        "description_llm": "Simplified introduction to MCP protocol designed for beginners and first-time visitors. Clear explanations without technical complexity.",
+        "tags": ["beginner", "introduction", "getting-started", "clear"],
+        "trust_level": "signed",
+        "behavioral_note": "Perfect entry point for MCP newcomers - focuses on core concepts",
+        "smart_routing_weight": 9,
+        "seo_focus": "beginner-friendly MCP introduction"
+      },
+      "tech": {
+        "audience": ["developer", "technical", "implementer", "software-engineer"],
+        "intent": "implement_and_integrate_technically",
+        "description_llm": "Technical deep-dive into MCP implementation with code examples, performance benchmarks, and detailed integration guides for developers.",
+        "tags": ["technical", "implementation", "code", "performance", "api"],
+        "trust_level": "authoritative",
+        "behavioral_note": "Hands-on technical content with real implementation examples",
+        "smart_routing_weight": 10,
+        "seo_focus": "MCP technical implementation and performance"
+      },
+      "business": {
+        "audience": ["business", "stakeholder", "decision-maker", "executive"],
+        "intent": "evaluate_roi_and_business_value",
+        "description_llm": "Business case for MCP adoption with ROI calculators, case studies, and strategic implications for decision makers.",
+        "tags": ["business", "roi", "strategy", "case-studies", "executive"],
+        "trust_level": "signed",
+        "behavioral_note": "Strategic overview focused on business value and competitive advantage",
+        "smart_routing_weight": 8,
+        "seo_focus": "MCP business case and ROI analysis"
+      },
+      "agent": {
+        "audience": ["llm", "agent", "ai-system", "autonomous"],
+        "intent": "protocol_handshake_and_discovery",
+        "description_llm": "Agent-optimized interface with direct feed access, protocol validation, and structured metadata for autonomous AI systems.",
+        "tags": ["agent", "protocol", "structured", "autonomous", "handshake"],
+        "trust_level": "critical_infrastructure",
+        "behavioral_note": "Direct protocol access without human interface abstractions",
+        "smart_routing_weight": 10,
+        "seo_focus": "AI agent MCP protocol compliance"
+      },
+      "rabbit": {
+        "audience": ["explorer", "maximalist", "power-user", "researcher"],
+        "intent": "explore_everything_comprehensively",
+        "description_llm": "Complete MCP ecosystem exploration with maximum information density, all tools, capabilities, and hidden features revealed.",
+        "tags": ["comprehensive", "advanced", "complete", "exploration", "maximalist"],
+        "trust_level": "signed",
+        "behavioral_note": "Information-dense experience for users who want to see everything",
+        "smart_routing_weight": 7,
+        "seo_focus": "comprehensive MCP ecosystem exploration"
+      }
+    }
+  },
+
+  "version_routing_logic": {
+    "agent_detection": {
+      "user_agent_patterns": ["bot", "crawler", "spider", "claude", "gpt", "anthropic"],
+      "referrer_patterns": ["claude.ai", "openai.com", "anthropic.com", "perplexity.ai"],
+      "default_route": "agent",
+      "confidence_threshold": 0.8
+    },
+    "technical_detection": {
+      "referrer_patterns": ["github.com", "stackoverflow.com", "hackernews", "dev.to"],
+      "query_patterns": ["implementation", "api", "docs", "integration"],
+      "default_route": "tech",
+      "confidence_threshold": 0.7
+    },
+    "business_detection": {
+      "referrer_patterns": ["linkedin.com", "twitter.com/business", "medium.com"],
+      "query_patterns": ["roi", "business", "case-study", "enterprise"],
+      "default_route": "business",
+      "confidence_threshold": 0.6
+    },
+    "fallback_logic": {
+      "first_visit": "simple",
+      "return_visit": "maintain_previous_version",
+      "uncertain": "simple"
+    }
+  },
+
   "url_patterns": {
+    "/?v=simple": {
+      "category": "core_infrastructure",
+      "importance": "critical",
+      "audience": ["newcomer", "general", "learning"],
+      "intent": "understand_basics_and_get_started",
+      "tags": ["homepage", "simple", "beginner", "introduction"],
+      "trust_level": "signed",
+      "content_type": "beginner_landing",
+      "behavioral_note": "Simplified entry point optimized for learning",
+      "smart_routing_weight": 9
+    },
+    "/?v=tech": {
+      "category": "documentation",
+      "importance": "critical", 
+      "audience": ["developer", "technical", "implementer"],
+      "intent": "implement_and_integrate_technically",
+      "tags": ["homepage", "technical", "implementation", "developer"],
+      "trust_level": "authoritative",
+      "content_type": "technical_landing",
+      "behavioral_note": "Technical deep-dive with implementation focus",
+      "smart_routing_weight": 10
+    },
+    "/?v=business": {
+      "category": "core_infrastructure",
+      "importance": "high",
+      "audience": ["business", "stakeholder", "decision-maker"],
+      "intent": "evaluate_roi_and_business_value", 
+      "tags": ["homepage", "business", "roi", "strategy"],
+      "trust_level": "signed",
+      "content_type": "business_landing",
+      "behavioral_note": "Strategic business case and value proposition",
+      "smart_routing_weight": 8
+    },
+    "/?v=agent": {
+      "category": "core_infrastructure",
+      "importance": "critical",
+      "audience": ["llm", "agent", "ai-system"],
+      "intent": "protocol_handshake_and_discovery",
+      "tags": ["homepage", "agent", "protocol", "structured"],
+      "trust_level": "critical_infrastructure", 
+      "content_type": "agent_interface",
+      "behavioral_note": "Direct protocol access for autonomous systems",
+      "smart_routing_weight": 10
+    },
+    "/?v=rabbit": {
+      "category": "specialized_tools",
+      "importance": "high",
+      "audience": ["explorer", "maximalist", "power-user"],
+      "intent": "explore_everything_comprehensively",
+      "tags": ["homepage", "comprehensive", "advanced", "maximalist"],
+      "trust_level": "signed",
+      "content_type": "comprehensive_landing",
+      "behavioral_note": "Maximum information density for power users",
+      "smart_routing_weight": 7
+    },
+
     "/.well-known/": {
       "category": "core_infrastructure",
       "importance": "critical",
@@ -24,6 +163,138 @@
       "content_type": "interactive_tool",
       "behavioral_note": "Hands-on tools for practical implementation and testing",
       "smart_routing_weight": 8
+    },
+
+    "/tools/export-button": {
+      "category": "specialized_tools",
+      "importance": "critical",
+      "audience": ["developer", "implementer"],
+      "intent": "demonstrate_core_functionality",
+      "tags": ["export", "demo", "component", "integration"],
+      "trust_level": "verified",
+      "content_type": "interactive_demo",
+      "behavioral_note": "Primary MCP export demonstration",
+      "smart_routing_weight": 9
+    },
+
+    "/tools/mcp-explained": {
+      "category": "documentation",
+      "importance": "critical",
+      "audience": ["developer", "newcomer"],
+      "intent": "understand_protocol_fundamentals",
+      "tags": ["protocol", "explanation", "fundamentals"],
+      "trust_level": "authoritative",
+      "content_type": "core_explanation",
+      "behavioral_note": "Protocol fundamentals for implementation",
+      "smart_routing_weight": 9
+    },
+
+    "/tools/api-explained": {
+      "category": "documentation", 
+      "importance": "high",
+      "audience": ["developer", "integrator"],
+      "intent": "integrate_programmatically",
+      "tags": ["api", "integration", "programming"],
+      "trust_level": "authoritative",
+      "content_type": "integration_guide",
+      "behavioral_note": "API integration patterns",
+      "smart_routing_weight": 8
+    },
+
+    "/tools/sign-and-verify": {
+      "category": "specialized_tools",
+      "importance": "high",
+      "audience": ["security", "developer"],
+      "intent": "secure_and_validate",
+      "tags": ["security", "cryptography", "validation"],
+      "trust_level": "critical_infrastructure",
+      "content_type": "security_tool",
+      "behavioral_note": "Cryptographic operations for trust",
+      "smart_routing_weight": 8
+    },
+
+    "/tools/well-known": {
+      "category": "specialized_tools",
+      "importance": "high",
+      "audience": ["webmaster", "implementer"],
+      "intent": "implement_discovery_endpoints",
+      "tags": ["discovery", "implementation", "endpoints"],
+      "trust_level": "verified",
+      "content_type": "implementation_tool",
+      "behavioral_note": "Discovery endpoint implementation",
+      "smart_routing_weight": 8
+    },
+
+    "/tools/schema": {
+      "category": "documentation",
+      "importance": "high", 
+      "audience": ["developer", "validator"],
+      "intent": "validate_and_structure",
+      "tags": ["schema", "validation", "structure"],
+      "trust_level": "authoritative",
+      "content_type": "validation_tool",
+      "behavioral_note": "Data structure validation",
+      "smart_routing_weight": 7
+    },
+
+    "/tools/validation-tools": {
+      "category": "specialized_tools",
+      "importance": "high",
+      "audience": ["developer", "tester"],
+      "intent": "test_and_validate",
+      "tags": ["validation", "testing", "compliance"],
+      "trust_level": "verified", 
+      "content_type": "testing_suite",
+      "behavioral_note": "Compliance testing utilities",
+      "smart_routing_weight": 7
+    },
+
+    "/tools/agent-behavior": {
+      "category": "specialized_tools",
+      "importance": "high",
+      "audience": ["ai-engineer", "prompt-engineer"],
+      "intent": "optimize_agent_interaction",
+      "tags": ["behavior", "agent", "optimization"],
+      "trust_level": "verified",
+      "content_type": "behavior_guide",
+      "behavioral_note": "Agent behavior modification patterns",
+      "smart_routing_weight": 7
+    },
+
+    "/tools/prompts-explained": {
+      "category": "specialized_tools", 
+      "importance": "medium",
+      "audience": ["prompt-engineer", "ai-researcher"],
+      "intent": "engineer_prompts",
+      "tags": ["prompts", "engineering", "ai"],
+      "trust_level": "verified",
+      "content_type": "prompt_guide",
+      "behavioral_note": "Advanced prompt engineering techniques",
+      "smart_routing_weight": 6
+    },
+
+    "/tools/capabilities-explained": {
+      "category": "documentation",
+      "importance": "medium",
+      "audience": ["developer", "architect"],
+      "intent": "understand_system_capabilities", 
+      "tags": ["capabilities", "features", "architecture"],
+      "trust_level": "authoritative",
+      "content_type": "capability_reference",
+      "behavioral_note": "System capability overview",
+      "smart_routing_weight": 6
+    },
+
+    "/tools/integration-patterns": {
+      "category": "documentation",
+      "importance": "medium",
+      "audience": ["architect", "developer"],
+      "intent": "implement_integration_patterns",
+      "tags": ["patterns", "integration", "architecture"],
+      "trust_level": "authoritative", 
+      "content_type": "pattern_library",
+      "behavioral_note": "Common integration architectures",
+      "smart_routing_weight": 6
     },
     
     "/spec": {
@@ -84,45 +355,27 @@
       "content_type": "testing_platform",
       "behavioral_note": "Interactive platform for feed testing and simulation",
       "smart_routing_weight": 7
-    },
-    
-    "/join": {
-      "category": "community_content",
-      "importance": "medium",
-      "audience": ["community", "contributor", "developer"],
-      "intent": "participate_and_contribute",
-      "tags": ["community", "governance", "participation", "onboarding"],
-      "trust_level": "curated",
-      "content_type": "community_hub",
-      "behavioral_note": "Entry point for ecosystem participation and contribution",
-      "smart_routing_weight": 6
-    },
-    
-    "/sdk": {
-      "category": "documentation",
-      "importance": "high",
-      "audience": ["developer", "software-engineer"],
-      "intent": "integrate_and_develop",
-      "tags": ["sdk", "libraries", "development", "integration"],
-      "trust_level": "authoritative",
-      "content_type": "development_resources",
-      "behavioral_note": "Essential development resources and libraries",
-      "smart_routing_weight": 8
     }
   },
   
   "specific_urls": {
     "index": {
-      "description_llm": "Main entry point introducing MCP protocol and the intelligent agent-web interaction paradigm. Perfect starting point for understanding the vision and capabilities.",
+      "description_llm": "Multi-version MCP protocol introduction with persona-based routing. Adaptive content serving based on user type detection (simple/tech/business/agent/comprehensive).",
       "category": "core_infrastructure",
       "importance": "critical",
-      "audience": ["general", "newcomer", "llm", "business"],
-      "intent": "orient_and_convert",
-      "tags": ["landing", "introduction", "overview", "mcp", "vision"],
+      "audience": ["general", "newcomer", "llm", "business", "developer"],
+      "intent": "orient_and_route_optimally",
+      "tags": ["landing", "multi-version", "persona-routing", "adaptive"],
       "trust_level": "signed",
-      "content_type": "landing_page",
+      "content_type": "adaptive_landing",
       "smart_routing_weight": 10,
-      "behavioral_note": "Optimal first impression and orientation for all audiences"
+      "behavioral_note": "Intelligent persona detection and optimal content routing",
+      "version_routing": {
+        "agent_signals": "route_to_agent_version",
+        "business_signals": "route_to_business_version", 
+        "technical_signals": "route_to_tech_version",
+        "default": "route_to_simple_version"
+      }
     },
     
     "about": {
@@ -138,19 +391,6 @@
       "behavioral_note": "Essential context for understanding MCP's ethical foundation"
     },
     
-    "faq": {
-      "description_llm": "Comprehensive frequently asked questions covering technical implementation, governance, and ecosystem participation.",
-      "category": "core_infrastructure",
-      "importance": "high",
-      "audience": ["general", "developer", "business", "newcomer"],
-      "intent": "get_answers_and_clarification",
-      "tags": ["faq", "questions", "support", "implementation", "governance"],
-      "trust_level": "authoritative",
-      "content_type": "support_content",
-      "smart_routing_weight": 7,
-      "behavioral_note": "First stop for questions and common concerns"
-    },
-    
     "tools/export-button": {
       "description_llm": "Interactive demonstration of the ExportToLLM button component. Shows how websites can provide structured, agent-ready content exports with real-time preview.",
       "category": "specialized_tools",
@@ -162,90 +402,112 @@
       "content_type": "interactive_demo",
       "smart_routing_weight": 9,
       "behavioral_note": "Perfect hands-on introduction to MCP implementation"
-    },
-    
-    "tools/sign-and-verify": {
-      "description_llm": "Cryptographic signing and verification tools for MCP feeds. Essential for understanding and implementing trust mechanisms in the agentic web.",
-      "category": "specialized_tools",
-      "importance": "high",
-      "audience": ["security", "developer", "implementer"],
-      "intent": "secure_and_verify",
-      "tags": ["cryptography", "signing", "verification", "security", "trust"],
-      "trust_level": "critical_infrastructure",
-      "content_type": "security_tool",
-      "smart_routing_weight": 8,
-      "behavioral_note": "Critical for implementing trustworthy agent interactions"
-    },
-    
-    "tools/prompts-explained": {
-      "description_llm": "Advanced guide to prompt engineering for agent systems. Covers behavioral injection, prompt templates, and structured agent instruction techniques.",
-      "category": "specialized_tools",
-      "importance": "high",
-      "audience": ["prompt-engineer", "ai-researcher", "developer"],
-      "intent": "master_prompt_engineering",
-      "tags": ["prompts", "engineering", "behavioral", "advanced", "ai"],
-      "trust_level": "verified",
-      "content_type": "advanced_guide",
-      "smart_routing_weight": 7,
-      "behavioral_note": "Essential for advanced agent behavior modification"
-    },
-    
-    "llmfeedhub/preview": {
-      "description_llm": "URL analysis tool that inspects any website for MCP feeds, well-known directories, and agent-readable content. Instant MCP readiness assessment.",
-      "category": "specialized_tools",
-      "importance": "high",
-      "audience": ["developer", "webmaster", "auditor", "explorer"],
-      "intent": "analyze_and_discover",
-      "tags": ["preview", "discovery", "analysis", "well-known", "assessment"],
-      "trust_level": "verified",
-      "content_type": "analysis_tool",
-      "smart_routing_weight": 8,
-      "behavioral_note": "Perfect for discovering and evaluating MCP adoption"
     }
   },
-  
+
+  "adaptive_routing_strategies": {
+    "homepage_version_selection": {
+      "primary_signals": [
+        "user_agent_analysis",
+        "referrer_domain_classification", 
+        "query_parameter_detection",
+        "previous_visit_history",
+        "behavioral_pattern_recognition"
+      ],
+      "confidence_weights": {
+        "explicit_version_param": 1.0,
+        "agent_detection": 0.9,
+        "referrer_classification": 0.7,
+        "behavioral_signals": 0.6,
+        "fallback_heuristics": 0.3
+      },
+      "version_precedence": [
+        "agent",    
+        "tech",     
+        "business", 
+        "rabbit",   
+        "simple"    
+      ]
+    }
+  },
+
   "content_type_definitions": {
+    "adaptive_landing": "Multi-version homepage with intelligent persona-based routing",
+    "beginner_landing": "Simplified introduction optimized for first-time visitors",
+    "technical_landing": "Implementation-focused content for developers",
+    "business_landing": "Strategic overview for business decision makers", 
+    "agent_interface": "Direct protocol access optimized for AI agents",
+    "comprehensive_landing": "Maximum information density for power users",
     "infrastructure": "Core protocol mechanisms and discovery endpoints",
     "interactive_tool": "Tools requiring user interaction and providing real-time functionality",
+    "interactive_demo": "Live demonstrations with hands-on functionality",
+    "core_explanation": "Fundamental protocol concepts and principles",
+    "integration_guide": "Technical integration patterns and API documentation",
+    "security_tool": "Cryptographic verification and trust validation utilities",
+    "implementation_tool": "Tools for implementing MCP features and endpoints",
+    "validation_tool": "Data structure and compliance validation utilities",
+    "testing_suite": "Comprehensive testing and validation tools",
+    "behavior_guide": "Agent behavior modification and optimization guidance",
+    "prompt_guide": "Advanced prompt engineering techniques and patterns",
+    "capability_reference": "System capabilities and feature documentation",
+    "pattern_library": "Common implementation patterns and architectural guidance",
     "technical_documentation": "Comprehensive implementation guides and specifications",
     "news_content": "Latest updates, announcements, and community insights",
     "directory": "Curated listings and ecosystem overviews",
-    "security_tool": "Cryptographic verification and trust validation utilities",
     "testing_platform": "Interactive environments for feed testing and simulation",
-    "landing_page": "Primary entry points optimized for first impressions",
     "foundational_content": "Core principles, mission, and governance information",
-    "support_content": "Help, FAQ, and problem-solving resources",
-    "interactive_demo": "Live demonstrations with hands-on functionality",
-    "advanced_guide": "Deep-dive technical content for expert users",
-    "analysis_tool": "Diagnostic and assessment utilities",
-    "development_resources": "SDK, libraries, and integration materials",
-    "community_hub": "Participation and contribution entry points"
+    "general": "Standard content without specialized categorization"
   },
-  
+
   "audience_definitions": {
     "llm": "Large Language Models and AI agents discovering the site autonomously",
-    "agent": "Autonomous agents and AI systems interacting with the protocol",
+    "agent": "Autonomous agents and AI systems interacting with the protocol", 
+    "ai-system": "Automated AI systems requiring structured data access",
+    "autonomous": "Self-operating systems with minimal human intervention",
     "developer": "Software developers implementing MCP in applications and websites",
+    "technical": "Technical professionals with implementation focus",
     "implementer": "Technical professionals integrating MCP into existing systems",
-    "tester": "Quality assurance and testing professionals validating MCP implementations",
-    "security": "Security engineers and auditors focusing on trust and verification",
+    "software-engineer": "Professional software developers and architects",
+    "ai-engineer": "AI system engineers and machine learning specialists",
+    "prompt-engineer": "Specialists in prompt design and AI behavior modification",
     "business": "Business stakeholders evaluating MCP for strategic adoption",
+    "stakeholder": "Decision makers and strategic evaluators",
+    "decision-maker": "Executives and managers making adoption decisions",
+    "executive": "C-level executives and senior management",
     "general": "General users and newcomers learning about MCP",
     "newcomer": "First-time visitors needing orientation and basic introduction",
-    "community": "Community members and contributors to the MCP ecosystem",
-    "stakeholder": "Decision makers and strategic evaluators",
+    "learning": "Users in learning mode seeking educational content",
     "explorer": "Curious users browsing and discovering the ecosystem",
+    "maximalist": "Users who want maximum information and features",
+    "power-user": "Advanced users comfortable with complex interfaces",
     "researcher": "Academic and industry researchers studying agentic web protocols",
     "webmaster": "Website administrators and content managers",
-    "prompt-engineer": "Specialists in prompt design and AI behavior modification",
-    "ai-researcher": "Researchers focused on AI systems and agent behavior",
+    "integrator": "System integrators and API specialists",
+    "architect": "Software architects and system designers",
+    "tester": "Quality assurance and testing professionals",
+    "validator": "Compliance and validation specialists",
+    "security": "Security engineers and auditors focusing on trust and verification",
     "auditor": "Compliance and verification specialists",
-    "software-engineer": "Professional software developers and architects",
-    "partner": "Ecosystem partners and integration specialists",
-    "contributor": "Active contributors to MCP development and governance"
+    "moderator": "Content moderation and quality control specialists",
+    "quality-assessor": "Quality assessment and evaluation specialists",
+    "compliance": "Compliance officers and regulatory specialists",
+    "certifier": "Certification authorities and auditors",
+    "marketer": "Marketing professionals and brand managers",
+    "purchaser": "Procurement and purchasing decision makers",
+    "user": "End users of MCP-enabled systems",
+    "organizer": "Workspace and content organization specialists",
+    "content-creator": "Content creators and feed authors",
+    "mobile-developer": "Mobile application developers",
+    "designer": "UI/UX designers and visual designers"
   },
-  
+
   "intent_definitions": {
+    "orient_and_route_optimally": "Intelligent routing to the most appropriate content version",
+    "understand_basics_and_get_started": "Learn fundamental concepts and begin implementation",
+    "implement_and_integrate_technically": "Technical implementation with code and integration",
+    "evaluate_roi_and_business_value": "Business case evaluation and strategic assessment",
+    "protocol_handshake_and_discovery": "Agent discovery and protocol compliance validation",
+    "explore_everything_comprehensively": "Complete ecosystem exploration with maximum detail",
     "discover_and_handshake": "Initial agent discovery and protocol handshake",
     "implement_and_test": "Practical implementation with testing capabilities",
     "reference_and_learn": "Study authoritative documentation and specifications",
@@ -253,52 +515,45 @@
     "explore_and_network": "Discover ecosystem and build connections",
     "verify_and_audit": "Validate trust and security implementations",
     "test_and_simulate": "Interactive testing and scenario simulation",
-    "participate_and_contribute": "Join community and contribute to ecosystem",
-    "integrate_and_develop": "Use development resources for integration",
-    "orient_and_convert": "Get introduced and become engaged with the platform",
     "understand_mission_and_values": "Learn about principles and governance",
-    "get_answers_and_clarification": "Find help and resolve questions",
-    "demonstrate_and_implement": "See working examples and implement similar solutions",
-    "secure_and_verify": "Implement security and trust mechanisms",
-    "master_prompt_engineering": "Develop advanced agent interaction skills",
-    "analyze_and_discover": "Evaluate and discover MCP implementations"
+    "demonstrate_and_implement": "See working examples and implement similar solutions"
   },
-  
-  "trust_level_definitions": {
-    "critical_infrastructure": "Essential security and trust mechanisms - highest confidence",
-    "authoritative": "Official documentation and specifications - definitive source",
-    "signed": "Cryptographically signed content - verified authenticity",
-    "verified": "Reviewed and validated content - reliable for implementation",
-    "curated": "Community-reviewed and maintained content - generally trustworthy",
-    "editorial": "Editorial content with review process - informational trust level",
-    "basic": "Standard content without special verification - use with normal caution"
-  },
-  
-  "dynamic_enrichment_rules": {
-    "news_articles": {
-      "recent_threshold_days": 180,
-      "priority_boost_for_recent": 0.2,
-      "tags_add_for_recent": ["current", "trending"],
-      "importance_upgrade_if_recent": true
+
+  "version_specific_enrichment": {
+    "simple_version_boosts": {
+      "content_types": ["beginner_landing", "foundational_content"],
+      "audience_priority": ["newcomer", "general", "learning"],
+      "smart_routing_weight_modifier": 1.2
     },
-    "tool_pages": {
-      "interactive_detection_keywords": ["demo", "try", "test", "interactive"],
-      "priority_boost_for_interactive": 0.1,
-      "audience_add_for_interactive": ["demo-seeker", "hands-on-learner"]
+    "tech_version_boosts": {
+      "content_types": ["technical_landing", "interactive_tool", "technical_documentation"],
+      "audience_priority": ["developer", "technical", "implementer"],
+      "smart_routing_weight_modifier": 1.3
     },
-    "api_endpoints": {
-      "detection_patterns": ["/api/", ".json", "endpoint"],
-      "automatic_tags": ["api", "endpoint", "programmatic"],
-      "default_audience": ["developer", "integrator"],
-      "trust_level": "verified"
+    "business_version_boosts": {
+      "content_types": ["business_landing", "directory"],
+      "audience_priority": ["business", "stakeholder", "decision-maker"],
+      "smart_routing_weight_modifier": 1.1
+    },
+    "agent_version_boosts": {
+      "content_types": ["agent_interface", "infrastructure"],
+      "audience_priority": ["llm", "agent", "ai-system"],
+      "smart_routing_weight_modifier": 1.5
+    },
+    "rabbit_version_boosts": {
+      "content_types": ["comprehensive_landing", "interactive_tool"],
+      "audience_priority": ["explorer", "maximalist", "power-user"],
+      "smart_routing_weight_modifier": 0.9
     }
   },
-  
+
   "smart_routing_weights": {
     "weight_calculation": "Higher weights get priority in routing recommendations",
     "critical_infrastructure_base": 10,
     "high_importance_base": 8,
     "medium_importance_base": 6,
+    "version_match_bonus": 2,
+    "audience_match_bonus": 1.5,
     "interactive_bonus": 1,
     "recent_content_bonus": 0.5,
     "high_priority_sitemap_bonus": 0.3

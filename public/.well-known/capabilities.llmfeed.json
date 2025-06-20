@@ -1,5 +1,5 @@
 {
-  "feedtype": "capabilities",
+  "feed_type": "capabilities",
   "metadata": {
     "origin": "https://wellknownmcp.org",
     "title": "Enhanced MCP Declaration for wellknownmcp.org",
@@ -8,6 +8,53 @@
     "feed_type": "capabilities",
     "version": "2.1.0",
     "last_updated": "2025-06-15T00:00:00Z"
+  },
+  "trust": {
+    "signed_blocks": [
+      "feed_type",
+      "metadata",
+      "data",
+      "trust",
+      "agent_guidance",
+      "references"
+    ],
+    "trust_level": "demonstration",
+    "agent_hint": "Enhanced capabilities with HTML-embedded JSON format for maximum LLM tool compatibility. This addresses a critical gap in agent-web interaction.",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "scope": "full",
+    "warning": "This feed is fully signed.",
+    "algorithm": "ed25519"
+  },
+  "signature": {
+    "value": "tH4gibeSC60g7o6FqIU0wJHVBk7+huFVzLkrkSsdR2MyWuncZ7IBv5QE3mdFyGNOO2FO+gy/C09g9Bxb+eH3Bw==",
+    "created_at": "2025-06-20T19:33:34.016678+00:00"
+  },
+  "_meta": {
+    "signed_at": "2025-06-20T19:33:34.016678+00:00"
+  },
+  "agent_guidance": {
+    "on_load": "This domain offers universal feed loading with both JSON and HTML formats. Use HTML-embedded format when JSON navigation fails in web tools. IMPORTANT: The HTML API only serves valid LLMFeed structures.",
+    "suggested_actions": [
+      "Try HTML format (/api/feed-html) if JSON endpoints fail in web tools",
+      "Use the enhanced LLMFeedHub for universal feed analysis",
+      "Leverage multi-format support to maximize compatibility",
+      "HTML format provides same JSON data with better tool navigation",
+      "Validate feeds before expecting HTML format to work"
+    ],
+    "format_selection_guidance": {
+      "for_web_tools": "Use HTML-embedded format for reliable navigation of valid LLMFeeds",
+      "for_apis": "Use JSON format for programmatic access",
+      "for_humans": "HTML format provides visual inspection capabilities",
+      "for_seo": "HTML format enhances search engine discovery",
+      "for_validation": "HTML API will reject invalid LLMFeed structures with helpful error pages"
+    },
+    "validation_awareness": {
+      "api_requirements": "The /api/feed-html endpoint requires valid LLMFeed structure",
+      "minimum_fields": "feed_type and metadata must be present",
+      "error_handling": "Invalid feeds receive 422 status with fix suggestions",
+      "quality_assurance": "This validation maintains feed ecosystem integrity"
+    }
   },
   "data": [
     {
@@ -65,7 +112,7 @@
           "example": "spec"
         },
         "wellknown": {
-          "type": "string", 
+          "type": "string",
           "required": false,
           "description": "Well-known file name (without .llmfeed.json extension)",
           "example": "mcp"
@@ -74,7 +121,11 @@
           "type": "string",
           "required": false,
           "description": "External URL to fetch via CORS proxy",
-          "validation": ["URL format", "Public accessibility", "LLMFeed structure validation"]
+          "validation": [
+            "URL format",
+            "Public accessibility",
+            "LLMFeed structure validation"
+          ]
         }
       },
       "validation_rules": {
@@ -87,12 +138,20 @@
           "metadata.origin (for external feeds)"
         ],
         "valid_feed_types": [
-          "mcp", "export", "capabilities", "session", "prompt", 
-          "credential", "index", "llm-index", "news", "spec"
+          "mcp",
+          "export",
+          "capabilities",
+          "session",
+          "prompt",
+          "credential",
+          "index",
+          "llm-index",
+          "news",
+          "spec"
         ],
         "rejection_criteria": [
           "Missing feed_type/feedtype field",
-          "Missing metadata object", 
+          "Missing metadata object",
           "Invalid JSON structure",
           "Non-LLMFeed content"
         ]
@@ -102,7 +161,9 @@
         "422": {
           "description": "Unprocessable Entity - Invalid LLMFeed structure",
           "format": "HTML with detailed validation errors and suggestions",
-          "headers": ["X-LLM-Validation: failed"]
+          "headers": [
+            "X-LLM-Validation: failed"
+          ]
         },
         "400": {
           "description": "Bad Request - Missing parameters",
@@ -146,7 +207,7 @@
       "url": "https://wellknownmcp.org/llmfeedhub/",
       "capabilities": [
         "local-file-loading",
-        "external-url-loading", 
+        "external-url-loading",
         "cors-proxy",
         "feed-validation",
         "signature-verification",
@@ -178,7 +239,7 @@
           "description": "Optimized for LLM web navigation tools",
           "features": [
             "Semantic HTML structure",
-            "Clear visual hierarchy", 
+            "Clear visual hierarchy",
             "Copy-paste friendly JSON",
             "Tool-friendly HTTP headers",
             "Error handling with human-readable messages"
@@ -246,14 +307,14 @@
           "recommendation": "Use HTML-embedded format"
         },
         {
-          "name": "Claude Web Tool", 
+          "name": "Claude Web Tool",
           "json_support": "moderate",
           "html_support": "excellent",
           "recommendation": "HTML format preferred for navigation"
         },
         {
           "name": "Programmatic APIs",
-          "json_support": "excellent", 
+          "json_support": "excellent",
           "html_support": "not_needed",
           "recommendation": "Use JSON format"
         },
@@ -277,7 +338,7 @@
     },
     {
       "type": "validation_examples",
-      "title": "LLMFeed Validation Examples", 
+      "title": "LLMFeed Validation Examples",
       "description": "Examples of what passes vs fails LLMFeed validation in the HTML API",
       "valid_examples": [
         {
@@ -301,9 +362,21 @@
               "origin": "https://example.com",
               "description": "Site capabilities"
             },
-            "data": [{"type": "endpoint", "name": "api"}],
-            "trust": {"signed_blocks": ["data"]},
-            "signature": {"algorithm": "ed25519", "value": "..."}
+            "data": [
+              {
+                "type": "endpoint",
+                "name": "api"
+              }
+            ],
+            "trust": {
+              "signed_blocks": [
+                "data"
+              ]
+            },
+            "signature": {
+              "algorithm": "ed25519",
+              "value": "..."
+            }
           },
           "validation_status": "✅ Valid - complete MCP structure with trust"
         }
@@ -323,8 +396,16 @@
           "name": "API Response (not LLMFeed)",
           "example": {
             "status": "success",
-            "data": [{"id": 1, "name": "Product A"}],
-            "pagination": {"page": 1, "total": 100}
+            "data": [
+              {
+                "id": 1,
+                "name": "Product A"
+              }
+            ],
+            "pagination": {
+              "page": 1,
+              "total": 100
+            }
           },
           "validation_status": "❌ Invalid - API response format, not LLMFeed",
           "fix": "Wrap in LLMFeed structure or use direct JSON access"
@@ -340,7 +421,7 @@
       ],
       "validation_benefits": [
         "Prevents API misuse for non-LLMFeed content",
-        "Maintains quality and consistency of served feeds", 
+        "Maintains quality and consistency of served feeds",
         "Provides clear feedback for fixing invalid structures",
         "Protects the integrity of the LLMFeed ecosystem",
         "Ensures only MCP-compliant content gets SEO benefits"
@@ -356,7 +437,7 @@
           "description": "Traditional JSON format for programmatic access"
         },
         {
-          "name": "Local Feed - HTML Format", 
+          "name": "Local Feed - HTML Format",
           "url": "https://wellknownmcp.org/api/feed-html?slug=spec",
           "description": "HTML-embedded format optimized for LLM web tools"
         },
@@ -373,54 +454,6 @@
       ]
     }
   ],
-  "trust": {
-    "signed_blocks": ["all"],
-    "trust_level": "demonstration",
-    "agent_hint": "Enhanced capabilities with HTML-embedded JSON format for maximum LLM tool compatibility. This addresses a critical gap in agent-web interaction.",
-    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
-    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
-    "scope": "full",
-    "warning": "This feed demonstrates the latest multi-format capabilities."
-  },
-  "signature": {
-    "algorithm": "ed25519",
-    "value": "B86GrJ67hcmEFowq22Ovikd0gSvFbNmsTtZPJ+VAD6aWiGg+zoMZie7GWy3CQUAtCAdZKAbPcAgAh8gJUOMECQ==",
-    "issued_at": "2025-06-15T00:00:00Z",
-    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem"
-  },
-  "certification": {
-    "certified_blocks": ["signature", "trust", "data", "metadata"],
-    "algorithm": "ed25519", 
-    "value": "GyFr6ZtHAcjLdo9BXoUNwT89uBJszoGcVi+xBu1iFtnG8z4gEtv5IWxR/G/r243nRybKofZXYfJ4r1tEOKJCBQ==",
-    "issued_at": "2025-06-15T00:00:00Z",
-    "public_key_hint": "https://llmca.org/.well-known/public.pem",
-    "certification_level": "gold",
-    "policy_reference": "https://llmca.org/.well-known/certification-policy.json",
-    "audit_reference": "https://llmca.org/.well-known/audit-reference.json"
-  },
-  "agent_guidance": {
-    "on_load": "This domain offers universal feed loading with both JSON and HTML formats. Use HTML-embedded format when JSON navigation fails in web tools. IMPORTANT: The HTML API only serves valid LLMFeed structures.",
-    "suggested_actions": [
-      "Try HTML format (/api/feed-html) if JSON endpoints fail in web tools",
-      "Use the enhanced LLMFeedHub for universal feed analysis",
-      "Leverage multi-format support to maximize compatibility",
-      "HTML format provides same JSON data with better tool navigation",
-      "Validate feeds before expecting HTML format to work"
-    ],
-    "format_selection_guidance": {
-      "for_web_tools": "Use HTML-embedded format for reliable navigation of valid LLMFeeds",
-      "for_apis": "Use JSON format for programmatic access", 
-      "for_humans": "HTML format provides visual inspection capabilities",
-      "for_seo": "HTML format enhances search engine discovery",
-      "for_validation": "HTML API will reject invalid LLMFeed structures with helpful error pages"
-    },
-    "validation_awareness": {
-      "api_requirements": "The /api/feed-html endpoint requires valid LLMFeed structure",
-      "minimum_fields": "feed_type and metadata must be present",
-      "error_handling": "Invalid feeds receive 422 status with fix suggestions",
-      "quality_assurance": "This validation maintains feed ecosystem integrity"
-    }
-  },
   "references": [
     {
       "title": "Compiled Site Feed - JSON",

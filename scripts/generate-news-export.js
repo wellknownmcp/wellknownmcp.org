@@ -1,5 +1,5 @@
 // scripts/generate-news-export.js
-// Version incrémentale optimisée pour builds fréquents
+// Version dual output : news-export.llmfeed.json + news-lite.llmfeed.json
 
 const fs = require('fs')
 const path = require('path')
@@ -10,25 +10,37 @@ const config = {
   indexPath: path.join(__dirname, '..', 'public', 'news', 'index.json'),
   newsDir: path.join(__dirname, '..', 'public', 'news', 'en'),
   outputPath: path.join(__dirname, '..', 'public','.well-known', 'exports', 'news-export.llmfeed.json'),
+  outputLitePath: path.join(__dirname, '..', 'public','.well-known', 'exports', 'news-lite.llmfeed.json'),
   cachePath: path.join(__dirname, '..', '.cache', 'news-export-cache.json'),
   siteOrigin: 'https://wellknownmcp.org',
-  maxContentLength: 15000
+  maxContentLength: 15000,
+  
+  // Configuration Lite (Stratégie Pareto 80/20)
+  lite: {
+    qualityThreshold: 65,         // Score qualité minimum - seul critère de sélection
+    maxContentLength: 1300,       // Résumés structurels intelligents
+    maxArticlesSafety: 50,        // Limite haute de sécurité (évite feeds monstrueux)
+    essentialCategories: ['launch', 'manifesto', 'tutorial', 'announcement', 'getting-started'],
+    priorityBoostKeywords: ['launch', 'manifesto', 'getting-started', 'agents', 'llmfeed']
+  }
 }
 
-class IncrementalNewsExportGenerator {
+class DualNewsExportGenerator {
   constructor() {
     this.template = this.createFeedTemplate()
+    this.liteTemplate = this.createLiteFeedTemplate()
     this.cache = this.loadCache()
     this.stats = {
       processed: 0,
       updated: 0,
       removed: 0,
-      cached: 0
+      cached: 0,
+      lite_selected: 0
     }
   }
 
   /**
-   * Template hardcodé pour wellknownmcp.org
+   * Template pour version complète
    */
   createFeedTemplate() {
     return {
@@ -41,7 +53,8 @@ class IncrementalNewsExportGenerator {
         generated_at: new Date().toISOString(),
         language: "en",
         content_type: "news_archive",
-        total_articles: 0
+        total_articles: 0,
+        usage_context: "project_context_comprehensive"
       },
       intent: {
         primary: "comprehensive_news_archive",
@@ -80,6 +93,71 @@ class IncrementalNewsExportGenerator {
   }
 
   /**
+   * Template pour version lite (Pareto 80/20)
+   */
+  createLiteFeedTemplate() {
+    return {
+      feed_type: "export",
+      metadata: {
+        origin: config.siteOrigin,
+        title: "WellKnownMCP News - Quality Curated",
+        description: "All high-quality MCP news articles with intelligent structural extraction - optimized for prompt shortcut (quality-based Pareto selection)",
+        version: "1.0.0-lite",
+        generated_at: new Date().toISOString(),
+        language: "en",
+        content_type: "news_highlights",
+        total_articles: 0,
+        usage_context: "prompt_shortcut_pareto",
+        optimization: {
+          strategy: "pareto_80_20",
+          content_reduction: "summarized_essentials",
+          selection_criteria: "priority_score_and_categories"
+        }
+      },
+      intent: {
+        primary: "instant_mcp_context",
+        secondary: ["quick_reference", "trend_awareness"],
+        use_cases: [
+          "Quick MCP ecosystem overview",
+          "Recent developments summary",
+          "Key implementation examples",
+          "Essential context for agents"
+        ]
+      },
+      llm_behavior: {
+        summarization_hint: "Prioritize key developments, major announcements, and practical examples",
+        analysis_depth: "focused_essentials",
+        key_themes: ["launch_updates", "practical_guides", "ecosystem_growth"],
+        context_preservation: "optimized"
+      },
+      agent_instructions: {
+        content_access: "Summarized articles with links to full versions",
+        navigation_pattern: "priority_based",
+        trust_level: "curated_highlights",
+        update_frequency: "build_time_static",
+        upgrade_guidance: "For complete archive, use news-export.llmfeed.json in project context"
+      },
+      data: {
+        articles: [],
+        selection_criteria: {
+          quality_threshold: config.lite.qualityThreshold, // Score 65+ seul critère
+          selection_method: "natural_pareto_by_quality",
+          max_safety_limit: config.lite.maxArticlesSafety, // 50 articles max
+          essential_categories: config.lite.essentialCategories,
+          content_optimization: "intelligent_structural_extraction"
+        },
+        stats: {}
+      },
+      trust: {
+        scope: "curated_essentials",
+        signed_blocks: ["feed_type", "metadata", "data"],
+        trust_level: "self-issued",
+        content_authenticity: "source_verified"
+      }
+    }
+  }
+
+  /**
    * Charge le cache des articles traités
    */
   loadCache() {
@@ -98,22 +176,346 @@ class IncrementalNewsExportGenerator {
   }
 
   /**
-   * Sauvegarde le cache
+   * Calcule score de priorité pour sélection lite (critère qualité pure)
    */
-  saveCache() {
-    const cacheDir = path.dirname(config.cachePath)
-    if (!fs.existsSync(cacheDir)) {
-      fs.mkdirSync(cacheDir, { recursive: true })
+  calculatePriorityScore(article) {
+    let score = 0
+    
+    // Score de base depuis l'index
+    score += article.aioScore || 0
+    
+    // Bonus catégories essentielles
+    if (config.lite.essentialCategories.includes(article.category)) {
+      score += 20
+    }
+    
+    // Bonus récence (articles récents plus importants)
+    const articleDate = new Date(article.date)
+    const now = new Date()
+    const daysDiff = (now - articleDate) / (1000 * 60 * 60 * 24)
+    if (daysDiff < 30) score += 15
+    else if (daysDiff < 90) score += 10
+    else if (daysDiff < 180) score += 5
+    
+    // Bonus mots-clés stratégiques
+    const slug = article.slug.toLowerCase()
+    config.lite.priorityBoostKeywords.forEach(keyword => {
+      if (slug.includes(keyword)) score += 12
+    })
+    
+    // Bonus impact business
+    if (article.businessImpact === 'high') score += 15
+    else if (article.businessImpact === 'medium') score += 8
+    
+    // Bonus niveau technique accessible (pour lite)
+    if (article.technicalLevel === 'beginner' || article.technicalLevel === 'intermediate') {
+      score += 5
+    }
+    
+    return Math.min(score, 100) // Cap à 100
+  }
+
+  /**
+   * Génère résumé optimisé pour version lite - Stratégie hybride intelligente
+   * Combine : Introduction + Sections clés + Conclusion + Frontmatter rich
+   */
+  generateLiteSummary(fullContent, article) {
+    const maxLength = config.lite.maxContentLength // 1300 chars
+    let summary = ''
+    let usedLength = 0
+    
+    // 1. INTRODUCTION (premier paragraphe significatif)
+    const paragraphs = fullContent.split('\n\n').filter(p => p.trim().length > 50)
+    const introParagraph = paragraphs[0]
+    if (introParagraph && introParagraph.length <= 400) {
+      summary += introParagraph + '\n\n'
+      usedLength += introParagraph.length + 2
+    }
+    
+    // 2. SECTIONS PRINCIPALES (extraction basée sur structure ##)
+    const sections = this.extractKeySections(fullContent, maxLength - usedLength - 200) // Garde 200 chars pour conclusion+lien
+    if (sections.length > 0) {
+      summary += sections + '\n\n'
+      usedLength += sections.length + 2
+    }
+    
+    // 3. CONCLUSION (dernier paragraphe si place disponible)
+    const remainingSpace = maxLength - usedLength - 100 // 100 chars pour le lien
+    if (remainingSpace > 150 && paragraphs.length > 2) {
+      const lastParagraph = paragraphs[paragraphs.length - 1]
+      if (lastParagraph && lastParagraph.length <= remainingSpace) {
+        summary += '[...]\n\n' + lastParagraph + '\n\n'
+        usedLength += lastParagraph.length + 8
+      }
+    }
+    
+    // 4. NAVIGATION INTELLIGENTE
+    summary += `**→ Complete article:** ${config.siteOrigin}/en/news/${article.slug}`
+    
+    return summary.trim()
+  }
+
+  /**
+   * Extrait les sections clés basées sur la structure markdown (## titles)
+   */
+  extractKeySections(content, maxLength) {
+    // Trouve toutes les sections ## et ###
+    const sectionRegex = /^(#{2,3})\s+(.+)$/gm
+    const sections = []
+    let match
+    
+    while ((match = sectionRegex.exec(content)) !== null) {
+      const level = match[1].length // 2 pour ##, 3 pour ###
+      const title = match[2].trim()
+      const startIndex = match.index
+      
+      // Trouve le contenu de cette section (jusqu'au prochain titre du même niveau ou supérieur)
+      const nextSectionRegex = new RegExp(`^#{1,${level}}\\s+`, 'gm')
+      nextSectionRegex.lastIndex = startIndex + match[0].length
+      const nextMatch = nextSectionRegex.exec(content)
+      
+      const endIndex = nextMatch ? nextMatch.index : content.length
+      const sectionContent = content.substring(startIndex + match[0].length, endIndex)
+        .trim()
+        .split('\n\n')[0] // Premier paragraphe de la section
+      
+      if (sectionContent && sectionContent.length > 30) {
+        sections.push({
+          level,
+          title,
+          content: sectionContent,
+          priority: level === 2 ? 2 : 1 // ## plus prioritaire que ###
+        })
+      }
+    }
+    
+    // Trie par priorité et sélectionne les sections les plus importantes
+    sections.sort((a, b) => b.priority - a.priority)
+    
+    let result = ''
+    let currentLength = 0
+    
+    for (const section of sections.slice(0, 3)) { // Max 3 sections
+      const sectionText = `**${section.title}**: ${section.content.substring(0, 200)}...\n\n`
+      if (currentLength + sectionText.length > maxLength) {
+        break
+      }
+      result += sectionText
+      currentLength += sectionText.length
+    }
+    
+    return result.trim()
+  }
+
+  /**
+   * Traite un article pour version complète
+   */
+  processArticleFull(indexArticle) {
+    const fullContent = this.loadArticleContent(indexArticle.slug)
+    
+    if (!fullContent) {
+      return null
     }
 
-    const cacheData = {
-      articles: this.cache.articles,
-      index_hash: this.cache.index_hash,
-      last_generation: new Date().toISOString(),
-      stats: this.stats
+    // Extrait concepts
+    const concepts = this.extractConceptsFromContent(fullContent, indexArticle)
+
+    const processedArticle = {
+      // Identité
+      slug: indexArticle.slug,
+      title: indexArticle.title,
+      description: indexArticle.description || '',
+      date: indexArticle.date,
+      
+      // Classification
+      categories: indexArticle.category ? [indexArticle.category] : [],
+      tags: indexArticle.tags || [],
+      type: indexArticle.format || 'news',
+      
+      // Contenu
+      content: fullContent,
+      concepts: concepts,
+      
+      // Score priorité (pour sélection lite)
+      priority_score: this.calculatePriorityScore(indexArticle),
+      
+      // Intention
+      intent: indexArticle.intent || 'inform',
+      llm_intent: indexArticle.llmIntent || 'read_news_article',
+      audience: indexArticle.audience || ['llm', 'human'],
+      
+      // Métadonnées LLM
+      metadata: {
+        source_file: `${indexArticle.slug}.md`,
+        content_quality_score: indexArticle.aioScore || 0,
+        technical_level: indexArticle.technicalLevel || 'intermediate',
+        business_impact: indexArticle.businessImpact || 'medium',
+        priority: indexArticle.priority || 'normal',
+        agent_readiness: indexArticle.agentReadiness !== false
+      },
+      
+      // URLs
+      canonical_url: `${config.siteOrigin}/en/news/${indexArticle.slug}`,
+      
+      // Provenance
+      author: 'WellKnownMCP Team',
+      last_modified: indexArticle.date,
+      
+      // Capacités spécialisées
+      ...(indexArticle.capabilities && { capabilities: indexArticle.capabilities }),
+      ...(indexArticle.feedTypes && { feed_types: indexArticle.feedTypes })
     }
 
-    fs.writeFileSync(config.cachePath, JSON.stringify(cacheData, null, 2), 'utf-8')
+    return processedArticle
+  }
+
+  /**
+   * Traite un article pour version lite
+   */
+  processArticleLite(fullArticle) {
+    const liteArticle = {
+      // Identité
+      slug: fullArticle.slug,
+      title: fullArticle.title,
+      description: fullArticle.description,
+      date: fullArticle.date,
+      
+      // Classification
+      categories: fullArticle.categories,
+      tags: fullArticle.tags.slice(0, 3), // Max 3 tags
+      type: fullArticle.type,
+      
+      // Contenu optimisé
+      content: this.generateLiteSummary(fullArticle.content, fullArticle),
+      concepts: fullArticle.concepts.slice(0, 5), // Max 5 concepts
+      
+      // Scores
+      priority_score: fullArticle.priority_score,
+      
+      // Métadonnées allégées
+      metadata: {
+        quality_score: fullArticle.metadata.content_quality_score,
+        technical_level: fullArticle.metadata.technical_level,
+        business_impact: fullArticle.metadata.business_impact,
+        lite_optimization: "summarized_for_pareto_strategy"
+      },
+      
+      // URLs
+      canonical_url: fullArticle.canonical_url,
+      
+      // Provenance
+      author: fullArticle.author,
+      last_modified: fullArticle.last_modified
+    }
+
+    return liteArticle
+  }
+
+  /**
+   * Sélectionne articles pour version lite - Critère qualité pure (Pareto naturel)
+   */
+  selectLiteArticles(allArticles) {
+    // Filtre par qualité globale uniquement
+    const qualityArticles = allArticles
+      .filter(article => article.priority_score >= config.lite.qualityThreshold)
+      .sort((a, b) => b.priority_score - a.priority_score)
+    
+    // Limite de sécurité pour éviter feeds monstrueux
+    const selected = qualityArticles.slice(0, config.lite.maxArticlesSafety)
+    
+    console.log(`📋 Lite selection (quality-based): ${selected.length}/${allArticles.length} articles`)
+    console.log(`📊 Quality threshold: ${config.lite.qualityThreshold}+ (natural Pareto selection)`)
+    console.log(`📈 Priority scores range: ${selected[0]?.priority_score} - ${selected[selected.length-1]?.priority_score}`)
+    console.log(`📝 Content per article: structured extraction (~${config.lite.maxContentLength} chars)`)
+    console.log(`🎯 Selection logic: All articles meeting quality threshold (no artificial limit)`)
+    
+    this.stats.lite_selected = selected.length
+    
+    return selected.map(article => this.processArticleLite(article))
+  }
+
+  /**
+   * Charge le contenu d'un article avec cache
+   */
+  loadArticleContent(slug) {
+    const filePath = path.join(config.newsDir, `${slug}.md`)
+    
+    if (!fs.existsSync(filePath)) {
+      console.warn(`⚠️ Article file not found: ${filePath}`)
+      return null
+    }
+
+    try {
+      const content = fs.readFileSync(filePath, 'utf-8')
+      
+      // Supprime le frontmatter
+      const cleanContent = content.replace(/^---[\s\S]*?---\n/m, '')
+      
+      // Nettoie pour agents
+      return this.cleanMarkdownForAgent(cleanContent)
+      
+    } catch (error) {
+      console.error(`❌ Error reading ${filePath}:`, error.message)
+      return null
+    }
+  }
+
+  /**
+   * Nettoie le markdown pour optimisation agent
+   */
+  cleanMarkdownForAgent(content) {
+    // Supprime éléments UI/navigation
+    content = content.replace(/\[←.*?\]\(.*?\)/g, '')
+    content = content.replace(/\*\*Ready to.*?\*\*/g, '')
+    
+    // Normalise titres
+    content = content.replace(/^# /gm, '## ')
+    
+    // Nettoie espaces
+    content = content.replace(/\n{3,}/g, '\n\n')
+    content = content.replace(/[ \t]{2,}/g, ' ')
+    
+    // Limite taille pour version complète
+    if (content.length > config.maxContentLength) {
+      content = content.substring(0, config.maxContentLength) + "\n\n[Content truncated - see full article on website]"
+    }
+    
+    return content.trim()
+  }
+
+  /**
+   * Extrait concepts du contenu
+   */
+  extractConceptsFromContent(content, indexArticle) {
+    if (indexArticle.concepts && indexArticle.concepts.length > 0) {
+      return indexArticle.concepts
+    }
+
+    const concepts = new Set()
+    
+    // Tags de l'index
+    if (indexArticle.tags) {
+      indexArticle.tags.forEach(tag => concepts.add(tag))
+    }
+    
+    // Concepts du contenu
+    const headings = content.match(/^#{2,3}\s+(.+)$/gm) || []
+    headings.forEach(heading => {
+      const clean = heading.replace(/^#{2,3}\s+/, '').toLowerCase()
+      const words = clean.split(/\s+/).filter(w => w.length > 3)
+      words.slice(0, 2).forEach(w => concepts.add(w))
+    })
+    
+    // Concepts techniques
+    const techTerms = ['llmfeed', 'mcp', 'agent', 'agentic', 'session', 'feed', 'standard', 'interoperability']
+    const contentLower = content.toLowerCase()
+    techTerms.forEach(term => {
+      if (contentLower.includes(term)) {
+        concepts.add(term)
+      }
+    })
+    
+    return Array.from(concepts).slice(0, 8)
   }
 
   /**
@@ -208,157 +610,6 @@ class IncrementalNewsExportGenerator {
   }
 
   /**
-   * Charge le contenu d'un article avec cache
-   */
-  loadArticleContent(slug) {
-    const filePath = path.join(config.newsDir, `${slug}.md`)
-    
-    if (!fs.existsSync(filePath)) {
-      console.warn(`⚠️ Article file not found: ${filePath}`)
-      return null
-    }
-
-    try {
-      const content = fs.readFileSync(filePath, 'utf-8')
-      
-      // Supprime le frontmatter
-      const cleanContent = content.replace(/^---[\s\S]*?---\n/m, '')
-      
-      // Nettoie pour agents
-      return this.cleanMarkdownForAgent(cleanContent)
-      
-    } catch (error) {
-      console.error(`❌ Error reading ${filePath}:`, error.message)
-      return null
-    }
-  }
-
-  /**
-   * Nettoie le markdown pour optimisation agent
-   */
-  cleanMarkdownForAgent(content) {
-    // Supprime éléments UI/navigation
-    content = content.replace(/\[←.*?\]\(.*?\)/g, '')
-    content = content.replace(/\*\*Ready to.*?\*\*/g, '')
-    
-    // Normalise titres
-    content = content.replace(/^# /gm, '## ')
-    
-    // Nettoie espaces
-    content = content.replace(/\n{3,}/g, '\n\n')
-    content = content.replace(/[ \t]{2,}/g, ' ')
-    
-    // Limite taille
-    if (content.length > config.maxContentLength) {
-      content = content.substring(0, config.maxContentLength) + "\n\n[Content truncated - see full article on website]"
-    }
-    
-    return content.trim()
-  }
-
-  /**
-   * Traite un article (nouveau ou modifié)
-   */
-  processArticle(indexArticle) {
-    const fullContent = this.loadArticleContent(indexArticle.slug)
-    
-    if (!fullContent) {
-      return null
-    }
-
-    // Extrait concepts
-    const concepts = this.extractConceptsFromContent(fullContent, indexArticle)
-
-    const processedArticle = {
-      // Identité
-      slug: indexArticle.slug,
-      title: indexArticle.title,
-      description: indexArticle.description || '',
-      date: indexArticle.date,
-      
-      // Classification
-      categories: indexArticle.category ? [indexArticle.category] : [],
-      tags: indexArticle.tags || [],
-      type: indexArticle.format || 'news',
-      
-      // Contenu
-      content: fullContent,
-      concepts: concepts,
-      
-      // Intention
-      intent: indexArticle.intent || 'inform',
-      llm_intent: indexArticle.llmIntent || 'read_news_article',
-      audience: indexArticle.audience || ['llm', 'human'],
-      
-      // Métadonnées LLM
-      metadata: {
-        source_file: `${indexArticle.slug}.md`,
-        content_quality_score: indexArticle.aioScore || 0,
-        technical_level: indexArticle.technicalLevel || 'intermediate',
-        business_impact: indexArticle.businessImpact || 'medium',
-        priority: indexArticle.priority || 'normal',
-        agent_readiness: indexArticle.agentReadiness !== false
-      },
-      
-      // URLs
-      canonical_url: `${config.siteOrigin}/en/news/${indexArticle.slug}`,
-      
-      // Provenance
-      author: 'WellKnownMCP Team',
-      last_modified: indexArticle.date,
-      
-      // Capacités spécialisées
-      ...(indexArticle.capabilities && { capabilities: indexArticle.capabilities }),
-      ...(indexArticle.feedTypes && { feed_types: indexArticle.feedTypes })
-    }
-
-    // Met à jour le cache
-    this.cache.articles[indexArticle.slug] = {
-      article: processedArticle,
-      file_hash: indexArticle._file_hash,
-      index_data_hash: indexArticle._index_data_hash,
-      processed_at: new Date().toISOString()
-    }
-
-    return processedArticle
-  }
-
-  /**
-   * Extrait concepts du contenu
-   */
-  extractConceptsFromContent(content, indexArticle) {
-    if (indexArticle.concepts && indexArticle.concepts.length > 0) {
-      return indexArticle.concepts
-    }
-
-    const concepts = new Set()
-    
-    // Tags de l'index
-    if (indexArticle.tags) {
-      indexArticle.tags.forEach(tag => concepts.add(tag))
-    }
-    
-    // Concepts du contenu
-    const headings = content.match(/^#{2,3}\s+(.+)$/gm) || []
-    headings.forEach(heading => {
-      const clean = heading.replace(/^#{2,3}\s+/, '').toLowerCase()
-      const words = clean.split(/\s+/).filter(w => w.length > 3)
-      words.slice(0, 2).forEach(w => concepts.add(w))
-    })
-    
-    // Concepts techniques
-    const techTerms = ['llmfeed', 'mcp', 'agent', 'agentic', 'session', 'feed', 'standard', 'interoperability']
-    const contentLower = content.toLowerCase()
-    techTerms.forEach(term => {
-      if (contentLower.includes(term)) {
-        concepts.add(term)
-      }
-    })
-    
-    return Array.from(concepts).slice(0, 8)
-  }
-
-  /**
    * Construit les index depuis tous les articles
    */
   buildIndexes(articles) {
@@ -398,7 +649,7 @@ class IncrementalNewsExportGenerator {
   /**
    * Calcule stats depuis tous les articles
    */
-  calculateStats(articles) {
+  calculateStats(articles, isLite = false) {
     const contentDistribution = {}
     const qualityMetrics = { high_quality: 0, good_quality: 0, needs_improvement: 0 }
     const technicalLevels = {}
@@ -409,7 +660,7 @@ class IncrementalNewsExportGenerator {
       contentDistribution[article.type] = (contentDistribution[article.type] || 0) + 1
       
       // Qualité
-      const score = article.metadata.content_quality_score
+      const score = article.metadata.content_quality_score || article.metadata.quality_score || 0
       if (score >= 80) qualityMetrics.high_quality++
       else if (score >= 60) qualityMetrics.good_quality++
       else qualityMetrics.needs_improvement++
@@ -432,10 +683,10 @@ class IncrementalNewsExportGenerator {
     })
     const mostCommonTags = Object.entries(tagCounts)
       .sort(([,a], [,b]) => b - a)
-      .slice(0, 10)
+      .slice(0, isLite ? 5 : 10)
       .map(([tag, count]) => ({ tag, count }))
 
-    return {
+    const stats = {
       content_distribution: contentDistribution,
       quality_metrics: qualityMetrics,
       technical_levels: technicalLevels,
@@ -446,33 +697,75 @@ class IncrementalNewsExportGenerator {
         latest: articles[0]?.date
       }
     }
+
+    // Stats spécifiques version lite
+    if (isLite) {
+      stats.pareto_metrics = {
+        selection_strategy: "quality_threshold_based",
+        quality_threshold: config.lite.qualityThreshold,
+        content_optimization: "intelligent_structural_extraction",
+        token_efficiency: "natural_pareto_by_content_quality",
+        no_artificial_limits: "includes_all_articles_meeting_quality_bar"
+      }
+    }
+
+    return stats
   }
 
   /**
-   * Génère le feed de manière incrémentale
+   * Sauvegarde le cache
    */
-  async generateFeed() {
-    console.log('🔧 Building incremental news export feed...')
+  saveCache() {
+    const cacheDir = path.dirname(config.cachePath)
+    if (!fs.existsSync(cacheDir)) {
+      fs.mkdirSync(cacheDir, { recursive: true })
+    }
+
+    const cacheData = {
+      articles: this.cache.articles,
+      index_hash: this.cache.index_hash,
+      last_generation: new Date().toISOString(),
+      stats: this.stats
+    }
+
+    fs.writeFileSync(config.cachePath, JSON.stringify(cacheData, null, 2), 'utf-8')
+  }
+
+  /**
+   * Génère les deux feeds (complet + lite)
+   */
+  async generateFeeds() {
+    console.log('🔧 Building dual news export feeds (full + lite)...')
     
     // Analyse des changements
     const { articles: changedArticles, useCache, allArticles } = this.analyzeChanges()
     
     if (useCache) {
-      // Charge le feed existant
-      if (fs.existsSync(config.outputPath)) {
+      // Charge les feeds existants
+      if (fs.existsSync(config.outputPath) && fs.existsSync(config.outputLitePath)) {
         const existingFeed = JSON.parse(fs.readFileSync(config.outputPath, 'utf-8'))
+        const existingLiteFeed = JSON.parse(fs.readFileSync(config.outputLitePath, 'utf-8'))
+        
         existingFeed.metadata.generated_at = new Date().toISOString()
-        console.log(`📋 Using cached feed with ${existingFeed.data.articles.length} articles`)
-        return existingFeed
+        existingLiteFeed.metadata.generated_at = new Date().toISOString()
+        
+        console.log(`📋 Using cached feeds: ${existingFeed.data.articles.length} full / ${existingLiteFeed.data.articles.length} lite`)
+        return { fullFeed: existingFeed, liteFeed: existingLiteFeed }
       }
     }
 
     // Traite les articles modifiés
     for (const changedArticle of changedArticles) {
-      const processedArticle = this.processArticle(changedArticle)
+      const processedArticle = this.processArticleFull(changedArticle)
       if (processedArticle) {
+        this.cache.articles[changedArticle.slug] = {
+          article: processedArticle,
+          file_hash: changedArticle._file_hash,
+          index_data_hash: changedArticle._index_data_hash,
+          processed_at: new Date().toISOString()
+        }
         this.stats.updated++
-        console.log(`✅ ${processedArticle.slug} processed (quality: ${processedArticle.metadata.content_quality_score}/100)`)
+        console.log(`✅ ${processedArticle.slug} processed (priority: ${processedArticle.priority_score}/100)`)
       }
     }
     this.stats.processed = changedArticles.length
@@ -484,45 +777,56 @@ class IncrementalNewsExportGenerator {
 
     this.stats.cached = finalArticles.length - this.stats.updated
 
-    // Met à jour le template
+    // 🔥 GÉNÈRE VERSION COMPLÈTE
     this.template.metadata.total_articles = finalArticles.length
     this.template.metadata.generated_at = new Date().toISOString()
-    
-    // Ajoute les données
     this.template.data.articles = finalArticles
     this.template.data.index = this.buildIndexes(finalArticles)
-    this.template.data.stats = this.calculateStats(finalArticles)
+    this.template.data.stats = this.calculateStats(finalArticles, false)
+
+    // 🎯 GÉNÈRE VERSION LITE (Pareto 80/20)
+    const liteArticles = this.selectLiteArticles(finalArticles)
+    this.liteTemplate.metadata.total_articles = liteArticles.length
+    this.liteTemplate.metadata.generated_at = new Date().toISOString()
+    this.liteTemplate.data.articles = liteArticles
+    this.liteTemplate.data.stats = this.calculateStats(liteArticles, true)
     
-    console.log('📊 Incremental generation stats:')
+    console.log('📊 Dual generation stats:')
     console.log(`  - ${this.stats.updated} articles updated`)
     console.log(`  - ${this.stats.removed} articles removed`)
     console.log(`  - ${this.stats.cached} articles from cache`)
-    console.log(`  - ${finalArticles.length} total articles in feed`)
+    console.log(`  - ${finalArticles.length} total articles in full feed`)
+    console.log(`  - ${liteArticles.length} quality articles selected for lite feed (natural Pareto)`)
     
-    return this.template
+    return { fullFeed: this.template, liteFeed: this.liteTemplate }
   }
 
   /**
-   * Sauvegarde le feed et le cache
+   * Sauvegarde les deux feeds
    */
-  async saveFeed(feed) {
-    // Sauvegarde le feed
+  async saveFeeds(fullFeed, liteFeed) {
+    // Sauvegarde version complète
     const outputDir = path.dirname(config.outputPath)
     if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true })
     }
 
-    fs.writeFileSync(config.outputPath, JSON.stringify(feed, null, 2), 'utf-8')
+    fs.writeFileSync(config.outputPath, JSON.stringify(fullFeed, null, 2), 'utf-8')
+    const fullFileSize = Math.round(fs.statSync(config.outputPath).size / 1024)
     
-    const fileSize = fs.statSync(config.outputPath).size
-    const fileSizeKB = Math.round(fileSize / 1024)
+    // Sauvegarde version lite
+    fs.writeFileSync(config.outputLitePath, JSON.stringify(liteFeed, null, 2), 'utf-8')
+    const liteFileSize = Math.round(fs.statSync(config.outputLitePath).size / 1024)
     
     // Sauvegarde le cache
     this.saveCache()
     
-    console.log(`✅ News export saved: ${config.outputPath}`)
-    console.log(`📦 File size: ${fileSizeKB} KB`)
+    console.log(`✅ Full news export saved: ${config.outputPath} (${fullFileSize} KB)`)
+    console.log(`🎯 Lite news export saved: ${config.outputLitePath} (${liteFileSize} KB)`)
     console.log(`💾 Cache updated: ${config.cachePath}`)
+    
+    const reduction = Math.round((1 - liteFileSize / fullFileSize) * 100)
+    console.log(`📈 Lite version is ${reduction}% smaller for Pareto strategy!`)
   }
 
   /**
@@ -543,26 +847,27 @@ class IncrementalNewsExportGenerator {
 
 // Fonction principale
 async function main() {
-  console.log('🚀 WellKnownMCP News Export Generator (Incremental)')
-  console.log('===================================================')
+  console.log('🚀 WellKnownMCP Dual News Export Generator (Full + Lite)')
+  console.log('=========================================================')
   
   try {
-    const generator = new IncrementalNewsExportGenerator()
+    const generator = new DualNewsExportGenerator()
     
     // Option pour forcer la régénération complète
     if (process.argv.includes('--force')) {
       generator.forceFullRegeneration()
     }
     
-    // Génère le feed incrémentalement
-    const feed = await generator.generateFeed()
+    // Génère les deux feeds
+    const { fullFeed, liteFeed } = await generator.generateFeeds()
     
     // Sauvegarde
-    await generator.saveFeed(feed)
+    await generator.saveFeeds(fullFeed, liteFeed)
     
-    console.log('🎉 Incremental news export completed!')
-    console.log(`🔗 Feed available at: ${config.outputPath}`)
-    console.log('✨ Ready for agent consumption!')
+    console.log('🎉 Dual news export completed!')
+    console.log(`📚 Full feed: ${config.outputPath}`)
+    console.log(`🎯 Lite feed: ${config.outputLitePath}`)
+    console.log('✨ Ready for both project context AND prompt shortcut!')
     
   } catch (error) {
     console.error('❌ Export generation failed:', error.message)
@@ -575,4 +880,4 @@ if (require.main === module) {
   main()
 }
 
-module.exports = { IncrementalNewsExportGenerator }
+module.exports = { DualNewsExportGenerator }

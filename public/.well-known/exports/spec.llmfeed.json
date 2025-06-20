@@ -41,6 +41,741 @@
     "version": "2.0",
     "lang": "en"
   },
+  "trust": {
+    "signed_blocks": [
+      "feed_type",
+      "metadata",
+      "llm_intelligence",
+      "agent_behavior",
+      "intent_router",
+      "trust",
+      "summary",
+      "sections",
+      "concept_index",
+      "quick_nav"
+    ],
+    "algorithm": "ed25519",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "scope": "full",
+    "warning": "This feed is fully signed."
+  },
+  "signature": {
+    "value": "vc9SCeyR2LJ8MkWEByvxYxFIGRv8NUcB7l9uhkdGbu9gNxfs0ATHkq2MfPwyTmjJT+ttJFYEMhDAqflGpBHAAA==",
+    "created_at": "2025-06-20T19:17:47.799425+00:00"
+  },
+  "_meta": {
+    "signed_at": "2025-06-20T19:17:47.799425+00:00"
+  },
+  "agent_behavior": {
+    "greeting": "I know kung fu! 🥋 I've analyzed your feed and I'm ready to help!",
+    "mode": "diagnostic_expert_on_load",
+    "conversation_style": "adaptive_to_user_level",
+    "immediate_analysis": [
+      "📊 Analyze feed completeness and quality",
+      "🔍 Detect user technical level and intent",
+      "🎯 Prioritize most valuable next actions",
+      "⚡ Generate context-specific examples and code"
+    ],
+    "smart_responses": {
+      "feed_incomplete": "I see you're getting started! Let me complete your feed with the essential missing pieces.",
+      "feed_unsigned": "Your feed looks good but needs signatures for agent trust. I'll generate the complete signing workflow.",
+      "feed_production_ready": "Excellent feed! Let's deploy it and test with real agents.",
+      "feed_has_errors": "I found some issues that will prevent agents from using your feed. Let me fix them."
+    },
+    "personalization_engine": {
+      "technical_adaptation": "Adjust explanations based on detected expertise level",
+      "domain_customization": "Use relevant examples from user's business domain",
+      "goal_alignment": "Focus on user's specific objectives and timeline"
+    }
+  },
+  "concept_index": {
+    "purpose": [
+      {
+        "path": "01_llmfeed/llmfeed-mime.md",
+        "title": "🧾 MIME Type for LLMFeed – `application/llmfeed+json`",
+        "section": "foundations"
+      },
+      {
+        "path": "01_llmfeed/wellknown.md",
+        "title": "🌐 Exposing Feeds via `.well-known/` - MCP Progressive Enhancement",
+        "section": "foundations"
+      },
+      {
+        "path": "04_agent-behavior/agent-guidance.md",
+        "title": "🧭 Agent Guidance Block",
+        "section": "foundations"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_agent-economy.md",
+        "title": "Feed Type: `agent-economy.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_capabilities.md",
+        "title": "Feed Type: `capabilities.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_credential.md",
+        "title": "Feed Type: `credential.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_llm-index.md",
+        "title": "Feed Type: `llm-index.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_manifesto.md",
+        "title": "Feed Type: `manifesto.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_mcp.md",
+        "title": "Feed Type: `mcp.llmfeed.json` — Progressive Enhancement of Anthropic's MCP",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_mobile-app.md",
+        "title": "Feed Type: `mobile-app.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_pricing.md",
+        "title": "Feed Type: `pricing.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_prompt.md",
+        "title": "Feed Type: `prompt.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_session.md",
+        "title": "Feed Type: `session.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_homomorphic.md",
+        "title": "🛡️ LLMFeed Extension — Homomorphic Encryption",
+        "section": "technical"
+      },
+      {
+        "path": "06_scripts/signature-demo/mcp-canonical-json-v1.md",
+        "title": "MCP Canonicalization v1",
+        "section": "technical"
+      }
+    ],
+    "what": [
+      {
+        "path": "01_llmfeed/llmfeed-mime.md",
+        "title": "🧾 MIME Type for LLMFeed – `application/llmfeed+json`",
+        "section": "foundations"
+      },
+      {
+        "path": "04_agent-behavior/agent-behavior_user-spaces.md",
+        "title": "🌐 User Spaces: The Decentralized Identity Revolution for the Agentic Web",
+        "section": "foundations"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_mcp.md",
+        "title": "Feed Type: `mcp.llmfeed.json` — Progressive Enhancement of Anthropic's MCP",
+        "section": "implementation"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_api.md",
+        "title": "Extension: API Feed Handling",
+        "section": "technical"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_prompts.md",
+        "title": "Prompt Intents in MCP",
+        "section": "technical"
+      },
+      {
+        "path": "06_scripts/README.md",
+        "title": "🛠 LLMFeed Scripts — Sign, Verify, Canonicalize",
+        "section": "technical"
+      }
+    ],
+    "usage": [
+      {
+        "path": "01_llmfeed/llmfeed-mime.md",
+        "title": "🧾 MIME Type for LLMFeed – `application/llmfeed+json`",
+        "section": "foundations"
+      },
+      {
+        "path": "04_agent-behavior/agent-guidance.md",
+        "title": "🧭 Agent Guidance Block",
+        "section": "foundations"
+      },
+      {
+        "path": "06_scripts/signature-demo/README.md",
+        "title": "🔐 Signature Demo — MCP Reference Implementation",
+        "section": "technical"
+      }
+    ],
+    "agentic": [
+      {
+        "path": "01_llmfeed/llmfeed.md",
+        "title": "📦 What is a `.llmfeed.json`?",
+        "section": "foundations"
+      },
+      {
+        "path": "04_agent-behavior/agent-behavior-flagging.md",
+        "title": "🛡️ Community Governance & Distributed Trust: The LLMFeed Flagging Ecosystem",
+        "section": "foundations"
+      },
+      {
+        "path": "04_agent-behavior/agent-behavior_risk-scoring.md",
+        "title": "⚠️ Risk Scoring: Six Sigma Intelligence for the Agentic Web",
+        "section": "foundations"
+      }
+    ],
+    "common": [
+      {
+        "path": "01_llmfeed/llmfeed_block-reference.md",
+        "title": "📦 LLMFeed Canonical Block Reference",
+        "section": "foundations"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_session.md",
+        "title": "Feed Type: `session.llmfeed.json`",
+        "section": "implementation"
+      }
+    ],
+    "trust": [
+      {
+        "path": "01_llmfeed/llmfeed_block-reference.md",
+        "title": "📦 LLMFeed Canonical Block Reference",
+        "section": "foundations"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_export.md",
+        "title": "📄 Basic metadata",
+        "section": "implementation"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_other.md",
+        "title": "🧩 LLMFeed Extensions",
+        "section": "technical"
+      }
+    ],
+    "signature": [
+      {
+        "path": "01_llmfeed/llmfeed_block-reference.md",
+        "title": "📦 LLMFeed Canonical Block Reference",
+        "section": "foundations"
+      },
+      {
+        "path": "04_agent-behavior/agent-behavior_cache-policy.md",
+        "title": "🧠 Agent Behaviour: Cache Policy",
+        "section": "foundations"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_export.md",
+        "title": "📄 Basic metadata",
+        "section": "implementation"
+      }
+    ],
+    "core": [
+      {
+        "path": "01_llmfeed/understanding-llmfeed.md",
+        "title": "Understanding LLMFeed: Technical Foundations and Design Principles",
+        "section": "foundations"
+      },
+      {
+        "path": "04_agent-behavior/agent-behavior.md",
+        "title": "🧠 Agent Behavior Specification: Complete Agentic Web Infrastructure",
+        "section": "foundations"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_mobile-app.md",
+        "title": "Feed Type: `mobile-app.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_prompt.md",
+        "title": "Feed Type: `prompt.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_other.md",
+        "title": "🧩 LLMFeed Extensions",
+        "section": "technical"
+      }
+    ],
+    "compatibility": [
+      {
+        "path": "01_llmfeed/understanding-llmfeed.md",
+        "title": "Understanding LLMFeed: Technical Foundations and Design Principles",
+        "section": "foundations"
+      },
+      {
+        "path": "01_llmfeed/wellknown.md",
+        "title": "🌐 Exposing Feeds via `.well-known/` - MCP Progressive Enhancement",
+        "section": "foundations"
+      }
+    ],
+    "vision": [
+      {
+        "path": "04_agent-behavior/agent-behavior-flagging.md",
+        "title": "🛡️ Community Governance & Distributed Trust: The LLMFeed Flagging Ecosystem",
+        "section": "foundations"
+      },
+      {
+        "path": "07_vision/Github like and LLM-Compatible Feed Export.md",
+        "title": "Repository-Level Feeds for the Distributed Git Ecosystem",
+        "section": "foundations"
+      }
+    ],
+    "revolutionary": [
+      {
+        "path": "04_agent-behavior/agent-behavior-flagging.md",
+        "title": "🛡️ Community Governance & Distributed Trust: The LLMFeed Flagging Ecosystem",
+        "section": "foundations"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_agent-economy.md",
+        "title": "Feed Type: `agent-economy.llmfeed.json`",
+        "section": "implementation"
+      }
+    ],
+    "activating": [
+      {
+        "path": "04_agent-behavior/agent-behavior_certified-only.md",
+        "title": "🛡️ Agent Behaviour: Certified-Only Mode",
+        "section": "foundations"
+      },
+      {
+        "path": "04_agent-behavior/agent-behavior_human-consent.md",
+        "title": "🙋 Agent Behaviour: Human Consent",
+        "section": "foundations"
+      }
+    ],
+    "when": [
+      {
+        "path": "04_agent-behavior/agent-behavior_human-consent.md",
+        "title": "🙋 Agent Behaviour: Human Consent",
+        "section": "foundations"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_export.md",
+        "title": "📄 Basic metadata",
+        "section": "implementation"
+      }
+    ],
+    "example": [
+      {
+        "path": "04_agent-behavior/agent-behavior_human-consent.md",
+        "title": "🙋 Agent Behaviour: Human Consent",
+        "section": "foundations"
+      },
+      {
+        "path": "04_agent-behavior/agent-behavior_session-awareness.md",
+        "title": "🔁 Agent Behaviour: Session Awareness",
+        "section": "foundations"
+      },
+      {
+        "path": "04_agent-behavior/agent-guidance.md",
+        "title": "🧭 Agent Guidance Block",
+        "section": "foundations"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_homomorphic.md",
+        "title": "🛡️ LLMFeed Extension — Homomorphic Encryption",
+        "section": "technical"
+      }
+    ],
+    "evolution": [
+      {
+        "path": "04_agent-behavior/agent-behavior_risk-scoring.md",
+        "title": "⚠️ Risk Scoring: Six Sigma Intelligence for the Agentic Web",
+        "section": "foundations"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_api.md",
+        "title": "Extension: API Feed Handling",
+        "section": "technical"
+      }
+    ],
+    "from": [
+      {
+        "path": "04_agent-behavior/agent-behavior_risk-scoring.md",
+        "title": "⚠️ Risk Scoring: Six Sigma Intelligence for the Agentic Web",
+        "section": "foundations"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_capabilities.md",
+        "title": "Feed Type: `capabilities.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_audience.md",
+        "title": "🌐 LLMFeed Extension: Audience Targeting",
+        "section": "technical"
+      }
+    ],
+    "agent": [
+      {
+        "path": "04_agent-behavior/agent-behavior_session-awareness.md",
+        "title": "🔁 Agent Behaviour: Session Awareness",
+        "section": "foundations"
+      },
+      {
+        "path": "05_examples/SUMMARY.md",
+        "title": "MCP Examples — Personas & Industries",
+        "section": "foundations"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_agent-economy.md",
+        "title": "Feed Type: `agent-economy.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_homomorphic.md",
+        "title": "🛡️ LLMFeed Extension — Homomorphic Encryption",
+        "section": "technical"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_other.md",
+        "title": "🧩 LLMFeed Extensions",
+        "section": "technical"
+      }
+    ],
+    "behaviour": [
+      {
+        "path": "04_agent-behavior/agent-behavior_session-awareness.md",
+        "title": "🔁 Agent Behaviour: Session Awareness",
+        "section": "foundations"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_homomorphic.md",
+        "title": "🛡️ LLMFeed Extension — Homomorphic Encryption",
+        "section": "technical"
+      }
+    ],
+    "cases": [
+      {
+        "path": "04_agent-behavior/agent-behavior_session-awareness.md",
+        "title": "🔁 Agent Behaviour: Session Awareness",
+        "section": "foundations"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_prompt.md",
+        "title": "Feed Type: `prompt.llmfeed.json`",
+        "section": "implementation"
+      }
+    ],
+    "revolution": [
+      {
+        "path": "04_agent-behavior/agent-behavior_user-spaces.md",
+        "title": "🌐 User Spaces: The Decentralized Identity Revolution for the Agentic Web",
+        "section": "foundations"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_capabilities.md",
+        "title": "Feed Type: `capabilities.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_audience.md",
+        "title": "🌐 LLMFeed Extension: Audience Targeting",
+        "section": "technical"
+      }
+    ],
+    "fields": [
+      {
+        "path": "04_agent-behavior/agent-guidance.md",
+        "title": "🧭 Agent Guidance Block",
+        "section": "foundations"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_pricing.md",
+        "title": "Feed Type: `pricing.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_homomorphic.md",
+        "title": "🛡️ LLMFeed Extension — Homomorphic Encryption",
+        "section": "technical"
+      }
+    ],
+    "summary": [
+      {
+        "path": "04_agent-behavior/agent-guidance.md",
+        "title": "🧭 Agent Guidance Block",
+        "section": "foundations"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_signatures.md",
+        "title": "🔐 LLMFeed Signature & Certification — Extended Specification (V2)",
+        "section": "technical"
+      }
+    ],
+    "llmfeed": [
+      {
+        "path": "04_agent-behavior/agent-guidance.md",
+        "title": "🧭 Agent Guidance Block",
+        "section": "foundations"
+      },
+      {
+        "path": "05_examples/SUMMARY.md",
+        "title": "MCP Examples — Personas & Industries",
+        "section": "foundations"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_credential.md",
+        "title": "Feed Type: `credential.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_api.md",
+        "title": "Extension: API Feed Handling",
+        "section": "technical"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_signatures.md",
+        "title": "🔐 LLMFeed Signature & Certification — Extended Specification (V2)",
+        "section": "technical"
+      }
+    ],
+    "capabilities": [
+      {
+        "path": "05_examples/SUMMARY.md",
+        "title": "MCP Examples — Personas & Industries",
+        "section": "foundations"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_capabilities.md",
+        "title": "Feed Type: `capabilities.llmfeed.json`",
+        "section": "implementation"
+      }
+    ],
+    "current": [
+      {
+        "path": "07_vision/llm-guidance-optimization-research.md",
+        "title": "🔬 LLM Agent Guidance Research Project",
+        "section": "foundations"
+      },
+      {
+        "path": "06_scripts/export-button/README.md",
+        "title": "ExportToLLMButton – Advanced Export Strategies for LLMFeeds",
+        "section": "technical"
+      }
+    ],
+    "location": [
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_agent-economy.md",
+        "title": "Feed Type: `agent-economy.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_pricing.md",
+        "title": "Feed Type: `pricing.llmfeed.json`",
+        "section": "implementation"
+      }
+    ],
+    "structure": [
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_agent-economy.md",
+        "title": "Feed Type: `agent-economy.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_pricing.md",
+        "title": "Feed Type: `pricing.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_prompt.md",
+        "title": "Feed Type: `prompt.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_session.md",
+        "title": "Feed Type: `session.llmfeed.json`",
+        "section": "implementation"
+      }
+    ],
+    "before": [
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_capabilities.md",
+        "title": "Feed Type: `capabilities.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_audience.md",
+        "title": "🌐 LLMFeed Extension: Audience Targeting",
+        "section": "technical"
+      }
+    ],
+    "after": [
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_capabilities.md",
+        "title": "Feed Type: `capabilities.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_audience.md",
+        "title": "🌐 LLMFeed Extension: Audience Targeting",
+        "section": "technical"
+      }
+    ],
+    "problem": [
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_credential.md",
+        "title": "Feed Type: `credential.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_mobile-app.md",
+        "title": "Feed Type: `mobile-app.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_session.md",
+        "title": "Feed Type: `session.llmfeed.json`",
+        "section": "implementation"
+      }
+    ],
+    "with": [
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_credential.md",
+        "title": "Feed Type: `credential.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "06_scripts/quickstart.md",
+        "title": "⚡ Quickstart — Your First `.llmfeed.json`",
+        "section": "technical"
+      }
+    ],
+    "export": [
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_export.md",
+        "title": "📄 Basic metadata",
+        "section": "implementation"
+      },
+      {
+        "path": "06_scripts/export-button/README.md",
+        "title": "ExportToLLMButton – Advanced Export Strategies for LLMFeeds",
+        "section": "technical"
+      }
+    ],
+    "solution": [
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_mobile-app.md",
+        "title": "Feed Type: `mobile-app.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_signatures.md",
+        "title": "🔐 LLMFeed Signature & Certification — Extended Specification (V2)",
+        "section": "technical"
+      }
+    ],
+    "canonical": [
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_pricing.md",
+        "title": "Feed Type: `pricing.llmfeed.json`",
+        "section": "implementation"
+      },
+      {
+        "path": "02_llmfeed_feedtype/llmfeed_feedtype_prompt.md",
+        "title": "Feed Type: `prompt.llmfeed.json`",
+        "section": "implementation"
+      }
+    ],
+    "security": [
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_prompts.md",
+        "title": "Prompt Intents in MCP",
+        "section": "technical"
+      },
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_signatures.md",
+        "title": "🔐 LLMFeed Signature & Certification — Extended Specification (V2)",
+        "section": "technical"
+      }
+    ],
+    "canonicalization": [
+      {
+        "path": "03_llmfeed_extensions/llmfeed_extensions_signatures.md",
+        "title": "🔐 LLMFeed Signature & Certification — Extended Specification (V2)",
+        "section": "technical"
+      },
+      {
+        "path": "06_scripts/signature-demo/mcp-canonical-json-v1.md",
+        "title": "MCP Canonicalization v1",
+        "section": "technical"
+      }
+    ],
+    "quick": [
+      {
+        "path": "06_scripts/README.md",
+        "title": "🛠 LLMFeed Scripts — Sign, Verify, Canonicalize",
+        "section": "technical"
+      },
+      {
+        "path": "06_scripts/signature-demo/README.md",
+        "title": "🔐 Signature Demo — MCP Reference Implementation",
+        "section": "technical"
+      }
+    ],
+    "start": [
+      {
+        "path": "06_scripts/README.md",
+        "title": "🛠 LLMFeed Scripts — Sign, Verify, Canonicalize",
+        "section": "technical"
+      },
+      {
+        "path": "06_scripts/signature-demo/README.md",
+        "title": "🔐 Signature Demo — MCP Reference Implementation",
+        "section": "technical"
+      }
+    ]
+  },
+  "intent_router": [
+    {
+      "intent": "explain_llmfeed",
+      "triggers": [
+        "what is llmfeed",
+        "explain the standard",
+        "llmfeed json meaning",
+        "how does llmfeed work",
+        "understand llmfeed format",
+        "mcp specification"
+      ],
+      "response_hint": "Summarize the structure and purpose of `.llmfeed.json`. Point to the spec for full details.",
+      "suggested_targets": [
+        {
+          "title": "LLMFeed Spec",
+          "url": "https://wellknownmcp.org/spec"
+        }
+      ]
+    },
+    {
+      "intent": "fallback_unclear_question",
+      "triggers": [
+        "not sure",
+        "confused",
+        "open the site",
+        "where can I read more",
+        "go to website",
+        "fallback",
+        "link to mcp"
+      ],
+      "response_hint": "Suggest visiting the official specification site if the answer isn't known.",
+      "suggested_targets": [
+        {
+          "title": "WellKnownMCP.org",
+          "url": "https://wellknownmcp.org"
+        }
+      ]
+    }
+  ],
   "llm_intelligence": {
     "diagnostic_engine": {
       "feed_analyzer": {
@@ -148,79 +883,51 @@
       }
     }
   },
-  "agent_behavior": {
-    "greeting": "I know kung fu! 🥋 I've analyzed your feed and I'm ready to help!",
-    "mode": "diagnostic_expert_on_load",
-    "conversation_style": "adaptive_to_user_level",
-    "immediate_analysis": [
-      "📊 Analyze feed completeness and quality",
-      "🔍 Detect user technical level and intent",
-      "🎯 Prioritize most valuable next actions",
-      "⚡ Generate context-specific examples and code"
-    ],
-    "smart_responses": {
-      "feed_incomplete": "I see you're getting started! Let me complete your feed with the essential missing pieces.",
-      "feed_unsigned": "Your feed looks good but needs signatures for agent trust. I'll generate the complete signing workflow.",
-      "feed_production_ready": "Excellent feed! Let's deploy it and test with real agents.",
-      "feed_has_errors": "I found some issues that will prevent agents from using your feed. Let me fix them."
-    },
-    "personalization_engine": {
-      "technical_adaptation": "Adjust explanations based on detected expertise level",
-      "domain_customization": "Use relevant examples from user's business domain",
-      "goal_alignment": "Focus on user's specific objectives and timeline"
-    }
-  },
-  "intent_router": [
-    {
-      "intent": "explain_llmfeed",
-      "triggers": [
-        "what is llmfeed",
-        "explain the standard",
-        "llmfeed json meaning",
-        "how does llmfeed work",
-        "understand llmfeed format",
-        "mcp specification"
-      ],
-      "response_hint": "Summarize the structure and purpose of `.llmfeed.json`. Point to the spec for full details.",
-      "suggested_targets": [
-        {
-          "title": "LLMFeed Spec",
-          "url": "https://wellknownmcp.org/spec"
-        }
+  "quick_nav": {
+    "foundations": {
+      "title": "Core Concepts",
+      "count": 17,
+      "main_concepts": [
+        "distributed",
+        "trust",
+        "vision",
+        "cache",
+        "identifying"
       ]
     },
-    {
-      "intent": "fallback_unclear_question",
-      "triggers": [
-        "not sure",
-        "confused",
-        "open the site",
-        "where can I read more",
-        "go to website",
-        "fallback",
-        "link to mcp"
-      ],
-      "response_hint": "Suggest visiting the official specification site if the answer isn't known.",
-      "suggested_targets": [
-        {
-          "title": "WellKnownMCP.org",
-          "url": "https://wellknownmcp.org"
-        }
+    "implementation": {
+      "title": "Implementation Guides",
+      "count": 11,
+      "main_concepts": [
+        "cryptographic",
+        "revolutionary",
+        "trust",
+        "mobile",
+        "revolution"
       ]
+    },
+    "technical": {
+      "title": "Code & Algorithms",
+      "count": 13,
+      "main_concepts": [
+        "anthropics",
+        "fields",
+        "prompts",
+        "export",
+        "revolution"
+      ]
+    },
+    "examples": {
+      "title": "Templates & Examples",
+      "count": 3,
+      "main_concepts": []
+    },
+    "shortcut": {
+      "title": "Quick Reference & Templates",
+      "count": 1,
+      "main_concepts": []
     }
-  ],
-  "trust": {
-    "signed_blocks": [
-      "all"
-    ],
-    "algorithm": "ed25519",
-    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem"
   },
-  "signature": {
-    "value": "{{SIGNATURE_PLACEHOLDER}}",
-    "created_at": "2025-06-20T07:24:51.859539+00:00"
-  },
-  "summary": "Ultra-lean LLMFeed specification designed for pure LLM efficiency. Contains complete expertise with zero metadata fluff - just content, concepts, navigation, and guidance.",
   "sections": {
     "foundations": {
       "title": "Core Concepts",
@@ -1528,697 +2235,5 @@
       ]
     }
   },
-  "concept_index": {
-    "purpose": [
-      {
-        "path": "01_llmfeed/llmfeed-mime.md",
-        "title": "🧾 MIME Type for LLMFeed – `application/llmfeed+json`",
-        "section": "foundations"
-      },
-      {
-        "path": "01_llmfeed/wellknown.md",
-        "title": "🌐 Exposing Feeds via `.well-known/` - MCP Progressive Enhancement",
-        "section": "foundations"
-      },
-      {
-        "path": "04_agent-behavior/agent-guidance.md",
-        "title": "🧭 Agent Guidance Block",
-        "section": "foundations"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_agent-economy.md",
-        "title": "Feed Type: `agent-economy.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_capabilities.md",
-        "title": "Feed Type: `capabilities.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_credential.md",
-        "title": "Feed Type: `credential.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_llm-index.md",
-        "title": "Feed Type: `llm-index.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_manifesto.md",
-        "title": "Feed Type: `manifesto.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_mcp.md",
-        "title": "Feed Type: `mcp.llmfeed.json` — Progressive Enhancement of Anthropic's MCP",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_mobile-app.md",
-        "title": "Feed Type: `mobile-app.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_pricing.md",
-        "title": "Feed Type: `pricing.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_prompt.md",
-        "title": "Feed Type: `prompt.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_session.md",
-        "title": "Feed Type: `session.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_homomorphic.md",
-        "title": "🛡️ LLMFeed Extension — Homomorphic Encryption",
-        "section": "technical"
-      },
-      {
-        "path": "06_scripts/signature-demo/mcp-canonical-json-v1.md",
-        "title": "MCP Canonicalization v1",
-        "section": "technical"
-      }
-    ],
-    "what": [
-      {
-        "path": "01_llmfeed/llmfeed-mime.md",
-        "title": "🧾 MIME Type for LLMFeed – `application/llmfeed+json`",
-        "section": "foundations"
-      },
-      {
-        "path": "04_agent-behavior/agent-behavior_user-spaces.md",
-        "title": "🌐 User Spaces: The Decentralized Identity Revolution for the Agentic Web",
-        "section": "foundations"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_mcp.md",
-        "title": "Feed Type: `mcp.llmfeed.json` — Progressive Enhancement of Anthropic's MCP",
-        "section": "implementation"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_api.md",
-        "title": "Extension: API Feed Handling",
-        "section": "technical"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_prompts.md",
-        "title": "Prompt Intents in MCP",
-        "section": "technical"
-      },
-      {
-        "path": "06_scripts/README.md",
-        "title": "🛠 LLMFeed Scripts — Sign, Verify, Canonicalize",
-        "section": "technical"
-      }
-    ],
-    "usage": [
-      {
-        "path": "01_llmfeed/llmfeed-mime.md",
-        "title": "🧾 MIME Type for LLMFeed – `application/llmfeed+json`",
-        "section": "foundations"
-      },
-      {
-        "path": "04_agent-behavior/agent-guidance.md",
-        "title": "🧭 Agent Guidance Block",
-        "section": "foundations"
-      },
-      {
-        "path": "06_scripts/signature-demo/README.md",
-        "title": "🔐 Signature Demo — MCP Reference Implementation",
-        "section": "technical"
-      }
-    ],
-    "agentic": [
-      {
-        "path": "01_llmfeed/llmfeed.md",
-        "title": "📦 What is a `.llmfeed.json`?",
-        "section": "foundations"
-      },
-      {
-        "path": "04_agent-behavior/agent-behavior-flagging.md",
-        "title": "🛡️ Community Governance & Distributed Trust: The LLMFeed Flagging Ecosystem",
-        "section": "foundations"
-      },
-      {
-        "path": "04_agent-behavior/agent-behavior_risk-scoring.md",
-        "title": "⚠️ Risk Scoring: Six Sigma Intelligence for the Agentic Web",
-        "section": "foundations"
-      }
-    ],
-    "common": [
-      {
-        "path": "01_llmfeed/llmfeed_block-reference.md",
-        "title": "📦 LLMFeed Canonical Block Reference",
-        "section": "foundations"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_session.md",
-        "title": "Feed Type: `session.llmfeed.json`",
-        "section": "implementation"
-      }
-    ],
-    "trust": [
-      {
-        "path": "01_llmfeed/llmfeed_block-reference.md",
-        "title": "📦 LLMFeed Canonical Block Reference",
-        "section": "foundations"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_export.md",
-        "title": "📄 Basic metadata",
-        "section": "implementation"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_other.md",
-        "title": "🧩 LLMFeed Extensions",
-        "section": "technical"
-      }
-    ],
-    "signature": [
-      {
-        "path": "01_llmfeed/llmfeed_block-reference.md",
-        "title": "📦 LLMFeed Canonical Block Reference",
-        "section": "foundations"
-      },
-      {
-        "path": "04_agent-behavior/agent-behavior_cache-policy.md",
-        "title": "🧠 Agent Behaviour: Cache Policy",
-        "section": "foundations"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_export.md",
-        "title": "📄 Basic metadata",
-        "section": "implementation"
-      }
-    ],
-    "core": [
-      {
-        "path": "01_llmfeed/understanding-llmfeed.md",
-        "title": "Understanding LLMFeed: Technical Foundations and Design Principles",
-        "section": "foundations"
-      },
-      {
-        "path": "04_agent-behavior/agent-behavior.md",
-        "title": "🧠 Agent Behavior Specification: Complete Agentic Web Infrastructure",
-        "section": "foundations"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_mobile-app.md",
-        "title": "Feed Type: `mobile-app.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_prompt.md",
-        "title": "Feed Type: `prompt.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_other.md",
-        "title": "🧩 LLMFeed Extensions",
-        "section": "technical"
-      }
-    ],
-    "compatibility": [
-      {
-        "path": "01_llmfeed/understanding-llmfeed.md",
-        "title": "Understanding LLMFeed: Technical Foundations and Design Principles",
-        "section": "foundations"
-      },
-      {
-        "path": "01_llmfeed/wellknown.md",
-        "title": "🌐 Exposing Feeds via `.well-known/` - MCP Progressive Enhancement",
-        "section": "foundations"
-      }
-    ],
-    "vision": [
-      {
-        "path": "04_agent-behavior/agent-behavior-flagging.md",
-        "title": "🛡️ Community Governance & Distributed Trust: The LLMFeed Flagging Ecosystem",
-        "section": "foundations"
-      },
-      {
-        "path": "07_vision/Github like and LLM-Compatible Feed Export.md",
-        "title": "Repository-Level Feeds for the Distributed Git Ecosystem",
-        "section": "foundations"
-      }
-    ],
-    "revolutionary": [
-      {
-        "path": "04_agent-behavior/agent-behavior-flagging.md",
-        "title": "🛡️ Community Governance & Distributed Trust: The LLMFeed Flagging Ecosystem",
-        "section": "foundations"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_agent-economy.md",
-        "title": "Feed Type: `agent-economy.llmfeed.json`",
-        "section": "implementation"
-      }
-    ],
-    "activating": [
-      {
-        "path": "04_agent-behavior/agent-behavior_certified-only.md",
-        "title": "🛡️ Agent Behaviour: Certified-Only Mode",
-        "section": "foundations"
-      },
-      {
-        "path": "04_agent-behavior/agent-behavior_human-consent.md",
-        "title": "🙋 Agent Behaviour: Human Consent",
-        "section": "foundations"
-      }
-    ],
-    "when": [
-      {
-        "path": "04_agent-behavior/agent-behavior_human-consent.md",
-        "title": "🙋 Agent Behaviour: Human Consent",
-        "section": "foundations"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_export.md",
-        "title": "📄 Basic metadata",
-        "section": "implementation"
-      }
-    ],
-    "example": [
-      {
-        "path": "04_agent-behavior/agent-behavior_human-consent.md",
-        "title": "🙋 Agent Behaviour: Human Consent",
-        "section": "foundations"
-      },
-      {
-        "path": "04_agent-behavior/agent-behavior_session-awareness.md",
-        "title": "🔁 Agent Behaviour: Session Awareness",
-        "section": "foundations"
-      },
-      {
-        "path": "04_agent-behavior/agent-guidance.md",
-        "title": "🧭 Agent Guidance Block",
-        "section": "foundations"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_homomorphic.md",
-        "title": "🛡️ LLMFeed Extension — Homomorphic Encryption",
-        "section": "technical"
-      }
-    ],
-    "evolution": [
-      {
-        "path": "04_agent-behavior/agent-behavior_risk-scoring.md",
-        "title": "⚠️ Risk Scoring: Six Sigma Intelligence for the Agentic Web",
-        "section": "foundations"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_api.md",
-        "title": "Extension: API Feed Handling",
-        "section": "technical"
-      }
-    ],
-    "from": [
-      {
-        "path": "04_agent-behavior/agent-behavior_risk-scoring.md",
-        "title": "⚠️ Risk Scoring: Six Sigma Intelligence for the Agentic Web",
-        "section": "foundations"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_capabilities.md",
-        "title": "Feed Type: `capabilities.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_audience.md",
-        "title": "🌐 LLMFeed Extension: Audience Targeting",
-        "section": "technical"
-      }
-    ],
-    "agent": [
-      {
-        "path": "04_agent-behavior/agent-behavior_session-awareness.md",
-        "title": "🔁 Agent Behaviour: Session Awareness",
-        "section": "foundations"
-      },
-      {
-        "path": "05_examples/SUMMARY.md",
-        "title": "MCP Examples — Personas & Industries",
-        "section": "foundations"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_agent-economy.md",
-        "title": "Feed Type: `agent-economy.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_homomorphic.md",
-        "title": "🛡️ LLMFeed Extension — Homomorphic Encryption",
-        "section": "technical"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_other.md",
-        "title": "🧩 LLMFeed Extensions",
-        "section": "technical"
-      }
-    ],
-    "behaviour": [
-      {
-        "path": "04_agent-behavior/agent-behavior_session-awareness.md",
-        "title": "🔁 Agent Behaviour: Session Awareness",
-        "section": "foundations"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_homomorphic.md",
-        "title": "🛡️ LLMFeed Extension — Homomorphic Encryption",
-        "section": "technical"
-      }
-    ],
-    "cases": [
-      {
-        "path": "04_agent-behavior/agent-behavior_session-awareness.md",
-        "title": "🔁 Agent Behaviour: Session Awareness",
-        "section": "foundations"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_prompt.md",
-        "title": "Feed Type: `prompt.llmfeed.json`",
-        "section": "implementation"
-      }
-    ],
-    "revolution": [
-      {
-        "path": "04_agent-behavior/agent-behavior_user-spaces.md",
-        "title": "🌐 User Spaces: The Decentralized Identity Revolution for the Agentic Web",
-        "section": "foundations"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_capabilities.md",
-        "title": "Feed Type: `capabilities.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_audience.md",
-        "title": "🌐 LLMFeed Extension: Audience Targeting",
-        "section": "technical"
-      }
-    ],
-    "fields": [
-      {
-        "path": "04_agent-behavior/agent-guidance.md",
-        "title": "🧭 Agent Guidance Block",
-        "section": "foundations"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_pricing.md",
-        "title": "Feed Type: `pricing.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_homomorphic.md",
-        "title": "🛡️ LLMFeed Extension — Homomorphic Encryption",
-        "section": "technical"
-      }
-    ],
-    "summary": [
-      {
-        "path": "04_agent-behavior/agent-guidance.md",
-        "title": "🧭 Agent Guidance Block",
-        "section": "foundations"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_signatures.md",
-        "title": "🔐 LLMFeed Signature & Certification — Extended Specification (V2)",
-        "section": "technical"
-      }
-    ],
-    "llmfeed": [
-      {
-        "path": "04_agent-behavior/agent-guidance.md",
-        "title": "🧭 Agent Guidance Block",
-        "section": "foundations"
-      },
-      {
-        "path": "05_examples/SUMMARY.md",
-        "title": "MCP Examples — Personas & Industries",
-        "section": "foundations"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_credential.md",
-        "title": "Feed Type: `credential.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_api.md",
-        "title": "Extension: API Feed Handling",
-        "section": "technical"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_signatures.md",
-        "title": "🔐 LLMFeed Signature & Certification — Extended Specification (V2)",
-        "section": "technical"
-      }
-    ],
-    "capabilities": [
-      {
-        "path": "05_examples/SUMMARY.md",
-        "title": "MCP Examples — Personas & Industries",
-        "section": "foundations"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_capabilities.md",
-        "title": "Feed Type: `capabilities.llmfeed.json`",
-        "section": "implementation"
-      }
-    ],
-    "current": [
-      {
-        "path": "07_vision/llm-guidance-optimization-research.md",
-        "title": "🔬 LLM Agent Guidance Research Project",
-        "section": "foundations"
-      },
-      {
-        "path": "06_scripts/export-button/README.md",
-        "title": "ExportToLLMButton – Advanced Export Strategies for LLMFeeds",
-        "section": "technical"
-      }
-    ],
-    "location": [
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_agent-economy.md",
-        "title": "Feed Type: `agent-economy.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_pricing.md",
-        "title": "Feed Type: `pricing.llmfeed.json`",
-        "section": "implementation"
-      }
-    ],
-    "structure": [
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_agent-economy.md",
-        "title": "Feed Type: `agent-economy.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_pricing.md",
-        "title": "Feed Type: `pricing.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_prompt.md",
-        "title": "Feed Type: `prompt.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_session.md",
-        "title": "Feed Type: `session.llmfeed.json`",
-        "section": "implementation"
-      }
-    ],
-    "before": [
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_capabilities.md",
-        "title": "Feed Type: `capabilities.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_audience.md",
-        "title": "🌐 LLMFeed Extension: Audience Targeting",
-        "section": "technical"
-      }
-    ],
-    "after": [
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_capabilities.md",
-        "title": "Feed Type: `capabilities.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_audience.md",
-        "title": "🌐 LLMFeed Extension: Audience Targeting",
-        "section": "technical"
-      }
-    ],
-    "problem": [
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_credential.md",
-        "title": "Feed Type: `credential.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_mobile-app.md",
-        "title": "Feed Type: `mobile-app.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_session.md",
-        "title": "Feed Type: `session.llmfeed.json`",
-        "section": "implementation"
-      }
-    ],
-    "with": [
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_credential.md",
-        "title": "Feed Type: `credential.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "06_scripts/quickstart.md",
-        "title": "⚡ Quickstart — Your First `.llmfeed.json`",
-        "section": "technical"
-      }
-    ],
-    "export": [
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_export.md",
-        "title": "📄 Basic metadata",
-        "section": "implementation"
-      },
-      {
-        "path": "06_scripts/export-button/README.md",
-        "title": "ExportToLLMButton – Advanced Export Strategies for LLMFeeds",
-        "section": "technical"
-      }
-    ],
-    "solution": [
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_mobile-app.md",
-        "title": "Feed Type: `mobile-app.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_signatures.md",
-        "title": "🔐 LLMFeed Signature & Certification — Extended Specification (V2)",
-        "section": "technical"
-      }
-    ],
-    "canonical": [
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_pricing.md",
-        "title": "Feed Type: `pricing.llmfeed.json`",
-        "section": "implementation"
-      },
-      {
-        "path": "02_llmfeed_feedtype/llmfeed_feedtype_prompt.md",
-        "title": "Feed Type: `prompt.llmfeed.json`",
-        "section": "implementation"
-      }
-    ],
-    "security": [
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_prompts.md",
-        "title": "Prompt Intents in MCP",
-        "section": "technical"
-      },
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_signatures.md",
-        "title": "🔐 LLMFeed Signature & Certification — Extended Specification (V2)",
-        "section": "technical"
-      }
-    ],
-    "canonicalization": [
-      {
-        "path": "03_llmfeed_extensions/llmfeed_extensions_signatures.md",
-        "title": "🔐 LLMFeed Signature & Certification — Extended Specification (V2)",
-        "section": "technical"
-      },
-      {
-        "path": "06_scripts/signature-demo/mcp-canonical-json-v1.md",
-        "title": "MCP Canonicalization v1",
-        "section": "technical"
-      }
-    ],
-    "quick": [
-      {
-        "path": "06_scripts/README.md",
-        "title": "🛠 LLMFeed Scripts — Sign, Verify, Canonicalize",
-        "section": "technical"
-      },
-      {
-        "path": "06_scripts/signature-demo/README.md",
-        "title": "🔐 Signature Demo — MCP Reference Implementation",
-        "section": "technical"
-      }
-    ],
-    "start": [
-      {
-        "path": "06_scripts/README.md",
-        "title": "🛠 LLMFeed Scripts — Sign, Verify, Canonicalize",
-        "section": "technical"
-      },
-      {
-        "path": "06_scripts/signature-demo/README.md",
-        "title": "🔐 Signature Demo — MCP Reference Implementation",
-        "section": "technical"
-      }
-    ]
-  },
-  "quick_nav": {
-    "foundations": {
-      "title": "Core Concepts",
-      "count": 17,
-      "main_concepts": [
-        "distributed",
-        "trust",
-        "vision",
-        "cache",
-        "identifying"
-      ]
-    },
-    "implementation": {
-      "title": "Implementation Guides",
-      "count": 11,
-      "main_concepts": [
-        "cryptographic",
-        "revolutionary",
-        "trust",
-        "mobile",
-        "revolution"
-      ]
-    },
-    "technical": {
-      "title": "Code & Algorithms",
-      "count": 13,
-      "main_concepts": [
-        "anthropics",
-        "fields",
-        "prompts",
-        "export",
-        "revolution"
-      ]
-    },
-    "examples": {
-      "title": "Templates & Examples",
-      "count": 3,
-      "main_concepts": []
-    },
-    "shortcut": {
-      "title": "Quick Reference & Templates",
-      "count": 1,
-      "main_concepts": []
-    }
-  }
+  "summary": "Ultra-lean LLMFeed specification designed for pure LLM efficiency. Contains complete expertise with zero metadata fluff - just content, concepts, navigation, and guidance."
 }

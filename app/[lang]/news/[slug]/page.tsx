@@ -95,12 +95,12 @@ export async function generateMetadata({
 
   // 🛡️ Fallbacks robustes
   const title = front.title || `${slug.replace(/[-_]/g, ' ')} — WellKnownMCP News`
-  const description = front.description || `Latest insights about the Model Context Protocol and agentic web: ${slug.replace(/[-_]/g, ' ')}`
+  const description = front.description || `Latest insights about the LLMFeed protocol and agentic web: ${slug.replace(/[-_]/g, ' ')}`
   
   // 🚀 Keywords avec fallbacks multiples
   const keywords = front.tags?.join(', ') || 
                    front.keywords?.join(', ') || 
-                   `MCP, llmfeed, AI agents, ${slug.replace(/[-_]/g, ' ')}`
+                   `LLMFeed, MCP, AI agents, ${slug.replace(/[-_]/g, ' ')}`
 
   return {
     title,
@@ -175,10 +175,10 @@ export default async function NewsPost({
 
   // 🛡️ Fallbacks robustes pour tous les champs
   const title = front.title || slug.replace(/[-_]/g, ' ')
-  const description = front.description || `Latest insights about the Model Context Protocol: ${slug.replace(/[-_]/g, ' ')}`
-  const keywords = front.tags?.join(', ') || front.keywords?.join(', ') || `MCP, llmfeed, AI agents, ${slug.replace(/[-_]/g, ' ')}`
+  const description = front.description || `Latest insights about the LLMFeed protocol: ${slug.replace(/[-_]/g, ' ')}`
+  const keywords = front.tags?.join(', ') || front.keywords?.join(', ') || `LLMFeed, MCP, AI agents, ${slug.replace(/[-_]/g, ' ')}`
   const author = front.author || "WellKnownMCP Team"
-  const category = front.category || "MCP"
+  const category = front.category || "LLMFeed"
   const date = front.date || new Date().toISOString()
 
   // 🚀 SEO AMÉLIORATION 2: JSON-LD robuste avec fallbacks
@@ -236,7 +236,7 @@ export default async function NewsPost({
 
       <PageTitle
         title={title}
-        subtitle={front.subtitle || "An update from the protocol ecosystem"}
+        subtitle={front.subtitle || "An update from the LLMFeed ecosystem"}
       />
 
       <ShareButtons title={front.title || slug} />
@@ -271,6 +271,145 @@ export default async function NewsPost({
       >
         <Markdown remarkPlugins={[remarkGfm]}>{markdown}</Markdown>
       </div>
+
+      {/* 🚀 Call-to-Action pour feed news-lite - A/B Test automatique (95%/5%) */}
+      {(() => {
+        // A/B Test: 95% version principale, 5% version Matrix
+        const showMainVersion = Math.random() < 0.95
+        const feedUrl = "https://wellknownmcp.org/.well-known/exports/news-lite.llmfeed.json"
+        
+        const handleCopyPrompt = () => {
+          const promptText = `Please analyze this LLMFeed news collection for complete ecosystem context: ${feedUrl}`
+          navigator.clipboard.writeText(promptText).then(() => {
+            // Success feedback
+            const originalButton = document.querySelector('[data-cta-button]') as HTMLButtonElement
+            if (originalButton) {
+              const originalText = originalButton.textContent
+              originalButton.textContent = '✅ Copied!'
+              originalButton.disabled = true
+              setTimeout(() => {
+                originalButton.textContent = originalText
+                originalButton.disabled = false
+              }, 2000)
+            }
+          }).catch(() => {
+            // Fallback for browsers without clipboard API
+            prompt("Copy this prompt:", promptText)
+          })
+        }
+
+        if (showMainVersion) {
+          // VERSION A (95%) - "Unlock the Complete LLMFeed Ecosystem"
+          return (
+            <div className="mt-8 p-6 bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-xl border-2 border-dashed border-purple-200 dark:border-purple-800 hover:border-solid transition-all">
+              <div className="flex items-start gap-4">
+                <div className="text-3xl">🔓</div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-gray-100">
+                    Unlock the Complete LLMFeed Ecosystem
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                    You've found one piece of the LLMFeed puzzle. Your AI can absorb the <strong>entire collection</strong> of developments, tutorials, and insights in 30 seconds. No more hunting through individual articles.
+                  </p>
+                  
+                  <div className="flex flex-col sm:flex-row gap-3 mb-4">
+                    <button
+                      onClick={handleCopyPrompt}
+                      data-cta-button
+                      className="px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                    >
+                      🚀 Copy AI Prompt
+                    </button>
+                    
+                    <a
+                      href={feedUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-3 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition-all border border-gray-200 dark:border-gray-600"
+                    >
+                      📄 View Raw Feed
+                    </a>
+                  </div>
+                  
+                  <div className="grid grid-cols-3 gap-4 text-center text-sm">
+                    <div className="p-3 bg-white dark:bg-gray-800 rounded-lg">
+                      <div className="font-bold text-purple-600 dark:text-purple-400">~20</div>
+                      <div className="text-gray-600 dark:text-gray-400">Quality Articles</div>
+                    </div>
+                    <div className="p-3 bg-white dark:bg-gray-800 rounded-lg">
+                      <div className="font-bold text-blue-600 dark:text-blue-400">30s</div>
+                      <div className="text-gray-600 dark:text-gray-400">AI Analysis</div>
+                    </div>
+                    <div className="p-3 bg-white dark:bg-gray-800 rounded-lg">
+                      <div className="font-bold text-green-600 dark:text-green-400">80%</div>
+                      <div className="text-gray-600 dark:text-gray-400">LLMFeed Knowledge</div>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-4 text-xs text-gray-500 dark:text-gray-400 text-center">
+                    💡 Works with Claude, ChatGPT, Gemini, and other AI assistants
+                  </div>
+                </div>
+              </div>
+            </div>
+          )
+        } else {
+          // VERSION B (5%) - "Red Pill Matrix Style"
+          return (
+            <div className="mt-8 p-6 bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 rounded-xl border-2 border-dashed border-red-200 dark:border-red-800 hover:border-solid transition-all">
+              <div className="flex items-start gap-4">
+                <div className="text-3xl">💊</div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-gray-100">
+                    How Deep Does the LLMFeed Rabbit Hole Go?
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                    You've glimpsed the surface. Ready to see the <strong>entire agentic web ecosystem</strong>? Your AI can digest the complete knowledge matrix in 30 seconds. Choose your pill.
+                  </p>
+                  
+                  <div className="flex flex-col sm:flex-row gap-3 mb-4">
+                    <button
+                      onClick={handleCopyPrompt}
+                      data-cta-button
+                      className="px-6 py-3 bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                    >
+                      💊 Take the Knowledge Pill
+                    </button>
+                    
+                    <a
+                      href={feedUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-3 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition-all border border-gray-200 dark:border-gray-600"
+                    >
+                      🐰 Down the Rabbit Hole
+                    </a>
+                  </div>
+                  
+                  <div className="grid grid-cols-3 gap-4 text-center text-sm">
+                    <div className="p-3 bg-white dark:bg-gray-800 rounded-lg">
+                      <div className="font-bold text-red-600 dark:text-red-400">Reality</div>
+                      <div className="text-gray-600 dark:text-gray-400">20 Articles</div>
+                    </div>
+                    <div className="p-3 bg-white dark:bg-gray-800 rounded-lg">
+                      <div className="font-bold text-orange-600 dark:text-orange-400">Instant</div>
+                      <div className="text-gray-600 dark:text-gray-400">30s Download</div>
+                    </div>
+                    <div className="p-3 bg-white dark:bg-gray-800 rounded-lg">
+                      <div className="font-bold text-purple-600 dark:text-purple-400">Matrix</div>
+                      <div className="text-gray-600 dark:text-gray-400">Complete Truth</div>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-4 text-xs text-gray-500 dark:text-gray-400 text-center">
+                    🕶️ "There is no spoon... only structured data feeds"
+                  </div>
+                </div>
+              </div>
+            </div>
+          )
+        }
+      })()}
 
       {/* 🚀 SEO AMÉLIORATION 1: Tags visibles */}
       {front.tags && front.tags.length > 0 && (
@@ -333,7 +472,7 @@ export default async function NewsPost({
           <div className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
             <p>• Export this content: <a href="/.well-known/exports/" className="text-blue-600 underline">Available formats</a></p>
             <p>• Explore capabilities: <a href="/.well-known/capabilities.llmfeed.json" className="text-blue-600 underline">API endpoints</a></p>
-            <p>• Join ecosystem: <a href="/join" className="text-blue-600 underline">Contribute to MCP</a></p>
+            <p>• Join ecosystem: <a href="/join" className="text-blue-600 underline">Contribute to LLMFeed</a></p>
           </div>
         </div>
       )}
