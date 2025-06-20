@@ -278,6 +278,11 @@ export default function MCPExplainedPage() {
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
+              <p className="text-gray-700">
+                While MCP excels at local tool integration, a natural question emerges: 
+                <strong>"How can web agents discover and safely auto-configure MCP services?"</strong>
+              </p>
+
               <div className="bg-white border border-orange-200 rounded-lg p-4">
                 <h4 className="font-semibold text-orange-900 mb-3">🚧 Current Limitations</h4>
                 <div className="space-y-3">
@@ -309,6 +314,34 @@ export default function MCPExplainedPage() {
                       <p className="text-sm text-gray-700">No way to verify authenticity or prevent tampering</p>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="bg-white border border-amber-200 rounded-lg p-4">
+                  <h4 className="font-semibold text-amber-900 mb-3 flex items-center gap-2">
+                    <AlertCircle className="w-4 h-4" />
+                    Discovery Challenge
+                  </h4>
+                  <ul className="text-sm text-amber-800 space-y-2">
+                    <li>• <strong>Manual Setup:</strong> Each agent needs manual MCP configuration</li>
+                    <li>• <strong>Discovery Gap:</strong> No standard way for agents to find available MCP services</li>
+                    <li>• <strong>Credential Exposure:</strong> Local configs often contain sensitive tokens</li>
+                    <li>• <strong>Scaling Issues:</strong> N×M problem (N agents × M services)</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white border border-green-200 rounded-lg p-4">
+                  <h4 className="font-semibold text-green-900 mb-3 flex items-center gap-2">
+                    <Lightbulb className="w-4 h-4" />
+                    Safe Auto-Configuration
+                  </h4>
+                  <ul className="text-sm text-green-800 space-y-2">
+                    <li>• <strong>Public Service Endpoints:</strong> MCP servers without private data</li>
+                    <li>• <strong>Template Configurations:</strong> Variable placeholders for credentials</li>
+                    <li>• <strong>OAuth Integration:</strong> Secure authentication flows</li>
+                    <li>• <strong>Web Discovery:</strong> RFC 8615 .well-known patterns</li>
+                  </ul>
                 </div>
               </div>
 
@@ -637,6 +670,7 @@ export default function MCPExplainedPage() {
                   <h4 className="font-semibold text-gray-900 mb-3">🔧 Development Tools</h4>
                   <ul className="space-y-2 text-sm">
                     <li>• <a href="/tools/well-known" className="text-blue-600 hover:underline">Implementation Guide</a></li>
+                    <li>• <a href="/tools/api-explained" className="text-blue-600 hover:underline">API Reference</a></li>
                     <li>• <a href="/llmfeedhub" className="text-blue-600 hover:underline">Validation Tool</a></li>
                     <li>• <a href="https://wellknownmcp.org/.well-known/" className="text-blue-600 hover:underline">Live Example</a></li>
                     <li>• <a href="/faq" className="text-blue-600 hover:underline">FAQ & Troubleshooting</a></li>
@@ -795,6 +829,14 @@ export default function MCPExplainedPage() {
                 >
                   <BookOpen className="w-4 h-4" />
                   Implementation Guide
+                </Link>
+                
+                <Link
+                  href="/tools/api-explained"
+                  className="inline-flex items-center gap-2 px-6 py-3 border border-green-300 text-green-700 rounded-lg hover:bg-green-50 transition-colors font-medium"
+                >
+                  <Code className="w-4 h-4" />
+                  API Reference
                 </Link>
                 
                 <a
