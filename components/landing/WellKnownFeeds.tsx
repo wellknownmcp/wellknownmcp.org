@@ -1,3 +1,4 @@
+'use client'
 // components/landing/WellKnownFeeds.tsx
 // 🎯 Composant principal pour expliquer et présenter les feeds
 
