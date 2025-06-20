@@ -1,8 +1,6 @@
-'use client'
 // components/landing/WellKnownFeeds.tsx
-// 🎯 Composant principal pour expliquer et présenter les feeds
+// 🎯 Composant principal pour expliquer les feeds - Version Static SEO
 
-import { useState } from 'react'
 import { ExportToLLMButton } from '@/components/ExportToLLMButton'
 import { CopyButton } from '@/components/CopyButton'
 
@@ -17,7 +15,6 @@ export function WellKnownFeeds({
   showTreeView = true,
   className = '' 
 }: WellKnownFeedsProps) {
-  const [activeTab, setActiveTab] = useState<'problem' | 'solution'>('problem')
 
   return (
     <section className={`bg-white dark:bg-gray-900 py-16 ${className}`}>
@@ -33,40 +30,29 @@ export function WellKnownFeeds({
           </p>
         </div>
 
-        {/* 🎭 Avant/Après avec emojis */}
+        {/* 🎭 Before vs After - Both Visible for SEO */}
         <div className="mb-16">
-          <div className="flex justify-center mb-8">
-            <div className="inline-flex bg-gray-100 dark:bg-gray-800 rounded-lg p-1">
-              <button
-                onClick={() => setActiveTab('problem')}
-                className={`px-6 py-3 rounded-md font-semibold transition-colors ${
-                  activeTab === 'problem'
-                    ? 'bg-red-500 text-white'
-                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
-                }`}
-              >
-                ❌ Before (Current Web)
-              </button>
-              <button
-                onClick={() => setActiveTab('solution')}
-                className={`px-6 py-3 rounded-md font-semibold transition-colors ${
-                  activeTab === 'solution'
-                    ? 'bg-green-500 text-white'
-                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
-                }`}
-              >
-                ✅ After (MCP/LLMFeed)
-              </button>
-            </div>
-          </div>
-
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8">
-            {activeTab === 'problem' ? (
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">🤖❓</div>
-                  <h3 className="text-xl font-bold text-red-600 mb-3">Agent Confusion</h3>
-                  <ul className="text-gray-600 dark:text-gray-400 space-y-2 text-left">
+          <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">
+            The Transformation: Before vs After
+          </h3>
+          
+          <div className="grid lg:grid-cols-2 gap-8">
+            
+            {/* ❌ Before (Current Web) */}
+            <div className="bg-red-50 border border-red-200 rounded-xl p-8">
+              <div className="text-center mb-6">
+                <div className="text-4xl mb-3">❌</div>
+                <h4 className="text-xl font-bold text-red-700">Before: Current Web</h4>
+                <p className="text-red-600 text-sm">How agents struggle with traditional websites</p>
+              </div>
+              
+              <div className="space-y-6">
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="text-3xl">🤖❓</div>
+                    <h5 className="font-bold text-red-700">Agent Confusion</h5>
+                  </div>
+                  <ul className="text-red-600 space-y-2 text-sm">
                     <li>🔍 Scrapes HTML hoping to find meaning</li>
                     <li>💭 Guesses your site's purpose and capabilities</li>
                     <li>🎲 Hallucinates features that don't exist</li>
@@ -74,10 +60,13 @@ export function WellKnownFeeds({
                     <li>🚫 Gives up or provides wrong information</li>
                   </ul>
                 </div>
-                <div className="text-center">
-                  <div className="text-6xl mb-4">💸📈</div>
-                  <h3 className="text-xl font-bold text-red-600 mb-3">Business Impact</h3>
-                  <ul className="text-gray-600 dark:text-gray-400 space-y-2 text-left">
+                
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="text-3xl">💸📈</div>
+                    <h5 className="font-bold text-red-700">Business Impact</h5>
+                  </div>
+                  <ul className="text-red-600 space-y-2 text-sm">
                     <li>📊 Poor agent recommendations to users</li>
                     <li>💰 High token costs from inefficient parsing</li>
                     <li>😤 Frustrated users getting wrong answers</li>
@@ -86,12 +75,23 @@ export function WellKnownFeeds({
                   </ul>
                 </div>
               </div>
-            ) : (
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">🤖✨</div>
-                  <h3 className="text-xl font-bold text-green-600 mb-3">Agent Clarity</h3>
-                  <ul className="text-gray-600 dark:text-gray-400 space-y-2 text-left">
+            </div>
+
+            {/* ✅ After (MCP/LLMFeed) */}
+            <div className="bg-green-50 border border-green-200 rounded-xl p-8">
+              <div className="text-center mb-6">
+                <div className="text-4xl mb-3">✅</div>
+                <h4 className="text-xl font-bold text-green-700">After: MCP/LLMFeed</h4>
+                <p className="text-green-600 text-sm">How agents thrive with structured feeds</p>
+              </div>
+              
+              <div className="space-y-6">
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="text-3xl">🤖✨</div>
+                    <h5 className="font-bold text-green-700">Agent Clarity</h5>
+                  </div>
+                  <ul className="text-green-600 space-y-2 text-sm">
                     <li>🎯 Instantly understands your site's purpose</li>
                     <li>🔧 Knows exactly what actions are available</li>
                     <li>🛡️ Trusts verified, signed content</li>
@@ -99,10 +99,13 @@ export function WellKnownFeeds({
                     <li>🎉 Provides accurate, helpful responses</li>
                   </ul>
                 </div>
-                <div className="text-center">
-                  <div className="text-6xl mb-4">📈🚀</div>
-                  <h3 className="text-xl font-bold text-green-600 mb-3">Business Results</h3>
-                  <ul className="text-gray-600 dark:text-gray-400 space-y-2 text-left">
+                
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="text-3xl">📈🚀</div>
+                    <h5 className="font-bold text-green-700">Business Results</h5>
+                  </div>
+                  <ul className="text-green-600 space-y-2 text-sm">
                     <li>🎯 Agents recommend you with confidence</li>
                     <li>💰 Massive reduction in processing costs</li>
                     <li>😊 Users get exactly what they need</li>
@@ -111,7 +114,7 @@ export function WellKnownFeeds({
                   </ul>
                 </div>
               </div>
-            )}
+            </div>
           </div>
         </div>
 
@@ -167,9 +170,9 @@ export function WellKnownFeeds({
           </div>
         )}
 
-        {/* 🤖 Agent Access Hints */}
+        {/* 🤖 Agent Access Methods - Both Approaches Visible */}
         <div className="mb-16 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6">
-          <h3 className="text-lg font-bold text-blue-900 dark:text-blue-100 mb-4 flex items-center">
+          <h3 className="text-lg font-bold text-blue-900 dark:text-blue-100 mb-6 flex items-center">
             <span className="text-2xl mr-2">🤖</span>
             For AI Agents: Access Methods
           </h3>
@@ -221,7 +224,7 @@ export function WellKnownFeeds({
           </div>
         </div>
 
-        {/* 🚀 Essential Downloads */}
+        {/* 🚀 Essential Downloads - All 4 Visible */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">
             Start with the Core 4 Files
@@ -258,7 +261,9 @@ export function WellKnownFeeds({
                 />
                 <CopyButton 
                   text="https://wellknownmcp.org/.well-known/mcp.llmfeed.json"
-                  className="bg-blue-100 text-blue-700 px-4 py-2 rounded text-sm hover:bg-blue-200"
+                  variant="outlined"
+                  size="sm"
+                  label="Copy URL"
                 />
               </div>
             </div>
@@ -288,7 +293,9 @@ export function WellKnownFeeds({
                 />
                 <CopyButton 
                   text="https://wellknownmcp.org/.well-known/llm-index.llmfeed.json"
-                  className="bg-green-100 text-green-700 px-4 py-2 rounded text-sm hover:bg-green-200"
+                  variant="outlined"
+                  size="sm"
+                  label="Copy URL"
                 />
               </div>
             </div>
@@ -318,7 +325,9 @@ export function WellKnownFeeds({
                 />
                 <CopyButton 
                   text="https://wellknownmcp.org/.well-known/capabilities.llmfeed.json"
-                  className="bg-purple-100 text-purple-700 px-4 py-2 rounded text-sm hover:bg-purple-200"
+                  variant="outlined"
+                  size="sm"
+                  label="Copy URL"
                 />
               </div>
             </div>
@@ -348,7 +357,9 @@ export function WellKnownFeeds({
                 />
                 <CopyButton 
                   text="https://wellknownmcp.org/.well-known/exports/compiled-site.llmfeed.json"
-                  className="bg-orange-100 text-orange-700 px-4 py-2 rounded text-sm hover:bg-orange-200"
+                  variant="outlined"
+                  size="sm"
+                  label="Copy URL"
                 />
               </div>
             </div>

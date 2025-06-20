@@ -1,7 +1,6 @@
 // components/landing/LLMFeedExplainer.tsx
-// 🎯 Explication du standard LLMFeed universel
+// 🎯 Explication du standard LLMFeed universel - Version Static SEO
 
-import { useState } from 'react'
 import { CopyButton } from '@/components/CopyButton'
 
 interface LLMFeedExplainerProps {
@@ -13,9 +12,8 @@ export function LLMFeedExplainer({
   variant = 'default',
   className = '' 
 }: LLMFeedExplainerProps) {
-  const [activeExample, setActiveExample] = useState<'minimal' | 'rich' | 'custom'>('minimal')
 
-  // Exemples JSON pour les 3 niveaux
+  // Exemples JSON statiques - tous visibles pour SEO
   const jsonExamples = {
     minimal: `{
   // 🚨 REQUIRED: These 2 fields are enough for compatibility
@@ -135,97 +133,133 @@ export function LLMFeedExplainer({
         </div>
       </div>
 
-      {/* 🧩 Le Standard Minimal */}
-      <div className="grid lg:grid-cols-2 gap-8 mb-16">
+      {/* 🧩 Three Examples Side by Side - All Visible for SEO */}
+      <div className="mb-16">
+        <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">
+          🎯 Three Levels of Implementation
+        </h3>
         
-        {/* Code JSON avec tabs */}
-        <div>
-          <div className="mb-4">
-            <div className="flex gap-2 mb-4">
-              <button
-                onClick={() => setActiveExample('minimal')}
-                className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
-                  activeExample === 'minimal'
-                    ? 'bg-green-600 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                ✨ Minimal (2 fields)
-              </button>
-              <button
-                onClick={() => setActiveExample('rich')}
-                className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
-                  activeExample === 'rich'
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                🚀 Rich (recommended)
-              </button>
-              <button
-                onClick={() => setActiveExample('custom')}
-                className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
-                  activeExample === 'custom'
-                    ? 'bg-purple-600 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                🎨 Custom (unlimited)
-              </button>
+        <div className="grid lg:grid-cols-3 gap-6">
+          
+          {/* Minimal Example */}
+          <div className="bg-green-50 border border-green-200 rounded-lg p-6">
+            <div className="flex items-center justify-between mb-4">
+              <h4 className="text-lg font-bold text-green-800">✨ Minimal (2 fields)</h4>
+              <CopyButton 
+                text={jsonExamples.minimal}
+                variant="minimal"
+                size="sm"
+              />
+            </div>
+            <div className="bg-gray-900 rounded-lg p-4">
+              <pre className="text-xs text-gray-100 font-mono leading-relaxed overflow-x-auto">
+                <code>{jsonExamples.minimal}</code>
+              </pre>
+            </div>
+            <div className="mt-4 text-sm text-green-700">
+              <strong>Perfect for:</strong> Simple sites, quick setup, basic agent compatibility
             </div>
           </div>
 
-          <div className="bg-gray-900 rounded-lg p-6 relative">
-            <div className="absolute top-4 right-4">
+          {/* Rich Example */}
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <div className="flex items-center justify-between mb-4">
+              <h4 className="text-lg font-bold text-blue-800">🚀 Rich (recommended)</h4>
               <CopyButton 
-                text={jsonExamples[activeExample]}
-                className="bg-gray-700 text-gray-300 px-3 py-1 rounded text-xs hover:bg-gray-600"
+                text={jsonExamples.rich}
+                variant="minimal"
+                size="sm"
               />
             </div>
-            <pre className="text-sm text-gray-100 font-mono leading-relaxed overflow-x-auto">
-              <code>{jsonExamples[activeExample]}</code>
-            </pre>
+            <div className="bg-gray-900 rounded-lg p-4">
+              <pre className="text-xs text-gray-100 font-mono leading-relaxed overflow-x-auto">
+                <code>{jsonExamples.rich}</code>
+              </pre>
+            </div>
+            <div className="mt-4 text-sm text-blue-700">
+              <strong>Perfect for:</strong> Production sites, e-commerce, full agent integration
+            </div>
+          </div>
+
+          {/* Custom Example */}
+          <div className="bg-purple-50 border border-purple-200 rounded-lg p-6">
+            <div className="flex items-center justify-between mb-4">
+              <h4 className="text-lg font-bold text-purple-800">🎨 Custom (unlimited)</h4>
+              <CopyButton 
+                text={jsonExamples.custom}
+                variant="minimal"
+                size="sm"
+              />
+            </div>
+            <div className="bg-gray-900 rounded-lg p-4">
+              <pre className="text-xs text-gray-100 font-mono leading-relaxed overflow-x-auto">
+                <code>{jsonExamples.custom}</code>
+              </pre>
+            </div>
+            <div className="mt-4 text-sm text-purple-700">
+              <strong>Perfect for:</strong> Custom integrations, unique business needs, innovation
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 🎯 The Magic Formula - Explanation */}
+      <div className="mb-16 grid lg:grid-cols-2 gap-8">
+        <div>
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+            🎯 The Magic Formula
+          </h3>
+          <div className="space-y-4">
+            <div className="border border-red-200 bg-red-50 rounded-lg p-4">
+              <h4 className="font-semibold text-red-800 mb-2">🚨 Required (2 fields)</h4>
+              <div className="space-y-2 text-sm">
+                <div><code className="bg-red-100 px-2 py-1 rounded">feed_type</code> - What kind of content</div>
+                <div><code className="bg-red-100 px-2 py-1 rounded">metadata</code> - Basic info (title, origin)</div>
+              </div>
+            </div>
+
+            <div className="border border-green-200 bg-green-50 rounded-lg p-4">
+              <h4 className="font-semibold text-green-800 mb-2">✅ Recommended</h4>
+              <div className="text-sm text-green-700">
+                Add <code>data</code>, <code>trust</code>, <code>prompts</code> for richer agent interactions
+              </div>
+            </div>
+
+            <div className="border border-purple-200 bg-purple-50 rounded-lg p-4">
+              <h4 className="font-semibold text-purple-800 mb-2">🎨 Free Zone</h4>
+              <div className="text-sm text-purple-700">
+                Invent your own fields. Your creativity, your rules. Still compatible!
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Explication */}
-        <div className="space-y-6">
-          <div>
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-              🎯 The Magic Formula
-            </h3>
-            <div className="space-y-4">
-              <div className="border border-red-200 bg-red-50 rounded-lg p-4">
-                <h4 className="font-semibold text-red-800 mb-2">🚨 Required (2 fields)</h4>
-                <div className="space-y-2 text-sm">
-                  <div><code className="bg-red-100 px-2 py-1 rounded">feed_type</code> - What kind of content</div>
-                  <div><code className="bg-red-100 px-2 py-1 rounded">metadata</code> - Basic info (title, origin)</div>
-                </div>
-              </div>
-
-              <div className="border border-green-200 bg-green-50 rounded-lg p-4">
-                <h4 className="font-semibold text-green-800 mb-2">✅ Recommended</h4>
-                <div className="text-sm text-green-700">
-                  Add <code>data</code>, <code>trust</code>, <code>prompts</code> for richer agent interactions
-                </div>
-              </div>
-
-              <div className="border border-purple-200 bg-purple-50 rounded-lg p-4">
-                <h4 className="font-semibold text-purple-800 mb-2">🎨 Free Zone</h4>
-                <div className="text-sm text-purple-700">
-                  Invent your own fields. Your creativity, your rules. Still compatible!
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-            <h4 className="font-semibold text-blue-800 mb-2">🌐 Universal Compatibility</h4>
-            <ul className="text-sm text-blue-700 space-y-1">
-              <li>✓ Works with any AI agent (Claude, ChatGPT, etc.)</li>
-              <li>✓ Place anywhere on your infrastructure</li>
-              <li>✓ Extend with custom fields as needed</li>
-              <li>✓ Future-proof and backwards compatible</li>
+        <div>
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+            🌐 Universal Compatibility
+          </h3>
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <ul className="text-sm text-blue-700 space-y-3">
+              <li className="flex items-start gap-2">
+                <span className="text-green-500 mt-1">✓</span>
+                <span>Works with any AI agent (Claude, ChatGPT, Gemini, etc.)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-500 mt-1">✓</span>
+                <span>Place anywhere on your infrastructure</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-500 mt-1">✓</span>
+                <span>Extend with custom fields as needed</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-500 mt-1">✓</span>
+                <span>Future-proof and backwards compatible</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-500 mt-1">✓</span>
+                <span>Native JSON parsing in all programming languages</span>
+              </li>
             </ul>
           </div>
         </div>
