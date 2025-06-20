@@ -10,7 +10,7 @@
     },
     {
       "tag": "agentic-web",
-      "count": 30
+      "count": 31
     },
     {
       "tag": "trust",
@@ -246,6 +246,10 @@
     },
     {
       "tag": "guidance",
+      "count": 2
+    },
+    {
+      "tag": "agent-infrastructure",
       "count": 2
     },
     {
@@ -533,6 +537,62 @@
       "count": 1
     },
     {
+      "tag": "ai-agent-traffic",
+      "count": 1
+    },
+    {
+      "tag": "ai-crawler-analytics",
+      "count": 1
+    },
+    {
+      "tag": "ai-crawler-detection",
+      "count": 1
+    },
+    {
+      "tag": "ai-traffic-tracking",
+      "count": 1
+    },
+    {
+      "tag": "alibaba-tongyi-qianwen",
+      "count": 1
+    },
+    {
+      "tag": "analytics-dark-age",
+      "count": 1
+    },
+    {
+      "tag": "baidu-ernie-bot",
+      "count": 1
+    },
+    {
+      "tag": "chinese-llm-isolation",
+      "count": 1
+    },
+    {
+      "tag": "dark-traffic",
+      "count": 1
+    },
+    {
+      "tag": "generative-engine-optimization",
+      "count": 1
+    },
+    {
+      "tag": "geopolitical-web-fragmentation",
+      "count": 1
+    },
+    {
+      "tag": "ghost-traffic",
+      "count": 1
+    },
+    {
+      "tag": "invisible-analytics",
+      "count": 1
+    },
+    {
+      "tag": "web-analytics",
+      "count": 1
+    },
+    {
       "tag": "efficiency-optimization",
       "count": 1
     },
@@ -554,10 +614,6 @@
     },
     {
       "tag": "llm-efficiency",
-      "count": 1
-    },
-    {
-      "tag": "agent-infrastructure",
       "count": 1
     },
     {
@@ -939,7 +995,7 @@
       },
       {
         "tag": "agentic-web",
-        "count": 23
+        "count": 24
       },
       {
         "tag": "trust",
@@ -1047,6 +1103,10 @@
       },
       {
         "tag": "privacy",
+        "count": 2
+      },
+      {
+        "tag": "agent-infrastructure",
         "count": 2
       },
       {
@@ -1298,6 +1358,62 @@
         "count": 1
       },
       {
+        "tag": "ai-agent-traffic",
+        "count": 1
+      },
+      {
+        "tag": "ai-crawler-analytics",
+        "count": 1
+      },
+      {
+        "tag": "ai-crawler-detection",
+        "count": 1
+      },
+      {
+        "tag": "ai-traffic-tracking",
+        "count": 1
+      },
+      {
+        "tag": "alibaba-tongyi-qianwen",
+        "count": 1
+      },
+      {
+        "tag": "analytics-dark-age",
+        "count": 1
+      },
+      {
+        "tag": "baidu-ernie-bot",
+        "count": 1
+      },
+      {
+        "tag": "chinese-llm-isolation",
+        "count": 1
+      },
+      {
+        "tag": "dark-traffic",
+        "count": 1
+      },
+      {
+        "tag": "generative-engine-optimization",
+        "count": 1
+      },
+      {
+        "tag": "geopolitical-web-fragmentation",
+        "count": 1
+      },
+      {
+        "tag": "ghost-traffic",
+        "count": 1
+      },
+      {
+        "tag": "invisible-analytics",
+        "count": 1
+      },
+      {
+        "tag": "web-analytics",
+        "count": 1
+      },
+      {
         "tag": "agent-readiness",
         "count": 1
       },
@@ -1367,10 +1483,6 @@
       },
       {
         "tag": "ukraine",
-        "count": 1
-      },
-      {
-        "tag": "agent-infrastructure",
         "count": 1
       },
       {

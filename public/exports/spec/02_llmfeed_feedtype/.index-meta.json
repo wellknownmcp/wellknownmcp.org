@@ -1,12 +1,7 @@
 {
-  "generated_at": "2025-06-19T18:59:24.133Z",
-  "content_hash": "407d35664d50f80441e49db92bb1aafc",
+  "generated_at": "2025-06-20T07:24:54.121Z",
+  "content_hash": "86c12c7d4e50788cbe80affb74df2aa5",
   "file_stats": [
-    {
-      "path": ".index-meta.json",
-      "size": 1475,
-      "mtime": 1750358644175
-    },
     {
       "path": "llmfeed_feedtype_agent-economy.md",
       "size": 15342,
@@ -29,8 +24,8 @@
     },
     {
       "path": "llmfeed_feedtype_llm-index.md",
-      "size": 21473,
-      "mtime": 1749968551078
+      "size": 31633,
+      "mtime": 1750404242311
     },
     {
       "path": "llmfeed_feedtype_manifesto.md",
@@ -44,8 +39,8 @@
     },
     {
       "path": "llmfeed_feedtype_mobile-app.md",
-      "size": 32376,
-      "mtime": 1749650436443
+      "size": 32152,
+      "mtime": 1750404242316
     },
     {
       "path": "llmfeed_feedtype_pricing.md",
@@ -54,8 +49,8 @@
     },
     {
       "path": "llmfeed_feedtype_prompt.md",
-      "size": 10471,
-      "mtime": 1749650510398
+      "size": 10266,
+      "mtime": 1750404242320
     },
     {
       "path": "llmfeed_feedtype_session.md",
@@ -63,6 +58,6 @@
       "mtime": 1749653186980
     }
   ],
-  "total_files": 12,
+  "total_files": 11,
   "generator_version": "2.0.0"
 }

@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 
-// 🛡️ Types identiques à votre code original
+// 🛡️ Types enrichis avec métadonnées frontmatter
 interface SimpleArticle {
   slug: string
   title: string
@@ -18,6 +18,14 @@ interface SimpleArticle {
   format: string
   _validationWarnings?: string[]
   _correctedFields?: string[]
+  // 🚀 SEO AMÉLIORATION: Nouvelles métadonnées frontmatter
+  keywords?: string[]
+  capabilities?: string[]
+  trustLevel?: string
+  feedTypes?: string[]
+  author?: string
+  priority?: string
+  contentType?: string
 }
 
 interface IndexData {
@@ -98,13 +106,13 @@ const safeFallbacks = {
   },
   estimatedReadTime: (time?: string) => time?.trim() || '5 min',
   format: (format?: string) => {
-    const validFormats = ['news', 'guide', 'onboarding', 'specification']
+    const validFormats = ['news', 'guide', 'onboarding', 'specification', 'empirical-research']
     return validFormats.includes(format || '') ? format! : 'news'
   },
   slug: (slug?: string) => slug?.trim() || 'unknown-article',
 }
 
-// 🛡️ Fonction de nettoyage (identique à votre code)
+// 🛡️ Fonction de nettoyage enrichie
 function sanitizeArticle(article: any): SimpleArticle {
   const warnings: string[] = []
   const correctedFields: string[] = []
@@ -152,6 +160,14 @@ function sanitizeArticle(article: any): SimpleArticle {
     format: safeFormat,
     _validationWarnings: warnings.length > 0 ? warnings : undefined,
     _correctedFields: correctedFields.length > 0 ? correctedFields : undefined,
+    // 🚀 SEO AMÉLIORATION: Préservation métadonnées frontmatter
+    keywords: safeFallbacks.tags(article.keywords),
+    capabilities: safeFallbacks.tags(article.capabilities),
+    trustLevel: article.trustLevel?.trim(),
+    feedTypes: safeFallbacks.tags(article.feedTypes),
+    author: article.author?.trim(),
+    priority: article.priority?.trim(),
+    contentType: article.contentType?.trim(),
   }
 }
 
@@ -204,7 +220,7 @@ export function ClientNewsInteractions({
   const activeTag = searchParams.get('tag')
   const currentLang = safeFallbacks.slug(lang) || 'en'
 
-  // 🚀 Chargement client-side - identique à votre logique originale
+  // 🚀 Chargement client-side - logique enrichie
   useEffect(() => {
     // Si on a déjà des données serveur valides et pas d'erreur, pas besoin de recharger
     if (initialArticles.length > 0 && !hasServerError) {
@@ -231,7 +247,7 @@ export function ClientNewsInteractions({
           setBuildMeta(data._metadata)
         }
 
-        // 🛡️ Sanitize tous les articles avec fallbacks (votre logique)
+        // 🛡️ Sanitize tous les articles avec fallbacks enrichis
         const langArticles = getArticlesByLang(data, currentLang).map(sanitizeArticle)
         setArticles(langArticles)
 
@@ -372,7 +388,7 @@ export function ClientNewsInteractions({
         </div>
       )}
 
-      {/* Liste des articles avec fallbacks robustes (identique à votre code) */}
+      {/* Liste des articles avec métadonnées frontmatter enrichies */}
       <div className="space-y-8">
         {filtered.map((article) => (
           <article
@@ -411,6 +427,13 @@ export function ClientNewsInteractions({
                   <span>
                     {LANG_EMOJIS[currentLang] || currentLang.toUpperCase()}
                   </span>
+                  {/* 🚀 SEO AMÉLIORATION: Author si disponible */}
+                  {article.author && (
+                    <>
+                      <span>•</span>
+                      <span>{article.author}</span>
+                    </>
+                  )}
                 </div>
 
                 {/* Badge de format avec fallback */}
@@ -420,6 +443,23 @@ export function ClientNewsInteractions({
                   </span>
                 )}
               </div>
+
+              {/* 🚀 SEO AMÉLIORATION: Trust level et capabilities visibles */}
+              {(article.trustLevel || article.capabilities) && (
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {article.trustLevel && article.trustLevel !== 'basic' && (
+                    <span className="px-2 py-1 bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 rounded text-xs">
+                      🛡️ {article.trustLevel}
+                    </span>
+                  )}
+                  {article.capabilities && article.capabilities.length > 0 && (
+                    <span className="px-2 py-1 bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded text-xs">
+                      🤖 {article.capabilities.slice(0, 2).join(', ')}
+                      {article.capabilities.length > 2 && ' +' + (article.capabilities.length - 2)}
+                    </span>
+                  )}
+                </div>
+              )}
 
               {/* Titre et sous-titre sécurisés */}
               <h2 className="text-2xl font-bold mb-3 text-gray-900 dark:text-gray-100">
@@ -447,6 +487,13 @@ export function ClientNewsInteractions({
                 <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed italic">
                   {article.excerpt}...
                 </p>
+              )}
+
+              {/* 🚀 SEO AMÉLIORATION: Keywords du frontmatter si disponibles */}
+              {article.keywords && article.keywords.length > 0 && (
+                <div className="mb-3 text-xs text-gray-500 dark:text-gray-400">
+                  <strong>Keywords:</strong> {article.keywords.join(', ')}
+                </div>
               )}
 
               {/* Tags avec filtrage sécurisé */}
@@ -486,26 +533,41 @@ export function ClientNewsInteractions({
                 </div>
               )}
 
-              {/* Action */}
-              <Link
-                href={`/${currentLang}/news/${article.slug}`}
-                className="inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors"
-              >
-                Read full article
-                <svg
-                  className="w-4 h-4 ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+              {/* Actions avec téléchargement markdown */}
+              <div className="flex justify-between items-center">
+                <Link
+                  href={`/${currentLang}/news/${article.slug}`}
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </Link>
+                  Read full article
+                  <svg
+                    className="w-4 h-4 ml-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </Link>
+
+                {/* 🚀 SEO AMÉLIORATION: Lien téléchargement markdown */}
+                <a 
+                  href={`/news/${currentLang}/${article.slug}.md`}
+                  download={`${article.slug}.md`}
+                  className="inline-flex items-center gap-1 text-xs text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300 transition-colors"
+                  title="Download article as Markdown"
+                >
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  MD
+                </a>
+              </div>
             </div>
           </article>
         ))}
@@ -537,7 +599,7 @@ export function ClientNewsInteractions({
         </div>
       )}
 
-      {/* Footer informatif */}
+      {/* Footer informatif enrichi */}
       <div className="text-center mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
         <p className="text-gray-500 dark:text-gray-400 text-sm">
           Showing {filtered.length} of {articles.length} articles

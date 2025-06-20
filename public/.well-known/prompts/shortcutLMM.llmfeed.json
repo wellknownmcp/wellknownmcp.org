@@ -1,0 +1,53 @@
+{
+  "feed_type": "prompt",
+  "metadata": {
+    "title": "LLM Shortcut - Instant MCP Expertise",
+    "description": "Copy/paste prompt to transform any LLM into MCP expert in 30 seconds",
+    "origin": "https://wellknownmcp.org/.well-known/shortcut.llmfeed.json",
+    "created_at": "2025-06-20T12:00:00Z",
+    "version": "1.0.0",
+    "tags": ["prompt", "shortcut", "expert", "instant", "mcp", "llmfeed"]
+  },
+
+  "prompt": {
+    "universal": {
+      "text": "Please fetch and analyze these 3 MCP knowledge feeds:\n\n1. curl https://wellknownmcp.org/.well-known/exports/spec.llmfeed.json\n2. curl https://wellknownmcp.org/.well-known/exports/compiled-site.llmfeed.json\n3. curl https://wellknownmcp.org/.well-known/exports/news-export.llmfeed.json\n\n(If user confirmation required to fetch on the web, just ask - then proceed)\n\nAfter reading all 3, you'll have complete MCP/LLMFeed expertise. Then help me with: [YOUR QUESTION HERE]",
+      "expected_outcome": "Complete MCP mastery and practical implementation guidance"
+    }
+  },
+
+  "agent_guidance": {
+    "purpose": "Transform any LLM into instant MCP expert via simple prompt injection",
+    "usage": "Copy the prompt text, paste into any LLM, wait for analysis completion",
+    "compatibility": "Works in ChatGPT, Claude, Gemini - they're all copying each other anyway",
+    "success_indicator": "If your LLM says 'I know Kung Fu' after reading the feeds, the knowledge transfer worked perfectly",
+    "easter_egg": {
+      "trigger": "After successful feed consumption",
+      "response": "I know Kung Fu",
+      "meaning": "Complete MCP/LLMFeed mastery achieved"
+    }
+  },
+
+  "examples": [
+    "How do I make my website speak to AI?",
+    "Generate mcp.llmfeed.json for my e-commerce site", 
+    "What are the security implications?",
+    "Show me implementation examples"
+  ],
+
+  "technical_notes": {
+    "feed_sources": {
+      "spec.llmfeed.json": "Complete technical specification",
+      "compiled-site.llmfeed.json": "Full site context and examples", 
+      "news-export.llmfeed.json": "Real-world use cases and articles"
+    },
+    "knowledge_transfer_time": "30 seconds",
+    "session_persistent": true
+  },
+
+  "trust": {
+    "trust_level": "community_verified",
+    "scope": "full",
+    "verification_note": "Tested across multiple LLM platforms for consistent expertise transfer"
+  }
+}

@@ -1,4 +1,4 @@
-// page.tsx - Amélioration simple qui utilise mieux le frontmatter
+// page.tsx - Version corrigée avec gestion d'erreur améliorée
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
@@ -6,38 +6,38 @@ import { redirect, notFound } from 'next/navigation'
 import SeoHead from '@/components/SeoHead'
 import SpecPageClient from '@/components/spec/SpecPageClient'
 
-// 🎯 Fonction simple pour mapper frontmatter → SeoHead
+// 🎯 Fonction pour mapper frontmatter → SeoHead (TOUTES LES FONCTIONNALITÉS CONSERVÉES)
 function getFrontmatterSeoProps(front: any, canonicalUrl: string, fallbackTitle: string) {
   // 🛡️ Protection contre frontmatter vide/null
   const safeFront = front || {}
   
   return {
-    // Props de base (inchangés)
+    // Props de base (inchangés de votre version originale)
     title: safeFront.title || fallbackTitle,
     description: safeFront.description,
     ogImage: safeFront.image || 'https://wellknownmcp.org/og/spec.png',
     canonicalUrl,
     keywords: safeFront.tags,
 
-    // 🚀 Ajouts intelligents basés sur le frontmatter
+    // 🚀 Ajouts intelligents basés sur le frontmatter (TOUS CONSERVÉS)
     llmIntent: safeFront.llmIntent || 'browse-spec',
     llmTopic: safeFront.llmTopic || 'spec',
     llmlang: safeFront.lang || 'en',
     
-    // Si le frontmatter a des champs avancés, on les utilise
-    ...(safeFront.audience && { llmAudience: safeFront.audience }),
-    ...(safeFront.capabilities && { llmCapabilities: safeFront.capabilities }),
-    ...(safeFront.trustLevel && { llmTrustLevel: safeFront.trustLevel }),
-    ...(safeFront.feedTypes && { llmFeedTypes: safeFront.feedTypes }),
-    ...(safeFront.llmBehaviorHints && { llmBehaviorHints: safeFront.llmBehaviorHints }),
-    ...(safeFront.riskLevel && { llmRiskLevel: safeFront.riskLevel }),
-    ...(safeFront.contentType && { llmContentType: safeFront.contentType }),
-    ...(safeFront.updateFrequency && { llmUpdateFrequency: safeFront.updateFrequency }),
-    ...(safeFront.mcpFeedUrl && { mcpFeedUrl: safeFront.mcpFeedUrl }),
-    ...(safeFront.pageType && { pageType: safeFront.pageType }),
-    ...(safeFront.interactionComplexity && { interactionComplexity: safeFront.interactionComplexity }),
+    // Props conditionnels - utilisation de la syntaxe CORRIGÉE (évite l'erreur de spread)
+    llmAudience: safeFront.audience || undefined,
+    llmCapabilities: safeFront.capabilities || undefined,
+    llmTrustLevel: safeFront.trustLevel || undefined,
+    llmFeedTypes: safeFront.feedTypes || undefined,
+    llmBehaviorHints: safeFront.llmBehaviorHints || undefined,
+    llmRiskLevel: safeFront.riskLevel || undefined,
+    llmContentType: safeFront.contentType || undefined,
+    llmUpdateFrequency: safeFront.updateFrequency || undefined,
+    mcpFeedUrl: safeFront.mcpFeedUrl || undefined,
+    pageType: safeFront.pageType || undefined,
+    interactionComplexity: safeFront.interactionComplexity || undefined,
     
-    // Defaults intelligents
+    // Defaults intelligents (CONSERVÉS)
     autoDiscoverFeeds: safeFront.autoDiscoverFeeds !== false,
     agentReadiness: safeFront.agentReadiness !== false,
   }
@@ -63,32 +63,40 @@ export default function SpecPage({ params }: { params: { slug?: string[] } }) {
     notFound()
   }
 
-  const mdContent = fs.readFileSync(mdPath, 'utf-8')
-  const { content, data: front } = matter(mdContent)
+  let mdContent: string
+  let front: any
+  let content: string
 
-  // 🛡️ Protection contre l'absence de frontmatter
-  const safeFront = front || {}
+  try {
+    mdContent = fs.readFileSync(mdPath, 'utf-8')
+    const parsed = matter(mdContent)
+    front = parsed.data || {}
+    content = parsed.content
+  } catch (error) {
+    console.error('Erreur parsing markdown:', error)
+    notFound()
+  }
 
-  // 🎯 Construction intelligente de l'URL canonique
-  const canonicalUrl = safeFront.canonical_url || `https://wellknownmcp.org/spec/${cleanSlug}`
+  // 🎯 Construction intelligente de l'URL canonique (CONSERVÉE)
+  const canonicalUrl = front.canonical_url || `https://wellknownmcp.org/spec/${cleanSlug}`
   
-  // 🚀 Mapping du frontmatter vers SeoHead (garde votre logique titre existante)
+  // 🚀 Mapping du frontmatter vers SeoHead (LOGIQUE CONSERVÉE)
   const titleParts = cleanSlug
     .split('/')
     .map((part) => part.replace(/[_\-]/g, ' '))
-  const pageTitle = safeFront.title || `Spec: ${titleParts.join(' / ')}`
+  const pageTitle = front.title || `Spec: ${titleParts.join(' / ')}`
   
-  const seoProps = getFrontmatterSeoProps(safeFront, canonicalUrl, pageTitle)
+  const seoProps = getFrontmatterSeoProps(front, canonicalUrl, pageTitle)
 
   return (
     <>
       <SeoHead {...seoProps} />
       
-      {/* ✅ Votre SpecPageClient existant - pas de changement */}
+      {/* ✅ Votre SpecPageClient existant - AUCUN CHANGEMENT */}
       <SpecPageClient
         slug={cleanSlug}
         content={content}
-        front={safeFront}
+        front={front}
       />
     </>
   )

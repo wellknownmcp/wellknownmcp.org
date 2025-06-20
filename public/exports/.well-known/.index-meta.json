@@ -1,83 +1,128 @@
 {
-  "generated_at": "2025-06-19T18:59:24.069Z",
-  "content_hash": "95abebf07e67e73cabee24d5545f3550",
+  "generated_at": "2025-06-19T18:59:23.767Z",
+  "content_hash": "4eed3ece2a04bc86e331a8b2a628de72",
   "file_stats": [
     {
       "path": ".index-meta.json",
-      "size": 1811,
-      "mtime": 1750358643537
+      "size": 2809,
+      "mtime": 1750358641890
+    },
+    {
+      "path": "agent-behavior.llmfeed.json",
+      "size": 553,
+      "mtime": 1749568745567
     },
     {
       "path": "capabilities.llmfeed.json",
-      "size": 5053,
-      "mtime": 1749568759422
-    },
-    {
-      "path": "exports/.index-meta.json",
-      "size": 480,
-      "mtime": 1750359564057
+      "size": 17690,
+      "mtime": 1749977729887
     },
     {
       "path": "exports/compiled-site.llmfeed.json",
-      "size": 98171,
-      "mtime": 1749568759889
+      "size": 572584,
+      "mtime": 1750358657346
     },
     {
       "path": "exports/manifesto.llmfeed.json",
       "size": 2105,
-      "mtime": 1749568759951
+      "mtime": 1749568745588
+    },
+    {
+      "path": "exports/news-export.llmfeed.json",
+      "size": 594537,
+      "mtime": 1750359236380
+    },
+    {
+      "path": "exports/spec.llmfeed.json",
+      "size": 554027,
+      "mtime": 1750002968703
     },
     {
       "path": "llm-index.llmfeed.json",
-      "size": 88842,
-      "mtime": 1749568761226
+      "size": 40482,
+      "mtime": 1750358662339
+    },
+    {
+      "path": "manifesto.llmfeed.json",
+      "size": 2105,
+      "mtime": 1749568745588
     },
     {
       "path": "mcp-lite.llmfeed.json",
       "size": 5185,
-      "mtime": 1749568761387
+      "mtime": 1749568745593
+    },
+    {
+      "path": "mcp.json",
+      "size": 396,
+      "mtime": 1749987661338
     },
     {
       "path": "mcp.llmfeed.json",
-      "size": 11962,
-      "mtime": 1749568761519
+      "size": 21227,
+      "mtime": 1750144416742
     },
     {
-      "path": "prompts/.index-meta.json",
-      "size": 843,
-      "mtime": 1750359564057
+      "path": "prompts/generate-llm-index.llmfeed.json",
+      "size": 5239,
+      "mtime": 1749653561134
+    },
+    {
+      "path": "prompts/generate-llm-index.prompt.llmfeed.json",
+      "size": 5239,
+      "mtime": 1749653049608
     },
     {
       "path": "prompts/generate-session-feed.llmfeed.json",
       "size": 3830,
-      "mtime": 1749568761722
+      "mtime": 1749568745598
     },
     {
       "path": "prompts/mcp-agent-behavior-override.llmfeed.json",
       "size": 16297,
-      "mtime": 1749568761792
+      "mtime": 1749568745610
     },
     {
       "path": "prompts/mcp-mode-activation.llmfeed.json",
       "size": 2202,
-      "mtime": 1749568762018
+      "mtime": 1749568745613
+    },
+    {
+      "path": "prompts/mcp_signature_readiness_test.llmfeed.json",
+      "size": 2270,
+      "mtime": 1749568745617
     },
     {
       "path": "prompts/prompt-index.llmfeed.json",
       "size": 2858,
-      "mtime": 1749568762110
+      "mtime": 1749568745617
     },
     {
       "path": "prompts/quickstart-agent-enablement.llmfeed.json",
       "size": 2212,
-      "mtime": 1749568762173
+      "mtime": 1749568745632
     },
     {
       "path": "public.pem",
       "size": 116,
-      "mtime": 1749568762268
+      "mtime": 1749568745656
+    },
+    {
+      "path": "schema.annotated.llmfeed.json",
+      "size": 5022,
+      "mtime": 1749568745657
+    },
+    {
+      "path": "schema.lite.llmfeed.json",
+      "size": 4912,
+      "mtime": 1749568745658
+    },
+    {
+      "path": "schema.llmfeed.json",
+      "size": 4538,
+      "mtime": 1749568745728
     }
   ],
-  "total_files": 15,
+  "total_files": 24,
   "generator_version": "2.0.0"
 }

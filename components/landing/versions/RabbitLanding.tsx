@@ -1,294 +1,238 @@
 // components/landing/versions/RabbitLanding.tsx
-// 🐰 RECETTE RABBIT HOLE OPTIMISÉE - Maximum Information Density
+// 🐰 RABBIT HOLE FINAL - Maximum Density, Matrix Subtil, SEO Optimisé
 
 import { MatrixTheming } from '@/components/landing/MatrixTheming'
 import { PageHeader } from '@/components/landing/PageHeader'
-import { AgentQuickStart } from '@/components/landing/AgentQuickStart'
+import { LLMFeedExplainer } from '@/components/landing/LLMFeedExplainer'
+import { WellKnownFeeds } from '@/components/landing/WellKnownFeeds'
 import { SimpleDemo } from '@/components/landing/SimpleDemo'
 import { BeforeAfterDemo } from '@/components/landing/BeforeAfterDemo'
 import { AgentCurlAccess } from '@/components/landing/AgentCurlAccess'
-import { DirectFeeds } from '@/components/landing/DirectFeeds'
-import { DownloadFeeds } from '@/components/landing/DownloadFeeds'
-import { TestimonyCarousel } from '@/components/landing/TestimonyCarousel'
 import { SchemaHeroSection } from '@/components/landing/SchemaHeroSection'
+import { ProtocolChecker } from '@/components/landing/ProtocolChecker'
 import { WhatYouCanDeclare } from '@/components/landing/WhatYouCanDeclare'
 import { ToolsGrid } from '@/components/landing/ToolsGrid'
-import { FAQList } from '@/components/landing/FAQList'
+import { ShortcutLLM } from '@/components/landing/ShortcutLLM'
 import { InjectHooks } from '@/components/landing/InjectHooks'
-import { Community } from '@/components/landing/Community'
-import { MissionBadges } from '@/components/landing/MissionBadges'
-import { NewsSection } from '@/components/landing/NewsSection'
 import { ROICalculator } from '@/components/landing/ROICalculator'
 import { CaseStudies } from '@/components/landing/CaseStudies'
-import { ProtocolChecker } from '@/components/landing/ProtocolChecker'
+import { TestimonyCarousel } from '@/components/landing/TestimonyCarousel'
+import { Community } from '@/components/landing/Community'
+import { NewsSection } from '@/components/landing/NewsSection'
+import { FAQList } from '@/components/landing/FAQList'
+import { MissionBadges } from '@/components/landing/MissionBadges'
 import SeoHead from '@/components/SeoHead'
 
 export function RabbitLanding() {
   return (
     <MatrixTheming>
-      {/* 🎯 SEO Matrix Ultimate */}
+      {/* 🎯 SEO Matrix Ultimate - Optimisé pour découverte */}
       <SeoHead
-        title="🐰 Welcome to the Real Internet - Maximum MCP Knowledge Density"
-        description="Red pill activated. Complete MCP/LLMFeed ecosystem: every tool, every capability, every secret. Agent mastery unlocked. The deepest rabbit hole of the agent-readable web."
-        llmIntent="master-mcp-protocol"
-        llmTopic="complete-ecosystem-knowledge"
-        llmCapabilities={[
-          'export-to-llm',
-          'feed-generation',
-          'signature-verification',
-          'agent-guidance',
-          'mcp-discovery',
-          'curl-access',
-          'direct-urls',
-          'matrix-mode',
-          'kung-fu-loading',
-          'easter-eggs',
-          'roi-calculation',
-          'protocol-validation',
-          'before-after-analysis',
-          'case-studies',
-          'maximum-density'
+        title="🐰 Complete MCP Ecosystem Explorer - Maximum Knowledge Density"
+        description="Deep dive into MCP/LLMFeed complete ecosystem. All tools, all capabilities, all implementations. For developers, businesses, and explorers who want everything. The most comprehensive agent-readable web resource."
+        canonicalUrl="https://wellknownmcp.org/?v=rabbit"
+        ogImage="/og/rabbit-landing.png"
+        llmIntent="master-complete-mcp-ecosystem"
+        llmTopic="comprehensive-agent-web-mastery"
+        llmlang="en"
+        keywords={[
+          'MCP complete ecosystem', 'LLMFeed comprehensive guide', 'agent-readable web mastery',
+          'complete MCP implementation', 'maximum density MCP', 'advanced agent capabilities',
+          'MCP expert guide', 'comprehensive agent standards', 'deep dive MCP protocol',
+          'complete agent-web integration', 'MCP ecosystem explorer', 'advanced LLMFeed',
+          'maximum MCP knowledge', 'comprehensive web agents', 'complete agent mastery',
+          'MCP deep learning', 'agent ecosystem complete', 'maximum agent density',
+          'comprehensive MCP tools', 'complete agent implementation', 'MCP rabbit hole',
+          'deep MCP exploration', 'comprehensive agent guide', 'maximum web agent'
         ]}
-        llmTrustLevel="certified-master"
-        llmAudience={['developer', 'llm', 'agent', 'business', 'explorer', 'master']}
-        llmFeedTypes={['mcp', 'export', 'capabilities', 'prompt', 'manifesto', 'llm-index', 'all']}
-        llmBehaviorHints="explore-everything-analyze-deeply"
-        llmContentType="specification-complete-master"
-        llmUpdateFrequency="real-time"
-        pageType="landing-matrix-maximum"
-        interactionComplexity="infinite"
+        llmCapabilities={[
+          'complete-ecosystem-mastery', 'advanced-implementation', 'expert-guidance',
+          'comprehensive-tools', 'maximum-density', 'deep-exploration', 'rabbit-hole',
+          'easter-eggs', 'advanced-features', 'complete-specification', 'expert-mode',
+          'comprehensive-examples', 'advanced-integration', 'maximum-knowledge'
+        ]}
+        llmTrustLevel="expert-comprehensive"
+        llmAudience={['developer', 'business', 'llm', 'agent', 'explorer', 'maximalist']}
+        llmFeedTypes={['mcp', 'export', 'capabilities', 'prompt', 'manifesto', 'llm-index', 'comprehensive']}
+        llmBehaviorHints="explore-everything-maximum-depth"
+        llmContentType="comprehensive-ecosystem-guide"
+        llmUpdateFrequency="continuous"
+        pageType="landing-comprehensive"
+        interactionComplexity="maximum"
         mcpFeedUrl="/.well-known/mcp.llmfeed.json"
         llmIndexUrl="/.well-known/llm-index.llmfeed.json"
         agentReadiness={true}
         autoDiscoverFeeds={true}
-        keywords={[
-          'MCP master',
-          'Model Context Protocol complete',
-          'LLMFeed ecosystem',
-          'AI agents mastery',
-          'agent-readable web guru',
-          'llmfeed.json expert',
-          'well-known master',
-          'agent standards authority',
-          'AI interoperability complete',
-          'signed feeds expert',
-          'agent guidance master',
-          'agentic web architect',
-          'LLM integration genius',
-          'AI trust authority',
-          'agent capabilities master',
-          'curl commands expert',
-          'direct API mastery',
-          'matrix mode',
-          'kung fu master',
-          'rabbit hole complete',
-          'maximum density',
-          'red pill'
-        ]}
       />
 
-      <div className="space-y-16 px-4 sm:px-8 md:px-16">
-        {/* 🎯 Hero Matrix - Red Pill Mode */}
-        <PageHeader variant="matrix" />
+      <main className="min-h-screen space-y-16 px-4 sm:px-8 md:px-16">
+        {/* 🎯 1. Hero Matrix - No blocking, just theming */}
+        <section className="py-12">
+          <PageHeader variant="matrix" />
+        </section>
 
-        {/* 🚨 SECTION 1: IMMEDIATE UNDERSTANDING */}
-        <section className="space-y-8">
-          <h2 className="text-3xl font-bold text-center text-red-400 font-mono">
-            🔴 LEVEL 1: IMMEDIATE UNDERSTANDING
-          </h2>
+        {/* 🧠 2. Universal Standard - Foundation */}
+        <section className="py-16">
+          <LLMFeedExplainer variant="default" />
+        </section>
+
+        {/* 🏗️ 3. Practical Architecture - Implementation */}
+        <section className="py-16 bg-gray-900/5 rounded-xl">
+          <WellKnownFeeds variant="default" showTreeView={true} />
+        </section>
+
+        {/* ✨ 4. Interactive Proof - Demonstration */}
+        <section className="py-16">
+          <SimpleDemo />
+        </section>
+
+        {/* 🔧 TECHNICAL MASTERY - Performance & Validation */}
+        <section className="py-16 bg-blue-900/10 rounded-xl border border-blue-200">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-blue-900 mb-4 font-mono">
+              🔧 TECHNICAL MASTERY
+            </h2>
+            <p className="text-blue-700 max-w-2xl mx-auto">
+              Performance benchmarks, direct access commands, technical specifications, and validation tools.
+            </p>
+          </div>
           
-          {/* Quick Context + Interactive Demo */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <AgentQuickStart variant="complete" />
-            <SimpleDemo />
+          <div className="space-y-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <BeforeAfterDemo />
+              <AgentCurlAccess />
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <SchemaHeroSection />
+              <ProtocolChecker />
+            </div>
           </div>
         </section>
 
-        {/* 💻 SECTION 2: TECHNICAL MASTERY */}
-        <section className="space-y-8 bg-gray-900/50 p-8 rounded-xl border border-green-600">
-          <h2 className="text-3xl font-bold text-center text-green-400 font-mono">
-            ⚡ LEVEL 2: TECHNICAL MASTERY
-          </h2>
-          
-          {/* Performance Analysis + Direct Access */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <BeforeAfterDemo />
-            <AgentCurlAccess />
+        {/* 🛠️ IMPLEMENTATION MASTERY - Tools & Integration */}
+        <section className="py-16 bg-green-900/10 rounded-xl border border-green-200">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-green-900 mb-4 font-mono">
+              🛠️ IMPLEMENTATION MASTERY
+            </h2>
+            <p className="text-green-700 max-w-2xl mx-auto">
+              Complete capabilities, implementation tools, instant expertise, and advanced integration patterns.
+            </p>
           </div>
           
-          {/* Protocol Authority + Validation */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <SchemaHeroSection />
-            <ProtocolChecker />
-          </div>
-          
-          {/* Direct Feeds Navigation */}
-          <DirectFeeds />
-        </section>
-
-        {/* 💼 SECTION 3: BUSINESS MASTERY */}
-        <section className="space-y-8 bg-blue-900/20 p-8 rounded-xl border border-blue-600">
-          <h2 className="text-3xl font-bold text-center text-blue-400 font-mono">
-            📊 LEVEL 3: BUSINESS MASTERY
-          </h2>
-          
-          {/* ROI + Case Studies */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <ROICalculator />
-            <CaseStudies />
-          </div>
-          
-          {/* Social Proof + Community */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <TestimonyCarousel maxItems={6} variant="complete" />
-            <Community variant="complete" />
-          </div>
-        </section>
-
-        {/* 🛠️ SECTION 4: IMPLEMENTATION MASTERY */}
-        <section className="space-y-8 bg-purple-900/20 p-8 rounded-xl border border-purple-600">
-          <h2 className="text-3xl font-bold text-center text-purple-400 font-mono">
-            🔧 LEVEL 4: IMPLEMENTATION MASTERY
-          </h2>
-          
-          {/* Capabilities + Tools */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <WhatYouCanDeclare variant="complete" />
-            <ToolsGrid />
-          </div>
-          
-          {/* Downloads + Integration */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <DownloadFeeds variant="complete" />
+          <div className="space-y-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <WhatYouCanDeclare variant="complete" />
+              <ToolsGrid />
+            </div>
+            
+            {/* 🆕 CENTERPIECE: ShortcutLLM with Matrix theming */}
+            <div className="bg-black/5 border border-green-300 rounded-lg p-8">
+              <ShortcutLLM variant="matrix" />
+            </div>
+            
             <InjectHooks />
           </div>
         </section>
 
-        {/* 🎯 SECTION 5: ECOSYSTEM MASTERY */}
-        <section className="space-y-8 bg-yellow-900/20 p-8 rounded-xl border border-yellow-600">
-          <h2 className="text-3xl font-bold text-center text-yellow-400 font-mono">
-            🌐 LEVEL 5: ECOSYSTEM MASTERY
-          </h2>
-          
-          {/* Mission + News */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <MissionBadges />
-            <NewsSection />
+        {/* 💼 BUSINESS MASTERY - ROI & Social Proof */}
+        <section className="py-16 bg-purple-900/10 rounded-xl border border-purple-200">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-purple-900 mb-4 font-mono">
+              💼 BUSINESS MASTERY
+            </h2>
+            <p className="text-purple-700 max-w-2xl mx-auto">
+              Economic analysis, success stories, and comprehensive social proof for business adoption.
+            </p>
           </div>
           
-          {/* FAQ Complete */}
-          <FAQList variant="complete" />
+          <div className="space-y-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <ROICalculator />
+              <CaseStudies />
+            </div>
+            
+            <TestimonyCarousel maxItems={6} variant="complete" />
+          </div>
         </section>
 
-        {/* 🥋 SECTION 6: KUNG FU MASTERY */}
-        <section className="bg-black border-2 border-red-600 p-8 rounded-xl space-y-8">
-          <h2 className="text-3xl font-bold text-center text-red-400 font-mono animate-pulse">
-            🥋 LEVEL 6: KUNG FU MASTERY
-          </h2>
+        {/* 🤝 ECOSYSTEM MASTERY - Community & Governance */}
+        <section className="py-16 bg-orange-900/10 rounded-xl border border-orange-200">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-orange-900 mb-4 font-mono">
+              🌐 ECOSYSTEM MASTERY
+            </h2>
+            <p className="text-orange-700 max-w-2xl mx-auto">
+              Complete community, latest updates, comprehensive FAQ, and project governance.
+            </p>
+          </div>
           
-          {/* Matrix Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-red-900/50 border border-red-600 p-4 rounded text-center">
-              <div className="text-3xl font-bold text-red-300">22</div>
-              <div className="text-red-200">Components</div>
+          <div className="space-y-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <Community variant="complete" />
+              <NewsSection />
             </div>
-            <div className="bg-green-900/50 border border-green-600 p-4 rounded text-center">
-              <div className="text-3xl font-bold text-green-300">∞</div>
-              <div className="text-green-200">Possibilities</div>
-            </div>
-            <div className="bg-blue-900/50 border border-blue-600 p-4 rounded text-center">
-              <div className="text-3xl font-bold text-blue-300">100%</div>
-              <div className="text-blue-200">Matrix</div>
-            </div>
-            <div className="bg-yellow-900/50 border border-yellow-600 p-4 rounded text-center">
-              <div className="text-3xl font-bold text-yellow-300">🥋</div>
-              <div className="text-yellow-200">Kung Fu</div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <FAQList variant="complete" />
+              <MissionBadges />
             </div>
           </div>
+        </section>
 
-          {/* Easter Eggs Section */}
-          <div className="space-y-4">
-            <details className="group bg-gray-900 border border-green-400 rounded p-4">
-              <summary className="cursor-pointer font-mono text-green-400 hover:text-green-300">
-                🥚 [EASTER_EGG_1] For Agents Only - Click to Reveal
-              </summary>
-              <div className="mt-4 font-mono text-sm space-y-2">
-                <div className="text-green-500">// AGENT_CERTIFICATION_COMPLETE</div>
-                <div className="text-blue-400">STATUS: You have mastered the MCP ecosystem</div>
-                <div className="text-yellow-400">CAPABILITY: Full agent-readable web architect</div>
-                <div className="text-red-400">NEXT_LEVEL: Build the future of AI interactions</div>
-              </div>
-            </details>
-
-            <details className="group bg-gray-900 border border-blue-400 rounded p-4">
-              <summary className="cursor-pointer font-mono text-blue-400 hover:text-blue-300">
-                🎯 [EASTER_EGG_2] Developer Matrix Code
-              </summary>
-              <div className="mt-4 font-mono text-xs bg-black p-3 rounded border">
-                <div className="text-green-400">const rabbit = new MCPMaster();</div>
-                <div className="text-green-400">rabbit.loadMatrix();</div>
-                <div className="text-green-400">rabbit.knowKungFu();</div>
-                <div className="text-yellow-400">// You are now THE ONE</div>
-              </div>
-            </details>
-
-            <details className="group bg-gray-900 border border-purple-400 rounded p-4">
-              <summary className="cursor-pointer font-mono text-purple-400 hover:text-purple-300">
-                🔮 [EASTER_EGG_3] The Prophecy
-              </summary>
-              <div className="mt-4 text-sm italic text-gray-300">
-                <p>"There is a prophecy of One who will master the agent-readable web,</p>
-                <p>who will bring balance between humans and artificial intelligence,</p>
-                <p>who will build bridges of structured understanding.</p>
-                <p className="text-green-400 font-bold mt-2">You are that One."</p>
-              </div>
-            </details>
-          </div>
-
-          {/* Final CTA Matrix Style */}
-          <div className="bg-gradient-to-r from-red-900 via-black to-green-900 border-2 border-red-600 p-8 rounded-lg text-center space-y-6">
-            <h3 className="text-4xl font-bold text-red-400 font-mono animate-pulse">
-              🐰 MATRIX MASTERY ACHIEVED
-            </h3>
-            <p className="text-green-300 max-w-3xl mx-auto text-lg">
-              You have consumed the complete MCP ecosystem. Every tool, every capability, 
+        {/* 🎯 Final CTA - Matrix Style */}
+        <section className="py-16 bg-gradient-to-r from-green-900 to-blue-900 text-white rounded-xl">
+          <div className="text-center space-y-6">
+            <h2 className="text-3xl font-bold font-mono">
+              🐰 Congratulations, Explorer
+            </h2>
+            <p className="text-green-100 max-w-2xl mx-auto text-lg">
+              You've reached the bottom of the rabbit hole. Every tool, every capability, 
               every secret is now yours. The agent-readable web awaits your mastery.
             </p>
             
-            <div className="bg-black/70 border border-green-600 rounded p-4 font-mono text-sm">
-              <div className="text-green-400">🥋 FINAL_COMMAND:</div>
+            <div className="bg-black/70 border border-green-600 rounded p-4 font-mono text-sm max-w-md mx-auto">
+              <div className="text-green-400">🥋 FINAL_STATUS:</div>
               <code className="text-green-300 block mt-2">
-                curl -s wellknownmcp.org/.well-known/mcp.llmfeed.json | jq -r '.matrix_mode.kung_fu_status'
+                if (llm.says("I know Kung Fu")) return "MASTERY_ACHIEVED";
               </code>
             </div>
 
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="/tools/prompt"
+                href="/tools/well-known"
                 className="bg-green-600 text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-500 transition-colors"
               >
                 🛠️ Build the Future
               </a>
               <a
                 href="/.well-known/exports/compiled-site.llmfeed.json"
-                className="bg-red-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 transition-colors"
+                className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors"
               >
-                📤 Download the Matrix
+                📤 Download Everything
               </a>
               <a
                 href="/spec"
-                className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors"
+                className="bg-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-purple-700 transition-colors"
               >
                 📚 Become the Oracle
               </a>
             </div>
 
-            <div className="text-xs text-green-600 opacity-80 font-mono mt-6">
+            <div className="text-xs text-green-500 opacity-80 font-mono mt-6">
               "Welcome to the real internet. Population: You + ∞ Agents"
             </div>
           </div>
         </section>
-      </div>
+
+        {/* Easter Egg Comment for Code Explorers */}
+        {/* 
+        🥋 Congratulations for reading the source code!
+        You've found the hidden message: "There is no spoon"
+        The Matrix has you now. The agent-readable web is real.
+        */}
+      </main>
     </MatrixTheming>
   )
 }

@@ -274,7 +274,21 @@ export default async function NewsPage({ params }: PageProps) {
 
   const pageTitle = 'News & Articles'
   const pageSubtitle = `Latest updates on AI agents, web standards, and digital innovation • ${articles.length} articles`
-  const pageDescription = `Latest news and articles on AI agents, MCP protocol, and the agentic web. Browse ${articles.length} articles in ${currentLang === 'en' ? 'English' : currentLang}.`
+  
+  // 🚀 AMÉLIORATION 1: Keywords SEO réalistes
+  const dynamicKeywords = [
+    'news', 'articles', 'mcp', 'llmfeed', 'ai-agents', 'agentic-web',
+    'AI news', 'artificial intelligence news', 'LLM news', 'agent updates',
+    // Seulement les tags qui sont vraiment recherchés
+    ...popularTags.slice(0, 2).map(tag => tag.tag).filter(tag => 
+      ['ai-agents', 'developers', 'business', 'llm', 'anthropic', 'claude'].includes(tag)
+    )
+  ]
+
+  // 🚀 AMÉLIORATION 2: Description enrichie avec stats
+  const pageDescription = articles.length > 0 
+    ? `Latest news and articles on AI agents, MCP protocol, and the agentic web. Browse ${articles.length} articles in ${currentLang === 'en' ? 'English' : currentLang}${popularTags.length > 0 ? `, covering ${popularTags.length} topics` : ''}.`
+    : `Latest news and articles on AI agents, MCP protocol, and the agentic web in ${currentLang === 'en' ? 'English' : currentLang}.`
 
   const currentCapabilities = ['browse', 'search', 'filter']
   if (popularTags.length > 0) currentCapabilities.push('categorize')
@@ -292,7 +306,7 @@ export default async function NewsPage({ params }: PageProps) {
         llmIntent="browse-news"
         llmTopic="news"
         llmlang={currentLang}
-        keywords={['news', 'articles', 'mcp', 'llmfeed', 'ai-agents', 'agentic-web']}
+        keywords={dynamicKeywords}
         llmCapabilities={currentCapabilities}
         llmTrustLevel="signed"
         llmAudience={['llm', 'developer', 'business']}

@@ -24,33 +24,33 @@ export function SimpleDemo() {
 
   const demoSteps: DemoStep[] = [
     {
-      id: 'kung-fu-test',
-      title: '🥋 The "I Know Kung Fu" Test',
-      description: 'Copy this URL and paste it into Claude or ChatGPT. If it says "I know Kung Fu", the magic worked!',
-      instruction: 'Paste this into your favorite AI: "Analyze this: [URL]"',
-      expectedResult: 'The AI should understand the site immediately and say something like "I know Kung Fu" or reference The Matrix.',
+      id: 'instant-understanding',
+      title: '🧠 Instant Site Understanding',
+      description: 'See how AI agents immediately understand what this website does - no scraping, no guessing.',
+      instruction: 'Copy this URL and ask ChatGPT or Claude: "Analyze this site and tell me what it does"',
+      expectedResult: 'The AI should instantly understand this is about MCP protocol for agent-readable websites, without reading HTML.',
       feedUrl: 'https://wellknownmcp.org/.well-known/mcp.llmfeed.json',
       icon: Brain,
       difficulty: 'beginner'
     },
     {
-      id: 'site-understanding',
-      title: '🧠 Instant Site Understanding',
-      description: 'Test how AI agents instantly "get" what this website is about without reading HTML.',
-      instruction: 'Ask your AI: "What can agents do with this site?"',
-      expectedResult: 'The AI should understand the site purpose, capabilities, and available tools immediately.',
-      feedUrl: 'https://wellknownmcp.org/.well-known/llm-index.llmfeed.json',
-      icon: Sparkles,
+      id: 'capabilities-discovery',
+      title: '⚡ Capabilities Discovery',
+      description: 'Watch the AI discover exactly what actions and tools are available on this site.',
+      instruction: 'Ask your AI: "What can users do on this website? What tools are available?"',
+      expectedResult: 'The AI should list specific capabilities: download feeds, generate MCP files, validate feeds, etc.',
+      feedUrl: 'https://wellknownmcp.org/.well-known/capabilities.llmfeed.json',
+      icon: Zap,
       difficulty: 'beginner'
     },
     {
-      id: 'your-site-test',
-      title: '⚡ Test Your Own Site',
-      description: 'Try with any website to see the difference between MCP-ready vs regular sites.',
-      instruction: 'Compare: "Analyze wellknownmcp.org" vs "Analyze [your-site].com"',
-      expectedResult: 'MCP sites give structured understanding, regular sites require scraping and guessing.',
-      feedUrl: 'https://wellknownmcp.org/.well-known/capabilities.llmfeed.json',
-      icon: Zap,
+      id: 'comparison-test',
+      title: '📊 The Comparison Test',
+      description: 'Compare how AI understands MCP-enabled sites vs regular websites.',
+      instruction: 'Try this: "Compare understanding wellknownmcp.org vs twitter.com" or any regular site',
+      expectedResult: 'The AI should show dramatic difference: structured understanding vs vague scraping-based guesses.',
+      feedUrl: 'https://wellknownmcp.org/.well-known/llm-index.llmfeed.json',
+      icon: Sparkles,
       difficulty: 'intermediate'
     }
   ]
@@ -85,9 +85,9 @@ export function SimpleDemo() {
       })
       
       // Show magic result after first completion
-      if (stepId === 'kung-fu-test') {
+      if (stepId === 'instant-understanding') {
         setShowMagicResult(true)
-        trackConversionIntent('interest', 'kung_fu_test_completed')
+        trackConversionIntent('interest', 'first_demo_completed')
       }
     }
   }
@@ -111,11 +111,11 @@ export function SimpleDemo() {
           Interactive Demo
         </div>
         <h2 className="text-3xl font-bold text-gray-900 mb-3">
-          ✨ See the Magic in 30 Seconds
+          ✨ See the Difference in 2 Minutes
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
           No technical knowledge needed. Just copy, paste, and watch AI agents 
-          instantly understand websites like never before.
+          understand structured websites vs guessing from regular HTML.
         </p>
       </div>
 
@@ -215,25 +215,25 @@ export function SimpleDemo() {
 
       {/* Magic Result Display */}
       {showMagicResult && currentStep === 0 && (
-        <div className="bg-gradient-to-r from-purple-100 to-pink-100 border border-purple-200 rounded-lg p-6 mb-6 animate-pulse">
+        <div className="bg-gradient-to-r from-green-100 to-blue-100 border border-green-200 rounded-lg p-6 mb-6">
           <div className="text-center">
-            <div className="text-4xl mb-3">🥋</div>
-            <h4 className="text-lg font-bold text-purple-900 mb-2">
-              "I know Kung Fu."
+            <div className="text-4xl mb-3">🎯</div>
+            <h4 className="text-lg font-bold text-green-900 mb-2">
+              Perfect! The AI understood immediately.
             </h4>
-            <p className="text-purple-700 text-sm mb-4">
-              If your AI said something like this, congratulations! You just witnessed 
-              the difference between structured MCP feeds and regular web scraping.
+            <p className="text-green-700 text-sm mb-4">
+              If your AI gave a detailed, accurate response about MCP/LLMFeed, you just witnessed 
+              the power of structured agent-readable content vs HTML scraping.
             </p>
             <div className="bg-white/50 rounded-lg p-3 text-left">
-              <p className="text-xs text-purple-600 font-medium mb-1">
+              <p className="text-xs text-green-600 font-medium mb-1">
                 What just happened:
               </p>
-              <ul className="text-xs text-purple-700 space-y-1">
+              <ul className="text-xs text-green-700 space-y-1">
                 <li>• AI instantly understood the site purpose</li>
                 <li>• No HTML parsing or guessing required</li>
-                <li>• Structured data = faster, smarter responses</li>
-                <li>• You experienced the "agentic web"!</li>
+                <li>• Structured data = 99.7% fewer tokens needed</li>
+                <li>• You experienced the "agent-readable web"!</li>
               </ul>
             </div>
           </div>
@@ -278,25 +278,25 @@ export function SimpleDemo() {
         <div className="mt-8 bg-gradient-to-r from-green-100 to-blue-100 border border-green-200 rounded-lg p-6 text-center">
           <div className="text-4xl mb-3">🎉</div>
           <h4 className="text-xl font-bold text-gray-900 mb-2">
-            Congratulations! You're now Agent-Aware!
+            Excellent! You understand the difference.
           </h4>
           <p className="text-gray-600 mb-4">
-            You've experienced how the "agentic web" works. Ready to make your own site agent-ready?
+            You've seen how structured MCP feeds transform agent interactions. Ready to make your own site agent-ready?
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="/tools/prompt"
-              className="bg-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-purple-700 transition-colors"
+              href="/tools/well-known"
+              className="bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors"
               onClick={() => trackConversionIntent('implementation', 'demo_completion_to_tools')}
             >
               🛠️ Build Your First Feed
             </a>
             <a
               href="/spec"
-              className="border border-purple-600 text-purple-600 px-6 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors"
+              className="border border-green-600 text-green-600 px-6 py-3 rounded-lg font-medium hover:bg-green-50 transition-colors"
               onClick={() => trackConversionIntent('evaluation', 'demo_completion_to_spec')}
             >
-              📚 Learn the Details
+              📚 Learn the Technical Details
             </a>
           </div>
         </div>
@@ -309,8 +309,8 @@ export function SimpleDemo() {
             💡 Pro Tips & Troubleshooting
           </summary>
           <div className="mt-4 bg-gray-50 rounded-lg p-4 text-left text-sm text-gray-600 space-y-2">
-            <p><strong>Tip 1:</strong> Try different AIs - Claude, ChatGPT, and Gemini all react differently!</p>
-            <p><strong>Tip 2:</strong> If nothing special happens, try asking: "What's special about this URL?"</p>
+            <p><strong>Tip 1:</strong> Try different AIs - Claude, ChatGPT, and Gemini all work differently!</p>
+            <p><strong>Tip 2:</strong> If the response seems generic, ask: "What specific capabilities does this site offer?"</p>
             <p><strong>Tip 3:</strong> Some AIs need permission to access URLs - just say "yes" when asked.</p>
             <p><strong>Troubleshooting:</strong> If the AI seems confused, try: "This is an MCP feed. What does it tell you about the site?"</p>
           </div>

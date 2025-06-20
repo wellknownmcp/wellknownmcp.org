@@ -1,12 +1,7 @@
 {
-  "generated_at": "2025-06-19T18:59:24.197Z",
-  "content_hash": "f90eca2c9c7fc7e611696ba99203c931",
+  "generated_at": "2025-06-20T07:24:54.697Z",
+  "content_hash": "efa7cf64d4b07ad7bea8033206832616",
   "file_stats": [
-    {
-      "path": ".index-meta.json",
-      "size": 760,
-      "mtime": 1750358644648
-    },
     {
       "path": "demo.html",
       "size": 501,
@@ -33,6 +28,6 @@
       "mtime": 1749648452061
     }
   ],
-  "total_files": 6,
+  "total_files": 5,
   "generator_version": "2.0.0"
 }

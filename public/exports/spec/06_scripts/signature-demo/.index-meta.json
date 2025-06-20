@@ -1,16 +1,11 @@
 {
-  "generated_at": "2025-06-19T18:59:24.208Z",
-  "content_hash": "532665c154d5b621f9c44b4fba975aad",
+  "generated_at": "2025-06-20T07:24:54.706Z",
+  "content_hash": "03bdb50327a901590d66e24ab02b58e7",
   "file_stats": [
     {
-      "path": ".index-meta.json",
-      "size": 1579,
-      "mtime": 1750358644663
-    },
-    {
       "path": "examples/.index-meta.json",
-      "size": 582,
-      "mtime": 1750359564198
+      "size": 487,
+      "mtime": 1750404294703
     },
     {
       "path": "examples/simple_example.llmfeed.json",
@@ -73,6 +68,6 @@
       "mtime": 1749804685177
     }
   ],
-  "total_files": 14,
+  "total_files": 13,
   "generator_version": "2.0.0"
 }
