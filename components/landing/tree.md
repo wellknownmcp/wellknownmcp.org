@@ -1,0 +1,36 @@
+Santoline@Antoine MINGW64 ~/wellknownmcp/wellknownmcp.org/components/landing (main)
+$ tree
+.
+|-- AgentCurlAccess.tsx
+|-- AgentQuickStart.tsx
+|-- BeforeAfterDemo.tsx
+|-- CaseStudies.tsx
+|-- Community.tsx
+|-- DirectFeeds.tsx
+|-- DownloadFeeds.tsx
+|-- FAQList.tsx
+|-- InjectHooks.tsx
+|-- LLMFeedExplainer.tsx
+|-- MatrixTheming.tsx
+|-- MissionBadges.tsx
+|-- NewsSection.tsx
+|-- PageHeader.tsx
+|-- ProtocolChecker.tsx
+|-- ROICalculator.tsx
+|-- SchemaHeroSection.tsx
+|-- ShortcutLLM.tsx
+|-- SimpleDemo.tsx
+|-- SiteBadge.tsx
+|-- TestimonyCarousel.tsx
+|-- ToolsGrid.tsx
+|-- TryAgent.tsx
+|-- VersionSelector.tsx
+|-- WellKnownFeeds.tsx
+|-- WhatYouCanDeclare.tsx
+|-- trainAICTA.tsx
+`-- versions
+    |-- AgentLanding.tsx
+    |-- AmateurLanding.tsx
+    |-- BusinessLanding.tsx
+    |-- RabbitLanding.tsx
+    `-- TechLanding.tsx

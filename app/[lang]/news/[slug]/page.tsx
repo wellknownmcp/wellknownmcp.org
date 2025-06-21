@@ -239,7 +239,7 @@ export default async function NewsPost({
         subtitle={front.subtitle || "An update from the LLMFeed ecosystem"}
       />
 
-      <ShareButtons title={front.title || slug} />
+      
 
       {/* Navigation Previous/Next */}
       <div className="flex justify-between mt-8 text-sm text-blue-600 dark:text-blue-400">
