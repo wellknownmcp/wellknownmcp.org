@@ -1,7 +1,17 @@
 {
-  "generated_at": "2025-06-20T07:24:54.688Z",
-  "content_hash": "44ee6e2b1e0f8b678eedec8c3cceb5fe",
+  "generated_at": "2025-06-21T20:26:05.390Z",
+  "content_hash": "d62b6a75402dad82536d15871f11a05a",
   "file_stats": [
+    {
+      "path": ".index-meta.json",
+      "size": 2300,
+      "mtime": 1750404294691
+    },
+    {
+      "path": "export-button/.index-meta.json",
+      "size": 760,
+      "mtime": 1750537565359
+    },
     {
       "path": "export-button/demo.html",
       "size": 501,
@@ -36,6 +46,16 @@
       "path": "README.md",
       "size": 4764,
       "mtime": 1749806511464
+    },
+    {
+      "path": "signature-demo/.index-meta.json",
+      "size": 1579,
+      "mtime": 1750537565374
+    },
+    {
+      "path": "signature-demo/examples/.index-meta.json",
+      "size": 582,
+      "mtime": 1750537565365
     },
     {
       "path": "signature-demo/examples/simple_example.llmfeed.json",
@@ -98,6 +118,6 @@
       "mtime": 1749804685177
     }
   ],
-  "total_files": 19,
+  "total_files": 23,
   "generator_version": "2.0.0"
 }

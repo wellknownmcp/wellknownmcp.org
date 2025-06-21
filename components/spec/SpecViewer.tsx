@@ -1,28 +1,20 @@
-'use client'
-
-import { useSpecContext } from './SpecContext'
-import type { SpecContextType } from './SpecContext'
-import { marked } from 'marked'
-import { Tokens } from 'marked'
+// SpecViewer.tsx - Version 100% SSR PURE (zéro client-side code)
 import Link from 'next/link'
-import path from 'path'
+import { ExternalLink } from 'lucide-react'
+import { CopyButtons } from './CopyButtons' // Seul import client
 
-const siteUrl = 'https://wellknownmcp.org'
-
-function resolveSpecSlug(baseSlug: string, relatedPath: string): string {
-  const baseDir = path.posix.dirname(baseSlug)
-  const resolved = path.posix.normalize(path.posix.join(baseDir, relatedPath))
-  return resolved
+interface SpecViewerProps {
+  slug: string
+  htmlContent: string // HTML déjà parsé côté serveur
+  front: Record<string, any>
 }
 
-// 🎨 Composant simple pour afficher quelques badges si le frontmatter existe
+// 🎨 Composant badges SSR pur
 function FrontmatterBadges({ front }: { front: any }) {
-  // 🛡️ Protection robuste
   if (!front || typeof front !== 'object' || Object.keys(front).length === 0) return null
 
   const badges = []
 
-  // Quelques badges utiles sans trop surcharger
   if (front.priority && front.priority !== 'normal') {
     badges.push({ 
       text: front.priority.toUpperCase(), 
@@ -51,12 +43,12 @@ function FrontmatterBadges({ front }: { front: any }) {
   if (badges.length === 0) return null
 
   const colorClasses = {
-    red: 'bg-red-100 text-red-800',
-    orange: 'bg-orange-100 text-orange-800', 
-    blue: 'bg-blue-100 text-blue-800',
-    green: 'bg-green-100 text-green-800',
-    purple: 'bg-purple-100 text-purple-800',
-    gray: 'bg-gray-100 text-gray-800',
+    red: 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-200',
+    orange: 'bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-200', 
+    blue: 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-200',
+    green: 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-200',
+    purple: 'bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-200',
+    gray: 'bg-gray-100 text-gray-800 dark:bg-gray-900/30 dark:text-gray-200',
   }
 
   return (
@@ -73,18 +65,16 @@ function FrontmatterBadges({ front }: { front: any }) {
   )
 }
 
-// 📊 Composant pour afficher quelques métadonnées utiles
+// 📊 Composant métadonnées SSR pur
 function FrontmatterMeta({ front }: { front: any }) {
-  // 🛡️ Protection robuste
   if (!front || typeof front !== 'object' || Object.keys(front).length === 0) return null
 
   const hasMeta = front.date || front.audience || front.feedTypes || front.capabilities
-
   if (!hasMeta) return null
 
   return (
-    <div className="bg-gray-50 rounded-lg p-4 mb-6 not-prose">
-      <div className="text-sm text-gray-600 space-y-2">
+    <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 mb-6 not-prose">
+      <div className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
         
         {front.date && (
           <div>📅 <strong>Created:</strong> {new Date(front.date).toLocaleDateString()}</div>
@@ -99,7 +89,7 @@ function FrontmatterMeta({ front }: { front: any }) {
             🔌 <strong>Feed Types:</strong> 
             <span className="ml-1">
               {front.feedTypes.map((type: string) => (
-                <span key={type} className="inline-block bg-blue-100 text-blue-800 px-1 py-0.5 rounded text-xs mr-1">
+                <span key={type} className="inline-block bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-1 py-0.5 rounded text-xs mr-1">
                   {type}
                 </span>
               ))}
@@ -112,7 +102,7 @@ function FrontmatterMeta({ front }: { front: any }) {
             ⚡ <strong>Capabilities:</strong>
             <span className="ml-1">
               {front.capabilities.map((cap: string) => (
-                <span key={cap} className="inline-block bg-green-100 text-green-800 px-1 py-0.5 rounded text-xs mr-1">
+                <span key={cap} className="inline-block bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-1 py-0.5 rounded text-xs mr-1">
                   {cap}
                 </span>
               ))}
@@ -121,10 +111,16 @@ function FrontmatterMeta({ front }: { front: any }) {
         )}
 
         {front.mcpFeedUrl && (
-          <div>
+          <div className="flex items-center gap-1">
             🤖 <strong>LLMFeed:</strong> 
-            <a href={front.mcpFeedUrl} className="ml-1 text-blue-600 hover:underline text-xs">
+            <a 
+              href={front.mcpFeedUrl} 
+              className="ml-1 text-blue-600 dark:text-blue-400 hover:underline text-xs inline-flex items-center gap-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {front.mcpFeedUrl}
+              <ExternalLink className="w-3 h-3" />
             </a>
           </div>
         )}
@@ -134,321 +130,131 @@ function FrontmatterMeta({ front }: { front: any }) {
   )
 }
 
-export default function SpecViewer({ slug }: { slug: string }) {
-  const { content, front } = useSpecContext() as SpecContextType
+// 🛡️ Composant d'erreur SSR pur (sans useState)
+function ContentError({ error }: { error: string }) {
+  return (
+    <div className="border border-red-200 bg-red-50 dark:bg-red-900/20 dark:border-red-800 rounded-lg p-4">
+      <div className="flex items-center gap-2 mb-2">
+        <span className="text-red-600 dark:text-red-400">⚠️</span>
+        <h3 className="font-semibold text-red-800 dark:text-red-200">Content Display Error</h3>
+      </div>
+      <p className="text-sm text-red-700 dark:text-red-300 mb-3">
+        There was an issue displaying this content: {error}
+      </p>
+      <details className="mt-3">
+        <summary className="text-sm cursor-pointer text-red-600 dark:text-red-400 hover:underline">
+          Technical details
+        </summary>
+        <pre className="mt-2 text-xs bg-red-100 dark:bg-red-900/30 p-2 rounded overflow-auto max-h-32">
+          {error}
+        </pre>
+      </details>
+    </div>
+  )
+}
 
-  // ✅ Votre configuration de marked existante - inchangée
-  const configureMarked = (currentSlug: string) => {
-    marked.use({
-      renderer: {
-        link(this: any, token: Tokens.Link): string | false {
-          const href = token.href
-          const title = token.title
-          const text = token.text
-
-          // Liens externes (gardés tels quels)
-          if (href?.startsWith('http://') || href?.startsWith('https://')) {
-            return `<a href="${href}" ${
-              title ? `title="${title}"` : ''
-            }>${text}</a>`
-          }
-
-          // Liens relatifs vers des .md
-          if (href?.endsWith('.md')) {
-            const resolvedSlug = resolveSpecSlug(
-              currentSlug,
-              href.replace('.md', '')
-            )
-            const finalHref = `/spec/${resolvedSlug}`
-
-            return `<a href="${finalHref}" ${
-              title ? `title="${title}"` : ''
-            }>${text}</a>`
-          }
-
-          // Liens absolus vers le site
-          const absolutePrefixes = [
-            '/tools',
-            '/verify',
-            '/faq',
-            '/feeds',
-            '/en',
-            '/join',
-          ]
-
-          const shouldRewrite = absolutePrefixes.some((prefix) =>
-            href?.startsWith(prefix)
-          )
-          let finalHref = href
-          if (shouldRewrite && href) {
-            finalHref = `${siteUrl}${href}`
-          }
-
-          return `<a href="${finalHref}" ${
-            title ? `title="${title}"` : ''
-          }>${text}</a>`
-        },
-      },
-    })
-  }
-
-  if (!content) {
-    return <div className="text-red-600">Error: Spec content not found.</div>
-  }
-
-  // ✅ Votre logique existante de parsing - inchangée
-  configureMarked(slug)
-
-  let htmlContent = ''
-  try {
-    const parsed = marked.parse(content ?? '')
-    htmlContent = typeof parsed === 'string' ? parsed : ''
-  } catch (err) {
-    console.error('Error while parsing markdown:', err)
-    htmlContent = '<div class="text-red-600">Markdown parsing error</div>'
-  }
-
-  // ✅ Votre logique Related existante - inchangée
+// 🔗 Helper pour liens related (SSR pur)
+function generateRelatedLinks(slug: string, front: any) {
   const relatedList = Array.isArray(front?.Related)
-    ? front?.Related.filter((item) => typeof item === 'string')
+    ? front?.Related.filter((item: any) => typeof item === 'string')
     : []
 
-  const relatedLinks = relatedList.map((relatedPath: string) => {
+  const resolveSpecSlug = (baseSlug: string, relatedPath: string): string => {
+    const baseDir = baseSlug.includes('/') ? baseSlug.substring(0, baseSlug.lastIndexOf('/')) : ''
+    const resolved = baseDir ? `${baseDir}/${relatedPath}` : relatedPath
+    return resolved.replace(/\/+/g, '/').replace(/^\//, '')
+  }
+
+  return relatedList.map((relatedPath: string) => {
     const resolvedSlug = resolveSpecSlug(slug, relatedPath)
     const url = `/spec/${resolvedSlug}`
-    const displayTitle =
-      resolvedSlug.split('/').pop()?.replace(/[_\-]/g, ' ') ?? resolvedSlug
+    const displayTitle = resolvedSlug.split('/').pop()?.replace(/[_\-]/g, ' ') ?? resolvedSlug
 
-    return (
-      <li key={resolvedSlug}>
-        <Link href={url}>{displayTitle}</Link>
-      </li>
-    )
+    return {
+      url,
+      title: displayTitle,
+      slug: resolvedSlug
+    }
   })
+}
+
+// 🚀 Composant principal 100% SSR
+export default function SpecViewer({ slug, htmlContent, front }: SpecViewerProps) {
+  const relatedLinks = generateRelatedLinks(slug, front)
+
+  // Vérification simple du contenu
+  if (!htmlContent || htmlContent.trim() === '') {
+    return <ContentError error="No content provided or content is empty" />
+  }
 
   return (
     <article className="prose dark:prose-invert max-w-4xl mx-auto py-8 space-y-8">
       
-      {/* ✅ Votre titre existant - inchangé */}
-      {front?.title && <h1>{front.title}</h1>}
+      {/* En-tête avec métadonnées */}
+      {front?.title && (
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
+          {front.title}
+        </h1>
+      )}
+      
       {front?.version && (
-        <p className="text-sm text-gray-500">Version: {front.version}</p>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          Version: {front.version}
+        </p>
       )}
 
-      {/* 🎨 Ajout simple: subtitle du frontmatter s'il existe */}
       {front?.subtitle && (
-        <p className="text-lg text-gray-600 not-prose mb-4">{front.subtitle}</p>
+        <p className="text-lg text-gray-600 dark:text-gray-400 not-prose mb-4">
+          {front.subtitle}
+        </p>
       )}
 
-      {/* 🎨 Ajout simple: badges du frontmatter */}
+      {/* Composants SSR purs */}
       <FrontmatterBadges front={front} />
-
-      {/* 🎨 Ajout simple: métadonnées du frontmatter */}
       <FrontmatterMeta front={front} />
 
-      {/* ✅ Votre contenu existant - inchangé */}
-      <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+      {/* Contenu principal - HTML sécurisé déjà parsé côté serveur */}
+      <div 
+        dangerouslySetInnerHTML={{ __html: htmlContent }}
+        className="markdown-content prose dark:prose-invert"
+      />
       
-      {/* 🚀 Call-to-Action pour feeds spec - Stratégie Pareto (95%/5%) */}
-      {(() => {
-        // A/B Test: 95% version pratique, 5% version technique avancée
-        const showPracticalVersion = Math.random() < 0.95
-        const specLiteUrl = "https://wellknownmcp.org/.well-known/exports/spec-essential.llmfeed.json"
-        const specFullUrl = "https://wellknownmcp.org/.well-known/exports/spec.llmfeed.json"
-        
-        const handleCopyQuickStart = () => {
-          const promptText = `Please analyze this LLMFeed specification for quick implementation guidance: ${specLiteUrl}`
-          navigator.clipboard.writeText(promptText).then(() => {
-            const button = document.querySelector('[data-spec-quick]') as HTMLButtonElement
-            if (button) {
-              const originalText = button.textContent
-              button.textContent = '✅ Copied!'
-              button.disabled = true
-              setTimeout(() => {
-                button.textContent = originalText
-                button.disabled = false
-              }, 2000)
-            }
-          }).catch(() => {
-            prompt("Copy this prompt:", promptText)
-          })
-        }
-
-        const handleCopyComplete = () => {
-          const promptText = `Please analyze this complete LLMFeed specification for comprehensive implementation: ${specFullUrl}`
-          navigator.clipboard.writeText(promptText).then(() => {
-            const button = document.querySelector('[data-spec-complete]') as HTMLButtonElement
-            if (button) {
-              const originalText = button.textContent
-              button.textContent = '✅ Copied!'
-              button.disabled = true
-              setTimeout(() => {
-                button.textContent = originalText
-                button.disabled = false
-              }, 2000)
-            }
-          }).catch(() => {
-            prompt("Copy this prompt:", promptText)
-          })
-        }
-
-        if (showPracticalVersion) {
-          // VERSION A (95%) - "Implementation-Ready Paths"
-          return (
-            <div className="mt-12 p-6 bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 rounded-xl border-2 border-dashed border-emerald-200 dark:border-emerald-800 hover:border-solid transition-all not-prose">
-              <div className="flex items-start gap-4">
-                <div className="text-3xl">⚡</div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-gray-100">
-                    Ready to Implement? Get AI-Powered Guidance
-                  </h3>
-                  <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                    Reading docs manually takes time. Your AI can digest the <strong>complete LLMFeed specification</strong> and provide implementation guidance tailored to your needs.
-                  </p>
-                  
-                  <div className="grid sm:grid-cols-2 gap-4 mb-6">
-                    {/* Option rapide */}
-                    <div className="p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-600">
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-lg">🎯</span>
-                        <h4 className="font-semibold text-gray-900 dark:text-gray-100">Quick Start</h4>
-                      </div>
-                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                        Essential concepts for immediate implementation
-                      </p>
-                      <button
-                        onClick={handleCopyQuickStart}
-                        data-spec-quick
-                        className="w-full px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-md font-medium transition-all"
-                      >
-                        🚀 Copy Quick Start Prompt
-                      </button>
-                      <div className="mt-2 text-xs text-gray-500">
-                        ~22K tokens • 30s analysis • Core concepts
-                      </div>
-                    </div>
-
-                    {/* Option complète */}
-                    <div className="p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-600">
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-lg">📚</span>
-                        <h4 className="font-semibold text-gray-900 dark:text-gray-100">Complete Mastery</h4>
-                      </div>
-                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                        Full specification with examples and edge cases
-                      </p>
-                      <button
-                        onClick={handleCopyComplete}
-                        data-spec-complete
-                        className="w-full px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-md font-medium transition-all"
-                      >
-                        📖 Copy Complete Spec Prompt
-                      </button>
-                      <div className="mt-2 text-xs text-gray-500">
-                        ~140K tokens • 2min analysis • Everything
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex flex-wrap gap-4 text-xs text-gray-500 dark:text-gray-400">
-                    <span>💡 Works with Claude, ChatGPT, Gemini</span>
-                    <span>⚡ Instant implementation guidance</span>
-                    <span>🎯 Tailored to your specific needs</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )
-        } else {
-          // VERSION B (5%) - "Developer Matrix Style"
-          return (
-            <div className="mt-12 p-6 bg-gradient-to-r from-indigo-50 to-cyan-50 dark:from-indigo-900/20 dark:to-cyan-900/20 rounded-xl border-2 border-dashed border-indigo-200 dark:border-indigo-800 hover:border-solid transition-all not-prose">
-              <div className="flex items-start gap-4">
-                <div className="text-3xl">⚙️</div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-gray-100">
-                    Choose Your Implementation Path
-                  </h3>
-                  <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                    <span className="font-mono text-sm bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded">
-                      if (needsImplementation) → feedToAI(specification)
-                    </span><br/>
-                    Skip the manual parsing. Download the spec directly to your AI's neural networks.
-                  </p>
-                  
-                  <div className="grid sm:grid-cols-2 gap-4 mb-6">
-                    {/* Quick hack */}
-                    <div className="p-4 bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30 rounded-lg">
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-lg">⚡</span>
-                        <h4 className="font-semibold text-gray-900 dark:text-gray-100">Rapid Prototype</h4>
-                      </div>
-                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                        Essential algorithms, ready to ship
-                      </p>
-                      <button
-                        onClick={handleCopyQuickStart}
-                        data-spec-quick
-                        className="w-full px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-md font-medium transition-all"
-                      >
-                        ⚡ Download Core Logic
-                      </button>
-                      <div className="mt-2 text-xs text-gray-500 font-mono">
-                        O(1) implementation complexity
-                      </div>
-                    </div>
-
-                    {/* Deep dive */}
-                    <div className="p-4 bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-lg">
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-lg">🔬</span>
-                        <h4 className="font-semibold text-gray-900 dark:text-gray-100">System Architecture</h4>
-                      </div>
-                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                        Complete patterns, enterprise-grade
-                      </p>
-                      <button
-                        onClick={handleCopyComplete}
-                        data-spec-complete
-                        className="w-full px-4 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white rounded-md font-medium transition-all"
-                      >
-                        🔬 Download Full Schema
-                      </button>
-                      <div className="mt-2 text-xs text-gray-500 font-mono">
-                        O(everything) knowledge transfer
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="text-center text-xs text-gray-500 dark:text-gray-400 font-mono">
-                    <div>🤖 Compatible with: Claude.v4, GPT-4o, Gemini.Pro</div>
-                    <div className="mt-1">⚡ Transfer rate: ~200MB/s of pure knowledge</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )
-        }
-      })()}
+      {/* CopyButtons - SEULE partie nécessitant 'use client' */}
+      <CopyButtons />
       
-      {/* ✅ Votre section Related existante - inchangée */}
+      {/* Section Related - SSR pur */}
       {relatedLinks.length > 0 && (
-        <div className="mt-8 border-t pt-4">
-          <h2 className="text-lg font-semibold mb-2">Related</h2>
-          <ul className="space-y-1">{relatedLinks}</ul>
+        <div className="mt-8 border-t border-gray-200 dark:border-gray-700 pt-4">
+          <h2 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+            Related
+          </h2>
+          <ul className="space-y-1">
+            {relatedLinks.map((link) => (
+              <li key={link.slug}>
+                <Link 
+                  href={link.url} 
+                  className="text-blue-600 dark:text-blue-400 hover:underline transition-colors"
+                >
+                  {link.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
 
-      {/* 🎨 Ajout simple: articles connexes du frontmatter */}
+      {/* Articles connexes du frontmatter - SSR pur */}
       {front?.relatedArticles && front.relatedArticles.length > 0 && (
-        <div className="mt-8 border-t pt-4">
-          <h2 className="text-lg font-semibold mb-2">Related Articles (from frontmatter)</h2>
+        <div className="mt-8 border-t border-gray-200 dark:border-gray-700 pt-4">
+          <h2 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+            Related Articles
+          </h2>
           <div className="flex flex-wrap gap-2">
             {front.relatedArticles.map((article: string) => (
               <Link 
                 key={article}
                 href={`/spec/${article}`}
-                className="px-3 py-1 bg-purple-100 text-purple-800 rounded-lg hover:bg-purple-200 text-sm no-underline"
+                className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 rounded-lg hover:bg-purple-200 dark:hover:bg-purple-900/50 text-sm no-underline transition-colors"
               >
                 🔗 {article}
               </Link>

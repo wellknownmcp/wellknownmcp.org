@@ -1,6 +1,58 @@
 {
   "en": [
     {
+      "slug": "hunting-ghost-traffic-ai-agent-infrastructure",
+      "title": "Hunting the Ghost Traffic: Inside the Invisible Infrastructure of AI Agents",
+      "description": "Empirical investigation reveals massive parallel infrastructure behind AI agent web access. ChatGPT, Claude, and Gemini operate through invisible proxy networks that completely bypass traditional analytics, creating an unmeasurable 'dark web' layer.",
+      "date": "2025-06-20",
+      "tags": [
+        "agent-infrastructure",
+        "agentic-web",
+        "ai-agent-traffic",
+        "ai-crawler-analytics",
+        "ai-crawler-detection",
+        "ai-traffic-tracking",
+        "alibaba-tongyi-qianwen",
+        "analytics-dark-age",
+        "baidu-ernie-bot",
+        "chinese-llm-isolation",
+        "dark-traffic",
+        "generative-engine-optimization",
+        "geopolitical-web-fragmentation",
+        "ghost-traffic",
+        "invisible-analytics",
+        "web-analytics"
+      ],
+      "excerpt": "\r  Hunting the Ghost Traffic: Inside the Invisible Infrastructure of AI Agents\r",
+      "format": "empirical-research",
+      "category": "infrastructure-investigation",
+      "intent": "research-documentation",
+      "llmIntent": "infrastructure-analysis",
+      "audience": [
+        "llm",
+        "developer",
+        "researcher"
+      ],
+      "image": null,
+      "subtitle": null,
+      "technicalLevel": "advanced",
+      "estimatedReadTime": "12 min",
+      "trustLevel": "signed",
+      "businessImpact": "high",
+      "priority": "critical",
+      "feedTypes": [],
+      "capabilities": [
+        "infrastructure-analysis",
+        "empirical-research",
+        "agent-detection"
+      ],
+      "agentReadiness": true,
+      "aioScore": 92,
+      "translations": {
+        "en": "/en/news/hunting-ghost-traffic-ai-agent-infrastructure"
+      }
+    },
+    {
       "slug": "2025-06-07-apple-intelligence-agentic-web",
       "title": "Apple Intelligence: Technical Analysis of Agent Architecture and Web Integration Implications",
       "description": "Technical analysis of Apple Intelligence architecture, its agent-like capabilities, and implications for open web protocols like LLMFeed and MCP.",
@@ -5102,8 +5154,8 @@
     }
   ],
   "_meta": {
-    "generated_at": "2025-06-19T18:53:55.436Z",
-    "total_articles": 131,
+    "generated_at": "2025-06-21T21:41:03.967Z",
+    "total_articles": 132,
     "global_avg_score": 54,
     "languages": [
       "en",

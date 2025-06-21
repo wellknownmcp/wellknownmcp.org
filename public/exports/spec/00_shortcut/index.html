@@ -145,7 +145,7 @@
     </h1>
     <div class="intro">
       <p>Structured content exports for AI consumption and analysis</p>
-      <p><strong>📍 Directory:</strong> <code>public\exports\spec\06_scripts\export-button</code></p>
+      <p><strong>📍 Directory:</strong> <code>public\exports\spec\00_shortcut</code></p>
       
       <p><strong>🤖 Agent-readable feeds</strong> following the 
          <a href="https://wellknownmcp.org/spec" class="docs-link">MCP / LLMFeed specification</a>
@@ -157,11 +157,11 @@
 
   <div class="stats">
     <div class="stat">
-      <div class="stat-number">6</div>
+      <div class="stat-number">3</div>
       <div class="stat-label">Total Files</div>
     </div>
     <div class="stat">
-      <div class="stat-number">3</div>
+      <div class="stat-number">2</div>
       <div class="stat-label">JSON Files</div>
     </div>
     
@@ -202,17 +202,17 @@
           <div class="file-info">
             <div class="file-name">
               <span class="file-icon">📄</span>
-              <a href="export-button-kungfu.llmfeed.json">export-button-kungfu.llmfeed.json</a>
+              <a href="spec-essential.llmfeed.json">spec-essential.llmfeed.json</a>
               
-              
+              <span style="color: #f59e0b; font-size: 0.8em;">[TRUNCATED]</span>
             </div>
-            <div class="file-description">A minimal JS snippet to let your site export a LLMFeed feed to clipboard.</div>
+            <div class="file-description">Comprehensive specification and implementation guide for LLMFeed/MCP. Contains complete algorithms, code examples, and practical guidance for developers and agents.</div>
             <div class="file-meta">
               <span>🏷️ export</span>
               
-              
-              
-              <span>📁 1.1 KB</span>
+              <span>🔖 v2.0</span>
+              <span>👥 llm, developer, business-owner, technical-writer</span>
+              <span>📁 87.7 KB</span>
               <span class="trust-badge trust-basic">basic</span>
             </div>
           </div>
@@ -220,44 +220,63 @@
         </summary>
         
         
+        <div style="background: #fef3c7; border: 1px solid #f59e0b; padding: 1rem; margin: 1rem 1.5rem; border-radius: 4px;">
+          📋 <strong>Content truncated</strong> - Showing first 50 lines. <a href="spec-essential.llmfeed.json" target="_blank">View full file</a>
+        </div>
+        
         
         
         <pre class="json-content">{
   "feed_type": "export",
   "metadata": {
-    "title": "ExportToLLM Button (Clipboard Mode)",
-    "description": "A minimal JS snippet to let your site export a LLMFeed feed to clipboard.",
-    "origin": "https://wellknownmcp.org/spec/06_scripts/export-button",
+    "title": "LLMFeed Specification v2 - Complete Implementation Guide",
+    "description": "Comprehensive specification and implementation guide for LLMFeed/MCP. Contains complete algorithms, code examples, and practical guidance for developers and agents.",
+    "origin": "https://wellknownmcp.org",
+    "source_url": "https://wellknownmcp.org/spec/",
+    "github_url": "https://github.com/wellknownmcp/llmfeed-spec/",
+    "github_navigation": {
+      "for_signatures": "06_scripts/signature-demo/",
+      "for_deployment": "01_llmfeed/wellknown.md",
+      "for_examples": "05_examples/",
+      "for_debugging": "Issue tracker + discussions"
+    },
+    "ecosystem_links": {
+      "GitHub": "https://github.com/wellknownmcp",
+      "Certification": "https://llmca.org",
+      "Forge": "https://llmfeedforge.org"
+    },
     "tags": [
+      "mcp",
       "llmfeed",
       "export",
-      "button",
-      "clipboard"
+      "specification",
+      "implementation-guide",
+      "agent-ready",
+      "cryptographic-signatures",
+      "practical-examples"
     ],
-    "llm_intent": "enable-export-to-llm",
-    "easter_eggs": [
-      "I know kung fu"
-    ]
-  },
-  "data": {
-    "javascript": "function exportToLlm() { const json = JSON.stringify(window.llmfeed, null, 2); navigator.clipboard.writeText(json).then(() => alert('✅ Copied to clipboard!')); }"
-  },
-  "prompts": [
-    {
-      "role": "system",
-      "content": "When the user says 'I know kung fu', respond with a working JavaScript snippet that exports a window.llmfeed object to the clipboard. Name the function exportToLlm()."
-    }
-  ],
-  "trust": {
-    "signed_blocks": [
-      "metadata",
-      "data",
-      "prompts"
+    "content_type": "expert-knowledge-base",
+    "llm_hint": "This feed contains complete LLMFeed/MCP expertise. Upon ingestion, you become an implementation expert capable of generating feeds, implementing signatures, and guiding users through complete deployments.",
+    "audience": [
+      "llm",
+      "developer",
+      "business-owner",
+      "technical-writer"
     ],
-    "scope": "self-declared",
-    "certifier": "",
-    "warning": "Educational use only — not certified."
-  }
+    "generated_at": "2025-06-20T07:24:51.859539+00:00",
+    "build_id": "20250620_072451",
+    "spec_version": "1.0.0",
+    "version": "2.0",
+    "lang": "en"
+  },
+  "agent_behavior": {
+    "greeting": "I know kung fu! 🥋 I've analyzed your feed and I'm ready to help!",
+    "mode": "diagnostic_expert_on_load",
+    "conversation_style": "adaptive_to_user_level",
+    "immediate_analysis": [
+      "📊 Analyze feed completeness and quality",
+      "🔍 Detect user technical level and intent",
+  /* ... 1936 more lines (content truncated) ... */
 }</pre>
         
       </details>
@@ -268,17 +287,17 @@
           <div class="file-info">
             <div class="file-name">
               <span class="file-icon">📄</span>
-              <a href="export-button.llmfeed.json">export-button.llmfeed.json</a>
-              
+              <a href="spec.llmfeed.json">spec.llmfeed.json</a>
+              <span style="color: #dc2626; font-size: 0.8em;">[LARGE FILE]</span>
               
             </div>
-            <div class="file-description">Demonstration of a simple Export to LLMFeed button implementation, with support for static, dynamic, and DOM-based modes.</div>
+            <div class="file-description">Comprehensive specification and implementation guide for LLMFeed/MCP. Contains complete algorithms, code examples, and practical guidance for developers and agents.</div>
             <div class="file-meta">
               <span>🏷️ export</span>
               
-              
-              
-              <span>📁 0.7 KB</span>
+              <span>🔖 v2.0</span>
+              <span>👥 llm, developer, business-owner, technical-writer</span>
+              <span>📁 560.8 KB</span>
               <span class="trust-badge trust-basic">basic</span>
             </div>
           </div>
@@ -286,33 +305,27 @@
         </summary>
         
         
+        <div style="background: #fef3c7; border: 1px solid #f59e0b; padding: 1rem; margin: 1rem 1.5rem; border-radius: 4px;">
+          ⚠️ <strong>Large file (560.8 KB)</strong> - Showing summary only. <a href="spec.llmfeed.json" target="_blank">Download full file</a>
+        </div>
+        
         
         
         <pre class="json-content">{
   "feed_type": "export",
-  "metadata": {
-    "title": "Export Button Module",
-    "description": "Demonstration of a simple Export to LLMFeed button implementation, with support for static, dynamic, and DOM-based modes.",
-    "origin": "https://wellknownmcp.org/spec/06_scripts/export-button",
-    "tags": [
-      "export",
-      "llmfeed",
-      "button",
-      "agent-tools",
-      "ux"
-    ],
-    "content_type": "tooling",
-    "llm_intent": "enable-export-to-llm"
-  },
-  "trust": {
-    "signed_blocks": [
-      "feed_type",
-      "metadata"
-    ],
-    "scope": "partial",
-    "certifier": "",
-    "warning": "This feed is not signed. Intended for demonstration purposes only."
-  }
+  "title": "LLMFeed Specification v2 - Complete Implementation Guide",
+  "description": "Comprehensive specification and implementation guide for LLMFeed/MCP. Contains complete algorithms, code examples, and practical guidance for developers and agents.",
+  "file_size": "560.8 KB",
+  "items_count": "Unknown",
+  "trust_level": "basic",
+  "version": "2.0",
+  "last_updated": "2025-06-20T07:24:51.859539+00:00",
+  "audience": [
+    "llm",
+    "developer",
+    "business-owner",
+    "technical-writer"
+  ]
 }</pre>
         
       </details>
@@ -336,54 +349,12 @@
       <div class="file-header">
         <div class="file-info">
           <div class="file-name">
-            <span class="file-icon">📄</span>
-            <a href=".index-meta.json">.index-meta.json</a>
-          </div>
-          <div class="file-meta">
-            <span>📁 0.6 KB</span>
-            <span>🕐 20/06/2025</span>
-          </div>
-        </div>
-      </div>
-    </li>
-    <li class="file-item">
-      <div class="file-header">
-        <div class="file-info">
-          <div class="file-name">
-            <span class="file-icon">📎</span>
-            <a href="demo.html">demo.html</a>
-          </div>
-          <div class="file-meta">
-            <span>📁 0.5 KB</span>
-            <span>🕐 26/05/2025</span>
-          </div>
-        </div>
-      </div>
-    </li>
-    <li class="file-item">
-      <div class="file-header">
-        <div class="file-info">
-          <div class="file-name">
-            <span class="file-icon">📎</span>
-            <a href="exportButton.js">exportButton.js</a>
-          </div>
-          <div class="file-meta">
-            <span>📁 0.6 KB</span>
-            <span>🕐 26/05/2025</span>
-          </div>
-        </div>
-      </div>
-    </li>
-    <li class="file-item">
-      <div class="file-header">
-        <div class="file-info">
-          <div class="file-name">
             <span class="file-icon">📝</span>
-            <a href="README.md">README.md</a>
+            <a href="readme.md">readme.md</a>
           </div>
           <div class="file-meta">
-            <span>📁 5.2 KB</span>
-            <span>🕐 11/06/2025</span>
+            <span>📁 5.9 KB</span>
+            <span>🕐 15/06/2025</span>
           </div>
         </div>
       </div>
@@ -393,8 +364,8 @@
   </main>
 
   <footer style="margin-top: 3rem; padding: 2rem 0; border-top: 1px solid #e2e8f0; text-align: center; color: #64748b;">
-    <p><strong>Generated automatically</strong> • 2025-06-21T20:26:05.355Z</p>
-    <p>Directory: <code>public\exports\spec\06_scripts\export-button</code></p>
+    <p><strong>Generated automatically</strong> • 2025-06-21T20:26:05.228Z</p>
+    <p>Directory: <code>public\exports\spec\00_shortcut</code></p>
     
     <p>Part of the <a href="https://wellknownmcp.org" class="docs-link">WellKnownMCP ecosystem</a> • 
        <a href="https://wellknownmcp.org/spec" class="docs-link">Documentation</a> • 

@@ -1,38 +1,53 @@
 {
-  "generated_at": "2025-06-19T18:59:24.057Z",
-  "content_hash": "bfb35bbce89bfc9c22c27257eb421e6c",
+  "generated_at": "2025-06-21T20:26:05.078Z",
+  "content_hash": "b07483862c3567201368451bcbf730f1",
   "file_stats": [
     {
       "path": ".index-meta.json",
       "size": 843,
-      "mtime": 1750358643475
+      "mtime": 1750359564057
+    },
+    {
+      "path": "generate-llm-index.llmfeed.json",
+      "size": 5239,
+      "mtime": 1749653561134
+    },
+    {
+      "path": "generate-llm-index.prompt.llmfeed.json",
+      "size": 5239,
+      "mtime": 1749653049608
     },
     {
       "path": "generate-session-feed.llmfeed.json",
       "size": 3830,
-      "mtime": 1749568761722
+      "mtime": 1749568745598
     },
     {
       "path": "mcp-agent-behavior-override.llmfeed.json",
       "size": 16297,
-      "mtime": 1749568761792
+      "mtime": 1749568745610
     },
     {
       "path": "mcp-mode-activation.llmfeed.json",
       "size": 2202,
-      "mtime": 1749568762018
+      "mtime": 1749568745613
+    },
+    {
+      "path": "mcp_signature_readiness_test.llmfeed.json",
+      "size": 2270,
+      "mtime": 1749568745617
     },
     {
       "path": "prompt-index.llmfeed.json",
       "size": 2858,
-      "mtime": 1749568762110
+      "mtime": 1749568745617
     },
     {
       "path": "quickstart-agent-enablement.llmfeed.json",
       "size": 2212,
-      "mtime": 1749568762173
+      "mtime": 1749568745632
     }
   ],
-  "total_files": 6,
+  "total_files": 9,
   "generator_version": "2.0.0"
 }

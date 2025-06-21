@@ -1,13 +1,28 @@
 [
   {
+    "path": ".well-known/agent-behavior.llmfeed.json",
+    "slug": ".well-known/agent-behavior",
+    "feed_type": "agent_behavior",
+    "signed": false,
+    "certified": false,
+    "size": "0.5",
+    "title": "Agent Behavior Policy - WellKnownMCP",
+    "description": "Defines acceptable behaviors for agents interacting with WellKnownMCP.org.",
+    "mechanical_tags": [
+      "agent_behavior",
+      "unsigned"
+    ],
+    "enriched_tags": []
+  },
+  {
     "path": ".well-known/capabilities.llmfeed.json",
     "slug": ".well-known/capabilities",
     "feed_type": "unknown",
     "signed": true,
     "certified": false,
-    "size": "4.9",
-    "title": "MCP Declaration for wellknownmcp.org",
-    "description": "This site is agent-readable and offers verified MCP tools, feeds, and contribution endpoints.",
+    "size": "17.3",
+    "title": "Enhanced MCP Declaration for wellknownmcp.org",
+    "description": "This site offers verified MCP tools, feeds, and contribution endpoints with universal feed loading capabilities. Now featuring HTML-embedded JSON format for maximum LLM tool compatibility. The HTML API validates LLMFeed structure to maintain ecosystem quality.",
     "mechanical_tags": [
       "unknown",
       "signed"
@@ -18,14 +33,14 @@
     "path": ".well-known/exports/compiled-site.llmfeed.json",
     "slug": ".well-known/exports/compiled-site",
     "feed_type": "export",
-    "signed": true,
+    "signed": false,
     "certified": false,
-    "size": "95.9",
-    "title": "Compiled Site Feed (Enriched)",
-    "description": "A structured export of all major public-facing pages of wellknownmcp.org, enriched for LLM interpretability.",
+    "size": "558.9",
+    "title": "Compiled Site Feed (Full Content)",
+    "description": "Complete site content export with HTML+Markdown for deep agent analysis",
     "mechanical_tags": [
       "export",
-      "signed"
+      "unsigned"
     ],
     "enriched_tags": []
   },
@@ -45,16 +60,76 @@
     "enriched_tags": []
   },
   {
+    "path": ".well-known/exports/news-export.llmfeed.json",
+    "slug": ".well-known/exports/news-export",
+    "feed_type": "export",
+    "signed": false,
+    "certified": false,
+    "size": "580.6",
+    "title": "WellKnownMCP News Archive - Complete Export",
+    "description": "Complete archive of all WellKnownMCP news articles, tutorials, and advocacy pieces about the agentic web and MCP standards",
+    "mechanical_tags": [
+      "export",
+      "unsigned"
+    ],
+    "enriched_tags": []
+  },
+  {
+    "path": ".well-known/exports/spec-essential.llmfeed.json",
+    "slug": ".well-known/exports/spec-essential",
+    "feed_type": "export",
+    "signed": false,
+    "certified": false,
+    "size": "87.7",
+    "title": "LLMFeed Specification v2 - Complete Implementation Guide",
+    "description": "Comprehensive specification and implementation guide for LLMFeed/MCP. Contains complete algorithms, code examples, and practical guidance for developers and agents.",
+    "mechanical_tags": [
+      "export",
+      "unsigned"
+    ],
+    "enriched_tags": []
+  },
+  {
+    "path": ".well-known/exports/spec.llmfeed.json",
+    "slug": ".well-known/exports/spec",
+    "feed_type": "export",
+    "signed": true,
+    "certified": false,
+    "size": "560.8",
+    "title": "LLMFeed Specification v2 - Complete Implementation Guide",
+    "description": "Comprehensive specification and implementation guide for LLMFeed/MCP. Contains complete algorithms, code examples, and practical guidance for developers and agents.",
+    "mechanical_tags": [
+      "export",
+      "signed"
+    ],
+    "enriched_tags": []
+  },
+  {
     "path": ".well-known/llm-index.llmfeed.json",
     "slug": ".well-known/llm-index",
     "feed_type": "llm-index",
     "signed": true,
     "certified": false,
-    "size": "86.8",
-    "title": ".well-known\\llm-index",
-    "description": "",
+    "size": "39.5",
+    "title": "WellKnownMCP - Intelligent Discovery Hub",
+    "description": "Intelligent navigation system that guides agents and users to the perfect content based on context, intent, and expertise level. Transforms flat sitemaps into contextual discovery experiences.",
     "mechanical_tags": [
       "llm-index",
+      "signed"
+    ],
+    "enriched_tags": []
+  },
+  {
+    "path": ".well-known/manifesto.llmfeed.json",
+    "slug": ".well-known/manifesto",
+    "feed_type": "manifesto",
+    "signed": true,
+    "certified": false,
+    "size": "2.1",
+    "title": "LLMFeed Manifesto",
+    "description": "Declaration of intent and ethical foundation for MCP and LLMFeed",
+    "mechanical_tags": [
+      "manifesto",
       "signed"
     ],
     "enriched_tags": []
@@ -80,12 +155,42 @@
     "feed_type": "mcp",
     "signed": true,
     "certified": false,
-    "size": "11.7",
-    "title": "MCP Declaration of Intent  wellknownmcp.org",
-    "description": "This site offers not just structure but context, contribution, certification, and clarity for agents. Agents can fully understand the site using just spec.llmfeed.json and compiled-site.llmfeed.json.",
+    "size": "20.7",
+    "title": "MCP Declaration of Intent — wellknownmcp.org",
+    "description": "This site offers not just structure but context, contribution, certification, and clarity for agents. Agents can fully understand the site using just spec.llmfeed.json and compiled-site.llmfeed.json. Now featuring universal feed loading with CORS proxy support.",
     "mechanical_tags": [
       "mcp",
       "signed"
+    ],
+    "enriched_tags": []
+  },
+  {
+    "path": ".well-known/prompts/generate-llm-index.llmfeed.json",
+    "slug": ".well-known/prompts/generate-llm-index",
+    "feed_type": "prompt",
+    "signed": false,
+    "certified": false,
+    "size": "5.1",
+    "title": "Generate Intelligent LLM Index",
+    "description": "",
+    "mechanical_tags": [
+      "prompt",
+      "unsigned"
+    ],
+    "enriched_tags": []
+  },
+  {
+    "path": ".well-known/prompts/generate-llm-index.prompt.llmfeed.json",
+    "slug": ".well-known/prompts/generate-llm-index.prompt",
+    "feed_type": "prompt",
+    "signed": false,
+    "certified": false,
+    "size": "5.1",
+    "title": "Generate Intelligent LLM Index",
+    "description": "",
+    "mechanical_tags": [
+      "prompt",
+      "unsigned"
     ],
     "enriched_tags": []
   },
@@ -135,6 +240,21 @@
     "enriched_tags": []
   },
   {
+    "path": ".well-known/prompts/mcp_signature_readiness_test.llmfeed.json",
+    "slug": ".well-known/prompts/mcp_signature_readiness_test",
+    "feed_type": "unknown",
+    "signed": true,
+    "certified": false,
+    "size": "2.2",
+    "title": "MCP Signature Readiness Self-Test",
+    "description": "This self-signed prompt tests whether an LLM can correctly verify the signature of this prompt.llmfeed.json itself.",
+    "mechanical_tags": [
+      "unknown",
+      "signed"
+    ],
+    "enriched_tags": []
+  },
+  {
     "path": ".well-known/prompts/prompt-index.llmfeed.json",
     "slug": ".well-known/prompts/prompt-index",
     "feed_type": "prompt-index",
@@ -161,6 +281,51 @@
     "mechanical_tags": [
       "unknown",
       "signed"
+    ],
+    "enriched_tags": []
+  },
+  {
+    "path": ".well-known/schema.annotated.llmfeed.json",
+    "slug": ".well-known/schema.annotated",
+    "feed_type": "unknown",
+    "signed": false,
+    "certified": false,
+    "size": "4.9",
+    "title": ".well-known\\schema.annotated",
+    "description": "",
+    "mechanical_tags": [
+      "unknown",
+      "unsigned"
+    ],
+    "enriched_tags": []
+  },
+  {
+    "path": ".well-known/schema.lite.llmfeed.json",
+    "slug": ".well-known/schema.lite",
+    "feed_type": "unknown",
+    "signed": false,
+    "certified": false,
+    "size": "4.8",
+    "title": ".well-known\\schema.lite",
+    "description": "",
+    "mechanical_tags": [
+      "unknown",
+      "unsigned"
+    ],
+    "enriched_tags": []
+  },
+  {
+    "path": ".well-known/schema.llmfeed.json",
+    "slug": ".well-known/schema",
+    "feed_type": "unknown",
+    "signed": false,
+    "certified": false,
+    "size": "4.4",
+    "title": ".well-known\\schema",
+    "description": "",
+    "mechanical_tags": [
+      "unknown",
+      "unsigned"
     ],
     "enriched_tags": []
   },

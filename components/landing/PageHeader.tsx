@@ -77,7 +77,7 @@ export function PageHeader({ variant = 'default' }: PageHeaderProps) {
     
     business: {
       title: "Stop Paying for AI Scraping. Start Structured Interaction.",
-      subtitle: "Calculate your savings from agent-ready infrastructure. Early adopters save $136k annually while competitors pay escalating AI costs.",
+      subtitle: "Calculate your savings from agent-ready infrastructure. Early adopters save $ xxx k annually while competitors pay escalating AI costs.",
       primaryCta: {
         text: "💰 Calculate ROI",
         href: "#roi-calculator",

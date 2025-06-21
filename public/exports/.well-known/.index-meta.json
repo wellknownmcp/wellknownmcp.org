@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-06-19T18:59:23.767Z",
-  "content_hash": "4eed3ece2a04bc86e331a8b2a628de72",
+  "generated_at": "2025-06-21T20:26:05.169Z",
+  "content_hash": "b34e3956e85211683f882297aff8c022",
   "file_stats": [
     {
       "path": ".index-meta.json",
       "size": 2809,
-      "mtime": 1750358641890
+      "mtime": 1750359563760
     },
     {
       "path": "agent-behavior.llmfeed.json",
@@ -18,9 +18,14 @@
       "mtime": 1749977729887
     },
     {
+      "path": "exports/.index-meta.json",
+      "size": 794,
+      "mtime": 1750537565071
+    },
+    {
       "path": "exports/compiled-site.llmfeed.json",
-      "size": 572584,
-      "mtime": 1750358657346
+      "size": 572343,
+      "mtime": 1750359569332
     },
     {
       "path": "exports/manifesto.llmfeed.json",
@@ -33,14 +38,19 @@
       "mtime": 1750359236380
     },
     {
+      "path": "exports/spec-essential.llmfeed.json",
+      "size": 89773,
+      "mtime": 1750404293052
+    },
+    {
       "path": "exports/spec.llmfeed.json",
-      "size": 554027,
-      "mtime": 1750002968703
+      "size": 574307,
+      "mtime": 1750404293013
     },
     {
       "path": "llm-index.llmfeed.json",
-      "size": 40482,
-      "mtime": 1750358662339
+      "size": 40453,
+      "mtime": 1750359570515
     },
     {
       "path": "manifesto.llmfeed.json",
@@ -61,6 +71,11 @@
       "path": "mcp.llmfeed.json",
       "size": 21227,
       "mtime": 1750144416742
+    },
+    {
+      "path": "prompts/.index-meta.json",
+      "size": 1193,
+      "mtime": 1750537565079
     },
     {
       "path": "prompts/generate-llm-index.llmfeed.json",
@@ -123,6 +138,6 @@
       "mtime": 1749568745728
     }
   ],
-  "total_files": 24,
+  "total_files": 27,
   "generator_version": "2.0.0"
 }

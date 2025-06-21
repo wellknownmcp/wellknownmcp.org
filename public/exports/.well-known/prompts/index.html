@@ -65,7 +65,7 @@
     .header-subtitle { font-size: 0.9rem; opacity: 0.9; margin-top: 0.25rem; }
     
     .docs-link {
-      color: white; text-decoration: none; font-size: 0.9rem;
+      color: black; text-decoration: none; font-size: 0.9rem;
       padding: 0.25rem 0.5rem; border-radius: 4px;
       border: 1px solid rgba(255,255,255,0.3);
       transition: background-color 0.2s;
@@ -157,20 +157,20 @@
 
   <div class="stats">
     <div class="stat">
-      <div class="stat-number">6</div>
+      <div class="stat-number">9</div>
       <div class="stat-label">Total Files</div>
     </div>
     <div class="stat">
-      <div class="stat-number">6</div>
+      <div class="stat-number">9</div>
       <div class="stat-label">JSON Files</div>
     </div>
     
     <div class="stat">
-      <div class="stat-number">5</div>
+      <div class="stat-number">8</div>
       <div class="stat-label">LLMFeed Files</div>
     </div>
     <div class="stat">
-      <div class="stat-number">5</div>
+      <div class="stat-number">8</div>
       <div class="stat-label">Valid Feeds</div>
     </div>
     <div class="stat">
@@ -182,6 +182,310 @@
 
   <main>
     
+    <section class="category">
+      <div class="category-header">
+        <div class="header-left">
+          <span style="font-size: 1.2em;">💬</span>
+          <div>
+            <div class="header-title">Certified Prompts</div>
+            <div class="header-subtitle">Reusable prompt templates for common tasks</div>
+          </div>
+        </div>
+        <a href="https://wellknownmcp.org/spec/02_llmfeed_feedtype/llmfeed_feedtype_prompt" class="docs-link">📚 Docs</a>
+      </div>
+      
+      <ul class="file-list">
+        
+    <li class="file-item">
+      <details>
+        <summary class="file-header">
+          <div class="file-info">
+            <div class="file-name">
+              <span class="file-icon">📄</span>
+              <a href="generate-llm-index.llmfeed.json">generate-llm-index.llmfeed.json</a>
+              
+              
+            </div>
+            <div class="file-description">No description available</div>
+            <div class="file-meta">
+              <span>🏷️ prompt</span>
+              
+              <span>🔖 v1.0.0</span>
+              
+              <span>📁 5.1 KB</span>
+              <span class="trust-badge trust-basic">basic</span>
+            </div>
+          </div>
+          <span style="color: #94a3b8;">🔍 View Content</span>
+        </summary>
+        
+        
+        
+        
+        <pre class="json-content">{
+  "feed_type": "prompt",
+  "metadata": {
+    "title": "Generate Intelligent LLM Index",
+    "origin": "https://wellknownmcp.org",
+    "author": "WellKnownMCP Foundation",
+    "created_at": "2025-06-10T14:30:00Z",
+    "version": "1.0.0"
+  },
+  "intent": "generate_llm_index_from_site_structure",
+  "context": "User provides their sitemap and feed list, wants a complete llm-index.llmfeed.json",
+  "precision_level": "ultra-strict",
+  "result_expected": "llm-index",
+  "process_mode": "structured_generation",
+  "prompt_body": "You are an expert in the LLMFeed specification and website architecture. I need you to generate a comprehensive `llm-index.llmfeed.json` file for my website.\n\n## Instructions:\n1. Analyze the provided sitemap and feed structure\n2. Categorize feeds by purpose (core_infrastructure, documentation, tools_and_utilities, examples_and_demos)\n3. Assign appropriate priorities (critical for .well-known/, high for main docs, medium for tools, low for examples)\n4. Create audience-based entry points (developers, business, agents)\n5. Include smart routing recommendations\n6. Estimate token counts based on content complexity\n7. Follow the complete llm-index specification structure\n\n## Site Information Template:\n**Site URL:** [USER PROVIDES]\n**Main Sections:** [USER LISTS: /docs/, /api/, /tools/, etc.]\n**Existing LLMFeed Files:** [USER LISTS: /.well-known/mcp.llmfeed.json, /exports/faq.llmfeed.json, etc.]\n**Sitemap XML:** [USER PASTES]\n**Site Type:** [e-commerce/saas/blog/corporate/etc.]\n**Target Audiences:** [developers/business/end-users/etc.]\n\n## Output Requirements:\n- Complete valid JSON following llm-index.llmfeed.json specification\n- Include all required blocks: metadata, discovery_guidance, categories, index, agent_guidance\n- Categorize all feeds logically\n- Set realistic priorities and complexity levels\n- Create audience-specific entry points\n- Include smart routing recommendations\n- Add appropriate tags for each entry\n- Estimate tokens realistically (API docs ~2000, simple feeds ~400, complex exports ~1500)\n\n## Quality Checklist:\n✅ Valid JSON structure\n✅ All feeds categorized appropriately\n✅ Priorities reflect actual importance\n✅ Entry points match audiences\n✅ Token estimates seem reasonable\n✅ Agent guidance is actionable\n✅ Categories have clear descriptions\n\nRespond with ONLY the complete JSON structure, no additional text.",
+  "input_variables": [
+    {
+      "name": "site_url",
+      "description": "The base URL of the website",
+      "required": true,
+      "example": "https://example.com"
+    },
+    {
+      "name": "sitemap_xml",
+      "description": "The complete sitemap.xml content",
+      "required": true,
+      "example": "<?xml version=\"1.0\"?><urlset>...</urlset>"
+    },
+    {
+      "name": "existing_feeds",
+      "description": "List of existing .llmfeed.json files with their purposes",
+      "required": true,
+      "example": [
+        "/.well-known/mcp.llmfeed.json (main declaration)",
+        "/exports/docs.llmfeed.json (documentation)"
+      ]
+    },
+    {
+      "name": "site_sections",
+      "description": "Main sections/directories of the website",
+      "required": true,
+      "example": [
+        "/docs/ (documentation)",
+        "/api/ (developer APIs)",
+        "/tools/ (utilities)"
+      ]
+    },
+    {
+      "name": "site_type",
+      "description": "Type of website for context",
+      "required": false,
+      "example": "saas_platform"
+    },
+    {
+      "name": "target_audiences",
+      "description": "Primary audiences for the site",
+      "required": false,
+      "example": [
+        "developers",
+        "business_users"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "title": "SaaS Platform Example",
+      "input": {
+        "site_url": "https://apiplatform.com",
+        "site_type": "saas_platform",
+        "target_audiences": [
+          "developers",
+          "business"
+        ],
+        "existing_feeds": [
+          "/.well-known/mcp.llmfeed.json (main platform declaration)",
+          "/.well-known/capabilities.llmfeed.json (API capabilities)",
+          "/exports/docs/api-reference.llmfeed.json (API documentation)"
+        ],
+        "site_sections": [
+          "/docs/ (comprehensive API documentation)",
+          "/tools/ (developer utilities and SDKs)",
+          "/pricing/ (subscription plans)",
+          "/dashboard/ (user interface)"
+        ]
+      },
+      "expected_categories": [
+        "core_infrastructure",
+        "api_documentation",
+        "developer_tools",
+        "business_info"
+      ],
+      "expected_entry_points": {
+        "developers": "/exports/docs/api-reference.llmfeed.json",
+        "business": "/.well-known/mcp.llmfeed.json"
+      }
+    }
+  ],
+  "agent_guidance": {
+    "interaction_tone": "professional",
+    "output_format": "pure_json",
+    "validation_required": true,
+    "fallback_behavior": "request_clarification",
+    "custom_notes": "This prompt generates the foundation of intelligent site discovery. Accuracy is critical."
+  },
+  "trust": {
+    "signed_blocks": [
+      "prompt_body",
+      "input_variables",
+      "examples"
+    ],
+    "scope": "partial",
+    "certifier": "https://wellknownmcp.org",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem"
+  }
+}</pre>
+        
+      </details>
+    </li>
+    <li class="file-item">
+      <details>
+        <summary class="file-header">
+          <div class="file-info">
+            <div class="file-name">
+              <span class="file-icon">📄</span>
+              <a href="generate-llm-index.prompt.llmfeed.json">generate-llm-index.prompt.llmfeed.json</a>
+              
+              
+            </div>
+            <div class="file-description">No description available</div>
+            <div class="file-meta">
+              <span>🏷️ prompt</span>
+              
+              <span>🔖 v1.0.0</span>
+              
+              <span>📁 5.1 KB</span>
+              <span class="trust-badge trust-basic">basic</span>
+            </div>
+          </div>
+          <span style="color: #94a3b8;">🔍 View Content</span>
+        </summary>
+        
+        
+        
+        
+        <pre class="json-content">{
+  "feed_type": "prompt",
+  "metadata": {
+    "title": "Generate Intelligent LLM Index",
+    "origin": "https://wellknownmcp.org",
+    "author": "WellKnownMCP Foundation",
+    "created_at": "2025-06-10T14:30:00Z",
+    "version": "1.0.0"
+  },
+  "intent": "generate_llm_index_from_site_structure",
+  "context": "User provides their sitemap and feed list, wants a complete llm-index.llmfeed.json",
+  "precision_level": "ultra-strict",
+  "result_expected": "llm-index",
+  "process_mode": "structured_generation",
+  "prompt_body": "You are an expert in the LLMFeed specification and website architecture. I need you to generate a comprehensive `llm-index.llmfeed.json` file for my website.\n\n## Instructions:\n1. Analyze the provided sitemap and feed structure\n2. Categorize feeds by purpose (core_infrastructure, documentation, tools_and_utilities, examples_and_demos)\n3. Assign appropriate priorities (critical for .well-known/, high for main docs, medium for tools, low for examples)\n4. Create audience-based entry points (developers, business, agents)\n5. Include smart routing recommendations\n6. Estimate token counts based on content complexity\n7. Follow the complete llm-index specification structure\n\n## Site Information Template:\n**Site URL:** [USER PROVIDES]\n**Main Sections:** [USER LISTS: /docs/, /api/, /tools/, etc.]\n**Existing LLMFeed Files:** [USER LISTS: /.well-known/mcp.llmfeed.json, /exports/faq.llmfeed.json, etc.]\n**Sitemap XML:** [USER PASTES]\n**Site Type:** [e-commerce/saas/blog/corporate/etc.]\n**Target Audiences:** [developers/business/end-users/etc.]\n\n## Output Requirements:\n- Complete valid JSON following llm-index.llmfeed.json specification\n- Include all required blocks: metadata, discovery_guidance, categories, index, agent_guidance\n- Categorize all feeds logically\n- Set realistic priorities and complexity levels\n- Create audience-specific entry points\n- Include smart routing recommendations\n- Add appropriate tags for each entry\n- Estimate tokens realistically (API docs ~2000, simple feeds ~400, complex exports ~1500)\n\n## Quality Checklist:\n✅ Valid JSON structure\n✅ All feeds categorized appropriately\n✅ Priorities reflect actual importance\n✅ Entry points match audiences\n✅ Token estimates seem reasonable\n✅ Agent guidance is actionable\n✅ Categories have clear descriptions\n\nRespond with ONLY the complete JSON structure, no additional text.",
+  "input_variables": [
+    {
+      "name": "site_url",
+      "description": "The base URL of the website",
+      "required": true,
+      "example": "https://example.com"
+    },
+    {
+      "name": "sitemap_xml",
+      "description": "The complete sitemap.xml content",
+      "required": true,
+      "example": "<?xml version=\"1.0\"?><urlset>...</urlset>"
+    },
+    {
+      "name": "existing_feeds",
+      "description": "List of existing .llmfeed.json files with their purposes",
+      "required": true,
+      "example": [
+        "/.well-known/mcp.llmfeed.json (main declaration)",
+        "/exports/docs.llmfeed.json (documentation)"
+      ]
+    },
+    {
+      "name": "site_sections",
+      "description": "Main sections/directories of the website",
+      "required": true,
+      "example": [
+        "/docs/ (documentation)",
+        "/api/ (developer APIs)",
+        "/tools/ (utilities)"
+      ]
+    },
+    {
+      "name": "site_type",
+      "description": "Type of website for context",
+      "required": false,
+      "example": "saas_platform"
+    },
+    {
+      "name": "target_audiences",
+      "description": "Primary audiences for the site",
+      "required": false,
+      "example": [
+        "developers",
+        "business_users"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "title": "SaaS Platform Example",
+      "input": {
+        "site_url": "https://apiplatform.com",
+        "site_type": "saas_platform",
+        "target_audiences": [
+          "developers",
+          "business"
+        ],
+        "existing_feeds": [
+          "/.well-known/mcp.llmfeed.json (main platform declaration)",
+          "/.well-known/capabilities.llmfeed.json (API capabilities)",
+          "/exports/docs/api-reference.llmfeed.json (API documentation)"
+        ],
+        "site_sections": [
+          "/docs/ (comprehensive API documentation)",
+          "/tools/ (developer utilities and SDKs)",
+          "/pricing/ (subscription plans)",
+          "/dashboard/ (user interface)"
+        ]
+      },
+      "expected_categories": [
+        "core_infrastructure",
+        "api_documentation",
+        "developer_tools",
+        "business_info"
+      ],
+      "expected_entry_points": {
+        "developers": "/exports/docs/api-reference.llmfeed.json",
+        "business": "/.well-known/mcp.llmfeed.json"
+      }
+    }
+  ],
+  "agent_guidance": {
+    "interaction_tone": "professional",
+    "output_format": "pure_json",
+    "validation_required": true,
+    "fallback_behavior": "request_clarification",
+    "custom_notes": "This prompt generates the foundation of intelligent site discovery. Accuracy is critical."
+  },
+  "trust": {
+    "signed_blocks": [
+      "prompt_body",
+      "input_variables",
+      "examples"
+    ],
+    "scope": "partial",
+    "certifier": "https://wellknownmcp.org",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem"
+  }
+}</pre>
+        
+      </details>
+    </li>
+      </ul>
+    </section>
     <section class="category">
       <div class="category-header">
         <div class="header-left">
@@ -256,6 +560,20 @@
         <div class="file-info">
           <div class="file-name">
             <span class="file-icon">📄</span>
+            <a href="mcp_signature_readiness_test.llmfeed.json">mcp_signature_readiness_test.llmfeed.json</a>
+          </div>
+          <div class="file-meta">
+            <span>📁 2.2 KB</span>
+            <span>🕐 10/06/2025</span>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="file-item">
+      <div class="file-header">
+        <div class="file-info">
+          <div class="file-name">
+            <span class="file-icon">📄</span>
             <a href="prompt-index.llmfeed.json">prompt-index.llmfeed.json</a>
           </div>
           <div class="file-meta">
@@ -284,7 +602,7 @@
   </main>
 
   <footer style="margin-top: 3rem; padding: 2rem 0; border-top: 1px solid #e2e8f0; text-align: center; color: #64748b;">
-    <p><strong>Generated automatically</strong> • 2025-06-19T18:59:24.054Z</p>
+    <p><strong>Generated automatically</strong> • 2025-06-21T20:26:05.074Z</p>
     <p>Directory: <code>public\exports\.well-known\prompts</code></p>
     
     <p>Part of the <a href="https://wellknownmcp.org" class="docs-link">WellKnownMCP ecosystem</a> • 

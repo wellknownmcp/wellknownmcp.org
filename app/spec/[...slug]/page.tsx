@@ -1,10 +1,11 @@
-// page.tsx - Version corrigée avec gestion d'erreur améliorée
-import fs from 'fs'
+// page.tsx - Version corrigée avec parsing markdown intégré
+import fs from 'fs/promises' // ✅ Asynchrone pour Next.js 13+
 import path from 'path'
 import matter from 'gray-matter'
 import { redirect, notFound } from 'next/navigation'
 import SeoHead from '@/components/SeoHead'
-import SpecPageClient from '@/components/spec/SpecPageClient'
+import SpecPage from '@/components/spec/SpecPage' // ✅ Plus "Client"
+import { parseMarkdownSSR } from '@/utils/parseMarkdownSSR' // ✅ Parser SSR
 
 // 🎯 Fonction pour mapper frontmatter → SeoHead (TOUTES LES FONCTIONNALITÉS CONSERVÉES)
 function getFrontmatterSeoProps(front: any, canonicalUrl: string, fallbackTitle: string) {
@@ -43,7 +44,8 @@ function getFrontmatterSeoProps(front: any, canonicalUrl: string, fallbackTitle:
   }
 }
 
-export default function SpecPage({ params }: { params: { slug?: string[] } }) {
+// ✅ ASYNC server component pour Next.js 13+
+export default async function SpecPageServer({ params }: { params: { slug?: string[] } }) {
   const slug = params.slug?.join('/') ?? ''
   const cleanSlug = slug.replace(/\.md$/, '')
 
@@ -54,24 +56,31 @@ export default function SpecPage({ params }: { params: { slug?: string[] } }) {
   const mdPath = path.join(
     process.cwd(),
     'public',
-    'exports',
+    'exports', 
     'spec',
     `${cleanSlug}.md`
   )
 
-  if (!fs.existsSync(mdPath)) {
+  // ✅ Vérification asynchrone de l'existence du fichier
+  try {
+    await fs.access(mdPath)
+  } catch {
     notFound()
   }
 
-  let mdContent: string
   let front: any
-  let content: string
+  let htmlContent: string
 
   try {
-    mdContent = fs.readFileSync(mdPath, 'utf-8')
+    // ✅ Lecture asynchrone du fichier
+    const mdContent = await fs.readFile(mdPath, 'utf-8')
     const parsed = matter(mdContent)
     front = parsed.data || {}
-    content = parsed.content
+    const content = parsed.content
+    
+    // ✅ PARSING MARKDOWN ICI (dans le vrai serveur)
+    htmlContent = parseMarkdownSSR(content, cleanSlug)
+    
   } catch (error) {
     console.error('Erreur parsing markdown:', error)
     notFound()
@@ -92,12 +101,65 @@ export default function SpecPage({ params }: { params: { slug?: string[] } }) {
     <>
       <SeoHead {...seoProps} />
       
-      {/* ✅ Votre SpecPageClient existant - AUCUN CHANGEMENT */}
-      <SpecPageClient
+      {/* ✅ SpecPage SSR avec HTML déjà parsé */}
+      <SpecPage
         slug={cleanSlug}
-        content={content}
+        htmlContent={htmlContent} // ✅ HTML parsé, plus markdown brut
         front={front}
       />
     </>
   )
+}
+
+// ✅ Génération des métadonnées (CONSERVÉE et améliorée)
+export async function generateMetadata({ params }: { params: { slug?: string[] } }) {
+  const slug = params.slug?.join('/') ?? ''
+  const cleanSlug = slug.replace(/\.md$/, '')
+  
+  if (!cleanSlug) {
+    return {
+      title: 'LLMFeed Specification',
+      description: 'Complete specification for LLMFeed protocol'
+    }
+  }
+
+  const mdPath = path.join(
+    process.cwd(),
+    'public',
+    'exports',
+    'spec',
+    `${cleanSlug}.md`
+  )
+
+  try {
+    const mdContent = await fs.readFile(mdPath, 'utf-8')
+    const { data: front } = matter(mdContent)
+    
+    const titleParts = cleanSlug
+      .split('/')
+      .map((part) => part.replace(/[_\-]/g, ' '))
+    const pageTitle = front?.title || `Spec: ${titleParts.join(' / ')}`
+    
+    return {
+      title: pageTitle,
+      description: front?.description || `Documentation for ${cleanSlug}`,
+      keywords: front?.tags?.join(', '),
+      openGraph: {
+        title: pageTitle,
+        description: front?.description,
+        images: [front?.image || 'https://wellknownmcp.org/og/spec.png'],
+        url: front?.canonical_url || `https://wellknownmcp.org/spec/${cleanSlug}`,
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: pageTitle,
+        description: front?.description,
+      }
+    }
+  } catch {
+    return {
+      title: 'Specification Not Found',
+      description: 'The requested specification could not be found.'
+    }
+  }
 }

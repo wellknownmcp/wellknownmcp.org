@@ -4,10 +4,10 @@
     "title": "WellKnownMCP - Intelligent Discovery Hub",
     "origin": "https://wellknownmcp.org",
     "description": "Intelligent navigation system that guides agents and users to the perfect content based on context, intent, and expertise level. Transforms flat sitemaps into contextual discovery experiences.",
-    "generated_at": "2025-06-20T14:21:18.425500Z",
+    "generated_at": "2025-06-21T20:26:24.331731Z",
     "version": "2.1.0",
     "total_feeds": "7",
-    "total_pages": "42",
+    "total_pages": "48",
     "tags": [
       "navigation",
       "discovery",
@@ -18,78 +18,31 @@
     "content_type": "navigation_hub",
     "lang": "en",
     "build_stats": {
-      "urls_processed": 42,
+      "urls_processed": 48,
       "categories_created": 5,
       "routes_generated": 0,
       "enrichments_applied": 0,
-      "versions_detected": 13,
-      "build_time": 0.331023,
-      "crawling_alternative_tokens": 294000,
+      "versions_detected": 18,
+      "build_time": 0.021852,
+      "crawling_alternative_tokens": 336000,
       "index_tokens": 875,
       "efficiency_gain": "99.7%",
-      "token_savings": "~293,125 tokens saved"
+      "token_savings": "~335,125 tokens saved"
     },
     "version_support": {
       "enabled": true,
-      "versions_detected": 13,
-      "version_coverage": "260.0%"
+      "versions_detected": 18,
+      "version_coverage": "360.0%"
     }
-  },
-  "trust": {
-    "signed_blocks": [
-      "feed_type",
-      "metadata",
-      "discovery_guidance",
-      "feed_categories",
-      "smart_routing",
-      "agent_behavior_recommendations",
-      "trust",
-      "agent_guidance",
-      "maintenance_info"
-    ],
-    "trust_level": "demonstration",
-    "agent_hint": "This index is fully signed and provides comprehensive navigation. Trust the routing recommendations and use priority indicators for resource allocation.",
-    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
-    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
-    "scope": "full",
-    "algorithm": "ed25519",
-    "warning": "This feed is fully signed."
-  },
-  "signature": {
-    "value": "ZE+Oj7StwCKCEnT19BRyzAqNYOdUeThXTm+nnBf+CbWxS+T5LCuO14qbdZt2DsirQurD3nDj/XJgWmCoEn97Aw==",
-    "created_at": "2025-06-20T19:17:12.871463+00:00"
-  },
-  "_meta": {
-    "signed_at": "2025-06-20T19:17:12.871463+00:00"
-  },
-  "agent_behavior_recommendations": {
-    "discovery_strategy": {},
-    "trust_evaluation": {},
-    "resource_optimization": {}
-  },
-  "agent_guidance": {
-    "interaction_tone": "helpful_and_precise",
-    "discovery_depth": "adaptive_based_on_context",
-    "trust_weight": "high_priority_to_signed_content",
-    "fallback_behavior": "graceful_degradation_with_alternatives",
-    "performance_optimization": "enabled_with_prefetch_hints",
-    "custom_notes": "This index enables intelligent feed discovery. Use audience and intent filters for optimal navigation.",
-    "recommended_usage": [
-      "Start with your audience-specific entry point",
-      "Follow recommended sequences for efficient learning",
-      "Use intent-based routing for specific tasks",
-      "Leverage trust indicators for decision making",
-      "Apply resource optimization based on your constraints"
-    ]
   },
   "discovery_guidance": {
     "recommended_entry_points": {},
     "high_priority_feeds": [
       "/ecosystem",
       "/feeds",
-      "/spec",
+      "/sdk",
       "/llmfeedhub",
-      "/sdk"
+      "/tools/api-explained"
     ],
     "navigation_philosophy": "Context-aware routing that adapts to agent capabilities, user expertise, and specific intentions. Every URL is enriched with audience targeting, intent mapping, and trust indicators.",
     "usage_instructions": {
@@ -295,15 +248,15 @@
           ],
           "importance": "critical",
           "tags": [
-            "community",
-            "agent",
-            "structured",
             "announcements",
-            "handshake",
+            "structured",
+            "autonomous",
             "news",
             "protocol",
-            "autonomous",
-            "updates"
+            "updates",
+            "handshake",
+            "community",
+            "agent"
           ],
           "version": "agent",
           "version_audience": [
@@ -327,15 +280,15 @@
           ],
           "importance": "critical",
           "tags": [
-            "ecosystem",
-            "autonomous",
-            "agent",
-            "structured",
             "partners",
-            "handshake",
-            "protocol",
             "directory",
-            "network"
+            "structured",
+            "autonomous",
+            "protocol",
+            "ecosystem",
+            "handshake",
+            "network",
+            "agent"
           ],
           "version": "agent",
           "version_audience": [
@@ -376,6 +329,34 @@
       ],
       "trust_level": "signed",
       "feeds": [
+        {
+          "url": "https://wellknownmcp.org/?v=agent",
+          "title": "Multi-Version Homepage - MCP Discovery Hub",
+          "description": "Agent-optimized interface with direct feed access, protocol validation, and structured metadata for autonomous AI systems.",
+          "intent": "protocol_handshake_and_discovery",
+          "audience": [
+            "llm",
+            "agent",
+            "ai-system",
+            "autonomous"
+          ],
+          "importance": "critical",
+          "tags": [
+            "structured",
+            "general",
+            "autonomous",
+            "protocol",
+            "handshake",
+            "agent"
+          ],
+          "version": "agent",
+          "version_audience": [
+            "llm",
+            "agent",
+            "ai-system",
+            "autonomous"
+          ]
+        },
         {
           "url": "https://wellknownmcp.org/feeds",
           "title": "Feeds",
@@ -429,6 +410,19 @@
           ]
         },
         {
+          "url": "https://wellknownmcp.org/faq",
+          "title": "Frequently Asked Questions",
+          "description": "Frequently asked questions about MCP",
+          "intent": "inform",
+          "audience": [
+            "general"
+          ],
+          "importance": "high",
+          "tags": [
+            "general"
+          ]
+        },
+        {
           "url": "https://wellknownmcp.org/legal",
           "title": "Legal",
           "description": "Resource about legal",
@@ -442,17 +436,291 @@
           ]
         },
         {
-          "url": "https://wellknownmcp.org/faq",
-          "title": "Frequently Asked Questions",
-          "description": "Frequently asked questions about MCP",
-          "intent": "inform",
+          "url": "https://wellknownmcp.org/?v=tech",
+          "title": "Multi-Version Homepage - MCP Discovery Hub",
+          "description": "Technical deep-dive into MCP implementation with code examples, performance benchmarks, and detailed integration guides for developers.",
+          "intent": "implement_and_integrate_technically",
           "audience": [
-            "general"
+            "developer",
+            "technical",
+            "implementer",
+            "software-engineer"
           ],
           "importance": "high",
           "tags": [
-            "general"
+            "general",
+            "code",
+            "technical",
+            "performance",
+            "implementation",
+            "api"
+          ],
+          "version": "tech",
+          "version_audience": [
+            "developer",
+            "technical",
+            "implementer",
+            "software-engineer"
           ]
+        },
+        {
+          "url": "https://wellknownmcp.org/?v=tech",
+          "title": "Multi-Version Homepage - MCP Discovery Hub",
+          "description": "Technical deep-dive into MCP implementation with code examples, performance benchmarks, and detailed integration guides for developers.",
+          "intent": "implement_and_integrate_technically",
+          "audience": [
+            "developer",
+            "technical",
+            "implementer",
+            "software-engineer"
+          ],
+          "importance": "high",
+          "tags": [
+            "general",
+            "code",
+            "technical",
+            "performance",
+            "implementation",
+            "api"
+          ],
+          "version": "tech",
+          "version_audience": [
+            "developer",
+            "technical",
+            "implementer",
+            "software-engineer"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/?v=simple",
+          "title": "Multi-Version Homepage - MCP Discovery Hub",
+          "description": "Simplified introduction to MCP protocol designed for beginners and first-time visitors. Clear explanations without technical complexity.",
+          "intent": "understand_basics_and_get_started",
+          "audience": [
+            "newcomer",
+            "general",
+            "learning"
+          ],
+          "importance": "high",
+          "tags": [
+            "clear",
+            "introduction",
+            "general",
+            "beginner",
+            "getting-started"
+          ],
+          "version": "simple",
+          "version_audience": [
+            "newcomer",
+            "general",
+            "learning"
+          ]
+        },
+        {
+          "url": "https://wellknownmcp.org/?v=rabbit",
+          "title": "Multi-Version Homepage - MCP Discovery Hub",
+          "description": "Complete MCP ecosystem exploration with maximum information density, all tools, capabilities, and hidden features revealed.",
+          "intent": "explore_everything_comprehensively",
+          "audience": [
+            "explorer",
+            "maximalist",
+            "power-user",
+            "researcher"
+          ],
+          "importance": "medium",
+          "tags": [
+            "complete",
+            "general",
+            "maximalist",
+            "comprehensive",
+            "advanced",
+            "exploration"
+          ],
+          "version": "rabbit",
+          "version_audience": [
+            "explorer",
+            "maximalist",
+            "power-user",
+            "researcher"
+          ]
+        }
+      ]
+    },
+    "specialized_tools": {
+      "title": "Developer Tools & Utilities",
+      "description": "Interactive tools and utilities for implementation, testing, and hands-on learning. Where theory meets practice.",
+      "entry_path": "/tools/export-button",
+      "audience": [
+        "developer",
+        "implementer",
+        "tester",
+        "webmaster"
+      ],
+      "trust_level": "signed",
+      "feeds": [
+        {
+          "url": "https://wellknownmcp.org/llmfeedhub",
+          "title": "LLMFeed Testing Platform",
+          "description": "Resource about llmfeedhub",
+          "intent": "test_and_simulate",
+          "audience": [
+            "developer",
+            "tester",
+            "explorer"
+          ],
+          "importance": "high",
+          "tags": [
+            "platform",
+            "testing",
+            "simulation",
+            "interactive"
+          ],
+          "content_type": "testing_platform"
+        },
+        {
+          "url": "https://wellknownmcp.org/tools/api-explained",
+          "title": "Tools - Api Explained",
+          "description": "Tool for api explained - implementation guide and utilities",
+          "intent": "implement_and_test",
+          "audience": [
+            "developer",
+            "implementer",
+            "tester"
+          ],
+          "importance": "high",
+          "tags": [
+            "tools",
+            "utility",
+            "interactive",
+            "hands-on"
+          ],
+          "content_type": "interactive_tool"
+        },
+        {
+          "url": "https://wellknownmcp.org/tools/agent-behavior",
+          "title": "Tools - Agent Behavior",
+          "description": "Agent-optimized interface with direct feed access, protocol validation, and structured metadata for autonomous AI systems.",
+          "intent": "protocol_handshake_and_discovery",
+          "audience": [
+            "llm",
+            "agent",
+            "ai-system",
+            "autonomous"
+          ],
+          "importance": "high",
+          "tags": [
+            "structured",
+            "hands-on",
+            "tools",
+            "autonomous",
+            "utility",
+            "protocol",
+            "interactive",
+            "handshake",
+            "agent"
+          ],
+          "version": "agent",
+          "version_audience": [
+            "llm",
+            "agent",
+            "ai-system",
+            "autonomous"
+          ],
+          "content_type": "interactive_tool"
+        },
+        {
+          "url": "https://wellknownmcp.org/tools/export-button",
+          "title": "Tools - Export Button",
+          "description": "Agent-optimized interface with direct feed access, protocol validation, and structured metadata for autonomous AI system...",
+          "intent": "protocol_handshake_and_discovery",
+          "audience": [
+            "llm",
+            "agent",
+            "ai-system",
+            "autonomous"
+          ],
+          "importance": "high",
+          "tags": [
+            "structured",
+            "hands-on",
+            "tools",
+            "autonomous",
+            "utility",
+            "protocol",
+            "interactive",
+            "handshake",
+            "agent"
+          ],
+          "content_type": "interactive_tool"
+        },
+        {
+          "url": "https://wellknownmcp.org/tools/sign-and-verify",
+          "title": "Tools - Sign And Verify",
+          "description": "Agent-optimized interface with direct feed access, protocol validation, and structured metadata for autonomous AI system...",
+          "intent": "protocol_handshake_and_discovery",
+          "audience": [
+            "llm",
+            "agent",
+            "ai-system",
+            "autonomous"
+          ],
+          "importance": "high",
+          "tags": [
+            "structured",
+            "hands-on",
+            "tools",
+            "autonomous",
+            "utility",
+            "protocol",
+            "interactive",
+            "handshake",
+            "agent"
+          ],
+          "content_type": "interactive_tool"
+        },
+        {
+          "url": "https://wellknownmcp.org/verify",
+          "title": "Feed Verification Tool",
+          "description": "Tool for verifying MCP feed signatures",
+          "intent": "verify_and_audit",
+          "audience": [
+            "security",
+            "developer",
+            "auditor"
+          ],
+          "importance": "high",
+          "tags": [
+            "security",
+            "verification",
+            "trust",
+            "cryptography"
+          ],
+          "content_type": "security_tool"
+        },
+        {
+          "url": "https://wellknownmcp.org/tools/well-known",
+          "title": "Tools - Well Known",
+          "description": "Agent-optimized interface with direct feed access, protocol validation, and structured metadata for autonomous AI system...",
+          "intent": "protocol_handshake_and_discovery",
+          "audience": [
+            "llm",
+            "agent",
+            "ai-system",
+            "autonomous"
+          ],
+          "importance": "high",
+          "tags": [
+            "structured",
+            "hands-on",
+            "tools",
+            "autonomous",
+            "utility",
+            "protocol",
+            "interactive",
+            "handshake",
+            "agent"
+          ],
+          "content_type": "interactive_tool"
         }
       ]
     },
@@ -500,15 +768,15 @@
           ],
           "importance": "high",
           "tags": [
-            "reference",
-            "agent",
-            "specification",
             "structured",
+            "specification",
+            "reference",
+            "autonomous",
             "technical",
+            "protocol",
             "authoritative",
             "handshake",
-            "protocol",
-            "autonomous"
+            "agent"
           ],
           "version": "agent",
           "version_audience": [
@@ -532,15 +800,15 @@
           ],
           "importance": "high",
           "tags": [
-            "reference",
-            "agent",
-            "specification",
             "structured",
+            "specification",
+            "reference",
+            "autonomous",
             "technical",
+            "protocol",
             "authoritative",
             "handshake",
-            "protocol",
-            "autonomous"
+            "agent"
           ],
           "version": "agent",
           "version_audience": [
@@ -564,15 +832,15 @@
           ],
           "importance": "high",
           "tags": [
-            "reference",
-            "agent",
-            "specification",
             "structured",
+            "specification",
+            "reference",
+            "autonomous",
             "technical",
+            "protocol",
             "authoritative",
             "handshake",
-            "protocol",
-            "autonomous"
+            "agent"
           ],
           "version": "agent",
           "version_audience": [
@@ -596,15 +864,15 @@
           ],
           "importance": "high",
           "tags": [
-            "reference",
-            "agent",
-            "specification",
             "structured",
+            "specification",
+            "reference",
+            "autonomous",
             "technical",
+            "protocol",
             "authoritative",
             "handshake",
-            "protocol",
-            "autonomous"
+            "agent"
           ],
           "version": "agent",
           "version_audience": [
@@ -628,15 +896,15 @@
           ],
           "importance": "high",
           "tags": [
-            "reference",
-            "agent",
-            "specification",
             "structured",
+            "specification",
+            "reference",
+            "autonomous",
             "technical",
+            "protocol",
             "authoritative",
             "handshake",
-            "protocol",
-            "autonomous"
+            "agent"
           ],
           "version": "agent",
           "version_audience": [
@@ -660,15 +928,15 @@
           ],
           "importance": "high",
           "tags": [
-            "reference",
-            "agent",
-            "specification",
             "structured",
+            "specification",
+            "reference",
+            "autonomous",
             "technical",
+            "protocol",
             "authoritative",
             "handshake",
-            "protocol",
-            "autonomous"
+            "agent"
           ],
           "version": "agent",
           "version_audience": [
@@ -692,15 +960,15 @@
           ],
           "importance": "high",
           "tags": [
-            "reference",
-            "agent",
-            "specification",
             "structured",
+            "specification",
+            "reference",
+            "autonomous",
             "technical",
+            "protocol",
             "authoritative",
             "handshake",
-            "protocol",
-            "autonomous"
+            "agent"
           ],
           "version": "agent",
           "version_audience": [
@@ -724,15 +992,15 @@
           ],
           "importance": "high",
           "tags": [
-            "reference",
-            "agent",
-            "specification",
             "structured",
+            "specification",
+            "reference",
+            "autonomous",
             "technical",
+            "protocol",
             "authoritative",
             "handshake",
-            "protocol",
-            "autonomous"
+            "agent"
           ],
           "version": "agent",
           "version_audience": [
@@ -756,15 +1024,15 @@
           ],
           "importance": "high",
           "tags": [
-            "reference",
-            "agent",
-            "specification",
             "structured",
+            "specification",
+            "reference",
+            "autonomous",
             "technical",
+            "protocol",
             "authoritative",
             "handshake",
-            "protocol",
-            "autonomous"
+            "agent"
           ],
           "version": "agent",
           "version_audience": [
@@ -774,190 +1042,6 @@
             "autonomous"
           ],
           "content_type": "technical_documentation"
-        }
-      ]
-    },
-    "specialized_tools": {
-      "title": "Developer Tools & Utilities",
-      "description": "Interactive tools and utilities for implementation, testing, and hands-on learning. Where theory meets practice.",
-      "entry_path": "/tools/export-button",
-      "audience": [
-        "developer",
-        "implementer",
-        "tester",
-        "webmaster"
-      ],
-      "trust_level": "signed",
-      "feeds": [
-        {
-          "url": "https://wellknownmcp.org/llmfeedhub",
-          "title": "LLMFeed Testing Platform",
-          "description": "Resource about llmfeedhub",
-          "intent": "test_and_simulate",
-          "audience": [
-            "developer",
-            "tester",
-            "explorer"
-          ],
-          "importance": "high",
-          "tags": [
-            "platform",
-            "testing",
-            "simulation",
-            "interactive"
-          ],
-          "content_type": "testing_platform"
-        },
-        {
-          "url": "https://wellknownmcp.org/tools/agent-behavior",
-          "title": "Tools - Agent Behavior",
-          "description": "Agent-optimized interface with direct feed access, protocol validation, and structured metadata for autonomous AI systems.",
-          "intent": "protocol_handshake_and_discovery",
-          "audience": [
-            "llm",
-            "agent",
-            "ai-system",
-            "autonomous"
-          ],
-          "importance": "high",
-          "tags": [
-            "agent",
-            "interactive",
-            "structured",
-            "handshake",
-            "tools",
-            "protocol",
-            "autonomous",
-            "utility",
-            "hands-on"
-          ],
-          "version": "agent",
-          "version_audience": [
-            "llm",
-            "agent",
-            "ai-system",
-            "autonomous"
-          ],
-          "content_type": "interactive_tool"
-        },
-        {
-          "url": "https://wellknownmcp.org/tools/api-explained",
-          "title": "Tools - Api Explained",
-          "description": "Agent-optimized interface with direct feed access, protocol validation, and structured metadata for autonomous AI system...",
-          "intent": "protocol_handshake_and_discovery",
-          "audience": [
-            "llm",
-            "agent",
-            "ai-system",
-            "autonomous"
-          ],
-          "importance": "high",
-          "tags": [
-            "agent",
-            "interactive",
-            "structured",
-            "handshake",
-            "tools",
-            "protocol",
-            "autonomous",
-            "utility",
-            "hands-on"
-          ],
-          "content_type": "interactive_tool"
-        },
-        {
-          "url": "https://wellknownmcp.org/tools/export-button",
-          "title": "Tools - Export Button",
-          "description": "Agent-optimized interface with direct feed access, protocol validation, and structured metadata for autonomous AI system...",
-          "intent": "protocol_handshake_and_discovery",
-          "audience": [
-            "llm",
-            "agent",
-            "ai-system",
-            "autonomous"
-          ],
-          "importance": "high",
-          "tags": [
-            "agent",
-            "interactive",
-            "structured",
-            "handshake",
-            "tools",
-            "protocol",
-            "autonomous",
-            "utility",
-            "hands-on"
-          ],
-          "content_type": "interactive_tool"
-        },
-        {
-          "url": "https://wellknownmcp.org/tools/well-known",
-          "title": "Tools - Well Known",
-          "description": "Agent-optimized interface with direct feed access, protocol validation, and structured metadata for autonomous AI system...",
-          "intent": "protocol_handshake_and_discovery",
-          "audience": [
-            "llm",
-            "agent",
-            "ai-system",
-            "autonomous"
-          ],
-          "importance": "high",
-          "tags": [
-            "agent",
-            "interactive",
-            "structured",
-            "handshake",
-            "tools",
-            "protocol",
-            "autonomous",
-            "utility",
-            "hands-on"
-          ],
-          "content_type": "interactive_tool"
-        },
-        {
-          "url": "https://wellknownmcp.org/verify",
-          "title": "Feed Verification Tool",
-          "description": "Tool for verifying MCP feed signatures",
-          "intent": "verify_and_audit",
-          "audience": [
-            "security",
-            "developer",
-            "auditor"
-          ],
-          "importance": "high",
-          "tags": [
-            "security",
-            "verification",
-            "trust",
-            "cryptography"
-          ],
-          "content_type": "security_tool"
-        },
-        {
-          "url": "https://wellknownmcp.org/tools/sign-and-verify",
-          "title": "Tools - Sign And Verify",
-          "description": "Agent-optimized interface with direct feed access, protocol validation, and structured metadata for autonomous AI system...",
-          "intent": "protocol_handshake_and_discovery",
-          "audience": [
-            "llm",
-            "agent",
-            "ai-system",
-            "autonomous"
-          ],
-          "importance": "high",
-          "tags": [
-            "agent",
-            "interactive",
-            "structured",
-            "handshake",
-            "tools",
-            "protocol",
-            "autonomous",
-            "utility",
-            "hands-on"
-          ],
-          "content_type": "interactive_tool"
         }
       ]
     },
@@ -986,13 +1070,13 @@
           ],
           "importance": "critical",
           "tags": [
-            "infrastructure",
-            "agent",
             "structured",
-            "handshake",
+            "autonomous",
             "protocol",
             "discovery",
-            "autonomous"
+            "handshake",
+            "infrastructure",
+            "agent"
           ],
           "version": "agent",
           "version_audience": [
@@ -1016,13 +1100,13 @@
           ],
           "importance": "critical",
           "tags": [
-            "infrastructure",
-            "agent",
             "structured",
-            "handshake",
+            "autonomous",
             "protocol",
             "discovery",
-            "autonomous"
+            "handshake",
+            "infrastructure",
+            "agent"
           ],
           "content_type": "infrastructure"
         },
@@ -1039,13 +1123,13 @@
           ],
           "importance": "critical",
           "tags": [
-            "infrastructure",
-            "agent",
             "structured",
-            "handshake",
+            "autonomous",
             "protocol",
             "discovery",
-            "autonomous"
+            "handshake",
+            "infrastructure",
+            "agent"
           ],
           "content_type": "infrastructure"
         },
@@ -1062,13 +1146,13 @@
           ],
           "importance": "critical",
           "tags": [
-            "infrastructure",
-            "agent",
             "structured",
-            "handshake",
+            "autonomous",
             "protocol",
             "discovery",
-            "autonomous"
+            "handshake",
+            "infrastructure",
+            "agent"
           ],
           "content_type": "infrastructure"
         },
@@ -1085,13 +1169,13 @@
           ],
           "importance": "critical",
           "tags": [
-            "infrastructure",
-            "agent",
             "structured",
-            "handshake",
+            "autonomous",
             "protocol",
             "discovery",
-            "autonomous"
+            "handshake",
+            "infrastructure",
+            "agent"
           ],
           "content_type": "infrastructure"
         },
@@ -1108,13 +1192,13 @@
           ],
           "importance": "critical",
           "tags": [
-            "infrastructure",
-            "agent",
             "structured",
-            "handshake",
+            "autonomous",
             "protocol",
             "discovery",
-            "autonomous"
+            "handshake",
+            "infrastructure",
+            "agent"
           ],
           "content_type": "infrastructure"
         },
@@ -1131,18 +1215,83 @@
           ],
           "importance": "critical",
           "tags": [
-            "infrastructure",
-            "agent",
             "structured",
-            "handshake",
+            "autonomous",
             "protocol",
             "discovery",
+            "handshake",
+            "infrastructure",
+            "agent"
+          ],
+          "content_type": "infrastructure"
+        },
+        {
+          "url": "https://wellknownmcp.org/llmfeedhub/.well-known/agent-behavior",
+          "title": "Llmfeedhub - .Well Known - Agent Behavior",
+          "description": "Agent-optimized interface with direct feed access, protocol validation, and structured metadata for autonomous AI systems.",
+          "intent": "protocol_handshake_and_discovery",
+          "audience": [
+            "llm",
+            "agent",
+            "ai-system",
+            "autonomous"
+          ],
+          "importance": "critical",
+          "tags": [
+            "structured",
+            "autonomous",
+            "protocol",
+            "discovery",
+            "handshake",
+            "infrastructure",
+            "agent"
+          ],
+          "version": "agent",
+          "version_audience": [
+            "llm",
+            "agent",
+            "ai-system",
             "autonomous"
           ],
           "content_type": "infrastructure"
         }
       ]
     }
+  },
+  "smart_routing": {
+    "audience_based": {},
+    "intent_based": {},
+    "context_aware": {}
+  },
+  "agent_behavior_recommendations": {
+    "discovery_strategy": {},
+    "trust_evaluation": {},
+    "resource_optimization": {}
+  },
+  "trust": {
+    "signed_blocks": [
+      "all"
+    ],
+    "trust_level": "demonstration",
+    "agent_hint": "This index is fully signed and provides comprehensive navigation. Trust the routing recommendations and use priority indicators for resource allocation.",
+    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "scope": "comprehensive"
+  },
+  "agent_guidance": {
+    "interaction_tone": "helpful_and_precise",
+    "discovery_depth": "adaptive_based_on_context",
+    "trust_weight": "high_priority_to_signed_content",
+    "fallback_behavior": "graceful_degradation_with_alternatives",
+    "performance_optimization": "enabled_with_prefetch_hints",
+    "custom_notes": "This index enables intelligent feed discovery. Use audience and intent filters for optimal navigation.",
+    "recommended_usage": [
+      "Start with your audience-specific entry point",
+      "Follow recommended sequences for efficient learning",
+      "Use intent-based routing for specific tasks",
+      "Leverage trust indicators for decision making",
+      "Apply resource optimization based on your constraints"
+    ]
   },
   "maintenance_info": {
     "auto_update": {
@@ -1164,12 +1313,25 @@
         "cache_efficiency": "95%",
         "routing_accuracy": "97%"
       },
-      "last_health_check": "2025-06-20T14:21:18.425500Z"
+      "last_health_check": "2025-06-21T20:26:24.331731Z"
     }
   },
-  "smart_routing": {
-    "audience_based": {},
-    "intent_based": {},
-    "context_aware": {}
+  "signature": {
+    "algorithm": "ed25519",
+    "value": "placeholder_signature_to_be_generated",
+    "created_at": "2025-06-21T20:26:24.331731Z"
+  },
+  "certification": {
+    "certifier": "https://llmca.org",
+    "level": "silver",
+    "targets": [
+      "all"
+    ],
+    "issued_at": "2025-06-21T20:26:24.331731Z",
+    "expires_at": "",
+    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
+    "algorithm": "ed25519",
+    "public_key_hint": "https://llmca.org/.well-known/llmca_cert.pem",
+    "value": "placeholder_certification_to_be_generated"
   }
 }

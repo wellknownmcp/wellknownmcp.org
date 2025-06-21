@@ -1,7 +1,12 @@
 {
-  "generated_at": "2025-06-20T07:24:53.977Z",
-  "content_hash": "be3f157beb22ead4832dc67d1072fc93",
+  "generated_at": "2025-06-21T20:26:05.265Z",
+  "content_hash": "a507fce73b940c60de122225839e18bd",
   "file_stats": [
+    {
+      "path": ".index-meta.json",
+      "size": 979,
+      "mtime": 1750404293980
+    },
     {
       "path": "llmfeed-mime.md",
       "size": 3060,
@@ -43,6 +48,6 @@
       "mtime": 1750404242305
     }
   ],
-  "total_files": 8,
+  "total_files": 9,
   "generator_version": "2.0.0"
 }

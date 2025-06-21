@@ -5,82 +5,15 @@
     "title": "WellKnownMCP News - Quality Curated",
     "description": "All high-quality MCP news articles with intelligent structural extraction - optimized for prompt shortcut (quality-based Pareto selection)",
     "version": "1.0.0-lite",
-    "generated_at": "2025-06-20T15:36:48.922Z",
+    "generated_at": "2025-06-21T21:41:05.802Z",
     "language": "en",
     "content_type": "news_highlights",
-    "total_articles": 0,
+    "total_articles": 1,
     "usage_context": "prompt_shortcut_pareto",
     "optimization": {
       "strategy": "pareto_80_20",
       "content_reduction": "summarized_essentials",
       "selection_criteria": "priority_score_and_categories"
-    }
-  },
-  "trust": {
-    "scope": "full",
-    "signed_blocks": [
-      "feed_type",
-      "metadata",
-      "intent",
-      "llm_behavior",
-      "agent_instructions",
-      "data",
-      "trust"
-    ],
-    "trust_level": "self-issued",
-    "content_authenticity": "source_verified",
-    "algorithm": "ed25519",
-    "canonicalization": "https://llmca.org/mcp-canonical-json/v1",
-    "public_key_hint": "https://wellknownmcp.org/.well-known/public.pem",
-    "warning": "This feed is fully signed."
-  },
-  "signature": {
-    "value": "mxSXHTgGQSqDGo0HGGRB3E5SK08ANYI/7nt7pzFonWXZv3KA2tDXoW7kRNp9C9Lw1X/Zw7BSG1ryHmXhzNHOAg==",
-    "created_at": "2025-06-20T19:17:41.829712+00:00"
-  },
-  "_meta": {
-    "signed_at": "2025-06-20T19:17:41.829712+00:00"
-  },
-  "agent_instructions": {
-    "content_access": "Summarized articles with links to full versions",
-    "navigation_pattern": "priority_based",
-    "trust_level": "curated_highlights",
-    "update_frequency": "build_time_static",
-    "upgrade_guidance": "For complete archive, use news-export.llmfeed.json in project context"
-  },
-  "data": {
-    "articles": [],
-    "selection_criteria": {
-      "quality_threshold": 65,
-      "selection_method": "natural_pareto_by_quality",
-      "max_safety_limit": 50,
-      "essential_categories": [
-        "launch",
-        "manifesto",
-        "tutorial",
-        "announcement",
-        "getting-started"
-      ],
-      "content_optimization": "intelligent_structural_extraction"
-    },
-    "stats": {
-      "content_distribution": {},
-      "quality_metrics": {
-        "high_quality": 0,
-        "good_quality": 0,
-        "needs_improvement": 0
-      },
-      "technical_levels": {},
-      "business_impact_distribution": {},
-      "most_common_tags": [],
-      "date_range": {},
-      "pareto_metrics": {
-        "selection_strategy": "quality_threshold_based",
-        "quality_threshold": 65,
-        "content_optimization": "intelligent_structural_extraction",
-        "token_efficiency": "natural_pareto_by_content_quality",
-        "no_artificial_limits": "includes_all_articles_meeting_quality_bar"
-      }
     }
   },
   "intent": {
@@ -105,5 +38,113 @@
       "ecosystem_growth"
     ],
     "context_preservation": "optimized"
+  },
+  "agent_instructions": {
+    "content_access": "Summarized articles with links to full versions",
+    "navigation_pattern": "priority_based",
+    "trust_level": "curated_highlights",
+    "update_frequency": "build_time_static",
+    "upgrade_guidance": "For complete archive, use news-export.llmfeed.json in project context"
+  },
+  "data": {
+    "articles": [
+      {
+        "slug": "hunting-ghost-traffic-ai-agent-infrastructure",
+        "title": "Hunting the Ghost Traffic: Inside the Invisible Infrastructure of AI Agents",
+        "description": "Empirical investigation reveals massive parallel infrastructure behind AI agent web access. ChatGPT, Claude, and Gemini operate through invisible proxy networks that completely bypass traditional analytics, creating an unmeasurable 'dark web' layer.",
+        "date": "2025-06-20",
+        "categories": [
+          "infrastructure-investigation"
+        ],
+        "tags": [
+          "agent-infrastructure",
+          "agentic-web",
+          "ai-agent-traffic"
+        ],
+        "type": "empirical-research",
+        "content": "**Hunting the Ghost Traffic: Inside the Invisible Infrastructure of AI Agents**: **June 20, 2025** • *Empirical Investigation* • *WellKnownMCP Research Team*\r\n\r\n> *Where have all the AI agents gone? A technical investigation reveals a massive parallel infrastructure that's redefin...\n\n**The Mystery of Phantom Traffic**: For months, developers and researchers have been asking the same question: **how do we measure the real impact of AI agents** on our websites? While Claude, ChatGPT, Gemini, and other AI systems clear...\n\n**Empirical Findings: A Snapshot in Time**: ### The Exploration\r\n\r\n**Disclaimer: These observations represent a few hours of informal testing conducted on June 20, 2025.** This is not a rigorous scientific study, but rather an exploratory inves...\n\n**→ Complete article:** https://wellknownmcp.org/en/news/hunting-ghost-traffic-ai-agent-infrastructure",
+        "concepts": [
+          "agent-infrastructure",
+          "agentic-web",
+          "ai-agent-traffic",
+          "ai-crawler-analytics",
+          "ai-crawler-detection"
+        ],
+        "priority_score": 100,
+        "metadata": {
+          "quality_score": 92,
+          "technical_level": "advanced",
+          "business_impact": "high",
+          "lite_optimization": "summarized_for_pareto_strategy"
+        },
+        "canonical_url": "https://wellknownmcp.org/en/news/hunting-ghost-traffic-ai-agent-infrastructure",
+        "author": "WellKnownMCP Team",
+        "last_modified": "2025-06-20"
+      }
+    ],
+    "selection_criteria": {
+      "quality_threshold": 65,
+      "selection_method": "natural_pareto_by_quality",
+      "max_safety_limit": 50,
+      "essential_categories": [
+        "launch",
+        "manifesto",
+        "tutorial",
+        "announcement",
+        "getting-started"
+      ],
+      "content_optimization": "intelligent_structural_extraction"
+    },
+    "stats": {
+      "content_distribution": {
+        "empirical-research": 1
+      },
+      "quality_metrics": {
+        "high_quality": 1,
+        "good_quality": 0,
+        "needs_improvement": 0
+      },
+      "technical_levels": {
+        "advanced": 1
+      },
+      "business_impact_distribution": {
+        "high": 1
+      },
+      "most_common_tags": [
+        {
+          "tag": "agent-infrastructure",
+          "count": 1
+        },
+        {
+          "tag": "agentic-web",
+          "count": 1
+        },
+        {
+          "tag": "ai-agent-traffic",
+          "count": 1
+        }
+      ],
+      "date_range": {
+        "earliest": "2025-06-20",
+        "latest": "2025-06-20"
+      },
+      "pareto_metrics": {
+        "selection_strategy": "quality_threshold_based",
+        "quality_threshold": 65,
+        "content_optimization": "intelligent_structural_extraction",
+        "token_efficiency": "natural_pareto_by_content_quality",
+        "no_artificial_limits": "includes_all_articles_meeting_quality_bar"
+      }
+    }
+  },
+  "trust": {
+    "scope": "curated_essentials",
+    "signed_blocks": [
+      "feed_type",
+      "metadata",
+      "data"
+    ],
+    "trust_level": "self-issued",
+    "content_authenticity": "source_verified"
   }
 }

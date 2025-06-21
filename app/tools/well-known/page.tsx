@@ -46,17 +46,7 @@ export default function WellKnownPage() {
                 <h2 className="text-xl font-semibold mb-2">🚀 Quick Start: 30 Seconds Setup</h2>
                 <p className="text-blue-100">Get automatic MCP server discovery working in under a minute</p>
               </div>
-              <div className="flex gap-3">
-                <ExportToLLMButton
-                  context="static"
-                  staticPath="demo/.well-known/quick-start"
-                  mini={true}
-                           />
-                <button className="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg font-medium transition-colors">
-                  <Play className="w-4 h-4 inline mr-2" />
-                  Watch Demo
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -137,18 +127,7 @@ export default function WellKnownPage() {
                 </pre>
               </div>
 
-              <div className="flex gap-3">
-                <ExportToLLMButton
-                  context="static"
-                  staticPath="demo/.well-known/30-second-setup"
-                  showCurlCommand={true}
-                  showDirectUrl={true}
-                />
-                <button className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors">
-                  <Copy className="w-4 h-4 inline mr-2" />
-                  Copy Template
-                </button>
-              </div>
+              
             </div>
           </CardContent>
         </Card>
@@ -203,12 +182,7 @@ export default function WellKnownPage() {
                 </div>
               </div>
 
-              <ExportToLLMButton
-                context="static"
-                staticPath="demo/.well-known/file-structure"
-                mini={true}
-                showDirectUrl={true}
-              />
+              
             </div>
           </CardContent>
         </Card>
@@ -244,11 +218,7 @@ export default function WellKnownPage() {
                 <p className="text-sm text-purple-800 mb-4">
                   Download working MCP configurations ready for copy-paste implementation.
                 </p>
-                <ExportToLLMButton
-                  context="static"
-                  staticPath="demo/.well-known/working-examples"
-                  showCurlCommand={true}
-                />
+                
               </div>
             </div>
           </CardContent>
@@ -268,7 +238,7 @@ export default function WellKnownPage() {
               <div className="space-y-3 text-sm">
                 <div className="flex items-center gap-3">
                   <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold">1</div>
-                  <span>LLM reads your standard <code>.mcp.json</code></span>
+                  <span>LLM reads your standard <code>.mcp.json</code> if you have one </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold">2</div>
@@ -398,7 +368,7 @@ export default function WellKnownPage() {
                 <h4 className="font-semibold mb-2">Download Template</h4>
                 <ExportToLLMButton
                   context="static"
-                  staticPath="demo/.well-known/starter-template"
+                  staticPath=".well-known/mcp"
                   mini={true}
                 />
               </div>

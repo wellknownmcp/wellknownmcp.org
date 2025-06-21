@@ -1,0 +1,38 @@
+{
+  "generated_at": "2025-06-21T20:26:05.276Z",
+  "content_hash": "20c92fb6997ba715f5ee1a81210a8dfb",
+  "file_stats": [
+    {
+      "path": "llmfeed_extensions_api.md",
+      "size": 17760,
+      "mtime": 1749994792165
+    },
+    {
+      "path": "llmfeed_extensions_audience.md",
+      "size": 19452,
+      "mtime": 1749648498521
+    },
+    {
+      "path": "llmfeed_extensions_homomorphic.md",
+      "size": 3080,
+      "mtime": 1749143642538
+    },
+    {
+      "path": "llmfeed_extensions_other.md",
+      "size": 3503,
+      "mtime": 1749648610133
+    },
+    {
+      "path": "llmfeed_extensions_prompts.md",
+      "size": 3507,
+      "mtime": 1749650667882
+    },
+    {
+      "path": "llmfeed_extensions_signatures.md",
+      "size": 28990,
+      "mtime": 1749738745003
+    }
+  ],
+  "total_files": 6,
+  "generator_version": "2.0.0"
+}

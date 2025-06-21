@@ -1,23 +1,38 @@
 {
-  "generated_at": "2025-06-19T18:59:24.051Z",
-  "content_hash": "31564b3216a9e5d0d60da9e273b2fc25",
+  "generated_at": "2025-06-21T20:26:05.070Z",
+  "content_hash": "6ec374614c65f5aab918d414bdf9ee8b",
   "file_stats": [
     {
       "path": ".index-meta.json",
       "size": 480,
-      "mtime": 1750358643412
+      "mtime": 1750359564057
     },
     {
       "path": "compiled-site.llmfeed.json",
-      "size": 98171,
-      "mtime": 1749568759889
+      "size": 572343,
+      "mtime": 1750359569332
     },
     {
       "path": "manifesto.llmfeed.json",
       "size": 2105,
-      "mtime": 1749568759951
+      "mtime": 1749568745588
+    },
+    {
+      "path": "news-export.llmfeed.json",
+      "size": 594537,
+      "mtime": 1750359236380
+    },
+    {
+      "path": "spec-essential.llmfeed.json",
+      "size": 89773,
+      "mtime": 1750404293052
+    },
+    {
+      "path": "spec.llmfeed.json",
+      "size": 574307,
+      "mtime": 1750404293013
     }
   ],
-  "total_files": 3,
+  "total_files": 6,
   "generator_version": "2.0.0"
 }

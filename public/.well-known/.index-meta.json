@@ -1,56 +1,66 @@
 {
-  "generated_at": "2025-06-19T18:59:23.767Z",
-  "content_hash": "4eed3ece2a04bc86e331a8b2a628de72",
+  "generated_at": "2025-06-21T20:26:04.539Z",
+  "content_hash": "f3c24863a405a2eb904cce3f70f3ce5b",
   "file_stats": [
     {
       "path": ".index-meta.json",
       "size": 2809,
-      "mtime": 1750358641890
+      "mtime": 1750359563760
     },
     {
       "path": "agent-behavior.llmfeed.json",
-      "size": 553,
-      "mtime": 1749568745567
+      "size": 5298,
+      "mtime": 1750447028009
     },
     {
       "path": "capabilities.llmfeed.json",
-      "size": 17690,
-      "mtime": 1749977729887
+      "size": 17715,
+      "mtime": 1750448014054
     },
     {
       "path": "exports/compiled-site.llmfeed.json",
-      "size": 572584,
-      "mtime": 1750358657346
+      "size": 572872,
+      "mtime": 1750447050361
     },
     {
       "path": "exports/manifesto.llmfeed.json",
-      "size": 2105,
-      "mtime": 1749568745588
+      "size": 1781,
+      "mtime": 1750447053906
     },
     {
       "path": "exports/news-export.llmfeed.json",
-      "size": 594537,
-      "mtime": 1750359236380
+      "size": 613577,
+      "mtime": 1750536502134
+    },
+    {
+      "path": "exports/news-lite.llmfeed.json",
+      "size": 5546,
+      "mtime": 1750536502136
+    },
+    {
+      "path": "exports/spec-essential.llmfeed.json",
+      "size": 90463,
+      "mtime": 1750447651248
     },
     {
       "path": "exports/spec.llmfeed.json",
-      "size": 554027,
-      "mtime": 1750002968703
+      "size": 574777,
+      "mtime": 1750447067849
     },
     {
       "path": "llm-index.llmfeed.json",
-      "size": 40482,
-      "mtime": 1750358662339
+      "size": 37979,
+      "mtime": 1750447032883
     },
     {
       "path": "manifesto.llmfeed.json",
-      "size": 2105,
-      "mtime": 1749568745588
+      "size": 1781,
+      "mtime": 1750447036214
     },
     {
       "path": "mcp-lite.llmfeed.json",
-      "size": 5185,
-      "mtime": 1749568745593
+      "size": 2021,
+      "mtime": 1750451588538
     },
     {
       "path": "mcp.json",
@@ -59,48 +69,23 @@
     },
     {
       "path": "mcp.llmfeed.json",
-      "size": 21227,
-      "mtime": 1750144416742
+      "size": 19676,
+      "mtime": 1750451588657
     },
     {
       "path": "prompts/generate-llm-index.llmfeed.json",
-      "size": 5239,
-      "mtime": 1749653561134
+      "size": 6008,
+      "mtime": 1750447072435
     },
     {
       "path": "prompts/generate-llm-index.prompt.llmfeed.json",
-      "size": 5239,
-      "mtime": 1749653049608
+      "size": 6008,
+      "mtime": 1750447076907
     },
     {
-      "path": "prompts/generate-session-feed.llmfeed.json",
-      "size": 3830,
-      "mtime": 1749568745598
-    },
-    {
-      "path": "prompts/mcp-agent-behavior-override.llmfeed.json",
-      "size": 16297,
-      "mtime": 1749568745610
-    },
-    {
-      "path": "prompts/mcp-mode-activation.llmfeed.json",
-      "size": 2202,
-      "mtime": 1749568745613
-    },
-    {
-      "path": "prompts/mcp_signature_readiness_test.llmfeed.json",
-      "size": 2270,
-      "mtime": 1749568745617
-    },
-    {
-      "path": "prompts/prompt-index.llmfeed.json",
-      "size": 2858,
-      "mtime": 1749568745617
-    },
-    {
-      "path": "prompts/quickstart-agent-enablement.llmfeed.json",
-      "size": 2212,
-      "mtime": 1749568745632
+      "path": "prompts/shortcutLMM.llmfeed.json",
+      "size": 4123,
+      "mtime": 1750447655034
     },
     {
       "path": "public.pem",
@@ -109,20 +94,20 @@
     },
     {
       "path": "schema.annotated.llmfeed.json",
-      "size": 5022,
-      "mtime": 1749568745657
+      "size": 9802,
+      "mtime": 1750447634251
     },
     {
       "path": "schema.lite.llmfeed.json",
-      "size": 4912,
-      "mtime": 1749568745658
+      "size": 8775,
+      "mtime": 1750447642250
     },
     {
       "path": "schema.llmfeed.json",
-      "size": 4538,
-      "mtime": 1749568745728
+      "size": 7497,
+      "mtime": 1750447646836
     }
   ],
-  "total_files": 24,
+  "total_files": 21,
   "generator_version": "2.0.0"
 }

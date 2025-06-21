@@ -3,13 +3,13 @@ import path from 'path'
 import matter from 'gray-matter'
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
-import Markdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
+import SSRSafeMarkdown from '@/components/SSRSafeMarkdown'
 import SeoHead from '@/components/SeoHead'
 import { PageTitle } from '@/components/PageTitle'
 import { ShareButtons } from '@/components/ShareButtons'
 import index from '@/public/news/index.json'
 import Link from 'next/link'
+import { Download, ArrowLeft, ArrowRight } from 'lucide-react'
 
 // 🚀 Helper functions pour extraire les métadonnées AIO (simplifié)
 function extractAIOMetadata(front: any, slug: string, content: string) {
@@ -157,9 +157,9 @@ export default async function NewsPost({
   // 🚀 Extract AIO metadata (simplifié)
   const aioMeta = extractAIOMetadata(front, slug, markdown)
 
-  const articles = index[lang].sort(
+  const articles = index[lang]?.sort?.(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  )
+  ) || []
 
   const currentIndex = articles.findIndex((a) => a.slug === slug)
 
@@ -239,18 +239,18 @@ export default async function NewsPost({
         subtitle={front.subtitle || "An update from the LLMFeed ecosystem"}
       />
 
-      
-
-      {/* Navigation Previous/Next */}
+      {/* Navigation Previous/Next - FIXED SVG Icons */}
       <div className="flex justify-between mt-8 text-sm text-blue-600 dark:text-blue-400">
         {prev && (
-          <Link href={`/${lang}/news/${prev.slug}`} className="hover:underline">
-            ← Previous: {prev.title.length > 20 ? `${prev.title.slice(0, 20)}…` : prev.title}
+          <Link href={`/${lang}/news/${prev.slug}`} className="flex items-center gap-2 hover:underline">
+            <ArrowLeft className="w-4 h-4" />
+            <span>Previous: {prev.title.length > 20 ? `${prev.title.slice(0, 20)}…` : prev.title}</span>
           </Link>
         )}
         {next && (
-          <Link href={`/${lang}/news/${next.slug}`} className="hover:underline">
-            Next →: {next.title.length > 20 ? `${next.title.slice(0, 20)}…` : next.title}
+          <Link href={`/${lang}/news/${next.slug}`} className="flex items-center gap-2 hover:underline ml-auto">
+            <span>Next: {next.title.length > 20 ? `${next.title.slice(0, 20)}…` : next.title}</span>
+            <ArrowRight className="w-4 h-4" />
           </Link>
         )}
       </div>
@@ -263,14 +263,13 @@ export default async function NewsPost({
         />
       )}
 
-      {/* Contenu principal */}
-      <div
+      {/* Contenu principal - SEO-OPTIMIZED SSR Markdown */}
+      <SSRSafeMarkdown
+        content={markdown}
         className="prose dark:prose-invert max-w-none"
         dir={front.dir === 'rtl' ? 'rtl' : 'ltr'}
         lang={front.lang || lang}
-      >
-        <Markdown remarkPlugins={[remarkGfm]}>{markdown}</Markdown>
-      </div>
+      />
 
       {/* 🚀 Call-to-Action pour feed news-lite - A/B Test automatique (95%/5%) */}
       {(() => {
@@ -294,7 +293,13 @@ export default async function NewsPost({
             }
           }).catch(() => {
             // Fallback for browsers without clipboard API
-            prompt("Copy this prompt:", promptText)
+            const textArea = document.createElement('textarea')
+            textArea.value = promptText
+            document.body.appendChild(textArea)
+            textArea.select()
+            document.execCommand('copy')
+            document.body.removeChild(textArea)
+            alert('Prompt copied to clipboard!')
           })
         }
 
@@ -430,7 +435,7 @@ export default async function NewsPost({
         </div>
       )}
 
-      {/* 🎯 Téléchargement markdown + métadonnées techniques */}
+      {/* 🎯 Téléchargement markdown + métadonnées techniques - FIXED SVG */}
       <div className="mt-8 pt-4 border-t border-gray-200 dark:border-gray-700">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           
@@ -441,9 +446,7 @@ export default async function NewsPost({
               download={`${slug}.md`}
               className="inline-flex items-center gap-2 px-3 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
+              <Download className="w-4 h-4" />
               Download Markdown
             </a>
           </div>
@@ -473,6 +476,8 @@ export default async function NewsPost({
             <p>• Export this content: <a href="/.well-known/exports/" className="text-blue-600 underline">Available formats</a></p>
             <p>• Explore capabilities: <a href="/.well-known/capabilities.llmfeed.json" className="text-blue-600 underline">API endpoints</a></p>
             <p>• Join ecosystem: <a href="/join" className="text-blue-600 underline">Contribute to LLMFeed</a></p>
+            <p>• Download tools: <a href="/download" className="text-blue-600 underline">Get MCP resources</a></p>
+            <p>• Learn prompts: <a href="/tools/prompts-explained" className="text-blue-600 underline">Prompting for agents</a></p>
           </div>
         </div>
       )}

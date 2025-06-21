@@ -1,7 +1,12 @@
 {
-  "generated_at": "2025-06-20T07:24:54.527Z",
-  "content_hash": "1c13c8653be7b1f5333453f1b626b644",
+  "generated_at": "2025-06-21T20:26:05.325Z",
+  "content_hash": "9185d8194de9eeee5c2fcd2423d7c1ef",
   "file_stats": [
+    {
+      "path": ".index-meta.json",
+      "size": 2909,
+      "mtime": 1750404294528
+    },
     {
       "path": "capabilities.llmfeed.json",
       "size": 5053,
@@ -9,8 +14,8 @@
     },
     {
       "path": "exports/.index-meta.json",
-      "size": 385,
-      "mtime": 1750404294461
+      "size": 480,
+      "mtime": 1750537565292
     },
     {
       "path": "exports/compiled-site.llmfeed.json",
@@ -44,8 +49,8 @@
     },
     {
       "path": "prompts/.index-meta.json",
-      "size": 1776,
-      "mtime": 1750404294508
+      "size": 1872,
+      "mtime": 1750537565303
     },
     {
       "path": "prompts/easter-egg-intro-to-the-full-site.llmfeed.json",
@@ -118,6 +123,6 @@
       "mtime": 1745909680941
     }
   ],
-  "total_files": 23,
+  "total_files": 24,
   "generator_version": "2.0.0"
 }

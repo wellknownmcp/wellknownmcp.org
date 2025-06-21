@@ -173,22 +173,9 @@ function sanitizeArticle(article: any): SimpleArticle {
 
 // 🎨 Composant d'avertissement (identique à votre code)
 function ArticleWarningBadge({ article }: { article: SimpleArticle }) {
-  if (!article._validationWarnings && !article._correctedFields) return null
+   return null
 
-  return (
-    <div className="mb-2 p-2 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-700 rounded text-xs">
-      <details className="cursor-pointer">
-        <summary className="text-yellow-700 dark:text-yellow-300 font-medium">
-          ⚠️ Article auto-corrected ({article._correctedFields?.length || 0} fields)
-        </summary>
-        <div className="mt-1 text-yellow-600 dark:text-yellow-400">
-          {article._validationWarnings?.map((warning, i) => (
-            <div key={i}>• {warning}</div>
-          ))}
-        </div>
-      </details>
-    </div>
-  )
+  
 }
 
 interface Props {
