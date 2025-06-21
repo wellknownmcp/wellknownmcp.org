@@ -28,8 +28,8 @@ export default function OptimizedNavbar() {
         </Link>
 
         {/* Navigation principale - Desktop */}
-        <div className="hidden md:flex items-center space-x-8">
-          {/* 🎯 DOWNLOADS - Nouveau point d'entrée principal */}
+        <div className="hidden md:flex items-center space-x-6">
+          {/* 🎯 DOWNLOADS - Point d'entrée principal */}
           <Link
             href="/downloads"
             className={`${
@@ -37,6 +37,38 @@ export default function OptimizedNavbar() {
             } hover:text-violet-600 transition-colors bg-gradient-to-r from-violet-50 to-purple-50 dark:from-violet-900/20 dark:to-purple-900/20 px-3 py-1.5 rounded-lg border border-violet-200 dark:border-violet-700`}
           >
             📥 Downloads
+          </Link>
+
+          {/* 🧠 TRAIN AI - KILLER FEATURE originale en position #2 */}
+          <Link
+            href="/train"
+            className={`${
+              isActive('/train') ? 'font-semibold border-b-2 border-yellow-500' : ''
+            } hover:text-yellow-600 transition-colors bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 px-3 py-1.5 rounded-lg border border-yellow-200 dark:border-yellow-700 relative group`}
+          >
+            🧠 Train AI
+            {/* Badge "HOT" original */}
+            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-0.5 rounded-full font-bold animate-pulse">
+              HOT
+            </span>
+          </Link>
+
+          {/* 🔍 PREVIEW - Nouvelle killer feature en position #3 */}
+          <Link
+            href="/preview"
+            className={`${
+              isActive('/preview') || isActive('/llmfeedhub/preview') ? 'font-semibold border-b-2 border-blue-500' : ''
+            } hover:text-blue-600 transition-colors bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 px-3 py-1.5 rounded-lg border border-blue-200 dark:border-blue-700 relative group`}
+          >
+            🔍 Preview
+            {/* Badge "NEW" pour différencier */}
+            <span className="absolute -top-2 -right-2 bg-blue-500 text-white text-xs px-2 py-0.5 rounded-full font-bold">
+              NEW
+            </span>
+            {/* Tooltip explicatif */}
+            <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+              Compare MCP vs Traditional Web
+            </div>
           </Link>
 
           {/* 📚 SPEC - Point d'entrée technique */}
@@ -47,16 +79,6 @@ export default function OptimizedNavbar() {
             } hover:text-purple-600 transition-colors`}
           >
             📚 Spec
-          </Link>
-
-          {/* 🔧 LLMFEEDHUB - Outil phare */}
-          <Link
-            href="/llmfeedhub"
-            className={`${
-              isActive('/llmfeedhub') ? 'font-semibold border-b-2 border-green-500' : ''
-            } hover:text-green-600 transition-colors`}
-          >
-            🔧 Analyzer
           </Link>
 
           {/* 🧰 TOOLS restructuré */}
@@ -73,22 +95,22 @@ export default function OptimizedNavbar() {
             {toolsOpen && (
               <div className="absolute top-full left-0 mt-2 min-w-[280px] bg-white dark:bg-gray-900 border dark:border-gray-700 shadow-xl rounded-lg z-50 py-3">
                 
-                {/* Section Interactive */}
+                {/* Section Featured */}
                 <div className="px-4 py-2">
                   <div className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-2">
-                    Build & Generate
+                    Featured Tools
                   </div>
+                  <Link 
+                    href="/llmfeedhub" 
+                    className="block px-2 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
+                  >
+                    🔧 LLMFeed Analyzer
+                  </Link>
                   <Link 
                     href="/tools/prompt" 
                     className="block px-2 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
                   >
                     ✍️ Prompt Builder
-                  </Link>
-                  <Link 
-                    href="/tools/export-button" 
-                    className="block px-2 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors"
-                  >
-                    📤 Export Button
                   </Link>
                   <Link 
                     href="/tools/sign-and-verify" 
@@ -208,6 +230,14 @@ export default function OptimizedNavbar() {
         <div className="md:hidden absolute top-full left-0 w-full bg-white dark:bg-black border-b border-gray-200 dark:border-gray-800 z-40">
           <div className="px-6 py-4 space-y-4">
             <Link href="/downloads" className="block py-2 text-violet-600 font-medium">📥 Downloads</Link>
+            <Link href="/train" className="block py-2 text-yellow-600 font-bold">
+              🧠 Train AI 
+              <span className="bg-red-500 text-white text-xs px-2 py-0.5 rounded-full ml-2">HOT</span>
+            </Link>
+            <Link href="/preview" className="block py-2 text-blue-600 font-medium">
+              🔍 Preview 
+              <span className="bg-blue-500 text-white text-xs px-2 py-0.5 rounded-full ml-2">NEW</span>
+            </Link>
             <Link href="/spec" className="block py-2">📚 Spec</Link>
             <Link href="/llmfeedhub" className="block py-2">🔧 Analyzer</Link>
             <Link href="/tools" className="block py-2">🧰 Tools</Link>

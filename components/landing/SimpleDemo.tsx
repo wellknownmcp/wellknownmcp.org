@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Copy, Check, Play, Sparkles, Brain, Zap } from 'lucide-react'
+import { Copy, Check, Play, Sparkles, Brain, Zap, Search } from 'lucide-react'
 import { useWellKnownMCPAnalytics } from '@/lib/hooks/useWellKnownMCPAnalytics'
 
 interface DemoStep {
@@ -273,16 +273,37 @@ export function SimpleDemo() {
         )}
       </div>
 
-      {/* Completion Message */}
+      {/* Completion Message with Analyzer CTA */}
       {completedSteps.length === demoSteps.length && (
         <div className="mt-8 bg-gradient-to-r from-green-100 to-blue-100 border border-green-200 rounded-lg p-6 text-center">
           <div className="text-4xl mb-3">🎉</div>
           <h4 className="text-xl font-bold text-gray-900 mb-2">
             Excellent! You understand the difference.
           </h4>
-          <p className="text-gray-600 mb-4">
-            You've seen how structured MCP feeds transform agent interactions. Ready to make your own site agent-ready?
+          <p className="text-gray-600 mb-6">
+            You've seen how structured MCP feeds transform agent interactions. Ready to see how YOUR website performs?
           </p>
+          
+          {/* Analyzer CTA Highlight */}
+          <div className="bg-white border border-blue-200 rounded-lg p-4 mb-4">
+            <div className="flex items-center justify-center gap-3 mb-3">
+              <Search className="w-6 h-6 text-blue-600" />
+              <h5 className="text-lg font-semibold text-gray-900">Test Your Own Website</h5>
+            </div>
+            <p className="text-gray-600 text-sm mb-4">
+              Compare how AI agents understand YOUR site with vs without MCP feeds. 
+              See the difference on your own domain!
+            </p>
+            <a
+              href="/llmfeedhub/preview"
+              className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors"
+              onClick={() => trackConversionIntent('evaluation', 'demo_completion_to_analyzer')}
+            >
+              <Search className="w-5 h-5" />
+              Analyze My Website
+            </a>
+          </div>
+          
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="/tools/well-known"
@@ -290,6 +311,13 @@ export function SimpleDemo() {
               onClick={() => trackConversionIntent('implementation', 'demo_completion_to_tools')}
             >
               🛠️ Build Your First Feed
+            </a>
+            <a
+              href="/train"
+              className="bg-yellow-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-yellow-700 transition-colors"
+              onClick={() => trackConversionIntent('evaluation', 'demo_completion_to_train')}
+            >
+              🧠 Train AI Assistant
             </a>
             <a
               href="/spec"
@@ -313,6 +341,7 @@ export function SimpleDemo() {
             <p><strong>Tip 2:</strong> If the response seems generic, ask: "What specific capabilities does this site offer?"</p>
             <p><strong>Tip 3:</strong> Some AIs need permission to access URLs - just say "yes" when asked.</p>
             <p><strong>Troubleshooting:</strong> If the AI seems confused, try: "This is an MCP feed. What does it tell you about the site?"</p>
+            <p><strong>Want more?</strong> <a href="/llmfeedhub/preview" className="text-blue-600 hover:underline">Test your own website</a> to see the comparison on your domain!</p>
           </div>
         </details>
       </div>

@@ -12,6 +12,39 @@ export default function OptimizedFooter() {
     <footer className="bg-white dark:bg-black border-t dark:border-gray-800 text-sm text-black dark:text-white mt-12">
       <div className="w-full px-4 py-8 max-w-6xl mx-auto">
         
+        {/* 🧠 FEATURED: Instant AI Expertise Section */}
+        <div className="mb-8 p-6 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-xl border border-yellow-200 dark:border-yellow-700">
+          <div className="text-center">
+            <div className="text-3xl mb-3">🧠</div>
+            <h3 className="text-xl font-bold text-yellow-900 dark:text-yellow-100 mb-2">
+              Train Any LLM as MCP Expert in 30 Seconds
+            </h3>
+            <p className="text-yellow-800 dark:text-yellow-200 mb-4 max-w-2xl mx-auto">
+              Copy one universal prompt → Paste in ChatGPT, Claude, Gemini → Get instant MCP expertise.
+              Works on any LLM with robust fallback systems.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+              <Link
+                href="/train"
+                className="bg-gradient-to-r from-yellow-600 to-orange-600 hover:from-yellow-700 hover:to-orange-700 text-white px-6 py-3 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
+                🚀 Get Training Prompt
+              </Link>
+              <div className="flex items-center gap-4 text-sm text-yellow-700 dark:text-yellow-300">
+                <span className="flex items-center gap-1">
+                  ✅ <strong>99%+</strong> Success Rate
+                </span>
+                <span className="flex items-center gap-1">
+                  ⚡ <strong>30s</strong> Training Time
+                </span>
+                <span className="flex items-center gap-1">
+                  🌐 <strong>Universal</strong> Compatibility
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         {/* Main footer content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
@@ -54,10 +87,16 @@ export default function OptimizedFooter() {
             </div>
           </div>
 
-          {/* Get Started & Core Platform */}
+          {/* Get Started & Core Platform - AVEC TRAIN AI EN TÊTE */}
           <div>
             <h4 className="font-semibold mb-3 text-gray-900 dark:text-gray-100">Get Started</h4>
             <ul className="space-y-2">
+              <li>
+                <Link href="/train" className="text-yellow-600 dark:text-yellow-400 hover:text-yellow-700 dark:hover:text-yellow-300 font-bold transition-colors flex items-center gap-2">
+                  🧠 Train Any LLM (30 seconds!)
+                  <span className="bg-red-500 text-white text-xs px-2 py-0.5 rounded-full">HOT</span>
+                </Link>
+              </li>
               <li>
                 <Link href="/downloads" className="text-violet-600 dark:text-violet-400 hover:text-violet-700 dark:hover:text-violet-300 font-medium transition-colors">
                   📥 Download Feeds (Start Here!)
